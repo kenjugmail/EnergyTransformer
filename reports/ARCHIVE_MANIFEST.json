@@ -1,0 +1,80 @@
+[
+  {
+    "filename": "Energy_Architecture_v13_Experiment.zip",
+    "bytes": 12963594,
+    "sha256": "e2e00ef10ee4c48fa267be5c25bce66c7390182bab0c86b3111d2ca8881590a6",
+    "entries": 155
+  },
+  {
+    "filename": "Energy_As_State_v4_Experiment.zip",
+    "bytes": 3974954,
+    "sha256": "d86e8e847dffc8524c875883e9aec27fb7108a60c1f1ab0b12dee61e90321533",
+    "entries": 67
+  },
+  {
+    "filename": "Energy_Function_v9_Experiment.zip",
+    "bytes": 13378517,
+    "sha256": "b42422434bfd7b2f6d4ccfda9870461271b669a4bf45b1e02b4f2b55726d1579",
+    "entries": 120
+  },
+  {
+    "filename": "Energy_MLA_v7_Experiment.zip",
+    "bytes": 86978769,
+    "sha256": "eb331948c65bcb6ea5c2be6cf043583430dc272479d2db8207335428e3f083f4",
+    "entries": 300
+  },
+  {
+    "filename": "Energy_Read_v11_Experiment.zip",
+    "bytes": 25536125,
+    "sha256": "7b69619b259d31abf22856052fe53e46a80c9371dc379a7e28299f9f5aca8179",
+    "entries": 147
+  },
+  {
+    "filename": "Energy_Requery_v10_Experiment.zip",
+    "bytes": 18113161,
+    "sha256": "1e020fea62db86afab3b7ea7eb920e2f675fd7f2c7da3443112f25fa88233534",
+    "entries": 151
+  },
+  {
+    "filename": "Energy_Runtime_v12_Experiment.zip",
+    "bytes": 12459044,
+    "sha256": "0fe30c15cc2c4f6b34d8776f3c010886312925b6f6a10a8513e0f844a7937091",
+    "entries": 99
+  },
+  {
+    "filename": "Energy_State_TinyLM_v5_Experiment.zip",
+    "bytes": 25838948,
+    "sha256": "58a672c0c6f9b33854bf3a60c070fa03c98f30c723af6897db8584ddc634f802",
+    "entries": 116
+  },
+  {
+    "filename": "Energy_State_v6_Experiment.zip",
+    "bytes": 53661558,
+    "sha256": "eeb8ddd7c4f8b1f8efe9cd6d0419f09fe7b6a9582c5de3206cf6a0df15ac0bde",
+    "entries": 197
+  },
+  {
+    "filename": "Evolving_Energy_State_Experiment.zip",
+    "bytes": 3664422,
+    "sha256": "e54e0ed59656c2d71028fc8292c0e3125cb518a762dcb05f9e1aeaaa2125ea4f",
+    "entries": 244
+  },
+  {
+    "filename": "Representation_Adaptive_Energy_v2_Experiment.zip",
+    "bytes": 17745450,
+    "sha256": "069ab8a6c5a0ac7caf725d9b30d33bb357f460e92984a9d97725021663ca486e",
+    "entries": 89
+  },
+  {
+    "filename": "Spectral_Energy_v8_Experiment.zip",
+    "bytes": 10687170,
+    "sha256": "c71949f4791c3d6d1573b4a52f98f85d33fcdb6e3d5bbd5476473c54294566be",
+    "entries": 120
+  },
+  {
+    "filename": "Verified_Representation_Research_v3.zip",
+    "bytes": 1205682,
+    "sha256": "ae1ff6ed618cc741a44d953957505d074c71eb97ddf3f86fe2b38d09843e9ef9",
+    "entries": 95
+  }
+]
