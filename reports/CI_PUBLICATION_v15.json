@@ -1,0 +1,21 @@
+{
+  "repository": "kenjugmail/EnergyTransformer",
+  "repository_visibility": "private",
+  "workflow_run_id": 34695580553,
+  "workflow_job_id": 103558374905,
+  "workflow_source_commit": "c1a3193e9b306779c71f0d4ddf2e23e01071a7d8",
+  "conclusion": "success",
+  "trained_seeds": [11, 22, 33],
+  "tests": "43 passed in 4.78s on the GitHub runner",
+  "release": "https://github.com/kenjugmail/EnergyTransformer/releases/tag/rebuilt-v14-34695580553",
+  "release_id": 387574771,
+  "release_draft": false,
+  "release_prerelease": true,
+  "asset": "EnergyTransformer_rebuilt-v14-34695580553.zip",
+  "asset_bytes": 859468,
+  "asset_sha256": "729666b0138f4693508deacb54d82b782906bf3228493675ee602de8b662ed00",
+  "asset_verified_by": "Workflow-computed SHA-256 matches GitHub release API digest; binary not downloaded into this container",
+  "published_at": "2026-09-12T13:09:40Z",
+  "scope": "New CPU reproductions of the bounded v14 parser and answer decoder; NOT a transfer of historical checkpoints",
+  "original_bulk_archive_uploaded": false
+}
