@@ -1,0 +1,75 @@
+name: Rebuild bounded research checkpoints
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/rebuild-checkpoints.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Install pinned CPU dependencies
+        run: |
+          python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install numpy==2.2.6 pytest==8.3.5
+      - name: Reproduce three bounded parser and decoder fits
+        run: |
+          mkdir -p build results/v14
+          for seed in 11 22 33; do
+            python scripts/train_bridge.py --seed "$seed" | tee "build/train_${seed}.log"
+          done
+          python -m pytest -q tests | tee build/tests.log
+          python scripts/demo_reviewed.py | tee build/demo.log
+      - name: Package regenerated artifacts with provenance
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json, os, platform, zipfile
+          import torch
+          root = Path('.')
+          tag = 'rebuilt-v14-' + os.environ['GITHUB_RUN_ID']
+          name = 'EnergyTransformer_' + tag + '.zip'
+          note = {
+              'kind': 'new CI reproduction; NOT a transfer of original historical bytes',
+              'source_commit': os.environ['GITHUB_SHA'],
+              'run_id': os.environ['GITHUB_RUN_ID'],
+              'python': platform.python_version(), 'torch': torch.__version__,
+              'seeds': [11, 22, 33],
+              'scope': 'bounded sentence parser and answer decoder, not a general LLM',
+          }
+          Path('build/REBUILD_PROVENANCE.json').write_text(json.dumps(note, indent=2))
+          files = []
+          for folder in ['energy_transformer', 'scripts', 'tests', 'checkpoints/v14', 'build']:
+              files.extend(p for p in Path(folder).rglob('*') if p.is_file()
+                           and '__pycache__' not in p.parts and p.suffix != '.pyc')
+          files.extend(Path('results/v14').glob('train_seed*.json'))
+          files.extend(Path(p) for p in ['pyproject.toml', 'requirements.txt', 'RIGHTS.md', 'MODEL_CARD.md'])
+          with zipfile.ZipFile(name, 'w', zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(set(files)):
+                  z.write(p, 'EnergyTransformer/' + p.as_posix())
+          digest = hashlib.sha256(Path(name).read_bytes()).hexdigest()
+          Path(name + '.sha256').write_text(digest + '  ' + name + '\n')
+          print(name, digest)
+          PY
+      - name: Publish regenerated checkpoints to this private repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test "$(gh api "repos/$GITHUB_REPOSITORY" --jq '.private')" = true
+          tag="rebuilt-v14-$GITHUB_RUN_ID"
+          gh release create "$tag" "EnergyTransformer_${tag}.zip" "EnergyTransformer_${tag}.zip.sha256" \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --prerelease --latest=false \
+            --title "Rebuilt bounded checkpoints ($GITHUB_RUN_ID)" \
+            --notes "New CPU training reproduction from this source commit. Includes three v14 parser/answer checkpoints, source, logs, tests, and provenance. Not an upload of the original v1-v14 archives; not an improved general-purpose language model."
