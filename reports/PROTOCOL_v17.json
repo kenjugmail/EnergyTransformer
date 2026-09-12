@@ -1,0 +1,30 @@
+{
+  "version": 17,
+  "date": "2026-09-12",
+  "hypothesis": "Separate binding from operation interpretation and improve composition coverage; do not change memory authorization",
+  "design": "2x2 joint/bound parser by basic/expanded curriculum; 3 seeds; 900 updates, batch 64; 12 new parser fits; inherited v14 as historical reference",
+  "selection": "Validation exact semantic accuracy, then lower validation supervised loss; no final test tuning",
+  "primary": "Novel template compositions; report raw exact parse, proposal coverage and erroneous-edit proposals separately",
+  "diagnostics": [
+    "unseen entity-value pairs",
+    "registered alias spelling replacement",
+    "legacy wording reused from v14",
+    "strict unknown-vocabulary abstention",
+    "episodic memory propagation"
+  ],
+  "constraints": [
+    "No auto-authorized edits",
+    "No raw corpus or personal data",
+    "CPU only",
+    "Registry and grammar supplied",
+    "No general LLM improvement claim"
+  ],
+  "setup_corrections": "Before fitting: finite basic grammar and legacy test permit resampled rows; final manifest records unique texts; test sets other than legacy use unique text; exact legacy-template exclusions prevent training overlap",
+  "sha256": {
+    "energy_transformer/binding.py": "3a74283facd8713c5159076ee5d61200341a98add29f6c6c4db2b5fec6dc347a",
+    "energy_transformer/binding_data.py": "2368bd90d5a2a1a9de6dc8b7616dd42ae9051beb9fbcdb2f916f566f1d4d0ae2",
+    "scripts/train_binding.py": "184a98fd5e604311bcc7f11401ad57b0cf53c2b486c5ba8d4f17400684641b21"
+  },
+  "torch": "2.10.0+cpu",
+  "python": "3.13.5"
+}

@@ -1,0 +1,10 @@
+{
+  "episode_pairing": {
+    "status": "post-hoc harness correction after viewing first diagnostic outcomes",
+    "change": "use identical initial edit prefix and exact shared distractor prefixes across gaps",
+    "old_results": "results/v17/exploratory_unpaired_episodes",
+    "scope": "no weights, primary parser test, thresholds, or trained data changed"
+  },
+  "setup": "before fitting corrected finite-template sampling to record repeated rows and forbid exact legacy-template overlap; data manifest exposes unique counts",
+  "fresh_clone_fix": "After fitting, create checkpoints/v17 before saving; numerical training code and weights unchanged. Exact executed file preserved as reports/train_binding_executed.py.txt."
+}
