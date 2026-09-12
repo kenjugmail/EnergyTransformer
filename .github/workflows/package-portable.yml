@@ -1,0 +1,80 @@
+name: Package portable bounded models
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/package-portable.yml']
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Install CPU dependencies
+        run: |
+          python -m pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install numpy==2.2.6 pytest==8.3.5 safetensors==0.7.0
+      - name: Obtain existing private-release checkpoints without retraining
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test "$(gh api "repos/$GITHUB_REPOSITORY" --jq '.private')" = true
+          mkdir -p build checkpoints/v14
+          gh release download rebuilt-v14-34695580553 --repo "$GITHUB_REPOSITORY" --pattern 'EnergyTransformer_rebuilt-v14-34695580553.zip' --dir build
+          python - <<'PY'
+          import hashlib, zipfile
+          from pathlib import Path
+          p=Path('build/EnergyTransformer_rebuilt-v14-34695580553.zip')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='729666b0138f4693508deacb54d82b782906bf3228493675ee602de8b662ed00'
+          with zipfile.ZipFile(p) as z:
+              for seed in [11,22,33]:
+                  name=f'EnergyTransformer/checkpoints/v14/bridge_seed{seed}.pt'
+                  data=z.read(name)
+                  assert len(data)<2*1024*1024
+                  Path(f'checkpoints/v14/bridge_seed{seed}.pt').write_bytes(data)
+          PY
+      - name: Test and export unchanged tensors
+        run: |
+          set -o pipefail
+          python -m pytest -q tests | tee build/tests.log
+          python scripts/export_portable.py | tee build/export.log
+          python scripts/demo_durable.py | tee build/demo.log
+      - name: Package current source and portable models
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os,json,hashlib,zipfile
+          name='EnergyTransformer_portable-v16-'+os.environ['GITHUB_RUN_ID']+'.zip'
+          provenance={'source_commit':os.environ['GITHUB_SHA'],'run_id':os.environ['GITHUB_RUN_ID'],'origin':'Existing rebuilt-v14-34695580553 release; no new training','scope':'Current source and bounded checkpoints, NOT original historical v1-v15 archive'}
+          Path('build/PROVENANCE_v16.json').write_text(json.dumps(provenance,indent=2))
+          files=[]
+          for folder in ['energy_transformer','scripts','tests','portable','checkpoints/v14']:
+              files.extend(p for p in Path(folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc')
+          files.extend(Path(p) for p in ['README.md','ARCHITECTURE.md','MODEL_CARD.md','RIGHTS.md','STORAGE.md','requirements.txt','pyproject.toml','reports/V16_REPORT.md','build/tests.log','build/export.log','build/demo.log','build/PROVENANCE_v16.json'])
+          with zipfile.ZipFile(name,'w',zipfile.ZIP_DEFLATED) as z:
+              for p in sorted(set(files)):z.write(p,'EnergyTransformer/'+p.as_posix())
+          digest=hashlib.sha256(Path(name).read_bytes()).hexdigest()
+          Path(name+'.sha256').write_text(digest+'  '+name+'\n')
+          print(name,digest)
+          PY
+      - name: Upload and verify private prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$(gh api "repos/$GITHUB_REPOSITORY" --jq '.private')" = true
+          tag="portable-v16-$GITHUB_RUN_ID"
+          zip="EnergyTransformer_${tag}.zip"
+          gh release create "$tag" "$zip" "$zip.sha256" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --prerelease --latest=false --title "Portable bounded models v16" --notes "Durable reviewed edits, source, 3 unchanged bounded checkpoint conversions, tests and provenance. Not the original bulk historical archive; no language-quality improvement claimed."
+          mkdir -p build/verify
+          gh release download "$tag" --repo "$GITHUB_REPOSITORY" --pattern "$zip" --pattern "$zip.sha256" --dir build/verify
+          cmp "$zip" "build/verify/$zip"
+          cmp "$zip.sha256" "build/verify/$zip.sha256"
+          gh release edit "$tag" --repo "$GITHUB_REPOSITORY" --draft=false --latest=false
