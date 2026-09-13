@@ -1,0 +1,24 @@
+{
+  "decision": "NO_GO_FOR_SERIOUS_PRETRAINING",
+  "next_stage": "bounded language-interface integration experiment; specialist synthetic gate passed",
+  "checks": {
+    "specialist_primary_95pct": true,
+    "specialist_long_85pct": true,
+    "generic_backbone_recall_gate": false,
+    "layout_shift_85pct": false,
+    "fresh_natural_language_evaluation": false,
+    "target_gpu_acceptance": false,
+    "resource_matched_modern_backbone": false
+  },
+  "interpretation": "A 32-address categorical memory with training-only local semantic labels is not the unchanged general v19 backbone. Original thresholds were not lowered; specialized success does not clear generic gates.",
+  "observations": {
+    "all32": 1.0,
+    "capacity": 1.0,
+    "layout_shift": 0.1028645833333333,
+    "long": 1.0,
+    "long2048": 1.0,
+    "many_edits": 1.0,
+    "primary": 1.0
+  },
+  "automatic_spend_or_jobs_authorized": false
+}
