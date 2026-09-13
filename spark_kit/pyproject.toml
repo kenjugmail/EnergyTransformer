@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energy-spark-pilot"
+version = "23.0.0"
+description = "Bounded DGX Spark acceptance and pretraining pilot for explicit energy-state models"
+requires-python = ">=3.10"
+dependencies = ["torch", "numpy"]
+
+[tool.setuptools.packages.find]
+include = ["energy_spark*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

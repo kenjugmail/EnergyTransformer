@@ -1,0 +1,4 @@
+# CPU validation only. DO NOT install these over NVIDIA's container PyTorch.
+# The Spark container supplies torch/numpy; use its existing tested stack.
+pytest>=8
+numpy>=1.26

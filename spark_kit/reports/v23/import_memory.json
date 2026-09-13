@@ -1,0 +1,21 @@
+{
+  "runs": [
+    {
+      "mode": "old",
+      "python_peak_bytes": 137008532,
+      "seconds": 0.7139575749999949,
+      "identity": "03fae8110c284dc13f34fdb52ee0ac8bc01bab5c15f92f6bc214fd3ff64a8b6d",
+      "input_bytes": 67123986
+    },
+    {
+      "mode": "new",
+      "python_peak_bytes": 4313113,
+      "seconds": 0.39371113400000013,
+      "identity": "03fae8110c284dc13f34fdb52ee0ac8bc01bab5c15f92f6bc214fd3ff64a8b6d",
+      "input_bytes": 67123986
+    }
+  ],
+  "identical_manifests": true,
+  "measurement": "tracemalloc Python-managed peak during preparation, not total system RSS",
+  "independent_processes": true
+}
