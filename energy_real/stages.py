@@ -165,9 +165,6 @@ def run(args):
             if remaining<=0:
                 record['status']='budget_exhausted';atomic_json(existing,ledger);continue
             record.pop('reason',None);record['status']='running'
-            if previous_status=='pending_service':
-                record['attempt']=record.get('attempt',0)+1
-                record['completed_commands']=[]
             stage_out=args.out/name/f"attempt_{record.get('attempt',0)}";stage_out.mkdir(parents=True,exist_ok=True)
             for index,command in enumerate(commands(name,stage_out,remaining)):
                 if index in record['completed_commands']:continue
@@ -175,12 +172,19 @@ def run(args):
                     command=[*command,'--base-url',getattr(args,'base_url','http://127.0.0.1:8100')]
                     if getattr(args,'memory_selection',None):
                         command += ['--memory-selection',str(args.memory_selection)]
+                    if getattr(args,'artifact_root',None):
+                        command += ['--artifact-root',str(args.artifact_root)]
                 remaining=record['limit_s']-record['used_s']
                 if remaining<=0:record['status']='budget_exhausted';break
                 report_path=Path(command[command.index('--out')+1])
                 if report_path.exists():
-                    record.update(status='failed',reason=f'Refusing a pre-existing command output: {report_path}')
-                    break
+                    if name=='reasoning' and previous_status=='pending_service':
+                        saved=json.loads(report_path.read_text())
+                        command += ['--resume']
+                        command[command.index('--max-seconds')+1]=str(saved['max_seconds'])
+                    else:
+                        record.update(status='failed',reason=f'Refusing a pre-existing command output: {report_path}')
+                        break
                 start=time.perf_counter()
                 record['started_unix']=time.time();record['last_command']=command
                 atomic_json(existing,ledger)
@@ -231,6 +235,7 @@ if __name__=='__main__':
     p.add_argument('--stages',choices=list(LIMITS),nargs='+',default=['smoke','evaluation_profile'])
     p.add_argument('--base-url',default='http://127.0.0.1:8100')
     p.add_argument('--memory-selection',type=Path)
+    p.add_argument('--artifact-root',type=Path)
     p.add_argument('--prior-ledger',type=Path,action='append',default=[],help='Conservatively carry previous stage usage into a new source revision')
     p.add_argument('--wait-idle',action='store_true')
     p.add_argument('--max-wait-seconds',type=float,default=300)

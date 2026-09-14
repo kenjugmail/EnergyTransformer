@@ -272,3 +272,47 @@ The [v2 report](../reports/reasoning_v2/REPORT.md) records executed results and 
 candidate decision. The [initial repair](../reports/repair/REPORT.md) and
 [reliability pass](../reports/repair/POLISH.md) remain historical snapshots. Their
 source-specific ledger commands predate this revision.
+
+## Portable bundles and resumable evaluation
+
+Export the completed selection and its verified controller files into an ignored
+run directory. Historical selections and checkpoints remain unchanged:
+
+```bash
+.venv/bin/python -m energy_real.artifacts \
+  --selection reports/reasoning_v2/selection.json --out runs/portable_v2
+
+.venv/bin/python -m energy_real.reasoning evaluate \
+  --benchmark v2 --question-mode natural --gold-evidence --score \
+  --memory-selection runs/portable_v2/selection.json --out runs/portable_reasoning.json
+```
+
+The whole bundle may move to another directory or machine. Paths inside its
+selection are relative, and every controller is verified against its frozen hash.
+If metadata and binaries are stored separately, `--artifact-root /path/to/bundle`
+resolves relative controller paths there. Keep `datasets.json` beside the selection.
+Legacy absolute selections remain supported; export them before relocating.
+
+Retry an interrupted evaluation with the identical command plus `--resume`.
+Successful interpretations, edit proposals, generation and scoring calls are
+persisted with episode/arm identity. Already completed answers are retained.
+Source, dataset, checkpoint, declared model identity, decoding, scoring mode and
+total time ceiling must match; elapsed time accumulates across attempts. A changed
+model or configuration requires a new output. The stage runner retains completed
+commands after service failures and resumes its unfinished reasoning command.
+
+Build a new report from explicit inputs, without rewriting historical reports:
+
+```bash
+.venv/bin/python -m energy_real.reporting \
+  --study runs/reasoning_v2_final_stages/controllers/attempt_0/study \
+  --ledger runs/reasoning_v2_final_stages/stages.json \
+  --test-log real=reports/reasoning_v2/tests_real.log \
+  --test-log legacy=reports/reasoning_v2/tests_legacy.log \
+  --test-log spark=reports/reasoning_v2/tests_spark.log \
+  --out runs/rebuilt_v2_report
+```
+
+Report status and test totals come from those inputs. Supplying historical test
+logs documents their evidence; it does not certify a different source revision.
+Bundles, datasets, checkpoints and raw service traces stay outside source commits.

@@ -11,6 +11,7 @@ from .episodes import generate,oracle
 from .episodic import FactEdit,FactStore,EnergyRetriever,parse_query
 from .service import LocalModel,ServiceUnavailable
 from .runtime import atomic_json,source_identity
+from .resume import RecordedService,model_identity
 
 ARMS=('recent_context','exact_memory','energy_memory')
 
@@ -87,7 +88,10 @@ def summarize(rows):
 
 
 def _compare(args,service=None):
-    if args.out.exists():raise FileExistsError(args.out)
+    resuming=getattr(args,'resume',False)
+    if args.out.exists() and not resuming:raise FileExistsError(args.out)
+    if resuming and not args.out.is_file():raise FileNotFoundError(args.out)
+    previous=json.loads(args.out.read_text()) if resuming else None
     for name in ('per_family','recent_events'):
         if type(getattr(args,name)) is not int or getattr(args,name) <= 0:
             raise ValueError(f'{name} must be a positive integer')
@@ -102,7 +106,7 @@ def _compare(args,service=None):
                    'score_threshold':args.score_threshold,'margin_threshold':args.margin_threshold,'controller':args.controller}
     if args.memory_selection:
         from .recall_study import selected_memory
-        memory_config=selected_memory(args.memory_selection,args.energy_kind)
+        memory_config=selected_memory(args.memory_selection,args.energy_kind,artifact_root=getattr(args,'artifact_root',None))
     if (type(memory_config['dimension']) is not int or memory_config['dimension']<2
             or type(memory_config['capacity']) is not int or memory_config['capacity']<1):
         raise ValueError('Positive memory dimensions and capacity required')
@@ -119,25 +123,42 @@ def _compare(args,service=None):
     if args.memory_selection:
         from .runtime import sha256
         metadata['memory_selection_sha256']=sha256(args.memory_selection)
-    started=time.perf_counter()
-    service=BudgetedService(service or LocalModel(args.base_url,timeout=args.timeout),started+args.max_seconds)
-    atomic_json({**metadata,'status':'in_progress','rows':[]},args.out)
-    try:health=service.health()
-    except ServiceUnavailable as exc:
-        result={'status':'pending_service','reason':str(exc),'base_url':args.base_url,'rows':[],
-                **metadata}
-        atomic_json(result,args.out);return result
-    rows=[];status='completed'
-    atomic_json({**metadata,'status':'in_progress','health':health,'rows':rows},args.out)
     if args.benchmark=='v2':
         from .diagnostics import generate as shared_generate,manifest
         episodes=shared_generate('test',args.per_family,args.seed)
         metadata['episode_manifest']=manifest(episodes)
-    else:episodes=generate(args.seed,args.per_family,'test')
+    else:
+        import hashlib
+        episodes=generate(args.seed,args.per_family,'test')
+        metadata['episode_manifest']={'sha256':hashlib.sha256(json.dumps([e.payload() for e in episodes],sort_keys=True).encode()).hexdigest()}
+    metadata['score']=args.score
+    metadata['max_seconds']=args.max_seconds
+    if previous:
+        for key,value in metadata.items():
+            if previous.get(key)!=json.loads(json.dumps(value)):
+                raise ValueError(f'Resume identity mismatch: {key}')
+    started=time.perf_counter()
+    used=previous.get('elapsed_s',0.) if previous else 0.
+    raw_service=BudgetedService(service or LocalModel(args.base_url,timeout=args.timeout),started+args.max_seconds-used)
+    state=previous or {**metadata,'rows':[],'service_calls':{},'elapsed_s':0.}
+    state['status']='in_progress'
+    args._resume_state=state
+    args._resume_started=started
+    args._resume_used=used
+    health=raw_service.health()
+    identity=model_identity(health)
+    if previous and previous.get('model_identity') is not None and previous['model_identity']!=identity:
+        raise ValueError('Resume identity mismatch: model identity')
+    state.update(health=health,model_identity=identity)
+    rows=state['rows'];completed={(r['episode_id'],r['arm']):r for r in rows}
+    metadata.update(health=health,model_identity=identity,service_calls=state['service_calls'])
+    service=RecordedService(raw_service,state,args.out,started,used)
+    status='completed'
+    atomic_json(state,args.out)
     arms=(*ARMS,'gold_evidence_diagnostic') if args.gold_evidence else ARMS
     with tempfile.TemporaryDirectory(prefix='energy-reasoning-') as directory:
         for episode_index,episode in enumerate(episodes):
-            if time.perf_counter()-started>=args.max_seconds:
+            if time.perf_counter()-started+used>=args.max_seconds:
                 status='budget_exhausted';break
             folder=Path(directory)/episode.id;folder.mkdir()
             gold=FactStore(folder/'gold.sqlite')
@@ -145,10 +166,11 @@ def _compare(args,service=None):
             energy=FactStore(folder/'energy.sqlite',service=service,backend=args.energy_kind,**memory_config)
             interpretation_errors=[]
             for index,edit in enumerate(episode.edits):
+                service.scope=f'{episode.id}/edit/{index}'
                 gold.apply([edit],expected_revision=gold.revision,request_id=str(index),authorized=True)
                 proposed=[edit]
                 if args.input_mode=='model_proposals':
-                    if time.perf_counter()-started>=args.max_seconds:
+                    if time.perf_counter()-started+used>=args.max_seconds:
                         status='budget_exhausted';break
                     try:
                         proposal=exact.propose(edit.source_text)
@@ -170,6 +192,7 @@ def _compare(args,service=None):
             active_signatures={signature(f) for f in active}
             recent=history[-args.recent_events:]
             question=episode.natural_question if args.question_mode=='natural' else episode.question
+            service.scope=f'{episode.id}/query'
             query_error=None;query_started=time.perf_counter()
             try:
                 if args.question_mode=='natural':
@@ -182,7 +205,7 @@ def _compare(args,service=None):
                 else:parsed_query=episode.query
             except (ValueError,TypeError,KeyError) as exc:
                 parsed_query=None;query_error=str(exc)
-            query_interpretation_s=time.perf_counter()-query_started
+            query_interpretation_s=service.last_elapsed_s if args.question_mode=='natural' else time.perf_counter()-query_started
             query_correct=parsed_query==episode.query
             retrieved={};retrieval_times={}
             for arm,store in [('exact_memory',exact),('energy_memory',energy)]:
@@ -205,7 +228,11 @@ def _compare(args,service=None):
             options=options[offset:]+options[:offset]
             offset=episode_index%len(arms)
             for arm in arms[offset:]+arms[:offset]:
-                if time.perf_counter()-started>=args.max_seconds:status='budget_exhausted';break
+                if time.perf_counter()-started+used>=args.max_seconds:status='budget_exhausted';break
+                service.scope=f'{episode.id}/{arm}'
+                existing=completed.get((episode.id,arm))
+                if existing and (not args.score or existing.get('multiple_choice',{}).get('status')=='completed'):
+                    continue
                 evidence=evidence_by_arm[arm]
                 messages=prompt(question,evidence)
                 context_bytes=len(json.dumps(messages).encode())
@@ -221,7 +248,7 @@ def _compare(args,service=None):
                     if any(not isinstance(i,str) for i in ids):raise ValueError('Invalid support IDs')
                 except (ValueError,TypeError,KeyError):
                     answer={'answer':None,'support_fact_ids':[]};valid=False
-                chat_seconds=time.perf_counter()-t0
+                chat_seconds=service.last_elapsed_s
                 supplied={f['fact_id']:f for f in evidence}
                 selected=[supplied[i] for i in answer['support_fact_ids'] if i in supplied]
                 if arm=='recent_context' and args.input_mode=='model_proposals':
@@ -254,23 +281,27 @@ def _compare(args,service=None):
                                  'fact_retrieval':retrieval_bad,'abstention':valid and ((answer['answer'] is None)!=(expected is None)),
                                  'answer_composition':composition_bad}}
                 if args.score:row['multiple_choice']={'status':'pending'}
-                rows.append(row)
-                atomic_json({**metadata,'status':'in_progress','health':health,'rows':rows},args.out)
+                if existing is not None:
+                    row=existing
+                else:
+                    rows.append(row)
+                state.update(status='in_progress',rows=rows)
+                atomic_json(state,args.out)
                 if args.score:
                     score_prompt=json.dumps({'question':question,'records':evidence,
                         'instruction':'Use current factual records only; ignore hypothetical records. UNKNOWN if evidence is missing.'})
-                    if time.perf_counter()-started>=args.max_seconds:
+                    if time.perf_counter()-started+used>=args.max_seconds:
                         status='budget_exhausted';break
                     score_started=time.perf_counter()
                     scored=service.score(score_prompt,options)
                     try:choice=score_answer(scored['answer'],options)
                     except ValueError:choice=None
-                    row['multiple_choice']={'status':'completed','latency_s':time.perf_counter()-score_started,'options':options,'response':scored,'answer':choice,
+                    row['multiple_choice']={'status':'completed','latency_s':service.last_elapsed_s,'options':options,'response':scored,'answer':choice,
                                            'correct':choice==(expected if expected is not None else 'UNKNOWN')}
-                atomic_json({**metadata,'status':'in_progress','health':health,'rows':rows},args.out)
+                atomic_json(state,args.out)
     summary=summarize(rows)
     result={**metadata,'status':status,'health':health,
-            'summary':summary,'rows':rows,'elapsed_s':time.perf_counter()-started,
+            'summary':summary,'rows':rows,'elapsed_s':used+time.perf_counter()-started,
             'limitations':['Model proposals applied only by an explicitly authorized disposable evaluation harness.',
                           'Generation and multiple-choice results are reported separately.',
                           'No hidden substitution of exact evidence into the energy arm.']}
@@ -278,15 +309,26 @@ def _compare(args,service=None):
 
 
 def compare(args,service=None):
+    # Final accounting also covers health failures and interrupted requests.
+    for name in ('_resume_state','_resume_started','_resume_used'):
+        if hasattr(args,name):delattr(args,name)
+    result=None
     try:
-        return _compare(args,service)
+        result=_compare(args,service)
     except (ServiceUnavailable,ReasoningBudgetExpired) as exc:
-        previous=json.loads(args.out.read_text()) if args.out.is_file() else {'rows':[]}
-        previous.update(status='budget_exhausted' if isinstance(exc,ReasoningBudgetExpired) else 'pending_service',
-                        reason=str(exc),source_sha256=source_identity(),
-                        summary=summarize(previous['rows']))
-        atomic_json(previous,args.out)
-        return previous
+        result=getattr(args,'_resume_state',None)
+        if result is None:raise
+        result.update(status='budget_exhausted' if isinstance(exc,ReasoningBudgetExpired) else 'pending_service',
+                      reason=str(exc),summary=summarize(result['rows']))
+    except KeyboardInterrupt:
+        result=getattr(args,'_resume_state',None)
+        if result is not None:result['status']='interrupted'
+        raise
+    finally:
+        if result is not None:
+            result['elapsed_s']=args._resume_used+time.perf_counter()-args._resume_started
+            atomic_json(result,args.out)
+    return json.loads(args.out.read_text())
 
 
 def demo(out):
@@ -321,6 +363,8 @@ def parser():
     p.add_argument('--input-mode',choices=['oracle_structured','model_proposals'],default='oracle_structured')
     p.add_argument('--energy-kind',choices=['diagonal','precision','delta','preconditioned_delta','projected'],default='precision')
     p.add_argument('--controller',type=Path)
+    p.add_argument('--resume',action='store_true')
+    p.add_argument('--artifact-root',type=Path)
     p.add_argument('--memory-selection',type=Path)
     p.add_argument('--dimension',type=int,default=16)
     p.add_argument('--capacity',type=int,default=256)

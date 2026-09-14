@@ -15,6 +15,7 @@ import re
 import sqlite3
 import torch
 from energy_transformer.geometric_memory import EditMemory
+from .retrieval import rank_candidates, accepts
 
 
 def canonical(x):
@@ -121,22 +122,18 @@ class EnergyRetriever:
     def read(self,subject,relation):
         key=key_vector(subject,relation,self.dimension)[None,None]
         scores=self.model.read(key,self.state)[0,0]
-        finite=bool(torch.isfinite(scores).all())
-        candidates=sorted(self.records,key=lambda i:float(scores[i]),reverse=True)[:2] if finite else []
-        index=candidates[0] if candidates else None
-        score=float(scores[index]) if index is not None else None
-        runner_up=float(scores[candidates[1]]) if len(candidates)>1 else 0.
-        margin=score-runner_up if score is not None else None
-        accepted=score is not None and score>self.score_threshold and margin>=self.margin_threshold
+        row=rank_candidates(scores,self.records)
+        finite=row['finite'];score=row['score'];margin=row['margin'];candidates=row['candidates']
+        accepted=accepts(row,self.score_threshold,self.margin_threshold)
         self.last_diagnostic={'subject':subject,'relation':relation,'score':score,'margin':margin,
                               'score_threshold':self.score_threshold,'margin_threshold':self.margin_threshold,
                               'accepted':accepted,'finite':finite,
-                              'candidate_fact_ids':[self.records[i].get('fact_id') for i in candidates],
-                              'selected_fact_id':self.records[index].get('fact_id') if accepted else None}
+                              'candidate_fact_ids':[r.get('fact_id') for r in candidates],
+                              'selected_fact_id':candidates[0].get('fact_id') if accepted else None}
         if not accepted:
             return None
         # Do not check the selected record against the current exact state.
-        return {**self.records[index], 'retrieval_score':float(scores[index])}
+        return {**candidates[0], 'retrieval_score':score}
 
     @property
     def state_bytes(self):

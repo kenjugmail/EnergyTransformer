@@ -24,6 +24,7 @@ from . import diagnostics as data
 from .episodes import oracle
 from .episodic import EnergyRetriever, FactStore, Query, canonical, key_vector
 from .memory_eval import paired_interval
+from .retrieval import rank_candidates, accepts
 from .runtime import atomic_checkpoint, atomic_json, sha256, source_identity
 
 KINDS = ('precision','preconditioned_delta')
@@ -113,14 +114,7 @@ class Readout:
         if key not in self.cache:
             query=key_vector(subject,relation,self.model.dimension)[None,None]
             scores=self.model.read(query,self.state)[0,0]
-            indices=list(self.records)
-            if not indices or not torch.isfinite(scores).all():
-                value={'score':None,'margin':None,'candidates':[],'finite':bool(torch.isfinite(scores).all())}
-            else:
-                values,order=scores[indices].topk(min(2,len(indices)))
-                chosen=[indices[int(i)] for i in order]
-                value={'score':float(values[0]),'margin':float(values[0]-(values[1] if len(values)>1 else 0.)),
-                       'candidates':[self.records[i] for i in chosen],'finite':True}
+            value=rank_candidates(scores,self.records)
             self.cache[key]=value
         return self.cache[key]
 
@@ -129,7 +123,7 @@ class Readout:
         score_limit,margin_limit=threshold
         for relation in self.episode.query.relations:
             row=self.candidates(subject,relation)
-            accepted=row['score'] is not None and row['score']>score_limit and row['margin']>=margin_limit
+            accepted=accepts(row,score_limit,margin_limit)
             trace.append({'hop':len(trace)+1,'subject':subject,'relation':relation,
                           'score':row['score'],'margin':row['margin'],'accepted':accepted,'finite':row['finite'],
                           'candidate_fact_ids':[f['fact_id'] for f in row['candidates']],
@@ -356,7 +350,7 @@ def evaluate_baseline(kind,episodes,deadline):
             'summary':summary(rows),'rows':rows,'label':'Original configuration on the fresh v2 test set; untrained.'}
 
 
-def selected_memory(path,kind='precision',seed=11):
+def selected_memory(path,kind='precision',seed=11,artifact_root=None):
     """Resolve only a frozen, hashed validation selection for practical evaluation."""
     path=Path(path)
     frozen=json.loads(path.read_text())
@@ -366,9 +360,9 @@ def selected_memory(path,kind='precision',seed=11):
     selected=[r for r in frozen['selected'] if r['kind']==kind and r['seed']==seed]
     if len(selected)!=1:raise ValueError('Selected memory kind/seed is missing or ambiguous')
     record=selected[0]
-    if sha256(record['controller'])!=record['controller_sha256']:
-        raise ValueError('Selected controller checksum changed')
-    return {'controller':Path(record['controller']),'dimension':record['dimension'],'capacity':record['capacity'],
+    from .artifacts import resolve_artifact
+    controller=resolve_artifact(record['controller'],record['controller_sha256'],path,artifact_root)
+    return {'controller':controller,'dimension':record['dimension'],'capacity':record['capacity'],
             'prior':record['prior'],**{k:record['validation']['selected'][k] for k in ('score_threshold','margin_threshold')}}
 
 
