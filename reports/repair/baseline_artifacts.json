@@ -1,0 +1,110 @@
+{
+  "source_commit": "0022a56c5ace7cac86bbe3e59941db34415c962d",
+  "artifacts": [
+    {
+      "path": "FINDINGS.md",
+      "bytes": 7153,
+      "sha256": "70ffb3a6a05a70e332bca22583a31813cd49d6a0caf468eec2b6634df348f25a"
+    },
+    {
+      "path": "data/enwik8",
+      "bytes": 100000000,
+      "sha256": "2b49720ec4d78c3c9fabaee6e4179a5e997302b3a70029f30f2d582218c024a8"
+    },
+    {
+      "path": "data/enwik8.zip",
+      "bytes": 36445475,
+      "sha256": "547994d9980ebed1288380d652999f38a14fe291a6247c157c3d33d4932534bc"
+    },
+    {
+      "path": "energy_real/README.md",
+      "bytes": 4108,
+      "sha256": "69f10298b42a13712832ec82be0fe449c67b24ac350a933a341c4b12c7344e5c"
+    },
+    {
+      "path": "energy_real/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "energy_real/bench.py",
+      "bytes": 4178,
+      "sha256": "3235de7572c4cc9f19390caa8b7fcb716925c00b6eeb820278b97dcab932efa2"
+    },
+    {
+      "path": "energy_real/data.py",
+      "bytes": 4048,
+      "sha256": "837562fbb15a95cffcd6655715e0314a2665f8209827956c5ff663a1e9b6669f"
+    },
+    {
+      "path": "energy_real/generate.py",
+      "bytes": 2984,
+      "sha256": "fd441606dbbc5e44a8bdd2b3de24c772670f3daa601bfa8a8620636f4a3a779d"
+    },
+    {
+      "path": "energy_real/kernel.py",
+      "bytes": 8018,
+      "sha256": "25db945a1c07720d840008a4d16fa39aee01a40dd86d505a95a1b13c8c95d673"
+    },
+    {
+      "path": "energy_real/model.py",
+      "bytes": 9439,
+      "sha256": "66c563feae62a397c7127ad69ff928d3fde954b173ef3507dbc42b63d39fdb63"
+    },
+    {
+      "path": "energy_real/train.py",
+      "bytes": 8297,
+      "sha256": "46b20c7749fb2c1775ebc6981d31966ea6219f10ad3abfd2f260893e81b7b44c"
+    },
+    {
+      "path": "runs/energy.log",
+      "bytes": 16175,
+      "sha256": "5f5ae2d3a70cbc111c20b1f5c6d4a23a71b55a046ce326c16a03b6ec4fa3c909"
+    },
+    {
+      "path": "runs/enwik8_energy_10m/best.pt",
+      "bytes": 42456447,
+      "sha256": "0bd5ef6b8e956ba97aa7fc7d4a1841c349c46bc72b36568c3a592a2304cfdba6"
+    },
+    {
+      "path": "runs/enwik8_energy_10m/run.json",
+      "bytes": 509,
+      "sha256": "bef88022306a0de396d47ee38fd52013295d9da3cce0e01767d2beb52eb149ca"
+    },
+    {
+      "path": "runs/enwik8_energy_10m/steps.jsonl",
+      "bytes": 920459,
+      "sha256": "64e8d1795ef8bb74c7d53ffe25fc239d549dcfb2ad63c8e3f79094bf79334f7f"
+    },
+    {
+      "path": "runs/enwik8_softmax_10m/best.pt",
+      "bytes": 42454315,
+      "sha256": "3bfe951277fd3d1f7568047b18bc4743acf6901f14b4849066fb2aea6de139ad"
+    },
+    {
+      "path": "runs/enwik8_softmax_10m/result.json",
+      "bytes": 148,
+      "sha256": "3a982a3240c979c691f5cc3770e832aadb79c860f4c43c216b74c48ce7e15363"
+    },
+    {
+      "path": "runs/enwik8_softmax_10m/run.json",
+      "bytes": 510,
+      "sha256": "4ca310a0e44b6987af422d8e128cbd2ad7ea0e2e03508edcd08870a0663a3bcd"
+    },
+    {
+      "path": "runs/enwik8_softmax_10m/steps.jsonl",
+      "bytes": 1904314,
+      "sha256": "cdc399a3a3b1976036ea54410f566de036a9d127d8ae704ae7d0b8fd6a8c0b6a"
+    },
+    {
+      "path": "runs/softmax.log",
+      "bytes": 33513,
+      "sha256": "047d229a84e9bab65c6a339fe9d3e8973be64e2c66bac1c8cf8d922c1537a042"
+    },
+    {
+      "path": "tests_real/test_kernel.py",
+      "bytes": 10012,
+      "sha256": "37a5571c613668d1f233ec907806444ad4d542ab3ce624f768712207fa538b88"
+    }
+  ]
+}

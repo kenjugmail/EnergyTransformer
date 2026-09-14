@@ -1,0 +1,187 @@
+{
+  "preserved_original_data_and_runs": [
+    "data/enwik8",
+    "data/enwik8.zip",
+    "runs/energy.log",
+    "runs/enwik8_energy_10m/best.pt",
+    "runs/enwik8_energy_10m/run.json",
+    "runs/enwik8_energy_10m/steps.jsonl",
+    "runs/enwik8_softmax_10m/best.pt",
+    "runs/enwik8_softmax_10m/result.json",
+    "runs/enwik8_softmax_10m/run.json",
+    "runs/enwik8_softmax_10m/steps.jsonl",
+    "runs/softmax.log"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4111,
+      "sha256": "f2e4ebb9924934bc67adb6f1702ecef831ab792c5d0c39f9db5847b3d616cf67"
+    },
+    {
+      "path": "energy_real/README.md",
+      "bytes": 9330,
+      "sha256": "0cd01df9ad9ea47ed054dac684254dc9b881c779da11adbfb8c6d8fb6ed58c63"
+    },
+    {
+      "path": "energy_real/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "energy_real/bench.py",
+      "bytes": 9226,
+      "sha256": "63b770a66cb9420048cddb666af3dfff2ecb45bb05c646dd04057665dbc0559a"
+    },
+    {
+      "path": "energy_real/data.py",
+      "bytes": 4642,
+      "sha256": "b7f5cbe3705de4a82c45baf564f456ca8540f59c312a6f6aa5c71face17199cd"
+    },
+    {
+      "path": "energy_real/device.py",
+      "bytes": 1635,
+      "sha256": "25c72e74c3abb5c941ddd6ea290165adf9c956203cc22a97c823b0cac951fbca"
+    },
+    {
+      "path": "energy_real/device_smoke.py",
+      "bytes": 3564,
+      "sha256": "3d42168739d2c978592b0dc346b5e73668c62e391785fbb21311e1aeca5185e4"
+    },
+    {
+      "path": "energy_real/episodes.py",
+      "bytes": 3502,
+      "sha256": "2daff2613bb9691fe5168a1f8a5a8f6a2832b7fb027e90a903de26a2979568c4"
+    },
+    {
+      "path": "energy_real/episodic.py",
+      "bytes": 11971,
+      "sha256": "f7b91987c2a21b691933ec5f739228aa47edc7c8e7dfad829d44e72dac8bf6d6"
+    },
+    {
+      "path": "energy_real/evaluation.py",
+      "bytes": 6288,
+      "sha256": "ae3101d60d46fd244125571ccfc28caa734cc4e9ab02b817c3cb460acc2799d9"
+    },
+    {
+      "path": "energy_real/generate.py",
+      "bytes": 194,
+      "sha256": "99d4d08cd25e8d7519e2156e0bcfe8a2fa8fa243657e7420c5c41c7fea4ad5d5"
+    },
+    {
+      "path": "energy_real/kernel.py",
+      "bytes": 7870,
+      "sha256": "a2a1aa286b01a62e0aceec3351a7ac14a831f3a58555b4eba9c3aacc21ea9380"
+    },
+    {
+      "path": "energy_real/memory_eval.py",
+      "bytes": 5559,
+      "sha256": "424a81165a09225ade3dce389eb86fa14fb0fda76582ce70aec3109b896efb68"
+    },
+    {
+      "path": "energy_real/memory_research.py",
+      "bytes": 9636,
+      "sha256": "05682a1ab27c7208ec60f90f5d668f104252df76206b79c7d406064519a8a26c"
+    },
+    {
+      "path": "energy_real/model.py",
+      "bytes": 12194,
+      "sha256": "f9dad29570b364fe4a03c30991683c02ff92694ffeb2cc47877b87501047a3ed"
+    },
+    {
+      "path": "energy_real/reasoning.py",
+      "bytes": 13604,
+      "sha256": "52dfceba889df82b1965df80e6aa511ef12aece64c72736bc0033733d477c9b3"
+    },
+    {
+      "path": "energy_real/runtime.py",
+      "bytes": 3605,
+      "sha256": "161bb1096f155aed06f2bc3b56d558145fb6b5e203e0855b539ca9048d5247ae"
+    },
+    {
+      "path": "energy_real/service.py",
+      "bytes": 3226,
+      "sha256": "121b7b846826c9e8f8c582d5bab2c89c59a07abc6db97dd4a65b5f6d2a6118ce"
+    },
+    {
+      "path": "energy_real/stages.py",
+      "bytes": 11283,
+      "sha256": "55dbe3cadea62356cb740cd89c1e2d17f8bd51e37d2c35b68b2db030b9fa62c6"
+    },
+    {
+      "path": "energy_real/train.py",
+      "bytes": 16533,
+      "sha256": "094b34b4c2147f5308c8306c6041a4a696c117a348fd75dcd95bffef644802db"
+    },
+    {
+      "path": "reports/repair/POLISH.md",
+      "bytes": 4135,
+      "sha256": "8aec8ed401c5000414808948d6626ebc32696e0d6047d9dd60a830ea2894072a"
+    },
+    {
+      "path": "reports/repair/polish_cpu_smoke.json",
+      "bytes": 1196,
+      "sha256": "21562d7961ad66f8a5d09773095a615460274641389ee3e2e3817944b4a6c0eb"
+    },
+    {
+      "path": "reports/repair/polish_device_stages.json",
+      "bytes": 1108,
+      "sha256": "f43dd8672c8a923b28c38a28fa2f931f7314cbe1ad9cc48fec98720a40789298"
+    },
+    {
+      "path": "reports/repair/polish_targeted.log",
+      "bytes": 100,
+      "sha256": "25dd8309ca807aac7006ed471eae60f9148e69f8c4b4757ddf785390e722ea8a"
+    },
+    {
+      "path": "reports/repair/polish_tests_root.log",
+      "bytes": 273,
+      "sha256": "30e98022ecaa8f639894000fccb3e241243f26158cd4df81fbca49626b9e8110"
+    },
+    {
+      "path": "reports/repair/polish_tests_spark.log",
+      "bytes": 191,
+      "sha256": "8101a805432ef78130908ea9be54958641c65bfacbf1d49ff2db30ae5f957b27"
+    },
+    {
+      "path": "runs/polish_source.tar.gz",
+      "bytes": 316288,
+      "sha256": "56ded33002e4c98c1adef08a153260780677e5068aca37c4a4e8130ea5c1b80c"
+    },
+    {
+      "path": "tests_real/test_experiments.py",
+      "bytes": 3846,
+      "sha256": "803a055b0022f4db5525c8c69309e4f49a2b1919261e340f1f798fdb88552cdd"
+    },
+    {
+      "path": "tests_real/test_kernel.py",
+      "bytes": 10014,
+      "sha256": "e5530318c594b00a16aff9203ecfeddf174c230bca43e6af61feebfbe5b1a51f"
+    },
+    {
+      "path": "tests_real/test_memory.py",
+      "bytes": 3807,
+      "sha256": "3e57be586758e7ea5f513a6875270b298df790e52b7463852df592d5a7d779c8"
+    },
+    {
+      "path": "tests_real/test_repairs.py",
+      "bytes": 3140,
+      "sha256": "be434ea6dd4cdd846f6ca8aacfe2cffbbedb8869985bed7a4161e105ff3ef0b6"
+    },
+    {
+      "path": "tests_real/test_service.py",
+      "bytes": 5733,
+      "sha256": "0486393cc3c410d8563d6dd6435ee2a82fd4904fe1545fbc353aca8c7443e598"
+    },
+    {
+      "path": "tests_real/test_stages.py",
+      "bytes": 6717,
+      "sha256": "77dec7e4de3197ea256e3d16e3fa70814dc0e20a425f2f42d2f5b05dcfaa6b86"
+    },
+    {
+      "path": "tests_real/test_training.py",
+      "bytes": 7633,
+      "sha256": "95cf00c30d0a5627a7f769272203b1aaafdb73db2f6791605254e2ea528c768f"
+    }
+  ]
+}

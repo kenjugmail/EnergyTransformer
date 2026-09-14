@@ -1,0 +1,8 @@
+{
+  "status": "pending_service",
+  "reason": "Local model service unavailable: <urlopen error [Errno 111] Connection refused>",
+  "base_url": "http://127.0.0.1:8100",
+  "rows": [],
+  "source_sha256": "e033c1e524014e5a35070ac33230a08fb318818a23664fd033734f8d834617cd",
+  "input_mode": "oracle_structured"
+}

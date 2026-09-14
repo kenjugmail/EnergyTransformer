@@ -1,0 +1,55 @@
+{
+  "source_sha256": "01d2f74d3036096ed9d5260efb3b6965c1a43568bebd5318b7654da321d03772",
+  "stages": {
+    "smoke": {
+      "limit_s": 1800,
+      "used_s": 0.0,
+      "completed_commands": [],
+      "inherited_used_s": 0.0,
+      "status": "pending_gpu",
+      "reason": "GPU occupied; leave existing workloads running: [{'pid': 1966552, 'name': '/home/kt/Documents/llm-stack/venv-gpu/bin/python'}]"
+    },
+    "evaluation_profile": {
+      "limit_s": 5400,
+      "used_s": 0.0,
+      "completed_commands": [],
+      "inherited_used_s": 0.0,
+      "status": "pending_gpu",
+      "reason": "GPU occupied; leave existing workloads running: [{'pid': 1966552, 'name': '/home/kt/Documents/llm-stack/venv-gpu/bin/python'}]"
+    },
+    "reasoning": {
+      "limit_s": 7200,
+      "used_s": 0.0,
+      "completed_commands": [],
+      "inherited_used_s": 0.0,
+      "status": "pending_service",
+      "reason": "Local model service unavailable: <urlopen error [Errno 111] Connection refused>"
+    },
+    "controllers": {
+      "limit_s": 14400,
+      "used_s": 476.3100481989677,
+      "completed_commands": [
+        0
+      ],
+      "inherited_used_s": 236.58906705398113,
+      "status": "completed",
+      "last_command": [
+        "/home/kt/Documents/EnergyTransformer/.venv/bin/python",
+        "-m",
+        "energy_real.recall_study",
+        "--out",
+        "runs/reasoning_v2_final_stages/controllers/attempt_0/study",
+        "--steps",
+        "500",
+        "--max-seconds",
+        "14163.410932946019"
+      ]
+    }
+  },
+  "prior_ledgers": [
+    {
+      "path": "/home/kt/Documents/EnergyTransformer/runs/reasoning_v2_stages/stages.json",
+      "sha256": "f9f43cdf4186bfd86be713e9fdfc5e6d9d73eb1b99397b3f125b5bc26253c80f"
+    }
+  ]
+}

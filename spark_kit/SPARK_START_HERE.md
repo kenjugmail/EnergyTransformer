@@ -15,15 +15,17 @@ bash spark/run.sh doctor
 ```
 
 From a Git checkout, enter `EnergyTransformer/spark_kit` instead. A source-only
-clone lacks the model binary; install the hash-verified original from your downloaded
-standalone kit before testing:
+clone can run numerical acceptance using a labelled, seeded random fixture. To
+sample or continue the historical pretrained model, install its hash-verified binary:
 
 ```bash
 python -m energy_spark.install_checkpoint /path/to/EnergyTransformer_v23_Spark_Kit.zip
 ```
 
 `doctor` is read-only and needs only Python's standard library. It reports missing
-Arm64, Docker, driver, or checkpoint prerequisites without changing the machine.
+Arm64, Docker and driver prerequisites without changing the machine. Missing
+historical artifacts are reported separately; `doctor --require-original` also
+requires the original checkpoint.
 
 ## 2. Run actual device acceptance
 
@@ -86,7 +88,17 @@ scratch disk while writing shards. No data are downloaded or uploaded.
 
 ## 5. Start the capped continuation
 
+Continuation requires acceptance that explicitly verifies the installed original
+checkpoint, unlike from-scratch numerical acceptance:
+
 ```bash
+bash spark/run.sh accept --verify-original --out /runs/acceptance-original
+```
+
+Then use that receipt:
+
+```bash
+ENERGY_ACCEPTANCE=/runs/acceptance-original/acceptance.json \
 bash spark/run.sh train \
   --config /workspace/configs/v22/continuation_973k.json \
   --data /data/corpus --out /runs/pilot-973k

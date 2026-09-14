@@ -4,3 +4,7 @@ __pycache__/
 .venv/
 .env
 *.tmp
+/data/
+/runs/
+/checkpoints/
+*.egg-info/

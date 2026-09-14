@@ -1,0 +1,26 @@
+{
+  "source_sha256": "a0b42c257e881942fbbba8b8136a3dfdfeedb3cd778ae1801bc446aea3271240",
+  "stages": {
+    "smoke": {
+      "limit_s": 1800,
+      "used_s": 0.0,
+      "completed_commands": [],
+      "status": "pending_gpu",
+      "reason": "GPU occupied; leave existing workloads running: [{'pid': 1422605, 'name': '/home/kt/Documents/llm-stack/venv-gpu/bin/python'}, {'pid': 1725487, 'name': '/home/kt/Documents/AegisProtocol/.dream-loop/acceptance/aegis-player.bin'}]"
+    },
+    "evaluation_profile": {
+      "limit_s": 5400,
+      "used_s": 0.0,
+      "completed_commands": [],
+      "status": "pending_gpu",
+      "reason": "GPU occupied; leave existing workloads running: [{'pid': 1422605, 'name': '/home/kt/Documents/llm-stack/venv-gpu/bin/python'}, {'pid': 1725487, 'name': '/home/kt/Documents/AegisProtocol/.dream-loop/acceptance/aegis-player.bin'}]"
+    },
+    "reasoning": {
+      "limit_s": 7200,
+      "used_s": 0.0,
+      "completed_commands": [],
+      "status": "pending_service",
+      "reason": "Local model service unavailable: <urlopen error [Errno 111] Connection refused>"
+    }
+  }
+}

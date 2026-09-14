@@ -39,8 +39,10 @@ def test_inherited_parity(kind,reset):
     for la,lb in zip(sa,sb):
         for ta,tb in zip(la,lb):torch.testing.assert_close(ta,tb,atol=2e-6,rtol=2e-5)
 
+@pytest.mark.integration
+@pytest.mark.skipif(not (ROOT/'checkpoints/v21_energy_973k.pt').is_file(), reason='Original artifact not installed')
 def test_actual_inherited_checkpoint():
-    a=load_native();d=torch.load(ROOT/'checkpoints/v21_energy_973k.pt',map_location='cpu',weights_only=True)
+    a=load_native(require_original=True);d=torch.load(ROOT/'checkpoints/v21_energy_973k.pt',map_location='cpu',weights_only=True)
     b=ref.ScaleLM(ref.ScaleConfig(kind='energy',vocab=256,width=160,layers=4,heads=4,slots=16,ff_width=320,cpu_scan=False));b.load_state_dict(d['weights'])
     x=torch.randint(256,(1,31))
     with torch.no_grad():ya,sa=a(x);yb,sb=b(x)
@@ -135,14 +137,18 @@ def test_reject_distributed():
 
 def test_expired_receipt_rejected(tmp_path):
     from energy_spark.common import environment,source_identity
-    p=tmp_path/'a.json';atomic_json({'status':'PASS_FOR_BOUNDED_DEVICE_PILOT','source_sha256':source_identity(),'environment':environment('cpu'),'checkpoint_sha256':sha256(ROOT/'checkpoints/v21_energy_973k.pt'),'completed_unix':0},p)
+    p=tmp_path/'a.json';atomic_json({'status':'PASS_FOR_BOUNDED_DEVICE_PILOT','source_sha256':source_identity(),'environment':environment('cpu'),'checkpoint_sha256':None,'completed_unix':0},p)
     with pytest.raises(ValueError):require_acceptance(p,'cpu')
 
 def test_budget_clock():
     b=Budget('cpu',seconds=-1)
     with pytest.raises(BudgetStop):b.check()
 
-def test_model_expansion_not_silent():
+def test_model_expansion_not_silent(tmp_path, monkeypatch):
+    import energy_spark.train as trainer
+    monkeypatch.setattr(trainer, 'ROOT', tmp_path)
+    (tmp_path/'checkpoints').mkdir()
+    torch.save({'format':'wiki_pilot_v21', 'kind':'energy', 'width':999}, tmp_path/'checkpoints/v21_energy_973k.pt')
     c=config(init_checkpoint='checkpoints/v21_energy_973k.pt')
     with pytest.raises(ValueError):initialize(make_model(c),c)
 

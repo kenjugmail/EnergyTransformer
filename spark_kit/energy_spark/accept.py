@@ -16,15 +16,32 @@ from .common import ROOT,atomic_json,atomic_checkpoint,configure,environment,met
 def relative(a,b):
     return float((a.float()-b.float()).norm()/(b.float().norm()+1e-12))
 
-def load_native(device='cpu'):
-    path=ROOT/'checkpoints/v21_energy_973k.pt';d=torch.load(path,map_location='cpu',weights_only=True)
-    c=ScaleConfig(kind='energy',vocab=256,width=d['width'],layers=d['layers'],heads=4,slots=16,ff_width=d['ff_width'],chunk=128,cpu_scan=False)
-    m=ScaleLM(c);m.load_state_dict(d['weights']);return m.to(device)
+def load_native(device='cpu', *, require_original=True):
+    """Deterministic numerical fixture, or explicitly requested historical weights."""
+    path=ROOT/'checkpoints/v21_energy_973k.pt'
+    if require_original:
+        if not path.is_file():
+            raise FileNotFoundError('Original checkpoint is required for continuation verification; install the original kit')
+        from .doctor import EXPECTED
+        if sha256(path) != EXPECTED:
+            raise ValueError('Original checkpoint checksum mismatch')
+        d=torch.load(path,map_location='cpu',weights_only=True)
+        c=ScaleConfig(kind='energy',vocab=256,width=d['width'],layers=d['layers'],heads=4,slots=16,ff_width=d['ff_width'],chunk=128,cpu_scan=False)
+        m=ScaleLM(c);m.load_state_dict(d['weights'])
+    else:
+        with torch.random.fork_rng(devices=[]):
+            torch.manual_seed(22040)
+            m=ScaleLM(ScaleConfig(kind='energy',vocab=256,width=64,layers=2,heads=4,slots=16,ff_width=128,chunk=128,cpu_scan=False))
+    return m.to(device)
+
+
+def load_numerical_fixture(device='cpu'):
+    return load_native(device, require_original=False)
 
 def state_tensors(s):return [t for layer in s for t in layer]
 
 def forward_audit(device):
-    m=load_native(device).eval();torch.manual_seed(22041)
+    m=load_numerical_fixture(device).eval();torch.manual_seed(22041)
     x=torch.randint(0,256,(2,49),device=device)
     with torch.no_grad():
         out,s=m(x);chunks=[];ss=None
@@ -70,7 +87,7 @@ def checkpoint_parity(device):
     return {'activation_recompute_gradient_relative':e,'logit_max_abs':float((outputs[0]-outputs[1]).abs().max())}
 
 def precision_audit(device):
-    cpu=load_native('cpu');gpu=load_native(device)
+    cpu=load_numerical_fixture('cpu');gpu=load_numerical_fixture(device)
     torch.manual_seed(22044);x=torch.randint(256,(1,16));target=torch.randint(256,x.shape)
     def run(m,dev,amp):
         m.train();m.zero_grad(set_to_none=True)
@@ -91,7 +108,7 @@ def precision_audit(device):
             'bf16_logit_relative':br,'bf16_loss_absolute':abs(bl-gl),'bf16_gradient_relative':gr,'bf16_gradient_cosine':bc}
 
 def independent_restart(device,out):
-    m=load_native(device).eval();torch.manual_seed(22045)
+    m=load_numerical_fixture(device).eval();torch.manual_seed(22045)
     x=torch.randint(256,(1,17),device=device);new=torch.randint(256,(1,13),device=device)
     with torch.no_grad():_,s=m(x);y,expected=m(new,s)
     # Only coefficients and new tokens leave this process, never the old prompt.
@@ -171,17 +188,21 @@ def benchmark(device,out,include_large=False):
             if torch.device(device).type=='cuda':torch.cuda.empty_cache()
     atomic_json(rows,out/'benchmark.json');return rows
 
-def run(out:Path,device='cuda',cpu_diagnostic=False,include_large=False):
+def run(out:Path,device='cuda',cpu_diagnostic=False,include_large=False,verify_original=False):
     if not __debug__:raise RuntimeError('Acceptance requires Python assertions; do not use python -O')
     out=Path(out);out.mkdir(parents=True,exist_ok=True)
     if (out/'acceptance.json').exists():raise FileExistsError('Use a new acceptance directory; retain prior receipts')
-    checks={};fits=[];t0=time.time();env=environment(device)
+    checks={};fits=[];original_sha=None;t0=time.time();env=environment(device)
     if torch.device(device).type=='cuda' and not torch.cuda.is_available():
         r={'status':'NOT_RUN_CUDA_UNAVAILABLE','source_sha256':source_identity(),'environment':env,'checks':{},'completed_unix':time.time()}
         atomic_json(r,out/'acceptance.json');return r
     if torch.device(device).type=='cpu' and not cpu_diagnostic:raise RuntimeError('Use explicit --cpu-diagnostic; CPU cannot authorize a Spark pilot')
     status='CPU_VALIDATION_ONLY' if cpu_diagnostic else 'PASS_FOR_BOUNDED_DEVICE_PILOT'
     try:
+        if verify_original:
+            load_native('cpu', require_original=True)
+            original_sha=sha256(ROOT/'checkpoints/v21_energy_973k.pt')
+            checks['original_checkpoint']={'sha256':original_sha,'loaded':True}
         d=configure(device)
         if d.type=='cuda':
             Budget(d,seconds=1800).check()
@@ -195,13 +216,14 @@ def run(out:Path,device='cuda',cpu_diagnostic=False,include_large=False):
         fits=benchmark(d,out,include_large=include_large)
     except Exception as exc:
         status='FAILED';checks['failure']={'type':type(exc).__name__,'message':str(exc),'traceback':traceback.format_exc()}
-    result={'status':status,'source_sha256':source_identity(),'environment':env,'checkpoint_sha256':sha256(ROOT/'checkpoints/v21_energy_973k.pt'),
+    result={'status':status,'source_sha256':source_identity(),'environment':env,'checkpoint_sha256':original_sha,
+            'numerical_fixture':'seeded_random_model',
             'checks':checks,'fit_configurations':[r['fit_configuration'] for r in fits],'elapsed_seconds':time.time()-t0,'completed_unix':time.time(),
             'meaning':'Numerical/device permission for a capped pilot only, never a language-quality or large-pretraining approval.'}
     atomic_json(result,out/'acceptance.json');print(json.dumps(result,indent=2));return result
 
 def child_restart(path,device):
-    configure(device);m=load_native(device).eval();d=torch.load(path/'restart_input.pt',map_location=device,weights_only=True)
+    configure(device);m=load_numerical_fixture(device).eval();d=torch.load(path/'restart_input.pt',map_location=device,weights_only=True)
     with torch.inference_mode():out,state=m(d['new_tokens'],d['state'])
     atomic_checkpoint({'logits':out,'state':state},path/'restart_output.pt')
 
@@ -220,8 +242,9 @@ def child_resume(path,device,mode):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--out',type=Path,default=Path('runs/acceptance'));p.add_argument('--device',default='cuda');p.add_argument('--cpu-diagnostic',action='store_true');p.add_argument('--include-large',action='store_true')
+    p.add_argument('--verify-original',action='store_true')
     p.add_argument('--restart-child',type=Path);p.add_argument('--resume-child',type=Path);p.add_argument('--resume-mode',choices=['whole','half','finish']);a=p.parse_args()
     if a.restart_child:child_restart(a.restart_child,a.device)
     elif a.resume_child:child_resume(a.resume_child,a.device,a.resume_mode)
     else:
-        r=run(a.out,a.device,a.cpu_diagnostic,a.include_large);sys.exit(0 if r['status'] in ('PASS_FOR_BOUNDED_DEVICE_PILOT','CPU_VALIDATION_ONLY') else 2)
+        r=run(a.out,a.device,a.cpu_diagnostic,a.include_large,a.verify_original);sys.exit(0 if r['status'] in ('PASS_FOR_BOUNDED_DEVICE_PILOT','CPU_VALIDATION_ONLY') else 2)

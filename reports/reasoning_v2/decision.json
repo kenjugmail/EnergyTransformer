@@ -1,0 +1,24 @@
+{
+  "decision": "retain_bounded_result",
+  "paired_interval": {
+    "difference": -0.012037037037037037,
+    "low": -0.02314814814814815,
+    "high": -0.002777777777777778,
+    "unit": "episode",
+    "draws": 2000
+  },
+  "per_seed_differences": [
+    -0.008333333333333415,
+    -0.025000000000000022,
+    -0.002777777777777768
+  ],
+  "learning_claims": {
+    "precision_11": false,
+    "preconditioned_delta_11": false,
+    "precision_22": false,
+    "preconditioned_delta_22": false,
+    "precision_33": true,
+    "preconditioned_delta_33": false
+  },
+  "efficiency_gate": "not established; CPU component accounting is not measured end-to-end peak memory or GPU latency"
+}

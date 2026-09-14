@@ -8,7 +8,8 @@ description = "Experimental function-state and protected-memory text bridge"
 requires-python = ">=3.10"
 dependencies = ["torch>=2.5", "numpy>=1.24"]
 [project.optional-dependencies]
+test = ["pytest>=8", "safetensors>=0.4"]
 portable = ["safetensors>=0.4"]
 hub = ["safetensors>=0.4", "huggingface_hub>=1.0"]
 [tool.setuptools.packages.find]
-include = ["energy_transformer*"]
+include = ["energy_transformer*", "energy_real*"]

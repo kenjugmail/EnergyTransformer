@@ -1,0 +1,210 @@
+{
+  "status": "completed_offline_memory_demo",
+  "rows": [
+    {
+      "step": 1,
+      "arm": "exact",
+      "answer": null,
+      "abstained": true,
+      "reason": "missing_or_uncertain_fact",
+      "facts": [
+        {
+          "fact_id": "bf618e8e6310749ef38528f792867294e3722041136c9b6145515789b12d0daa",
+          "object": "locker",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 1,
+          "source_id": "ee0cf1d0c08d60701e1ffbb29206a04e02876b1a5094ec8166050335bc758104",
+          "source_text": "The parcel is in the locker.",
+          "subject": "parcel"
+        }
+      ],
+      "revision": 1,
+      "backend": "exact"
+    },
+    {
+      "step": 1,
+      "arm": "energy",
+      "answer": null,
+      "abstained": true,
+      "reason": "missing_or_uncertain_fact",
+      "facts": [
+        {
+          "fact_id": "bf618e8e6310749ef38528f792867294e3722041136c9b6145515789b12d0daa",
+          "object": "locker",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 1,
+          "source_id": "ee0cf1d0c08d60701e1ffbb29206a04e02876b1a5094ec8166050335bc758104",
+          "source_text": "The parcel is in the locker.",
+          "subject": "parcel"
+        }
+      ],
+      "revision": 1,
+      "backend": "precision"
+    },
+    {
+      "step": 2,
+      "arm": "exact",
+      "answer": "lobby",
+      "abstained": false,
+      "facts": [
+        {
+          "fact_id": "bf618e8e6310749ef38528f792867294e3722041136c9b6145515789b12d0daa",
+          "object": "locker",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 1,
+          "source_id": "ee0cf1d0c08d60701e1ffbb29206a04e02876b1a5094ec8166050335bc758104",
+          "source_text": "The parcel is in the locker.",
+          "subject": "parcel"
+        },
+        {
+          "fact_id": "8c8fc9842c60b96107ad0aaae27cfd0e15311b0a3831c477d9bd507ef6b5fb5b",
+          "object": "lobby",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 2,
+          "source_id": "5a5baeb9e7c0d025c0ab3dbca21430721587df6dd67224d71e1be185a409f7b1",
+          "source_text": "The locker is in the lobby.",
+          "subject": "locker"
+        }
+      ],
+      "revision": 2,
+      "backend": "exact"
+    },
+    {
+      "step": 2,
+      "arm": "energy",
+      "answer": "lobby",
+      "abstained": false,
+      "facts": [
+        {
+          "fact_id": "bf618e8e6310749ef38528f792867294e3722041136c9b6145515789b12d0daa",
+          "object": "locker",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 1,
+          "source_id": "ee0cf1d0c08d60701e1ffbb29206a04e02876b1a5094ec8166050335bc758104",
+          "source_text": "The parcel is in the locker.",
+          "subject": "parcel"
+        },
+        {
+          "fact_id": "8c8fc9842c60b96107ad0aaae27cfd0e15311b0a3831c477d9bd507ef6b5fb5b",
+          "object": "lobby",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 2,
+          "source_id": "5a5baeb9e7c0d025c0ab3dbca21430721587df6dd67224d71e1be185a409f7b1",
+          "source_text": "The locker is in the lobby.",
+          "subject": "locker"
+        }
+      ],
+      "revision": 2,
+      "backend": "precision"
+    },
+    {
+      "step": 3,
+      "arm": "exact",
+      "answer": "office",
+      "abstained": false,
+      "facts": [
+        {
+          "fact_id": "bf618e8e6310749ef38528f792867294e3722041136c9b6145515789b12d0daa",
+          "object": "locker",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 1,
+          "source_id": "ee0cf1d0c08d60701e1ffbb29206a04e02876b1a5094ec8166050335bc758104",
+          "source_text": "The parcel is in the locker.",
+          "subject": "parcel"
+        },
+        {
+          "fact_id": "490b7ce85f5aa3c75bdf2b9b6f58373075ea0bb7df77d0d15ba09dacb40b375b",
+          "object": "office",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 3,
+          "source_id": "a208053910b6f8003ab885b4deab1abfe2a0159cfe36dafcc3c238e31b812a5b",
+          "source_text": "Correction: the locker is in the office.",
+          "subject": "locker"
+        }
+      ],
+      "revision": 3,
+      "backend": "exact"
+    },
+    {
+      "step": 3,
+      "arm": "energy",
+      "answer": "office",
+      "abstained": false,
+      "facts": [
+        {
+          "fact_id": "bf618e8e6310749ef38528f792867294e3722041136c9b6145515789b12d0daa",
+          "object": "locker",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 1,
+          "source_id": "ee0cf1d0c08d60701e1ffbb29206a04e02876b1a5094ec8166050335bc758104",
+          "source_text": "The parcel is in the locker.",
+          "subject": "parcel"
+        },
+        {
+          "fact_id": "490b7ce85f5aa3c75bdf2b9b6f58373075ea0bb7df77d0d15ba09dacb40b375b",
+          "object": "office",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 3,
+          "source_id": "a208053910b6f8003ab885b4deab1abfe2a0159cfe36dafcc3c238e31b812a5b",
+          "source_text": "Correction: the locker is in the office.",
+          "subject": "locker"
+        }
+      ],
+      "revision": 3,
+      "backend": "precision"
+    },
+    {
+      "step": 4,
+      "arm": "exact",
+      "answer": null,
+      "abstained": true,
+      "reason": "missing_or_uncertain_fact",
+      "facts": [
+        {
+          "fact_id": "bf618e8e6310749ef38528f792867294e3722041136c9b6145515789b12d0daa",
+          "object": "locker",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 1,
+          "source_id": "ee0cf1d0c08d60701e1ffbb29206a04e02876b1a5094ec8166050335bc758104",
+          "source_text": "The parcel is in the locker.",
+          "subject": "parcel"
+        }
+      ],
+      "revision": 4,
+      "backend": "exact"
+    },
+    {
+      "step": 4,
+      "arm": "energy",
+      "answer": null,
+      "abstained": true,
+      "reason": "missing_or_uncertain_fact",
+      "facts": [
+        {
+          "fact_id": "bf618e8e6310749ef38528f792867294e3722041136c9b6145515789b12d0daa",
+          "object": "locker",
+          "operation": "set",
+          "relation": "located_in",
+          "revision": 1,
+          "source_id": "ee0cf1d0c08d60701e1ffbb29206a04e02876b1a5094ec8166050335bc758104",
+          "source_text": "The parcel is in the locker.",
+          "subject": "parcel"
+        }
+      ],
+      "revision": 4,
+      "backend": "precision"
+    }
+  ],
+  "note": "No language-model output or reasoning-quality claim; structured caller-reviewed edits."
+}

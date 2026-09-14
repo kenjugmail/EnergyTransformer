@@ -9,8 +9,13 @@ description = "Bounded DGX Spark acceptance and pretraining pilot for explicit e
 requires-python = ">=3.10"
 dependencies = ["torch", "numpy"]
 
+[project.optional-dependencies]
+test = ["pytest>=8", "safetensors>=0.4"]
+
 [tool.setuptools.packages.find]
 include = ["energy_spark*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+markers = ["integration: requires separately installed original artifacts"]

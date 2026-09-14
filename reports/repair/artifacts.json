@@ -1,0 +1,372 @@
+{
+  "preserved_original_data_and_runs": [
+    "data/enwik8",
+    "data/enwik8.zip",
+    "runs/energy.log",
+    "runs/enwik8_energy_10m/best.pt",
+    "runs/enwik8_energy_10m/run.json",
+    "runs/enwik8_energy_10m/steps.jsonl",
+    "runs/enwik8_softmax_10m/best.pt",
+    "runs/enwik8_softmax_10m/result.json",
+    "runs/enwik8_softmax_10m/run.json",
+    "runs/enwik8_softmax_10m/steps.jsonl",
+    "runs/softmax.log"
+  ],
+  "files": [
+    {
+      "path": "energy_real/README.md",
+      "bytes": 7684,
+      "sha256": "2a93e1e11954ff9aea135b9a63360337c15f80f7cb5796d0bfedeb14f4eb371e"
+    },
+    {
+      "path": "energy_real/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "energy_real/bench.py",
+      "bytes": 9226,
+      "sha256": "63b770a66cb9420048cddb666af3dfff2ecb45bb05c646dd04057665dbc0559a"
+    },
+    {
+      "path": "energy_real/data.py",
+      "bytes": 4668,
+      "sha256": "8109216d3c725b74c20b4a519bc1a275c2852bbf2eaee6747709c19f7a9f59a6"
+    },
+    {
+      "path": "energy_real/device.py",
+      "bytes": 1635,
+      "sha256": "25c72e74c3abb5c941ddd6ea290165adf9c956203cc22a97c823b0cac951fbca"
+    },
+    {
+      "path": "energy_real/device_smoke.py",
+      "bytes": 3564,
+      "sha256": "3d42168739d2c978592b0dc346b5e73668c62e391785fbb21311e1aeca5185e4"
+    },
+    {
+      "path": "energy_real/episodes.py",
+      "bytes": 3502,
+      "sha256": "2daff2613bb9691fe5168a1f8a5a8f6a2832b7fb027e90a903de26a2979568c4"
+    },
+    {
+      "path": "energy_real/episodic.py",
+      "bytes": 11971,
+      "sha256": "f7b91987c2a21b691933ec5f739228aa47edc7c8e7dfad829d44e72dac8bf6d6"
+    },
+    {
+      "path": "energy_real/evaluation.py",
+      "bytes": 4786,
+      "sha256": "3cba090ace6920f5c37550a1ce81c5ab60e09103544e2fd06c66e162e14e1c89"
+    },
+    {
+      "path": "energy_real/generate.py",
+      "bytes": 194,
+      "sha256": "99d4d08cd25e8d7519e2156e0bcfe8a2fa8fa243657e7420c5c41c7fea4ad5d5"
+    },
+    {
+      "path": "energy_real/kernel.py",
+      "bytes": 7870,
+      "sha256": "a2a1aa286b01a62e0aceec3351a7ac14a831f3a58555b4eba9c3aacc21ea9380"
+    },
+    {
+      "path": "energy_real/memory_eval.py",
+      "bytes": 5559,
+      "sha256": "424a81165a09225ade3dce389eb86fa14fb0fda76582ce70aec3109b896efb68"
+    },
+    {
+      "path": "energy_real/memory_research.py",
+      "bytes": 9636,
+      "sha256": "05682a1ab27c7208ec60f90f5d668f104252df76206b79c7d406064519a8a26c"
+    },
+    {
+      "path": "energy_real/model.py",
+      "bytes": 12194,
+      "sha256": "f9dad29570b364fe4a03c30991683c02ff92694ffeb2cc47877b87501047a3ed"
+    },
+    {
+      "path": "energy_real/reasoning.py",
+      "bytes": 11570,
+      "sha256": "826b5ec370408b0e0fbd13341603c6bbd00d5584fa97aa07c53ac8dc5dcc5e45"
+    },
+    {
+      "path": "energy_real/runtime.py",
+      "bytes": 3605,
+      "sha256": "161bb1096f155aed06f2bc3b56d558145fb6b5e203e0855b539ca9048d5247ae"
+    },
+    {
+      "path": "energy_real/service.py",
+      "bytes": 3177,
+      "sha256": "f51bc8b18c4bb59602e556f21b3b9f1bfb1fa784e2304422aca4ffc21a1887bb"
+    },
+    {
+      "path": "energy_real/stages.py",
+      "bytes": 9019,
+      "sha256": "aface72f564cb43bc3965a0dc63338b6ad2811e5e89b7a0c9e7a7f40db5d1bfb"
+    },
+    {
+      "path": "energy_real/train.py",
+      "bytes": 16533,
+      "sha256": "094b34b4c2147f5308c8306c6041a4a696c117a348fd75dcd95bffef644802db"
+    },
+    {
+      "path": "reports/repair/REPORT.md",
+      "bytes": 6147,
+      "sha256": "06fd32c134cd38ea35f364ba0f78be1ea75b1adbec7130054e0ee340cb13de50"
+    },
+    {
+      "path": "reports/repair/baseline_artifacts.json",
+      "bytes": 3429,
+      "sha256": "ab58b2533a9fed521b0f8dd12d85343a87dd39c0b1226ff4de394cb5b0aff2b8"
+    },
+    {
+      "path": "reports/repair/controller_study.json",
+      "bytes": 110354,
+      "sha256": "b87d8af1344b0e9434ab5c0dc93f34290d297423dcfa2df2b7b6be009247f12b"
+    },
+    {
+      "path": "reports/repair/cpu_smoke.json",
+      "bytes": 1197,
+      "sha256": "e47ed952eaa02b8b8624f58cba35c983e895e8b564b34602fcb1c0cba495d94d"
+    },
+    {
+      "path": "reports/repair/cpu_smoke_final.json",
+      "bytes": 1197,
+      "sha256": "758b8132538e0780b8ccdab2022f67a82ddfaeefc2d6fe1ec966578d8253bc04"
+    },
+    {
+      "path": "reports/repair/device_stages.json",
+      "bytes": 1108,
+      "sha256": "6aa1144f5895704e028728242ca9a6759d935b1f8b9a9550629f989ba6ea82d0"
+    },
+    {
+      "path": "reports/repair/live_reasoning.json",
+      "bytes": 306,
+      "sha256": "3c211b9cd65d8e1f3dda72d7ec66be2402de4240956527a002d67e0102eaec94"
+    },
+    {
+      "path": "reports/repair/memory_baselines.json",
+      "bytes": 716789,
+      "sha256": "11fd792bce9c56ffc078bf50d143cb1354a8d7e40594a18ab0de8615e9283a65"
+    },
+    {
+      "path": "reports/repair/memory_baselines_final.json",
+      "bytes": 716692,
+      "sha256": "8534bd80772c3ef90b5fe7af0347c2cfafa51c5ca97a3c2f6c5899fae780f57a"
+    },
+    {
+      "path": "reports/repair/offline_demo.json",
+      "bytes": 6670,
+      "sha256": "77575f1b5a9806eccabc8788d23a236d0d32ed59e5c84b91c507f2db0c0c759e"
+    },
+    {
+      "path": "reports/repair/tests_legacy.log",
+      "bytes": 191,
+      "sha256": "0d665b9c5dd3b2117ab7d0dca66594e04767f2b53a944b0db881e0dbc2db62c6"
+    },
+    {
+      "path": "reports/repair/tests_real.log",
+      "bytes": 100,
+      "sha256": "2a9164e25d383ef4918642edee5c08c231065d70a2748e44403ab048f5427237"
+    },
+    {
+      "path": "reports/repair/tests_spark.log",
+      "bytes": 191,
+      "sha256": "3598572ab673e80e41852e8ad44f41d33ca540460f5426a111cea8922d42c04b"
+    },
+    {
+      "path": "runs/repair_memory_study_final/delta_next_value_token_plus_memory_seed11/controller.pt",
+      "bytes": 6805,
+      "sha256": "44470fd724e40765b1b7fe1045976981ec3298eb1fee008c61ced596c26b564f"
+    },
+    {
+      "path": "runs/repair_memory_study_final/delta_next_value_token_plus_memory_seed22/controller.pt",
+      "bytes": 6805,
+      "sha256": "db331836ccbda47cc7714a82dd6c118fc987f61d9a10132fe71d1df9ad4fba66"
+    },
+    {
+      "path": "runs/repair_memory_study_final/delta_next_value_token_plus_memory_seed33/controller.pt",
+      "bytes": 6805,
+      "sha256": "3cad7d16ee8c992271f9082cd5924de101b05233c5e06621a501f1931ec31af0"
+    },
+    {
+      "path": "runs/repair_memory_study_final/delta_next_value_token_seed11/controller.pt",
+      "bytes": 6741,
+      "sha256": "61876d49a78b83ab18fc84f1a4a6ac748e1470eb468f08af12b9723c1a5801c5"
+    },
+    {
+      "path": "runs/repair_memory_study_final/delta_next_value_token_seed22/controller.pt",
+      "bytes": 6741,
+      "sha256": "93d8e69bb958fa85d137dae54c90d98fcdd2bb823e7dc559b55fb9279c0b0135"
+    },
+    {
+      "path": "runs/repair_memory_study_final/delta_next_value_token_seed33/controller.pt",
+      "bytes": 6741,
+      "sha256": "7103dcd4d83d7bc4a1115c177b6c04f007f5159abd530c19bd5d753b40d0c697"
+    },
+    {
+      "path": "runs/repair_memory_study_final/diagonal_next_value_token_plus_memory_seed11/controller.pt",
+      "bytes": 6805,
+      "sha256": "38aed8062405b20da9a1d2359620aa947fb5c29a3e1517b66f2147da71480123"
+    },
+    {
+      "path": "runs/repair_memory_study_final/diagonal_next_value_token_plus_memory_seed22/controller.pt",
+      "bytes": 6805,
+      "sha256": "55993d7423d8ae3c1d040daba68ff5b42d300a5dac62cb26f4061070378fddb5"
+    },
+    {
+      "path": "runs/repair_memory_study_final/diagonal_next_value_token_plus_memory_seed33/controller.pt",
+      "bytes": 6805,
+      "sha256": "800a08336111a740f2e8e399ec78d06c8fbd7e88dd9e46646cdee221c194e4f0"
+    },
+    {
+      "path": "runs/repair_memory_study_final/diagonal_next_value_token_seed11/controller.pt",
+      "bytes": 6741,
+      "sha256": "1c521d2495e2aac702c9cddb249d1a347c41726a9efa134f9b1e2d34d1459aec"
+    },
+    {
+      "path": "runs/repair_memory_study_final/diagonal_next_value_token_seed22/controller.pt",
+      "bytes": 6741,
+      "sha256": "2c79c0a3fbc89b5de6c5dd95c8bc47a8d81db0c2420283619b1843d99b93c0cf"
+    },
+    {
+      "path": "runs/repair_memory_study_final/diagonal_next_value_token_seed33/controller.pt",
+      "bytes": 6741,
+      "sha256": "b63297e17490df6bc747d2de5affe7b946aa5d067447e62ca3826a5aa9d38f96"
+    },
+    {
+      "path": "runs/repair_memory_study_final/precision_next_value_token_plus_memory_seed11/controller.pt",
+      "bytes": 6805,
+      "sha256": "e22d842162f4bebf68c8a1ee0515e29b6f6dae4411e86fe3adea5d2e9d42b946"
+    },
+    {
+      "path": "runs/repair_memory_study_final/precision_next_value_token_plus_memory_seed22/controller.pt",
+      "bytes": 6805,
+      "sha256": "bfc9db99292425166270bdb2662f0f8075a17bacd555e12c79b9997e88051c95"
+    },
+    {
+      "path": "runs/repair_memory_study_final/precision_next_value_token_plus_memory_seed33/controller.pt",
+      "bytes": 6805,
+      "sha256": "84aaa156ddae7d4f4816d22b2f1270fa3b16d3dc13c92ce4fd554ae562405ad3"
+    },
+    {
+      "path": "runs/repair_memory_study_final/precision_next_value_token_seed11/controller.pt",
+      "bytes": 6741,
+      "sha256": "de52c3cbd1ed1addddda3a006f9caa8040f0d1edf179f1c9b649d156c8121ef7"
+    },
+    {
+      "path": "runs/repair_memory_study_final/precision_next_value_token_seed22/controller.pt",
+      "bytes": 6741,
+      "sha256": "9c3d7766d540aafcb55954db23a62b2ddc653b993cf3541cc338ae16b90f495a"
+    },
+    {
+      "path": "runs/repair_memory_study_final/precision_next_value_token_seed33/controller.pt",
+      "bytes": 6741,
+      "sha256": "e2a019d6b942c590533011daa0ccb39a231bb6821b8fabe5b42a763713a7e7e3"
+    },
+    {
+      "path": "runs/repair_memory_study_final/preconditioned_delta_next_value_token_plus_memory_seed11/controller.pt",
+      "bytes": 6805,
+      "sha256": "ddec3c16ec27ef520f954560297d6924ba41ac0ff2aa095230f3f38cf097037c"
+    },
+    {
+      "path": "runs/repair_memory_study_final/preconditioned_delta_next_value_token_plus_memory_seed22/controller.pt",
+      "bytes": 6805,
+      "sha256": "4666ccdde72b9d5719d72129c8a90c04926c37c343088ff9d8fae71179afea8a"
+    },
+    {
+      "path": "runs/repair_memory_study_final/preconditioned_delta_next_value_token_plus_memory_seed33/controller.pt",
+      "bytes": 6805,
+      "sha256": "f26dc429ea68461963f99ab9fe56bfcf80eff7c360097192598f5771aa619535"
+    },
+    {
+      "path": "runs/repair_memory_study_final/preconditioned_delta_next_value_token_seed11/controller.pt",
+      "bytes": 6805,
+      "sha256": "4adcefb162ca3f2ab226c23156b3c57d1c3b97d57501efd0f70773ae8a0b9d99"
+    },
+    {
+      "path": "runs/repair_memory_study_final/preconditioned_delta_next_value_token_seed22/controller.pt",
+      "bytes": 6805,
+      "sha256": "5b11d507b395fd325b94ad92e4a81ca558cb5333173426871e57248400c71ad7"
+    },
+    {
+      "path": "runs/repair_memory_study_final/preconditioned_delta_next_value_token_seed33/controller.pt",
+      "bytes": 6805,
+      "sha256": "baee78c316d16e111fc1c32ca4711cc31525c694567b5c9d26d9b68dd1e39153"
+    },
+    {
+      "path": "runs/repair_memory_study_final/projected_next_value_token_plus_memory_seed11/controller.pt",
+      "bytes": 6805,
+      "sha256": "a2db1841439d61ef26cf83034ac7e1cb820b80dea5c4a44a4ce2ce1d713e784f"
+    },
+    {
+      "path": "runs/repair_memory_study_final/projected_next_value_token_plus_memory_seed22/controller.pt",
+      "bytes": 6805,
+      "sha256": "c30b72a24847bf8c4b81bd0c9eb9576018af57a7101fe1c902efd9758b39e82b"
+    },
+    {
+      "path": "runs/repair_memory_study_final/projected_next_value_token_plus_memory_seed33/controller.pt",
+      "bytes": 6805,
+      "sha256": "5ebd3691e78e6a64a9ff6381b59ee5613d5aff2527ca3ff4b8a9896f4f2eaca6"
+    },
+    {
+      "path": "runs/repair_memory_study_final/projected_next_value_token_seed11/controller.pt",
+      "bytes": 6741,
+      "sha256": "3e10fd92e4c66f7864a51a13dc60d66741b49bdbd90438c43f81163a76a7685d"
+    },
+    {
+      "path": "runs/repair_memory_study_final/projected_next_value_token_seed22/controller.pt",
+      "bytes": 6741,
+      "sha256": "08d6991f563dd492b7ff07109dad4862017c1a6e11c437b0bafd3702b6ced7ff"
+    },
+    {
+      "path": "runs/repair_memory_study_final/projected_next_value_token_seed33/controller.pt",
+      "bytes": 6741,
+      "sha256": "57874ce1b06a08b2a9cf4b6150550118cb33a13040f7a9b2d6171d7d861b6ce0"
+    },
+    {
+      "path": "runs/repair_source_final.tar.gz",
+      "bytes": 308313,
+      "sha256": "bead0e91b6d3d4381ab2bd4aa4ab9b7e88b651da505e911bb038051cb81da661"
+    },
+    {
+      "path": "runs/source_before_repair.tar.gz",
+      "bytes": 19933,
+      "sha256": "5facb2c72f8853f40832d16847d2c899afa2b0f588abde5b12eaf4000c00be03"
+    },
+    {
+      "path": "tests_real/test_experiments.py",
+      "bytes": 3389,
+      "sha256": "0d762483b51c4bd3975334477b2bffe8c8f29d628a959e889044dfaf56fb7855"
+    },
+    {
+      "path": "tests_real/test_kernel.py",
+      "bytes": 10014,
+      "sha256": "e5530318c594b00a16aff9203ecfeddf174c230bca43e6af61feebfbe5b1a51f"
+    },
+    {
+      "path": "tests_real/test_memory.py",
+      "bytes": 3807,
+      "sha256": "3e57be586758e7ea5f513a6875270b298df790e52b7463852df592d5a7d779c8"
+    },
+    {
+      "path": "tests_real/test_repairs.py",
+      "bytes": 3140,
+      "sha256": "be434ea6dd4cdd846f6ca8aacfe2cffbbedb8869985bed7a4161e105ff3ef0b6"
+    },
+    {
+      "path": "tests_real/test_service.py",
+      "bytes": 4328,
+      "sha256": "4794f7e3c7797bc50ef125e8ffa16c148bbaa5fe633c6c7a804a3f8052785778"
+    },
+    {
+      "path": "tests_real/test_stages.py",
+      "bytes": 1710,
+      "sha256": "14356b10a59a461bd4ad8a8b171ae3eb32bc28563211635d8b26ee146d227051"
+    },
+    {
+      "path": "tests_real/test_training.py",
+      "bytes": 7633,
+      "sha256": "95cf00c30d0a5627a7f769272203b1aaafdb73db2f6791605254e2ea528c768f"
+    }
+  ]
+}

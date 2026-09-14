@@ -64,7 +64,7 @@ def test_committed_log_corruption_is_not_hidden(tmp_path):
 
 @pytest.mark.parametrize('timestamp',[float('nan'),float('inf'),True,None,'tomorrow',time.time()+3600,time.time()-8*86400])
 def test_bad_receipt_time_rejected(timestamp,tmp_path):
-    r={'status':'PASS_FOR_BOUNDED_DEVICE_PILOT','source_sha256':source_identity(),'checkpoint_sha256':sha256(ROOT/'checkpoints/v21_energy_973k.pt'),
+    r={'status':'PASS_FOR_BOUNDED_DEVICE_PILOT','source_sha256':source_identity(),'checkpoint_sha256':None,
        'environment':environment('cpu'),'completed_unix':timestamp,'fit_configurations':[]}
     p=tmp_path/'receipt.json';p.write_text(json.dumps(r))
     with pytest.raises(ValueError,match='timestamp|future-dated'):require_acceptance(p,'cpu')
@@ -85,5 +85,5 @@ def test_shard_symlink_rejected(tmp_path):
 def test_doctor_does_not_require_torch_or_mutate(tmp_path):
     with patch('energy_spark.doctor.shutil.which',return_value=None):r=check(tmp_path)
     assert r['status']=='HOST_ACTION_NEEDED'
-    assert 'missing_or_mismatched_original_checkpoint' in r['issues']
+    assert 'missing_or_mismatched_original_checkpoint' in r['artifact_issues']
     assert not list(tmp_path.iterdir())

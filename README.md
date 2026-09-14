@@ -3,7 +3,24 @@
 Experimental energy-function memory, native-text prototypes, and explicitly reviewed
 protected-memory edits. **Not a competitive general-purpose LLM or an instruction-following assistant.**
 
-## Current target: a bounded DGX Spark test
+## Current work: reproducible memory and reasoning experiments
+
+The local repair adds an explicit-backend energy kernel, correct attention resets,
+full-state resumable training, source-only acceptance, controlled memory studies,
+and an HTTP adapter for the existing local reasoning model.
+
+- [Repair findings and evidence](FINDINGS.md)
+- [Commands and interfaces](energy_real/README.md)
+- [Shared memory and reasoning study](reports/reasoning_v2/REPORT.md)
+- [Reliability pass](reports/repair/POLISH.md)
+- [Initial repair report and memory results](reports/repair/REPORT.md)
+
+The new memory experiments favor exact structured storage; the tested energy
+candidate has not earned a scale-up promotion over stronger classical controls.
+Live reasoning evaluation and fresh GPU measurements have separate pending
+statuses when the model service is unavailable or the device is occupied.
+
+## Historical v23 target: a bounded DGX Spark test
 
 The complete self-contained **v23 Spark source** is in [`spark_kit/`](spark_kit/README.md).
 It includes the native energy/softmax implementations, resumable training, local
@@ -18,13 +35,14 @@ The earlier experimental modules and their authorization boundaries remain uncha
 ```bash
 cd spark_kit
 # The standalone download already includes the original checkpoint.
-# A source-only clone first installs it from the supplied local kit:
+# To sample or continue original weights, install them from the local kit:
 python -m energy_spark.install_checkpoint /path/to/EnergyTransformer_v23_Spark_Kit.zip
 bash spark/run.sh doctor
 bash spark/run.sh accept
 ```
 
-The final focused kit suite passes 83 local CPU tests. The new importer uses less
+The original bundled v23 report recorded 83 local CPU tests; current source-only
+results and explicit artifact skips are recorded in the repair report. The new importer uses less
 Python-tracked preparation memory on the measured fixture, and resume preserves
 crash-tail logs. **No new model training, actual GB10/CUDA result, or serious general
 pretraining approval is claimed by v23.** Run acceptance on the target device before

@@ -1,0 +1,20 @@
+{
+  "version": "relation_diagnostics_v2.1",
+  "train": {
+    "sha256": "5fe30135dad716e48f8df97c45cb38951d547a05fdc68339d9a97ef4b3751ad1",
+    "episodes": 384,
+    "per_family": 32,
+    "seed": 271001
+  },
+  "valid": {
+    "sha256": "cb9d8ea89505305f2cb2ff7c12970c1bb090b1a9e9a12e46f2002d24899b7090",
+    "episodes": 120,
+    "per_family": 10,
+    "seed": 271002
+  },
+  "test_recipe": {
+    "split": "test",
+    "per_family": 30,
+    "seed": 271003
+  }
+}

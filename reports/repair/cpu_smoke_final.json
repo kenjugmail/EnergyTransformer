@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "device": {
+    "torch": "2.14.0+cu130",
+    "machine": "aarch64",
+    "device": "cpu",
+    "cuda": "13.0",
+    "threads": 2,
+    "gpu": null
+  },
+  "source_sha256": "a0b42c257e881942fbbba8b8136a3dfdfeedb3cd778ae1801bc446aea3271240",
+  "checks": [
+    {
+      "kind": "energy",
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 32,
+        "layers": 2,
+        "heads": 2,
+        "slots": 8,
+        "ff_width": 64,
+        "prior": 0.25,
+        "chunk": 8,
+        "activation_checkpointing": false,
+        "backend": "dmat"
+      },
+      "status": "passed",
+      "cpu_device_max_abs": 0.0
+    },
+    {
+      "kind": "softmax",
+      "config": {
+        "kind": "softmax",
+        "vocab": 256,
+        "width": 32,
+        "layers": 2,
+        "heads": 2,
+        "slots": 8,
+        "ff_width": 64,
+        "prior": 0.25,
+        "chunk": 8,
+        "activation_checkpointing": false,
+        "backend": "dmat"
+      },
+      "status": "passed",
+      "cpu_device_max_abs": 0.0
+    }
+  ],
+  "elapsed_s": 0.5548066609771922,
+  "meaning": "Numerical smoke test only; restart independently covered by fresh-process trainer tests."
+}

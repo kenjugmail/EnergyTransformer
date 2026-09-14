@@ -54,8 +54,10 @@ FIT_FIELDS=('kind','width','layers','heads','slots','ff_width','chunk','sequence
 def require_acceptance(path:Path,device,config=None):
     r=json.loads(path.read_text())
     if r.get('status')!='PASS_FOR_BOUNDED_DEVICE_PILOT' or r.get('source_sha256')!=source_identity():raise ValueError('Need passing current-source GPU acceptance receipt')
-    if r.get('checkpoint_sha256')!=sha256(ROOT/'checkpoints/v21_energy_973k.pt'):
-        raise ValueError('Bundled warm-start checkpoint changed since acceptance')
+    if config is not None and config.get('init_checkpoint'):
+        path=ROOT/config['init_checkpoint']
+        if not path.is_file() or r.get('checkpoint_sha256') != sha256(path):
+            raise ValueError('Continuation requires the same verified checkpoint as acceptance')
     now=environment(device);prev=r['environment']
     for k in ('machine','torch','cuda_runtime','gpu_name','capability','image_digest'):
         if prev.get(k)!=now.get(k):raise ValueError(f'Device/runtime acceptance mismatch: {k}')
