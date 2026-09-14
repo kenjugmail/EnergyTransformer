@@ -1,0 +1,56 @@
+{
+  "source_sha256": "1f0b681dbec9d0b4d51cc6c1c98282554c9435ca614717e23c8aa30df34e903a",
+  "stages": {
+    "smoke": {
+      "limit_s": 1800,
+      "used_s": 0.0,
+      "completed_commands": [],
+      "inherited_used_s": 0.0,
+      "status": "pending_gpu",
+      "reason": "GPU occupied; leave existing workloads running: [{'pid': 2005611, 'name': '/home/kt/Documents/llm-stack/venv-gpu/bin/python'}, {'pid': 2100146, 'name': '/home/kt/Documents/AegisProtocol/.dream-loop/acceptance/aegis-player.bin'}]"
+    },
+    "evaluation_profile": {
+      "limit_s": 5400,
+      "used_s": 0.0,
+      "completed_commands": [],
+      "inherited_used_s": 0.0,
+      "status": "pending_gpu",
+      "reason": "GPU occupied; leave existing workloads running: [{'pid': 2005611, 'name': '/home/kt/Documents/llm-stack/venv-gpu/bin/python'}, {'pid': 2100146, 'name': '/home/kt/Documents/AegisProtocol/.dream-loop/acceptance/aegis-player.bin'}]"
+    },
+    "reasoning": {
+      "limit_s": 7200,
+      "used_s": 0.0,
+      "completed_commands": [],
+      "inherited_used_s": 0.0,
+      "status": "pending_service",
+      "reason": "Local model service unavailable: <urlopen error [Errno 111] Connection refused>"
+    },
+    "controllers": {
+      "limit_s": 14400,
+      "used_s": 716.2357800449827,
+      "completed_commands": [
+        0
+      ],
+      "inherited_used_s": 476.3100481989677,
+      "controller_study": "followup",
+      "status": "completed",
+      "last_command": [
+        "/home/kt/Documents/EnergyTransformer/.venv/bin/python",
+        "-m",
+        "energy_real.recall_followup",
+        "--out",
+        "runs/publication_final_stages/controllers/attempt_0/study",
+        "--steps",
+        "500",
+        "--max-seconds",
+        "1800"
+      ]
+    }
+  },
+  "prior_ledgers": [
+    {
+      "path": "/home/kt/Documents/EnergyTransformer/runs/reasoning_v2_final_stages/stages.json",
+      "sha256": "b009b085d0c96d9b0a878c8ef1889bfffc7d24782304ddfdef763ea476b55e58"
+    }
+  ]
+}

@@ -9,6 +9,7 @@ The local repair adds an explicit-backend energy kernel, correct attention reset
 full-state resumable training, source-only acceptance, controlled memory studies,
 and an HTTP adapter for the existing local reasoning model.
 
+- [Publication polish and focused follow-up](reports/publication/REPORT.md)
 - [Repair findings and evidence](FINDINGS.md)
 - [Commands and interfaces](energy_real/README.md)
 - [Shared memory and reasoning study](reports/reasoning_v2/REPORT.md)

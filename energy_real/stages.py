@@ -119,6 +119,11 @@ def run(args):
         if existing['source_sha256']!=source_identity():raise ValueError('Source changed; use a new stage directory')
         for name in args.stages:
             record=existing['stages'].setdefault(name,{'limit_s':LIMITS[name],'used_s':0.,'completed_commands':[]})
+            if name=='controllers':
+                mode=getattr(args,'controller_study','sweep')
+                if record.get('controller_study',mode)!=mode:
+                    raise ValueError('Controller study changed; use a new stage directory and carry prior usage')
+                record['controller_study']=mode
             if record.get('status')=='running':
                 pid=record.get('pid')
                 if pid is not None:
@@ -167,6 +172,9 @@ def run(args):
             record.pop('reason',None);record['status']='running'
             stage_out=args.out/name/f"attempt_{record.get('attempt',0)}";stage_out.mkdir(parents=True,exist_ok=True)
             for index,command in enumerate(commands(name,stage_out,remaining)):
+                if name=='controllers' and getattr(args,'controller_study','sweep')=='followup':
+                    command[command.index('energy_real.recall_study')]='energy_real.recall_followup'
+                    command[command.index('--max-seconds')+1]=str(min(1800,remaining))
                 if index in record['completed_commands']:continue
                 if name=='reasoning':
                     command=[*command,'--base-url',getattr(args,'base_url','http://127.0.0.1:8100')]
@@ -236,6 +244,7 @@ if __name__=='__main__':
     p.add_argument('--base-url',default='http://127.0.0.1:8100')
     p.add_argument('--memory-selection',type=Path)
     p.add_argument('--artifact-root',type=Path)
+    p.add_argument('--controller-study',choices=['sweep','followup'],default='sweep')
     p.add_argument('--prior-ledger',type=Path,action='append',default=[],help='Conservatively carry previous stage usage into a new source revision')
     p.add_argument('--wait-idle',action='store_true')
     p.add_argument('--max-wait-seconds',type=float,default=300)

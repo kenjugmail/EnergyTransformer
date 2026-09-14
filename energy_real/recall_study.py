@@ -184,19 +184,25 @@ def calibrate(model, episodes, deadline):
     return {'selected':best,'grid':records}
 
 
-def save_controller(model,path,seed,selected_step):
+def save_controller(model,path,seed,selected_step,training_mode="all"):
     atomic_checkpoint({'format':FORMAT,'kind':model.kind,'dimension':model.dimension,'value_dim':CAPACITY,
                        'prior':model.prior,'seed':seed,'selected_step':selected_step,
-                       'objective':'delayed_ce_plus_0.1_locality','weights':model.state_dict()},path)
+                       'objective':'delayed_ce_plus_0.1_locality','training_mode':training_mode,'weights':model.state_dict()},path)
 
 
-def fit(kind,dimension,prior,seed,steps,out,train,valid,deadline):
+def fit(kind,dimension,prior,seed,steps,out,train,valid,deadline,training_mode="all"):
+    if training_mode not in ("all","controller_only"):raise ValueError("Invalid training mode")
     out.mkdir(parents=True,exist_ok=False)
     model=new_model(kind,dimension,prior,seed)
+    frozen_initial={name:parameter.detach().clone() for name,parameter in model.named_parameters()
+                    if not name.startswith('controller.')}
+    if training_mode=='controller_only':
+        for name,parameter in model.named_parameters():
+            parameter.requires_grad_(name.startswith('controller.'))
     initial=calibrate(model,valid,deadline)
     best=initial;best_step=0;weights={k:v.detach().clone() for k,v in model.state_dict().items()}
-    save_controller(model,out/'initial.pt',seed,0)
-    optimizer=torch.optim.AdamW(model.parameters(),lr=.003,weight_decay=.001)
+    save_controller(model,out/'initial.pt',seed,0,training_mode)
+    optimizer=torch.optim.AdamW([p for p in model.parameters() if p.requires_grad],lr=.003,weight_decay=.001)
     rng=random.Random(seed)
     families={family:[e for e in train if e.family==family] for family in data.FAMILIES}
     history=[];started=time.perf_counter()
@@ -213,13 +219,17 @@ def fit(kind,dimension,prior,seed,steps,out,train,valid,deadline):
             if key(score)>key(best):
                 best=score;best_step=step;weights={k:v.detach().clone() for k,v in model.state_dict().items()}
             atomic_json({'status':'in_progress','step':step,'history':history},out/'progress.json')
+    frozen_unchanged=all(torch.equal(model.state_dict()[name],value) for name,value in frozen_initial.items())
+    if training_mode=='controller_only' and not frozen_unchanged:
+        raise ValueError('Frozen key geometry or readout gain changed')
     model.load_state_dict(weights)
-    save_controller(model,out/'controller.pt',seed,best_step)
+    save_controller(model,out/'controller.pt',seed,best_step,training_mode)
     record={'status':'completed','kind':kind,'dimension':dimension,'prior':prior,'capacity':CAPACITY,'seed':seed,
             'steps':steps,'selected_step':best_step,'initial_validation':initial,'validation':best,'history':history,
             'controller':str(out/'controller.pt'),'initial_controller':str(out/'initial.pt'),
             'controller_sha256':sha256(out/'controller.pt'),'initial_sha256':sha256(out/'initial.pt'),
-            'seconds':time.perf_counter()-started,'objective':'delayed_ce_plus_0.1_locality'}
+            'seconds':time.perf_counter()-started,'objective':'delayed_ce_plus_0.1_locality',
+            'training_mode':training_mode,'frozen_parameters_unchanged':frozen_unchanged}
     atomic_json(record,out/'result.json')
     print(json.dumps({k:record[k] for k in ('kind','dimension','prior','seed','selected_step','seconds')},sort_keys=True),flush=True)
     return record
@@ -243,7 +253,7 @@ def evaluate_config(record,episodes,deadline,*,initial=False):
             'default_threshold_summary':summary([r['default_threshold'] for r in rows])}
 
 
-def cost_comparison(records,episodes,deadline):
+def cost_comparison(records,episodes,deadline,*,arm_offset=0):
     """Use the same durable store and identical retained evidence for every arm.
 
     Storage counts include DB, serialized resident snapshot/registry, parameter and
@@ -253,7 +263,7 @@ def cost_comparison(records,episodes,deadline):
     with tempfile.TemporaryDirectory(prefix='recall-cost-') as directory:
         for index,episode in enumerate(episodes):
             arms=[('exact',None),*[(r['kind'],r) for r in records]]
-            offset=index%len(arms);arms=arms[offset:]+arms[:offset]
+            offset=(index+arm_offset)%len(arms);arms=arms[offset:]+arms[:offset]
             for name,record in arms:
                 check_time(deadline)
                 config={} if record is None else {
@@ -313,12 +323,12 @@ def peak_worker(record,episodes):
             'import_peak_rss_bytes':baseline,'scope':'Linux /proc/self/status VmHWM after exec; includes runtime, native allocations and DB.'}
 
 
-def measure_peaks(records,out,deadline):
+def measure_peaks(records,out,deadline,*,test_seed=None):
     rows=[]
     for index,record in enumerate([None,*records]):
         check_time(deadline)
         payload=out/f'peak_input_{index}.json'
-        atomic_json({'record':record},payload)
+        atomic_json({'record':record,'test_seed':test_seed},payload)
         try:
             process=subprocess.run([sys.executable,'-m','energy_real.recall_study','--peak-worker',str(payload)],
                                    capture_output=True,text=True,check=True,timeout=max(.01,deadline-time.perf_counter()),
@@ -475,7 +485,7 @@ if __name__=='__main__':
     if len(sys.argv)==3 and sys.argv[1]=='--peak-worker':
         torch.set_num_threads(2)
         payload=json.loads(Path(sys.argv[2]).read_text())
-        print(json.dumps(peak_worker(payload['record'],data.generate('test',2))))
+        print(json.dumps(peak_worker(payload['record'],data.generate('test',2,payload.get('test_seed')))))
     else:
         from .stages import interruption_handler
         with interruption_handler():

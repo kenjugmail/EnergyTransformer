@@ -316,3 +316,35 @@ Build a new report from explicit inputs, without rewriting historical reports:
 Report status and test totals come from those inputs. Supplying historical test
 logs documents their evidence; it does not certify a different source revision.
 Bundles, datasets, checkpoints and raw service traces stay outside source commits.
+
+## Focused controller-freezing comparison
+
+The follow-up fixes width 64, prior 0.001 and capacity 256 for both precision
+energy and preconditioned delta. It compares training all parameters against
+training only the update controller; the latter freezes the key encoder and
+readout gain exactly. Both modes retain calibrated initialization controls.
+
+```bash
+CUDA_VISIBLE_DEVICES='' OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 \
+  .venv/bin/python -m energy_real.stages \
+  --out runs/publication_final_stages \
+  --prior-ledger runs/reasoning_v2_final_stages/stages.json \
+  --controller-study followup --stages controllers
+```
+
+There are 12 fits: two mechanisms, two training modes, and seeds 11/22/33, with
+at most 500 updates each. Dataset seeds 271101/271102/271103 create fresh train,
+validation and test episodes. Counts remain 384/120/360. The total follow-up
+ceiling is 1,800 CPU seconds and is charged against remaining controller time.
+
+The optimizer, objective, calibration grid and checkpoint schedule match the
+previous study. Seed-11 validation chooses the training mode for each mechanism;
+ties prefer controller-only. Each seed selects its checkpoint on validation,
+including step zero. All selections are frozen before test generation. Reports
+retain every mode and seed, per-seed and paired learning intervals, false
+abstention, unsupported answers and stale retrieval. Cost measurements balance
+mechanism and training-mode ordering and include isolated process peaks.
+
+Use a fresh output directory for another experiment. Reusing a completed stage
+returns its existing ledger; it does not silently rerun the experiment or expand
+its budget. If source changes, create a new ledger and carry previous usage.

@@ -36,6 +36,8 @@ def export_bundle(selection, out, artifact_root=None):
     dataset = resolve_artifact('datasets.json', frozen['dataset_sha256'], selection)
     copies = []
     result = copy.deepcopy(frozen)
+    # Nonselected screening records are historical metadata, not bundle dependencies.
+    result.pop("all_records", None)
     for record in result['selected']:
         for field, hash_field in [('controller','controller_sha256'), ('initial_controller','initial_sha256')]:
             source = resolve_artifact(record[field], record[hash_field], selection, artifact_root)

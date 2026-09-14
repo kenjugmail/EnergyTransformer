@@ -183,3 +183,20 @@ remain preserved and are not used for the final comparison.
 See [the full v2.1 report](reports/reasoning_v2/REPORT.md), including validation
 selection, per-seed results, full-process memory costs, test logs and artifact
 hashes. The current verification total is 277 passed and 34 explicit skips.
+
+
+## Publication follow-up: controller freezing and reliable evaluation
+
+The fresh 12-fit, three-seed comparison completed 6,000 updates in 3.95 CPU minutes.
+Validation selected controller-only training for both mechanisms. Precision energy
+improved from 96.39% at initialization to 98.61% on the new held-out episodes; the
+paired gain interval was +1.11 to +3.61 percentage points, with positive point gains
+in all three seeds. The selected classical control reached 99.07%. Neither the
+quality nor efficiency promotion gate passed, and freezing geometry did not reliably
+beat all-parameter training. These results do not replace the historical v2 scores.
+
+Portable artifact bundles, shared retrieval ranking and resumable model evaluation
+are implemented. Verification totals 295 passing tests, 32 skips and one deselected
+original-artifact integration test; isolated source installation and CPU CLI checks
+also passed. GPU measurements and live reasoning remain pending, with no GPU work
+started over the existing workloads. See [the complete report](reports/publication/REPORT.md).
