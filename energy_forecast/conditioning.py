@@ -112,6 +112,10 @@ class GaussianMixture:
         remaining = tuple(i for i in range(d) if i not in given)
         if not given:
             return ConditioningResult(self, remaining, self.means.new_zeros(b))
+        # Structural dispatch depends only on the requested coordinate order.
+        # It never switches according to observed values or future data.
+        if given == tuple(range(len(given))):
+            return self.condition_prefix(len(given), observed)
         oi = torch.tensor(given, device=self.means.device)
         ri = torch.tensor(remaining, device=self.means.device)
         cov = self.component_covariance
@@ -133,6 +137,39 @@ class GaussianMixture:
         log_evidence = torch.logsumexp(unnormalized, -1)
         posterior = GaussianMixture(unnormalized - log_evidence[:, None], means, chol_r)
         return ConditioningResult(posterior, remaining, log_evidence)
+
+    def condition_prefix(self, count: int, observed: Tensor):
+        """Exact leading-coordinate condition without covariance reconstruction.
+
+        For L=[[L_oo,0],[L_ro,L_rr]], observing O fixes eps_o=L_oo^-1
+        (y_o-mu_o). The remaining mean is mu_r+L_ro eps_o and its factor
+        is exactly L_rr. This avoids the cancellation in a Schur subtraction.
+        A non-leading or reordered subset must use condition(). No jitter,
+        correlation approximation, or learned weights are introduced.
+        """
+        b, k, d = self.means.shape
+        if type(count) is not int or not 0 <= count < d:
+            raise ValueError('Prefix count must leave at least one coordinate')
+        if not isinstance(observed, Tensor) or observed.shape != (b, count):
+            raise ValueError('Observation must be [B,count]')
+        if observed.device != self.means.device or not observed.is_floating_point():
+            raise ValueError('Observation dtype/device mismatch')
+        if not torch.isfinite(observed).all():
+            raise ValueError('Nonfinite observation')
+        if count == 0:
+            return ConditioningResult(self, tuple(range(d)), self.means.new_zeros(b))
+        lo = self.scale_tril[..., :count, :count]
+        lr = self.scale_tril[..., count:, :count]
+        delta = observed.to(self.means.dtype)[:, None] - self.means[..., :count]
+        eps = torch.linalg.solve_triangular(lo, delta[..., None], upper=False)
+        mean = self.means[..., count:] + (lr @ eps)[..., 0]
+        log_obs = -.5 * (eps[..., 0].square().sum(-1) + count * math.log(2 * math.pi))
+        log_obs = log_obs - lo.diagonal(dim1=-2, dim2=-1).log().sum(-1)
+        weight = self.logits.log_softmax(-1) + log_obs
+        evidence = torch.logsumexp(weight, -1)
+        posterior = GaussianMixture(weight - evidence[:, None], mean,
+                                    self.scale_tril[..., count:, count:])
+        return ConditioningResult(posterior, tuple(range(count, d)), evidence)
 
     def sample(self, count: int, *, generator=None) -> Tensor:
         if type(count) is not int or count < 1:

@@ -1,0 +1,31 @@
+{
+  "decision": "retain_existing_calibrated_heads_and_gate",
+  "reason": "All nine validation-selected steps are zero.",
+  "tied_families": [
+    "joint",
+    "conditional",
+    "conditional_mse"
+  ],
+  "primary_selection_unchanged": true,
+  "completed_fits": 9,
+  "new_updates": 3150,
+  "presented_training_windows": 201600,
+  "paired_batch_hashes": {
+    "11": [
+      "6261620baf12753d87ae65f77738a5302fbf34ea62b433cc93748dd37211b2c7"
+    ],
+    "22": [
+      "10ef629143d96bfbbf0e4874a8f50e6277ccfdc5d7ef635f7680da7f7abb1408"
+    ],
+    "33": [
+      "4e2434104fdfdcadfc8a2f539f422a2fd564ec3637b8d0ae4667fa60a5155144"
+    ]
+  },
+  "preserved_failure": "Initial FROZEN.json reports first tied family as best_validation_family; this is a deterministic tie-break, NOT evidence of a winner.",
+  "amendments": [
+    "One tool timeout interrupted seed11 conditional_mse at step100. Restored complete optimizer/RNG state and fixed validation schedule.",
+    "A first full-suite invocation timed out; later completed run passed 89 tests. Initial logs retained.",
+    "Secondary document traces were extracted only after all checkpoint hashes were frozen. No fitted or calibrated parameters used that set.",
+    "After experiments, the reproduction driver was changed to create its own new output directory and explicitly record tied validation families; the executed original driver is retained under reports/conditional_executed. No training objective, checkpoint, validation schedule, or measured result changed."
+  ]
+}

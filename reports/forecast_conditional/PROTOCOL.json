@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-26",
+  "base_commit": "3f6384a69454b1c4a0b90441b936a173596b881d",
+  "question": "Does explicitly scoring matured-prefix conditionals improve forecast updates?",
+  "arms": [
+    "joint",
+    "conditional",
+    "conditional_mse"
+  ],
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "updates": 350,
+  "batch": 64,
+  "initialization": "Same seed-matched anchored/calibrated parent; anchor and calibration buffers frozen",
+  "primary_selection": ".5 joint NLL/coordinate + .5 mean conditional NLL/coordinate on original 15 selection documents, step zero eligible",
+  "training_mean": "Inherited document-crossfit mean for TRAIN rows; fitted mean for inference",
+  "conditioning": "Fixed-origin targets; reveal +1/+4/+16 only after arrival; no new inference information",
+  "controls": [
+    "joint-NLL warm continuation",
+    "unchanged parent raw and guarded",
+    "classical correlated Gaussian"
+  ],
+  "test": "634 previously inspected origins; development, not pristine confirmation",
+  "secondary": "Gensim separate lee.cor with exact/64-byte train overlap audit; extracted after selection frozen; historical language-task use disclosed",
+  "deployment": "Do not change the baseline language logits or automatically enable a new gate",
+  "gpu": "not used",
+  "source_sha256": "157e046ca07994ebe0a4bc9d18f0b1315022471ebb32464bb6e63f1d09cb6141"
+}

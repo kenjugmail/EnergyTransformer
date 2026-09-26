@@ -1,0 +1,3 @@
+{
+  "post_execution": "After experiments, the reproduction driver was changed to create its own new output directory and explicitly record tied validation families; the executed original driver is retained under reports/conditional_executed. No training objective, checkpoint, validation schedule, or measured result changed."
+}
