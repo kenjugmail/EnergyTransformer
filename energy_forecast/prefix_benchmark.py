@@ -1,6 +1,6 @@
 """Paired CPU benchmark of exact ordered versus general dense conditioning.
 
-Dense uses reversed observation order to exercise the unmodified generic path.
+Dense calls the preserved covariance reference, NOT condition() dispatch.
 This does not change which information is supplied or the remaining coordinates.
 Times exclude the language model and forecast-head construction.
 """
@@ -8,6 +8,7 @@ from pathlib import Path
 import argparse,json,random,time,statistics
 import torch
 from .conditioning import GaussianMixture
+from .conditioning_reference import dense_condition
 from .experiment import load_head
 
 
@@ -19,7 +20,7 @@ def run(head,data,out):
        for count in (8,16,24):
         f=GaussianMixture.from_landscape(m(part['x'][:b]));y=part['y'][:b].flatten(1).double()[:,:count]
         indices=list(reversed(range(count)));rev=y.flip(-1)
-        calls={'ordered':lambda:f.condition_prefix(count,y),'dense':lambda:f.condition(indices,rev)}
+        calls={'ordered':lambda:f.condition_prefix(count,y),'dense':lambda:dense_condition(f,indices,rev)}
         a=calls['ordered']();z=calls['dense']()
         errors={'mean_max':float((a.distribution.mean-z.distribution.mean).abs().max()),
                 'covariance_max':float((a.distribution.component_covariance-z.distribution.component_covariance).abs().max()),

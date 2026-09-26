@@ -96,13 +96,18 @@ class ObservedForecastSession:
         t=self._ticket;v=self._base.head.config.variables;hs=self._base.head.config.horizons
         observed=sorted(t['observations']);idx=[hs.index(h)*v+j for h in observed for j in range(v)]
         keep=[i for i in range(t['distribution'].dimension) if i not in idx]
-        prior=t['distribution'].marginal(keep)
-        if not observed or policy=='original':return prior.cloned()
+        if not observed or policy=='original':
+            return t['distribution'].marginal(keep).cloned()
         values=torch.cat([t['observations'][h] for h in observed],1)
+        if policy=='exact_conditional':
+            # No prior marginal is needed for the exact posterior. Constructing
+            # it used to add factorization cost and an irrelevant failure path.
+            return t['distribution'].condition(idx,values).distribution.cloned()
         weight=status['gate_weight']
-        if policy=='guarded' and weight==0:return prior.cloned()
+        prior=t['distribution'].marginal(keep)
+        if weight==0:return prior.cloned()
         posterior=t['distribution'].condition(idx,values).distribution
-        return (posterior if policy=='exact_conditional' else blend(prior,posterior,weight)).cloned()
+        return blend(prior,posterior,weight).cloned()
 
     def forecast(self):
         """A NEW forecast from the current prefix, separate from the tracked origin."""

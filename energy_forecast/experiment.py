@@ -5,7 +5,7 @@ Validation NLL selects checkpoints; final test is scored only by evaluate.py.
 """
 from __future__ import annotations
 from pathlib import Path
-import argparse,hashlib,json,math,time,os
+import argparse,hashlib,json,math,time,os,tempfile
 from dataclasses import asdict
 import numpy as np
 import torch
@@ -19,10 +19,33 @@ KINDS={'diagonal':dict(components=1,correlated=False,spectral=False),
 
 def digest(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
-def atomic_save(data,path):
-    path=Path(path);tmp=path.with_suffix(path.suffix+'.tmp')
-    with tmp.open('wb') as f:torch.save(data,f);f.flush();os.fsync(f.fileno())
-    os.replace(tmp,path)
+def atomic_save(data, path, *, overwrite=True):
+    """Publish a complete snapshot using a unique same-directory temporary file.
+
+    overwrite=False uses an atomic hard-link publication on a local POSIX file
+    system, so a racing writer cannot replace an existing dataset. This is not a
+    multi-file transaction or a distributed/network-filesystem guarantee.
+    """
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, name = tempfile.mkstemp(prefix=path.name + '.', suffix='.tmp', dir=path.parent)
+    temporary = Path(name)
+    try:
+        with os.fdopen(fd, 'wb') as f:
+            torch.save(data, f)
+            f.flush()
+            os.fsync(f.fileno())
+        if overwrite:
+            os.replace(temporary, path)
+        else:
+            os.link(temporary, path)  # FileExistsError is intentional.
+        directory = os.open(path.parent, os.O_RDONLY)
+        try:
+            os.fsync(directory)
+        finally:
+            os.close(directory)
+    finally:
+        temporary.unlink(missing_ok=True)
 
 @torch.no_grad()
 def measure(model,part,batch=128):

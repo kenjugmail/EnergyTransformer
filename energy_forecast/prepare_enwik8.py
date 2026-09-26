@@ -10,6 +10,7 @@ from dataclasses import asdict
 import numpy as np
 import torch
 from .probe import load_energy_model,trace_states,aligned_windows,checkpoint_hash
+from .experiment import atomic_save
 
 SPLITS={'train':(0,90_000_000),'validation':(90_000_000,95_000_000),'test':(95_000_000,100_000_000)}
 
@@ -61,6 +62,6 @@ def main():
         'center':center,'scale':scale,'teacher_sha256':checkpoint_hash(a.checkpoint),'model_config':asdict(teacher.config),
         'corpus_sha256':a.data_sha256,'splits':SPLITS,'blocks':blocks,'seconds':time.perf_counter()-t0,
         'source_note':'User-preserved enwik8. Fixed split byte blocks, not article-isolated. Acquisition provenance not independently audited.'}
-    out.parent.mkdir(parents=True,exist_ok=True);torch.save(result,out)
+    atomic_save(result, out, overwrite=False)
     print('Saved',out,flush=True)
 if __name__=='__main__':main()

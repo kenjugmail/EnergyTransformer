@@ -1,0 +1,85 @@
+{
+  "torch": "2.10.0+cpu",
+  "device": "cpu",
+  "cuda_executed": false,
+  "scope": "Numerical parity and component timing, not new forecasting quality or token acceleration",
+  "constructed_regressions": [
+    {
+      "case": "marginal_leading",
+      "covariance_reference": "factorization_failed",
+      "square_root": "completed",
+      "energy_at_zero": -7.372463226318359,
+      "variance": [
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "case": "marginal_reordered",
+      "covariance_reference": "factorization_failed",
+      "square_root": "completed",
+      "energy_at_zero": -7.372463226318359,
+      "variance": [
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "case": "condition_reordered",
+      "covariance_reference": "factorization_failed",
+      "square_root": "completed",
+      "energy_at_zero": 0.9189385175704956,
+      "variance": [
+        [
+          1.0
+        ]
+      ]
+    },
+    {
+      "case": "condition_nonprefix",
+      "covariance_reference": "factorization_failed",
+      "square_root": "completed",
+      "energy_at_zero": -7.372463226318359,
+      "variance": [
+        [
+          9.99999905104687e-09,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "teacher_head_sha256": "b0e1c30b626afcb51dd02504cf17462cb800e64d21d01dacf6f1938fc8d6c132",
+  "forecast_data_sha256": "e3ec313b2ec5e2b97547627f4220beb69523e6ac8f6e00a703964b5071366f1c",
+  "test_origins": 634,
+  "max_abs_differences": {
+    "mean_max_abs": 3.3306690738754696e-15,
+    "covariance_max_abs": 2.6645352591003757e-15,
+    "log_evidence_max_abs": 1.0658141036401503e-14,
+    "conditional_energy_max_abs": 2.1316282072803006e-14,
+    "marginal_energy_max_abs": 1.4210854715202004e-14
+  },
+  "timing_medians": [
+    {
+      "batch": 1,
+      "general_covariance": 0.34426658333093957,
+      "general_square_root": 0.3876995000003565,
+      "marginal_covariance": 0.12123475000199353,
+      "marginal_square_root": 0.177196666664751,
+      "online_exact_previous_work": 0.3947335833345278,
+      "online_exact_required_work": 0.23207791666853458
+    },
+    {
+      "batch": 64,
+      "general_covariance": 4.328605249999858,
+      "general_square_root": 3.773164666668549,
+      "marginal_covariance": 1.9251194166685082,
+      "marginal_square_root": 2.65993741666648,
+      "online_exact_previous_work": 3.0637471666684255,
+      "online_exact_required_work": 1.1514061666654622
+    }
+  ]
+}

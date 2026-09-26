@@ -24,6 +24,23 @@ def _indices(values: Sequence[int], dimension: int, *, allow_empty: bool = False
     return idx
 
 
+def _row_factor(rows: Tensor) -> Tensor:
+    """Lower factor of rows @ rows.T, without forming that product.
+
+    With rows.T = Q R, rows @ rows.T = R.T R. Reduced QR keeps
+    autograd available; its columns are independent for any subset of a
+    nonsingular Cholesky factor's rows. Normalize R's diagonal signs.
+    This avoids squaring the condition number but cannot cure arbitrary
+    ill-conditioning. Fail explicitly on numerical rank loss; never add jitter.
+    """
+    _, upper = torch.linalg.qr(rows.transpose(-1, -2), mode='reduced')
+    diagonal = upper.diagonal(dim1=-2, dim2=-1)
+    if not torch.isfinite(upper).all() or (diagonal == 0).any():
+        raise FloatingPointError('Numerically rank-deficient square-root factor; use higher precision')
+    signs = torch.where(diagonal < 0, -torch.ones_like(diagonal), torch.ones_like(diagonal))
+    return (upper * signs[..., :, None]).transpose(-1, -2).contiguous()
+
+
 @dataclass(frozen=True)
 class GaussianMixture:
     """A normalized joint function; inputs share dtype and device.
@@ -37,6 +54,8 @@ class GaussianMixture:
     scale_tril: Tensor
 
     def __post_init__(self):
+        if any(not isinstance(t, Tensor) for t in (self.logits, self.means, self.scale_tril)):
+            raise TypeError('Mixture coefficients must be tensors')
         if self.means.ndim != 3 or min(self.means.shape) < 1:
             raise ValueError('Means must be nonempty [B,K,D]')
         b, k, d = self.means.shape
@@ -89,54 +108,53 @@ class GaussianMixture:
         return -torch.logsumexp(self.logits.log_softmax(-1) + logp, dim=-1)
 
     def marginal(self, indices: Sequence[int]):
+        """Exact ordered marginal; leading rows reuse the triangular factor.
+
+        General subsets use QR on selected factor rows, not covariance/Cholesky.
+        Requested coordinate ordering is preserved. Returned factors own storage.
+        """
         keep = _indices(indices, self.dimension)
         idx = torch.tensor(keep, device=self.means.device)
-        cov = self.component_covariance.index_select(-2, idx).index_select(-1, idx)
-        return GaussianMixture(self.logits, self.means.index_select(-1, idx), torch.linalg.cholesky(cov))
+        if keep == tuple(range(len(keep))):
+            factor = self.scale_tril[..., :len(keep), :len(keep)].clone()
+        else:
+            factor = _row_factor(self.scale_tril.index_select(-2, idx))
+        return GaussianMixture(self.logits, self.means.index_select(-1, idx), factor)
 
     def condition(self, indices: Sequence[int], observed: Tensor):
         """Return p(Y_remaining | Y_indices=observed) and log p(observed).
 
-        Returned indices refer to the input function coordinates, in ascending
-        order. Conditioning twice on the same coordinate is prohibited by the
-        tracked session; pure functions return only unobserved coordinates.
+        Remaining indices are in ascending ORIGINAL-coordinate order. Reordered
+        leading evidence is canonicalized before the fast prefix path. Other
+        subsets permute factor rows then use QR to obtain an exact square root
+        in that order. No covariance subtraction, jitter, value-dependent path
+        selection or independence approximation is used.
         """
         given = _indices(indices, self.dimension, allow_empty=True)
-        b, k, d = self.means.shape
-        if observed.shape != (b, len(given)) or observed.device != self.means.device:
-            raise ValueError('Observation must be [B,len(indices)] on the function device')
-        if not observed.is_floating_point() or not torch.isfinite(observed).all():
+        b, _, d = self.means.shape
+        if not isinstance(observed, Tensor) or observed.shape != (b, len(given)):
+            raise ValueError('Observation must be [B,len(indices)]')
+        if observed.device != self.means.device or not observed.is_floating_point():
+            raise ValueError('Observation dtype/device mismatch')
+        if not torch.isfinite(observed).all():
             raise ValueError('Finite observed values required')
         if len(given) == d:
             raise ValueError('All coordinates are observed; no forecast remains')
         remaining = tuple(i for i in range(d) if i not in given)
         if not given:
             return ConditioningResult(self, remaining, self.means.new_zeros(b))
-        # Structural dispatch depends only on the requested coordinate order.
-        # It never switches according to observed values or future data.
-        if given == tuple(range(len(given))):
+        # Dispatch depends on coordinate structure, never on evidence values.
+        if tuple(sorted(given)) == tuple(range(len(given))):
+            if given != tuple(range(len(given))):
+                order = torch.tensor([given.index(i) for i in range(len(given))], device=observed.device)
+                observed = observed.index_select(-1, order)
             return self.condition_prefix(len(given), observed)
-        oi = torch.tensor(given, device=self.means.device)
-        ri = torch.tensor(remaining, device=self.means.device)
-        cov = self.component_covariance
-        oo = cov.index_select(-2, oi).index_select(-1, oi)
-        ro = cov.index_select(-2, ri).index_select(-1, oi)
-        rr = cov.index_select(-2, ri).index_select(-1, ri)
-        chol_o = torch.linalg.cholesky(oo)
-        delta = observed.to(self.means.dtype)[:, None] - self.means.index_select(-1, oi)
-        solved = torch.cholesky_solve(delta[..., None], chol_o)
-        means = self.means.index_select(-1, ri) + (ro @ solved)[..., 0]
-        cross = torch.linalg.solve_triangular(chol_o, ro.transpose(-1, -2), upper=False)
-        conditional_cov = rr - cross.transpose(-1, -2) @ cross
-        conditional_cov = (conditional_cov + conditional_cov.transpose(-1, -2)) * .5
-        chol_r = torch.linalg.cholesky(conditional_cov)
-        whitened = torch.linalg.solve_triangular(chol_o, delta[..., None], upper=False)[..., 0]
-        logp_o = -.5 * (whitened.square().sum(-1) + len(given) * math.log(2 * math.pi))
-        logp_o = logp_o - chol_o.diagonal(dim1=-2, dim2=-1).log().sum(-1)
-        unnormalized = self.logits.log_softmax(-1) + logp_o
-        log_evidence = torch.logsumexp(unnormalized, -1)
-        posterior = GaussianMixture(unnormalized - log_evidence[:, None], means, chol_r)
-        return ConditioningResult(posterior, remaining, log_evidence)
+        order = torch.tensor(given + remaining, device=self.means.device)
+        permuted = GaussianMixture(
+            self.logits, self.means.index_select(-1, order),
+            _row_factor(self.scale_tril.index_select(-2, order)))
+        result = permuted.condition_prefix(len(given), observed)
+        return ConditioningResult(result.distribution, remaining, result.log_evidence)
 
     def condition_prefix(self, count: int, observed: Tensor):
         """Exact leading-coordinate condition without covariance reconstruction.
@@ -160,7 +178,10 @@ class GaussianMixture:
             return ConditioningResult(self, tuple(range(d)), self.means.new_zeros(b))
         lo = self.scale_tril[..., :count, :count]
         lr = self.scale_tril[..., count:, :count]
-        delta = observed.to(self.means.dtype)[:, None] - self.means[..., :count]
+        observed = observed.to(self.means.dtype)
+        if not torch.isfinite(observed).all():
+            raise ValueError('Observation overflows the function dtype')
+        delta = observed[:, None] - self.means[..., :count]
         eps = torch.linalg.solve_triangular(lo, delta[..., None], upper=False)
         mean = self.means[..., count:] + (lr @ eps)[..., 0]
         log_obs = -.5 * (eps[..., 0].square().sum(-1) + count * math.log(2 * math.pi))
@@ -168,7 +189,7 @@ class GaussianMixture:
         weight = self.logits.log_softmax(-1) + log_obs
         evidence = torch.logsumexp(weight, -1)
         posterior = GaussianMixture(weight - evidence[:, None], mean,
-                                    self.scale_tril[..., count:, count:])
+                                    self.scale_tril[..., count:, count:].clone())
         return ConditioningResult(posterior, tuple(range(count, d)), evidence)
 
     def sample(self, count: int, *, generator=None) -> Tensor:
