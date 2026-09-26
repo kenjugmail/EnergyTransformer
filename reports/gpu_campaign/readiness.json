@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "source_and_cpu_receipt",
+      "status": "passed",
+      "detail": "602efa855908e669e135b40c0ee8db1875fe8a82153abe3eb78fffc7c8785ad6"
+    },
+    {
+      "name": "document_integrity_and_split_groups",
+      "status": "passed",
+      "detail": {
+        "manifest_sha256": "e5550e318cabc79711974a92481a0c24f34403dc59f1c249fc8dc8c55cc7e6ec",
+        "bytes": 268432581
+      }
+    },
+    {
+      "name": "donor_integrity",
+      "status": "passed",
+      "detail": {
+        "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+        "files": 8
+      }
+    }
+  ],
+  "gpu_acceptance": false,
+  "scope": "CPU preparation integrity only; exclusive GPU and numerical acceptance still required"
+}

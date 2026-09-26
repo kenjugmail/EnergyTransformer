@@ -1,0 +1,14 @@
+{
+  "models": [
+    {
+      "id": "Qwen/Qwen3.5-2B",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+    },
+    {
+      "id": "Qwen/Qwen3.5-4B",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a"
+    }
+  ],
+  "status": "pinned_not_downloaded_or_evaluated",
+  "gate": "First assess converted0.8B vs unchanged0.8B and matched adaptation control; no broad superiority claim from pilot crossentropy"
+}

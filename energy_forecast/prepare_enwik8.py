@@ -9,7 +9,7 @@ from pathlib import Path
 from dataclasses import asdict
 import numpy as np
 import torch
-from .probe import load_energy_model,trace_states,aligned_windows,checkpoint_hash
+from .probe import load_energy_model,trace_states,aligned_windows,checkpoint_hash,energy_layer
 from .experiment import atomic_save
 
 SPLITS={'train':(0,90_000_000),'validation':(90_000_000,95_000_000),'test':(95_000_000,100_000_000)}
@@ -59,7 +59,7 @@ def main():
     center=result['train']['x'].flatten(0,1).mean(0);scale=result['train']['x'].flatten(0,1).std(0).clamp_min(.001)
     for part in result.values():part['x']=(part['x']-center)/scale;part['y']=(part['y']-center)/scale
     result['metadata']={'format':'energy_forecast_data_v1','history':16,'horizons':[1,4,16,64],'variables':len(center),
-        'center':center,'scale':scale,'teacher_sha256':checkpoint_hash(a.checkpoint),'model_config':asdict(teacher.config),
+        'center':center,'scale':scale,'summary_layer':energy_layer(teacher.config), 'teacher_sha256':checkpoint_hash(a.checkpoint),'model_config':asdict(teacher.config),
         'corpus_sha256':a.data_sha256,'splits':SPLITS,'blocks':blocks,'seconds':time.perf_counter()-t0,
         'source_note':'User-preserved enwik8. Fixed split byte blocks, not article-isolated. Acquisition provenance not independently audited.'}
     atomic_save(result, out, overwrite=False)

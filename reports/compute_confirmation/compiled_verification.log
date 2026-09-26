@@ -1,0 +1,36 @@
+{
+  "source_sha256": "a4a510560f18653ced1f0471c5329790c3da27880e46da4c8320cd94788d2c57",
+  "data": "Training crops only, seed 92109",
+  "input_stride": [
+    129,
+    1
+  ],
+  "target_stride": [
+    129,
+    1
+  ],
+  "overlapping_input_target_storage": true,
+  "rows": [
+    {
+      "arm": "softmax",
+      "checkpoint_sha256": "b725df97dd3e43819591efeeffe71c95d63ec37e1a2625554dc0f74a0e5f559f",
+      "loss_error": 1.1920928955078125e-07,
+      "max_gradient_error": 1.5459954738616943e-07,
+      "compile_and_check_wall_s": 2.5549125640000057
+    },
+    {
+      "arm": "local_softmax",
+      "checkpoint_sha256": "91cf2835c354a11a719dae80f477950b137f9ed92cc6de00c2d4e80ab3b3de50",
+      "loss_error": 1.1920928955078125e-07,
+      "max_gradient_error": 1.6763806343078613e-07,
+      "compile_and_check_wall_s": 0.49570115899950906
+    },
+    {
+      "arm": "hybrid",
+      "checkpoint_sha256": "54564f0cb489eef5cd436f458c919e814082a8afd8c290075c403cd6d6205f09",
+      "loss_error": 2.384185791015625e-07,
+      "max_gradient_error": 7.82310962677002e-08,
+      "compile_and_check_wall_s": 1.2870037270004104
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "attempt": "pilot001",
+  "outcome": "Worker host admission failed before CUDA/model load or training",
+  "retained": "gpu_receipt.json and gpu_output.log",
+  "next_attempt": "pilot002",
+  "parent_admission_gib": 24,
+  "worker_admission_gib": 20,
+  "host_reserve_gib": 16,
+  "reason": "Additional cushion for startup race; no numerical threshold change or budget reset"
+}

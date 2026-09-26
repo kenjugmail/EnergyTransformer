@@ -5,13 +5,14 @@ It cannot replace P/S with a guessed future, skip decoding, or authorize edits.
 """
 from pathlib import Path
 import torch
-from .probe import load_energy_model,state_sketch,checkpoint_hash
+from .probe import load_energy_model,state_sketch,checkpoint_hash,energy_layer
 from .experiment import load_head,atomic_save
 
 class ForecastSession:
     def __init__(self,teacher,head,device='cpu'):
         self.teacher_hash=checkpoint_hash(teacher);self.head_hash=checkpoint_hash(head)
         self.model=load_energy_model(teacher,device);self.head,self.metadata=load_head(head,device)
+        self.summary_layer=energy_layer(self.model.config,self.metadata.get('summary_layer'))
         if self.metadata['teacher_sha256']!=self.teacher_hash:
             raise ValueError('Forecast head belongs to another teacher; prepare and retrain on this checkpoint')
         self.center=self.metadata['normalization']['center'].to(device)
@@ -30,7 +31,7 @@ class ForecastSession:
         logits=[]
         for t in range(tokens.shape[1]):
             out,self.state=self.model(tokens[:,t:t+1].to(self.device),self.state)
-            feature=state_sketch(self.state)[:,None]
+            feature=state_sketch(self.state,self.summary_layer)[:,None]
             self.history=feature if self.history is None else torch.cat((self.history,feature),1)
             self.history=self.history[:,-self.head.config.history:].clone(memory_format=torch.contiguous_format)
             self.steps+=1;logits.append(out)
@@ -62,14 +63,26 @@ class ForecastSession:
                 raise ValueError('Invalid observed history')
             c=self.model.config
             if not isinstance(state,(tuple,list)) or len(state)!=c.layers:raise ValueError('Invalid layer count')
-            for layer in state:
+            for index,layer in enumerate(state):
+                if c.mixer_kind(index)=='softmax':
+                    if not isinstance(layer,(tuple,list)) or len(layer)!=4:
+                        raise ValueError('Invalid hybrid attention state')
+                    k,v,segments,position=layer
+                    if (k.ndim!=4 or k.shape!=v.shape or k.shape[:2]!=(1,c.heads)
+                        or k.shape[3]!=c.width//c.heads or not 1<=k.shape[2]<=c.attention_window
+                        or segments.shape!=(1,k.shape[2]) or segments.dtype!=torch.long
+                        or position.shape!=(1,1) or position.dtype!=torch.long
+                        or int(position[0,0])!=steps or not torch.isfinite(k).all()
+                        or not torch.isfinite(v).all()):
+                        raise ValueError('Invalid hybrid attention cache')
+                    continue
                 if not isinstance(layer,(tuple,list)) or len(layer)!=2:raise ValueError('Invalid layer schema')
                 p,s=layer
                 if not isinstance(p,torch.Tensor) or not isinstance(s,torch.Tensor):raise ValueError('Coefficients must be tensors')
                 if p.dtype!=torch.float32 or s.dtype!=torch.float32:raise ValueError('Expected float32 energy coefficients')
                 if p.shape!=(1,c.heads,c.slots) or s.shape!=(1,c.heads,c.slots,c.width//c.heads):raise ValueError('Invalid energy shapes')
                 if not torch.isfinite(p).all() or not torch.isfinite(s).all() or (p<c.prior).any():raise ValueError('Invalid coefficients')
-            feature=state_sketch(state)
+            feature=state_sketch(state,self.summary_layer)
             if not torch.equal(feature,h[:,-1]):raise ValueError('Latest summary disagrees with saved observed state')
         return state,h,steps
 

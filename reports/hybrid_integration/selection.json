@@ -1,0 +1,141 @@
+{
+  "source_sha256": "a01b6feaec70f9ef568c5c15b69293bf5269d8321c985e3faa4d103de92ebafa",
+  "selected_seed": 33,
+  "records": [
+    {
+      "seed": 11,
+      "best_step": 500,
+      "updates": 500,
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 7.49179600039497
+      },
+      "validation": {
+        "accuracy": 0.953125,
+        "nll": 0.19368699154438218
+      },
+      "trainable_parameters": 147654,
+      "total_parameters": 10754550,
+      "backbone_sha256": "ba302d6a43e9f53c5975ab893a8e8ada4f32e804cf242f4c3b9c4e8dce6776b6",
+      "backbone_unchanged": true,
+      "checkpoint_sha256": "242c37403446d983421dee9f3ce1e51c7f85f524bf507d1c173a2a152b87f13b",
+      "elapsed_s": 401.7539288169937,
+      "history": [
+        {
+          "step": 125,
+          "loss": 1.9549829959869385,
+          "valid_accuracy": 0.5625,
+          "valid_nll": 1.772317297582049
+        },
+        {
+          "step": 250,
+          "loss": 0.6383118629455566,
+          "valid_accuracy": 0.81640625,
+          "valid_nll": 0.5859655756612483
+        },
+        {
+          "step": 375,
+          "loss": 0.2033424973487854,
+          "valid_accuracy": 0.89453125,
+          "valid_nll": 0.3414920890409121
+        },
+        {
+          "step": 500,
+          "loss": 0.07422007620334625,
+          "valid_accuracy": 0.953125,
+          "valid_nll": 0.19368699154438218
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "best_step": 500,
+      "updates": 500,
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 7.49179600039497
+      },
+      "validation": {
+        "accuracy": 0.9765625,
+        "nll": 0.1352241620170389
+      },
+      "trainable_parameters": 147654,
+      "total_parameters": 10754550,
+      "backbone_sha256": "ba302d6a43e9f53c5975ab893a8e8ada4f32e804cf242f4c3b9c4e8dce6776b6",
+      "backbone_unchanged": true,
+      "checkpoint_sha256": "99e561df3c09aa3a7caa131104cef3fdf0aaccc2179602216e4ab2694b18a904",
+      "elapsed_s": 559.4950643539778,
+      "history": [
+        {
+          "step": 125,
+          "loss": 1.9813296794891357,
+          "valid_accuracy": 0.515625,
+          "valid_nll": 1.9150918985251337
+        },
+        {
+          "step": 250,
+          "loss": 0.6002153158187866,
+          "valid_accuracy": 0.87109375,
+          "valid_nll": 0.5556188650443801
+        },
+        {
+          "step": 375,
+          "loss": 0.2512551248073578,
+          "valid_accuracy": 0.94140625,
+          "valid_nll": 0.24594211390285636
+        },
+        {
+          "step": 500,
+          "loss": 0.07911043614149094,
+          "valid_accuracy": 0.9765625,
+          "valid_nll": 0.1352241620170389
+        }
+      ]
+    },
+    {
+      "seed": 33,
+      "best_step": 500,
+      "updates": 500,
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 7.49179600039497
+      },
+      "validation": {
+        "accuracy": 1.0,
+        "nll": 0.061960656747942267
+      },
+      "trainable_parameters": 147654,
+      "total_parameters": 10754550,
+      "backbone_sha256": "ba302d6a43e9f53c5975ab893a8e8ada4f32e804cf242f4c3b9c4e8dce6776b6",
+      "backbone_unchanged": true,
+      "checkpoint_sha256": "d78d835793c624f5b94fc32be179337deae3d8a92c766298822b46b3b7eeea6d",
+      "elapsed_s": 761.7794256469933,
+      "history": [
+        {
+          "step": 125,
+          "loss": 1.8575303554534912,
+          "valid_accuracy": 0.51953125,
+          "valid_nll": 1.7251720221247524
+        },
+        {
+          "step": 250,
+          "loss": 0.42303696274757385,
+          "valid_accuracy": 0.859375,
+          "valid_nll": 0.5317810469678079
+        },
+        {
+          "step": 375,
+          "loss": 0.08290395140647888,
+          "valid_accuracy": 0.984375,
+          "valid_nll": 0.15229162324612844
+        },
+        {
+          "step": 500,
+          "loss": 0.043904468417167664,
+          "valid_accuracy": 1.0,
+          "valid_nll": 0.061960656747942267
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "module_path": "/home/kt/Documents/EnergyTransformer/runs/local_energy_install/site/energy_real/local_energy.py",
+  "non_editable_wheel": true,
+  "checked_package_files": 30,
+  "file_hashes": {
+    "discrete_energy.py": "45a65b10d54a70ded64bffd8ed3f7c74f5f57cb2af25f907a3a3f86afe50c53b",
+    "evaluation.py": "ae3101d60d46fd244125571ccfc28caa734cc4e9ab02b817c3cb460acc2799d9",
+    "kernel.py": "a2a1aa286b01a62e0aceec3351a7ac14a831f3a58555b4eba9c3aacc21ea9380",
+    "reporting.py": "4f1df4de405fdcebab61aeca5acfabd86e7a1310c5a563c4519ac59a4e36cc9d",
+    "resume.py": "a2517c983babea8e5a63605b97979c14ea561b1118769b83e9b6d4409e21638a",
+    "device_smoke.py": "3d42168739d2c978592b0dc346b5e73668c62e391785fbb21311e1aeca5185e4",
+    "device.py": "25c72e74c3abb5c941ddd6ea290165adf9c956203cc22a97c823b0cac951fbca",
+    "local_energy_study.py": "c1b51f048fc03ea7115c757a4989b35fb801b31cfe5605bc96436e29821e1fda",
+    "retrieval.py": "d88fa2e6085f4eb9e0619f6ff3acef60629ea81e22613d6c85c879ba0747995a",
+    "runtime.py": "161bb1096f155aed06f2bc3b56d558145fb6b5e203e0855b539ca9048d5247ae",
+    "reasoning.py": "962d4b6a39445655e71aa2c85a1fde5fd96c5401ad96d008b3e24f6defec218d",
+    "data.py": "b7f5cbe3705de4a82c45baf564f456ca8540f59c312a6f6aa5c71face17199cd",
+    "memory_eval.py": "424a81165a09225ade3dce389eb86fa14fb0fda76582ce70aec3109b896efb68",
+    "diagnostics.py": "8bfbd16f817b1b82580daa4ca00bb2796436e5a35b2d14fb63744f321232fe68",
+    "local_energy_analysis.py": "bc4736c80a1cfd12c1c3fd2b7416024bc464ab97b414688dfe4f52ddc2cd462b",
+    "episodes.py": "2daff2613bb9691fe5168a1f8a5a8f6a2832b7fb027e90a903de26a2979568c4",
+    "memory_research.py": "05682a1ab27c7208ec60f90f5d668f104252df76206b79c7d406064519a8a26c",
+    "artifacts.py": "3c66a95187879a3753864252c939b918ec61780868230f4efb547fb10ac472c1",
+    "local_energy.py": "9cedf0d3648c8bcfcb130613647efc538d551c773151ede173ff37c6007b0470",
+    "recall_followup.py": "4cde2d9a8e6fa67548dfbaa3e7c82335bc24052c9eef4af4cde2bfadc010b410",
+    "generate.py": "99d4d08cd25e8d7519e2156e0bcfe8a2fa8fa243657e7420c5c41c7fea4ad5d5",
+    "recall_study.py": "8b5a1c6f97694eb4dfe4ddd552b7fc3c889e49a1fc9e470c2c354d1ec0300c18",
+    "stages.py": "b7d2121eb7d40aa5881f90f57917e6ecd1fa43fe0bcf44cae69f4d65a9748dd1",
+    "model.py": "f9dad29570b364fe4a03c30991683c02ff92694ffeb2cc47877b87501047a3ed",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "train.py": "094b34b4c2147f5308c8306c6041a4a696c117a348fd75dcd95bffef644802db",
+    "episodic.py": "f8c4c9b53c7748927e0ef16233a5c7db573de219f049389cd685debc3fe142f4",
+    "local_energy_data.py": "6c4182c28e7997ea294e4d644370df974651419011cef35ef028708413024da7",
+    "bench.py": "63b770a66cb9420048cddb666af3dfff2ecb45bb05c646dd04057665dbc0559a",
+    "service.py": "121b7b846826c9e8f8c582d5bab2c89c59a07abc6db97dd4a65b5f6d2a6118ce"
+  },
+  "pcalm_loss": 0.6056423187255859,
+  "energy_scores_shape": [
+    3,
+    3
+  ],
+  "discrete_scores_shape": [
+    6,
+    4
+  ],
+  "all_finite": true
+}

@@ -94,7 +94,7 @@ def train(data_path,out,kind,seed=11,steps=600,resume=False,device='cpu',stop_at
                 best=score['nll_per_coordinate'];best_step=step
                 atomic_save({'format':'trajectory_energy_v1','config':asdict(config),'weights':model.state_dict(),
                     'normalization':{k:meta[k] for k in ('center','scale')},'identity':identity,'selected_step':step,
-                    'teacher_sha256':meta.get('teacher_sha256'),'summary_only':True},out/'best.pt')
+                    'teacher_sha256':meta.get('teacher_sha256'),'summary_layer':meta.get('summary_layer'),'summary_only':True},out/'best.pt')
             atomic_save({'identity':identity,'model':model.state_dict(),'optimizer':optimizer.state_dict(),'generator':gen.get_state(),
                 'rng':torch.get_rng_state(),'step':step,'best':best,'best_step':best_step,'log':log,'batch_sha256':batch_hash.hex()},out/'last.pt')
             print(kind,seed,step,score,flush=True)

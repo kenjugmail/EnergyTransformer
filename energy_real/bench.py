@@ -35,7 +35,9 @@ def make(arm, args, device):
         import sys
         sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'spark_kit'))
         from energy_spark.model import ScaleLM, ScaleConfig
-        kw = asdict(cfg); kw.pop('backend')
+        kw = asdict(cfg)
+        for field in ('backend', 'memory_dim', 'memory_capacity', 'attention_window', 'attention_every'):
+            kw.pop(field)
         return ScaleLM(ScaleConfig(**kw, cpu_scan=False)).to(device), cfg
     return LM(cfg).to(device), cfg
 

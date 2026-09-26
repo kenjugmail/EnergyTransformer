@@ -1,0 +1,9 @@
+{
+  "checkpoint": "runs/competitive_native/hybrid_11.pt",
+  "sha256": "ca6aa8ea53b21f07e3613965640c7efeef5670dda85ca9ad357c2655af3caf8e",
+  "prompt": "The ",
+  "new_bytes": 64,
+  "decoding": "greedy",
+  "stdout": "The and and the [[1999]] and [[1999]] [[1999]] [[1999]] [[1999]] [[1\n",
+  "observation": "Loads and streams correctly; output repeats short phrases. This is not assistant-quality text."
+}

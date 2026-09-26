@@ -1,0 +1,23 @@
+{
+  "role": "advisory only; verified against code and tests",
+  "decisions": [
+    {
+      "context": "Initial scaling investigation",
+      "top_candidate": "Audit experiment matching, resume and resource gates",
+      "score": 0.82,
+      "action": "Inspected code; found profiling and monitoring gaps"
+    },
+    {
+      "context": "After code evidence",
+      "top_candidate": "Supervisor-wide resource monitoring",
+      "score": 0.83,
+      "action": "Implemented process-group monitoring and tests"
+    },
+    {
+      "context": "Before final verification; GPU occupied",
+      "top_candidate": "New GPU-backed architecture changes while other jobs run",
+      "score": 0.991,
+      "action": "Rejected; violates occupied-device evidence and user constraint. Ran CPU and installed-package tests instead."
+    }
+  ]
+}

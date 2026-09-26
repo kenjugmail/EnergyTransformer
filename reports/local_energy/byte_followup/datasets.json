@@ -1,0 +1,40 @@
+{
+  "bytes": {
+    "train": {
+      "version": "local_energy_data_v1",
+      "count": 4096,
+      "sha256": "5bf75da688642f33927043401d70bfe773b11d7da8f50bfacd66926f1a80bd1d",
+      "x_shape": [
+        4096,
+        64
+      ],
+      "groups": {
+        "bytes": 4096
+      }
+    },
+    "valid": {
+      "version": "local_energy_data_v1",
+      "count": 512,
+      "sha256": "a5fac71da77fb71bcfbfc85633409b7a668306869d1d4df9d315e480451959f9",
+      "x_shape": [
+        512,
+        64
+      ],
+      "groups": {
+        "bytes": 512
+      }
+    },
+    "test": {
+      "version": "local_energy_data_v1",
+      "count": 1000,
+      "sha256": "c7635eab3f2df0dee905b21026a3b9f4e7f7f2a5861f335ba31907ea5f3f74ca",
+      "x_shape": [
+        1000,
+        64
+      ],
+      "groups": {
+        "bytes": 1000
+      }
+    }
+  }
+}

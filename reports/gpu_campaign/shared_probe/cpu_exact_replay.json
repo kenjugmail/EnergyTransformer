@@ -1,0 +1,46 @@
+{
+  "scope": "Exact failed GPU tokens/weights replayed on CPU; different execution backend",
+  "gradient_relative": 0.9695796966552734,
+  "largest_parameter_differences": [
+    {
+      "parameter": "embedding.weight",
+      "reference_gradient_norm": 4.66703987121582,
+      "difference_norm": 4.4183759689331055
+    },
+    {
+      "parameter": "blocks.0.mixer.projection.weight",
+      "reference_gradient_norm": 0.9380927085876465,
+      "difference_norm": 0.9123901128768921
+    },
+    {
+      "parameter": "blocks.1.mixer.projection.weight",
+      "reference_gradient_norm": 0.38789066672325134,
+      "difference_norm": 0.606889009475708
+    },
+    {
+      "parameter": "blocks.0.mixer.output.weight",
+      "reference_gradient_norm": 0.37857410311698914,
+      "difference_norm": 0.5832614898681641
+    },
+    {
+      "parameter": "blocks.0.ff.2.weight",
+      "reference_gradient_norm": 0.29648178815841675,
+      "difference_norm": 0.5282989740371704
+    },
+    {
+      "parameter": "blocks.0.ff.0.weight",
+      "reference_gradient_norm": 0.20555691421031952,
+      "difference_norm": 0.4146672189235687
+    },
+    {
+      "parameter": "blocks.2.mixer.projection.weight",
+      "reference_gradient_norm": 0.17488913238048553,
+      "difference_norm": 0.31785848736763
+    },
+    {
+      "parameter": "blocks.1.mixer.output.weight",
+      "reference_gradient_norm": 0.1179056391119957,
+      "difference_norm": 0.2330096811056137
+    }
+  ]
+}

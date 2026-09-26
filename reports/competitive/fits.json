@@ -1,0 +1,146 @@
+[
+  {
+    "arm": "energy",
+    "seed": 11,
+    "parameters": 145164,
+    "best": {
+      "step": 1000,
+      "bpb": 3.033091198157706
+    },
+    "train_s": 163.9949683159357,
+    "checkpoint": "runs/competitive_native/energy_11.pt",
+    "checkpoint_sha256": "8c9da9a864aa2c94c9613a5261ef070652d09a0006648ccee260696d3835810d"
+  },
+  {
+    "arm": "softmax",
+    "seed": 11,
+    "parameters": 145179,
+    "best": {
+      "step": 1000,
+      "bpb": 3.1082212951774846
+    },
+    "train_s": 40.09796339389868,
+    "checkpoint": "runs/competitive_native/softmax_11.pt",
+    "checkpoint_sha256": "8c77f2265aeeb48ec915d5aea7512c1b51595e41bc5c3eecc588b88e69d66a96"
+  },
+  {
+    "arm": "local_softmax",
+    "seed": 11,
+    "parameters": 145179,
+    "best": {
+      "step": 1000,
+      "bpb": 3.0867622163478847
+    },
+    "train_s": 41.09372171014547,
+    "checkpoint": "runs/competitive_native/local_softmax_11.pt",
+    "checkpoint_sha256": "d324e3a72f24bee42304b5906f6644e8a7f34287df91ef25746feb506de5efa6"
+  },
+  {
+    "arm": "hybrid",
+    "seed": 11,
+    "parameters": 145169,
+    "best": {
+      "step": 1000,
+      "bpb": 3.0165140873798353
+    },
+    "train_s": 124.31422826542985,
+    "checkpoint": "runs/competitive_native/hybrid_11.pt",
+    "checkpoint_sha256": "ca6aa8ea53b21f07e3613965640c7efeef5670dda85ca9ad357c2655af3caf8e"
+  },
+  {
+    "arm": "energy",
+    "seed": 22,
+    "parameters": 145164,
+    "best": {
+      "step": 1000,
+      "bpb": 3.0527453042867414
+    },
+    "train_s": 172.5876931483508,
+    "checkpoint": "runs/competitive_native/energy_22.pt",
+    "checkpoint_sha256": "2187e50e195cb6fe43650ba323a2a60d7e5f3ca29784fc579bd7d9ca074c8270"
+  },
+  {
+    "arm": "softmax",
+    "seed": 22,
+    "parameters": 145179,
+    "best": {
+      "step": 1000,
+      "bpb": 3.0852417083263055
+    },
+    "train_s": 43.184301068016794,
+    "checkpoint": "runs/competitive_native/softmax_22.pt",
+    "checkpoint_sha256": "27e55258bae2870f5659943981d178d451c7f7cad2f32f515370cd3ff4c48d31"
+  },
+  {
+    "arm": "local_softmax",
+    "seed": 22,
+    "parameters": 145179,
+    "best": {
+      "step": 1000,
+      "bpb": 3.0783739479708467
+    },
+    "train_s": 44.5837258802494,
+    "checkpoint": "runs/competitive_native/local_softmax_22.pt",
+    "checkpoint_sha256": "195df7de3832028c972d051bf7671280bf4b14ee7c6b294d33e8e76b3404e1af"
+  },
+  {
+    "arm": "hybrid",
+    "seed": 22,
+    "parameters": 145169,
+    "best": {
+      "step": 1000,
+      "bpb": 2.985499319251912
+    },
+    "train_s": 132.28812157642096,
+    "checkpoint": "runs/competitive_native/hybrid_22.pt",
+    "checkpoint_sha256": "4a9ac44ed28c044a1dadbde094c1937d1f1efe995496f75ba448923817b5f947"
+  },
+  {
+    "arm": "energy",
+    "seed": 33,
+    "parameters": 145164,
+    "best": {
+      "step": 1000,
+      "bpb": 3.0359146225571614
+    },
+    "train_s": 168.5691713631386,
+    "checkpoint": "runs/competitive_native/energy_33.pt",
+    "checkpoint_sha256": "e4ec28266f75b42d4e2d4ada23a30c89fe0998954af5af32ed34f36d49640d6a"
+  },
+  {
+    "arm": "softmax",
+    "seed": 33,
+    "parameters": 145179,
+    "best": {
+      "step": 1000,
+      "bpb": 3.1875977164022467
+    },
+    "train_s": 41.40464810276171,
+    "checkpoint": "runs/competitive_native/softmax_33.pt",
+    "checkpoint_sha256": "0c63f4bdac5e141a56737d4f87874bc4cfc36c195fd67d3e3fca14f691647685"
+  },
+  {
+    "arm": "local_softmax",
+    "seed": 33,
+    "parameters": 145179,
+    "best": {
+      "step": 1000,
+      "bpb": 3.1254256387755817
+    },
+    "train_s": 43.38884773972677,
+    "checkpoint": "runs/competitive_native/local_softmax_33.pt",
+    "checkpoint_sha256": "b92d09f5b0a3cc4d233ae977cc314082f86e1751137d4c8a882be95078982d11"
+  },
+  {
+    "arm": "hybrid",
+    "seed": 33,
+    "parameters": 145169,
+    "best": {
+      "step": 1000,
+      "bpb": 2.9799993516985244
+    },
+    "train_s": 128.77749250578927,
+    "checkpoint": "runs/competitive_native/hybrid_33.pt",
+    "checkpoint_sha256": "dd5f6f1181f63611de260a8f873ca343ad31480f193969c3bac11c089b4f5061"
+  }
+]

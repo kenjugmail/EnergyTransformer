@@ -1,0 +1,7 @@
+{
+  "quality_gate": true,
+  "windowed_control_gate": true,
+  "state_ratio_at_32768": 1363.3781190019195,
+  "decode_ratio_at_32768": 5.8830417760635285,
+  "selected_hybrid_sha256": "dd5f6f1181f63611de260a8f873ca343ad31480f193969c3bac11c089b4f5061"
+}

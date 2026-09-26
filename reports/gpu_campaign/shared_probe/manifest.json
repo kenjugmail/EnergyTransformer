@@ -1,0 +1,30 @@
+{
+  "source": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+  "script_sha256": "e0b4803460d3810beb0945a16749cfcd0c634ec311aa9afe17df17b7c158f5d8",
+  "seed": 404,
+  "steps": 8,
+  "targets": 65536,
+  "torch_gib_cap": 4,
+  "reserve_gib": 16,
+  "scope": "Shared preliminary fits; timing contaminated, one seed, unconverged",
+  "excluded_family": "energy: failed BF16 parity",
+  "foreign_processes_at_start": [
+    {
+      "pid": 718284,
+      "name": "VLLM::EngineCore"
+    },
+    {
+      "pid": 2659826,
+      "name": "/home/kt/vellum-worldgen-data/audits/camera-realtime-423a706d/baseline/vellum-engineering"
+    },
+    {
+      "pid": 2780367,
+      "name": ".venv/bin/python"
+    },
+    {
+      "pid": 2797960,
+      "name": "/home/kt/Documents/vellumengineer/.vellum/worldgen-envs/gsplat-caa2d0c25017/bin/python"
+    }
+  ],
+  "ledger": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/budget.json"
+}

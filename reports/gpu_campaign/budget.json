@@ -1,0 +1,201 @@
+{
+  "limits": {
+    "acceptance": 7200,
+    "backbone": 43200,
+    "forecast": 14400,
+    "conversion": 14400,
+    "verification": 7200
+  },
+  "entries": [
+    {
+      "id": "0424b716e8404b9aaf26ff236d057720",
+      "stage": "acceptance",
+      "reserved": 300,
+      "charged": 1.618935665988829,
+      "status": "failed",
+      "identity": {
+        "source": "ec6b0d6ea15fa525405cb0d4673256b0c9fd0e6968f76cf2bf0a184bb97b3ac9",
+        "job": {
+          "action": "accept",
+          "out": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_probe_001/accept.json"
+        },
+        "shared_device": true,
+        "max_torch_gib": 4,
+        "host_reserve_gib": 16
+      },
+      "started_unix": 1790450806.8681226,
+      "finished_unix": 1790450808.5017648,
+      "overrun": false
+    },
+    {
+      "id": "75a53a8d2c74437d97ed10e191f1839e",
+      "stage": "acceptance",
+      "reserved": 300,
+      "charged": 10.978724173037335,
+      "status": "interrupted",
+      "identity": {
+        "source": "44b6a75f7254adbf56ccbed4808d76e07db088b0b7283ad0c7420138479f869d",
+        "job": {
+          "action": "accept",
+          "out": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_probe_002/accept.json"
+        },
+        "shared_device": true,
+        "max_torch_gib": 4,
+        "host_reserve_gib": 16
+      },
+      "started_unix": 1790450916.2409928,
+      "finished_unix": 1790450927.2322485,
+      "overrun": false
+    },
+    {
+      "id": "460743b6172545efa6ae2ded9d6cca7e",
+      "stage": "acceptance",
+      "reserved": 120,
+      "charged": 3.2666107589611784,
+      "status": "completed",
+      "identity": {
+        "job": {
+          "action": "audited_bf16_diagnosis"
+        },
+        "script_sha256": "84212f814e23b2f5bdb7525b4441a2da88a44707deaec8d791ff23f0085ec2d2",
+        "reason": "Capture exact failed metrics and replay tensors after host headroom recovered"
+      },
+      "started_unix": 1790451073.6119542,
+      "finished_unix": 1790451076.8857098,
+      "overrun": false
+    },
+    {
+      "id": "3d3201d0172749729d85ca52836d04e0",
+      "stage": "acceptance",
+      "reserved": 120,
+      "charged": 9.421099337050691,
+      "status": "completed",
+      "identity": {
+        "job": {
+          "action": "audited_shared_subset",
+          "family": "accept",
+          "size": null
+        },
+        "source": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+        "script_sha256": "e0b4803460d3810beb0945a16749cfcd0c634ec311aa9afe17df17b7c158f5d8"
+      },
+      "started_unix": 1790451201.1540368,
+      "finished_unix": 1790451210.583106,
+      "overrun": false
+    },
+    {
+      "id": "420529970ece4d9fa9808cbe00420113",
+      "stage": "backbone",
+      "reserved": 120,
+      "charged": 10.017888417991344,
+      "status": "completed",
+      "identity": {
+        "job": {
+          "action": "audited_shared_subset",
+          "family": "softmax",
+          "size": 0
+        },
+        "source": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+        "script_sha256": "e0b4803460d3810beb0945a16749cfcd0c634ec311aa9afe17df17b7c158f5d8"
+      },
+      "started_unix": 1790451210.6096067,
+      "finished_unix": 1790451220.6346557,
+      "overrun": false
+    },
+    {
+      "id": "f8878f44391e481e89b85681d1178761",
+      "stage": "backbone",
+      "reserved": 120,
+      "charged": 10.003509148024023,
+      "status": "completed",
+      "identity": {
+        "job": {
+          "action": "audited_shared_subset",
+          "family": "local_softmax",
+          "size": 0
+        },
+        "source": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+        "script_sha256": "e0b4803460d3810beb0945a16749cfcd0c634ec311aa9afe17df17b7c158f5d8"
+      },
+      "started_unix": 1790451220.655103,
+      "finished_unix": 1790451230.6658762,
+      "overrun": false
+    },
+    {
+      "id": "a29f35b599ce4598a2994b5fc0d2e28b",
+      "stage": "backbone",
+      "reserved": 120,
+      "charged": 12.869868493988179,
+      "status": "completed",
+      "identity": {
+        "job": {
+          "action": "audited_shared_subset",
+          "family": "hybrid",
+          "size": 0
+        },
+        "source": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+        "script_sha256": "e0b4803460d3810beb0945a16749cfcd0c634ec311aa9afe17df17b7c158f5d8"
+      },
+      "started_unix": 1790451230.7061865,
+      "finished_unix": 1790451243.5886374,
+      "overrun": false
+    },
+    {
+      "id": "363c480c207e495495944ff0873f866e",
+      "stage": "backbone",
+      "reserved": 120,
+      "charged": 11.069664071022999,
+      "status": "completed",
+      "identity": {
+        "job": {
+          "action": "audited_shared_subset",
+          "family": "softmax",
+          "size": 1
+        },
+        "source": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+        "script_sha256": "e0b4803460d3810beb0945a16749cfcd0c634ec311aa9afe17df17b7c158f5d8"
+      },
+      "started_unix": 1790451243.6180832,
+      "finished_unix": 1790451254.6980228,
+      "overrun": false
+    },
+    {
+      "id": "72bda99ca1e34025a4285571cc31fdd2",
+      "stage": "backbone",
+      "reserved": 120,
+      "charged": 12.820585894980468,
+      "status": "completed",
+      "identity": {
+        "job": {
+          "action": "audited_shared_subset",
+          "family": "local_softmax",
+          "size": 1
+        },
+        "source": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+        "script_sha256": "e0b4803460d3810beb0945a16749cfcd0c634ec311aa9afe17df17b7c158f5d8"
+      },
+      "started_unix": 1790451254.7344031,
+      "finished_unix": 1790451267.565564,
+      "overrun": false
+    },
+    {
+      "id": "0083dd2bce814829881aa2ca2f105178",
+      "stage": "backbone",
+      "reserved": 120,
+      "charged": 17.07121714996174,
+      "status": "completed",
+      "identity": {
+        "job": {
+          "action": "audited_shared_subset",
+          "family": "hybrid",
+          "size": 1
+        },
+        "source": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+        "script_sha256": "e0b4803460d3810beb0945a16749cfcd0c634ec311aa9afe17df17b7c158f5d8"
+      },
+      "started_unix": 1790451267.6093984,
+      "finished_unix": 1790451284.6984074,
+      "overrun": false
+    }
+  ]
+}

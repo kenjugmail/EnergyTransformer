@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "kind": "energy",
+      "bf16_logits_relative": 0.046519823372364044,
+      "loss_abs": 0.0003771781921386719,
+      "gradient_relative": 1.0656179189682007,
+      "gradient_cosine": 0.794655442237854,
+      "passed": false
+    },
+    {
+      "kind": "hybrid",
+      "bf16_logits_relative": 0.012753883376717567,
+      "loss_abs": 0.00013446807861328125,
+      "gradient_relative": 0.039192214608192444,
+      "gradient_cosine": 0.999373733997345,
+      "passed": true
+    },
+    {
+      "kind": "softmax",
+      "bf16_logits_relative": 0.005577681120485067,
+      "loss_abs": 3.0994415283203125e-05,
+      "gradient_relative": 0.005560696590691805,
+      "gradient_cosine": 0.9999845623970032,
+      "passed": true
+    }
+  ],
+  "scope": "BF16 diagnostic only, no training authorization",
+  "peak_reserved_bytes": 69206016
+}

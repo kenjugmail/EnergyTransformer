@@ -35,9 +35,11 @@ def require_idle_gpu(reserve_gib=16.):
 
 
 def set_memory_limit(device, gib):
-    if torch.device(device).type != 'cuda':
+    device=torch.device(device)
+    if device.type != 'cuda':
         return
-    total = torch.cuda.get_device_properties(device).total_memory
+    index=torch.cuda.current_device() if device.index is None else device.index
+    total = torch.cuda.get_device_properties(index).total_memory
     if total <= 0:
         raise RuntimeError('Cannot determine CUDA allocation limit')
-    torch.cuda.set_per_process_memory_fraction(min(.7, gib * 2**30 / total), device)
+    torch.cuda.set_per_process_memory_fraction(min(.7, gib * 2**30 / total), index)

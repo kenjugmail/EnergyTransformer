@@ -1,0 +1,8 @@
+{
+  "rates": {
+    "softmax": 0.002,
+    "local_softmax": 0.002,
+    "hybrid": 0.004
+  },
+  "pilot_fits_sha256": "e192040ca8e9a857859e73995616dbf34eb36ea81b1a353d87df4c08d25c0f8a"
+}

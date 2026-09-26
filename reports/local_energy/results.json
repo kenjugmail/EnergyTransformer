@@ -1,0 +1,5930 @@
+{
+  "status": "completed",
+  "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+  "selection_sha256": "602da4ef49ea16e1a7f04093ad5e80b0cce60da9160a88f4af35335a249ff790",
+  "environment": {
+    "torch": "2.14.0+cu130",
+    "machine": "aarch64",
+    "device": "cpu",
+    "cuda": "13.0",
+    "threads": 2,
+    "gpu": null
+  },
+  "completed_fits": 57,
+  "gpu_seconds": 0,
+  "rows": [
+    {
+      "task": "fashion",
+      "method": "bp",
+      "depth": 8,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.7913333376248678,
+      "mean_initial_accuracy": 0.09849999969204266,
+      "mean_bits_per_target": 1.1073066393534343,
+      "parameter_count": 32842,
+      "parameter_bytes": 131368,
+      "cpu_single_example_ms": 0.3109519893769175,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.11749999970197678,
+          "accuracy": 0.7910000085830688,
+          "bits_per_target": 1.0850327014923096,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 0.8192125170025975,
+          "learning_interval": {
+            "difference": 0.6735,
+            "low": 0.6509875,
+            "high": 0.696,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7910000085830688
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.061000000685453415,
+          "accuracy": 0.7850000262260437,
+          "bits_per_target": 1.1531128883361816,
+          "best_step": 300,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 0.7800865489989519,
+          "learning_interval": {
+            "difference": 0.724,
+            "low": 0.702,
+            "high": 0.747,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7850000262260437
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.11699999868869781,
+          "accuracy": 0.7979999780654907,
+          "bits_per_target": 1.0837743282318115,
+          "best_step": 300,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 0.7943860189989209,
+          "learning_interval": {
+            "difference": 0.681,
+            "low": 0.6559875000000001,
+            "high": 0.7060124999999999,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7979999780654907
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "fashion",
+      "method": "pc",
+      "depth": 8,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.7944999933242798,
+      "mean_initial_accuracy": 0.09849999969204266,
+      "mean_bits_per_target": 1.1467410723368328,
+      "parameter_count": 32842,
+      "parameter_bytes": 131368,
+      "cpu_single_example_ms": 0.16905603115446866,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.11749999970197678,
+          "accuracy": 0.7914999723434448,
+          "bits_per_target": 1.179787278175354,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 3.076335283985827,
+          "learning_interval": {
+            "difference": 0.674,
+            "low": 0.6505,
+            "high": 0.697,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7914999723434448
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.061000000685453415,
+          "accuracy": 0.7950000166893005,
+          "bits_per_target": 1.1561036109924316,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 2.6480929410317913,
+          "learning_interval": {
+            "difference": 0.734,
+            "low": 0.713,
+            "high": 0.7555,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7950000166893005
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.11699999868869781,
+          "accuracy": 0.796999990940094,
+          "bits_per_target": 1.1043323278427124,
+          "best_step": 300,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 2.992004885978531,
+          "learning_interval": {
+            "difference": 0.68,
+            "low": 0.6554875,
+            "high": 0.705,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.796999990940094
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "fashion",
+      "method": "pcalm",
+      "depth": 8,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.7913333376248678,
+      "mean_initial_accuracy": 0.09849999969204266,
+      "mean_bits_per_target": 1.1452990372975667,
+      "parameter_count": 32842,
+      "parameter_bytes": 131368,
+      "cpu_single_example_ms": 0.2325360255781561,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.11749999970197678,
+          "accuracy": 0.7879999876022339,
+          "bits_per_target": 1.1594187021255493,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 3.5106700530159287,
+          "learning_interval": {
+            "difference": 0.6705,
+            "low": 0.6479875,
+            "high": 0.694,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7879999876022339
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.061000000685453415,
+          "accuracy": 0.7900000214576721,
+          "bits_per_target": 1.1636346578598022,
+          "best_step": 300,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 3.5093393540009856,
+          "learning_interval": {
+            "difference": 0.729,
+            "low": 0.7075,
+            "high": 0.7505,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7900000214576721
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.11699999868869781,
+          "accuracy": 0.7960000038146973,
+          "bits_per_target": 1.1128437519073486,
+          "best_step": 300,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 3.7226563980220817,
+          "learning_interval": {
+            "difference": 0.679,
+            "low": 0.6545,
+            "high": 0.704,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7960000038146973
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "fashion",
+      "method": "energy",
+      "depth": 8,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.7983333269755045,
+      "mean_initial_accuracy": 0.09049999962250392,
+      "mean_bits_per_target": 0.8431726296742758,
+      "parameter_count": 32842,
+      "parameter_bytes": 131368,
+      "cpu_single_example_ms": 3.356803470524028,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.10599999874830246,
+          "accuracy": 0.8034999966621399,
+          "bits_per_target": 0.8041127324104309,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 8.322583160013892,
+          "learning_interval": {
+            "difference": 0.6975,
+            "low": 0.6749875000000001,
+            "high": 0.7195125,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.8034999966621399
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.057999998331069946,
+          "accuracy": 0.796999990940094,
+          "bits_per_target": 0.8781464099884033,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 8.740325456019491,
+          "learning_interval": {
+            "difference": 0.739,
+            "low": 0.718,
+            "high": 0.759,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.796999990940094
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.10750000178813934,
+          "accuracy": 0.7944999933242798,
+          "bits_per_target": 0.8472587466239929,
+          "best_step": 300,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 8.332014743995387,
+          "learning_interval": {
+            "difference": 0.687,
+            "low": 0.6629875000000001,
+            "high": 0.7105,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7944999933242798
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "fashion",
+      "method": "bp",
+      "depth": 32,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.7953333258628845,
+      "mean_initial_accuracy": 0.10166666656732559,
+      "mean_bits_per_target": 1.1476874748865764,
+      "parameter_count": 58186,
+      "parameter_bytes": 232744,
+      "cpu_single_example_ms": 0.6079110025893897,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.10000000149011612,
+          "accuracy": 0.7929999828338623,
+          "bits_per_target": 1.1848198175430298,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 1.8001704020425677,
+          "learning_interval": {
+            "difference": 0.693,
+            "low": 0.67,
+            "high": 0.716,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7929999828338623
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.09849999845027924,
+          "accuracy": 0.7870000004768372,
+          "bits_per_target": 1.197845697402954,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 1.4965660739690065,
+          "learning_interval": {
+            "difference": 0.6885,
+            "low": 0.665,
+            "high": 0.7115125,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7870000004768372
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.10649999976158142,
+          "accuracy": 0.8059999942779541,
+          "bits_per_target": 1.0603969097137451,
+          "best_step": 300,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 1.6001981900190003,
+          "learning_interval": {
+            "difference": 0.6995,
+            "low": 0.6774875,
+            "high": 0.721,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.8059999942779541
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "fashion",
+      "method": "pc",
+      "depth": 32,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.6868333419164022,
+      "mean_initial_accuracy": 0.10166666656732559,
+      "mean_bits_per_target": 1.4903678894042969,
+      "parameter_count": 58186,
+      "parameter_bytes": 232744,
+      "cpu_single_example_ms": 0.7378469745162874,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.10000000149011612,
+          "accuracy": 0.6880000233650208,
+          "bits_per_target": 1.450903296470642,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 12.610887966991868,
+          "learning_interval": {
+            "difference": 0.588,
+            "low": 0.563,
+            "high": 0.6135,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.6880000233650208
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.09849999845027924,
+          "accuracy": 0.6930000185966492,
+          "bits_per_target": 1.4494520425796509,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 12.368887846008874,
+          "learning_interval": {
+            "difference": 0.5945,
+            "low": 0.571,
+            "high": 0.6185,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.6930000185966492
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.10649999976158142,
+          "accuracy": 0.6794999837875366,
+          "bits_per_target": 1.5707483291625977,
+          "best_step": 400,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 14.67415895999875,
+          "learning_interval": {
+            "difference": 0.573,
+            "low": 0.55,
+            "high": 0.5965125,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.6794999837875366
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "fashion",
+      "method": "pcalm",
+      "depth": 32,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.7914999922116598,
+      "mean_initial_accuracy": 0.10166666656732559,
+      "mean_bits_per_target": 1.112141768137614,
+      "parameter_count": 58186,
+      "parameter_bytes": 232744,
+      "cpu_single_example_ms": 0.7443829963449389,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.10000000149011612,
+          "accuracy": 0.781499981880188,
+          "bits_per_target": 1.0995395183563232,
+          "best_step": 200,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 17.14153660502052,
+          "learning_interval": {
+            "difference": 0.6815,
+            "low": 0.6585,
+            "high": 0.7045,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.781499981880188
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.09849999845027924,
+          "accuracy": 0.7900000214576721,
+          "bits_per_target": 1.1188082695007324,
+          "best_step": 300,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 17.259925974009093,
+          "learning_interval": {
+            "difference": 0.6915,
+            "low": 0.6685,
+            "high": 0.7135,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.7900000214576721
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.10649999976158142,
+          "accuracy": 0.8029999732971191,
+          "bits_per_target": 1.1180775165557861,
+          "best_step": 300,
+          "updates": 400,
+          "examples_seen": 12800,
+          "training_elapsed_s": 22.71777693304466,
+          "learning_interval": {
+            "difference": 0.6965,
+            "low": 0.6744875,
+            "high": 0.718,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "fashion": {
+              "count": 2000,
+              "accuracy": 0.8029999732971191
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "graph",
+      "method": "bp",
+      "depth": 4,
+      "width": 48,
+      "memory": false,
+      "mean_accuracy": 0.5327777862548828,
+      "mean_initial_accuracy": 0.156111108760039,
+      "mean_bits_per_target": 1.7830033699671428,
+      "parameter_count": 12199,
+      "parameter_bytes": 48796,
+      "cpu_single_example_ms": 0.09692800813354552,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.1483333259820938,
+          "accuracy": 0.5266666412353516,
+          "bits_per_target": 1.7707619667053223,
+          "best_step": 500,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 0.9903467039694078,
+          "learning_interval": {
+            "difference": 0.37833333333333335,
+            "low": 0.34247916666666667,
+            "high": 0.41333333333333333,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.4399999976158142
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.39500001072883606
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.4449999928474426
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4399999976158142
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4399999976158142
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.1158333346247673,
+          "accuracy": 0.5350000262260437,
+          "bits_per_target": 1.7375465631484985,
+          "best_step": 750,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 1.0782591809984297,
+          "learning_interval": {
+            "difference": 0.4191666666666667,
+            "low": 0.385,
+            "high": 0.45416666666666666,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.4399999976158142
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.375
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.47999998927116394
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.46000000834465027
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.45500001311302185
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.20416666567325592,
+          "accuracy": 0.5366666913032532,
+          "bits_per_target": 1.8407015800476074,
+          "best_step": 1000,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 1.0465396760264412,
+          "learning_interval": {
+            "difference": 0.3325,
+            "low": 0.3,
+            "high": 0.3641666666666667,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.4399999976158142
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.3799999952316284
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.4650000035762787
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.44999998807907104
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.48500001430511475
+            }
+          },
+          "unsupported_answers": 0
+        }
+      ]
+    },
+    {
+      "task": "graph",
+      "method": "pc",
+      "depth": 4,
+      "width": 48,
+      "memory": false,
+      "mean_accuracy": 0.4911111096541087,
+      "mean_initial_accuracy": 0.156111108760039,
+      "mean_bits_per_target": 2.117439866065979,
+      "parameter_count": 12199,
+      "parameter_bytes": 48796,
+      "cpu_single_example_ms": 0.09532002150081098,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.1483333259820938,
+          "accuracy": 0.46166667342185974,
+          "bits_per_target": 2.499084711074829,
+          "best_step": 750,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 14.895949370984454,
+          "learning_interval": {
+            "difference": 0.31333333333333335,
+            "low": 0.27831249999999996,
+            "high": 0.3475,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.41499999165534973
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.35499998927116394
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.4000000059604645
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.2199999988079071
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.3799999952316284
+            }
+          },
+          "unsupported_answers": 20
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.1158333346247673,
+          "accuracy": 0.503333330154419,
+          "bits_per_target": 1.9038901329040527,
+          "best_step": 250,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 6.954768644995056,
+          "learning_interval": {
+            "difference": 0.3875,
+            "low": 0.3516666666666667,
+            "high": 0.4216666666666667,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.41499999165534973
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.35499998927116394
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.4399999976158142
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.36000001430511475
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.44999998807907104
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.20416666567325592,
+          "accuracy": 0.5083333253860474,
+          "bits_per_target": 1.9493447542190552,
+          "best_step": 250,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 6.494955672998913,
+          "learning_interval": {
+            "difference": 0.30416666666666664,
+            "low": 0.2725,
+            "high": 0.335,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.38499999046325684
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.375
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.41499999165534973
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.39500001072883606
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.47999998927116394
+            }
+          },
+          "unsupported_answers": 0
+        }
+      ]
+    },
+    {
+      "task": "graph",
+      "method": "pcalm",
+      "depth": 4,
+      "width": 48,
+      "memory": false,
+      "mean_accuracy": 0.5011111001173655,
+      "mean_initial_accuracy": 0.156111108760039,
+      "mean_bits_per_target": 1.9948765834172566,
+      "parameter_count": 12199,
+      "parameter_bytes": 48796,
+      "cpu_single_example_ms": 0.09504749323241413,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.1483333259820938,
+          "accuracy": 0.4749999940395355,
+          "bits_per_target": 2.168344497680664,
+          "best_step": 500,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 26.518462924985215,
+          "learning_interval": {
+            "difference": 0.32666666666666666,
+            "low": 0.2875,
+            "high": 0.3641666666666667,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.4050000011920929
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.375
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.35499998927116394
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.2849999964237213
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4300000071525574
+            }
+          },
+          "unsupported_answers": 3
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.1158333346247673,
+          "accuracy": 0.5099999904632568,
+          "bits_per_target": 1.8876430988311768,
+          "best_step": 250,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 8.470986489963252,
+          "learning_interval": {
+            "difference": 0.39416666666666667,
+            "low": 0.3583125,
+            "high": 0.42833333333333334,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.41999998688697815
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.36500000953674316
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.4449999928474426
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4050000011920929
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.42500001192092896
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.20416666567325592,
+          "accuracy": 0.5183333158493042,
+          "bits_per_target": 1.9286421537399292,
+          "best_step": 250,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 9.245762310980354,
+          "learning_interval": {
+            "difference": 0.31416666666666665,
+            "low": 0.2824791666666666,
+            "high": 0.34418749999999987,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.3700000047683716
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.375
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.4300000071525574
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.42500001192092896
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.5099999904632568
+            }
+          },
+          "unsupported_answers": 0
+        }
+      ]
+    },
+    {
+      "task": "graph",
+      "method": "energy",
+      "depth": 4,
+      "width": 48,
+      "memory": false,
+      "mean_accuracy": 0.5266666412353516,
+      "mean_initial_accuracy": 0.15000000099341074,
+      "mean_bits_per_target": 1.6794884999593098,
+      "parameter_count": 12199,
+      "parameter_bytes": 48796,
+      "cpu_single_example_ms": 2.889827999752015,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.15333333611488342,
+          "accuracy": 0.5224999785423279,
+          "bits_per_target": 1.7041083574295044,
+          "best_step": 500,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 16.937531442032196,
+          "learning_interval": {
+            "difference": 0.36916666666666664,
+            "low": 0.3325,
+            "high": 0.4041874999999999,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.4350000023841858
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.3799999952316284
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.4449999928474426
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4449999928474426
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4300000071525574
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.11166666448116302,
+          "accuracy": 0.5274999737739563,
+          "bits_per_target": 1.6689345836639404,
+          "best_step": 750,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 12.795176582003478,
+          "learning_interval": {
+            "difference": 0.41583333333333333,
+            "low": 0.38166666666666665,
+            "high": 0.4491874999999999,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.41499999165534973
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.38499999046325684
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.47999998927116394
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4399999976158142
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4449999928474426
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.1850000023841858,
+          "accuracy": 0.5299999713897705,
+          "bits_per_target": 1.6654225587844849,
+          "best_step": 1000,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 15.697239947970957,
+          "learning_interval": {
+            "difference": 0.345,
+            "low": 0.31166666666666665,
+            "high": 0.37833333333333335,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.41499999165534973
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.3799999952316284
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.44999998807907104
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4650000035762787
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4699999988079071
+            }
+          },
+          "unsupported_answers": 0
+        }
+      ]
+    },
+    {
+      "task": "graph",
+      "method": "bp",
+      "depth": 4,
+      "width": 48,
+      "memory": true,
+      "mean_accuracy": 0.5819444259007772,
+      "mean_initial_accuracy": 0.15527777870496115,
+      "mean_bits_per_target": 1.6682251691818237,
+      "parameter_count": 14935,
+      "parameter_bytes": 59740,
+      "cpu_single_example_ms": 0.13051947462372482,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.14666666090488434,
+          "accuracy": 0.5916666388511658,
+          "bits_per_target": 1.702481746673584,
+          "best_step": 1000,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 1.5497978419880383,
+          "learning_interval": {
+            "difference": 0.445,
+            "low": 0.4083333333333333,
+            "high": 0.48002083333333323,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.5249999761581421
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.4350000023841858
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.5550000071525574
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4699999988079071
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.5649999976158142
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.12333333492279053,
+          "accuracy": 0.5666666626930237,
+          "bits_per_target": 1.6662194728851318,
+          "best_step": 1000,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 1.535126450995449,
+          "learning_interval": {
+            "difference": 0.44333333333333336,
+            "low": 0.4075,
+            "high": 0.47833333333333333,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.4650000035762787
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.45500001311302185
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.5099999904632568
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.45500001311302185
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.5149999856948853
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.19583334028720856,
+          "accuracy": 0.5874999761581421,
+          "bits_per_target": 1.6359742879867554,
+          "best_step": 1000,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 1.626260075950995,
+          "learning_interval": {
+            "difference": 0.39166666666666666,
+            "low": 0.3574791666666666,
+            "high": 0.42583333333333334,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.49000000953674316
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.46000000834465027
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.5400000214576721
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.45500001311302185
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.5799999833106995
+            }
+          },
+          "unsupported_answers": 0
+        }
+      ]
+    },
+    {
+      "task": "graph",
+      "method": "pc",
+      "depth": 4,
+      "width": 48,
+      "memory": true,
+      "mean_accuracy": 0.503333330154419,
+      "mean_initial_accuracy": 0.15527777870496115,
+      "mean_bits_per_target": 1.9562889734903972,
+      "parameter_count": 14935,
+      "parameter_bytes": 59740,
+      "cpu_single_example_ms": 0.131583510665223,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.14666666090488434,
+          "accuracy": 0.4975000023841858,
+          "bits_per_target": 2.023146629333496,
+          "best_step": 250,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 11.660355063038878,
+          "learning_interval": {
+            "difference": 0.35083333333333333,
+            "low": 0.31333333333333335,
+            "high": 0.3875,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.41499999165534973
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.39500001072883606
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.42500001192092896
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.3149999976158142
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4350000023841858
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.12333333492279053,
+          "accuracy": 0.5066666603088379,
+          "bits_per_target": 1.9085230827331543,
+          "best_step": 250,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 11.81000993802445,
+          "learning_interval": {
+            "difference": 0.38333333333333336,
+            "low": 0.3466666666666667,
+            "high": 0.41752083333333323,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.41499999165534973
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.3499999940395355
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.46000000834465027
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.3700000047683716
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4449999928474426
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.19583334028720856,
+          "accuracy": 0.5058333277702332,
+          "bits_per_target": 1.937197208404541,
+          "best_step": 250,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 12.033440406026784,
+          "learning_interval": {
+            "difference": 0.31,
+            "low": 0.2725,
+            "high": 0.345,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.38999998569488525
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.38499999046325684
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.3799999952316284
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4099999964237213
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4699999988079071
+            }
+          },
+          "unsupported_answers": 0
+        }
+      ]
+    },
+    {
+      "task": "graph",
+      "method": "pcalm",
+      "depth": 4,
+      "width": 48,
+      "memory": true,
+      "mean_accuracy": 0.4950000047683716,
+      "mean_initial_accuracy": 0.15527777870496115,
+      "mean_bits_per_target": 2.0512648820877075,
+      "parameter_count": 14935,
+      "parameter_bytes": 59740,
+      "cpu_single_example_ms": 0.13120000949129462,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.14666666090488434,
+          "accuracy": 0.49416667222976685,
+          "bits_per_target": 1.941672921180725,
+          "best_step": 250,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 14.603278978960589,
+          "learning_interval": {
+            "difference": 0.3475,
+            "low": 0.31,
+            "high": 0.38333333333333336,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.4099999964237213
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.38499999046325684
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.4399999976158142
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.32499998807907104
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4050000011920929
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.12333333492279053,
+          "accuracy": 0.5041666626930237,
+          "bits_per_target": 1.89200758934021,
+          "best_step": 250,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 15.503234587027691,
+          "learning_interval": {
+            "difference": 0.38083333333333336,
+            "low": 0.34331249999999996,
+            "high": 0.41502083333333323,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.4000000059604645
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.3449999988079071
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.4399999976158142
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4050000011920929
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.4350000023841858
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.19583334028720856,
+          "accuracy": 0.4866666793823242,
+          "bits_per_target": 2.3201141357421875,
+          "best_step": 750,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 14.359719667001627,
+          "learning_interval": {
+            "difference": 0.29083333333333333,
+            "low": 0.2558125,
+            "high": 0.3258333333333333,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.41999998688697815
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.42500001192092896
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.39500001072883606
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.23000000417232513
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.44999998807907104
+            }
+          },
+          "unsupported_answers": 22
+        }
+      ]
+    },
+    {
+      "task": "graph",
+      "method": "energy",
+      "depth": 4,
+      "width": 48,
+      "memory": true,
+      "mean_accuracy": 0.5797222057978312,
+      "mean_initial_accuracy": 0.14527777582406998,
+      "mean_bits_per_target": 1.5459394454956055,
+      "parameter_count": 14935,
+      "parameter_bytes": 59740,
+      "cpu_single_example_ms": 5.903271521674469,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.14749999344348907,
+          "accuracy": 0.5774999856948853,
+          "bits_per_target": 1.5433757305145264,
+          "best_step": 1000,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 20.96164218604099,
+          "learning_interval": {
+            "difference": 0.43,
+            "low": 0.3941458333333333,
+            "high": 0.465,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.45500001311302185
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.4449999928474426
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.5149999856948853
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.48500001430511475
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.5649999976158142
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.1158333346247673,
+          "accuracy": 0.5758333206176758,
+          "bits_per_target": 1.5623975992202759,
+          "best_step": 1000,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 22.533924012968782,
+          "learning_interval": {
+            "difference": 0.46,
+            "low": 0.425,
+            "high": 0.495,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.49000000953674316
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.44999998807907104
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.5400000214576721
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4699999988079071
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.5049999952316284
+            }
+          },
+          "unsupported_answers": 0
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.17249999940395355,
+          "accuracy": 0.5858333110809326,
+          "bits_per_target": 1.5320450067520142,
+          "best_step": 1000,
+          "updates": 1000,
+          "examples_seen": 32000,
+          "training_elapsed_s": 17.54933206201531,
+          "learning_interval": {
+            "difference": 0.41333333333333333,
+            "low": 0.3775,
+            "high": 0.4475,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "conflicting_updates": {
+              "count": 200,
+              "accuracy": 0.46000000834465027
+            },
+            "heldout_pair": {
+              "count": 200,
+              "accuracy": 0.5149999856948853
+            },
+            "long_delay": {
+              "count": 200,
+              "accuracy": 0.5049999952316284
+            },
+            "longer_path": {
+              "count": 200,
+              "accuracy": 0.4650000035762787
+            },
+            "missing": {
+              "count": 200,
+              "accuracy": 1.0
+            },
+            "seen": {
+              "count": 200,
+              "accuracy": 0.5699999928474426
+            }
+          },
+          "unsupported_answers": 0
+        }
+      ]
+    },
+    {
+      "task": "bytes",
+      "method": "bp",
+      "depth": 3,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.10286458333333333,
+      "mean_initial_accuracy": 0.005208333333333333,
+      "mean_bits_per_target": 7.30618683497111,
+      "parameter_count": 12640,
+      "parameter_bytes": 50560,
+      "cpu_single_example_ms": 0.07948800339363515,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.00390625,
+          "accuracy": 0.078125,
+          "bits_per_target": 7.279386043548584,
+          "best_step": 200,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 0.26443721097894013,
+          "learning_interval": {
+            "difference": 0.07421875,
+            "low": 0.04296875,
+            "high": 0.109375,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.078125
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.0078125,
+          "accuracy": 0.1015625,
+          "bits_per_target": 7.294134140014648,
+          "best_step": 200,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 0.32006748497951776,
+          "learning_interval": {
+            "difference": 0.09375,
+            "low": 0.0546875,
+            "high": 0.13671875,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.1015625
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.00390625,
+          "accuracy": 0.12890625,
+          "bits_per_target": 7.345040321350098,
+          "best_step": 200,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 0.2991079789935611,
+          "learning_interval": {
+            "difference": 0.125,
+            "low": 0.0859375,
+            "high": 0.16416015624999947,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.12890625
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "bytes",
+      "method": "bp_ce",
+      "depth": 3,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.12630208333333334,
+      "mean_initial_accuracy": 0.005208333333333333,
+      "mean_bits_per_target": 5.166937351226807,
+      "parameter_count": 12640,
+      "parameter_bytes": 50560,
+      "cpu_single_example_ms": 0.07415999425575137,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.00390625,
+          "accuracy": 0.125,
+          "bits_per_target": 5.161667346954346,
+          "best_step": 200,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 0.2988080430077389,
+          "learning_interval": {
+            "difference": 0.12109375,
+            "low": 0.08203125,
+            "high": 0.1640625,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.125
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.0078125,
+          "accuracy": 0.12890625,
+          "bits_per_target": 5.192873001098633,
+          "best_step": 150,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 0.29958437802270055,
+          "learning_interval": {
+            "difference": 0.12109375,
+            "low": 0.08203125,
+            "high": 0.16796875,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.12890625
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.00390625,
+          "accuracy": 0.125,
+          "bits_per_target": 5.146271705627441,
+          "best_step": 150,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 0.3022109509911388,
+          "learning_interval": {
+            "difference": 0.12109375,
+            "low": 0.08203125,
+            "high": 0.1640625,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.125
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "bytes",
+      "method": "pcalm",
+      "depth": 3,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.09375,
+      "mean_initial_accuracy": 0.005208333333333333,
+      "mean_bits_per_target": 7.4097394943237305,
+      "parameter_count": 12640,
+      "parameter_bytes": 50560,
+      "cpu_single_example_ms": 0.07307197665795684,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.00390625,
+          "accuracy": 0.08203125,
+          "bits_per_target": 7.4192986488342285,
+          "best_step": 200,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 1.1902498080162331,
+          "learning_interval": {
+            "difference": 0.078125,
+            "low": 0.046875,
+            "high": 0.11328125,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.08203125
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.0078125,
+          "accuracy": 0.08203125,
+          "bits_per_target": 7.4570770263671875,
+          "best_step": 200,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 1.0985481169773266,
+          "learning_interval": {
+            "difference": 0.07421875,
+            "low": 0.0390625,
+            "high": 0.109375,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.08203125
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.00390625,
+          "accuracy": 0.1171875,
+          "bits_per_target": 7.352842807769775,
+          "best_step": 200,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 1.172405327029992,
+          "learning_interval": {
+            "difference": 0.11328125,
+            "low": 0.07421875,
+            "high": 0.15625,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.1171875
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "bytes",
+      "method": "energy",
+      "depth": 3,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.10026041666666667,
+      "mean_initial_accuracy": 0.0026041666666666665,
+      "mean_bits_per_target": 5.486826101938884,
+      "parameter_count": 12640,
+      "parameter_bytes": 50560,
+      "cpu_single_example_ms": 20.975563034880906,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.00390625,
+          "accuracy": 0.1015625,
+          "bits_per_target": 5.5168938636779785,
+          "best_step": 150,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 13.78754695598036,
+          "learning_interval": {
+            "difference": 0.09765625,
+            "low": 0.0625,
+            "high": 0.140625,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.1015625
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.00390625,
+          "accuracy": 0.09375,
+          "bits_per_target": 5.519824504852295,
+          "best_step": 150,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 13.08621385000879,
+          "learning_interval": {
+            "difference": 0.08984375,
+            "low": 0.0546875,
+            "high": 0.12890625,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.09375
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.0,
+          "accuracy": 0.10546875,
+          "bits_per_target": 5.423759937286377,
+          "best_step": 150,
+          "updates": 200,
+          "examples_seen": 1600,
+          "training_elapsed_s": 13.939130043960176,
+          "learning_interval": {
+            "difference": 0.10546875,
+            "low": 0.0703125,
+            "high": 0.14453125,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 256,
+              "accuracy": 0.10546875
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "task": "fashion",
+      "a": "pc",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": 8,
+      "paired_interval": {
+        "difference": 0.0031666666666666675,
+        "low": -0.0033333333333333327,
+        "high": 0.01,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.0004999999999999449,
+        0.010000000000000009,
+        -0.0010000000000000009
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "fashion",
+      "a": "pcalm",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": 8,
+      "paired_interval": {
+        "difference": -4.440892098500626e-19,
+        "low": -0.005833333333333334,
+        "high": 0.005833333333333332,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.0030000000000000027,
+        0.0050000000000000044,
+        -0.0020000000000000018
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "fashion",
+      "a": "energy",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": 8,
+      "paired_interval": {
+        "difference": 0.006999999999999998,
+        "low": -0.0015000000000000018,
+        "high": 0.01633333333333333,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.012499999999999956,
+        0.01200000000000001,
+        -0.0035000000000000586
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "fashion",
+      "a": "pc",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": 32,
+      "paired_interval": {
+        "difference": -0.10850000000000001,
+        "low": -0.12083333333333335,
+        "high": -0.09666250000000003,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.1050000000000001,
+        -0.09400000000000008,
+        -0.12650000000000006
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "fashion",
+      "a": "pcalm",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": 32,
+      "paired_interval": {
+        "difference": -0.0038333333333333344,
+        "low": -0.011504166666666666,
+        "high": 0.004004166666666644,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.011500000000000066,
+        0.0030000000000000027,
+        -0.0030000000000000027
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "pc",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.04166666666666668,
+        "low": -0.058333333333333334,
+        "high": -0.02555555555555556,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.06499999999999995,
+        -0.03166666666666673,
+        -0.02833333333333332
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "pc",
+      "b": "bp",
+      "memory_a": true,
+      "memory_b": true,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.07861111111111112,
+        "low": -0.0963888888888889,
+        "high": -0.0613888888888889,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.09416666666666668,
+        -0.05999999999999994,
+        -0.08166666666666667
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "pcalm",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.03166666666666667,
+        "low": -0.04750000000000001,
+        "high": -0.01694444444444445,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.05166666666666664,
+        -0.025000000000000022,
+        -0.018333333333333313
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "pcalm",
+      "b": "bp",
+      "memory_a": true,
+      "memory_b": true,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.08694444444444445,
+        "low": -0.105,
+        "high": -0.06944444444444445,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.09750000000000003,
+        -0.0625,
+        -0.10083333333333333
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "energy",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.006111111111111111,
+        "low": -0.012222222222222223,
+        "high": 0.0002777777777777779,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.004166666666666652,
+        -0.007500000000000062,
+        -0.006666666666666599
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "energy",
+      "b": "bp",
+      "memory_a": true,
+      "memory_b": true,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.0022222222222222214,
+        "low": -0.010277777777777776,
+        "high": 0.006111111111111111,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.01416666666666666,
+        0.009166666666666656,
+        -0.0016666666666667052
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "bp",
+      "b": "bp",
+      "memory_a": true,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": 0.049166666666666664,
+        "low": 0.03305555555555555,
+        "high": 0.06527777777777777,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.06500000000000006,
+        0.03166666666666662,
+        0.0508333333333334
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "pc",
+      "b": "pc",
+      "memory_a": true,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": 0.012222222222222223,
+        "low": 0.0013888888888888896,
+        "high": 0.02222222222222222,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.03583333333333333,
+        0.0033333333333334103,
+        -0.0024999999999999467
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "pcalm",
+      "b": "pcalm",
+      "memory_a": true,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.006111111111111111,
+        "low": -0.018611111111111113,
+        "high": 0.006388888888888886,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.019166666666666665,
+        -0.005833333333333357,
+        -0.03166666666666662
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "energy",
+      "b": "energy",
+      "memory_a": true,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": 0.05305555555555555,
+        "low": 0.0375,
+        "high": 0.06834027777777774,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.05500000000000005,
+        0.04833333333333334,
+        0.05583333333333329
+      ],
+      "replicated_five_point_gain": true,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "bytes",
+      "a": "pcalm",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.009114583333333334,
+        "low": -0.022135416666666664,
+        "high": 0.002604166666666666,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.00390625,
+        -0.01953125,
+        -0.01171875
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "bytes",
+      "a": "energy",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.002604166666666667,
+        "low": -0.02734375,
+        "high": 0.022135416666666668,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.0234375,
+        -0.0078125,
+        -0.0234375
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "bytes",
+      "a": "energy",
+      "b": "bp_ce",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.026041666666666668,
+        "low": -0.054720052083333345,
+        "high": 0.001334635416666486,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.0234375,
+        -0.03515625,
+        -0.01953125
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "fashion",
+      "a": "pcalm",
+      "b": "pc",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": 8,
+      "paired_interval": {
+        "difference": -0.0031666666666666666,
+        "low": -0.009333333333333334,
+        "high": 0.0028333333333333335,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.0034999999999999476,
+        -0.0050000000000000044,
+        -0.0010000000000000009
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "fashion",
+      "a": "pcalm",
+      "b": "pc",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": 32,
+      "paired_interval": {
+        "difference": 0.10466666666666667,
+        "low": 0.092,
+        "high": 0.11733333333333335,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.09350000000000003,
+        0.09700000000000009,
+        0.12350000000000005
+      ],
+      "replicated_five_point_gain": true,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "pcalm",
+      "b": "pc",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": 0.01,
+        "low": -0.0008333333333333334,
+        "high": 0.02083333333333333,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.013333333333333308,
+        0.00666666666666671,
+        0.010000000000000009
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "graph",
+      "a": "pcalm",
+      "b": "pc",
+      "memory_a": true,
+      "memory_b": true,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.008333333333333335,
+        "low": -0.021118055555555557,
+        "high": 0.0036111111111111088,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        -0.003333333333333355,
+        -0.0025000000000000577,
+        -0.019166666666666665
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    }
+  ],
+  "discrete_graph": {
+    "accuracy": 1,
+    "scope": "Fixed supplied-rule discrete energy control; no learned extraction or rule discovery",
+    "mean_elapsed_ms": 0.02059925197196814,
+    "groups": {
+      "conflicting_updates": 1,
+      "heldout_pair": 1,
+      "long_delay": 1,
+      "longer_path": 1,
+      "missing": 1,
+      "seen": 1
+    }
+  },
+  "feature_probes": {
+    "status": "completed",
+    "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+    "selection_sha256": "602da4ef49ea16e1a7f04093ad5e80b0cce60da9160a88f4af35335a249ff790",
+    "train_count": 512,
+    "test_count": 1200,
+    "ridge": 0.1,
+    "scope": "Diagnostic first-hop ridge probes at every layer. Predicted-label states for EBM; no gold conditioning. Network weights remain frozen. Probes themselves use first-hop supervision.",
+    "results": [
+      {
+        "config": {
+          "task": "graph",
+          "method": "bp",
+          "seed": 11,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.3383333384990692,
+            "groups": {
+              "conflicting_updates": 0.28999999165534973,
+              "heldout_pair": 0.27000001072883606,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6549999713897705,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.34333333373069763,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.2750000059604645,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.2849999964237213,
+              "missing": 0.6449999809265137,
+              "seen": 0.3100000023841858
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.34416666626930237,
+            "groups": {
+              "conflicting_updates": 0.3050000071525574,
+              "heldout_pair": 0.2750000059604645,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.2849999964237213,
+              "missing": 0.6549999713897705,
+              "seen": 0.30000001192092896
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.33416667580604553,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.26499998569488525,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.2750000059604645,
+              "missing": 0.625,
+              "seen": 0.30000001192092896
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.48750001192092896,
+            "groups": {
+              "conflicting_updates": 0.41999998688697815,
+              "heldout_pair": 0.38499999046325684,
+              "long_delay": 0.3799999952316284,
+              "longer_path": 0.3100000023841858,
+              "missing": 1.0,
+              "seen": 0.4300000071525574
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.48750001192092896,
+            "groups": {
+              "conflicting_updates": 0.42500001192092896,
+              "heldout_pair": 0.39500001072883606,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.3050000071525574,
+              "missing": 1.0,
+              "seen": 0.4300000071525574
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4891666769981384,
+            "groups": {
+              "conflicting_updates": 0.41499999165534973,
+              "heldout_pair": 0.38999998569488525,
+              "long_delay": 0.36500000953674316,
+              "longer_path": 0.33500000834465027,
+              "missing": 1.0,
+              "seen": 0.4300000071525574
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4883333444595337,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.38999998569488525,
+              "long_delay": 0.36500000953674316,
+              "longer_path": 0.3400000035762787,
+              "missing": 1.0,
+              "seen": 0.42500001192092896
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pc",
+          "seed": 11,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.3383333384990692,
+            "groups": {
+              "conflicting_updates": 0.28999999165534973,
+              "heldout_pair": 0.27000001072883606,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6549999713897705,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.34333333373069763,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.2750000059604645,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.2849999964237213,
+              "missing": 0.6449999809265137,
+              "seen": 0.3100000023841858
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.34416666626930237,
+            "groups": {
+              "conflicting_updates": 0.3050000071525574,
+              "heldout_pair": 0.2750000059604645,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.2849999964237213,
+              "missing": 0.6549999713897705,
+              "seen": 0.30000001192092896
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.33416667580604553,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.26499998569488525,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.2750000059604645,
+              "missing": 0.625,
+              "seen": 0.30000001192092896
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4724999964237213,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.375,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.3050000071525574,
+              "missing": 1.0,
+              "seen": 0.38999998569488525
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.4741666615009308,
+            "groups": {
+              "conflicting_updates": 0.4050000011920929,
+              "heldout_pair": 0.36000001430511475,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.32499998807907104,
+              "missing": 1.0,
+              "seen": 0.4000000059604645
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.47583332657814026,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.375,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.3199999928474426,
+              "missing": 1.0,
+              "seen": 0.39500001072883606
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4808333218097687,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.3700000047683716,
+              "long_delay": 0.36000001430511475,
+              "longer_path": 0.33500000834465027,
+              "missing": 1.0,
+              "seen": 0.4099999964237213
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pcalm",
+          "seed": 11,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.3383333384990692,
+            "groups": {
+              "conflicting_updates": 0.28999999165534973,
+              "heldout_pair": 0.27000001072883606,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6549999713897705,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.34333333373069763,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.2750000059604645,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.2849999964237213,
+              "missing": 0.6449999809265137,
+              "seen": 0.3100000023841858
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.34416666626930237,
+            "groups": {
+              "conflicting_updates": 0.3050000071525574,
+              "heldout_pair": 0.2750000059604645,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.2849999964237213,
+              "missing": 0.6549999713897705,
+              "seen": 0.30000001192092896
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.33416667580604553,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.26499998569488525,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.2750000059604645,
+              "missing": 0.625,
+              "seen": 0.30000001192092896
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.48750001192092896,
+            "groups": {
+              "conflicting_updates": 0.41999998688697815,
+              "heldout_pair": 0.4050000011920929,
+              "long_delay": 0.33500000834465027,
+              "longer_path": 0.3449999988079071,
+              "missing": 1.0,
+              "seen": 0.41999998688697815
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.4816666543483734,
+            "groups": {
+              "conflicting_updates": 0.41499999165534973,
+              "heldout_pair": 0.39500001072883606,
+              "long_delay": 0.33000001311302185,
+              "longer_path": 0.33000001311302185,
+              "missing": 1.0,
+              "seen": 0.41999998688697815
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.48500001430511475,
+            "groups": {
+              "conflicting_updates": 0.41499999165534973,
+              "heldout_pair": 0.39500001072883606,
+              "long_delay": 0.3449999988079071,
+              "longer_path": 0.3449999988079071,
+              "missing": 1.0,
+              "seen": 0.4099999964237213
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.47999998927116394,
+            "groups": {
+              "conflicting_updates": 0.4000000059604645,
+              "heldout_pair": 0.4000000059604645,
+              "long_delay": 0.3400000035762787,
+              "longer_path": 0.3400000035762787,
+              "missing": 1.0,
+              "seen": 0.4000000059604645
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "energy",
+          "seed": 11,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.33500000834465027,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.2750000059604645,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6349999904632568,
+              "seen": 0.28999999165534973
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.34583333134651184,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.2849999964237213,
+              "long_delay": 0.26499998569488525,
+              "longer_path": 0.26499998569488525,
+              "missing": 0.6549999713897705,
+              "seen": 0.3100000023841858
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.33416667580604553,
+            "groups": {
+              "conflicting_updates": 0.27000001072883606,
+              "heldout_pair": 0.2849999964237213,
+              "long_delay": 0.26499998569488525,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6349999904632568,
+              "seen": 0.2800000011920929
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.31333333253860474,
+            "groups": {
+              "conflicting_updates": 0.25999999046325684,
+              "heldout_pair": 0.25999999046325684,
+              "long_delay": 0.2549999952316284,
+              "longer_path": 0.25,
+              "missing": 0.5849999785423279,
+              "seen": 0.27000001072883606
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.5016666650772095,
+            "groups": {
+              "conflicting_updates": 0.4050000011920929,
+              "heldout_pair": 0.4000000059604645,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.39500001072883606,
+              "missing": 1.0,
+              "seen": 0.4399999976158142
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.5016666650772095,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.4000000059604645,
+              "long_delay": 0.375,
+              "longer_path": 0.375,
+              "missing": 1.0,
+              "seen": 0.44999998807907104
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.5074999928474426,
+            "groups": {
+              "conflicting_updates": 0.41999998688697815,
+              "heldout_pair": 0.4000000059604645,
+              "long_delay": 0.38499999046325684,
+              "longer_path": 0.38999998569488525,
+              "missing": 1.0,
+              "seen": 0.44999998807907104
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.5,
+            "groups": {
+              "conflicting_updates": 0.42500001192092896,
+              "heldout_pair": 0.38499999046325684,
+              "long_delay": 0.39500001072883606,
+              "longer_path": 0.3799999952316284,
+              "missing": 1.0,
+              "seen": 0.41499999165534973
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "bp",
+          "seed": 11,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.3383333384990692,
+            "groups": {
+              "conflicting_updates": 0.28999999165534973,
+              "heldout_pair": 0.27000001072883606,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6549999713897705,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.3199999928474426,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.26499998569488525,
+              "long_delay": 0.25,
+              "longer_path": 0.25,
+              "missing": 0.5699999928474426,
+              "seen": 0.28999999165534973
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.34833332896232605,
+            "groups": {
+              "conflicting_updates": 0.32499998807907104,
+              "heldout_pair": 0.27000001072883606,
+              "long_delay": 0.2750000059604645,
+              "longer_path": 0.25999999046325684,
+              "missing": 0.6549999713897705,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.36916667222976685,
+            "groups": {
+              "conflicting_updates": 0.3050000071525574,
+              "heldout_pair": 0.32499998807907104,
+              "long_delay": 0.30000001192092896,
+              "longer_path": 0.26499998569488525,
+              "missing": 0.699999988079071,
+              "seen": 0.3199999928474426
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4833333194255829,
+            "groups": {
+              "conflicting_updates": 0.41999998688697815,
+              "heldout_pair": 0.375,
+              "long_delay": 0.3449999988079071,
+              "longer_path": 0.3400000035762787,
+              "missing": 1.0,
+              "seen": 0.41999998688697815
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.5416666865348816,
+            "groups": {
+              "conflicting_updates": 0.4749999940395355,
+              "heldout_pair": 0.4749999940395355,
+              "long_delay": 0.41999998688697815,
+              "longer_path": 0.375,
+              "missing": 1.0,
+              "seen": 0.5049999952316284
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.6208333373069763,
+            "groups": {
+              "conflicting_updates": 0.5350000262260437,
+              "heldout_pair": 0.6000000238418579,
+              "long_delay": 0.5400000214576721,
+              "longer_path": 0.4749999940395355,
+              "missing": 1.0,
+              "seen": 0.574999988079071
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.6449999809265137,
+            "groups": {
+              "conflicting_updates": 0.5350000262260437,
+              "heldout_pair": 0.6200000047683716,
+              "long_delay": 0.5799999833106995,
+              "longer_path": 0.5299999713897705,
+              "missing": 1.0,
+              "seen": 0.6050000190734863
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pc",
+          "seed": 11,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.3383333384990692,
+            "groups": {
+              "conflicting_updates": 0.28999999165534973,
+              "heldout_pair": 0.27000001072883606,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6549999713897705,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.3199999928474426,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.26499998569488525,
+              "long_delay": 0.25,
+              "longer_path": 0.25,
+              "missing": 0.5699999928474426,
+              "seen": 0.28999999165534973
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.34833332896232605,
+            "groups": {
+              "conflicting_updates": 0.32499998807907104,
+              "heldout_pair": 0.27000001072883606,
+              "long_delay": 0.2750000059604645,
+              "longer_path": 0.25999999046325684,
+              "missing": 0.6549999713897705,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.36916667222976685,
+            "groups": {
+              "conflicting_updates": 0.3050000071525574,
+              "heldout_pair": 0.32499998807907104,
+              "long_delay": 0.30000001192092896,
+              "longer_path": 0.26499998569488525,
+              "missing": 0.699999988079071,
+              "seen": 0.3199999928474426
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4808333218097687,
+            "groups": {
+              "conflicting_updates": 0.41999998688697815,
+              "heldout_pair": 0.38999998569488525,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.3199999928474426,
+              "missing": 1.0,
+              "seen": 0.4000000059604645
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.503333330154419,
+            "groups": {
+              "conflicting_updates": 0.41999998688697815,
+              "heldout_pair": 0.4300000071525574,
+              "long_delay": 0.375,
+              "longer_path": 0.36500000953674316,
+              "missing": 1.0,
+              "seen": 0.4300000071525574
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.5,
+            "groups": {
+              "conflicting_updates": 0.4000000059604645,
+              "heldout_pair": 0.4099999964237213,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.3700000047683716,
+              "missing": 1.0,
+              "seen": 0.44999998807907104
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.5091666579246521,
+            "groups": {
+              "conflicting_updates": 0.41499999165534973,
+              "heldout_pair": 0.45500001311302185,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.4050000011920929,
+              "missing": 1.0,
+              "seen": 0.42500001192092896
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pcalm",
+          "seed": 11,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.3383333384990692,
+            "groups": {
+              "conflicting_updates": 0.28999999165534973,
+              "heldout_pair": 0.27000001072883606,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6549999713897705,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.3199999928474426,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.26499998569488525,
+              "long_delay": 0.25,
+              "longer_path": 0.25,
+              "missing": 0.5699999928474426,
+              "seen": 0.28999999165534973
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.34833332896232605,
+            "groups": {
+              "conflicting_updates": 0.32499998807907104,
+              "heldout_pair": 0.27000001072883606,
+              "long_delay": 0.2750000059604645,
+              "longer_path": 0.25999999046325684,
+              "missing": 0.6549999713897705,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.36916667222976685,
+            "groups": {
+              "conflicting_updates": 0.3050000071525574,
+              "heldout_pair": 0.32499998807907104,
+              "long_delay": 0.30000001192092896,
+              "longer_path": 0.26499998569488525,
+              "missing": 0.699999988079071,
+              "seen": 0.3199999928474426
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4841666519641876,
+            "groups": {
+              "conflicting_updates": 0.39500001072883606,
+              "heldout_pair": 0.4050000011920929,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.33000001311302185,
+              "missing": 1.0,
+              "seen": 0.41999998688697815
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.4925000071525574,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.39500001072883606,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.35499998927116394,
+              "missing": 1.0,
+              "seen": 0.4399999976158142
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4950000047683716,
+            "groups": {
+              "conflicting_updates": 0.38999998569488525,
+              "heldout_pair": 0.38999998569488525,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.39500001072883606,
+              "missing": 1.0,
+              "seen": 0.4399999976158142
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4950000047683716,
+            "groups": {
+              "conflicting_updates": 0.4000000059604645,
+              "heldout_pair": 0.4350000023841858,
+              "long_delay": 0.3400000035762787,
+              "longer_path": 0.3700000047683716,
+              "missing": 1.0,
+              "seen": 0.42500001192092896
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "energy",
+          "seed": 11,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.3400000035762787,
+            "groups": {
+              "conflicting_updates": 0.28999999165534973,
+              "heldout_pair": 0.2750000059604645,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.2849999964237213,
+              "missing": 0.6399999856948853,
+              "seen": 0.3100000023841858
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.3283333480358124,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.2750000059604645,
+              "long_delay": 0.2750000059604645,
+              "longer_path": 0.26499998569488525,
+              "missing": 0.550000011920929,
+              "seen": 0.3050000071525574
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.3449999988079071,
+            "groups": {
+              "conflicting_updates": 0.3149999976158142,
+              "heldout_pair": 0.23999999463558197,
+              "long_delay": 0.3050000071525574,
+              "longer_path": 0.25999999046325684,
+              "missing": 0.6499999761581421,
+              "seen": 0.30000001192092896
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.34833332896232605,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.2800000011920929,
+              "long_delay": 0.27000001072883606,
+              "longer_path": 0.2549999952316284,
+              "missing": 0.6549999713897705,
+              "seen": 0.33000001311302185
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4908333420753479,
+            "groups": {
+              "conflicting_updates": 0.42500001192092896,
+              "heldout_pair": 0.3799999952316284,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.36500000953674316,
+              "missing": 1.0,
+              "seen": 0.4050000011920929
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.5508333444595337,
+            "groups": {
+              "conflicting_updates": 0.4699999988079071,
+              "heldout_pair": 0.5099999904632568,
+              "long_delay": 0.4350000023841858,
+              "longer_path": 0.38999998569488525,
+              "missing": 1.0,
+              "seen": 0.5
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.5866666436195374,
+            "groups": {
+              "conflicting_updates": 0.47999998927116394,
+              "heldout_pair": 0.5649999976158142,
+              "long_delay": 0.5249999761581421,
+              "longer_path": 0.4350000023841858,
+              "missing": 1.0,
+              "seen": 0.5149999856948853
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.5858333110809326,
+            "groups": {
+              "conflicting_updates": 0.4749999940395355,
+              "heldout_pair": 0.5899999737739563,
+              "long_delay": 0.5199999809265137,
+              "longer_path": 0.42500001192092896,
+              "missing": 1.0,
+              "seen": 0.5049999952316284
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "bp",
+          "seed": 22,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.29083332419395447,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.2549999952316284,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.5199999809265137,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.2874999940395355,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.5099999904632568,
+              "seen": 0.23999999463558197
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.28999999165534973,
+            "groups": {
+              "conflicting_updates": 0.3149999976158142,
+              "heldout_pair": 0.23000000417232513,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.5249999761581421,
+              "seen": 0.23000000417232513
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.2866666615009308,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.2199999988079071,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.20999999344348907,
+              "missing": 0.5149999856948853,
+              "seen": 0.23999999463558197
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4841666519641876,
+            "groups": {
+              "conflicting_updates": 0.4050000011920929,
+              "heldout_pair": 0.38499999046325684,
+              "long_delay": 0.3799999952316284,
+              "longer_path": 0.35499998927116394,
+              "missing": 1.0,
+              "seen": 0.3799999952316284
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.4891666769981384,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.39500001072883606,
+              "long_delay": 0.3799999952316284,
+              "longer_path": 0.36000001430511475,
+              "missing": 1.0,
+              "seen": 0.38999998569488525
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4883333444595337,
+            "groups": {
+              "conflicting_updates": 0.4050000011920929,
+              "heldout_pair": 0.38499999046325684,
+              "long_delay": 0.38999998569488525,
+              "longer_path": 0.36500000953674316,
+              "missing": 1.0,
+              "seen": 0.38499999046325684
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4833333194255829,
+            "groups": {
+              "conflicting_updates": 0.39500001072883606,
+              "heldout_pair": 0.38999998569488525,
+              "long_delay": 0.38999998569488525,
+              "longer_path": 0.36000001430511475,
+              "missing": 1.0,
+              "seen": 0.36500000953674316
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pc",
+          "seed": 22,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.29083332419395447,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.2549999952316284,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.5199999809265137,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.2874999940395355,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.5099999904632568,
+              "seen": 0.23999999463558197
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.28999999165534973,
+            "groups": {
+              "conflicting_updates": 0.3149999976158142,
+              "heldout_pair": 0.23000000417232513,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.5249999761581421,
+              "seen": 0.23000000417232513
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.2866666615009308,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.2199999988079071,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.20999999344348907,
+              "missing": 0.5149999856948853,
+              "seen": 0.23999999463558197
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4749999940395355,
+            "groups": {
+              "conflicting_updates": 0.375,
+              "heldout_pair": 0.38499999046325684,
+              "long_delay": 0.3499999940395355,
+              "longer_path": 0.3700000047683716,
+              "missing": 1.0,
+              "seen": 0.3700000047683716
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.47833332419395447,
+            "groups": {
+              "conflicting_updates": 0.38999998569488525,
+              "heldout_pair": 0.3700000047683716,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.38499999046325684,
+              "missing": 1.0,
+              "seen": 0.3700000047683716
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4808333218097687,
+            "groups": {
+              "conflicting_updates": 0.375,
+              "heldout_pair": 0.39500001072883606,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.38999998569488525,
+              "missing": 1.0,
+              "seen": 0.3700000047683716
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.47833332419395447,
+            "groups": {
+              "conflicting_updates": 0.38499999046325684,
+              "heldout_pair": 0.38999998569488525,
+              "long_delay": 0.3449999988079071,
+              "longer_path": 0.3799999952316284,
+              "missing": 1.0,
+              "seen": 0.3700000047683716
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pcalm",
+          "seed": 22,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.29083332419395447,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.2549999952316284,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.5199999809265137,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.2874999940395355,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.5099999904632568,
+              "seen": 0.23999999463558197
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.28999999165534973,
+            "groups": {
+              "conflicting_updates": 0.3149999976158142,
+              "heldout_pair": 0.23000000417232513,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.5249999761581421,
+              "seen": 0.23000000417232513
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.2866666615009308,
+            "groups": {
+              "conflicting_updates": 0.30000001192092896,
+              "heldout_pair": 0.2199999988079071,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.20999999344348907,
+              "missing": 0.5149999856948853,
+              "seen": 0.23999999463558197
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.47333332896232605,
+            "groups": {
+              "conflicting_updates": 0.3799999952316284,
+              "heldout_pair": 0.3799999952316284,
+              "long_delay": 0.3449999988079071,
+              "longer_path": 0.375,
+              "missing": 1.0,
+              "seen": 0.36000001430511475
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.476666659116745,
+            "groups": {
+              "conflicting_updates": 0.38499999046325684,
+              "heldout_pair": 0.39500001072883606,
+              "long_delay": 0.3449999988079071,
+              "longer_path": 0.3700000047683716,
+              "missing": 1.0,
+              "seen": 0.36500000953674316
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4808333218097687,
+            "groups": {
+              "conflicting_updates": 0.38999998569488525,
+              "heldout_pair": 0.38499999046325684,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.38499999046325684,
+              "missing": 1.0,
+              "seen": 0.3700000047683716
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.47999998927116394,
+            "groups": {
+              "conflicting_updates": 0.38999998569488525,
+              "heldout_pair": 0.3799999952316284,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.38499999046325684,
+              "missing": 1.0,
+              "seen": 0.3700000047683716
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "energy",
+          "seed": 22,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.28166666626930237,
+            "groups": {
+              "conflicting_updates": 0.2849999964237213,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23000000417232513,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.5049999952316284,
+              "seen": 0.22499999403953552
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.2824999988079071,
+            "groups": {
+              "conflicting_updates": 0.2849999964237213,
+              "heldout_pair": 0.2549999952316284,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.20499999821186066,
+              "missing": 0.47999998927116394,
+              "seen": 0.23000000417232513
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.2691666781902313,
+            "groups": {
+              "conflicting_updates": 0.25999999046325684,
+              "heldout_pair": 0.2150000035762787,
+              "long_delay": 0.22499999403953552,
+              "longer_path": 0.2150000035762787,
+              "missing": 0.49000000953674316,
+              "seen": 0.20999999344348907
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.27166667580604553,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.20499999821186066,
+              "long_delay": 0.2549999952316284,
+              "longer_path": 0.22499999403953552,
+              "missing": 0.47999998927116394,
+              "seen": 0.20999999344348907
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4925000071525574,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.4099999964237213,
+              "long_delay": 0.375,
+              "longer_path": 0.3700000047683716,
+              "missing": 1.0,
+              "seen": 0.38999998569488525
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.4958333373069763,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.38999998569488525,
+              "long_delay": 0.39500001072883606,
+              "longer_path": 0.3799999952316284,
+              "missing": 1.0,
+              "seen": 0.4000000059604645
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4908333420753479,
+            "groups": {
+              "conflicting_updates": 0.38999998569488525,
+              "heldout_pair": 0.4000000059604645,
+              "long_delay": 0.3799999952316284,
+              "longer_path": 0.38499999046325684,
+              "missing": 1.0,
+              "seen": 0.38999998569488525
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4933333396911621,
+            "groups": {
+              "conflicting_updates": 0.41499999165534973,
+              "heldout_pair": 0.4099999964237213,
+              "long_delay": 0.375,
+              "longer_path": 0.38499999046325684,
+              "missing": 1.0,
+              "seen": 0.375
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "bp",
+          "seed": 22,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.29083332419395447,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.2549999952316284,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.5199999809265137,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.3824999928474426,
+            "groups": {
+              "conflicting_updates": 0.3499999940395355,
+              "heldout_pair": 0.3100000023841858,
+              "long_delay": 0.3100000023841858,
+              "longer_path": 0.25,
+              "missing": 0.7799999713897705,
+              "seen": 0.29499998688697815
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.3733333349227905,
+            "groups": {
+              "conflicting_updates": 0.33000001311302185,
+              "heldout_pair": 0.30000001192092896,
+              "long_delay": 0.30000001192092896,
+              "longer_path": 0.26499998569488525,
+              "missing": 0.7649999856948853,
+              "seen": 0.2800000011920929
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.39916667342185974,
+            "groups": {
+              "conflicting_updates": 0.3449999988079071,
+              "heldout_pair": 0.33000001311302185,
+              "long_delay": 0.33500000834465027,
+              "longer_path": 0.2750000059604645,
+              "missing": 0.824999988079071,
+              "seen": 0.2849999964237213
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.48500001430511475,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.375,
+              "long_delay": 0.3499999940395355,
+              "longer_path": 0.4000000059604645,
+              "missing": 1.0,
+              "seen": 0.375
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.5541666746139526,
+            "groups": {
+              "conflicting_updates": 0.4449999928474426,
+              "heldout_pair": 0.5099999904632568,
+              "long_delay": 0.46000000834465027,
+              "longer_path": 0.4399999976158142,
+              "missing": 1.0,
+              "seen": 0.4699999988079071
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.5674999952316284,
+            "groups": {
+              "conflicting_updates": 0.44999998807907104,
+              "heldout_pair": 0.5149999856948853,
+              "long_delay": 0.4749999940395355,
+              "longer_path": 0.48500001430511475,
+              "missing": 1.0,
+              "seen": 0.47999998927116394
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.596666693687439,
+            "groups": {
+              "conflicting_updates": 0.49000000953674316,
+              "heldout_pair": 0.5849999785423279,
+              "long_delay": 0.49000000953674316,
+              "longer_path": 0.5,
+              "missing": 1.0,
+              "seen": 0.5149999856948853
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pc",
+          "seed": 22,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.29083332419395447,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.2549999952316284,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.5199999809265137,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.3824999928474426,
+            "groups": {
+              "conflicting_updates": 0.3499999940395355,
+              "heldout_pair": 0.3100000023841858,
+              "long_delay": 0.3100000023841858,
+              "longer_path": 0.25,
+              "missing": 0.7799999713897705,
+              "seen": 0.29499998688697815
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.3733333349227905,
+            "groups": {
+              "conflicting_updates": 0.33000001311302185,
+              "heldout_pair": 0.30000001192092896,
+              "long_delay": 0.30000001192092896,
+              "longer_path": 0.26499998569488525,
+              "missing": 0.7649999856948853,
+              "seen": 0.2800000011920929
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.39916667342185974,
+            "groups": {
+              "conflicting_updates": 0.3449999988079071,
+              "heldout_pair": 0.33000001311302185,
+              "long_delay": 0.33500000834465027,
+              "longer_path": 0.2750000059604645,
+              "missing": 0.824999988079071,
+              "seen": 0.2849999964237213
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.48500001430511475,
+            "groups": {
+              "conflicting_updates": 0.38499999046325684,
+              "heldout_pair": 0.38499999046325684,
+              "long_delay": 0.375,
+              "longer_path": 0.38499999046325684,
+              "missing": 1.0,
+              "seen": 0.3799999952316284
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.47833332419395447,
+            "groups": {
+              "conflicting_updates": 0.4050000011920929,
+              "heldout_pair": 0.38999998569488525,
+              "long_delay": 0.36500000953674316,
+              "longer_path": 0.3499999940395355,
+              "missing": 1.0,
+              "seen": 0.36000001430511475
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4741666615009308,
+            "groups": {
+              "conflicting_updates": 0.3799999952316284,
+              "heldout_pair": 0.36000001430511475,
+              "long_delay": 0.36500000953674316,
+              "longer_path": 0.3799999952316284,
+              "missing": 1.0,
+              "seen": 0.36000001430511475
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4716666638851166,
+            "groups": {
+              "conflicting_updates": 0.38499999046325684,
+              "heldout_pair": 0.3700000047683716,
+              "long_delay": 0.36000001430511475,
+              "longer_path": 0.3499999940395355,
+              "missing": 1.0,
+              "seen": 0.36500000953674316
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pcalm",
+          "seed": 22,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.29083332419395447,
+            "groups": {
+              "conflicting_updates": 0.29499998688697815,
+              "heldout_pair": 0.2549999952316284,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.5199999809265137,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.3824999928474426,
+            "groups": {
+              "conflicting_updates": 0.3499999940395355,
+              "heldout_pair": 0.3100000023841858,
+              "long_delay": 0.3100000023841858,
+              "longer_path": 0.25,
+              "missing": 0.7799999713897705,
+              "seen": 0.29499998688697815
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.3733333349227905,
+            "groups": {
+              "conflicting_updates": 0.33000001311302185,
+              "heldout_pair": 0.30000001192092896,
+              "long_delay": 0.30000001192092896,
+              "longer_path": 0.26499998569488525,
+              "missing": 0.7649999856948853,
+              "seen": 0.2800000011920929
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.39916667342185974,
+            "groups": {
+              "conflicting_updates": 0.3449999988079071,
+              "heldout_pair": 0.33000001311302185,
+              "long_delay": 0.33500000834465027,
+              "longer_path": 0.2750000059604645,
+              "missing": 0.824999988079071,
+              "seen": 0.2849999964237213
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4925000071525574,
+            "groups": {
+              "conflicting_updates": 0.41999998688697815,
+              "heldout_pair": 0.4000000059604645,
+              "long_delay": 0.3799999952316284,
+              "longer_path": 0.3700000047683716,
+              "missing": 1.0,
+              "seen": 0.38499999046325684
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.47749999165534973,
+            "groups": {
+              "conflicting_updates": 0.42500001192092896,
+              "heldout_pair": 0.3700000047683716,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.3449999988079071,
+              "missing": 1.0,
+              "seen": 0.3700000047683716
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4741666615009308,
+            "groups": {
+              "conflicting_updates": 0.375,
+              "heldout_pair": 0.35499998927116394,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.38499999046325684,
+              "missing": 1.0,
+              "seen": 0.375
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4816666543483734,
+            "groups": {
+              "conflicting_updates": 0.41499999165534973,
+              "heldout_pair": 0.36000001430511475,
+              "long_delay": 0.3449999988079071,
+              "longer_path": 0.3700000047683716,
+              "missing": 1.0,
+              "seen": 0.4000000059604645
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "energy",
+          "seed": 22,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.29249998927116394,
+            "groups": {
+              "conflicting_updates": 0.3100000023841858,
+              "heldout_pair": 0.25999999046325684,
+              "long_delay": 0.22499999403953552,
+              "longer_path": 0.1899999976158142,
+              "missing": 0.5199999809265137,
+              "seen": 0.25
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.38749998807907104,
+            "groups": {
+              "conflicting_updates": 0.36000001430511475,
+              "heldout_pair": 0.33000001311302185,
+              "long_delay": 0.2849999964237213,
+              "longer_path": 0.25,
+              "missing": 0.7850000262260437,
+              "seen": 0.3149999976158142
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.38499999046325684,
+            "groups": {
+              "conflicting_updates": 0.3400000035762787,
+              "heldout_pair": 0.32499998807907104,
+              "long_delay": 0.3149999976158142,
+              "longer_path": 0.2549999952316284,
+              "missing": 0.7799999713897705,
+              "seen": 0.29499998688697815
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.38499999046325684,
+            "groups": {
+              "conflicting_updates": 0.33500000834465027,
+              "heldout_pair": 0.3449999988079071,
+              "long_delay": 0.3199999928474426,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.7950000166893005,
+              "seen": 0.24500000476837158
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.47333332896232605,
+            "groups": {
+              "conflicting_updates": 0.36500000953674316,
+              "heldout_pair": 0.3700000047683716,
+              "long_delay": 0.3449999988079071,
+              "longer_path": 0.4000000059604645,
+              "missing": 1.0,
+              "seen": 0.36000001430511475
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.5674999952316284,
+            "groups": {
+              "conflicting_updates": 0.46000000834465027,
+              "heldout_pair": 0.5649999976158142,
+              "long_delay": 0.45500001311302185,
+              "longer_path": 0.44999998807907104,
+              "missing": 1.0,
+              "seen": 0.4749999940395355
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.5841666460037231,
+            "groups": {
+              "conflicting_updates": 0.45500001311302185,
+              "heldout_pair": 0.5899999737739563,
+              "long_delay": 0.48500001430511475,
+              "longer_path": 0.5,
+              "missing": 1.0,
+              "seen": 0.4749999940395355
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.596666693687439,
+            "groups": {
+              "conflicting_updates": 0.4699999988079071,
+              "heldout_pair": 0.6050000190734863,
+              "long_delay": 0.5,
+              "longer_path": 0.5099999904632568,
+              "missing": 1.0,
+              "seen": 0.4950000047683716
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "bp",
+          "seed": 33,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.2574999928474426,
+            "groups": {
+              "conflicting_updates": 0.23999999463558197,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.1899999976158142,
+              "missing": 0.4099999964237213,
+              "seen": 0.22499999403953552
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.25999999046325684,
+            "groups": {
+              "conflicting_updates": 0.25,
+              "heldout_pair": 0.23000000417232513,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.41499999165534973,
+              "seen": 0.23000000417232513
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.26249998807907104,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.23999999463558197,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.4000000059604645,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.2666666805744171,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.4099999964237213,
+              "seen": 0.2549999952316284
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4925000071525574,
+            "groups": {
+              "conflicting_updates": 0.375,
+              "heldout_pair": 0.41499999165534973,
+              "long_delay": 0.38999998569488525,
+              "longer_path": 0.36500000953674316,
+              "missing": 1.0,
+              "seen": 0.4099999964237213
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.4841666519641876,
+            "groups": {
+              "conflicting_updates": 0.3799999952316284,
+              "heldout_pair": 0.4099999964237213,
+              "long_delay": 0.3799999952316284,
+              "longer_path": 0.33500000834465027,
+              "missing": 1.0,
+              "seen": 0.4000000059604645
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4841666519641876,
+            "groups": {
+              "conflicting_updates": 0.38499999046325684,
+              "heldout_pair": 0.4099999964237213,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.32499998807907104,
+              "missing": 1.0,
+              "seen": 0.41499999165534973
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4749999940395355,
+            "groups": {
+              "conflicting_updates": 0.38499999046325684,
+              "heldout_pair": 0.4000000059604645,
+              "long_delay": 0.36000001430511475,
+              "longer_path": 0.3149999976158142,
+              "missing": 1.0,
+              "seen": 0.38999998569488525
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pc",
+          "seed": 33,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.2574999928474426,
+            "groups": {
+              "conflicting_updates": 0.23999999463558197,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.1899999976158142,
+              "missing": 0.4099999964237213,
+              "seen": 0.22499999403953552
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.25999999046325684,
+            "groups": {
+              "conflicting_updates": 0.25,
+              "heldout_pair": 0.23000000417232513,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.41499999165534973,
+              "seen": 0.23000000417232513
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.26249998807907104,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.23999999463558197,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.4000000059604645,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.2666666805744171,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.4099999964237213,
+              "seen": 0.2549999952316284
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.47583332657814026,
+            "groups": {
+              "conflicting_updates": 0.38999998569488525,
+              "heldout_pair": 0.375,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.3100000023841858,
+              "missing": 1.0,
+              "seen": 0.42500001192092896
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.47333332896232605,
+            "groups": {
+              "conflicting_updates": 0.39500001072883606,
+              "heldout_pair": 0.375,
+              "long_delay": 0.36000001430511475,
+              "longer_path": 0.3050000071525574,
+              "missing": 1.0,
+              "seen": 0.4050000011920929
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.47333332896232605,
+            "groups": {
+              "conflicting_updates": 0.3799999952316284,
+              "heldout_pair": 0.375,
+              "long_delay": 0.36000001430511475,
+              "longer_path": 0.3149999976158142,
+              "missing": 1.0,
+              "seen": 0.4099999964237213
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4741666615009308,
+            "groups": {
+              "conflicting_updates": 0.4000000059604645,
+              "heldout_pair": 0.35499998927116394,
+              "long_delay": 0.36500000953674316,
+              "longer_path": 0.3050000071525574,
+              "missing": 1.0,
+              "seen": 0.41999998688697815
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pcalm",
+          "seed": 33,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.2574999928474426,
+            "groups": {
+              "conflicting_updates": 0.23999999463558197,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.1899999976158142,
+              "missing": 0.4099999964237213,
+              "seen": 0.22499999403953552
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.25999999046325684,
+            "groups": {
+              "conflicting_updates": 0.25,
+              "heldout_pair": 0.23000000417232513,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.41499999165534973,
+              "seen": 0.23000000417232513
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.26249998807907104,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.23999999463558197,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.20000000298023224,
+              "missing": 0.4000000059604645,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.2666666805744171,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23999999463558197,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.4099999964237213,
+              "seen": 0.2549999952316284
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.47833332419395447,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.3799999952316284,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.3199999928474426,
+              "missing": 1.0,
+              "seen": 0.4050000011920929
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.476666659116745,
+            "groups": {
+              "conflicting_updates": 0.4050000011920929,
+              "heldout_pair": 0.3700000047683716,
+              "long_delay": 0.36000001430511475,
+              "longer_path": 0.32499998807907104,
+              "missing": 1.0,
+              "seen": 0.4000000059604645
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4749999940395355,
+            "groups": {
+              "conflicting_updates": 0.4000000059604645,
+              "heldout_pair": 0.36000001430511475,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.32499998807907104,
+              "missing": 1.0,
+              "seen": 0.4099999964237213
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.47333332896232605,
+            "groups": {
+              "conflicting_updates": 0.4050000011920929,
+              "heldout_pair": 0.3499999940395355,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.3149999976158142,
+              "missing": 1.0,
+              "seen": 0.4000000059604645
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "energy",
+          "seed": 33,
+          "width": 48,
+          "depth": 4,
+          "memory": false,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.2616666555404663,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.23999999463558197,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.4000000059604645,
+              "seen": 0.23499999940395355
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.2591666579246521,
+            "groups": {
+              "conflicting_updates": 0.24500000476837158,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.25,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.39500001072883606,
+              "seen": 0.22499999403953552
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.25583332777023315,
+            "groups": {
+              "conflicting_updates": 0.25,
+              "heldout_pair": 0.22499999403953552,
+              "long_delay": 0.24500000476837158,
+              "longer_path": 0.19499999284744263,
+              "missing": 0.4050000011920929,
+              "seen": 0.2150000035762787
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.2524999976158142,
+            "groups": {
+              "conflicting_updates": 0.23000000417232513,
+              "heldout_pair": 0.2150000035762787,
+              "long_delay": 0.25,
+              "longer_path": 0.1899999976158142,
+              "missing": 0.39500001072883606,
+              "seen": 0.23499999940395355
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4933333396911621,
+            "groups": {
+              "conflicting_updates": 0.41999998688697815,
+              "heldout_pair": 0.4099999964237213,
+              "long_delay": 0.36000001430511475,
+              "longer_path": 0.3449999988079071,
+              "missing": 1.0,
+              "seen": 0.42500001192092896
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.4983333349227905,
+            "groups": {
+              "conflicting_updates": 0.4099999964237213,
+              "heldout_pair": 0.42500001192092896,
+              "long_delay": 0.36500000953674316,
+              "longer_path": 0.38499999046325684,
+              "missing": 1.0,
+              "seen": 0.4050000011920929
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.49916666746139526,
+            "groups": {
+              "conflicting_updates": 0.4000000059604645,
+              "heldout_pair": 0.42500001192092896,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.4000000059604645,
+              "missing": 1.0,
+              "seen": 0.4000000059604645
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.49666666984558105,
+            "groups": {
+              "conflicting_updates": 0.39500001072883606,
+              "heldout_pair": 0.38999998569488525,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.41499999165534973,
+              "missing": 1.0,
+              "seen": 0.4099999964237213
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "bp",
+          "seed": 33,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.2574999928474426,
+            "groups": {
+              "conflicting_updates": 0.23999999463558197,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.1899999976158142,
+              "missing": 0.4099999964237213,
+              "seen": 0.22499999403953552
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.33666667342185974,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.3100000023841858,
+              "long_delay": 0.29499998688697815,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6349999904632568,
+              "seen": 0.2549999952316284
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4099999964237213,
+            "groups": {
+              "conflicting_updates": 0.33500000834465027,
+              "heldout_pair": 0.3400000035762787,
+              "long_delay": 0.33500000834465027,
+              "longer_path": 0.33000001311302185,
+              "missing": 0.8050000071525574,
+              "seen": 0.3149999976158142
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4424999952316284,
+            "groups": {
+              "conflicting_updates": 0.3700000047683716,
+              "heldout_pair": 0.3400000035762787,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.3499999940395355,
+              "missing": 0.8849999904632568,
+              "seen": 0.35499998927116394
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4724999964237213,
+            "groups": {
+              "conflicting_updates": 0.38499999046325684,
+              "heldout_pair": 0.4099999964237213,
+              "long_delay": 0.3199999928474426,
+              "longer_path": 0.32499998807907104,
+              "missing": 1.0,
+              "seen": 0.39500001072883606
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.5950000286102295,
+            "groups": {
+              "conflicting_updates": 0.5400000214576721,
+              "heldout_pair": 0.5899999737739563,
+              "long_delay": 0.47999998927116394,
+              "longer_path": 0.4350000023841858,
+              "missing": 1.0,
+              "seen": 0.5249999761581421
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.6116666793823242,
+            "groups": {
+              "conflicting_updates": 0.5249999761581421,
+              "heldout_pair": 0.6100000143051147,
+              "long_delay": 0.4950000047683716,
+              "longer_path": 0.48500001430511475,
+              "missing": 1.0,
+              "seen": 0.5550000071525574
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.6083333492279053,
+            "groups": {
+              "conflicting_updates": 0.5400000214576721,
+              "heldout_pair": 0.6100000143051147,
+              "long_delay": 0.4650000035762787,
+              "longer_path": 0.4950000047683716,
+              "missing": 1.0,
+              "seen": 0.5400000214576721
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pc",
+          "seed": 33,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.2574999928474426,
+            "groups": {
+              "conflicting_updates": 0.23999999463558197,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.1899999976158142,
+              "missing": 0.4099999964237213,
+              "seen": 0.22499999403953552
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.33666667342185974,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.3100000023841858,
+              "long_delay": 0.29499998688697815,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6349999904632568,
+              "seen": 0.2549999952316284
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4099999964237213,
+            "groups": {
+              "conflicting_updates": 0.33500000834465027,
+              "heldout_pair": 0.3400000035762787,
+              "long_delay": 0.33500000834465027,
+              "longer_path": 0.33000001311302185,
+              "missing": 0.8050000071525574,
+              "seen": 0.3149999976158142
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4424999952316284,
+            "groups": {
+              "conflicting_updates": 0.3700000047683716,
+              "heldout_pair": 0.3400000035762787,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.3499999940395355,
+              "missing": 0.8849999904632568,
+              "seen": 0.35499998927116394
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4749999940395355,
+            "groups": {
+              "conflicting_updates": 0.38499999046325684,
+              "heldout_pair": 0.3799999952316284,
+              "long_delay": 0.3400000035762787,
+              "longer_path": 0.3499999940395355,
+              "missing": 1.0,
+              "seen": 0.39500001072883606
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.4983333349227905,
+            "groups": {
+              "conflicting_updates": 0.41499999165534973,
+              "heldout_pair": 0.4000000059604645,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.36500000953674316,
+              "missing": 1.0,
+              "seen": 0.4399999976158142
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4933333396911621,
+            "groups": {
+              "conflicting_updates": 0.39500001072883606,
+              "heldout_pair": 0.39500001072883606,
+              "long_delay": 0.38499999046325684,
+              "longer_path": 0.3799999952316284,
+              "missing": 1.0,
+              "seen": 0.4050000011920929
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4925000071525574,
+            "groups": {
+              "conflicting_updates": 0.41999998688697815,
+              "heldout_pair": 0.38499999046325684,
+              "long_delay": 0.3449999988079071,
+              "longer_path": 0.3700000047683716,
+              "missing": 1.0,
+              "seen": 0.4350000023841858
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "pcalm",
+          "seed": 33,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.2574999928474426,
+            "groups": {
+              "conflicting_updates": 0.23999999463558197,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23499999940395355,
+              "longer_path": 0.1899999976158142,
+              "missing": 0.4099999964237213,
+              "seen": 0.22499999403953552
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.33666667342185974,
+            "groups": {
+              "conflicting_updates": 0.2549999952316284,
+              "heldout_pair": 0.3100000023841858,
+              "long_delay": 0.29499998688697815,
+              "longer_path": 0.27000001072883606,
+              "missing": 0.6349999904632568,
+              "seen": 0.2549999952316284
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4099999964237213,
+            "groups": {
+              "conflicting_updates": 0.33500000834465027,
+              "heldout_pair": 0.3400000035762787,
+              "long_delay": 0.33500000834465027,
+              "longer_path": 0.33000001311302185,
+              "missing": 0.8050000071525574,
+              "seen": 0.3149999976158142
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.4424999952316284,
+            "groups": {
+              "conflicting_updates": 0.3700000047683716,
+              "heldout_pair": 0.3400000035762787,
+              "long_delay": 0.35499998927116394,
+              "longer_path": 0.3499999940395355,
+              "missing": 0.8849999904632568,
+              "seen": 0.35499998927116394
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.4699999988079071,
+            "groups": {
+              "conflicting_updates": 0.38999998569488525,
+              "heldout_pair": 0.3700000047683716,
+              "long_delay": 0.3700000047683716,
+              "longer_path": 0.32499998807907104,
+              "missing": 1.0,
+              "seen": 0.36500000953674316
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.4925000071525574,
+            "groups": {
+              "conflicting_updates": 0.4300000071525574,
+              "heldout_pair": 0.4050000011920929,
+              "long_delay": 0.3799999952316284,
+              "longer_path": 0.30000001192092896,
+              "missing": 1.0,
+              "seen": 0.4399999976158142
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.4858333468437195,
+            "groups": {
+              "conflicting_updates": 0.39500001072883606,
+              "heldout_pair": 0.4399999976158142,
+              "long_delay": 0.4000000059604645,
+              "longer_path": 0.27000001072883606,
+              "missing": 1.0,
+              "seen": 0.4099999964237213
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.48750001192092896,
+            "groups": {
+              "conflicting_updates": 0.38999998569488525,
+              "heldout_pair": 0.4050000011920929,
+              "long_delay": 0.38499999046325684,
+              "longer_path": 0.32499998807907104,
+              "missing": 1.0,
+              "seen": 0.41999998688697815
+            }
+          }
+        ]
+      },
+      {
+        "config": {
+          "task": "graph",
+          "method": "energy",
+          "seed": 33,
+          "width": 48,
+          "depth": 4,
+          "memory": true,
+          "steps": 1000,
+          "batch": 32,
+          "settle_steps": 16,
+          "state_lr": 0.2,
+          "dual_lr": 1.0,
+          "rho": 1.0,
+          "weight_lr": 0.001,
+          "temperature": 0.1,
+          "positive_weight": 0.1,
+          "activation": "tanh",
+          "candidate_chunk": 16
+        },
+        "initial": [
+          {
+            "layer": 0,
+            "accuracy": 0.2549999952316284,
+            "groups": {
+              "conflicting_updates": 0.23000000417232513,
+              "heldout_pair": 0.24500000476837158,
+              "long_delay": 0.23000000417232513,
+              "longer_path": 0.1899999976158142,
+              "missing": 0.41499999165534973,
+              "seen": 0.2199999988079071
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.33416667580604553,
+            "groups": {
+              "conflicting_updates": 0.2750000059604645,
+              "heldout_pair": 0.2800000011920929,
+              "long_delay": 0.3100000023841858,
+              "longer_path": 0.2549999952316284,
+              "missing": 0.6399999856948853,
+              "seen": 0.24500000476837158
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.39750000834465027,
+            "groups": {
+              "conflicting_updates": 0.3149999976158142,
+              "heldout_pair": 0.3400000035762787,
+              "long_delay": 0.33000001311302185,
+              "longer_path": 0.3199999928474426,
+              "missing": 0.7850000262260437,
+              "seen": 0.29499998688697815
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.41749998927116394,
+            "groups": {
+              "conflicting_updates": 0.35499998927116394,
+              "heldout_pair": 0.33000001311302185,
+              "long_delay": 0.3149999976158142,
+              "longer_path": 0.32499998807907104,
+              "missing": 0.8500000238418579,
+              "seen": 0.33000001311302185
+            }
+          }
+        ],
+        "best": [
+          {
+            "layer": 0,
+            "accuracy": 0.48249998688697815,
+            "groups": {
+              "conflicting_updates": 0.3799999952316284,
+              "heldout_pair": 0.3799999952316284,
+              "long_delay": 0.36000001430511475,
+              "longer_path": 0.36000001430511475,
+              "missing": 1.0,
+              "seen": 0.41499999165534973
+            }
+          },
+          {
+            "layer": 1,
+            "accuracy": 0.5950000286102295,
+            "groups": {
+              "conflicting_updates": 0.5249999761581421,
+              "heldout_pair": 0.625,
+              "long_delay": 0.4399999976158142,
+              "longer_path": 0.48500001430511475,
+              "missing": 1.0,
+              "seen": 0.4950000047683716
+            }
+          },
+          {
+            "layer": 2,
+            "accuracy": 0.6000000238418579,
+            "groups": {
+              "conflicting_updates": 0.5299999713897705,
+              "heldout_pair": 0.6100000143051147,
+              "long_delay": 0.4449999928474426,
+              "longer_path": 0.5,
+              "missing": 1.0,
+              "seen": 0.5149999856948853
+            }
+          },
+          {
+            "layer": 3,
+            "accuracy": 0.5933333039283752,
+            "groups": {
+              "conflicting_updates": 0.5,
+              "heldout_pair": 0.5950000286102295,
+              "long_delay": 0.44999998807907104,
+              "longer_path": 0.5049999952316284,
+              "missing": 1.0,
+              "seen": 0.5099999904632568
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "byte_energy_minus_bp_ce_bits": {
+    "paired_interval": {
+      "difference": 0.31988876877093,
+      "low": 0.233440175061243,
+      "high": 0.39551642452634517,
+      "unit": "episode",
+      "draws": 2000
+    },
+    "per_seed_differences": [
+      0.35522660679423623,
+      0.32695157603913394,
+      0.2774881234794231
+    ],
+    "scope": "256 nonoverlapping target windows; residual text correlation limits this interval."
+  },
+  "learned_discrete": {
+    "status": "completed",
+    "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+    "environment": {
+      "torch": "2.14.0+cu130",
+      "machine": "aarch64",
+      "device": "cpu",
+      "cuda": "13.0",
+      "threads": 2,
+      "gpu": null
+    },
+    "selection_sha256": "bd09d8e863336945fba533591ffe06e133a48e0b55d91c0f578af0058f2ee088",
+    "parameters": 7,
+    "records": [
+      {
+        "seed": 11,
+        "steps": 400,
+        "best_step": 400,
+        "initial_validation": {
+          "accuracy": 0.626953125,
+          "nll": 1.9417189359664917,
+          "unsupported_answers": 37,
+          "groups": {
+            "seen": 0.626953125
+          }
+        },
+        "selected_validation": {
+          "accuracy": 1.0,
+          "nll": 0.024118361994624138,
+          "unsupported_answers": 0,
+          "groups": {
+            "seen": 1.0
+          }
+        },
+        "weights": {
+          "active_relation": 6.231306076049805,
+          "missing_to_unknown": 4.635467052459717,
+          "stale_set": -0.6985335350036621,
+          "hypothetical": 0.009320014156401157,
+          "other_relation": -0.03033185377717018,
+          "answer_unknown": 1.134053349494934,
+          "unknown_absorbing": 4.369040012359619
+        },
+        "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/local_energy_discrete/best_seed11.pt",
+        "sha256": "e8a6bc737f11eb2bea93274e9a6953d99db6755fe8db7ae68bdcadd386f77577",
+        "initial_sha256": "8f27cc28584edcd83d44c9b88ffb84325107574ec2d2dba3bfe1be45c475b815",
+        "elapsed_s": 1.095864075992722,
+        "history": [
+          {
+            "step": 100,
+            "loss": 0.14120395481586456,
+            "validation_accuracy": 1.0
+          },
+          {
+            "step": 200,
+            "loss": 0.05089449882507324,
+            "validation_accuracy": 1.0
+          },
+          {
+            "step": 300,
+            "loss": 0.03432202339172363,
+            "validation_accuracy": 1.0
+          },
+          {
+            "step": 400,
+            "loss": 0.023683475330471992,
+            "validation_accuracy": 1.0
+          }
+        ]
+      },
+      {
+        "seed": 22,
+        "steps": 400,
+        "best_step": 400,
+        "initial_validation": {
+          "accuracy": 0.435546875,
+          "nll": 1.9422616958618164,
+          "unsupported_answers": 76,
+          "groups": {
+            "seen": 0.435546875
+          }
+        },
+        "selected_validation": {
+          "accuracy": 1.0,
+          "nll": 0.024197060614824295,
+          "unsupported_answers": 0,
+          "groups": {
+            "seen": 1.0
+          }
+        },
+        "weights": {
+          "active_relation": 6.226207256317139,
+          "missing_to_unknown": 4.636263370513916,
+          "stale_set": -0.6825269460678101,
+          "hypothetical": -0.048443540930747986,
+          "other_relation": -0.05368681997060776,
+          "answer_unknown": 1.0778213739395142,
+          "unknown_absorbing": 4.382349491119385
+        },
+        "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/local_energy_discrete/best_seed22.pt",
+        "sha256": "bf4c112053a89805f5551b18be0713d79f32dd30a962b6b2a521366bd7f4dffa",
+        "initial_sha256": "423a96b4712b5444b897863e1a4d36b915610c5628f121b66a183792e3f7e9b1",
+        "elapsed_s": 0.18648130900692195,
+        "history": [
+          {
+            "step": 100,
+            "loss": 0.13627786934375763,
+            "validation_accuracy": 1.0
+          },
+          {
+            "step": 200,
+            "loss": 0.05631529167294502,
+            "validation_accuracy": 1.0
+          },
+          {
+            "step": 300,
+            "loss": 0.03285558149218559,
+            "validation_accuracy": 1.0
+          },
+          {
+            "step": 400,
+            "loss": 0.025384819135069847,
+            "validation_accuracy": 1.0
+          }
+        ]
+      },
+      {
+        "seed": 33,
+        "steps": 400,
+        "best_step": 400,
+        "initial_validation": {
+          "accuracy": 0.484375,
+          "nll": 1.9415674209594727,
+          "unsupported_answers": 76,
+          "groups": {
+            "seen": 0.484375
+          }
+        },
+        "selected_validation": {
+          "accuracy": 1.0,
+          "nll": 0.02422342263162136,
+          "unsupported_answers": 0,
+          "groups": {
+            "seen": 1.0
+          }
+        },
+        "weights": {
+          "active_relation": 6.236786365509033,
+          "missing_to_unknown": 4.593335151672363,
+          "stale_set": -0.6813259124755859,
+          "hypothetical": -0.029287034645676613,
+          "other_relation": -0.055113207548856735,
+          "answer_unknown": 1.0869160890579224,
+          "unknown_absorbing": 4.369368076324463
+        },
+        "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/local_energy_discrete/best_seed33.pt",
+        "sha256": "0fef574f38f87ae5d7bfc2d7d56c3cdd8765b4a70898c5316aa66982b7bea323",
+        "initial_sha256": "592b08b933d6021e3cb8f06690e2b1fdea7e9ac45bf68577d037b472424dcf65",
+        "elapsed_s": 0.17022024298785254,
+        "history": [
+          {
+            "step": 100,
+            "loss": 0.14435003697872162,
+            "validation_accuracy": 1.0
+          },
+          {
+            "step": 200,
+            "loss": 0.051099956035614014,
+            "validation_accuracy": 1.0
+          },
+          {
+            "step": 300,
+            "loss": 0.03260771185159683,
+            "validation_accuracy": 1.0
+          },
+          {
+            "step": 400,
+            "loss": 0.022792130708694458,
+            "validation_accuracy": 1.0
+          }
+        ]
+      }
+    ],
+    "tests": [
+      {
+        "seed": 11,
+        "initial": {
+          "accuracy": 0.4000000059604645,
+          "nll": 1.9424912929534912,
+          "unsupported_answers": 197,
+          "groups": {
+            "conflicting_updates": 0.5299999713897705,
+            "heldout_pair": 0.35499998927116394,
+            "long_delay": 0.2150000035762787,
+            "longer_path": 0.30000001192092896,
+            "missing": 0.4350000023841858,
+            "seen": 0.5649999976158142
+          }
+        },
+        "trained": {
+          "accuracy": 1.0,
+          "nll": 0.03223216533660889,
+          "unsupported_answers": 0,
+          "groups": {
+            "conflicting_updates": 1.0,
+            "heldout_pair": 1.0,
+            "long_delay": 1.0,
+            "longer_path": 1.0,
+            "missing": 1.0,
+            "seen": 1.0
+          }
+        },
+        "single_example_s_excluding_factor_encoding": [
+          4.985596751794219e-05,
+          5.060801049694419e-05,
+          4.353595431894064e-05,
+          4.2687985114753246e-05,
+          4.2479950934648514e-05,
+          4.220695700496435e-05,
+          4.2464002035558224e-05,
+          4.1744031477719545e-05,
+          4.174397327005863e-05,
+          4.156801151111722e-05
+        ],
+        "learning_interval": {
+          "difference": 0.6,
+          "low": 0.5733333333333334,
+          "high": 0.6266666666666667,
+          "unit": "episode",
+          "draws": 2000
+        }
+      },
+      {
+        "seed": 22,
+        "initial": {
+          "accuracy": 0.2541666626930237,
+          "nll": 1.945034384727478,
+          "unsupported_answers": 358,
+          "groups": {
+            "conflicting_updates": 0.39500001072883606,
+            "heldout_pair": 0.20999999344348907,
+            "long_delay": 0.36500000953674316,
+            "longer_path": 0.1850000023841858,
+            "missing": 0.0,
+            "seen": 0.3700000047683716
+          }
+        },
+        "trained": {
+          "accuracy": 1.0,
+          "nll": 0.03297053277492523,
+          "unsupported_answers": 0,
+          "groups": {
+            "conflicting_updates": 1.0,
+            "heldout_pair": 1.0,
+            "long_delay": 1.0,
+            "longer_path": 1.0,
+            "missing": 1.0,
+            "seen": 1.0
+          }
+        },
+        "single_example_s_excluding_factor_encoding": [
+          5.303998477756977e-05,
+          4.844798240810633e-05,
+          4.3775944504886866e-05,
+          4.30400250479579e-05,
+          4.1888037230819464e-05,
+          4.188797902315855e-05,
+          4.208000609651208e-05,
+          4.131201421841979e-05,
+          4.1696010157465935e-05,
+          4.147202707827091e-05
+        ],
+        "learning_interval": {
+          "difference": 0.7458333333333333,
+          "low": 0.7216666666666667,
+          "high": 0.77,
+          "unit": "episode",
+          "draws": 2000
+        }
+      },
+      {
+        "seed": 33,
+        "initial": {
+          "accuracy": 0.2958333194255829,
+          "nll": 1.945096492767334,
+          "unsupported_answers": 358,
+          "groups": {
+            "conflicting_updates": 0.45500001311302185,
+            "heldout_pair": 0.26499998569488525,
+            "long_delay": 0.4099999964237213,
+            "longer_path": 0.20999999344348907,
+            "missing": 0.0,
+            "seen": 0.4350000023841858
+          }
+        },
+        "trained": {
+          "accuracy": 1.0,
+          "nll": 0.033299293369054794,
+          "unsupported_answers": 0,
+          "groups": {
+            "conflicting_updates": 1.0,
+            "heldout_pair": 1.0,
+            "long_delay": 1.0,
+            "longer_path": 1.0,
+            "missing": 1.0,
+            "seen": 1.0
+          }
+        },
+        "single_example_s_excluding_factor_encoding": [
+          5.7775003369897604e-05,
+          4.894396988674998e-05,
+          4.617602098733187e-05,
+          4.755199188366532e-05,
+          4.3552019633352757e-05,
+          4.3328036554157734e-05,
+          4.31039952673018e-05,
+          4.184001591056585e-05,
+          4.14240057580173e-05,
+          4.14240057580173e-05
+        ],
+        "learning_interval": {
+          "difference": 0.7041666666666667,
+          "low": 0.6783333333333333,
+          "high": 0.73,
+          "unit": "episode",
+          "draws": 2000
+        }
+      }
+    ],
+    "scope": "Exact marginalization over discrete paths. Seven learned scalar costs; supplied features, parser, and graph composition. No general language claim.",
+    "full_results_sha256": "b70be51ed62ed2a39e95fff0526f670f2ab486c4a1512fbeec0d5b237171d211"
+  }
+}

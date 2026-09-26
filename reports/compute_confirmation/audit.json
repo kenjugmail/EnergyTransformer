@@ -1,0 +1,25 @@
+{
+  "schedulers": [
+    {
+      "file": "main_404_scheduler.json",
+      "rounds": 180,
+      "max_round_cpu_spread_s": 0.032261952000141036
+    },
+    {
+      "file": "main_505_scheduler.json",
+      "rounds": 180,
+      "max_round_cpu_spread_s": 0.03352200000222183
+    },
+    {
+      "file": "main_606_scheduler.json",
+      "rounds": 180,
+      "max_round_cpu_spread_s": 0.030243183998436507
+    },
+    {
+      "file": "pilot_scheduler.json",
+      "rounds": 40,
+      "max_round_cpu_spread_s": 0.03359393599975391
+    }
+  ],
+  "preserved_artifact_count": 247
+}

@@ -1,0 +1,24 @@
+{
+  "rule": "Lowest recorded validation bpb among the frozen hybrid fits; no test-based selection",
+  "fit": {
+    "arm": "hybrid",
+    "seed": 202,
+    "lr": 0.004,
+    "steps": 2031,
+    "cpu_s": 90.0451433120021,
+    "wall_s": 91.56885946201055,
+    "best": {
+      "steps": 2031,
+      "cpu_s": 90.0451433120021,
+      "wall_s": 91.56885946201055,
+      "valid_bpb": 2.613991651002665,
+      "last_train_nll": 1.7923948764801025
+    },
+    "training_bytes": 2079744,
+    "parameters": 145169,
+    "checkpoint": "runs/compute_matched_controlled/main_202_hybrid_202_0.004.pt",
+    "checkpoint_sha256": "46a1f27acb3d46dc20119324566e9fc28f0d503d8d84b764f88402a2c4cc839f"
+  },
+  "checkpoint": "runs/stronger_native/selected_hybrid.pt",
+  "sha256": "46a1f27acb3d46dc20119324566e9fc28f0d503d8d84b764f88402a2c4cc839f"
+}

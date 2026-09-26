@@ -1,0 +1,101 @@
+{
+  "source_sha256": "a4a510560f18653ced1f0471c5329790c3da27880e46da4c8320cd94788d2c57",
+  "environment": {
+    "torch": "2.14.0+cu130",
+    "machine": "aarch64",
+    "device": "cpu",
+    "cuda": "13.0",
+    "threads": 1,
+    "gpu": null
+  },
+  "corpus_sha256": "2b49720ec4d78c3c9fabaee6e4179a5e997302b3a70029f30f2d582218c024a8",
+  "threads": 1,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "batch": 8,
+  "seq": 128,
+  "arms": {
+    "softmax": {
+      "kind": "softmax",
+      "vocab": 256,
+      "width": 64,
+      "layers": 3,
+      "heads": 2,
+      "slots": 8,
+      "ff_width": 201,
+      "prior": 0.25,
+      "chunk": 8,
+      "activation_checkpointing": false,
+      "backend": "dmat",
+      "memory_dim": 0,
+      "memory_capacity": 256,
+      "attention_window": 0,
+      "attention_every": 3
+    },
+    "local_softmax": {
+      "kind": "softmax",
+      "vocab": 256,
+      "width": 64,
+      "layers": 3,
+      "heads": 2,
+      "slots": 8,
+      "ff_width": 201,
+      "prior": 0.25,
+      "chunk": 8,
+      "activation_checkpointing": false,
+      "backend": "dmat",
+      "memory_dim": 0,
+      "memory_capacity": 256,
+      "attention_window": 64,
+      "attention_every": 3
+    },
+    "hybrid": {
+      "kind": "hybrid",
+      "vocab": 256,
+      "width": 64,
+      "layers": 3,
+      "heads": 2,
+      "slots": 8,
+      "ff_width": 195,
+      "prior": 0.25,
+      "chunk": 8,
+      "activation_checkpointing": false,
+      "backend": "dmat",
+      "memory_dim": 0,
+      "memory_capacity": 256,
+      "attention_window": 64,
+      "attention_every": 3
+    }
+  },
+  "cpu_affinity": [
+    19
+  ],
+  "quantum_cpu_s": 0.5,
+  "compiled_training": true,
+  "optimizer_foreach": true,
+  "compile_cost": "Recorded one-off warmup wall time; excluded from steady-state update budget. No parameter updates during warmup.",
+  "scheduler": "Fixed CPU-time blocks",
+  "pilot_seed": 47,
+  "learning_rates": [
+    0.001,
+    0.002,
+    0.004
+  ],
+  "pilot_cpu_seconds_per_fit": 20,
+  "main_seeds": [
+    404,
+    505,
+    606
+  ],
+  "main_cpu_seconds_per_fit": 90,
+  "validation_seed": 92101,
+  "test_seed": 92102,
+  "selection": "Equal three-rate CPU-budget search per arm; pilot validation selects LR. Minimum quarter-budget validation loss selects each main checkpoint. Freeze all selections before test.",
+  "schedule": "4% CPU-budget warmup, cosine to 10% of peak; AdamW betas .9,.95; matrix decay .1; gradient clip 1.",
+  "timing": "process CPU seconds for updates; data, validation and I/O excluded equally. Not FLOP matched. Wall time and tokens also reported.",
+  "gate": "Hybrid mean heldout bpb beats both controls at 128 and 512; conditional paired-window 95% upper bounds below zero.",
+  "scope": "Small CPU byte models, one corpus, random initialization. Does not establish broad Transformer superiority."
+}

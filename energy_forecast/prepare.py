@@ -6,7 +6,7 @@ from pathlib import Path
 import argparse,hashlib,json,time
 from dataclasses import asdict
 import torch
-from .probe import load_energy_model,trace_states,aligned_windows,checkpoint_hash
+from .probe import load_energy_model,trace_states,aligned_windows,checkpoint_hash,energy_layer
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
@@ -41,7 +41,7 @@ def main():
     for part in payload.values():
         part['x']=(part['x']-center)/scale;part['y']=(part['y']-center)/scale
     payload['metadata']={'source_note':a.source_note,'corpus_sha256':hashlib.sha256(raw).hexdigest(),
-        'teacher_sha256':checkpoint_hash(a.checkpoint),'model_config':asdict(model.config),'teacher_parameters':model.parameters_count(),
+        'summary_layer':energy_layer(model.config), 'teacher_sha256':checkpoint_hash(a.checkpoint),'model_config':asdict(model.config),'teacher_parameters':model.parameters_count(),
         'history':a.history,'horizons':a.horizons,'variables':len(center),'center':center,'scale':scale,
         'documents':manifest,'seconds':time.perf_counter()-t0,'format':'energy_forecast_data_v1',
         'warning':'Lossy sketches of fixed teacher states; no general language improvement or unseen-corpus claim.'}

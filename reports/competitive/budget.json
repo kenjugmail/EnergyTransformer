@@ -1,0 +1,100 @@
+{
+  "version": "local_energy_study_v1",
+  "ceiling_s": 28800,
+  "prior": {
+    "path": "/home/kt/Documents/EnergyTransformer/reports/publication/device_stages.json",
+    "sha256": "07738e19842bdb74fb98c5c3ba6086d5afb3b48558adc0bc71dc051afdabfaf3",
+    "used_s": 716.2357800449827
+  },
+  "runs": [
+    {
+      "status": "training_completed",
+      "reserved_s": 900.0,
+      "elapsed_s": 17.186556388041936,
+      "started_unix": 1789425859.5505164,
+      "source_sha256": "0031fb29237cf5997668cac66c4b87154f991a765443ed59c848357108530756",
+      "out": "/home/kt/Documents/EnergyTransformer/runs/local_energy_pilot"
+    },
+    {
+      "status": "completed",
+      "reserved_s": 7200.0,
+      "elapsed_s": 559.9861106490134,
+      "started_unix": 1789426548.3710492,
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "out": "/home/kt/Documents/EnergyTransformer/runs/local_energy_main"
+    },
+    {
+      "status": "completed",
+      "reserved_s": 300.0,
+      "elapsed_s": 3.1950222449959256,
+      "started_unix": 1789427129.852143,
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa"
+    },
+    {
+      "status": "completed",
+      "reserved_s": 900.0,
+      "elapsed_s": 16.019068694964517,
+      "started_unix": 1789427185.2400966,
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa"
+    },
+    {
+      "status": "completed",
+      "reserved_s": 300,
+      "elapsed_s": 3.1812430049758404,
+      "started_unix": 1789427294.8248665,
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa"
+    },
+    {
+      "status": "completed",
+      "reserved_s": 1200.0,
+      "elapsed_s": 416.5223432779894,
+      "started_unix": 1789427577.7132556,
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "out": "/home/kt/Documents/EnergyTransformer/runs/local_energy_byte_followup"
+    },
+    {
+      "status": "failed",
+      "reserved_s": 300,
+      "elapsed_s": 4.220719460980035,
+      "started_unix": 1789428081.1339395,
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa"
+    },
+    {
+      "status": "completed",
+      "reserved_s": 300,
+      "elapsed_s": 8.439221135980915,
+      "started_unix": 1789428137.5295806,
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa"
+    },
+    {
+      "status": "failed",
+      "reserved_s": 1800.0,
+      "elapsed_s": 1800.140981693985,
+      "started_unix": 1789438654.510369,
+      "source_sha256": "a01b6feaec70f9ef568c5c15b69293bf5269d8321c985e3faa4d103de92ebafa"
+    },
+    {
+      "status": "completed",
+      "reserved_s": 300,
+      "elapsed_s": 184.38673078396823,
+      "started_unix": 1789440540.361607,
+      "source_sha256": "a01b6feaec70f9ef568c5c15b69293bf5269d8321c985e3faa4d103de92ebafa",
+      "phase": "frozen_native_evaluation_continuation"
+    },
+    {
+      "status": "completed",
+      "reserved_s": 5400.0,
+      "elapsed_s": 1309.4433647459955,
+      "started_unix": 1789476455.0071151,
+      "source_sha256": "1636998efa3ef5a365b4480289357e7fe7369da9a645f1815ad5810bf8bc0bf2"
+    },
+    {
+      "status": "completed",
+      "reserved_s": 900,
+      "elapsed_s": 54.89244139502989,
+      "started_unix": 1789477783.7282512,
+      "source_sha256": "1636998efa3ef5a365b4480289357e7fe7369da9a645f1815ad5810bf8bc0bf2"
+    }
+  ],
+  "total_used_s": 5093.849583520903
+}

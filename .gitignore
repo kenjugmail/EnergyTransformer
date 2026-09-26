@@ -8,3 +8,7 @@ __pycache__/
 /runs/
 /checkpoints/
 *.egg-info/
+/build/
+/dist/
+
+.venv-qwen/

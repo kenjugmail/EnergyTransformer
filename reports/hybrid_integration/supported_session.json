@@ -1,0 +1,164 @@
+{
+  "source_sha256": "a01b6feaec70f9ef568c5c15b69293bf5269d8321c985e3faa4d103de92ebafa",
+  "scope": "Predetermined persistent-session fixture matching training snapshot sizes. The separate one-fact fixture remains preserved and is out of distribution.",
+  "rows": [
+    {
+      "operation": "set",
+      "fact_count": 4,
+      "expected_neural_byte": "C",
+      "neural_byte": "C",
+      "neural_correct": true,
+      "exact": {
+        "answers": [
+          "C"
+        ],
+        "abstained": false,
+        "revision": 2,
+        "backend": "exact_graph",
+        "facts": [
+          {
+            "fact_id": "f7022d20e40de4b33f05e100ddb681b4973fe2ba03cafbff8c5c5ee3ff94f77d",
+            "object": "C",
+            "operation": "set",
+            "relation": "r",
+            "revision": 2,
+            "source_id": "26fe4aaf37629bfdacd880267b0af68241ba79dc1d5c9ca2f035abd7cfc8faaf",
+            "source_text": "Fixture set ar=C",
+            "subject": "a"
+          }
+        ],
+        "trace": [
+          {
+            "step": 0,
+            "operation": "entity",
+            "values": [
+              "a"
+            ]
+          },
+          {
+            "step": 1,
+            "operation": "follow",
+            "values": [
+              "C"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "operation": "set",
+      "fact_count": 4,
+      "expected_neural_byte": "D",
+      "neural_byte": "D",
+      "neural_correct": true,
+      "exact": {
+        "answers": [
+          "D"
+        ],
+        "abstained": false,
+        "revision": 3,
+        "backend": "exact_graph",
+        "facts": [
+          {
+            "fact_id": "88fcfff67384568b1664ab0cdb65c4b0b976193f7408432d05c6f68116499f62",
+            "object": "D",
+            "operation": "set",
+            "relation": "r",
+            "revision": 3,
+            "source_id": "7cb6fa4c554de2032fad91483c8f142ed3d20854fc6f09ba415101152ff170b6",
+            "source_text": "Fixture set ar=D",
+            "subject": "a"
+          }
+        ],
+        "trace": [
+          {
+            "step": 0,
+            "operation": "entity",
+            "values": [
+              "a"
+            ]
+          },
+          {
+            "step": 1,
+            "operation": "follow",
+            "values": [
+              "D"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "operation": "hold",
+      "fact_count": 4,
+      "expected_neural_byte": "D",
+      "neural_byte": "D",
+      "neural_correct": true,
+      "exact": {
+        "answers": [
+          "D"
+        ],
+        "abstained": false,
+        "revision": 4,
+        "backend": "exact_graph",
+        "facts": [
+          {
+            "fact_id": "88fcfff67384568b1664ab0cdb65c4b0b976193f7408432d05c6f68116499f62",
+            "object": "D",
+            "operation": "set",
+            "relation": "r",
+            "revision": 3,
+            "source_id": "7cb6fa4c554de2032fad91483c8f142ed3d20854fc6f09ba415101152ff170b6",
+            "source_text": "Fixture set ar=D",
+            "subject": "a"
+          }
+        ],
+        "trace": [
+          {
+            "step": 0,
+            "operation": "entity",
+            "values": [
+              "a"
+            ]
+          },
+          {
+            "step": 1,
+            "operation": "follow",
+            "values": [
+              "D"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "operation": "delete",
+      "fact_count": 3,
+      "expected_neural_byte": "?",
+      "neural_byte": "?",
+      "neural_correct": true,
+      "exact": {
+        "answers": [],
+        "abstained": true,
+        "reason": "missing_premise",
+        "revision": 5,
+        "backend": "exact_graph",
+        "facts": [],
+        "trace": [
+          {
+            "step": 0,
+            "operation": "entity",
+            "values": [
+              "a"
+            ]
+          }
+        ],
+        "missing": {
+          "step": 1,
+          "subject": "a",
+          "relation": "r"
+        }
+      }
+    }
+  ]
+}

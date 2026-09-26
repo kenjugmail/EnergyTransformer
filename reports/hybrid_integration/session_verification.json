@@ -1,0 +1,185 @@
+{
+  "parent_unchanged": true,
+  "all_original_weights_equal": true,
+  "memory_disabled_logits_bitwise_equal": true,
+  "transitions": [
+    {
+      "operation": "set",
+      "requested_object": "C",
+      "exact": {
+        "answers": [
+          "C"
+        ],
+        "abstained": false,
+        "revision": 1,
+        "backend": "exact_graph",
+        "facts": [
+          {
+            "fact_id": "e1d0057d3f263bbcd147cbc1ddef3a03b94966aee0487edc319fc0949aa17cd8",
+            "object": "C",
+            "operation": "set",
+            "relation": "r",
+            "revision": 1,
+            "source_id": "b46b6fa0c92f62dbda684aa3c7ed80dc4ce7b57673c4a9e23b46c3e36268ea43",
+            "source_text": "Fixture: set a.r=C",
+            "subject": "a"
+          }
+        ],
+        "trace": [
+          {
+            "step": 0,
+            "operation": "entity",
+            "values": [
+              "a"
+            ]
+          },
+          {
+            "step": 1,
+            "operation": "follow",
+            "values": [
+              "C"
+            ]
+          }
+        ]
+      },
+      "neural_next_byte": 63,
+      "session": {
+        "revision": 1,
+        "state_reset": true,
+        "fact_count": 1,
+        "fact_memory_bytes": 257
+      },
+      "fresh_state_logits_equal": true
+    },
+    {
+      "operation": "set",
+      "requested_object": "D",
+      "exact": {
+        "answers": [
+          "D"
+        ],
+        "abstained": false,
+        "revision": 2,
+        "backend": "exact_graph",
+        "facts": [
+          {
+            "fact_id": "711649e7cf340ef0a15b15ba272eda4737f6d57caea4f79d07994e5e8a5f2a50",
+            "object": "D",
+            "operation": "set",
+            "relation": "r",
+            "revision": 2,
+            "source_id": "6335b59a62a526a6b72d3f3405f03c89dc9dc599c81c4259d262b7b4bea9ffef",
+            "source_text": "Fixture: set a.r=D",
+            "subject": "a"
+          }
+        ],
+        "trace": [
+          {
+            "step": 0,
+            "operation": "entity",
+            "values": [
+              "a"
+            ]
+          },
+          {
+            "step": 1,
+            "operation": "follow",
+            "values": [
+              "D"
+            ]
+          }
+        ]
+      },
+      "neural_next_byte": 63,
+      "session": {
+        "revision": 2,
+        "state_reset": true,
+        "fact_count": 1,
+        "fact_memory_bytes": 257
+      },
+      "fresh_state_logits_equal": true
+    },
+    {
+      "operation": "hold",
+      "requested_object": "F",
+      "exact": {
+        "answers": [
+          "D"
+        ],
+        "abstained": false,
+        "revision": 3,
+        "backend": "exact_graph",
+        "facts": [
+          {
+            "fact_id": "711649e7cf340ef0a15b15ba272eda4737f6d57caea4f79d07994e5e8a5f2a50",
+            "object": "D",
+            "operation": "set",
+            "relation": "r",
+            "revision": 2,
+            "source_id": "6335b59a62a526a6b72d3f3405f03c89dc9dc599c81c4259d262b7b4bea9ffef",
+            "source_text": "Fixture: set a.r=D",
+            "subject": "a"
+          }
+        ],
+        "trace": [
+          {
+            "step": 0,
+            "operation": "entity",
+            "values": [
+              "a"
+            ]
+          },
+          {
+            "step": 1,
+            "operation": "follow",
+            "values": [
+              "D"
+            ]
+          }
+        ]
+      },
+      "neural_next_byte": 63,
+      "session": {
+        "revision": 3,
+        "state_reset": true,
+        "fact_count": 1,
+        "fact_memory_bytes": 257
+      },
+      "fresh_state_logits_equal": true
+    },
+    {
+      "operation": "delete",
+      "requested_object": null,
+      "exact": {
+        "answers": [],
+        "abstained": true,
+        "reason": "missing_premise",
+        "revision": 4,
+        "backend": "exact_graph",
+        "facts": [],
+        "trace": [
+          {
+            "step": 0,
+            "operation": "entity",
+            "values": [
+              "a"
+            ]
+          }
+        ],
+        "missing": {
+          "step": 1,
+          "subject": "a",
+          "relation": "r"
+        }
+      },
+      "neural_next_byte": 63,
+      "session": {
+        "revision": 4,
+        "state_reset": true,
+        "fact_count": 0,
+        "fact_memory_bytes": 257
+      },
+      "fresh_state_logits_equal": true
+    }
+  ]
+}

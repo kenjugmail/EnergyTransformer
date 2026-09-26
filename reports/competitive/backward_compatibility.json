@@ -1,0 +1,23 @@
+[
+  {
+    "model": "energy",
+    "checkpoint": "runs/enwik8_energy_10m/best.pt",
+    "sha256": "0bd5ef6b8e956ba97aa7fc7d4a1841c349c46bc72b36568c3a592a2304cfdba6",
+    "prefill_and_cached_logits_bitwise_equal": true,
+    "state_bitwise_equal": true
+  },
+  {
+    "model": "softmax",
+    "checkpoint": "runs/enwik8_softmax_10m/best.pt",
+    "sha256": "3bfe951277fd3d1f7568047b18bc4743acf6901f14b4849066fb2aea6de139ad",
+    "prefill_and_cached_logits_bitwise_equal": true,
+    "state_bitwise_equal": true
+  },
+  {
+    "model": "facts",
+    "checkpoint": "runs/hybrid_native/selected.pt",
+    "sha256": "d78d835793c624f5b94fc32be179337deae3d8a92c766298822b46b3b7eeea6d",
+    "prefill_and_cached_logits_bitwise_equal": true,
+    "state_bitwise_equal": true
+  }
+]

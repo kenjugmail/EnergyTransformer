@@ -1,0 +1,32 @@
+{
+  "donor": {
+    "id": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17"
+  },
+  "source": "f00ddc0808ce32ec66539a47154e67282f9fd057da495a2be8c5076e4de72170",
+  "corpus": "e5550e318cabc79711974a92481a0c24f34403dc59f1c249fc8dc8c55cc7e6ec",
+  "tokens": "418b7e80d03f4ef2bdfcf36ae1c29eb4e4948cee5b3bd1acbf53be98da9e4bf5",
+  "context": 128,
+  "seed": 707,
+  "transfer_updates": 64,
+  "recovery_updates": 64,
+  "heldout_targets_per_split": 1024,
+  "caveat": "Fixed small feasibility sample; no broad capability or scaling claim",
+  "architecture": "16energy8local_EEL_repeated_no_DeltaNet_no_global_attention",
+  "precision": "BF16 frozen donor/attention adapters; FP32 energy weights,first projection,state",
+  "donor_files": {
+    "merges.txt": "a9d356d7bdf1ef4949e3e748e95b8e10ad9d4e2e838eddc38a0a7b6b94d1db8d",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c",
+    "vocab.json": "ce99b4cb2983d118806ce0a8b777a35b093e2000a503ebde25853284c9dfa003",
+    "model.safetensors-00001-of-00001.safetensors": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+    "config.json": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204",
+    "model.safetensors.index.json": "d8a08838a613b025eb7952ed9db11696213e57e76a375661ef5c12f9dd5dcf4e",
+    "preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+  },
+  "new_local_initialization": "nearest donor full-attention layer by layer index, then rank8 adapters",
+  "scope": "Text only. Feed-forward blocks,norms,embedding and head reused; visual encoder excluded",
+  "recovery_loss": "CE plus top32+complement coarse KL",
+  "gpu_seconds_cap": 1800
+}

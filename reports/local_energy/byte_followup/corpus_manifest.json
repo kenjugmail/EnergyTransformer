@@ -1,0 +1,12 @@
+{
+  "source": "data/enwik8",
+  "source_sha256": "2b49720ec4d78c3c9fabaee6e4179a5e997302b3a70029f30f2d582218c024a8",
+  "slice_start": 300000,
+  "slice_stop": 600000,
+  "segment_sha256": "7e1433b019f49d82e7205757d176284d989db920a13be26dcccfe0171476019f",
+  "prior_main_segment": [
+    0,
+    300000
+  ],
+  "scope": "Disjoint fresh corpus region for the longer byte-training follow-up; same architecture and optimizer."
+}

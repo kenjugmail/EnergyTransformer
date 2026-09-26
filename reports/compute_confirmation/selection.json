@@ -1,0 +1,209 @@
+{
+  "source_sha256": "a4a510560f18653ced1f0471c5329790c3da27880e46da4c8320cd94788d2c57",
+  "plan_sha256": "2c2be3728e170528356bb3506bf4b49fba9fd6c8b90060c76dd28c4afb14cc2a",
+  "rates": {
+    "softmax": 0.002,
+    "local_softmax": 0.002,
+    "hybrid": 0.004
+  },
+  "fits": [
+    {
+      "arm": "softmax",
+      "seed": 404,
+      "lr": 0.002,
+      "steps": 3097,
+      "cpu_s": 90.0116405919982,
+      "wall_s": 90.41212548001658,
+      "best": {
+        "steps": 3097,
+        "cpu_s": 90.0116405919982,
+        "wall_s": 90.41212548001658,
+        "valid_bpb": 2.5427012796262907,
+        "last_train_nll": 1.7304092645645142,
+        "host_load_1m": 15.3759765625
+      },
+      "training_bytes": 3171328,
+      "compile_setup_wall_s": 0.029598803999761003,
+      "max_update_cpu_s": 0.039958112000022084,
+      "parameters": 145179,
+      "checkpoint": "runs/compute_confirmation_v2/main_404_softmax_404_0.002.pt",
+      "checkpoint_sha256": "b725df97dd3e43819591efeeffe71c95d63ec37e1a2625554dc0f74a0e5f559f"
+    },
+    {
+      "arm": "local_softmax",
+      "seed": 404,
+      "lr": 0.002,
+      "steps": 3116,
+      "cpu_s": 90.02373027199761,
+      "wall_s": 90.56645466203827,
+      "best": {
+        "steps": 3116,
+        "cpu_s": 90.02373027199761,
+        "wall_s": 90.56645466203827,
+        "valid_bpb": 2.541673329916782,
+        "last_train_nll": 1.7182741165161133,
+        "host_load_1m": 15.3212890625
+      },
+      "training_bytes": 3190784,
+      "compile_setup_wall_s": 0.027661701000397443,
+      "max_update_cpu_s": 0.03955288000000223,
+      "parameters": 145179,
+      "checkpoint": "runs/compute_confirmation_v2/main_404_local_softmax_404_0.002.pt",
+      "checkpoint_sha256": "91cf2835c354a11a719dae80f477950b137f9ed92cc6de00c2d4e80ab3b3de50"
+    },
+    {
+      "arm": "hybrid",
+      "seed": 404,
+      "lr": 0.004,
+      "steps": 2625,
+      "cpu_s": 90.00207667199976,
+      "wall_s": 90.45687356599774,
+      "best": {
+        "steps": 2625,
+        "cpu_s": 90.00207667199976,
+        "wall_s": 90.45687356599774,
+        "valid_bpb": 2.491957299336447,
+        "last_train_nll": 1.6611711978912354,
+        "host_load_1m": 15.3759765625
+      },
+      "training_bytes": 2688000,
+      "compile_setup_wall_s": 0.03374611400067806,
+      "max_update_cpu_s": 0.057530111999994915,
+      "parameters": 145169,
+      "checkpoint": "runs/compute_confirmation_v2/main_404_hybrid_404_0.004.pt",
+      "checkpoint_sha256": "54564f0cb489eef5cd436f458c919e814082a8afd8c290075c403cd6d6205f09"
+    },
+    {
+      "arm": "softmax",
+      "seed": 505,
+      "lr": 0.002,
+      "steps": 3193,
+      "cpu_s": 90.00336843200182,
+      "wall_s": 90.37053050398208,
+      "best": {
+        "steps": 3193,
+        "cpu_s": 90.00336843200182,
+        "wall_s": 90.37053050398208,
+        "valid_bpb": 2.5650866906037986,
+        "last_train_nll": 1.7598040103912354,
+        "host_load_1m": 6.93994140625
+      },
+      "training_bytes": 3269632,
+      "compile_setup_wall_s": 0.03353682899978594,
+      "max_update_cpu_s": 0.035211536000019805,
+      "parameters": 145179,
+      "checkpoint": "runs/compute_confirmation_v2/main_505_softmax_505_0.002.pt",
+      "checkpoint_sha256": "450cb3e5b5395d11f1de3f9a921f3f007b208dd5baec683137426b3ea9297291"
+    },
+    {
+      "arm": "local_softmax",
+      "seed": 505,
+      "lr": 0.002,
+      "steps": 3186,
+      "cpu_s": 90.01934935999799,
+      "wall_s": 90.38773000399033,
+      "best": {
+        "steps": 3186,
+        "cpu_s": 90.01934935999799,
+        "wall_s": 90.38773000399033,
+        "valid_bpb": 2.572952372229202,
+        "last_train_nll": 1.799389362335205,
+        "host_load_1m": 6.93994140625
+      },
+      "training_bytes": 3262464,
+      "compile_setup_wall_s": 0.028274935999434092,
+      "max_update_cpu_s": 0.045231535999960215,
+      "parameters": 145179,
+      "checkpoint": "runs/compute_confirmation_v2/main_505_local_softmax_505_0.002.pt",
+      "checkpoint_sha256": "a7ea989476615ac2befd08ff3a93a03bca4b5759fbe7d67fcf5fd1aa0ef9af70"
+    },
+    {
+      "arm": "hybrid",
+      "seed": 505,
+      "lr": 0.004,
+      "steps": 2717,
+      "cpu_s": 90.02718835199977,
+      "wall_s": 90.37241093700595,
+      "best": {
+        "steps": 2717,
+        "cpu_s": 90.02718835199977,
+        "wall_s": 90.37241093700595,
+        "valid_bpb": 2.491586014321909,
+        "last_train_nll": 1.783453345298767,
+        "host_load_1m": 6.93994140625
+      },
+      "training_bytes": 2782208,
+      "compile_setup_wall_s": 0.02740189799988002,
+      "max_update_cpu_s": 0.05493062400000781,
+      "parameters": 145169,
+      "checkpoint": "runs/compute_confirmation_v2/main_505_hybrid_505_0.004.pt",
+      "checkpoint_sha256": "0cd2d7ec38c39799d53f2258b61b564f2652846af40a44fd3b750a7842d48b8e"
+    },
+    {
+      "arm": "softmax",
+      "seed": 606,
+      "lr": 0.002,
+      "steps": 3831,
+      "cpu_s": 90.01109174399869,
+      "wall_s": 90.31030449402897,
+      "best": {
+        "steps": 3831,
+        "cpu_s": 90.01109174399869,
+        "wall_s": 90.31030449402897,
+        "valid_bpb": 2.5174184346058412,
+        "last_train_nll": 1.7847564220428467,
+        "host_load_1m": 26.00341796875
+      },
+      "training_bytes": 3922944,
+      "compile_setup_wall_s": 0.029545248000431457,
+      "max_update_cpu_s": 0.04516927999998188,
+      "parameters": 145179,
+      "checkpoint": "runs/compute_confirmation_v2/main_606_softmax_606_0.002.pt",
+      "checkpoint_sha256": "f1d55c9e18a11226c12860a36ad4bb9b559d883af18aa81b2154217fa5daa171"
+    },
+    {
+      "arm": "local_softmax",
+      "seed": 606,
+      "lr": 0.002,
+      "steps": 3877,
+      "cpu_s": 90.00017825599957,
+      "wall_s": 90.32113617103278,
+      "best": {
+        "steps": 3877,
+        "cpu_s": 90.00017825599957,
+        "wall_s": 90.32113617103278,
+        "valid_bpb": 2.514694581443163,
+        "last_train_nll": 1.6462762355804443,
+        "host_load_1m": 26.00341796875
+      },
+      "training_bytes": 3970048,
+      "compile_setup_wall_s": 0.027990525999484817,
+      "max_update_cpu_s": 0.04638731199997892,
+      "parameters": 145179,
+      "checkpoint": "runs/compute_confirmation_v2/main_606_local_softmax_606_0.002.pt",
+      "checkpoint_sha256": "ef9df4b2a156d8cbcd07c6440d4b1f43b233a9ec63e144a7431308ae1a29b0e1"
+    },
+    {
+      "arm": "hybrid",
+      "seed": 606,
+      "lr": 0.004,
+      "steps": 3429,
+      "cpu_s": 90.02164303999609,
+      "wall_s": 90.35022062398639,
+      "best": {
+        "steps": 3429,
+        "cpu_s": 90.02164303999609,
+        "wall_s": 90.35022062398639,
+        "valid_bpb": 2.438946150361725,
+        "last_train_nll": 1.8671975135803223,
+        "host_load_1m": 26.00341796875
+      },
+      "training_bytes": 3511296,
+      "compile_setup_wall_s": 0.03701368499969249,
+      "max_update_cpu_s": 0.06192688000010094,
+      "parameters": 145169,
+      "checkpoint": "runs/compute_confirmation_v2/main_606_hybrid_606_0.004.pt",
+      "checkpoint_sha256": "ec42c5b4f08b93f2a10049b96250b7cb57173a39f3d3936664e02cc1b4e92fd1"
+    }
+  ]
+}

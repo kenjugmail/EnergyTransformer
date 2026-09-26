@@ -3,7 +3,73 @@
 Experimental energy-function memory, native-text prototypes, and explicitly reviewed
 protected-memory edits. **Not a competitive general-purpose LLM or an instruction-following assistant.**
 
-## Current work: reproducible memory and reasoning experiments
+## Mixed energy and local attention
+
+The native model now also supports alternating energy-recurrent blocks with
+sliding-window attention. This combines a fixed recurrent state with a bounded
+attention cache, and works with the existing optional fact readers and graph
+workspace. Full-attention and windowed Transformer controls use the same codebase.
+
+- [Architecture and training commands](reports/competitive/ARCHITECTURE.md)
+- [Latest compute-controlled confirmation](reports/compute_confirmation/REPORT.md)
+- [Kernel and preallocated-cache measurements](reports/stronger_comparison/REPORT.md)
+- [Original token-matched comparison](reports/competitive/REPORT.md)
+
+In the latest three-seed, approximately 145,000-parameter comparison, the mixed
+model reached **2.512 test bits per byte versus 2.578 for full attention and
+2.577 for windowed attention**, at equal steady-state CPU training budgets.
+All arms use compiled training, the same tuning allowance, and one CPU core
+with interleaved time blocks. Compilation and evaluation costs are reported
+separately. All three hybrid seeds beat both controls at the trained context.
+
+The CPU kernel is faster, and 32K-prefix decoding beats a preallocated full
+Transformer cache. Full attention is faster at shorter prefixes; windowed
+attention remains faster at every measured length. These small-model results
+do not establish general superiority over Transformers or GPU efficiency.
+
+Sample the saved checkpoint on CPU with the installed package:
+
+```bash
+.venv/bin/python -m energy_real.sample \
+  --checkpoint runs/compute_confirmation_selected/hybrid.pt --prompt 'The ' \
+  --tokens 128 --temperature 0.8 --top-k 40 --seed 42
+```
+
+Omit the sampling options for greedy output. Prompt processing uses bounded
+chunks; `--output sample.bin` saves exact bytes to a new file. See the
+[original usability follow-up](reports/native_polish/REPORT.md) and
+[current installed-package verification](reports/compute_confirmation/installation_verification.json).
+
+## Native model with explicit fact memory
+
+The native model now supports a learned fact reader in every block, an exact
+graph workspace with bounded programs and evidence traces, and an optional
+PC-ALM training rule. Backpropagation remains the default. The hybrid session
+invalidates recurrent state after committed fact edits. Existing checkpoints
+can be augmented with zero-gated readers while preserving their original outputs.
+
+- [Integrated architecture](reports/hybrid_integration/ARCHITECTURE.md)
+- [Verification, reader adaptation, and current checkpoint](reports/hybrid_integration/REPORT.md)
+- [Hybrid commands](energy_real/README.md#native-hybrid-architecture)
+
+## Component studies: local learning and full energy models
+
+The new architecture experiments compare backpropagation, predictive coding,
+PC-ALM, full conditional energy-based predictors, and learned energy-memory
+readers. A separate graph model learns scalar energy factors over explicit
+entity IDs, without learned embeddings. Image, structured reasoning, and small
+next-byte tasks use matched controls and three training seeds.
+
+- [Results, trained models, and verification](reports/local_energy/REPORT.md)
+- [Architecture and assessment of latent-state alternatives](reports/local_energy/DESIGN.md)
+- [Runnable commands](energy_real/README.md#local-learning-and-full-energy-predictors)
+
+PC-ALM improves deep predictive coding in the bounded image experiment. Energy
+memory readers help the full EBM on graph tasks, but the matched backpropagation
+control performs similarly. Discrete graph factors succeed with supplied rule
+primitives; that is not evidence of learned language grounding or general AI.
+
+## Reproducible memory retrieval and reasoning experiments
 
 The local repair adds an explicit-backend energy kernel, correct attention resets,
 full-state resumable training, source-only acceptance, controlled memory studies,
@@ -80,3 +146,12 @@ retain their original qualifications. Energy coefficients remain numerical inter
 state; terminology alone does not establish novel mathematics or superiority over
 attention. The next useful evidence is target-device numerical behavior and paired
 validation curves against measured training cost.
+
+## Combined GPU research campaign
+
+The isolated integration adds `energy_campaign`, combines the native hybrid work
+with the forecast branch at `c5583551`, and provides a 24-GPU-hour budget supervisor,
+document-separated public data, native acceptance/profiling, paired backbone studies,
+frozen-teacher forecast training, and a SmolLM2 conversion pilot. See
+[the campaign runbook](reports/gpu_campaign/README.md) and its recorded execution
+status. Prepared code and CPU checks do not establish GPU quality or scaling results.

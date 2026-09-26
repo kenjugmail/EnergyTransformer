@@ -1,0 +1,6 @@
+{
+  "base_commit": "397dfae647f9521875344b99227a51a3974c0dfd",
+  "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+  "prior_ledger": "reports/publication/device_stages.json",
+  "gpu": "occupied; CPU only"
+}

@@ -1,0 +1,111 @@
+{
+  "source_sha256": "1636998efa3ef5a365b4480289357e7fe7369da9a645f1815ad5810bf8bc0bf2",
+  "corpus_sha256": "2b49720ec4d78c3c9fabaee6e4179a5e997302b3a70029f30f2d582218c024a8",
+  "environment": {
+    "torch": "2.14.0+cu130",
+    "machine": "aarch64",
+    "device": "cpu",
+    "cuda": "13.0",
+    "threads": 2,
+    "gpu": null
+  },
+  "arms": {
+    "energy": {
+      "kind": "energy",
+      "vocab": 256,
+      "width": 64,
+      "layers": 3,
+      "heads": 2,
+      "slots": 8,
+      "ff_width": 192,
+      "prior": 0.25,
+      "chunk": 32,
+      "activation_checkpointing": false,
+      "backend": "dmat",
+      "memory_dim": 0,
+      "memory_capacity": 256,
+      "attention_window": 0,
+      "attention_every": 3
+    },
+    "softmax": {
+      "kind": "softmax",
+      "vocab": 256,
+      "width": 64,
+      "layers": 3,
+      "heads": 2,
+      "slots": 8,
+      "ff_width": 201,
+      "prior": 0.25,
+      "chunk": 32,
+      "activation_checkpointing": false,
+      "backend": "dmat",
+      "memory_dim": 0,
+      "memory_capacity": 256,
+      "attention_window": 0,
+      "attention_every": 3
+    },
+    "local_softmax": {
+      "kind": "softmax",
+      "vocab": 256,
+      "width": 64,
+      "layers": 3,
+      "heads": 2,
+      "slots": 8,
+      "ff_width": 201,
+      "prior": 0.25,
+      "chunk": 32,
+      "activation_checkpointing": false,
+      "backend": "dmat",
+      "memory_dim": 0,
+      "memory_capacity": 256,
+      "attention_window": 64,
+      "attention_every": 3
+    },
+    "hybrid": {
+      "kind": "hybrid",
+      "vocab": 256,
+      "width": 64,
+      "layers": 3,
+      "heads": 2,
+      "slots": 8,
+      "ff_width": 195,
+      "prior": 0.25,
+      "chunk": 32,
+      "activation_checkpointing": false,
+      "backend": "dmat",
+      "memory_dim": 0,
+      "memory_capacity": 256,
+      "attention_window": 64,
+      "attention_every": 3
+    }
+  },
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "steps": 1000,
+  "batch": 8,
+  "seq": 128,
+  "tokens_per_fit": 1024000,
+  "lr": 0.002,
+  "warmup": 40,
+  "optimizer": "AdamW, betas=(.9,.95), weight_decay=.1 for matrices; 0 otherwise",
+  "validation": {
+    "seed": 72601,
+    "windows": 128,
+    "context": 128,
+    "every": 100
+  },
+  "test": {
+    "seed": 72602,
+    "windows": 256,
+    "contexts": [
+      128,
+      512
+    ]
+  },
+  "selection": "Minimum validation bpb including initialization, separately per arm/seed; freeze all before test.",
+  "quality_gate": "Hybrid mean test bpb <= full softmax with paired window bootstrap upper bound <= 0.",
+  "scope": "Fresh random initialization; CPU float32; matched tokens and parameters, measured unequal compute. No fact memory in any arm."
+}

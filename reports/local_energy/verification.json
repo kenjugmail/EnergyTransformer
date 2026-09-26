@@ -1,0 +1,28 @@
+{
+  "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+  "tests": {
+    "passed": 320,
+    "skipped": 33,
+    "suites": {
+      "root_and_real": {
+        "passed": 236,
+        "skipped": 32
+      },
+      "spark": {
+        "passed": 84,
+        "skipped": 1
+      }
+    }
+  },
+  "main_neural_fits": 57,
+  "fresh_byte_fits": 12,
+  "trained_discrete_fits": 3,
+  "parameter_updates": 60000,
+  "validation_only_pilot_fits": 19,
+  "relocated_neural_models_verified": 69,
+  "historical_report_files_unchanged": 50,
+  "model_archive_sha256": "ac149c57fc339b332da489825da869725646569abd5c3a563100a068d434d15a",
+  "model_archive_bytes": 11880600,
+  "archive_member_hashes_verified": true,
+  "gpu_seconds": 0
+}

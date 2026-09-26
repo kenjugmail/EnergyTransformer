@@ -1,0 +1,32 @@
+{
+  "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+  "files": {
+    "bytes_bp_d3_w32_mem0_seed11/initial.pt": "0a56a9029abfd06f6b3cc81ed7a1742e133bd2a4cb56e4f9b555342ea7009b6d",
+    "bytes_bp_d3_w32_mem0_seed11/best.pt": "112f7e39e88fea20ab631d74d0b7ccfe164793c01a11eab750dc0bc6eb404e7c",
+    "bytes_bp_ce_d3_w32_mem0_seed11/initial.pt": "0a56a9029abfd06f6b3cc81ed7a1742e133bd2a4cb56e4f9b555342ea7009b6d",
+    "bytes_bp_ce_d3_w32_mem0_seed11/best.pt": "e278796c194502ae3a582836d7b3903710996dcf29da8b6861045d12ebab136e",
+    "bytes_pcalm_d3_w32_mem0_seed11/initial.pt": "0a56a9029abfd06f6b3cc81ed7a1742e133bd2a4cb56e4f9b555342ea7009b6d",
+    "bytes_pcalm_d3_w32_mem0_seed11/best.pt": "7452d2a0dcf53b45ad9478f634082045dc2cf0e56461f0b51fe7f6918fbd9cf5",
+    "bytes_energy_d3_w32_mem0_seed11/initial.pt": "0a56a9029abfd06f6b3cc81ed7a1742e133bd2a4cb56e4f9b555342ea7009b6d",
+    "bytes_energy_d3_w32_mem0_seed11/best.pt": "c2f40a498fc635f52514c310b2f531015a939119b697c8a12ffd3b1aff415bd3",
+    "bytes_bp_d3_w32_mem0_seed22/initial.pt": "6e418479adae41fbfa0c36ba48b12e9831f4604304712e825dc1c88e6ea7221f",
+    "bytes_bp_d3_w32_mem0_seed22/best.pt": "931949cd27454a6dfb9de87e1f8b575ad5629f5328c049a35ae31e97b0d73a4f",
+    "bytes_bp_ce_d3_w32_mem0_seed22/initial.pt": "6e418479adae41fbfa0c36ba48b12e9831f4604304712e825dc1c88e6ea7221f",
+    "bytes_bp_ce_d3_w32_mem0_seed22/best.pt": "04b33856ddcc79ad689f20b8f777c2c55ebdaf364482fde487708b5ae645b1dc",
+    "bytes_pcalm_d3_w32_mem0_seed22/initial.pt": "6e418479adae41fbfa0c36ba48b12e9831f4604304712e825dc1c88e6ea7221f",
+    "bytes_pcalm_d3_w32_mem0_seed22/best.pt": "4721cf65592d0fc1b1e69520e54885db5d37e4dd2d7334157e99fcc01331273c",
+    "bytes_energy_d3_w32_mem0_seed22/initial.pt": "6e418479adae41fbfa0c36ba48b12e9831f4604304712e825dc1c88e6ea7221f",
+    "bytes_energy_d3_w32_mem0_seed22/best.pt": "e1ccc5843072082663ae3fba9bbc534b0835c9ae39ea50a9f1f1603871175d17",
+    "bytes_bp_d3_w32_mem0_seed33/initial.pt": "bfd10a97782d4c1a53c5b55312a41f2eb68b95da7d81d0cd5b753e856d2928ed",
+    "bytes_bp_d3_w32_mem0_seed33/best.pt": "366ddd03cbc15fb191706282acb6c2833ac117f2f0780628554c2602bbe75a7f",
+    "bytes_bp_ce_d3_w32_mem0_seed33/initial.pt": "bfd10a97782d4c1a53c5b55312a41f2eb68b95da7d81d0cd5b753e856d2928ed",
+    "bytes_bp_ce_d3_w32_mem0_seed33/best.pt": "94145d470487f4b1520fcad9686240ab03d964f800d895c26b02f497453d7ee4",
+    "bytes_pcalm_d3_w32_mem0_seed33/initial.pt": "bfd10a97782d4c1a53c5b55312a41f2eb68b95da7d81d0cd5b753e856d2928ed",
+    "bytes_pcalm_d3_w32_mem0_seed33/best.pt": "5ad440eaea49cb9a43cbdcdea454df1f297ff9c89086f9a879286c10d247fe03",
+    "bytes_energy_d3_w32_mem0_seed33/initial.pt": "bfd10a97782d4c1a53c5b55312a41f2eb68b95da7d81d0cd5b753e856d2928ed",
+    "bytes_energy_d3_w32_mem0_seed33/best.pt": "d093cf792e236e478ef5f622e58151612d7951e5b43d086a517753a738f43a82",
+    "selection.json": "a88d1c3e266231bd994d885a0248e1e03489b6f109a7e4341792edae9e5d8481",
+    "datasets.json": "abc0b78109dcdfcfb1a140803f8140bda75180a8e803c08d658a460820007fad",
+    "plan.json": "6ff1c7664b7ffdac277c7e061cdf0769037af5ca5f84e35c9309d757d77ac32a"
+  }
+}

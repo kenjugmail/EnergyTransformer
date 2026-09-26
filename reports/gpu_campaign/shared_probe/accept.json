@@ -1,0 +1,89 @@
+{
+  "status": "SHARED_SELECTED_FAMILIES_PASS",
+  "families": [
+    "softmax",
+    "local_softmax",
+    "hybrid"
+  ],
+  "excluded": {
+    "energy": "Failed BF16 gradient parity; no threshold change"
+  },
+  "gpu_campaign_authorized": false,
+  "source": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+  "kernel": [
+    {
+      "length": 1,
+      "chunk": 8,
+      "forward_max_abs": 1.9073486328125e-06,
+      "gradient_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "length": 1,
+      "chunk": 16,
+      "forward_max_abs": 1.9073486328125e-06,
+      "gradient_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "length": 1,
+      "chunk": 32,
+      "forward_max_abs": 1.9073486328125e-06,
+      "gradient_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "length": 1,
+      "chunk": 64,
+      "forward_max_abs": 1.9073486328125e-06,
+      "gradient_max_abs": 1.1920928955078125e-06
+    },
+    {
+      "length": 17,
+      "chunk": 8,
+      "forward_max_abs": 1.9073486328125e-06,
+      "gradient_max_abs": 4.172325134277344e-07
+    },
+    {
+      "length": 17,
+      "chunk": 16,
+      "forward_max_abs": 1.9073486328125e-06,
+      "gradient_max_abs": 4.76837158203125e-07
+    },
+    {
+      "length": 17,
+      "chunk": 32,
+      "forward_max_abs": 2.86102294921875e-06,
+      "gradient_max_abs": 6.258487701416016e-07
+    },
+    {
+      "length": 17,
+      "chunk": 64,
+      "forward_max_abs": 2.86102294921875e-06,
+      "gradient_max_abs": 6.556510925292969e-07
+    }
+  ],
+  "models": [
+    {
+      "kind": "hybrid",
+      "stream_max_abs": 7.003545761108398e-07,
+      "future_max_abs": 0.0,
+      "reset_max_abs": 1.969747245311737e-06,
+      "checkpoint_gradient_relative": 0.0,
+      "cpu_device_logits_relative": 6.247951773730165e-07,
+      "cpu_device_gradient_relative": 2.293932311658864e-06,
+      "bf16_logits_relative": 0.012753883376717567,
+      "bf16_gradient_relative": 0.039192214608192444,
+      "bf16_gradient_cosine": 0.999373733997345
+    },
+    {
+      "kind": "softmax",
+      "stream_max_abs": 1.4901161193847656e-07,
+      "future_max_abs": 0.0,
+      "reset_max_abs": 1.1920928955078125e-07,
+      "checkpoint_gradient_relative": 0.0,
+      "cpu_device_logits_relative": 2.925670514741796e-07,
+      "cpu_device_gradient_relative": 4.101492550034891e-07,
+      "bf16_logits_relative": 0.005577681120485067,
+      "bf16_gradient_relative": 0.005560696590691805,
+      "bf16_gradient_cosine": 0.9999845623970032
+    }
+  ]
+}

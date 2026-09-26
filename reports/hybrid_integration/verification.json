@@ -1,0 +1,21 @@
+{
+  "source_sha256": "a01b6feaec70f9ef568c5c15b69293bf5269d8321c985e3faa4d103de92ebafa",
+  "passed": 334,
+  "skipped": 33,
+  "root_real_passed": 250,
+  "spark_passed": 84,
+  "historical_report_files_unchanged": 99,
+  "original_checkpoint_unchanged": true,
+  "all_original_parameters_preserved": true,
+  "package_source_files_verified": 35,
+  "selected_checkpoint_sha256": "d78d835793c624f5b94fc32be179337deae3d8a92c766298822b46b3b7eeea6d",
+  "readers_added_parameters": 147654,
+  "selected_seed": 33,
+  "selected_structured_test_accuracy": 0.9933333333333333,
+  "mean_structured_test_accuracy": 0.9594444444444444,
+  "exact_graph_test_correct": 360,
+  "exact_graph_test_total": 360,
+  "reader_transfer_limit": "Incorrect abstention on known answers in the one-fact fixture; training used three/four facts. Exact graph execution remains correct.",
+  "gpu_seconds": 0,
+  "evaluation_completed_from_frozen_selection": true
+}

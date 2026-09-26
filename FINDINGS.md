@@ -200,3 +200,66 @@ are implemented. Verification totals 295 passing tests, 32 skips and one deselec
 original-artifact integration test; isolated source installation and CPU CLI checks
 also passed. GPU measurements and live reasoning remain pending, with no GPU work
 started over the existing workloads. See [the complete report](reports/publication/REPORT.md).
+
+
+## Local learning, energy modules, and discrete-state study
+
+The new [72-model study](reports/local_energy/REPORT.md) trained local BP/PC/PC-ALM predictors, full conditional energy models, energy-memory modules, and discrete graph factors. At 32 layers, PC-ALM recovered 10.47 accuracy points over PC and remained close to BP. Memory added 5.31 points to the graph EBM, without beating BP with memory. On fresh byte data, EBM loss was 4.682 bits/byte versus BP-CE 4.472 and a fixed unigram reference 4.917. Explicit discrete graph models reached 100% with supplied semantics and path execution; this is not learned general reasoning. Verification: 320 passed, 33 skipped; CPU only. The [design assessment](reports/local_energy/DESIGN.md) explains why typed graphs, programs, and addressable memory are stronger primary candidates than topology alone. Earlier reports remain unchanged.
+
+## Integration into the native architecture
+
+The [native hybrid](reports/hybrid_integration/REPORT.md) adds learned fact readers in all six blocks, an exact graph-program interface, and optional native PC-ALM training. The existing 10,606,896 weights stayed unchanged while 147,654 reader parameters were adapted. Across three seeds, mean accuracy was 95.94% on the supplied-symbol fact task; the validation-selected checkpoint reached 99.33%. Exact graph programs answered all 360 fresh diagnostics correctly. Reader transfer is limited: it failed known-answer queries with only one stored fact, outside its three/four-fact training setup, while the exact executor remained correct. Existing checkpoints retain compatibility, native state resets on committed revisions, and verification passed 334 tests with 33 skips. The training deadline interrupted final evaluation; evaluation completed separately from frozen checkpoints without changing model selection. CPU only, with all earlier report bytes preserved.
+
+## Mixed energy and local-attention language model
+
+The [new native comparison](reports/competitive/REPORT.md) trains four parameter-
+matched architectures at three seeds from scratch, each on 1.024 million bytes.
+The approximately 145,000-parameter mixed model alternates two energy blocks
+with one 64-token local-attention block. On held-out 128-byte windows, mean bits
+per byte are 2.9979 mixed, 3.0369 energy-only, 3.1119 windowed Transformer, and
+3.1394 full Transformer. At 512-byte context they are 2.9469, 2.9913, 3.0596, and
+3.3681 respectively. All three mixed seeds outperform the full and windowed
+controls. All checkpoints were selected on validation before test evaluation.
+
+This is a data- and parameter-matched improvement, not a compute-matched win:
+mixed CPU training took 3.09 times as long as full attention. The report gives
+conditional paired-window intervals and measured cache/inference costs. It does
+not establish general language or reasoning superiority, GPU efficiency, or a
+better large pretrained checkpoint. Greedy output from the tiny model remains
+repetitive. The original three large checkpoints retain bitwise outputs and
+states; verification passed 348 tests with 34 optional skips, and a separate
+non-editable installation matches all 50 package source files.
+
+At a 32,768-byte prompt plus 16 decoded bytes, mixed carries 37,512 bytes of
+state versus 51,143,040 for full attention; CPU median decode latency is 3.505
+versus 20.620 ms per token. Full attention is faster at short prompts, and the
+windowed Transformer is faster at every measured length. These measurements
+use the native concatenating-cache implementation, not optimized static/paged
+caches or GPU serving. The 32K profile measures inference cost, not text quality.
+
+## Stronger compute and inference controls
+
+The [kernel/static-cache follow-up](reports/stronger_comparison/REPORT.md)
+preserves the recurrence and checkpoint format while reducing measured CPU
+hybrid update time by 1.75× at the same chunk size, or 2.05× with chunk size eight.
+Against a preallocated full Transformer cache, 32K-prefix decoding is 0.805 vs
+2.534 ms per byte, with 37,512 vs 51,143,040 bytes of allocated state. The full
+Transformer is faster at 4K, and windowed attention remains faster throughout.
+The first equal-CPU-budget language experiment was effectively tied at 128 bytes.
+
+The [confirmation](reports/compute_confirmation/REPORT.md) pins all models to
+one performance core, rotates half-second CPU blocks, compiles every training
+objective and uses foreach AdamW throughout. Three new seeds and equal
+validation-only tuning budgets yield 2.5121 test bits per byte for the hybrid,
+2.5782 for full attention and 2.5770 for windowed attention at 128 bytes. All
+three hybrid seeds beat both controls; the conditional paired-window intervals
+are below zero. The 512-byte test also favors the hybrid, but extrapolates
+beyond the training context and does not test distant-fact recall.
+
+This is a steady-state CPU update-budget result, excluding compiler setup,
+validation and I/O. It does not establish an end-to-end training-cost win,
+large-model superiority or GPU performance. The selected seed-606 checkpoint
+is `runs/compute_confirmation_selected/hybrid.pt`; earlier artifacts remain
+preserved. Current verification: 385 passing tests, 33 skips, compiled/eager
+gradient parity on real crop layouts and trained weights, and an isolated
+non-editable installation matching all 53 package source files.

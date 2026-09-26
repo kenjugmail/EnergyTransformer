@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "source": "f00ddc0808ce32ec66539a47154e67282f9fd057da495a2be8c5076e4de72170",
+  "legacy_installed_suites": {
+    "native": 303,
+    "forecast": 108,
+    "campaign": 40,
+    "spark": 84
+  },
+  "new_runtime_installed_qwen35_tests": 3,
+  "runtime": "Transformers5.17.0; existingTorch2.14+cu130 unchanged",
+  "wheel": "56e41b7c1702d31ce63cf1b2c5789099df04c112916d2c6f440a175127ddaf2e"
+}

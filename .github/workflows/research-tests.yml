@@ -2,7 +2,7 @@ name: Source-only research tests
 on:
   pull_request:
   push:
-    branches: [main, 'research/forecast-energy-20260926']
+    branches: [main, 'research/forecast-energy-20260926', 'codex/gpu-scaling-campaign']
 permissions:
   contents: read
 jobs:
@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
+      CUDA_VISIBLE_DEVICES: ''
       OMP_NUM_THREADS: '2'
       MKL_NUM_THREADS: '2'
     steps:
@@ -20,13 +21,15 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
-      - run: python -m pip install -e '.[test,forecast]' -e './spark_kit[test]'
+      - run: python -m pip install -e '.[test,forecast,campaign]' -e './spark_kit[test]'
       - name: Root research suite
         run: python -m pytest tests -q
       - name: Repaired kernel, trainer, and reasoning suite
         run: python -m pytest tests_real -q
       - name: Forecast density, conditioning, and artifact suite
         run: python -m pytest forecast_tests -q
+      - name: Campaign accounting, data, and conversion
+        run: python -m pytest tests_campaign -q
       - name: Installed forecast package outside repository
         working-directory: /tmp
         run: python -c "from energy_forecast.conditioning import GaussianMixture; from energy_forecast.prepare_enwik8 import block_starts"

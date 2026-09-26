@@ -1,0 +1,5 @@
+{
+  "source_sha256": "a01b6feaec70f9ef568c5c15b69293bf5269d8321c985e3faa4d103de92ebafa",
+  "status": "passed",
+  "scope": "Active fact-reader output and every parameter gradient are bitwise equal with and without native activation checkpointing."
+}

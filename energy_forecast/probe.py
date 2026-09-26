@@ -9,27 +9,17 @@ from pathlib import Path
 import torch
 from torch import Tensor
 
-def state_sketch(state) -> Tensor:
-    p,s=state[-1]
-    if p.ndim!=3 or s.shape[:3]!=p.shape or (p<=0).any():
-        raise ValueError('Expected positive final-layer P and compatible S')
-    # A fixed, deterministic projection per head; no fit on test data.
-    size=s.shape[-2]*s.shape[-1]
-    i=torch.arange(size,device=s.device,dtype=s.dtype)
-    basis=torch.cos((i+.5)*1.618033988749895)
-    basis=basis/basis.norm()
-    mode=(s/p[...,None]).flatten(-2)
-    return torch.stack((p.log().mean(-1),(mode*basis).sum(-1)),dim=-1).flatten(1)
+from energy_real.summaries import state_sketch, energy_layer, forward_with_summaries
 
 @torch.no_grad()
-def trace_states(model, tokens: Tensor) -> Tensor:
-    """Exact serial causal trace [B,T,2H]; no future-dependent backend selection."""
-    if model.config.kind!='energy':raise ValueError('Energy coefficients required')
-    model.eval();state=None;trace=[]
-    for t in range(tokens.shape[1]):
-        _,state=model(tokens[:,t:t+1],state)
-        trace.append(state_sketch(state))
-    return torch.stack(trace,1)
+def trace_states(model, tokens: Tensor, layer=None) -> Tensor:
+    """Frozen causal reference trace, including hybrids with attention last."""
+    was_training = model.training
+    try:
+        model.eval()
+        return forward_with_summaries(model, tokens, layer=layer)[2]
+    finally:
+        model.train(was_training)
 
 
 def aligned_windows(trace: Tensor, history: int, horizons: tuple[int,...], stride: int=16):
@@ -66,7 +56,7 @@ Unknown formats fail rather than guessing a config from weight dimensions.
         unknown=set(cfg)-allowed
         if unknown:raise ValueError(f'Unexpected model config keys: {sorted(unknown)}')
         c=Config(**cfg)
-    if c.kind!='energy':raise ValueError('An energy checkpoint is required')
+    energy_layer(c)
     m=LM(c).to(device);m.load_state_dict(weights,strict=True);m.eval()
     for p in m.parameters():p.requires_grad_(False)
     return m

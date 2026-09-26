@@ -1,0 +1,252 @@
+{
+  "source_sha256": "204b2483756add3d1933eceeab03dc8b66941f6bf52dc53a7489042a1ce30a90",
+  "environment": {
+    "torch": "2.14.0+cu130",
+    "machine": "aarch64",
+    "device": "cpu",
+    "cuda": "13.0",
+    "threads": 1,
+    "gpu": null
+  },
+  "cpu_affinity": [
+    19
+  ],
+  "host_load_1m_range": [
+    5.33349609375,
+    8.70458984375
+  ],
+  "kernel_reference_archive_sha256": "43e4693b299f9a4ac664821261276b57ae17e204d08eefb5c28e9cb0ff579cdb",
+  "parity": [
+    {
+      "arm": "energy",
+      "max_probability_error": 4.76837158203125e-07,
+      "max_gradient_error": 1.6838312149047852e-06
+    },
+    {
+      "arm": "hybrid",
+      "max_probability_error": 5.513429641723633e-07,
+      "max_gradient_error": 1.1563301086425781e-05
+    }
+  ],
+  "training": {
+    "old_chunk32": {
+      "wall_s": 0.05520424050018846,
+      "cpu_s": 0.05514015200000033
+    },
+    "new_chunk32": {
+      "wall_s": 0.031634201999622746,
+      "cpu_s": 0.03159828000000031
+    },
+    "new_chunk8": {
+      "wall_s": 0.02691965150006581,
+      "cpu_s": 0.026887208000000218
+    }
+  },
+  "inference": {
+    "128": {
+      "full_dynamic": {
+        "prefill_s": 0.001491402000283415,
+        "decode_ms": 0.5524001250023503,
+        "decode_cpu_ms": 0.5478924999999801,
+        "used_state_bytes": 224640.0,
+        "allocated_state_bytes": 224640.0,
+        "decode_ms_range": [
+          0.5461915624778158,
+          0.6315255625395366
+        ]
+      },
+      "full_static": {
+        "prefill_s": 0.001517970500572119,
+        "decode_ms": 0.5175471875134008,
+        "decode_cpu_ms": 0.5129584999999937,
+        "used_state_bytes": 224640.0,
+        "allocated_state_bytes": 224640.0,
+        "decode_ms_range": [
+          0.5109140625449982,
+          0.5274613750430035
+        ]
+      },
+      "hybrid_old_kernel": {
+        "prefill_s": 0.004402541000217752,
+        "decode_ms": 1.7821878124948398,
+        "decode_cpu_ms": 1.7749905000000177,
+        "used_state_bytes": 37512.0,
+        "allocated_state_bytes": 37512.0,
+        "decode_ms_range": [
+          1.6949453125221225,
+          1.8091686875436608
+        ]
+      },
+      "hybrid": {
+        "prefill_s": 0.0027433444997768675,
+        "decode_ms": 0.8073136562529726,
+        "decode_cpu_ms": 0.8015960000000155,
+        "used_state_bytes": 37512.0,
+        "allocated_state_bytes": 37512.0,
+        "decode_ms_range": [
+          0.7845443749943115,
+          0.8144587499714362
+        ]
+      },
+      "local_softmax": {
+        "prefill_s": 0.0017396770003870188,
+        "decode_ms": 0.5988736874940059,
+        "decode_cpu_ms": 0.599038499999982,
+        "used_state_bytes": 99864.0,
+        "allocated_state_bytes": 99864.0,
+        "decode_ms_range": [
+          0.5925160625110948,
+          0.6141843750242515
+        ]
+      },
+      "energy": {
+        "prefill_s": 0.003111125500254275,
+        "decode_ms": 0.8358850000149687,
+        "decode_cpu_ms": 0.8304814999999244,
+        "used_state_bytes": 6336.0,
+        "allocated_state_bytes": 6336.0,
+        "decode_ms_range": [
+          0.8207838749854091,
+          0.8433991250171857
+        ]
+      }
+    },
+    "4096": {
+      "full_dynamic": {
+        "prefill_s": 0.2047295704996941,
+        "decode_ms": 1.0718632812540818,
+        "decode_cpu_ms": 1.0721084999999464,
+        "used_state_bytes": 6414720.0,
+        "allocated_state_bytes": 6414720.0,
+        "decode_ms_range": [
+          0.9988948124828312,
+          1.0947740624942526
+        ]
+      },
+      "full_static": {
+        "prefill_s": 0.20271294700023645,
+        "decode_ms": 0.703523343759116,
+        "decode_cpu_ms": 0.7037645000000925,
+        "used_state_bytes": 6414720.0,
+        "allocated_state_bytes": 6414720.0,
+        "decode_ms_range": [
+          0.6909251874844813,
+          0.7376668124834396
+        ]
+      },
+      "hybrid_old_kernel": {
+        "prefill_s": 0.11953488449989891,
+        "decode_ms": 1.7709595937560607,
+        "decode_cpu_ms": 1.7678960000000465,
+        "used_state_bytes": 37512.0,
+        "allocated_state_bytes": 37512.0,
+        "decode_ms_range": [
+          1.7354845624595328,
+          1.803679374972944
+        ]
+      },
+      "hybrid": {
+        "prefill_s": 0.06736104799983877,
+        "decode_ms": 0.8132471562873889,
+        "decode_cpu_ms": 0.8122635000000766,
+        "used_state_bytes": 37512.0,
+        "allocated_state_bytes": 37512.0,
+        "decode_ms_range": [
+          0.8015125625320252,
+          0.8233908125134803
+        ]
+      },
+      "local_softmax": {
+        "prefill_s": 0.049835168000299745,
+        "decode_ms": 0.6070887187661356,
+        "decode_cpu_ms": 0.6062759999999612,
+        "used_state_bytes": 99864.0,
+        "allocated_state_bytes": 99864.0,
+        "decode_ms_range": [
+          0.6018911250293968,
+          0.6212303749748571
+        ]
+      },
+      "energy": {
+        "prefill_s": 0.0723099159999947,
+        "decode_ms": 0.8364314375342019,
+        "decode_cpu_ms": 0.8365289999999748,
+        "used_state_bytes": 6336.0,
+        "allocated_state_bytes": 6336.0,
+        "decode_ms_range": [
+          0.8346418750306839,
+          0.8561141875134126
+        ]
+      }
+    },
+    "32768": {
+      "full_dynamic": {
+        "prefill_s": 11.863196406500265,
+        "decode_ms": 6.5914239062294655,
+        "decode_cpu_ms": 6.567352500000734,
+        "used_state_bytes": 51143040.0,
+        "allocated_state_bytes": 51143040.0,
+        "decode_ms_range": [
+          5.840098874955402,
+          7.718025937492712
+        ]
+      },
+      "full_static": {
+        "prefill_s": 11.359553020999556,
+        "decode_ms": 2.534418656239268,
+        "decode_cpu_ms": 2.5226439999999073,
+        "used_state_bytes": 51143040.0,
+        "allocated_state_bytes": 51143040.0,
+        "decode_ms_range": [
+          2.491615500048283,
+          2.7087756874948354
+        ]
+      },
+      "hybrid_old_kernel": {
+        "prefill_s": 0.8995468719999735,
+        "decode_ms": 1.7600243750166555,
+        "decode_cpu_ms": 1.7526410000003878,
+        "used_state_bytes": 37512.0,
+        "allocated_state_bytes": 37512.0,
+        "decode_ms_range": [
+          1.7329658124936032,
+          1.773567312511659
+        ]
+      },
+      "hybrid": {
+        "prefill_s": 0.5267558595000992,
+        "decode_ms": 0.8046966874815098,
+        "decode_cpu_ms": 0.8030379999999226,
+        "used_state_bytes": 37512.0,
+        "allocated_state_bytes": 37512.0,
+        "decode_ms_range": [
+          0.7990123750118983,
+          0.82016674997476
+        ]
+      },
+      "local_softmax": {
+        "prefill_s": 0.40124213000035525,
+        "decode_ms": 0.6131417812298423,
+        "decode_cpu_ms": 0.6113485000001084,
+        "used_state_bytes": 99864.0,
+        "allocated_state_bytes": 99864.0,
+        "decode_ms_range": [
+          0.6042901874820927,
+          0.6204293749760836
+        ]
+      },
+      "energy": {
+        "prefill_s": 0.5575990670004103,
+        "decode_ms": 0.8439494062599806,
+        "decode_cpu_ms": 0.8429449999995953,
+        "used_state_bytes": 6336.0,
+        "allocated_state_bytes": 6336.0,
+        "decode_ms_range": [
+          0.8324106875079451,
+          0.8560723749724275
+        ]
+      }
+    }
+  },
+  "scope": "One CPU thread including BLAS; float32; old selected checkpoints; 256-byte prefill chunks; 16 teacher-forced decode tokens; six balanced rounds. Static cache allocation counted in full."
+}

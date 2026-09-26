@@ -1,0 +1,70 @@
+{
+  "status": "completed",
+  "jobs": [
+    {
+      "family": "accept",
+      "size": null,
+      "status": "completed",
+      "reason": null,
+      "seconds": 9.421099337050691,
+      "reservation": "3d3201d0172749729d85ca52836d04e0",
+      "log": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_probe_003/3d3201d0172749729d85ca52836d04e0.log"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "status": "completed",
+      "reason": null,
+      "seconds": 10.017888417991344,
+      "reservation": "420529970ece4d9fa9808cbe00420113",
+      "log": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_probe_003/420529970ece4d9fa9808cbe00420113.log"
+    },
+    {
+      "family": "local_softmax",
+      "size": 0,
+      "status": "completed",
+      "reason": null,
+      "seconds": 10.003509148024023,
+      "reservation": "f8878f44391e481e89b85681d1178761",
+      "log": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_probe_003/f8878f44391e481e89b85681d1178761.log"
+    },
+    {
+      "family": "hybrid",
+      "size": 0,
+      "status": "completed",
+      "reason": null,
+      "seconds": 12.869868493988179,
+      "reservation": "a29f35b599ce4598a2994b5fc0d2e28b",
+      "log": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_probe_003/a29f35b599ce4598a2994b5fc0d2e28b.log"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "status": "completed",
+      "reason": null,
+      "seconds": 11.069664071022999,
+      "reservation": "363c480c207e495495944ff0873f866e",
+      "log": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_probe_003/363c480c207e495495944ff0873f866e.log"
+    },
+    {
+      "family": "local_softmax",
+      "size": 1,
+      "status": "completed",
+      "reason": null,
+      "seconds": 12.820585894980468,
+      "reservation": "72bda99ca1e34025a4285571cc31fdd2",
+      "log": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_probe_003/72bda99ca1e34025a4285571cc31fdd2.log"
+    },
+    {
+      "family": "hybrid",
+      "size": 1,
+      "status": "completed",
+      "reason": null,
+      "seconds": 17.07121714996174,
+      "reservation": "0083dd2bce814829881aa2ca2f105178",
+      "log": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_probe_003/0083dd2bce814829881aa2ca2f105178.log"
+    }
+  ],
+  "timing_comparable": false,
+  "excluded_family": "energy"
+}

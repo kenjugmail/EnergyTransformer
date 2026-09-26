@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "source_sha256": "646f2b999957c4bd5ec413a4775629a59eeea59fa94d2530d0842bd62b81587a",
+  "gpu_acceptance": false,
+  "prior_verification": "runs/campaign/revisions/44b6a75f7254adbf56ccbed4808d76e07db088b0b7283ad0c7420138479f869d/cpu_verification.json",
+  "changed_files": [
+    "energy_campaign/acceptance.py"
+  ],
+  "focused_tests": {
+    "passed": 31,
+    "log": "/home/kt/Documents/EnergyTransformer-gpu-campaign/runs/campaign/shared_subset_cpu_tests.log"
+  }
+}

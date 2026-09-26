@@ -1,0 +1,17 @@
+{
+  "purpose": "Measure inference-state scaling beyond the primary 4096-byte profile, without selecting architecture or checkpoints from these results.",
+  "timing": "Declared while primary seed-11 training was at step 200; no primary test scores available.",
+  "contexts": [8192, 32768],
+  "batch": 1,
+  "decode_tokens": 16,
+  "rounds": 6,
+  "arms": ["energy", "softmax", "local_softmax", "hybrid"],
+  "order": "Round rotations followed by reversed rotations, identical to primary profile.",
+  "checkpoint_selection": "Use the primary study's frozen minimum-validation-loss seed for each arm.",
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 2,
+  "seed": 72631,
+  "max_seconds": 900,
+  "claim_scope": "Inference timing and tensor-state size on this CPU. No long-context language-quality score and no GPU claim."
+}

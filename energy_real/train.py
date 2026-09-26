@@ -1,7 +1,7 @@
 """Resumable, budgeted byte-LM experiments. Historical weights are warm starts only."""
 from __future__ import annotations
 import argparse
-from dataclasses import asdict
+from dataclasses import asdict, replace
 import json
 import math
 from pathlib import Path
@@ -73,27 +73,61 @@ def validate(args):
         raise ValueError('stop_after must be an absolute step in the planned run')
     if args.max_tokens is not None and (args.max_tokens < 1 or type(args.max_tokens) is not int):
         raise ValueError('Positive integer token budget required')
+    if args.learning_rule == 'pcalm':
+        if args.amp != 'none':
+            raise ValueError('Experimental PC-ALM requires --amp none')
+        if not 1 <= args.activity_steps <= 256 or any(not math.isfinite(x) or x <= 0 for x in
+                (args.state_lr, args.dual_lr, args.rho)):
+            raise ValueError('Invalid PC-ALM activity schedule')
+
+
+def model_config(args):
+    """Validate architecture before parameter matching or device/data access."""
+    cfg = Config(kind=args.kind, width=args.width, layers=args.layers, heads=args.heads,
+                 slots=args.slots, ff_width=args.ff_width, chunk=args.chunk, backend=args.backend,
+                 activation_checkpointing=args.activation_checkpointing,
+                 energy_projection_fp32=getattr(args, "energy_projection_fp32", False),
+                 memory_dim=args.memory_dim, memory_capacity=args.memory_capacity,
+                 attention_window=args.attention_window, attention_every=args.attention_every)
+    cfg.validate()
+    softmax_layers = (args.layers if args.kind == 'softmax' else
+                      args.layers // args.attention_every if args.kind == 'hybrid' else 0)
+    softmax_ff = matched_ff(args.width, args.heads, args.slots, args.ff_width)
+    ff = args.ff_width + round((softmax_ff - args.ff_width) * softmax_layers / args.layers)
+    cfg = replace(cfg, ff_width=ff)
+    cfg.validate()
+    return cfg
 
 
 def run(args, *, corpus_factory=Enwik8):
     validate(args)
+    cfg = model_config(args)
+    study=getattr(args,'shared_hybrid_study',False)
+    if study and getattr(args,'shared_gpu_diagnostic',False):raise ValueError('Choose one shared-device protocol')
+    shared=getattr(args,'shared_gpu_diagnostic',False) or study
+    if shared:
+        if ((cfg.width,cfg.layers) not in ((160,3),(208,6)) or cfg.heads!=4 or cfg.slots!=16
+            or cfg.memory_dim or cfg.backend!='dmat' or cfg.ff_width>4*cfg.width+128
+            or args.batch!=1 or args.seq!=512 or args.accum!=16 or args.steps>(128 if study else 8)
+            or args.max_cuda_gib>4 or args.max_seconds>(600 if study else 120) or args.compile or args.learning_rule!='bp'
+            or (study and cfg.kind not in ('hybrid','softmax'))):
+            raise ValueError('Shared diagnostic/study exceeds its small-model, update, time or 4 GiB bounds')
     device = torch.device(args.device)
     if device.type == 'cuda':
-        from .device import require_idle_gpu, set_memory_limit
-        require_idle_gpu()
+        from .device import require_idle_gpu, set_memory_limit, available_host_bytes
+        if shared:
+            if not torch.cuda.is_available() or available_host_bytes()<20*2**30:
+                raise RuntimeError('Shared probe needs CUDA and 20 GiB available before a 4 GiB allocation')
+        else:require_idle_gpu()
         set_memory_limit(device, args.max_cuda_gib)
-    ff = matched_ff(args.width, args.heads, args.slots, args.ff_width) if args.kind == 'softmax' else args.ff_width
-    cfg = Config(kind=args.kind, width=args.width, layers=args.layers, heads=args.heads,
-                 slots=args.slots, ff_width=ff, chunk=args.chunk, backend=args.backend,
-                 activation_checkpointing=args.activation_checkpointing)
-    cfg.validate()
     train = corpus_factory(args.data, 'train', expected_sha256=args.data_sha256)
     valid = corpus_factory(args.data, 'valid')
     file_hash = train.file_identity()
     identity = {'config': asdict(cfg), 'data_sha256': file_hash, 'source_sha256': source_identity(),
-                'runtime': environment(device), 'schedule': {k: getattr(args, k) for k in
+                'runtime': environment(device), 'shared_gpu_diagnostic':shared, 'shared_hybrid_study':study, 'compiled': getattr(args, 'compile', False), 'campaign': getattr(args, 'campaign_identity', None), 'schedule': {k: getattr(args, k) for k in
                 ('steps', 'batch', 'seq', 'accum', 'lr', 'warmup', 'seed', 'weight_decay',
-                 'eval_every', 'eval_bytes', 'eval_batch', 'amp', 'max_tokens', 'max_seconds', 'max_cuda_gib')}}
+                 'eval_every', 'eval_bytes', 'eval_batch', 'amp', 'max_tokens', 'max_seconds', 'max_cuda_gib',
+                 'learning_rule', 'activity_steps', 'state_lr', 'dual_lr', 'rho')}}
     with exclusive_run(args.out, args.resume) as out:
         torch.manual_seed(args.seed)
         if device.type == 'cuda':
@@ -125,6 +159,8 @@ def run(args, *, corpus_factory=Enwik8):
                 torch.cuda.set_rng_state_all(old['cuda_rng'])
             rng.bit_generator.state = old['numpy_rng']
             step, tokens = old['step'], old['tokens']
+            if hasattr(train, 'restore_coverage'):
+                train.restore_coverage(old.get('coverage', {}))
             best, best_step = old['best_valid_bpb'], old['best_step']
             elapsed, train_seconds, eval_seconds = old['elapsed_s'], old['train_s'], old['eval_s']
             initial_hash = old['initial_sha256']
@@ -144,10 +180,17 @@ def run(args, *, corpus_factory=Enwik8):
             old = torch.load(args.warm_start, weights_only=True, map_location='cpu')
             old_cfg = Config(**old['config'])
             # Kernel/backend choices may change for an explicitly labelled new run.
-            architecture = ('kind', 'vocab', 'width', 'layers', 'heads', 'slots', 'ff_width', 'prior')
+            architecture = ('kind', 'vocab', 'width', 'layers', 'heads', 'slots', 'ff_width', 'prior',
+                            'memory_dim', 'memory_capacity', 'attention_window', 'attention_every')
             if any(getattr(old_cfg, k) != getattr(cfg, k) for k in architecture):
                 raise ValueError('Warm-start architecture mismatch')
             model.load_state_dict(old['weights'], strict=True)
+        def objective(x, y):
+            with torch.autocast(device_type=device.type, dtype=torch.bfloat16,
+                                enabled=args.amp == 'bfloat16' and device.type == 'cuda'):
+                logits, _ = model(x)
+                return F.cross_entropy(logits.float().flatten(0, 1), y.flatten())
+        training_objective = torch.compile(objective) if getattr(args, 'compile', False) else objective
         tokens_per_step = args.batch * args.seq * args.accum
         meta = {'format': FORMAT, 'identity': identity, 'parameters': model.parameters_count(),
                 'planned_tokens': args.steps * tokens_per_step, 'tokens_per_step': tokens_per_step,
@@ -183,7 +226,7 @@ def run(args, *, corpus_factory=Enwik8):
                                    'best_valid_bpb': best, 'best_step': best_step, 'best_checkpoint': best_checkpoint,
                                    'elapsed_s': previous_elapsed + time.perf_counter() - started,
                                    'train_s': train_seconds, 'eval_s': eval_seconds,
-                                   'initial_sha256': initial_hash, 'log': log_identity(log_path)}, out / 'last.pt')
+                                   'initial_sha256': initial_hash, 'coverage': getattr(train, 'coverage', None), 'log': log_identity(log_path)}, out / 'last.pt')
                 last_saved = step
 
             try:
@@ -197,21 +240,34 @@ def run(args, *, corpus_factory=Enwik8):
                     if elapsed >= args.max_seconds or (args.max_tokens is not None and tokens + tokens_per_step > args.max_tokens):
                         status = 'budget_exhausted'
                         break
-                    if device.type == 'cuda' and torch.cuda.max_memory_allocated(device) > args.max_cuda_gib * 2**30:
+                    if device.type == 'cuda' and torch.cuda.max_memory_reserved(device) > args.max_cuda_gib * 2**30:
                         status = 'memory_budget_exhausted'
                         break
+                    if device.type == 'cuda':
+                        from .device import available_host_bytes
+                        if available_host_bytes() < 16 * 2**30:
+                            status = 'host_memory_reserve_exhausted'
+                            break
                     begin = time.perf_counter()
                     lr = learning_rate(step + 1, args.steps, args.warmup, args.lr)
                     for group in optimizer.param_groups:
                         group['lr'] = lr
                     optimizer.zero_grad(set_to_none=True)
                     loss_sum = 0.
+                    local_residual = None
                     for _ in range(args.accum):
                         x, y = train.batch(rng, args.batch, args.seq, device)
-                        with torch.autocast(device_type=device.type, dtype=torch.bfloat16,
-                                            enabled=args.amp == 'bfloat16' and device.type == 'cuda'):
-                            logits, _ = model(x)
-                            loss = F.cross_entropy(logits.float().flatten(0, 1), y.flatten()) / args.accum
+                        if args.learning_rule == 'pcalm':
+                            from .local_lm import pcalm_loss
+                            def check_activity_budget():
+                                if stop['requested'] or previous_elapsed + time.perf_counter() - started >= args.max_seconds:
+                                    raise TimeoutError('Stopped during PC-ALM activity inference; resume from committed checkpoint')
+                            local = pcalm_loss(model, x, y, steps=args.activity_steps, state_lr=args.state_lr,
+                                               dual_lr=args.dual_lr, rho=args.rho, check_budget=check_activity_budget)
+                            loss = local.loss / args.accum
+                            local_residual = local.residual_rms
+                        else:
+                            loss = training_objective(x, y) / args.accum
                         loss.backward()
                         loss_sum += float(loss.detach())
                     norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 1., error_if_nonfinite=True)
@@ -225,16 +281,18 @@ def run(args, *, corpus_factory=Enwik8):
                     tokens += tokens_per_step
                     emit({'event': 'step', 'step': step, 'tokens': tokens, 'loss': loss_sum,
                           'lr': lr, 'grad_norm': float(norm), 'train_s': train_seconds,
-                          'step_s': duration, 'tok_s': tokens_per_step / duration})
+                          'step_s': duration, 'tok_s': tokens_per_step / duration,
+                          'unique_targets': getattr(train, 'unique_targets', None),
+                          'learning_rule': args.learning_rule, 'local_residual_rms': local_residual})
                     if step % args.eval_every == 0 or step == args.steps:
                         begin = time.perf_counter()
                         score = evaluate(model, valid, args.seq, args.eval_bytes, device, args.eval_batch,
-                                         amp=args.amp == 'bfloat16')
+                                         amp=args.amp == 'bfloat16', deadline=started + args.max_seconds - previous_elapsed)
                         sync(device)
                         eval_seconds += time.perf_counter() - begin
                         emit({'event': 'eval', 'step': step, 'tokens': tokens, 'valid_bpb': score['bpb'],
                               'targets': score['targets'], 'train_s': train_seconds, 'eval_s': eval_seconds})
-                        if best is None or score['bpb'] < best:
+                        if score['status'] == 'completed' and (best is None or score['bpb'] < best):
                             best, best_step = score['bpb'], step
                             best_checkpoint = {'config': asdict(cfg),
                                                'weights': {k: v.detach().cpu().clone() for k, v in model.state_dict().items()},
@@ -256,10 +314,12 @@ def run(args, *, corpus_factory=Enwik8):
                     signal.signal(sig, handler)
         final = {'status': status, 'kind': cfg.kind, 'backend': cfg.backend,
                  'parameters': model.parameters_count(), 'steps': step, 'tokens': tokens,
-                 'planned_tokens': args.steps * tokens_per_step, 'best_valid_bpb': best,
+                 'planned_tokens': args.steps * tokens_per_step, 'unique_targets': getattr(train, 'unique_targets', None), 'best_valid_bpb': best,
                  'best_step': best_step, 'train_s': train_seconds, 'eval_s': eval_seconds,
                  'elapsed_s': previous_elapsed + time.perf_counter() - started,
-                 'last_checkpoint_step': last_saved}
+                 'last_checkpoint_step': last_saved,'shared_gpu_diagnostic':shared,
+                 'peak_allocated_bytes':torch.cuda.max_memory_allocated(device) if device.type=='cuda' else None,
+                 'peak_reserved_bytes':torch.cuda.max_memory_reserved(device) if device.type=='cuda' else None}
         atomic_json(final, out / 'result.json')
         print(json.dumps(final), flush=True)
         return final
@@ -267,7 +327,9 @@ def run(args, *, corpus_factory=Enwik8):
 
 def parser():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--kind', default='energy', choices=['energy', 'softmax'])
+    p.add_argument('--kind', default='energy', choices=['energy', 'softmax', 'hybrid'])
+    p.add_argument('--attention-window', type=int, default=0)
+    p.add_argument('--attention-every', type=int, default=3)
     p.add_argument('--data', default='data/enwik8')
     p.add_argument('--data-sha256', default=LOCAL_CORPUS_SHA256)
     p.add_argument('--out', required=True)
@@ -280,7 +342,18 @@ def parser():
     p.add_argument('--weight-decay', type=float, default=.1)
     p.add_argument('--backend', choices=['dmat', 'matmul'], default='dmat')
     p.add_argument('--amp', choices=['none', 'bfloat16'], default='bfloat16')
+    p.add_argument('--energy-projection-fp32', action='store_true', help='Keep the first energy projection in FP32 under autocast; saved in model config')
+    p.add_argument('--compile', action='store_true')
     p.add_argument('--activation-checkpointing', action='store_true')
+    p.add_argument('--shared-gpu-diagnostic',action='store_true',help='Explicit small, bounded shared-device diagnostic; never a timing benchmark')
+    p.add_argument('--shared-hybrid-study',action='store_true',help='Selected hybrid/attention shared study, <=128 updates, <=600 seconds, <=4 GiB')
+    p.add_argument('--memory-dim', type=int, default=0)
+    p.add_argument('--memory-capacity', type=int, default=256)
+    p.add_argument('--learning-rule', choices=['bp', 'pcalm'], default='bp')
+    p.add_argument('--activity-steps', type=int, default=8)
+    p.add_argument('--state-lr', type=float, default=.02)
+    p.add_argument('--dual-lr', type=float, default=.1)
+    p.add_argument('--rho', type=float, default=1.)
     p.add_argument('--device', default='cuda')
     p.add_argument('--resume', action='store_true')
     p.add_argument('--warm-start', type=Path)

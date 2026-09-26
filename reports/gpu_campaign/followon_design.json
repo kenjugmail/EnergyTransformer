@@ -1,0 +1,1815 @@
+{
+  "source_sha256": "602efa855908e669e135b40c0ee8db1875fe8a82153abe3eb78fffc7c8785ad6",
+  "execution_authorized": false,
+  "d0": null,
+  "selected_family": null,
+  "scaling_runs": [
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 404,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 505,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 0,
+      "seed": 606,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 404,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 505,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 1,
+      "seed": 606,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 404,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 505,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 2,
+      "seed": 606,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 404,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 505,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "softmax",
+      "size": 3,
+      "seed": 606,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 404,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 505,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 0,
+      "seed": 606,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 404,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 505,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 1,
+      "seed": 606,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 404,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 505,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 2,
+      "seed": 606,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        4
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        2
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 404,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 505,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 606,
+      "budget_ratio": [
+        1,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 404,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 505,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    },
+    {
+      "family": "validation_selected_energy_family",
+      "size": 3,
+      "seed": 606,
+      "budget_ratio": [
+        2,
+        1
+      ],
+      "targets": null,
+      "independent_run": true,
+      "schedule": "warmup/cosine ending at this data budget"
+    }
+  ],
+  "slot_capacity_runs": [
+    {
+      "family": "energy",
+      "seed": 404,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 8,
+        "ff_width": 912,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3329712,
+      "fp32_recurrent_bytes_per_sequence": 40704,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 505,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 8,
+        "ff_width": 912,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3329712,
+      "fp32_recurrent_bytes_per_sequence": 40704,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 606,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 8,
+        "ff_width": 912,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3329712,
+      "fp32_recurrent_bytes_per_sequence": 40704,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 404,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 16,
+        "ff_width": 832,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3330000,
+      "fp32_recurrent_bytes_per_sequence": 81408,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 505,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 16,
+        "ff_width": 832,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3330000,
+      "fp32_recurrent_bytes_per_sequence": 81408,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 606,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 16,
+        "ff_width": 832,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3330000,
+      "fp32_recurrent_bytes_per_sequence": 81408,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 404,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 32,
+        "ff_width": 671,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3328074,
+      "fp32_recurrent_bytes_per_sequence": 162816,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 505,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 32,
+        "ff_width": 671,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3328074,
+      "fp32_recurrent_bytes_per_sequence": 162816,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 606,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 32,
+        "ff_width": 671,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3328074,
+      "fp32_recurrent_bytes_per_sequence": 162816,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 404,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 64,
+        "ff_width": 351,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3329226,
+      "fp32_recurrent_bytes_per_sequence": 325632,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 505,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 64,
+        "ff_width": 351,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3329226,
+      "fp32_recurrent_bytes_per_sequence": 325632,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "energy",
+      "seed": 606,
+      "config": {
+        "kind": "energy",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 64,
+        "ff_width": 351,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3329226,
+      "fp32_recurrent_bytes_per_sequence": 325632,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "hybrid",
+      "seed": 404,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 8,
+        "ff_width": 904,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3328144,
+      "fp32_recurrent_bytes_per_sequence": 27136,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 505,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 8,
+        "ff_width": 904,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3328144,
+      "fp32_recurrent_bytes_per_sequence": 27136,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 606,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 8,
+        "ff_width": 904,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3328144,
+      "fp32_recurrent_bytes_per_sequence": 27136,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 404,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 16,
+        "ff_width": 851,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3329170,
+      "fp32_recurrent_bytes_per_sequence": 54272,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 505,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 16,
+        "ff_width": 851,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3329170,
+      "fp32_recurrent_bytes_per_sequence": 54272,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 606,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 16,
+        "ff_width": 851,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3329170,
+      "fp32_recurrent_bytes_per_sequence": 54272,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 404,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 32,
+        "ff_width": 744,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3328720,
+      "fp32_recurrent_bytes_per_sequence": 108544,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 505,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 32,
+        "ff_width": 744,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3328720,
+      "fp32_recurrent_bytes_per_sequence": 108544,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 606,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 32,
+        "ff_width": 744,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3328720,
+      "fp32_recurrent_bytes_per_sequence": 108544,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 404,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 64,
+        "ff_width": 531,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3330322,
+      "fp32_recurrent_bytes_per_sequence": 217088,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 505,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 64,
+        "ff_width": 531,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3330322,
+      "fp32_recurrent_bytes_per_sequence": 217088,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "hybrid",
+      "seed": 606,
+      "config": {
+        "kind": "hybrid",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 64,
+        "ff_width": 531,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 128,
+        "attention_every": 3
+      },
+      "parameters": 3330322,
+      "fp32_recurrent_bytes_per_sequence": 217088,
+      "bf16_local_kv_bytes_per_sequence": 212992
+    },
+    {
+      "family": "softmax",
+      "seed": 404,
+      "config": {
+        "kind": "softmax",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 16,
+        "ff_width": 890,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3330012,
+      "fp32_recurrent_bytes_per_sequence": 0,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "softmax",
+      "seed": 505,
+      "config": {
+        "kind": "softmax",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 16,
+        "ff_width": 890,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3330012,
+      "fp32_recurrent_bytes_per_sequence": 0,
+      "bf16_local_kv_bytes_per_sequence": 0
+    },
+    {
+      "family": "softmax",
+      "seed": 606,
+      "config": {
+        "kind": "softmax",
+        "vocab": 256,
+        "width": 208,
+        "layers": 6,
+        "heads": 4,
+        "slots": 16,
+        "ff_width": 890,
+        "prior": 0.25,
+        "chunk": 16,
+        "activation_checkpointing": false,
+        "backend": "dmat",
+        "memory_dim": 0,
+        "memory_capacity": 256,
+        "attention_window": 0,
+        "attention_every": 3
+      },
+      "parameters": 3330012,
+      "fp32_recurrent_bytes_per_sequence": 0,
+      "bf16_local_kv_bytes_per_sequence": 0
+    }
+  ],
+  "slot_protocol": "Paired data and equal validation-only tuning; fixed parameter budget trades FF capacity for slots. Report this tradeoff. Delayed-copy/associative recall plus LM loss and elapsed cost.",
+  "slot_additional_control": "A later fixed-FF slot sweep is required to separate memory capacity from FF tradeoffs; not part of these 27 fits.",
+  "cost_estimate": null,
+  "cost_status": "Await measured GPU profiles; do not extrapolate CPU rates",
+  "scaling_limits": "96 independent fits; re-profile selected family. Need larger measured size after this grid before extrapolation. No billion-parameter claim."
+}

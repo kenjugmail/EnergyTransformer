@@ -1,0 +1,15 @@
+{
+  "observed_unix": 1789426761.7622073,
+  "gpu_probe": "2005611, /home/kt/Documents/llm-stack/venv-gpu/bin/python, 84907 MiB\n",
+  "main_study_process": [
+    {
+      "pid": 3214969,
+      "status": [
+        "VmHWM:\t 1064312 kB",
+        "VmRSS:\t  782240 kB",
+        "Threads:\t5"
+      ]
+    }
+  ],
+  "scope": "Whole study process high-water mark at observation time, not per-model incremental allocation."
+}

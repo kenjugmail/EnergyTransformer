@@ -1,0 +1,27 @@
+{
+  "machine": "aarch64",
+  "torch": "2.14.0+cu130",
+  "cuda_build": "13.0",
+  "other_compute_processes": [
+    {
+      "pid": 718284,
+      "name": "VLLM::EngineCore"
+    },
+    {
+      "pid": 2659826,
+      "name": "/home/kt/vellum-worldgen-data/audits/camera-realtime-423a706d/baseline/vellum-engineering"
+    },
+    {
+      "pid": 2698016,
+      "name": "/home/kt/Documents/vellumengineer/.vellum/worldgen-envs/gsplat-caa2d0c25017/bin/python"
+    }
+  ],
+  "available_host_bytes": 53122736128,
+  "status": "WAITING_FOR_EXCLUSIVE_GPU",
+  "source_sha256": "602efa855908e669e135b40c0ee8db1875fe8a82153abe3eb78fffc7c8785ad6",
+  "gpu_identity": {
+    "name": "NVIDIA GB10",
+    "uuid": "GPU-7257798a-a515-4824-2e60-6cf726532f9f",
+    "driver": "580.173.02"
+  }
+}
