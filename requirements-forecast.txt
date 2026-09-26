@@ -1,0 +1,5 @@
+# Use the existing NVIDIA/PyTorch environment on Spark; do not replace its Torch build.
+numpy>=1.26
+pandas>=2.2
+pytest>=8
+# PyTorch 2.10.0+cpu was used for the local experiment.
