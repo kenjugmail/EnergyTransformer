@@ -82,8 +82,11 @@ def train(data_path,out,kind,seed=11,steps=600,resume=False,device='cpu',stop_at
 
 def load_head(path,device='cpu'):
     d=torch.load(path,weights_only=True,map_location=device)
+    if d.get('format')=='calibrated_trajectory_v2':
+        from .calibrated import load_calibrated
+        return load_calibrated(path,device)
     if d.get('format')!='trajectory_energy_v1':raise ValueError('Unknown forecast checkpoint')
-    c=d['config'];c['horizons']=tuple(c['horizons'])
+    c=dict(d['config']);c['horizons']=tuple(c['horizons'])
     m=ForecastEnergy(ForecastConfig(**c)).to(device);m.load_state_dict(d['weights']);m.eval();return m,d
 
 def main():

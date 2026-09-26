@@ -45,14 +45,33 @@ class ForecastSession:
             raise ValueError('Invalid session snapshot')
         if (d['teacher_sha'],d['head_sha'])!=(self.teacher_hash,self.head_hash):raise ValueError('Snapshot model mismatch')
         if type(d['steps']) is not int or d['steps']<0:raise ValueError('Invalid step count')
-        h=d['history']
-        if h is not None and (h.ndim!=3 or h.shape[0]!=1 or h.shape[-1]!=self.head.config.variables or h.shape[1]>self.head.config.history or not torch.isfinite(h).all()):
-            raise ValueError('Invalid history snapshot')
-        # Shape/finite validation is local; hashes are identities, not signatures.
-        if d['state'] is not None:
+        h=d['history']; state=d['state']; steps=d['steps']
+        if steps==0:
+            if h is not None or state is not None:raise ValueError('Empty snapshot contains history')
+        else:
+            if not isinstance(h,torch.Tensor) or state is None:raise ValueError('Missing observed state/history')
+            if (h.ndim!=3 or h.shape!=(1,min(steps,self.head.config.history),self.head.config.variables)
+                or h.dtype!=torch.float32 or not torch.isfinite(h).all()):
+                raise ValueError('Invalid observed history')
             c=self.model.config
-            if len(d['state'])!=c.layers:raise ValueError('Invalid layer count')
-            for p,s in d['state']:
+            if not isinstance(state,(tuple,list)) or len(state)!=c.layers:raise ValueError('Invalid layer count')
+            for layer in state:
+                if not isinstance(layer,(tuple,list)) or len(layer)!=2:raise ValueError('Invalid layer schema')
+                p,s=layer
+                if not isinstance(p,torch.Tensor) or not isinstance(s,torch.Tensor):raise ValueError('Coefficients must be tensors')
+                if p.dtype!=torch.float32 or s.dtype!=torch.float32:raise ValueError('Expected float32 energy coefficients')
                 if p.shape!=(1,c.heads,c.slots) or s.shape!=(1,c.heads,c.slots,c.width//c.heads):raise ValueError('Invalid energy shapes')
                 if not torch.isfinite(p).all() or not torch.isfinite(s).all() or (p<c.prior).any():raise ValueError('Invalid coefficients')
-        self.state=d['state'];self.history=h;self.steps=d['steps']
+        self.state=state;self.history=h;self.steps=steps
+
+    def point_forecast_status(self):
+        """Validation evidence, not a probability of correctness or authorization."""
+        entries=self.metadata.get('selection',{}).get('horizons')
+        if entries is None:
+            return {'status':'no_horizon_gate','meaning':'No calibration support assessment is recorded.'}
+        return {'status':'validation_assessed','horizons':[
+            {'horizon':entry['horizon'],
+             'point_mean':'context_linear' if entry['use_context'] else 'training_target_mean',
+             'context_gain':float(self.head.anchor.gain[i]),
+             'warning':'Empirical development evidence, not guaranteed future accuracy.'}
+            for i,entry in enumerate(entries)]}

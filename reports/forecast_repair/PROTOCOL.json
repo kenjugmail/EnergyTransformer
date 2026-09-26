@@ -1,0 +1,13 @@
+{
+ "date": "2026-09-26",
+ "parent_branch_commit": "8576347b66fad388f253991501f38ee9fe463c19",
+ "hypothesis": "Separate point-mean estimation from multimodal density shape and shrink weakly predictable horizons before forecasting.",
+ "scope": "Repairs and follow-up on already inspected 973K-teacher development data; no new independent language benchmark or 10.6M evaluation",
+ "mean": "5-fold document-group crossfit within training. Per-horizon ridge penalty selected by pooled OOF squared error from [0.1,1,10,100,1000,10000,100000,1000000]. Train OOF shrink gain in [0,1] toward train-target mean. Gain enabled only when a document-cluster validation-selection bootstrap lower bound for improvement over constant exceeds zero.",
+ "validation": "Split 30 validation documents deterministically by hashed group ID: first half mean gating/checkpoint selection; second half variance calibration only. Existing v1 checkpoint selection historically used the whole validation set, so reused-head postcalibration has that limitation.",
+ "neural_fits": "Three new anchored spectral mixture density fits, seeds 11/22/33, 600 updates of 64 windows, same windows as v1 for each seed, LR 0.001 cosine, validation-selection NLL. OOF means for training only. No backbone fit.",
+ "calibration": "150 Adam steps, four log-temperatures clamped to log(0.5)..log(2), calibration-subset NLL, final values saved. Joint affine rescaling about the fixed conditional mean.",
+ "controls": ["original spectral", "original ridge", "training-target constant", "per-horizon OOF ridge", "gated ridge", "gated ridge residual Gaussian", "recentered existing spectral without neural retraining", "new anchored spectral"],
+ "evaluation": "Freeze all selected checkpoint hashes before opening final test values. Score MSE per horizon, NLL, proper energy score, marginal coverage and width; retain every variant. Paired intervals cluster by test document, averaging seeds. Final test was seen in parent study; no pristine-test claim.",
+ "integration": "Forecasts remain sidecar outputs. Mean returned for squared-error point prediction; local MAP optional, never substitutes for mean automatically. No forecast installed in P/S."
+}

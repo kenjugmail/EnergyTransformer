@@ -13,6 +13,7 @@ def main():
     record={'status':'forecast_only_not_committed','teacher_sha256':s.teacher_hash,'head_sha256':s.head_hash,
         'observed_bytes':len(ids[0]),'horizons_in_bytes':s.head.config.horizons,'standardized_summary_means':means.tolist(),
         'mixture_probabilities':f.logits.softmax(-1).tolist()[0],
+        'point_forecast_status':s.point_forecast_status(),
         'warning':'These are eight lossy memory-summary quantities, not text, full P/S states, or verified future facts.'}
     print(json.dumps(record,indent=2))
 if __name__=='__main__':main()
