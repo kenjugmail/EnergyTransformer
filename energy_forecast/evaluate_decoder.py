@@ -12,6 +12,7 @@ from .decoder_bridge import load_adapter,KINDS
 from .experiment import load_head
 from .train_decoder import forecast_cache,losses
 from .probe import checkpoint_hash
+from .decoder_integrity import selected_runs, validate_head_metadata
 
 def paired(a,b,groups,seed=21009):
     delta=np.asarray(a)-np.asarray(b);unique=np.unique(groups)
@@ -21,15 +22,26 @@ def paired(a,b,groups,seed=21009):
     return {'difference_bpb':float(delta.mean()),'ci_low':float(np.quantile(draws,.025)),
             'ci_high':float(np.quantile(draws,.975)),'document_groups':len(unique)}
 
-def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--data',required=True);p.add_argument('--heads');p.add_argument('--fits',required=True);p.add_argument('--out',required=True);a=p.parse_args()
+def main(argv=None):
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--data',required=True);p.add_argument('--heads');p.add_argument('--fits',required=True);p.add_argument('--out',required=True);a=p.parse_args(argv)
     torch.set_num_threads(1);fits=Path(a.fits);out=Path(a.out)
-    frozen=json.loads((fits/'FROZEN.json').read_text());kinds=tuple(frozen['validation_means'])
+    frozen=json.loads((fits/'FROZEN.json').read_text())
+    kinds,seeds,selected=selected_runs(frozen)
     if checkpoint_hash(a.data)!=frozen['data_sha256']:raise ValueError('Evaluation data identity changed')
-    for name,digest in frozen['files'].items():
+    if 'study_sha256' in frozen and checkpoint_hash(fits/'STUDY.json')!=frozen['study_sha256']:
+        raise ValueError('Study manifest changed')
+    for _,_,name,digest in selected:
         if checkpoint_hash(fits/name)!=digest:raise ValueError('Selected checkpoint changed')
+    data=torch.load(a.data,map_location='cpu',weights_only=True);records=[];arrays={}
+    heads={}
+    for seed in seeds:
+        if a.heads:
+            head,hm=load_head(Path(a.heads)/f'anchored_seed{seed}.pt')
+            validate_head_metadata(hm,data['metadata'])
+            heads[seed]=head
+        elif any(k not in ('hidden','history') for k in kinds):
+            raise ValueError('Forecast heads required')
     out.mkdir(parents=True,exist_ok=False)
-    data=torch.load(a.data,map_location='cpu',weights_only=True);records=[];arrays={};audit={}
     for dataset in [name for name in ('test','secondary') if name in data]:
         part=data[dataset];arrays[dataset]={};groups=part['group'].numpy()
         base=losses(None,part,data['weight']).numpy();arrays[dataset]['base']=base
@@ -37,9 +49,9 @@ def main():
         np.savez_compressed(out/f'{dataset}_base.npz',bpb=base,group=groups,anchor=part['anchor'].numpy())
         permutation=torch.arange(len(part['h'])).roll(len(part['h'])//2)
         if (part['group']==part['group'][permutation]).any():raise AssertionError('Shuffle must cross documents')
-        for seed in (11,22,33):
+        for seed in seeds:
             if a.heads:
-                head,_=load_head(Path(a.heads)/f'anchored_seed{seed}.pt');cache=forecast_cache(head,part)
+                cache=forecast_cache(heads[seed],part)
             else:
                 if any(k not in ('hidden','history') for k in kinds):raise ValueError('Forecast heads required')
                 cache=None
@@ -72,7 +84,7 @@ def main():
                     comparisons.append({'dataset':dataset,'a':f'{kind}:{intervention}','b':kind,**paired(changed,means[kind],groups)})
     pd.DataFrame(comparisons).to_csv(out/'paired.csv',index=False)
     (out/'EVALUATION.json').write_text(json.dumps({'data_sha256':checkpoint_hash(a.data),'selection_sha256':checkpoint_hash(fits/'FROZEN.json'),
-        'candidate':'energy_read','validation_winner':frozen['validation_winner'],'records':len(records),
+        'candidate':'energy_read' if 'energy_read' in kinds else None,'seeds':seeds,'validation_winner':frozen['validation_winner'],'records':len(records),
         'unique_primary_origins':len(data['test']['y']),'unique_secondary_origins':len(data['secondary']['y']) if 'secondary' in data else 0,
         'warning':'Repeated domains. Pretrained forecasts carry extra frozen parameters and prior training. No held-out corpus test claim.'},indent=2))
     print(summary.to_string(index=False),flush=True)

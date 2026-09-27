@@ -1,0 +1,21 @@
+{
+  "changed_data_resume": {
+    "exit_code": 0,
+    "same_selected_weights": true,
+    "data_identity_changed": true
+  },
+  "custom_seed_evaluation": {
+    "exit_code": 1,
+    "stderr_tail": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/resume-repro-4874paol/fits/hidden_seed11/best.pt'"
+  },
+  "stop_zero": {
+    "exit_code": 0,
+    "last_exists": false,
+    "stdout": "COMPLETED 1"
+  },
+  "backwards_stop": {
+    "reported_completed": 2,
+    "checkpoint_step": 3,
+    "record_changed": true
+  }
+}
