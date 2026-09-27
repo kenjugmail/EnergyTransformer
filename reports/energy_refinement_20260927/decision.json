@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-27",
+  "source_base_commit": "69f16a3e01c7954e04aadfc951785033dbcb73c5",
+  "status": "KEEP_ITERATIVE_ENERGY_AS_RESEARCH_ONLY",
+  "promote_to_main": false,
+  "reason": "All scalar-energy candidates improve frozen teacher, but ordinary adapters are stronger. More optimization beyond the trained depth generally worsens language scores.",
+  "primary_fits": 15,
+  "posthoc_fits": 6,
+  "updates_per_fit": 600,
+  "batch": 128,
+  "total_updates": 12600,
+  "total_presented_targets": 1612800,
+  "unique_training_positions": 21245,
+  "primary_test_positions": 2921,
+  "secondary_test_positions": 4520,
+  "validation_winner": "memory_ff",
+  "energy_memory_validation_depth": [
+    "fixed",
+    2,
+    null
+  ],
+  "energy_down_loss_up_fraction": 0.5733235677083334,
+  "head_parameters": {
+    "feedforward": 36112,
+    "memory_ff": 35965,
+    "recurrent": 36075,
+    "energy_hidden": 36272,
+    "energy_memory": 35968,
+    "latent_ff": 36249,
+    "energy_full": 35991
+  },
+  "gpu_used": false,
+  "teacher_parameters": 972896,
+  "teacher_sha256": "78b4662a3c30d2e1a8905340e1c465eb1f83c34e98bcfc28177b2dbfb93ea06b",
+  "limitations": [
+    "Reused news domain",
+    "Frozen teacher not joint training",
+    "Lossy fixed extra memory reads",
+    "Not full EBT reproduction",
+    "Not a reasoning benchmark",
+    "No actual 10.6M Spark checkpoint"
+  ]
+}
