@@ -1,0 +1,43 @@
+{
+  "meaning": "Tiny execution-parity fixtures; not new language-model training evidence.",
+  "baseline_blob_sha": "70604f0d1403a136bc8a8daca2acfca5d95893d6",
+  "runs": [
+    {
+      "kind": "hidden",
+      "seed": 7,
+      "steps": 8,
+      "weight_bitwise_equal": true,
+      "max_abs": 0.0,
+      "same_sample_hash": true,
+      "same_validation_history": true
+    },
+    {
+      "kind": "hidden",
+      "seed": 19,
+      "steps": 8,
+      "weight_bitwise_equal": true,
+      "max_abs": 0.0,
+      "same_sample_hash": true,
+      "same_validation_history": true
+    },
+    {
+      "kind": "history",
+      "seed": 7,
+      "steps": 8,
+      "weight_bitwise_equal": true,
+      "max_abs": 0.0,
+      "same_sample_hash": true,
+      "same_validation_history": true
+    },
+    {
+      "kind": "history",
+      "seed": 19,
+      "steps": 8,
+      "weight_bitwise_equal": true,
+      "max_abs": 0.0,
+      "same_sample_hash": true,
+      "same_validation_history": true
+    }
+  ],
+  "inherited_binary_artifacts_unchanged": 53
+}

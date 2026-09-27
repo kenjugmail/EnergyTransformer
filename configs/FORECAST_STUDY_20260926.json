@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-26",
+  "base_commit": "397dfae647f9521875344b99227a51a3974c0dfd",
+  "study": "Forecast actual frozen LM energy-state sketches at +1,+4,+16,+64 bytes",
+  "teacher": "Archived v21 972896 parameter checkpoint; NOT current 10.6M GB10 checkpoint",
+  "split": "Exact byte-document hash before window extraction; train-only channel normalization",
+  "neural_variants": ["diagonal", "joint", "mixture", "spectral"],
+  "seeds": [11,22,33],
+  "steps": 600,
+  "batch_size": 64,
+  "checkpoint_selection": "Minimum validation normalized NLL; test opened after all primary fits",
+  "metrics": ["NLL per coordinate", "MSE of conditional mean", "per-horizon MSE", "perturbed true-future ranking", "MAP energy vs MSE change"],
+  "controls": ["persistence", "train mean", "validation-selected ridge", "single Gaussian vs correlated vs mixture", "invertible Fourier-past-only basis"],
+  "synthetic_control": "Joint Gaussian versus joint mixture; independent unpredictable branch controls; three paired seeds",
+  "nonclaims": ["No token skipping", "No full-state forecast", "No new language loss", "No guarantee lower energy is more correct", "No GPU execution", "No fractal result"]
+}

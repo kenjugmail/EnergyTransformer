@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-27",
+  "status": "Post-hoc diagnostic after seeing primary validation and test outcomes",
+  "reason": "Primary iterative readers have a 32-dimensional output bottleneck; feed-forward controls have a wider residual bottleneck. Do not attribute that entire gap to energy descent.",
+  "arms": ["latent_ff", "energy_full"],
+  "latent_ff": "36K-parameter feedforward network through the same 32-dimensional candidate bottleneck",
+  "energy_full": "36K-parameter scalar-energy optimizer directly in the 160-dimensional residual. A scalar energy amplitude starts at zero to preserve the teacher. No learned output projection.",
+  "fixed_schedule": "same three seeds and paired 600x128 batches; no learning-rate or data changes; all final results retained",
+  "selection": "same four-step validation rule; no follow-up winner is claimed independently confirmed",
+  "not_changed": "Original 15 fits, files, evaluation, and primary protocol are preserved under executed_source/primary"
+}

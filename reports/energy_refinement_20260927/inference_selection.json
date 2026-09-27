@@ -1,0 +1,33 @@
+{
+  "teacher": "78b4662a3c30d2e1a8905340e1c465eb1f83c34e98bcfc28177b2dbfb93ea06b",
+  "selection_sha256": "2e4aa679fc208b78df595eb72c1b30e4e0f72cba0a6d5e569b9617a1fa46f231",
+  "policy": {
+    "feedforward": [
+      "fixed",
+      1,
+      null
+    ],
+    "memory_ff": [
+      "fixed",
+      1,
+      null
+    ],
+    "recurrent": [
+      "fixed",
+      2,
+      null
+    ],
+    "energy_hidden": [
+      "fixed",
+      2,
+      null
+    ],
+    "energy_memory": [
+      "fixed",
+      2,
+      null
+    ]
+  },
+  "validation_only": true,
+  "warning": "Policies chosen on reused validation documents; no guaranteed optimal halting."
+}

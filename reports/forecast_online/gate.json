@@ -1,0 +1,65 @@
+{
+  "kind": "exploratory_validation_gated_conditioning",
+  "selected_on": "original validation selection half only",
+  "grid": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "choose": "lowest mean validation NLL among weights with negative upper 95% bootstrap bounds for MSE and NLL; else 0",
+  "teacher_sha256": "78b4662a3c30d2e1a8905340e1c465eb1f83c34e98bcfc28177b2dbfb93ea06b",
+  "heads": {
+    "anchored_seed11.pt": "b0e1c30b626afcb51dd02504cf17462cb800e64d21d01dacf6f1938fc8d6c132",
+    "anchored_seed22.pt": "1ac9db3c0813184e87f3bfeb64f1dadac37807f7c2a923e7862d4bc6792ba9c0",
+    "anchored_seed33.pt": "a5f18e5e646a611b79b8f14c2568640fe4e82e21137a18616ed0a46c8a28cc85"
+  },
+  "data_sha256": "e3ec313b2ec5e2b97547627f4220beb69523e6ac8f6e00a703964b5071366f1c",
+  "prior_raw_audit": "Unmodified conditioning was already scored; gate is explicitly post-hoc. No neural retraining.",
+  "calibration_half": "descriptive check only, never changes selection",
+  "test_role": "evaluation only",
+  "format": "forecast_conditioning_gate_v1",
+  "gates": {
+    "1": 0.75,
+    "4": 0.25,
+    "16": 0.0
+  },
+  "selected_validation_groups": [
+    23,
+    48,
+    68,
+    73,
+    109,
+    157,
+    164,
+    165,
+    189,
+    214,
+    218,
+    246,
+    256,
+    268,
+    289
+  ],
+  "calibration_validation_groups": [
+    20,
+    30,
+    67,
+    79,
+    98,
+    105,
+    134,
+    150,
+    152,
+    192,
+    228,
+    242,
+    252,
+    278,
+    284
+  ],
+  "warning": "Empirical reuse-domain heuristic. Not calibrated conditional coverage or a guarantee under shift."
+}

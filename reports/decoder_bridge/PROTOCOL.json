@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-26",
+  "phase": "written before new adapter extraction/fits/test scoring",
+  "base_ref": "c5583551eb68b89c21337a0cc639e4c1bfad0b00",
+  "arms": [
+    "hidden",
+    "history",
+    "mean",
+    "moments",
+    "energy_read"
+  ],
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "steps": 600,
+  "batch": 128,
+  "peak_lr": 0.001,
+  "weight_decay": 0.01,
+  "input": "Frozen serial teacher final-normalized hidden state; additional features use only 16 observed P/S sketches. No true future state input.",
+  "selection": "Individual minimum validation next-byte cross entropy, step zero eligible; primary candidate energy_read, compare hidden and history controls; freeze all choices before test.",
+  "primary": "sampled next-byte loss at every fourth valid origin, original 32 test documents; secondary 50 same-domain documents; both historically exposed",
+  "controls": "Approximately matched TRAINABLE adapter parameters; forecast arms carry extra frozen model/fitted buffers and pretraining exposure. Compute not matched.",
+  "no_claims": [
+    "GPU execution",
+    "fresh cross-domain evaluation",
+    "skipping tokens",
+    "general reasoning",
+    "end-to-end pretraining superiority"
+  ],
+  "output": "No production change. An optional explicit adapter may alter logits but never predicted P/S. Keep failed fits and zero-step selections.",
+  "files_sha256": {
+    "energy_forecast/decoder_bridge.py": "e5c183fc66fe483628dd081e8a1b363927b4e3df6f2a2c4098e32ca1c48c1c28",
+    "energy_forecast/prepare_decoder.py": "1b0e06e5e65ee0514562585bba6bd274d3f77c604fad8b5801bbbfc5e932ca4f"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "installed_import": "/mnt/data/forecast_hardening_work/isolated_site/energy_forecast/__init__.py",
+  "wheel": "energy_transformer_research-0.16.0-py3-none-any.whl",
+  "forecast_package_files": 24,
+  "missing_dependencies_installed": false,
+  "scope": "Forecast-only source copy; full repository packaging was not rebuilt locally"
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-27",
+  "scope": "Attachment-inspired persistent memory plus candidate energy descent. Narrow frozen-teacher adapter experiment, not an EBT reproduction.",
+  "registered_at": "Before all new adapter fitting and final scoring; cache extraction was already started.",
+  "teacher": "archived 972896-parameter teacher; functional standalone reference; not actual 10.6M GB10 model",
+  "arms": [
+    "feedforward",
+    "memory_ff",
+    "recurrent",
+    "energy_hidden",
+    "energy_memory"
+  ],
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "schedule": {
+    "updates": 600,
+    "batch": 128,
+    "peak_lr": 0.001,
+    "weight_decay": 0.01,
+    "training_iterations": 4,
+    "latent_width": 32,
+    "target_parameter_budget": 36128
+  },
+  "objective": "CE averaged over 4 iterates for recurrent/energy; one CE for MLP controls. Exact analytic energy gradient differentiated end to end. No stop-gradient through candidate updates.",
+  "selection": "Step zero and every100 updates, final-iterate validation bpb; best checkpoint. Select overall default family by mean validation before test. Inference-depth/tolerance choice uses validation only after checkpoints frozen.",
+  "inference_audit": {
+    "fixed_depths": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "adaptive_tolerances": [
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "adaptive_max": 16
+  },
+  "primary": "Paired same-position bpb against feedforward, memory_ff and recurrent controls; paired document bootstrap after averaging seeds",
+  "limitations": [
+    "reused news test domains",
+    "fixed compact memory reads are lossy",
+    "approximately equal trainable parameters, not total compute",
+    "no large-model or reasoning-benchmark claim",
+    "no P/S overwritten by candidate",
+    "no GPU access"
+  ],
+  "retain": "all failures, selected and final checkpoints, per-position predictions, source hashes and sampling hashes",
+  "source_sha256": {
+    "refine_train.py": "5d90f644399ca9ec4a57f1d7a8d019e0e4d0c64a37b60eea79199ab82cd6c3ea",
+    "refine_model.py": "3f067132a593fb8c6a708ca385bffff0bce835ad7071ee70f6b7d9be0e0db405",
+    "refine_data.py": "03f6eb5e0ad26ed5c37a2c8e79c4bb41e8621dc8fec10a44217b1ac62c32143a"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-26",
+  "base_commit": "c5583551eb68b89c21337a0cc639e4c1bfad0b00",
+  "architecture_candidate": "energy_read",
+  "validation_selected": "hidden",
+  "fits": 15,
+  "parameter_conversions": 3,
+  "decision": "RETAIN_ORDINARY_ADAPTER_AS_RESEARCH_CANDIDATE; DO_NOT_PROMOTE_FORECAST_INTEGRATION",
+  "no_production_change": true,
+  "no_10m_or_cuda_evaluation": true,
+  "next_executable_step": "Frozen actual 10.6M teacher: restartable hidden/history feature extraction and matched adapters; no forecast heads required for that stage.",
+  "why": "All forecast variants improve over frozen teacher but lose the near-trainable-size-matched hidden adapter. Dense same-domain post-hoc audit agrees. Mean-only forecast is affine and can be folded away.",
+  "limitations": [
+    "reused news domain",
+    "archived 973K teacher",
+    "sampled/dense document prefixes, not whole corpus",
+    "frozen-head prior training not compute-matched",
+    "adapter change is not backbone pretraining",
+    "no factual-reasoning or skip-ahead result"
+  ],
+  "next_promotion_criteria_proposed": {
+    "incremental_bpb_over_strongest_control": 0.01,
+    "paired_interval_upper": "below zero",
+    "target_device_test_required": true,
+    "example_max_training_time_overhead": 0.25,
+    "example_max_decode_time_overhead": 0.1,
+    "meaning": "Project planning criteria, not universal scientific standards."
+  }
+}
