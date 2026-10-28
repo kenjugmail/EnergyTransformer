@@ -1,0 +1,13 @@
+{
+  "arc": {
+    "lost": 9,
+    "both_correct": 34,
+    "gained": 25,
+    "both_wrong": 60
+  },
+  "probes": {
+    "both_correct": 9,
+    "both_wrong": 37,
+    "gained": 4
+  }
+}

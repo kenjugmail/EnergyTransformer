@@ -1,0 +1,663 @@
+{"time": "2026-10-22T20:35:35.737521+00:00", "message": "architecture_started", "case": "control_22102", "parameters": 256096}
+{"time": "2026-10-22T20:35:35.783070+00:00", "message": "architecture_started", "case": "control_22103", "parameters": 256096}
+{"time": "2026-10-22T20:35:35.816805+00:00", "message": "architecture_started", "case": "certified_22101", "parameters": 256096}
+{"time": "2026-10-22T20:35:35.922258+00:00", "message": "architecture_started", "case": "control_22101", "parameters": 256096}
+{"time": "2026-10-22T20:36:51.489755+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 64, "ce": 1.8259804248809814}
+{"time": "2026-10-22T20:36:54.674353+00:00", "message": "architecture_progress", "case": "control_22101", "step": 64, "ce": 1.8520002365112305}
+{"time": "2026-10-22T20:36:59.511879+00:00", "message": "architecture_progress", "case": "control_22103", "step": 64, "ce": 1.864783763885498}
+{"time": "2026-10-22T20:37:01.483406+00:00", "message": "architecture_progress", "case": "control_22102", "step": 64, "ce": 1.7727060317993164}
+{"time": "2026-10-22T20:37:48.668455+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 128, "ce": 1.169619083404541}
+{"time": "2026-10-22T20:37:59.177626+00:00", "message": "architecture_progress", "case": "control_22101", "step": 128, "ce": 1.1672910451889038}
+{"time": "2026-10-22T20:38:00.761940+00:00", "message": "architecture_progress", "case": "control_22102", "step": 128, "ce": 1.2243540287017822}
+{"time": "2026-10-22T20:38:00.872390+00:00", "message": "architecture_progress", "case": "control_22103", "step": 128, "ce": 1.2992353439331055}
+{"time": "2026-10-22T20:38:42.804825+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 192, "ce": 1.1209969520568848}
+{"time": "2026-10-22T20:38:49.825055+00:00", "message": "architecture_progress", "case": "control_22102", "step": 192, "ce": 1.1347774267196655}
+{"time": "2026-10-22T20:38:54.436783+00:00", "message": "architecture_progress", "case": "control_22101", "step": 192, "ce": 1.1234630346298218}
+{"time": "2026-10-22T20:38:54.835397+00:00", "message": "architecture_progress", "case": "control_22103", "step": 192, "ce": 1.1666141748428345}
+{"time": "2026-10-22T20:39:33.009069+00:00", "message": "architecture_validation", "case": "certified_22101", "step": 256, "complete": 0.2777777777777778, "best": 0.2777777777777778, "ce": 0.6706408742752578}
+{"time": "2026-10-22T20:39:49.054258+00:00", "message": "architecture_validation", "case": "control_22102", "step": 256, "complete": 0.31481481481481477, "best": 0.31481481481481477, "ce": 0.6419184830560245}
+{"time": "2026-10-22T20:39:50.440847+00:00", "message": "architecture_validation", "case": "control_22103", "step": 256, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.665488840980781}
+{"time": "2026-10-22T20:39:51.657186+00:00", "message": "architecture_validation", "case": "control_22101", "step": 256, "complete": 0.30864197530864196, "best": 0.30864197530864196, "ce": 0.6636333033039173}
+{"time": "2026-10-22T20:40:20.196706+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 320, "ce": 1.114342451095581}
+{"time": "2026-10-22T20:40:38.336706+00:00", "message": "architecture_progress", "case": "control_22103", "step": 320, "ce": 1.0350289344787598}
+{"time": "2026-10-22T20:40:42.661264+00:00", "message": "architecture_progress", "case": "control_22101", "step": 320, "ce": 1.0927791595458984}
+{"time": "2026-10-22T20:40:43.038365+00:00", "message": "architecture_progress", "case": "control_22102", "step": 320, "ce": 1.0760235786437988}
+{"time": "2026-10-22T20:41:04.765538+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 384, "ce": 1.018447756767273}
+{"time": "2026-10-22T20:41:32.696299+00:00", "message": "architecture_progress", "case": "control_22103", "step": 384, "ce": 1.0424354076385498}
+{"time": "2026-10-22T20:41:38.087877+00:00", "message": "architecture_progress", "case": "control_22101", "step": 384, "ce": 0.9975161552429199}
+{"time": "2026-10-22T20:41:46.046608+00:00", "message": "architecture_progress", "case": "control_22102", "step": 384, "ce": 1.012712836265564}
+{"time": "2026-10-22T20:42:19.415814+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 448, "ce": 1.036423683166504}
+{"time": "2026-10-22T20:42:50.642704+00:00", "message": "architecture_progress", "case": "control_22103", "step": 448, "ce": 0.9945231676101685}
+{"time": "2026-10-22T20:42:57.019119+00:00", "message": "architecture_progress", "case": "control_22101", "step": 448, "ce": 1.0340311527252197}
+{"time": "2026-10-22T20:43:04.378624+00:00", "message": "architecture_progress", "case": "control_22102", "step": 448, "ce": 1.030603051185608}
+{"time": "2026-10-22T20:43:37.433115+00:00", "message": "architecture_validation", "case": "certified_22101", "step": 512, "complete": 0.29012345679012347, "best": 0.29012345679012347, "ce": 0.5388323317153139}
+{"time": "2026-10-22T20:44:10.973487+00:00", "message": "architecture_validation", "case": "control_22103", "step": 512, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.5151703430948766}
+{"time": "2026-10-22T20:44:14.858720+00:00", "message": "architecture_validation", "case": "control_22102", "step": 512, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5158160958049414}
+{"time": "2026-10-22T20:44:18.712577+00:00", "message": "architecture_validation", "case": "control_22101", "step": 512, "complete": 0.30246913580246915, "best": 0.30864197530864196, "ce": 0.5264514795427525}
+{"time": "2026-10-22T20:44:25.529350+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 576, "ce": 0.9534884691238403}
+{"time": "2026-10-22T20:45:17.297190+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 640, "ce": 0.9578337073326111}
+{"time": "2026-10-22T20:45:18.916292+00:00", "message": "architecture_progress", "case": "control_22102", "step": 576, "ce": 0.9534323215484619}
+{"time": "2026-10-22T20:45:18.996716+00:00", "message": "architecture_progress", "case": "control_22103", "step": 576, "ce": 0.9904475212097168}
+{"time": "2026-10-22T20:45:21.858590+00:00", "message": "architecture_progress", "case": "control_22101", "step": 576, "ce": 0.9611303806304932}
+{"time": "2026-10-22T20:46:10.149082+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 704, "ce": 0.8696146011352539}
+{"time": "2026-10-22T20:46:14.804330+00:00", "message": "architecture_progress", "case": "control_22102", "step": 640, "ce": 0.8964888453483582}
+{"time": "2026-10-22T20:46:15.469858+00:00", "message": "architecture_progress", "case": "control_22103", "step": 640, "ce": 0.8533452153205872}
+{"time": "2026-10-22T20:46:20.848362+00:00", "message": "architecture_progress", "case": "control_22101", "step": 640, "ce": 0.953306257724762}
+{"time": "2026-10-22T20:47:01.350105+00:00", "message": "architecture_validation", "case": "certified_22101", "step": 768, "complete": 0.30864197530864196, "best": 0.30864197530864196, "ce": 0.49246897179450794}
+{"time": "2026-10-22T20:47:05.413825+00:00", "message": "architecture_progress", "case": "control_22102", "step": 704, "ce": 0.9734472036361694}
+{"time": "2026-10-22T20:47:08.953659+00:00", "message": "architecture_progress", "case": "control_22103", "step": 704, "ce": 0.937751829624176}
+{"time": "2026-10-22T20:47:15.696226+00:00", "message": "architecture_progress", "case": "control_22101", "step": 704, "ce": 0.8543838262557983}
+{"time": "2026-10-22T20:47:43.652460+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 832, "ce": 0.8654682040214539}
+{"time": "2026-10-22T20:47:58.620693+00:00", "message": "architecture_validation", "case": "control_22102", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.478958090509737}
+{"time": "2026-10-22T20:48:04.479001+00:00", "message": "architecture_validation", "case": "control_22103", "step": 768, "complete": 0.3271604938271605, "best": 0.3395061728395061, "ce": 0.4956958396816742}
+{"time": "2026-10-22T20:48:10.607529+00:00", "message": "architecture_validation", "case": "control_22101", "step": 768, "complete": 0.32716049382716045, "best": 0.32716049382716045, "ce": 0.4906374279739391}
+{"time": "2026-10-22T20:48:28.357947+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 896, "ce": 0.78847336769104}
+{"time": "2026-10-22T20:48:46.060158+00:00", "message": "architecture_progress", "case": "control_22102", "step": 832, "ce": 0.9369298815727234}
+{"time": "2026-10-22T20:48:49.301506+00:00", "message": "architecture_progress", "case": "control_22103", "step": 832, "ce": 0.9301739931106567}
+{"time": "2026-10-22T20:48:54.363461+00:00", "message": "architecture_progress", "case": "control_22101", "step": 832, "ce": 0.8585594892501831}
+{"time": "2026-10-22T20:49:10.638544+00:00", "message": "architecture_progress", "case": "certified_22101", "step": 960, "ce": 0.8839746713638306}
+{"time": "2026-10-22T20:49:26.773335+00:00", "message": "architecture_progress", "case": "control_22103", "step": 896, "ce": 0.9319422841072083}
+{"time": "2026-10-22T20:49:30.779845+00:00", "message": "architecture_progress", "case": "control_22101", "step": 896, "ce": 0.7980582118034363}
+{"time": "2026-10-22T20:49:32.784336+00:00", "message": "architecture_progress", "case": "control_22102", "step": 896, "ce": 0.8875848054885864}
+{"time": "2026-10-22T20:49:56.328634+00:00", "message": "architecture_validation", "case": "certified_22101", "step": 1024, "complete": 0.30864197530864196, "best": 0.30864197530864196, "ce": 0.48604686799150537}
+{"time": "2026-10-22T20:49:56.664657+00:00", "message": "architecture_started", "case": "certified_22102", "parameters": 256096}
+{"time": "2026-10-22T20:50:11.091141+00:00", "message": "architecture_progress", "case": "control_22103", "step": 960, "ce": 0.9353486895561218}
+{"time": "2026-10-22T20:50:14.189899+00:00", "message": "architecture_progress", "case": "control_22101", "step": 960, "ce": 0.8805744051933289}
+{"time": "2026-10-22T20:50:22.006217+00:00", "message": "architecture_progress", "case": "control_22102", "step": 960, "ce": 0.8150555491447449}
+{"time": "2026-10-22T20:50:30.512011+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 64, "ce": 1.752547264099121}
+{"time": "2026-10-22T20:50:51.238805+00:00", "message": "architecture_validation", "case": "control_22103", "step": 1024, "complete": 0.3271604938271605, "best": 0.3395061728395061, "ce": 0.4732043607093683}
+{"time": "2026-10-22T20:50:51.551277+00:00", "message": "architecture_started", "case": "certified_22103", "parameters": 256096}
+{"time": "2026-10-22T20:51:05.641815+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 128, "ce": 1.1725804805755615}
+{"time": "2026-10-22T20:51:06.800759+00:00", "message": "architecture_validation", "case": "control_22101", "step": 1024, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.4760357698298931}
+{"time": "2026-10-22T20:51:06.887547+00:00", "message": "architecture_started", "case": "precond2_22101", "parameters": 256096}
+{"time": "2026-10-22T20:51:14.282832+00:00", "message": "architecture_validation", "case": "control_22102", "step": 1024, "complete": 0.345679012345679, "best": 0.35185185185185186, "ce": 0.4641221711015562}
+{"time": "2026-10-22T20:51:14.539946+00:00", "message": "architecture_started", "case": "precond2_22102", "parameters": 256096}
+{"time": "2026-10-22T20:51:26.578657+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 64, "ce": 1.9328290224075317}
+{"time": "2026-10-22T20:51:44.154260+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 192, "ce": 1.1413090229034424}
+{"time": "2026-10-22T20:51:45.015045+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 64, "ce": 1.8492649793624878}
+{"time": "2026-10-22T20:51:53.847535+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 64, "ce": 1.7515270709991455}
+{"time": "2026-10-22T20:52:08.657293+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 128, "ce": 1.2991632223129272}
+{"time": "2026-10-22T20:52:26.250560+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 128, "ce": 1.1626991033554077}
+{"time": "2026-10-22T20:52:31.204366+00:00", "message": "architecture_validation", "case": "certified_22102", "step": 256, "complete": 0.29012345679012347, "best": 0.29012345679012347, "ce": 0.653933207659104}
+{"time": "2026-10-22T20:52:37.911364+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 128, "ce": 1.2114607095718384}
+{"time": "2026-10-22T20:52:47.956287+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 192, "ce": 1.1645548343658447}
+{"time": "2026-10-22T20:53:14.765904+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 192, "ce": 1.1074219942092896}
+{"time": "2026-10-22T20:53:18.560299+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 320, "ce": 1.074973225593567}
+{"time": "2026-10-22T20:53:24.981369+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 192, "ce": 1.1297366619110107}
+{"time": "2026-10-22T20:53:30.594669+00:00", "message": "architecture_validation", "case": "certified_22103", "step": 256, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.6610027793208961}
+{"time": "2026-10-22T20:54:06.754330+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 384, "ce": 1.008666753768921}
+{"time": "2026-10-22T20:54:07.386188+00:00", "message": "architecture_validation", "case": "precond2_22101", "step": 256, "complete": 0.3148148148148148, "best": 0.3148148148148148, "ce": 0.6563766524141168}
+{"time": "2026-10-22T20:54:09.549299+00:00", "message": "architecture_validation", "case": "precond2_22102", "step": 256, "complete": 0.2962962962962963, "best": 0.2962962962962963, "ce": 0.6503458441655481}
+{"time": "2026-10-22T20:54:19.706126+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 320, "ce": 1.0534504652023315}
+{"time": "2026-10-22T20:54:51.514944+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 320, "ce": 1.1120891571044922}
+{"time": "2026-10-22T20:54:53.223431+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 320, "ce": 1.0802487134933472}
+{"time": "2026-10-22T20:54:56.562384+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 448, "ce": 1.0203449726104736}
+{"time": "2026-10-22T20:55:09.777726+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 384, "ce": 1.0452501773834229}
+{"time": "2026-10-22T20:55:31.294074+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 384, "ce": 1.007886528968811}
+{"time": "2026-10-22T20:55:32.169846+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 384, "ce": 1.0315992832183838}
+{"time": "2026-10-22T20:55:50.780141+00:00", "message": "architecture_validation", "case": "certified_22102", "step": 512, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5230562161945825}
+{"time": "2026-10-22T20:55:57.833216+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 448, "ce": 0.9686357378959656}
+{"time": "2026-10-22T20:56:11.962710+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 448, "ce": 1.0253719091415405}
+{"time": "2026-10-22T20:56:16.466728+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 448, "ce": 1.0547949075698853}
+{"time": "2026-10-22T20:56:34.400573+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 576, "ce": 0.9441648125648499}
+{"time": "2026-10-22T20:56:48.873151+00:00", "message": "architecture_validation", "case": "certified_22103", "step": 512, "complete": 0.3395061728395061, "best": 0.345679012345679, "ce": 0.5143283564589193}
+{"time": "2026-10-22T20:56:56.937696+00:00", "message": "architecture_validation", "case": "precond2_22101", "step": 512, "complete": 0.30246913580246915, "best": 0.3148148148148148, "ce": 0.5251691281228669}
+{"time": "2026-10-22T20:57:02.535658+00:00", "message": "architecture_validation", "case": "precond2_22102", "step": 512, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5241076304429452}
+{"time": "2026-10-22T20:57:22.614838+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 640, "ce": 0.8980041146278381}
+{"time": "2026-10-22T20:57:36.266506+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 576, "ce": 0.963278591632843}
+{"time": "2026-10-22T20:57:38.662864+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 576, "ce": 0.9747048020362854}
+{"time": "2026-10-22T20:57:48.690469+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 576, "ce": 0.9467357993125916}
+{"time": "2026-10-22T20:58:07.996789+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 704, "ce": 0.9688088297843933}
+{"time": "2026-10-22T20:58:16.481640+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 640, "ce": 0.954815685749054}
+{"time": "2026-10-22T20:58:26.583461+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 640, "ce": 0.8523462414741516}
+{"time": "2026-10-22T20:58:34.959663+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 640, "ce": 0.9064357280731201}
+{"time": "2026-10-22T20:58:56.211066+00:00", "message": "architecture_validation", "case": "certified_22102", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4810140511373926}
+{"time": "2026-10-22T20:59:04.538189+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 704, "ce": 0.8590672016143799}
+{"time": "2026-10-22T20:59:14.422181+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 704, "ce": 0.97381991147995}
+{"time": "2026-10-22T20:59:17.734573+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 704, "ce": 0.9393917918205261}
+{"time": "2026-10-22T20:59:37.352151+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 832, "ce": 0.9242636561393738}
+{"time": "2026-10-22T20:59:55.119925+00:00", "message": "architecture_validation", "case": "precond2_22102", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.47886652057416784}
+{"time": "2026-10-22T20:59:57.928996+00:00", "message": "architecture_validation", "case": "precond2_22101", "step": 768, "complete": 0.32716049382716045, "best": 0.32716049382716045, "ce": 0.48952640960403143}
+{"time": "2026-10-22T21:00:10.569056+00:00", "message": "architecture_validation", "case": "certified_22103", "step": 768, "complete": 0.3271604938271605, "best": 0.345679012345679, "ce": 0.49271142439155047}
+{"time": "2026-10-22T21:00:16.707474+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 896, "ce": 0.8919366002082825}
+{"time": "2026-10-22T21:00:36.798084+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 832, "ce": 0.9182276725769043}
+{"time": "2026-10-22T21:00:40.758944+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 832, "ce": 0.8658139109611511}
+{"time": "2026-10-22T21:00:53.974088+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 832, "ce": 0.9335761666297913}
+{"time": "2026-10-22T21:00:57.700117+00:00", "message": "architecture_progress", "case": "certified_22102", "step": 960, "ce": 0.8106197714805603}
+{"time": "2026-10-22T21:01:21.081488+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 896, "ce": 0.8924326300621033}
+{"time": "2026-10-22T21:01:21.785222+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 896, "ce": 0.7842499017715454}
+{"time": "2026-10-22T21:01:38.524458+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 896, "ce": 0.9371118545532227}
+{"time": "2026-10-22T21:01:46.243568+00:00", "message": "architecture_validation", "case": "certified_22102", "step": 1024, "complete": 0.345679012345679, "best": 0.35185185185185186, "ce": 0.4589643243593985}
+{"time": "2026-10-22T21:01:46.342137+00:00", "message": "architecture_started", "case": "precond2_22103", "parameters": 256096}
+{"time": "2026-10-22T21:02:07.500540+00:00", "message": "architecture_progress", "case": "precond2_22101", "step": 960, "ce": 0.889521598815918}
+{"time": "2026-10-22T21:02:07.755861+00:00", "message": "architecture_progress", "case": "precond2_22102", "step": 960, "ce": 0.8089501857757568}
+{"time": "2026-10-22T21:02:26.007473+00:00", "message": "architecture_progress", "case": "certified_22103", "step": 960, "ce": 0.9480003714561462}
+{"time": "2026-10-22T21:02:31.634682+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 64, "ce": 1.8710798025131226}
+{"time": "2026-10-22T21:02:51.690226+00:00", "message": "architecture_validation", "case": "precond2_22102", "step": 1024, "complete": 0.3395061728395061, "best": 0.35185185185185186, "ce": 0.45957477588067547}
+{"time": "2026-10-22T21:02:51.777798+00:00", "message": "architecture_started", "case": "precond4_22101", "parameters": 256096}
+{"time": "2026-10-22T21:02:57.088284+00:00", "message": "architecture_validation", "case": "precond2_22101", "step": 1024, "complete": 0.3271604938271605, "best": 0.3271604938271605, "ce": 0.4789857343329769}
+{"time": "2026-10-22T21:02:57.175093+00:00", "message": "architecture_started", "case": "precond4_22102", "parameters": 256096}
+{"time": "2026-10-22T21:03:08.293861+00:00", "message": "architecture_validation", "case": "certified_22103", "step": 1024, "complete": 0.3395061728395061, "best": 0.345679012345679, "ce": 0.4647508918061776}
+{"time": "2026-10-22T21:03:08.400162+00:00", "message": "architecture_started", "case": "precond4_22103", "parameters": 256096}
+{"time": "2026-10-22T21:03:09.147299+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 128, "ce": 1.3251904249191284}
+{"time": "2026-10-22T21:03:40.991732+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 64, "ce": 1.747420310974121}
+{"time": "2026-10-22T21:03:42.428861+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 64, "ce": 1.8423830270767212}
+{"time": "2026-10-22T21:03:48.142342+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 192, "ce": 1.1732463836669922}
+{"time": "2026-10-22T21:03:52.141865+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 64, "ce": 1.8327512741088867}
+{"time": "2026-10-22T21:04:23.355829+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 128, "ce": 1.1897170543670654}
+{"time": "2026-10-22T21:04:30.137736+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 128, "ce": 1.168372392654419}
+{"time": "2026-10-22T21:04:30.420333+00:00", "message": "architecture_validation", "case": "precond2_22103", "step": 256, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.6624499888165466}
+{"time": "2026-10-22T21:04:40.299709+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 128, "ce": 1.3059443235397339}
+{"time": "2026-10-22T21:05:03.675552+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 192, "ce": 1.130686640739441}
+{"time": "2026-10-22T21:05:05.874592+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 320, "ce": 1.036109209060669}
+{"time": "2026-10-22T21:05:18.102498+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 192, "ce": 1.130284309387207}
+{"time": "2026-10-22T21:05:27.199556+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 192, "ce": 1.1950342655181885}
+{"time": "2026-10-22T21:05:44.806108+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 384, "ce": 1.0438520908355713}
+{"time": "2026-10-22T21:05:53.261616+00:00", "message": "architecture_validation", "case": "precond4_22102", "step": 256, "complete": 0.31481481481481477, "best": 0.31481481481481477, "ce": 0.6476738629065557}
+{"time": "2026-10-22T21:06:05.511142+00:00", "message": "architecture_validation", "case": "precond4_22101", "step": 256, "complete": 0.2839506172839506, "best": 0.2839506172839506, "ce": 0.6637303939071465}
+{"time": "2026-10-22T21:06:17.026706+00:00", "message": "architecture_validation", "case": "precond4_22103", "step": 256, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.6728928516446542}
+{"time": "2026-10-22T21:06:26.662436+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 448, "ce": 0.9770395755767822}
+{"time": "2026-10-22T21:06:40.278766+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 320, "ce": 1.0714638233184814}
+{"time": "2026-10-22T21:06:50.519984+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 320, "ce": 1.1066234111785889}
+{"time": "2026-10-22T21:07:01.068866+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 320, "ce": 1.0428266525268555}
+{"time": "2026-10-22T21:07:12.709670+00:00", "message": "architecture_validation", "case": "precond2_22103", "step": 512, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.5128971253683206}
+{"time": "2026-10-22T21:07:33.096321+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 384, "ce": 1.0373538732528687}
+{"time": "2026-10-22T21:07:35.581617+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 384, "ce": 1.0015361309051514}
+{"time": "2026-10-22T21:07:44.559577+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 384, "ce": 1.0537986755371094}
+{"time": "2026-10-22T21:07:51.883649+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 576, "ce": 0.9740460515022278}
+{"time": "2026-10-22T21:08:14.074506+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 448, "ce": 1.0305732488632202}
+{"time": "2026-10-22T21:08:14.430032+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 448, "ce": 1.018975853919983}
+{"time": "2026-10-22T21:08:28.825302+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 640, "ce": 0.8504242300987244}
+{"time": "2026-10-22T21:08:30.017342+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 448, "ce": 0.9813017845153809}
+{"time": "2026-10-22T21:08:59.577589+00:00", "message": "architecture_validation", "case": "precond4_22101", "step": 512, "complete": 0.30864197530864196, "best": 0.30864197530864196, "ce": 0.5323271460138975}
+{"time": "2026-10-22T21:09:05.998785+00:00", "message": "architecture_validation", "case": "precond4_22102", "step": 512, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.5243266545339667}
+{"time": "2026-10-22T21:09:07.287143+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 704, "ce": 0.9524167776107788}
+{"time": "2026-10-22T21:09:15.114178+00:00", "message": "architecture_validation", "case": "precond4_22103", "step": 512, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.5142837050367466}
+{"time": "2026-10-22T21:09:42.523301+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 576, "ce": 0.95990389585495}
+{"time": "2026-10-22T21:09:50.094686+00:00", "message": "architecture_validation", "case": "precond2_22103", "step": 768, "complete": 0.3271604938271605, "best": 0.3395061728395061, "ce": 0.49202018160844424}
+{"time": "2026-10-22T21:09:56.877481+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 576, "ce": 0.9324232935905457}
+{"time": "2026-10-22T21:09:58.760962+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 576, "ce": 0.9873032569885254}
+{"time": "2026-10-22T21:10:25.208500+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 640, "ce": 0.9576881527900696}
+{"time": "2026-10-22T21:10:30.154360+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 832, "ce": 0.9409527778625488}
+{"time": "2026-10-22T21:10:41.113651+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 640, "ce": 0.8524458408355713}
+{"time": "2026-10-22T21:10:48.549010+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 640, "ce": 0.9019460678100586}
+{"time": "2026-10-22T21:11:13.744817+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 704, "ce": 0.8671562671661377}
+{"time": "2026-10-22T21:11:15.288114+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 704, "ce": 0.9435834884643555}
+{"time": "2026-10-22T21:11:17.890808+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 896, "ce": 0.9359291195869446}
+{"time": "2026-10-22T21:11:39.247036+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 704, "ce": 0.9572306871414185}
+{"time": "2026-10-22T21:11:55.892001+00:00", "message": "architecture_validation", "case": "precond4_22103", "step": 768, "complete": 0.3333333333333333, "best": 0.3395061728395061, "ce": 0.4916232398764967}
+{"time": "2026-10-22T21:12:05.325640+00:00", "message": "architecture_progress", "case": "precond2_22103", "step": 960, "ce": 0.9340004324913025}
+{"time": "2026-10-22T21:12:10.435730+00:00", "message": "architecture_validation", "case": "precond4_22101", "step": 768, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.4869503678417415}
+{"time": "2026-10-22T21:12:22.650416+00:00", "message": "architecture_validation", "case": "precond4_22102", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4800945166348539}
+{"time": "2026-10-22T21:12:33.812215+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 832, "ce": 0.9261055588722229}
+{"time": "2026-10-22T21:12:54.977257+00:00", "message": "architecture_validation", "case": "precond2_22103", "step": 1024, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.46597695708187636}
+{"time": "2026-10-22T21:12:55.076097+00:00", "message": "architecture_started", "case": "precond8_22101", "parameters": 256096}
+{"time": "2026-10-22T21:13:00.437064+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 832, "ce": 0.8666642308235168}
+{"time": "2026-10-22T21:13:01.118553+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 832, "ce": 0.9197865128517151}
+{"time": "2026-10-22T21:13:14.861873+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 896, "ce": 0.9416888356208801}
+{"time": "2026-10-22T21:13:42.072146+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 896, "ce": 0.8843059539794922}
+{"time": "2026-10-22T21:13:43.868718+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 64, "ce": 1.8386390209197998}
+{"time": "2026-10-22T21:13:48.950900+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 896, "ce": 0.7837356328964233}
+{"time": "2026-10-22T21:13:58.023817+00:00", "message": "architecture_progress", "case": "precond4_22103", "step": 960, "ce": 0.9289783835411072}
+{"time": "2026-10-22T21:14:23.211569+00:00", "message": "architecture_progress", "case": "precond4_22102", "step": 960, "ce": 0.8173568248748779}
+{"time": "2026-10-22T21:14:29.017220+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 128, "ce": 1.1791802644729614}
+{"time": "2026-10-22T21:14:38.451198+00:00", "message": "architecture_progress", "case": "precond4_22101", "step": 960, "ce": 0.8750868439674377}
+{"time": "2026-10-22T21:14:48.851205+00:00", "message": "architecture_validation", "case": "precond4_22103", "step": 1024, "complete": 0.3333333333333333, "best": 0.3395061728395061, "ce": 0.466209208956581}
+{"time": "2026-10-22T21:14:48.950930+00:00", "message": "architecture_started", "case": "precond8_22102", "parameters": 256096}
+{"time": "2026-10-22T21:15:04.213957+00:00", "message": "architecture_validation", "case": "precond4_22102", "step": 1024, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4585566508373206}
+{"time": "2026-10-22T21:15:04.291412+00:00", "message": "architecture_started", "case": "precond8_22103", "parameters": 256096}
+{"time": "2026-10-22T21:15:15.946459+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 192, "ce": 1.1267808675765991}
+{"time": "2026-10-22T21:15:30.286515+00:00", "message": "architecture_validation", "case": "precond4_22101", "step": 1024, "complete": 0.3333333333333333, "best": 0.3395061728395061, "ce": 0.47439508134636815}
+{"time": "2026-10-22T21:15:30.618697+00:00", "message": "architecture_started", "case": "scan_22101", "parameters": 246688}
+{"time": "2026-10-22T21:15:38.994669+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 64, "ce": 1.7670961618423462}
+{"time": "2026-10-22T21:15:41.053893+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 64, "ce": 1.7937214374542236}
+{"time": "2026-10-22T21:15:50.004252+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 128, "ce": 1.181099772453308}
+{"time": "2026-10-22T21:15:52.411369+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 64, "ce": 1.905796766281128}
+{"time": "2026-10-22T21:15:58.701397+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 192, "ce": 1.1401121616363525}
+{"time": "2026-10-22T21:16:08.332987+00:00", "message": "architecture_validation", "case": "scan_22101", "step": 256, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.6651779585017196}
+{"time": "2026-10-22T21:16:12.005131+00:00", "message": "architecture_validation", "case": "precond8_22101", "step": 256, "complete": 0.29012345679012347, "best": 0.29012345679012347, "ce": 0.667322137884267}
+{"time": "2026-10-22T21:16:16.713759+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 320, "ce": 1.0945624113082886}
+{"time": "2026-10-22T21:16:24.836266+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 384, "ce": 0.9910166263580322}
+{"time": "2026-10-22T21:16:30.459050+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 128, "ce": 1.2173408269882202}
+{"time": "2026-10-22T21:16:34.028084+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 448, "ce": 1.0277169942855835}
+{"time": "2026-10-22T21:16:45.169624+00:00", "message": "architecture_validation", "case": "scan_22101", "step": 512, "complete": 0.30864197530864196, "best": 0.3333333333333333, "ce": 0.5221821764741575}
+{"time": "2026-10-22T21:16:45.752436+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 128, "ce": 1.3463873863220215}
+{"time": "2026-10-22T21:16:55.696630+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 576, "ce": 0.9648549556732178}
+{"time": "2026-10-22T21:17:04.593005+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 640, "ce": 0.9723345041275024}
+{"time": "2026-10-22T21:17:05.433855+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 320, "ce": 1.0904476642608643}
+{"time": "2026-10-22T21:17:14.281145+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 704, "ce": 0.8399853110313416}
+{"time": "2026-10-22T21:17:19.521212+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 192, "ce": 1.1161918640136719}
+{"time": "2026-10-22T21:17:25.846531+00:00", "message": "architecture_validation", "case": "scan_22101", "step": 768, "complete": 0.3148148148148148, "best": 0.3333333333333333, "ce": 0.4801065707695074}
+{"time": "2026-10-22T21:17:36.612296+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 832, "ce": 0.8847988247871399}
+{"time": "2026-10-22T21:17:42.015756+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 192, "ce": 1.1970973014831543}
+{"time": "2026-10-22T21:17:46.702480+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 896, "ce": 0.7816718816757202}
+{"time": "2026-10-22T21:17:57.519959+00:00", "message": "architecture_progress", "case": "scan_22101", "step": 960, "ce": 0.8731662034988403}
+{"time": "2026-10-22T21:18:01.380066+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 384, "ce": 0.9840018153190613}
+{"time": "2026-10-22T21:18:09.229570+00:00", "message": "architecture_validation", "case": "scan_22101", "step": 1024, "complete": 0.3271604938271605, "best": 0.3333333333333333, "ce": 0.46852371009405985}
+{"time": "2026-10-22T21:18:09.310259+00:00", "message": "architecture_started", "case": "scan_22102", "parameters": 246688}
+{"time": "2026-10-22T21:18:13.886668+00:00", "message": "architecture_validation", "case": "precond8_22102", "step": 256, "complete": 0.31481481481481477, "best": 0.31481481481481477, "ce": 0.655068878893793}
+{"time": "2026-10-22T21:18:19.723625+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 64, "ce": 1.8544015884399414}
+{"time": "2026-10-22T21:18:29.569569+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 128, "ce": 1.212458848953247}
+{"time": "2026-10-22T21:18:39.373991+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 192, "ce": 1.1225343942642212}
+{"time": "2026-10-22T21:18:40.041154+00:00", "message": "architecture_validation", "case": "precond8_22103", "step": 256, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.6674105972814665}
+{"time": "2026-10-22T21:18:50.534702+00:00", "message": "architecture_validation", "case": "scan_22102", "step": 256, "complete": 0.32098765432098764, "best": 0.32098765432098764, "ce": 0.6465304339115168}
+{"time": "2026-10-22T21:18:52.011261+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 448, "ce": 1.0217469930648804}
+{"time": "2026-10-22T21:19:01.386543+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 320, "ce": 1.0545328855514526}
+{"time": "2026-10-22T21:19:03.876234+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 320, "ce": 1.0724788904190063}
+{"time": "2026-10-22T21:19:12.948221+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 384, "ce": 1.035775899887085}
+{"time": "2026-10-22T21:19:23.817693+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 448, "ce": 1.00967276096344}
+{"time": "2026-10-22T21:19:35.152465+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 320, "ce": 1.0526202917099}
+{"time": "2026-10-22T21:19:37.475512+00:00", "message": "architecture_validation", "case": "scan_22102", "step": 512, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.5167786228281787}
+{"time": "2026-10-22T21:19:49.389248+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 576, "ce": 0.9666166305541992}
+{"time": "2026-10-22T21:19:56.723168+00:00", "message": "architecture_validation", "case": "precond8_22101", "step": 512, "complete": 0.32098765432098764, "best": 0.32098765432098764, "ce": 0.5261808081796419}
+{"time": "2026-10-22T21:20:00.529126+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 640, "ce": 0.9007911086082458}
+{"time": "2026-10-22T21:20:01.734291+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 384, "ce": 1.008944034576416}
+{"time": "2026-10-22T21:20:10.969342+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 704, "ce": 0.9540959596633911}
+{"time": "2026-10-22T21:20:23.169280+00:00", "message": "architecture_validation", "case": "scan_22102", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4843286550559523}
+{"time": "2026-10-22T21:20:31.202507+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 384, "ce": 1.047602653503418}
+{"time": "2026-10-22T21:20:34.191627+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 832, "ce": 0.9470533728599548}
+{"time": "2026-10-22T21:20:42.892526+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 576, "ce": 0.9527624845504761}
+{"time": "2026-10-22T21:20:45.325042+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 896, "ce": 0.8806759715080261}
+{"time": "2026-10-22T21:20:55.903569+00:00", "message": "architecture_progress", "case": "scan_22102", "step": 960, "ce": 0.861219584941864}
+{"time": "2026-10-22T21:20:56.764347+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 448, "ce": 1.0126761198043823}
+{"time": "2026-10-22T21:21:08.085101+00:00", "message": "architecture_validation", "case": "scan_22102", "step": 1024, "complete": 0.36419753086419754, "best": 0.36419753086419754, "ce": 0.46628958335651827}
+{"time": "2026-10-22T21:21:08.156931+00:00", "message": "architecture_started", "case": "scan_22103", "parameters": 246688}
+{"time": "2026-10-22T21:21:19.601887+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 64, "ce": 1.9406824111938477}
+{"time": "2026-10-22T21:21:26.009406+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 448, "ce": 0.9743006825447083}
+{"time": "2026-10-22T21:21:29.209017+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 128, "ce": 1.3002839088439941}
+{"time": "2026-10-22T21:21:30.744716+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 640, "ce": 0.943686306476593}
+{"time": "2026-10-22T21:21:40.844689+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 192, "ce": 1.1708308458328247}
+{"time": "2026-10-22T21:21:42.930511+00:00", "message": "architecture_validation", "case": "precond8_22102", "step": 512, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.5217144832876187}
+{"time": "2026-10-22T21:21:55.031409+00:00", "message": "architecture_validation", "case": "scan_22103", "step": 256, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.6646893256409986}
+{"time": "2026-10-22T21:22:05.199093+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 320, "ce": 1.0408591032028198}
+{"time": "2026-10-22T21:22:16.674548+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 384, "ce": 1.0465551614761353}
+{"time": "2026-10-22T21:22:27.458365+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 448, "ce": 0.9840104579925537}
+{"time": "2026-10-22T21:22:29.018303+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 704, "ce": 0.8630058169364929}
+{"time": "2026-10-22T21:22:29.823218+00:00", "message": "architecture_validation", "case": "precond8_22103", "step": 512, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.5140552260880934}
+{"time": "2026-10-22T21:22:40.182961+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 576, "ce": 0.9395038485527039}
+{"time": "2026-10-22T21:22:40.898518+00:00", "message": "architecture_validation", "case": "scan_22103", "step": 512, "complete": 0.32716049382716045, "best": 0.3395061728395061, "ce": 0.5275036285807813}
+{"time": "2026-10-22T21:22:49.779540+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 576, "ce": 0.9924702048301697}
+{"time": "2026-10-22T21:23:01.432395+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 640, "ce": 0.8650913834571838}
+{"time": "2026-10-22T21:23:13.619741+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 704, "ce": 0.9703921675682068}
+{"time": "2026-10-22T21:23:26.877067+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 576, "ce": 0.97728031873703}
+{"time": "2026-10-22T21:23:27.638563+00:00", "message": "architecture_validation", "case": "scan_22103", "step": 768, "complete": 0.32098765432098764, "best": 0.3395061728395061, "ce": 0.4981027359324122}
+{"time": "2026-10-22T21:23:30.698265+00:00", "message": "architecture_validation", "case": "precond8_22101", "step": 768, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.4861549733761199}
+{"time": "2026-10-22T21:23:35.038919+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 640, "ce": 0.9024386405944824}
+{"time": "2026-10-22T21:23:36.937513+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 832, "ce": 0.9204514026641846}
+{"time": "2026-10-22T21:23:47.522366+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 896, "ce": 0.9658986926078796}
+{"time": "2026-10-22T21:23:58.996065+00:00", "message": "architecture_progress", "case": "scan_22103", "step": 960, "ce": 0.9458394050598145}
+{"time": "2026-10-22T21:24:13.120704+00:00", "message": "architecture_validation", "case": "scan_22103", "step": 1024, "complete": 0.3271604938271605, "best": 0.3395061728395061, "ce": 0.47594079591099503}
+{"time": "2026-10-22T21:24:13.467105+00:00", "message": "architecture_started", "case": "feedback8_22101", "parameters": 249040}
+{"time": "2026-10-22T21:24:23.824349+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 640, "ce": 0.8569080829620361}
+{"time": "2026-10-22T21:24:26.788934+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 64, "ce": 1.7852500677108765}
+{"time": "2026-10-22T21:24:27.458478+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 832, "ce": 0.8592873811721802}
+{"time": "2026-10-22T21:24:31.729336+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 704, "ce": 0.9614308476448059}
+{"time": "2026-10-22T21:24:40.053669+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 128, "ce": 1.1734602451324463}
+{"time": "2026-10-22T21:24:54.087004+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 192, "ce": 1.1328325271606445}
+{"time": "2026-10-22T21:25:11.371826+00:00", "message": "architecture_validation", "case": "feedback8_22101", "step": 256, "complete": 0.3271604938271605, "best": 0.3271604938271605, "ce": 0.6612620001390369}
+{"time": "2026-10-22T21:25:21.152471+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 704, "ce": 0.9372128248214722}
+{"time": "2026-10-22T21:25:23.495007+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 896, "ce": 0.7811086773872375}
+{"time": "2026-10-22T21:25:27.528461+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 320, "ce": 1.1027023792266846}
+{"time": "2026-10-22T21:25:32.310253+00:00", "message": "architecture_validation", "case": "precond8_22102", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.48151296852449477}
+{"time": "2026-10-22T21:25:41.608513+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 384, "ce": 1.0047216415405273}
+{"time": "2026-10-22T21:25:55.914385+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 448, "ce": 1.0356916189193726}
+{"time": "2026-10-22T21:26:14.253924+00:00", "message": "architecture_validation", "case": "feedback8_22101", "step": 512, "complete": 0.3148148148148148, "best": 0.3271604938271605, "ce": 0.5195766822561}
+{"time": "2026-10-22T21:26:19.877240+00:00", "message": "architecture_progress", "case": "precond8_22101", "step": 960, "ce": 0.8775466680526733}
+{"time": "2026-10-22T21:26:21.015590+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 832, "ce": 0.936134934425354}
+{"time": "2026-10-22T21:26:23.435151+00:00", "message": "architecture_validation", "case": "precond8_22103", "step": 768, "complete": 0.32098765432098764, "best": 0.3395061728395061, "ce": 0.4915611672418869}
+{"time": "2026-10-22T21:26:28.512930+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 576, "ce": 0.9602226614952087}
+{"time": "2026-10-22T21:26:42.337250+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 640, "ce": 0.9780436754226685}
+{"time": "2026-10-22T21:26:55.867243+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 704, "ce": 0.8507081866264343}
+{"time": "2026-10-22T21:27:12.174078+00:00", "message": "architecture_validation", "case": "feedback8_22101", "step": 768, "complete": 0.30864197530864196, "best": 0.3271604938271605, "ce": 0.47703457406252603}
+{"time": "2026-10-22T21:27:17.337041+00:00", "message": "architecture_validation", "case": "precond8_22101", "step": 1024, "complete": 0.3271604938271605, "best": 0.3333333333333333, "ce": 0.4751296359950291}
+{"time": "2026-10-22T21:27:17.573514+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 896, "ce": 0.8684978485107422}
+{"time": "2026-10-22T21:27:17.705941+00:00", "message": "architecture_started", "case": "feedback8_22102", "parameters": 249040}
+{"time": "2026-10-22T21:27:20.875488+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 832, "ce": 0.9350078105926514}
+{"time": "2026-10-22T21:27:25.998622+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 832, "ce": 0.892163872718811}
+{"time": "2026-10-22T21:27:32.691543+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 64, "ce": 1.7927862405776978}
+{"time": "2026-10-22T21:27:39.241747+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 896, "ce": 0.7935811877250671}
+{"time": "2026-10-22T21:27:47.317234+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 128, "ce": 1.2086349725723267}
+{"time": "2026-10-22T21:27:52.883363+00:00", "message": "architecture_progress", "case": "feedback8_22101", "step": 960, "ce": 0.8765617609024048}
+{"time": "2026-10-22T21:28:01.571914+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 192, "ce": 1.1306065320968628}
+{"time": "2026-10-22T21:28:09.876576+00:00", "message": "architecture_validation", "case": "feedback8_22101", "step": 1024, "complete": 0.3271604938271605, "best": 0.3271604938271605, "ce": 0.46557263714951497}
+{"time": "2026-10-22T21:28:10.188871+00:00", "message": "architecture_started", "case": "feedback8_22103", "parameters": 249040}
+{"time": "2026-10-22T21:28:14.250448+00:00", "message": "architecture_progress", "case": "precond8_22102", "step": 960, "ce": 0.8088368773460388}
+{"time": "2026-10-22T21:28:16.808806+00:00", "message": "architecture_validation", "case": "feedback8_22102", "step": 256, "complete": 0.31481481481481477, "best": 0.31481481481481477, "ce": 0.6411629253351174}
+{"time": "2026-10-22T21:28:17.379095+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 896, "ce": 0.9382705688476562}
+{"time": "2026-10-22T21:28:24.208701+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 64, "ce": 1.9182517528533936}
+{"time": "2026-10-22T21:28:29.506729+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 320, "ce": 1.0377217531204224}
+{"time": "2026-10-22T21:28:37.708247+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 128, "ce": 1.2719271183013916}
+{"time": "2026-10-22T21:28:42.699104+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 384, "ce": 1.0326716899871826}
+{"time": "2026-10-22T21:28:50.581470+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 192, "ce": 1.2017216682434082}
+{"time": "2026-10-22T21:28:53.567891+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 448, "ce": 1.011661410331726}
+{"time": "2026-10-22T21:29:05.318637+00:00", "message": "architecture_progress", "case": "precond8_22103", "step": 960, "ce": 0.9305711984634399}
+{"time": "2026-10-22T21:29:06.968618+00:00", "message": "architecture_validation", "case": "feedback8_22103", "step": 256, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.6705808025602886}
+{"time": "2026-10-22T21:29:08.841164+00:00", "message": "architecture_validation", "case": "feedback8_22102", "step": 512, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5152578859671068}
+{"time": "2026-10-22T21:29:13.172954+00:00", "message": "architecture_validation", "case": "precond8_22102", "step": 1024, "complete": 0.3395061728395061, "best": 0.35185185185185186, "ce": 0.4577086816849112}
+{"time": "2026-10-22T21:29:13.280059+00:00", "message": "architecture_started", "case": "delta_22101", "parameters": 257537}
+{"time": "2026-10-22T21:29:22.409120+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 320, "ce": 1.061548113822937}
+{"time": "2026-10-22T21:29:22.835863+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 576, "ce": 0.9566823244094849}
+{"time": "2026-10-22T21:29:27.896282+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 64, "ce": 1.7263779640197754}
+{"time": "2026-10-22T21:29:35.719299+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 640, "ce": 0.8908879160881042}
+{"time": "2026-10-22T21:29:36.166083+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 384, "ce": 1.053359031677246}
+{"time": "2026-10-22T21:29:39.845076+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 128, "ce": 1.1671384572982788}
+{"time": "2026-10-22T21:29:48.329341+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 704, "ce": 0.9630876779556274}
+{"time": "2026-10-22T21:29:49.324199+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 448, "ce": 0.9926335215568542}
+{"time": "2026-10-22T21:29:50.715687+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 192, "ce": 1.1548562049865723}
+{"time": "2026-10-22T21:29:55.309942+00:00", "message": "architecture_validation", "case": "precond8_22103", "step": 1024, "complete": 0.3333333333333333, "best": 0.3395061728395061, "ce": 0.4658889970207354}
+{"time": "2026-10-22T21:29:55.364969+00:00", "message": "architecture_started", "case": "delta_22102", "parameters": 257537}
+{"time": "2026-10-22T21:29:57.260641+00:00", "message": "architecture_validation", "case": "feedback8_22102", "step": 768, "complete": 0.3395061728395061, "best": 0.345679012345679, "ce": 0.4815057799514402}
+{"time": "2026-10-22T21:29:58.822649+00:00", "message": "architecture_validation", "case": "feedback8_22103", "step": 512, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.5214495850725599}
+{"time": "2026-10-22T21:30:00.559210+00:00", "message": "architecture_validation", "case": "delta_22101", "step": 256, "complete": 0.2654320987654321, "best": 0.2654320987654321, "ce": 0.6684010246851712}
+{"time": "2026-10-22T21:30:04.960339+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 64, "ce": 1.7735133171081543}
+{"time": "2026-10-22T21:30:07.852860+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 832, "ce": 0.9458507299423218}
+{"time": "2026-10-22T21:30:12.580635+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 576, "ce": 1.002563238143921}
+{"time": "2026-10-22T21:30:12.670900+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 320, "ce": 1.1311742067337036}
+{"time": "2026-10-22T21:30:17.792147+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 128, "ce": 1.215692162513733}
+{"time": "2026-10-22T21:30:19.402305+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 896, "ce": 0.8870883584022522}
+{"time": "2026-10-22T21:30:23.126729+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 384, "ce": 1.0018597841262817}
+{"time": "2026-10-22T21:30:25.950563+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 640, "ce": 0.8488616347312927}
+{"time": "2026-10-22T21:30:29.448315+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 192, "ce": 1.1251565217971802}
+{"time": "2026-10-22T21:30:30.508840+00:00", "message": "architecture_progress", "case": "feedback8_22102", "step": 960, "ce": 0.8547272086143494}
+{"time": "2026-10-22T21:30:33.576582+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 448, "ce": 1.0393377542495728}
+{"time": "2026-10-22T21:30:39.715076+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 704, "ce": 0.9744292497634888}
+{"time": "2026-10-22T21:30:45.720094+00:00", "message": "architecture_validation", "case": "feedback8_22102", "step": 1024, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.4630087330861081}
+{"time": "2026-10-22T21:30:45.838843+00:00", "message": "architecture_validation", "case": "delta_22102", "step": 256, "complete": 0.30864197530864196, "best": 0.30864197530864196, "ce": 0.6455355409121286}
+{"time": "2026-10-22T21:30:45.995079+00:00", "message": "architecture_started", "case": "delta_22103", "parameters": 257537}
+{"time": "2026-10-22T21:30:47.349774+00:00", "message": "architecture_validation", "case": "delta_22101", "step": 512, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.5084776746677323}
+{"time": "2026-10-22T21:30:55.827409+00:00", "message": "architecture_validation", "case": "feedback8_22103", "step": 768, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.503681363898991}
+{"time": "2026-10-22T21:30:57.017964+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 320, "ce": 1.0231913328170776}
+{"time": "2026-10-22T21:30:57.251540+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 64, "ce": 1.8756263256072998}
+{"time": "2026-10-22T21:30:57.337322+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 576, "ce": 0.9498056173324585}
+{"time": "2026-10-22T21:31:08.520346+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 640, "ce": 1.001512050628662}
+{"time": "2026-10-22T21:31:09.178093+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 128, "ce": 1.2911546230316162}
+{"time": "2026-10-22T21:31:09.243929+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 384, "ce": 1.0209064483642578}
+{"time": "2026-10-22T21:31:09.660441+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 832, "ce": 0.9251366257667542}
+{"time": "2026-10-22T21:31:18.908651+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 704, "ce": 0.8368034958839417}
+{"time": "2026-10-22T21:31:19.740030+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 192, "ce": 1.1969635486602783}
+{"time": "2026-10-22T21:31:20.425141+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 448, "ce": 1.0115660429000854}
+{"time": "2026-10-22T21:31:22.629937+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 896, "ce": 0.9636794924736023}
+{"time": "2026-10-22T21:31:30.414840+00:00", "message": "architecture_validation", "case": "delta_22101", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4675375571107899}
+{"time": "2026-10-22T21:31:34.780674+00:00", "message": "architecture_validation", "case": "delta_22103", "step": 256, "complete": 0.30864197530864196, "best": 0.30864197530864196, "ce": 0.6752690606162595}
+{"time": "2026-10-22T21:31:35.656429+00:00", "message": "architecture_validation", "case": "delta_22102", "step": 512, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.5195134118602672}
+{"time": "2026-10-22T21:31:36.247016+00:00", "message": "architecture_progress", "case": "feedback8_22103", "step": 960, "ce": 0.9424638748168945}
+{"time": "2026-10-22T21:31:40.022146+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 832, "ce": 0.8905285000801086}
+{"time": "2026-10-22T21:31:44.593279+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 320, "ce": 1.0669296979904175}
+{"time": "2026-10-22T21:31:45.852136+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 576, "ce": 0.9644244909286499}
+{"time": "2026-10-22T21:31:50.259129+00:00", "message": "architecture_validation", "case": "feedback8_22103", "step": 1024, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.479804380147581}
+{"time": "2026-10-22T21:31:50.562857+00:00", "message": "architecture_started", "case": "patch4_22101", "parameters": 246688}
+{"time": "2026-10-22T21:31:50.931441+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 896, "ce": 0.7777020931243896}
+{"time": "2026-10-22T21:31:56.210732+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 384, "ce": 1.054405689239502}
+{"time": "2026-10-22T21:31:57.463661+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 640, "ce": 0.9039070010185242}
+{"time": "2026-10-22T21:32:00.279326+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 64, "ce": 1.7823476791381836}
+{"time": "2026-10-22T21:32:02.656612+00:00", "message": "architecture_progress", "case": "delta_22101", "step": 960, "ce": 0.8609431385993958}
+{"time": "2026-10-22T21:32:07.434536+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 448, "ce": 0.9808006882667542}
+{"time": "2026-10-22T21:32:09.106165+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 704, "ce": 0.9354760050773621}
+{"time": "2026-10-22T21:32:09.322879+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 128, "ce": 1.160830020904541}
+{"time": "2026-10-22T21:32:16.442149+00:00", "message": "architecture_validation", "case": "delta_22101", "step": 1024, "complete": 0.3333333333333333, "best": 0.35185185185185186, "ce": 0.45697967482467766}
+{"time": "2026-10-22T21:32:16.522234+00:00", "message": "architecture_started", "case": "patch4_22102", "parameters": 246688}
+{"time": "2026-10-22T21:32:20.075852+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 192, "ce": 1.134603500366211}
+{"time": "2026-10-22T21:32:21.888146+00:00", "message": "architecture_validation", "case": "delta_22102", "step": 768, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.47781722388218684}
+{"time": "2026-10-22T21:32:23.627051+00:00", "message": "architecture_validation", "case": "delta_22103", "step": 512, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5140051989984408}
+{"time": "2026-10-22T21:32:26.680837+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 64, "ce": 1.8334718942642212}
+{"time": "2026-10-22T21:32:32.248357+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 832, "ce": 0.9594076871871948}
+{"time": "2026-10-22T21:32:32.445413+00:00", "message": "architecture_validation", "case": "patch4_22101", "step": 256, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.6616833665201763}
+{"time": "2026-10-22T21:32:36.695023+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 576, "ce": 0.9786155819892883}
+{"time": "2026-10-22T21:32:36.838637+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 128, "ce": 1.2163504362106323}
+{"time": "2026-10-22T21:32:42.438492+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 320, "ce": 1.09447181224823}
+{"time": "2026-10-22T21:32:42.450666+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 896, "ce": 0.874300479888916}
+{"time": "2026-10-22T21:32:46.704789+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 192, "ce": 1.1280944347381592}
+{"time": "2026-10-22T21:32:48.840733+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 640, "ce": 0.8328372836112976}
+{"time": "2026-10-22T21:32:51.833134+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 384, "ce": 0.9896235466003418}
+{"time": "2026-10-22T21:32:52.140675+00:00", "message": "architecture_progress", "case": "delta_22102", "step": 960, "ce": 0.8525877594947815}
+{"time": "2026-10-22T21:32:58.469363+00:00", "message": "architecture_validation", "case": "patch4_22102", "step": 256, "complete": 0.30864197530864196, "best": 0.30864197530864196, "ce": 0.6510412499428493}
+{"time": "2026-10-22T21:33:00.339614+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 704, "ce": 0.9593381285667419}
+{"time": "2026-10-22T21:33:01.026831+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 448, "ce": 1.0283949375152588}
+{"time": "2026-10-22T21:33:03.567880+00:00", "message": "architecture_validation", "case": "delta_22102", "step": 1024, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4563582692930275}
+{"time": "2026-10-22T21:33:03.658199+00:00", "message": "architecture_started", "case": "patch4_22103", "parameters": 246688}
+{"time": "2026-10-22T21:33:08.637145+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 320, "ce": 1.0379374027252197}
+{"time": "2026-10-22T21:33:11.740312+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 64, "ce": 1.888684868812561}
+{"time": "2026-10-22T21:33:13.433534+00:00", "message": "architecture_validation", "case": "patch4_22101", "step": 512, "complete": 0.3333333333333333, "best": 0.345679012345679, "ce": 0.5179043942851225}
+{"time": "2026-10-22T21:33:16.007899+00:00", "message": "architecture_validation", "case": "delta_22103", "step": 768, "complete": 0.3580246913580247, "best": 0.3580246913580247, "ce": 0.4938129245057626}
+{"time": "2026-10-22T21:33:17.591967+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 384, "ce": 1.037589192390442}
+{"time": "2026-10-22T21:33:19.120426+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 128, "ce": 1.2822378873825073}
+{"time": "2026-10-22T21:33:23.041246+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 576, "ce": 0.9618540406227112}
+{"time": "2026-10-22T21:33:27.329947+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 192, "ce": 1.1636532545089722}
+{"time": "2026-10-22T21:33:27.621109+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 448, "ce": 1.013137698173523}
+{"time": "2026-10-22T21:33:29.127057+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 832, "ce": 0.9026097059249878}
+{"time": "2026-10-22T21:33:33.553671+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 640, "ce": 0.9604589939117432}
+{"time": "2026-10-22T21:33:37.352474+00:00", "message": "architecture_validation", "case": "patch4_22103", "step": 256, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.6722125337345372}
+{"time": "2026-10-22T21:33:40.439375+00:00", "message": "architecture_validation", "case": "patch4_22102", "step": 512, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5208161598413463}
+{"time": "2026-10-22T21:33:42.042768+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 896, "ce": 0.9461959004402161}
+{"time": "2026-10-22T21:33:43.235744+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 704, "ce": 0.8462402820587158}
+{"time": "2026-10-22T21:33:44.969068+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 320, "ce": 1.041805624961853}
+{"time": "2026-10-22T21:33:49.653684+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 576, "ce": 0.9760599732398987}
+{"time": "2026-10-22T21:33:52.447466+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 384, "ce": 1.0506742000579834}
+{"time": "2026-10-22T21:33:53.325294+00:00", "message": "architecture_progress", "case": "delta_22103", "step": 960, "ce": 0.9205838441848755}
+{"time": "2026-10-22T21:33:54.942334+00:00", "message": "architecture_validation", "case": "patch4_22101", "step": 768, "complete": 0.3395061728395061, "best": 0.345679012345679, "ce": 0.4725825996318697}
+{"time": "2026-10-22T21:33:58.812026+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 640, "ce": 0.9032484889030457}
+{"time": "2026-10-22T21:34:00.454894+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 448, "ce": 0.9713416695594788}
+{"time": "2026-10-22T21:34:05.374056+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 832, "ce": 0.8902208209037781}
+{"time": "2026-10-22T21:34:08.958015+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 704, "ce": 0.9602475762367249}
+{"time": "2026-10-22T21:34:09.302104+00:00", "message": "architecture_validation", "case": "delta_22103", "step": 1024, "complete": 0.345679012345679, "best": 0.3580246913580247, "ce": 0.4734654828589941}
+{"time": "2026-10-22T21:34:09.388551+00:00", "message": "architecture_started", "case": "diversity_22101", "parameters": 256096}
+{"time": "2026-10-22T21:34:10.007691+00:00", "message": "architecture_validation", "case": "patch4_22103", "step": 512, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.5171563259074525}
+{"time": "2026-10-22T21:34:15.095668+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 896, "ce": 0.78053218126297}
+{"time": "2026-10-22T21:34:19.019146+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 576, "ce": 0.9912304878234863}
+{"time": "2026-10-22T21:34:20.258014+00:00", "message": "architecture_validation", "case": "patch4_22102", "step": 768, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.48255343348245683}
+{"time": "2026-10-22T21:34:24.675157+00:00", "message": "architecture_progress", "case": "patch4_22101", "step": 960, "ce": 0.8882395029067993}
+{"time": "2026-10-22T21:34:27.496075+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 640, "ce": 0.855076014995575}
+{"time": "2026-10-22T21:34:30.225810+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 832, "ce": 0.9337140917778015}
+{"time": "2026-10-22T21:34:35.900755+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 704, "ce": 0.9458510875701904}
+{"time": "2026-10-22T21:34:36.189582+00:00", "message": "architecture_validation", "case": "patch4_22101", "step": 1024, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4574348445172369}
+{"time": "2026-10-22T21:34:36.267126+00:00", "message": "architecture_started", "case": "diversity_22102", "parameters": 256096}
+{"time": "2026-10-22T21:34:39.396025+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 896, "ce": 0.8930335640907288}
+{"time": "2026-10-22T21:34:45.871306+00:00", "message": "architecture_validation", "case": "patch4_22103", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.496532516925982}
+{"time": "2026-10-22T21:34:48.680025+00:00", "message": "architecture_progress", "case": "patch4_22102", "step": 960, "ce": 0.8559786677360535}
+{"time": "2026-10-22T21:34:49.103849+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 64, "ce": 1.8465321063995361}
+{"time": "2026-10-22T21:34:56.260091+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 832, "ce": 0.9329560995101929}
+{"time": "2026-10-22T21:35:01.981439+00:00", "message": "architecture_validation", "case": "patch4_22102", "step": 1024, "complete": 0.3395061728395061, "best": 0.345679012345679, "ce": 0.4649568197059213}
+{"time": "2026-10-22T21:35:02.273546+00:00", "message": "architecture_started", "case": "diversity_22103", "parameters": 256096}
+{"time": "2026-10-22T21:35:06.538521+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 896, "ce": 0.9695290923118591}
+{"time": "2026-10-22T21:35:16.458195+00:00", "message": "architecture_progress", "case": "patch4_22103", "step": 960, "ce": 0.9439406991004944}
+{"time": "2026-10-22T21:35:23.379252+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 128, "ce": 1.1313925981521606}
+{"time": "2026-10-22T21:35:24.149082+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 64, "ce": 1.762295126914978}
+{"time": "2026-10-22T21:35:27.649624+00:00", "message": "architecture_validation", "case": "patch4_22103", "step": 1024, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4709534222136123}
+{"time": "2026-10-22T21:35:27.982293+00:00", "message": "architecture_started", "case": "hybrid_modes_22101", "parameters": 256096}
+{"time": "2026-10-22T21:35:45.593847+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 64, "ce": 1.866199016571045}
+{"time": "2026-10-22T21:35:56.231973+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 128, "ce": 1.1710318326950073}
+{"time": "2026-10-22T21:36:10.784374+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 192, "ce": 1.1176767349243164}
+{"time": "2026-10-22T21:36:13.331047+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 64, "ce": 1.838931918144226}
+{"time": "2026-10-22T21:36:26.777007+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 192, "ce": 1.1305723190307617}
+{"time": "2026-10-22T21:36:29.516653+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 128, "ce": 1.3058621883392334}
+{"time": "2026-10-22T21:36:55.165954+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 128, "ce": 1.1710256338119507}
+{"time": "2026-10-22T21:36:58.497382+00:00", "message": "architecture_validation", "case": "diversity_22102", "step": 256, "complete": 0.31481481481481477, "best": 0.31481481481481477, "ce": 0.6476662014205699}
+{"time": "2026-10-22T21:36:58.524647+00:00", "message": "architecture_validation", "case": "diversity_22101", "step": 256, "complete": 0.3148148148148148, "best": 0.3148148148148148, "ce": 0.6631515198758509}
+{"time": "2026-10-22T21:37:10.455132+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 192, "ce": 1.1827306747436523}
+{"time": "2026-10-22T21:37:33.046024+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 320, "ce": 1.0899629592895508}
+{"time": "2026-10-22T21:37:34.329858+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 320, "ce": 1.103754997253418}
+{"time": "2026-10-22T21:37:37.899740+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 192, "ce": 1.1388707160949707}
+{"time": "2026-10-22T21:37:57.284461+00:00", "message": "architecture_validation", "case": "diversity_22103", "step": 256, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.6688422228876657}
+{"time": "2026-10-22T21:38:09.027189+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 384, "ce": 1.0224426984786987}
+{"time": "2026-10-22T21:38:10.141439+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 384, "ce": 1.0028283596038818}
+{"time": "2026-10-22T21:38:24.736727+00:00", "message": "architecture_validation", "case": "hybrid_modes_22101", "step": 256, "complete": 0.30246913580246915, "best": 0.30246913580246915, "ce": 0.6658794107276677}
+{"time": "2026-10-22T21:38:40.439039+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 320, "ce": 1.0368173122406006}
+{"time": "2026-10-22T21:38:45.748198+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 448, "ce": 1.020093321800232}
+{"time": "2026-10-22T21:38:46.129514+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 448, "ce": 1.041825771331787}
+{"time": "2026-10-22T21:39:10.301949+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 320, "ce": 1.0906519889831543}
+{"time": "2026-10-22T21:39:24.958707+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 384, "ce": 1.038877248764038}
+{"time": "2026-10-22T21:39:27.254460+00:00", "message": "architecture_validation", "case": "diversity_22101", "step": 512, "complete": 0.3148148148148148, "best": 0.3148148148148148, "ce": 0.5279833555395967}
+{"time": "2026-10-22T21:39:29.977157+00:00", "message": "architecture_validation", "case": "diversity_22102", "step": 512, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5189884622862676}
+{"time": "2026-10-22T21:39:55.523778+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 384, "ce": 1.0105148553848267}
+{"time": "2026-10-22T21:39:59.998676+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 448, "ce": 0.9812449812889099}
+{"time": "2026-10-22T21:40:03.346788+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 576, "ce": 0.957342803478241}
+{"time": "2026-10-22T21:40:13.476712+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 576, "ce": 0.9383840560913086}
+{"time": "2026-10-22T21:40:39.320009+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 448, "ce": 1.0351063013076782}
+{"time": "2026-10-22T21:40:40.578208+00:00", "message": "architecture_validation", "case": "diversity_22103", "step": 512, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.5112783589673549}
+{"time": "2026-10-22T21:40:40.687532+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 640, "ce": 0.9462653398513794}
+{"time": "2026-10-22T21:40:58.785078+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 640, "ce": 0.9055173397064209}
+{"time": "2026-10-22T21:41:18.725405+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 704, "ce": 0.8679893612861633}
+{"time": "2026-10-22T21:41:18.820964+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 576, "ce": 0.9842432141304016}
+{"time": "2026-10-22T21:41:27.998079+00:00", "message": "architecture_validation", "case": "hybrid_modes_22101", "step": 512, "complete": 0.3148148148148148, "best": 0.3148148148148148, "ce": 0.5271520796010506}
+{"time": "2026-10-22T21:41:41.821550+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 704, "ce": 0.9620462656021118}
+{"time": "2026-10-22T21:41:55.275594+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 640, "ce": 0.8598896861076355}
+{"time": "2026-10-22T21:41:58.752405+00:00", "message": "architecture_validation", "case": "diversity_22101", "step": 768, "complete": 0.32098765432098764, "best": 0.32098765432098764, "ce": 0.4858554490918911}
+{"time": "2026-10-22T21:42:11.791469+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 576, "ce": 0.9554771184921265}
+{"time": "2026-10-22T21:42:27.274905+00:00", "message": "architecture_validation", "case": "diversity_22102", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4808490842297379}
+{"time": "2026-10-22T21:42:28.247876+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 704, "ce": 0.9386956691741943}
+{"time": "2026-10-22T21:42:32.877184+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 832, "ce": 0.8661600947380066}
+{"time": "2026-10-22T21:42:55.281056+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 640, "ce": 0.9503833651542664}
+{"time": "2026-10-22T21:43:07.107120+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 896, "ce": 0.7893276810646057}
+{"time": "2026-10-22T21:43:15.298955+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 832, "ce": 0.9467085599899292}
+{"time": "2026-10-22T21:43:20.997256+00:00", "message": "architecture_validation", "case": "diversity_22103", "step": 768, "complete": 0.3271604938271605, "best": 0.3395061728395061, "ce": 0.4970866719038711}
+{"time": "2026-10-22T21:43:40.889738+00:00", "message": "architecture_progress", "case": "diversity_22101", "step": 960, "ce": 0.8844480514526367}
+{"time": "2026-10-22T21:43:45.224853+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 704, "ce": 0.8569732904434204}
+{"time": "2026-10-22T21:44:05.537040+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 896, "ce": 0.8890634775161743}
+{"time": "2026-10-22T21:44:12.455734+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 832, "ce": 0.9307451844215393}
+{"time": "2026-10-22T21:44:20.267142+00:00", "message": "architecture_validation", "case": "diversity_22101", "step": 1024, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.4753819094056532}
+{"time": "2026-10-22T21:44:20.366714+00:00", "message": "architecture_started", "case": "hybrid_modes_22102", "parameters": 256096}
+{"time": "2026-10-22T21:44:43.396146+00:00", "message": "architecture_validation", "case": "hybrid_modes_22101", "step": 768, "complete": 0.3148148148148148, "best": 0.3148148148148148, "ce": 0.49260710274641234}
+{"time": "2026-10-22T21:44:56.619805+00:00", "message": "architecture_progress", "case": "diversity_22102", "step": 960, "ce": 0.8108426332473755}
+{"time": "2026-10-22T21:45:06.059612+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 896, "ce": 0.9424383640289307}
+{"time": "2026-10-22T21:45:15.033867+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 64, "ce": 1.7514005899429321}
+{"time": "2026-10-22T21:45:37.641484+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 832, "ce": 0.8674781322479248}
+{"time": "2026-10-22T21:45:55.232669+00:00", "message": "architecture_validation", "case": "diversity_22102", "step": 1024, "complete": 0.3395061728395061, "best": 0.35185185185185186, "ce": 0.4602409336762264}
+{"time": "2026-10-22T21:45:55.336106+00:00", "message": "architecture_started", "case": "hybrid_modes_22103", "parameters": 256096}
+{"time": "2026-10-22T21:46:00.006417+00:00", "message": "architecture_progress", "case": "diversity_22103", "step": 960, "ce": 0.9318186640739441}
+{"time": "2026-10-22T21:46:09.447276+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 128, "ce": 1.1887524127960205}
+{"time": "2026-10-22T21:46:30.884945+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 896, "ce": 0.7794615030288696}
+{"time": "2026-10-22T21:46:48.499596+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 64, "ce": 1.9354227781295776}
+{"time": "2026-10-22T21:46:57.900593+00:00", "message": "architecture_validation", "case": "diversity_22103", "step": 1024, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.4681739716435665}
+{"time": "2026-10-22T21:46:58.009331+00:00", "message": "architecture_started", "case": "lowrank16_22101", "parameters": 208800}
+{"time": "2026-10-22T21:47:03.411991+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 192, "ce": 1.1239423751831055}
+{"time": "2026-10-22T21:47:11.396702+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 64, "ce": 2.468238592147827}
+{"time": "2026-10-22T21:47:23.575619+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 128, "ce": 1.3967229127883911}
+{"time": "2026-10-22T21:47:24.645978+00:00", "message": "architecture_progress", "case": "hybrid_modes_22101", "step": 960, "ce": 0.8826243877410889}
+{"time": "2026-10-22T21:47:36.833741+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 192, "ce": 1.2982419729232788}
+{"time": "2026-10-22T21:47:43.875192+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 128, "ce": 1.3046835660934448}
+{"time": "2026-10-22T21:47:52.869764+00:00", "message": "architecture_validation", "case": "lowrank16_22101", "step": 256, "complete": 0.1419753086419753, "best": 0.1419753086419753, "ce": 0.7514157270809639}
+{"time": "2026-10-22T21:48:05.275622+00:00", "message": "architecture_validation", "case": "hybrid_modes_22102", "step": 256, "complete": 0.2839506172839506, "best": 0.2839506172839506, "ce": 0.6511139077868179}
+{"time": "2026-10-22T21:48:06.131333+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 320, "ce": 1.1539833545684814}
+{"time": "2026-10-22T21:48:19.515344+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 384, "ce": 1.0870901346206665}
+{"time": "2026-10-22T21:48:26.343005+00:00", "message": "architecture_validation", "case": "hybrid_modes_22101", "step": 1024, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.4776117696584187}
+{"time": "2026-10-22T21:48:26.451642+00:00", "message": "architecture_started", "case": "lowrank16_22102", "parameters": 208800}
+{"time": "2026-10-22T21:48:34.135291+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 448, "ce": 1.0816112756729126}
+{"time": "2026-10-22T21:48:41.437477+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 192, "ce": 1.1882179975509644}
+{"time": "2026-10-22T21:48:41.492027+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 64, "ce": 2.3286333084106445}
+{"time": "2026-10-22T21:48:52.214170+00:00", "message": "architecture_validation", "case": "lowrank16_22101", "step": 512, "complete": 0.3148148148148148, "best": 0.3148148148148148, "ce": 0.533356368498115}
+{"time": "2026-10-22T21:48:54.005452+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 128, "ce": 1.4506783485412598}
+{"time": "2026-10-22T21:49:02.060237+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 320, "ce": 1.082137942314148}
+{"time": "2026-10-22T21:49:02.497768+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 576, "ce": 0.9842548370361328}
+{"time": "2026-10-22T21:49:04.888149+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 192, "ce": 1.3548829555511475}
+{"time": "2026-10-22T21:49:14.954978+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 640, "ce": 0.929700493812561}
+{"time": "2026-10-22T21:49:19.744252+00:00", "message": "architecture_validation", "case": "lowrank16_22102", "step": 256, "complete": 0.1728395061728395, "best": 0.1728395061728395, "ce": 0.7846463084133681}
+{"time": "2026-10-22T21:49:28.305510+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 704, "ce": 0.9267783761024475}
+{"time": "2026-10-22T21:49:32.806956+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 320, "ce": 1.1328483819961548}
+{"time": "2026-10-22T21:49:39.875288+00:00", "message": "architecture_validation", "case": "hybrid_modes_22103", "step": 256, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.6639557010340883}
+{"time": "2026-10-22T21:49:41.586131+00:00", "message": "architecture_validation", "case": "lowrank16_22101", "step": 768, "complete": 0.36419753086419754, "best": 0.36419753086419754, "ce": 0.4878242764929916}
+{"time": "2026-10-22T21:49:42.717968+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 384, "ce": 1.107790231704712}
+{"time": "2026-10-22T21:49:54.122358+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 832, "ce": 0.9062130451202393}
+{"time": "2026-10-22T21:49:54.933346+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 448, "ce": 1.1071540117263794}
+{"time": "2026-10-22T21:49:55.304705+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 384, "ce": 1.0186967849731445}
+{"time": "2026-10-22T21:50:06.814344+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 896, "ce": 0.8344548344612122}
+{"time": "2026-10-22T21:50:11.187163+00:00", "message": "architecture_validation", "case": "lowrank16_22102", "step": 512, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5592754966774908}
+{"time": "2026-10-22T21:50:19.848167+00:00", "message": "architecture_progress", "case": "lowrank16_22101", "step": 960, "ce": 0.9224792122840881}
+{"time": "2026-10-22T21:50:23.874551+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 576, "ce": 1.0167514085769653}
+{"time": "2026-10-22T21:50:33.732340+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 320, "ce": 1.0449936389923096}
+{"time": "2026-10-22T21:50:33.828813+00:00", "message": "architecture_validation", "case": "lowrank16_22101", "step": 1024, "complete": 0.36419753086419754, "best": 0.36419753086419754, "ce": 0.47197729641273234}
+{"time": "2026-10-22T21:50:33.905456+00:00", "message": "architecture_started", "case": "lowrank16_22103", "parameters": 208800}
+{"time": "2026-10-22T21:50:34.781625+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 640, "ce": 0.9910144209861755}
+{"time": "2026-10-22T21:50:46.262936+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 64, "ce": 2.4853782653808594}
+{"time": "2026-10-22T21:50:47.477021+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 704, "ce": 0.9878138303756714}
+{"time": "2026-10-22T21:50:49.826140+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 448, "ce": 1.0152809619903564}
+{"time": "2026-10-22T21:50:58.858748+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 128, "ce": 1.6473283767700195}
+{"time": "2026-10-22T21:51:03.561641+00:00", "message": "architecture_validation", "case": "lowrank16_22102", "step": 768, "complete": 0.3395061728395061, "best": 0.345679012345679, "ce": 0.5114751637810412}
+{"time": "2026-10-22T21:51:12.307438+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 192, "ce": 1.379011869430542}
+{"time": "2026-10-22T21:51:18.356810+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 832, "ce": 0.9768415093421936}
+{"time": "2026-10-22T21:51:27.943065+00:00", "message": "architecture_validation", "case": "lowrank16_22103", "step": 256, "complete": 0.2654320987654321, "best": 0.2654320987654321, "ce": 0.7771643587683097}
+{"time": "2026-10-22T21:51:29.558966+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 384, "ce": 1.0437953472137451}
+{"time": "2026-10-22T21:51:30.450913+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 896, "ce": 0.9207308888435364}
+{"time": "2026-10-22T21:51:39.855474+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 320, "ce": 1.0918214321136475}
+{"time": "2026-10-22T21:51:42.500748+00:00", "message": "architecture_progress", "case": "lowrank16_22102", "step": 960, "ce": 0.9788667559623718}
+{"time": "2026-10-22T21:51:50.803611+00:00", "message": "architecture_validation", "case": "hybrid_modes_22102", "step": 512, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5230065006013325}
+{"time": "2026-10-22T21:51:51.451894+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 384, "ce": 1.0899156332015991}
+{"time": "2026-10-22T21:51:57.017440+00:00", "message": "architecture_validation", "case": "lowrank16_22102", "step": 1024, "complete": 0.3333333333333333, "best": 0.345679012345679, "ce": 0.4989083666564255}
+{"time": "2026-10-22T21:51:57.435055+00:00", "message": "architecture_started", "case": "combined_22101", "parameters": 259889}
+{"time": "2026-10-22T21:52:04.174185+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 448, "ce": 1.0609476566314697}
+{"time": "2026-10-22T21:52:11.924078+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 64, "ce": 1.7892956733703613}
+{"time": "2026-10-22T21:52:19.972427+00:00", "message": "architecture_validation", "case": "lowrank16_22103", "step": 512, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.5696177060532588}
+{"time": "2026-10-22T21:52:22.300165+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 448, "ce": 0.9906790852546692}
+{"time": "2026-10-22T21:52:25.990166+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 128, "ce": 1.1676380634307861}
+{"time": "2026-10-22T21:52:31.246714+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 576, "ce": 1.0353673696517944}
+{"time": "2026-10-22T21:52:40.362080+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 192, "ce": 1.13478422164917}
+{"time": "2026-10-22T21:52:44.179187+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 640, "ce": 0.9190264344215393}
+{"time": "2026-10-22T21:52:45.772262+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 576, "ce": 0.9369708299636841}
+{"time": "2026-10-22T21:52:56.092571+00:00", "message": "architecture_validation", "case": "combined_22101", "step": 256, "complete": 0.3333333333333333, "best": 0.3333333333333333, "ce": 0.6650369263253425}
+{"time": "2026-10-22T21:52:56.573151+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 704, "ce": 0.9860205054283142}
+{"time": "2026-10-22T21:53:10.439319+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 320, "ce": 1.107958197593689}
+{"time": "2026-10-22T21:53:10.751754+00:00", "message": "architecture_validation", "case": "lowrank16_22103", "step": 768, "complete": 0.345679012345679, "best": 0.345679012345679, "ce": 0.5363435369385536}
+{"time": "2026-10-22T21:53:19.138071+00:00", "message": "architecture_validation", "case": "hybrid_modes_22103", "step": 512, "complete": 0.3333333333333333, "best": 0.3395061728395061, "ce": 0.5162493464017142}
+{"time": "2026-10-22T21:53:22.784464+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 832, "ce": 1.043774127960205}
+{"time": "2026-10-22T21:53:24.991951+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 384, "ce": 0.9865668416023254}
+{"time": "2026-10-22T21:53:36.009116+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 896, "ce": 0.9289026856422424}
+{"time": "2026-10-22T21:53:40.019271+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 640, "ce": 0.9047607779502869}
+{"time": "2026-10-22T21:53:40.114525+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 448, "ce": 1.0510506629943848}
+{"time": "2026-10-22T21:53:45.874340+00:00", "message": "architecture_progress", "case": "lowrank16_22103", "step": 960, "ce": 0.9720892906188965}
+{"time": "2026-10-22T21:53:54.560196+00:00", "message": "architecture_validation", "case": "combined_22101", "step": 512, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.5132801054861743}
+{"time": "2026-10-22T21:54:01.698201+00:00", "message": "architecture_validation", "case": "lowrank16_22103", "step": 1024, "complete": 0.3395061728395061, "best": 0.345679012345679, "ce": 0.5063413338846069}
+{"time": "2026-10-22T21:54:02.090890+00:00", "message": "architecture_started", "case": "combined_22102", "parameters": 259889}
+{"time": "2026-10-22T21:54:08.742915+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 576, "ce": 0.9408577084541321}
+{"time": "2026-10-22T21:54:09.788619+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 576, "ce": 0.9842531681060791}
+{"time": "2026-10-22T21:54:21.102891+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 64, "ce": 1.786664605140686}
+{"time": "2026-10-22T21:54:24.056224+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 640, "ce": 0.9481002688407898}
+{"time": "2026-10-22T21:54:30.215041+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 704, "ce": 0.9619654417037964}
+{"time": "2026-10-22T21:54:37.657483+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 704, "ce": 0.8509290814399719}
+{"time": "2026-10-22T21:54:38.716001+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 128, "ce": 1.1834622621536255}
+{"time": "2026-10-22T21:54:52.452721+00:00", "message": "architecture_validation", "case": "combined_22101", "step": 768, "complete": 0.3703703703703704, "best": 0.3703703703703704, "ce": 0.4682720398588955}
+{"time": "2026-10-22T21:54:55.217824+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 192, "ce": 1.1206601858139038}
+{"time": "2026-10-22T21:55:00.187578+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 640, "ce": 0.8540377616882324}
+{"time": "2026-10-22T21:55:06.567772+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 832, "ce": 0.8895819783210754}
+{"time": "2026-10-22T21:55:17.760226+00:00", "message": "architecture_validation", "case": "combined_22102", "step": 256, "complete": 0.30864197530864196, "best": 0.30864197530864196, "ce": 0.6548613022955648}
+{"time": "2026-10-22T21:55:22.045982+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 896, "ce": 0.7789419293403625}
+{"time": "2026-10-22T21:55:25.518975+00:00", "message": "architecture_validation", "case": "hybrid_modes_22102", "step": 768, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4821826576881367}
+{"time": "2026-10-22T21:55:36.131113+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 320, "ce": 1.0378777980804443}
+{"time": "2026-10-22T21:55:36.205089+00:00", "message": "architecture_progress", "case": "combined_22101", "step": 960, "ce": 0.8974890112876892}
+{"time": "2026-10-22T21:55:49.171374+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 704, "ce": 0.9434811472892761}
+{"time": "2026-10-22T21:55:50.603135+00:00", "message": "architecture_validation", "case": "combined_22101", "step": 1024, "complete": 0.3888888888888889, "best": 0.3888888888888889, "ce": 0.4495825857338281}
+{"time": "2026-10-22T21:55:50.816564+00:00", "message": "architecture_started", "case": "combined_22103", "parameters": 259889}
+{"time": "2026-10-22T21:55:53.404941+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 384, "ce": 1.0225751399993896}
+{"time": "2026-10-22T21:56:05.919580+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 64, "ce": 1.9228824377059937}
+{"time": "2026-10-22T21:56:12.608053+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 448, "ce": 1.0275490283966064}
+{"time": "2026-10-22T21:56:15.857625+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 832, "ce": 0.9265803098678589}
+{"time": "2026-10-22T21:56:19.531099+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 128, "ce": 1.35829496383667}
+{"time": "2026-10-22T21:56:32.315417+00:00", "message": "architecture_validation", "case": "combined_22102", "step": 512, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.5052572746911708}
+{"time": "2026-10-22T21:56:32.461018+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 192, "ce": 1.1829378604888916}
+{"time": "2026-10-22T21:56:44.626331+00:00", "message": "architecture_validation", "case": "hybrid_modes_22103", "step": 768, "complete": 0.3333333333333333, "best": 0.3395061728395061, "ce": 0.49690632760829967}
+{"time": "2026-10-22T21:56:47.646871+00:00", "message": "architecture_validation", "case": "combined_22103", "step": 256, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.6714836614534815}
+{"time": "2026-10-22T21:56:50.771366+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 576, "ce": 0.9571876525878906}
+{"time": "2026-10-22T21:57:01.404586+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 320, "ce": 1.0529533624649048}
+{"time": "2026-10-22T21:57:04.589155+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 896, "ce": 0.8806015253067017}
+{"time": "2026-10-22T21:57:09.486890+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 640, "ce": 0.8991506099700928}
+{"time": "2026-10-22T21:57:15.539542+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 384, "ce": 1.0557512044906616}
+{"time": "2026-10-22T21:57:29.498650+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 704, "ce": 0.9757612347602844}
+{"time": "2026-10-22T21:57:30.407376+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 448, "ce": 0.9846615791320801}
+{"time": "2026-10-22T21:57:36.899181+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 832, "ce": 0.9353586435317993}
+{"time": "2026-10-22T21:57:44.465458+00:00", "message": "architecture_validation", "case": "combined_22103", "step": 512, "complete": 0.3333333333333333, "best": 0.3395061728395061, "ce": 0.5221733966707398}
+{"time": "2026-10-22T21:57:48.744429+00:00", "message": "architecture_validation", "case": "combined_22102", "step": 768, "complete": 0.3333333333333333, "best": 0.3395061728395061, "ce": 0.47946058472055714}
+{"time": "2026-10-22T21:57:54.784075+00:00", "message": "architecture_progress", "case": "hybrid_modes_22102", "step": 960, "ce": 0.8032296895980835}
+{"time": "2026-10-22T21:57:57.726963+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 576, "ce": 0.9974465370178223}
+{"time": "2026-10-22T21:58:07.172228+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 832, "ce": 0.9483925700187683}
+{"time": "2026-10-22T21:58:11.978384+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 640, "ce": 0.8564230799674988}
+{"time": "2026-10-22T21:58:25.798999+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 896, "ce": 0.8833368420600891}
+{"time": "2026-10-22T21:58:26.457341+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 896, "ce": 0.9411216378211975}
+{"time": "2026-10-22T21:58:26.512532+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 704, "ce": 0.9554158449172974}
+{"time": "2026-10-22T21:58:42.300204+00:00", "message": "architecture_validation", "case": "combined_22103", "step": 768, "complete": 0.32098765432098764, "best": 0.3395061728395061, "ce": 0.49380307295240444}
+{"time": "2026-10-22T21:58:43.957499+00:00", "message": "architecture_progress", "case": "combined_22102", "step": 960, "ce": 0.861375093460083}
+{"time": "2026-10-22T21:58:52.016525+00:00", "message": "architecture_validation", "case": "hybrid_modes_22102", "step": 1024, "complete": 0.3395061728395061, "best": 0.35185185185185186, "ce": 0.4622227472703476}
+{"time": "2026-10-22T21:58:55.663286+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 832, "ce": 0.9103168845176697}
+{"time": "2026-10-22T21:59:03.601175+00:00", "message": "architecture_validation", "case": "combined_22102", "step": 1024, "complete": 0.3395061728395061, "best": 0.3395061728395061, "ce": 0.4583299714191691}
+{"time": "2026-10-22T21:59:07.988409+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 896, "ce": 0.9544928669929504}
+{"time": "2026-10-22T21:59:11.601377+00:00", "message": "architecture_progress", "case": "hybrid_modes_22103", "step": 960, "ce": 0.942805290222168}
+{"time": "2026-10-22T21:59:21.977648+00:00", "message": "architecture_progress", "case": "combined_22103", "step": 960, "ce": 0.9420048594474792}
+{"time": "2026-10-22T21:59:37.826552+00:00", "message": "architecture_validation", "case": "combined_22103", "step": 1024, "complete": 0.35185185185185186, "best": 0.35185185185185186, "ce": 0.4713397323867223}
+{"time": "2026-10-22T21:59:54.750309+00:00", "message": "architecture_validation", "case": "hybrid_modes_22103", "step": 1024, "complete": 0.3333333333333333, "best": 0.3395061728395061, "ce": 0.47160405823150164}

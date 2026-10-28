@@ -1,0 +1,12 @@
+{
+  "locked_at": "2026-10-10T03:27:16.806160+00:00",
+  "reviewer_type": "assistant",
+  "reviewer": "Codex; also the implementation author",
+  "rubric_version": 1,
+  "case_count": 450,
+  "rated_count": 450,
+  "case_sha256": "ea27f8bfb77d37fe63917c84202fe05d4d2f29902597ccbf499ecd74b7e5a792",
+  "batches_sha256": "6293d14f3290d5b26b807cb8cca6589eabcf38561bd19523ac954a2aba5b51ae",
+  "process": "All anonymous prompts and continuations read and scored before opening the identity key",
+  "scope": "Exploratory assistant assessment; not an independent human evaluation"
+}

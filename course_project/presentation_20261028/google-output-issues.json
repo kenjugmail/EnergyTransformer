@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "presentation": {
+    "id": "11p2zXD7gTftP4EZXtRqXL948wSRPqkao5pTgoINKgVQ",
+    "title": "REWT — State Refinement and Learned Reasoning | CSCI 635 | October 28, 2026",
+    "revisionId": "OPetbF8qFuZ69Q",
+    "slideCount": 15
+  },
+  "snapshotSha256": "7174d17206d695ef62f0495582ede9a95f6e29a7ec2691db8b1925cf7f6e2e6e",
+  "summary": {
+    "totalIssues": 0,
+    "reportedIssues": 0,
+    "truncated": false,
+    "bySeverity": {},
+    "byCode": {}
+  },
+  "issues": []
+}

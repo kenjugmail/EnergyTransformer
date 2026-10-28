@@ -1,0 +1,11 @@
+{
+  "source_sha256": "a01b6feaec70f9ef568c5c15b69293bf5269d8321c985e3faa4d103de92ebafa",
+  "original_parameters": 10606896,
+  "added_reader_parameters": 147654,
+  "total_parameters": 10754550,
+  "added_parameter_bytes_float32": 590616,
+  "native_recurrent_state_bytes_batch1": 148992,
+  "fact_tensor_bytes_4_records_batch1": 1028,
+  "fact_tensor_bytes_256_records_batch1": 65792,
+  "scope": "Tensor accounting only; excludes SQLite, provenance, temporary activations, optimizer, and process overhead."
+}

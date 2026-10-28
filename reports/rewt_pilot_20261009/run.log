@@ -1,0 +1,72 @@
+{"time": "2026-10-09T22:39:19.193691+00:00", "message": "experiment_started", "output": "/home/kt/Documents/EnergyTransformer/reports/rewt_pilot_20261009", "settings": {"seeds": [101, 202, 303], "context": 128, "batch_size": 4, "reason_batch_size": 8, "lm_updates": 120, "reason_updates": 240, "warm_updates": 24, "validate_every": 40, "learning_rate": 0.002, "task_train": 4096, "task_valid": 192, "task_test": 150, "equal_cpu_seconds": 30.0, "ablation_updates": 40, "intervention_windows": 8, "threads": 1}, "counts": {"neural_energy": 249929, "fourier_rewt": 249929, "full_rewt": 250005, "transformer": 249994}}
+{"time": "2026-10-09T22:39:21.286889+00:00", "message": "fit_started", "seed": 101, "arm": "transformer", "phase": "language", "parameters": 249994, "updates": 120, "cpu_budget": null, "resumed_step": 0}
+{"time": "2026-10-09T22:39:21.427837+00:00", "message": "fit_started", "seed": 202, "arm": "transformer", "phase": "language", "parameters": 249994, "updates": 120, "cpu_budget": null, "resumed_step": 0}
+{"time": "2026-10-09T22:39:21.460773+00:00", "message": "fit_started", "seed": 303, "arm": "transformer", "phase": "language", "parameters": 249994, "updates": 120, "cpu_budget": null, "resumed_step": 0}
+{"time": "2026-10-09T22:39:22.530383+00:00", "message": "training_progress", "seed": 101, "arm": "transformer", "phase": "language", "step": 20, "target_updates": 120, "ce": 3.908926010131836, "training_cpu_seconds": 1.0108976000000007}
+{"time": "2026-10-09T22:39:22.646979+00:00", "message": "training_progress", "seed": 202, "arm": "transformer", "phase": "language", "step": 20, "target_updates": 120, "ce": 3.863506555557251, "training_cpu_seconds": 0.996414096000001}
+{"time": "2026-10-09T22:39:22.718031+00:00", "message": "training_progress", "seed": 303, "arm": "transformer", "phase": "language", "step": 20, "target_updates": 120, "ce": 3.892550468444824, "training_cpu_seconds": 0.9632605120000006}
+{"time": "2026-10-09T22:39:22.970798+00:00", "message": "validation", "seed": 101, "arm": "transformer", "phase": "language", "step": 40, "validation_score": 4.74500116532224, "training_cpu_seconds": 1.427526416000001, "ce": 3.857893705368042}
+{"time": "2026-10-09T22:39:22.995419+00:00", "message": "training_progress", "seed": 101, "arm": "transformer", "phase": "language", "step": 40, "target_updates": 120, "ce": 3.857893705368042, "training_cpu_seconds": 1.427526416000001}
+{"time": "2026-10-09T22:39:23.074595+00:00", "message": "validation", "seed": 202, "arm": "transformer", "phase": "language", "step": 40, "validation_score": 4.862825275549794, "training_cpu_seconds": 1.4031439840000015, "ce": 3.006120443344116}
+{"time": "2026-10-09T22:39:23.086220+00:00", "message": "training_progress", "seed": 202, "arm": "transformer", "phase": "language", "step": 40, "target_updates": 120, "ce": 3.006120443344116, "training_cpu_seconds": 1.4031439840000015}
+{"time": "2026-10-09T22:39:23.169792+00:00", "message": "validation", "seed": 303, "arm": "transformer", "phase": "language", "step": 40, "validation_score": 4.759020331107322, "training_cpu_seconds": 1.3932555040000016, "ce": 3.2488083839416504}
+{"time": "2026-10-09T22:39:23.185012+00:00", "message": "training_progress", "seed": 303, "arm": "transformer", "phase": "language", "step": 40, "target_updates": 120, "ce": 3.2488083839416504, "training_cpu_seconds": 1.3932555040000016}
+{"time": "2026-10-09T22:39:23.450121+00:00", "message": "training_progress", "seed": 101, "arm": "transformer", "phase": "language", "step": 60, "target_updates": 120, "ce": 3.331224203109741, "training_cpu_seconds": 1.8626457920000017}
+{"time": "2026-10-09T22:39:23.544863+00:00", "message": "training_progress", "seed": 202, "arm": "transformer", "phase": "language", "step": 60, "target_updates": 120, "ce": 3.2703702449798584, "training_cpu_seconds": 1.8434480160000013}
+{"time": "2026-10-09T22:39:23.676252+00:00", "message": "training_progress", "seed": 303, "arm": "transformer", "phase": "language", "step": 60, "target_updates": 120, "ce": 3.564012289047241, "training_cpu_seconds": 1.8666749119999997}
+{"time": "2026-10-09T22:39:23.893717+00:00", "message": "validation", "seed": 101, "arm": "transformer", "phase": "language", "step": 80, "validation_score": 4.392036871390226, "training_cpu_seconds": 2.2831071840000017, "ce": 3.3805134296417236}
+{"time": "2026-10-09T22:39:23.908517+00:00", "message": "training_progress", "seed": 101, "arm": "transformer", "phase": "language", "step": 80, "target_updates": 120, "ce": 3.3805134296417236, "training_cpu_seconds": 2.2831071840000017}
+{"time": "2026-10-09T22:39:23.975721+00:00", "message": "validation", "seed": 202, "arm": "transformer", "phase": "language", "step": 80, "validation_score": 4.393845956894651, "training_cpu_seconds": 2.253128240000003, "ce": 3.04774808883667}
+{"time": "2026-10-09T22:39:23.986856+00:00", "message": "training_progress", "seed": 202, "arm": "transformer", "phase": "language", "step": 80, "target_updates": 120, "ce": 3.04774808883667, "training_cpu_seconds": 2.253128240000003}
+{"time": "2026-10-09T22:39:24.149751+00:00", "message": "validation", "seed": 303, "arm": "transformer", "phase": "language", "step": 80, "validation_score": 4.4320317808136735, "training_cpu_seconds": 2.315558479999998, "ce": 3.131692886352539}
+{"time": "2026-10-09T22:39:24.164645+00:00", "message": "training_progress", "seed": 303, "arm": "transformer", "phase": "language", "step": 80, "target_updates": 120, "ce": 3.131692886352539, "training_cpu_seconds": 2.315558479999998}
+{"time": "2026-10-09T22:39:24.368357+00:00", "message": "training_progress", "seed": 101, "arm": "transformer", "phase": "language", "step": 100, "target_updates": 120, "ce": 2.85115909576416, "training_cpu_seconds": 2.7227314720000035}
+{"time": "2026-10-09T22:39:24.454757+00:00", "message": "training_progress", "seed": 202, "arm": "transformer", "phase": "language", "step": 100, "target_updates": 120, "ce": 3.0748488903045654, "training_cpu_seconds": 2.7007108480000013}
+{"time": "2026-10-09T22:39:24.653999+00:00", "message": "training_progress", "seed": 303, "arm": "transformer", "phase": "language", "step": 100, "target_updates": 120, "ce": 2.9263339042663574, "training_cpu_seconds": 2.7851613919999982}
+{"time": "2026-10-09T22:39:24.816534+00:00", "message": "validation", "seed": 101, "arm": "transformer", "phase": "language", "step": 120, "validation_score": 4.243292344329349, "training_cpu_seconds": 3.1469012160000047, "ce": 3.32670259475708}
+{"time": "2026-10-09T22:39:24.830904+00:00", "message": "training_progress", "seed": 101, "arm": "transformer", "phase": "language", "step": 120, "target_updates": 120, "ce": 3.32670259475708, "training_cpu_seconds": 3.1469012160000047}
+{"time": "2026-10-09T22:39:24.897365+00:00", "message": "validation", "seed": 202, "arm": "transformer", "phase": "language", "step": 120, "validation_score": 4.2326098139536565, "training_cpu_seconds": 3.124048624, "ce": 3.3574814796447754}
+{"time": "2026-10-09T22:39:24.909136+00:00", "message": "training_progress", "seed": 202, "arm": "transformer", "phase": "language", "step": 120, "target_updates": 120, "ce": 3.3574814796447754, "training_cpu_seconds": 3.124048624}
+{"time": "2026-10-09T22:39:25.135585+00:00", "message": "validation", "seed": 303, "arm": "transformer", "phase": "language", "step": 120, "validation_score": 4.244247192006939, "training_cpu_seconds": 3.243551935999995, "ce": 2.9952375888824463}
+{"time": "2026-10-09T22:39:25.151495+00:00", "message": "training_progress", "seed": 303, "arm": "transformer", "phase": "language", "step": 120, "target_updates": 120, "ce": 2.9952375888824463, "training_cpu_seconds": 3.243551935999995}
+{"time": "2026-10-09T22:39:27.778214+00:00", "message": "language_evaluation", "seed": 101, "arm": "transformer", "test_bpb": 4.4548387871055555, "printable": 0.9972222222222222}
+{"time": "2026-10-09T22:39:27.792093+00:00", "message": "fit_started", "seed": 101, "arm": "neural_energy", "phase": "language", "parameters": 249929, "updates": 120, "cpu_budget": null, "resumed_step": 0}
+{"time": "2026-10-09T22:39:30.748301+00:00", "message": "language_evaluation", "seed": 202, "arm": "transformer", "test_bpb": 4.4313780317620814, "printable": 0.9913194444444444}
+{"time": "2026-10-09T22:39:30.762170+00:00", "message": "fit_started", "seed": 202, "arm": "neural_energy", "phase": "language", "parameters": 249929, "updates": 120, "cpu_budget": null, "resumed_step": 0}
+{"time": "2026-10-09T22:39:30.949831+00:00", "message": "training_progress", "seed": 101, "arm": "neural_energy", "phase": "language", "step": 20, "target_updates": 120, "ce": 3.31789493560791, "training_cpu_seconds": 3.1563891999999996}
+{"time": "2026-10-09T22:39:31.603246+00:00", "message": "language_evaluation", "seed": 303, "arm": "transformer", "test_bpb": 4.472489022598303, "printable": 0.9947916666666667}
+{"time": "2026-10-09T22:39:31.617049+00:00", "message": "fit_started", "seed": 303, "arm": "neural_energy", "phase": "language", "parameters": 249929, "updates": 120, "cpu_budget": null, "resumed_step": 0}
+{"time": "2026-10-09T22:39:33.984464+00:00", "message": "training_progress", "seed": 202, "arm": "neural_energy", "phase": "language", "step": 20, "target_updates": 120, "ce": 3.288076400756836, "training_cpu_seconds": 3.214278384}
+{"time": "2026-10-09T22:39:35.165212+00:00", "message": "training_progress", "seed": 303, "arm": "neural_energy", "phase": "language", "step": 20, "target_updates": 120, "ce": 3.3127846717834473, "training_cpu_seconds": 3.5367517280000005}
+{"time": "2026-10-09T22:39:39.690475+00:00", "message": "validation", "seed": 101, "arm": "neural_energy", "phase": "language", "step": 40, "validation_score": 4.202040929658698, "training_cpu_seconds": 11.591475983999993, "ce": 3.4213593006134033}
+{"time": "2026-10-09T22:39:39.702392+00:00", "message": "training_progress", "seed": 101, "arm": "neural_energy", "phase": "language", "step": 40, "target_updates": 120, "ce": 3.4213593006134033, "training_cpu_seconds": 11.591475983999993}
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/concurrent/futures/process.py", line 263, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/rewt/experiment.py", line 256, in run_seed
+    model, fitting = train(model, arm, seed, "language", plan, corpus, base / arm / "language", teacher=teacher)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/rewt/experiment.py", line 166, in train
+    raise FloatingPointError(f"Non-finite objective at {arm}/{phase}/{index}")
+FloatingPointError: Non-finite objective at neural_energy/language/25
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/kt/Documents/EnergyTransformer/rewt/experiment.py", line 484, in <module>
+    main()
+  File "/home/kt/Documents/EnergyTransformer/rewt/experiment.py", line 473, in main
+    event("seed_complete", **future.result())
+                             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+FloatingPointError: Non-finite objective at neural_energy/language/25

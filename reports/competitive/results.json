@@ -1,0 +1,279 @@
+{
+  "quality": {
+    "128": {
+      "energy": {
+        "mean_bpb": 3.036913810855542,
+        "seed_bpb": [
+          3.026590810883285,
+          3.066628485539569,
+          3.0175221361437714
+        ]
+      },
+      "softmax": {
+        "mean_bpb": 3.139430514101204,
+        "seed_bpb": [
+          3.1319326292432654,
+          3.095278349794996,
+          3.191080563265351
+        ]
+      },
+      "local_softmax": {
+        "mean_bpb": 3.1119475510122028,
+        "seed_bpb": [
+          3.115743368230801,
+          3.0843114971634513,
+          3.1357877876423554
+        ]
+      },
+      "hybrid": {
+        "mean_bpb": 2.9979170112559346,
+        "seed_bpb": [
+          3.0143716138426155,
+          2.994115259068331,
+          2.985264160856857
+        ]
+      },
+      "hybrid_minus_energy": {
+        "mean": -0.03899679959960732,
+        "interval95": [
+          -0.04500555319823931,
+          -0.03291512151091311
+        ]
+      },
+      "hybrid_minus_softmax": {
+        "mean": -0.14151350284526965,
+        "interval95": [
+          -0.1543405600362092,
+          -0.12934235178936343
+        ]
+      },
+      "hybrid_minus_local_softmax": {
+        "mean": -0.11403053975626815,
+        "interval95": [
+          -0.1245950164705771,
+          -0.10377074786452495
+        ]
+      }
+    },
+    "512": {
+      "energy": {
+        "mean_bpb": 2.9913152926097943,
+        "seed_bpb": [
+          2.9836859019344675,
+          3.0150954246625066,
+          2.9751645512324085
+        ]
+      },
+      "softmax": {
+        "mean_bpb": 3.368063149961915,
+        "seed_bpb": [
+          3.429430938853226,
+          3.2581866074951495,
+          3.41657190353737
+        ]
+      },
+      "local_softmax": {
+        "mean_bpb": 3.059642279747144,
+        "seed_bpb": [
+          3.0599992926649535,
+          3.036785525234143,
+          3.082142021342335
+        ]
+      },
+      "hybrid": {
+        "mean_bpb": 2.946914688839435,
+        "seed_bpb": [
+          2.962228580552581,
+          2.943489684130956,
+          2.935025801834767
+        ]
+      },
+      "hybrid_minus_energy": {
+        "mean": -0.044400603770359495,
+        "interval95": [
+          -0.04844570413102234,
+          -0.0404096775528309
+        ]
+      },
+      "hybrid_minus_softmax": {
+        "mean": -0.42114846112248033,
+        "interval95": [
+          -0.43320128212991027,
+          -0.4090691226520384
+        ]
+      },
+      "hybrid_minus_local_softmax": {
+        "mean": -0.11272759090770901,
+        "interval95": [
+          -0.12003285202799079,
+          -0.10516161163535376
+        ]
+      }
+    }
+  },
+  "efficiency": {
+    "128": {
+      "energy": {
+        "prefill_s": 0.005775402503786609,
+        "decode_ms": 2.671947875569458,
+        "state_bytes": 6336.0,
+        "prefill_state_bytes": 6336.0,
+        "parameter_bytes": 580656.0
+      },
+      "softmax": {
+        "prefill_s": 0.0016853935085237026,
+        "decode_ms": 0.6320770607999293,
+        "state_bytes": 224640.0,
+        "prefill_state_bytes": 199680.0,
+        "parameter_bytes": 580716.0
+      },
+      "local_softmax": {
+        "prefill_s": 0.0021023360022809356,
+        "decode_ms": 0.6478860304923728,
+        "state_bytes": 99864.0,
+        "prefill_state_bytes": 99864.0,
+        "parameter_bytes": 580716.0
+      },
+      "hybrid": {
+        "prefill_s": 0.005754242010880262,
+        "decode_ms": 1.796676719095558,
+        "state_bytes": 37512.0,
+        "prefill_state_bytes": 37512.0,
+        "parameter_bytes": 580676.0
+      }
+    },
+    "1024": {
+      "energy": {
+        "prefill_s": 0.05912188900401816,
+        "decode_ms": 2.6796108741109492,
+        "state_bytes": 6336.0,
+        "prefill_state_bytes": 6336.0,
+        "parameter_bytes": 580656.0
+      },
+      "softmax": {
+        "prefill_s": 0.012632855970878154,
+        "decode_ms": 0.744134655178641,
+        "state_bytes": 1622400.0,
+        "prefill_state_bytes": 1597440.0,
+        "parameter_bytes": 580716.0
+      },
+      "local_softmax": {
+        "prefill_s": 0.009490323980571702,
+        "decode_ms": 0.696371374942828,
+        "state_bytes": 99864.0,
+        "prefill_state_bytes": 99864.0,
+        "parameter_bytes": 580716.0
+      },
+      "hybrid": {
+        "prefill_s": 0.04778244352201,
+        "decode_ms": 2.126138469975558,
+        "state_bytes": 37512.0,
+        "prefill_state_bytes": 37512.0,
+        "parameter_bytes": 580676.0
+      }
+    },
+    "4096": {
+      "energy": {
+        "prefill_s": 0.3687421854992863,
+        "decode_ms": 2.8921706252731383,
+        "state_bytes": 6336.0,
+        "prefill_state_bytes": 6336.0,
+        "parameter_bytes": 580656.0
+      },
+      "softmax": {
+        "prefill_s": 0.11612647550646216,
+        "decode_ms": 1.4617344677390065,
+        "state_bytes": 6414720.0,
+        "prefill_state_bytes": 6389760.0,
+        "parameter_bytes": 580716.0
+      },
+      "local_softmax": {
+        "prefill_s": 0.05124641550355591,
+        "decode_ms": 0.769777125242399,
+        "state_bytes": 99864.0,
+        "prefill_state_bytes": 99864.0,
+        "parameter_bytes": 580716.0
+      },
+      "hybrid": {
+        "prefill_s": 0.27089260998764075,
+        "decode_ms": 2.4592832505732076,
+        "state_bytes": 37512.0,
+        "prefill_state_bytes": 37512.0,
+        "parameter_bytes": 580676.0
+      }
+    },
+    "8192": {
+      "energy": {
+        "prefill_s": 0.414149632997578,
+        "decode_ms": 3.0825243757135468,
+        "state_bytes": 6336.0,
+        "prefill_state_bytes": 6336.0,
+        "parameter_bytes": 580656.0
+      },
+      "softmax": {
+        "prefill_s": 0.2644077744917013,
+        "decode_ms": 4.295058499337756,
+        "state_bytes": 12804480.0,
+        "prefill_state_bytes": 12779520.0,
+        "parameter_bytes": 580716.0
+      },
+      "local_softmax": {
+        "prefill_s": 0.09814692550571635,
+        "decode_ms": 0.9011862475745147,
+        "state_bytes": 99864.0,
+        "prefill_state_bytes": 99864.0,
+        "parameter_bytes": 580716.0
+      },
+      "hybrid": {
+        "prefill_s": 0.31571730502764694,
+        "decode_ms": 2.6119275935343467,
+        "state_bytes": 37512.0,
+        "prefill_state_bytes": 37512.0,
+        "parameter_bytes": 580676.0
+      }
+    },
+    "32768": {
+      "energy": {
+        "prefill_s": 1.833879239478847,
+        "decode_ms": 3.3231260003958596,
+        "state_bytes": 6336.0,
+        "prefill_state_bytes": 6336.0,
+        "parameter_bytes": 580656.0
+      },
+      "softmax": {
+        "prefill_s": 3.3444834850379266,
+        "decode_ms": 20.62014250077482,
+        "state_bytes": 51143040.0,
+        "prefill_state_bytes": 51118080.0,
+        "parameter_bytes": 580716.0
+      },
+      "local_softmax": {
+        "prefill_s": 0.6433422435075045,
+        "decode_ms": 1.3762862490693806,
+        "state_bytes": 99864.0,
+        "prefill_state_bytes": 99864.0,
+        "parameter_bytes": 580716.0
+      },
+      "hybrid": {
+        "prefill_s": 1.3600287859735545,
+        "decode_ms": 3.5050137812504545,
+        "state_bytes": 37512.0,
+        "prefill_state_bytes": 37512.0,
+        "parameter_bytes": 580676.0
+      }
+    }
+  },
+  "train_s": {
+    "energy": 168.38394427580837,
+    "softmax": 41.56230418822573,
+    "local_softmax": 43.022098443373885,
+    "hybrid": 128.45994744921336
+  },
+  "parameters": {
+    "energy": 145164,
+    "softmax": 145179,
+    "local_softmax": 145179,
+    "hybrid": 145169
+  },
+  "interval_scope": "Paired test-window bootstrap conditional on the tested training seeds; overlapping corpus crops can be dependent."
+}

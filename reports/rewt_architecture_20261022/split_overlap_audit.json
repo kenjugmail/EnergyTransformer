@@ -1,0 +1,17 @@
+{
+  "train": {
+    "new_identities": 5400,
+    "previous_identities": 51656,
+    "overlap": 502
+  },
+  "valid": {
+    "new_identities": 81,
+    "previous_identities": 2076,
+    "overlap": 3
+  },
+  "test": {
+    "new_identities": 162,
+    "previous_identities": 2792,
+    "overlap": 0
+  }
+}

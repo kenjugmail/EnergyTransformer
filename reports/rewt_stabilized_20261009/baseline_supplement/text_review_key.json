@@ -1,0 +1,542 @@
+[
+  {
+    "id": "C000",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C001",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C002",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C003",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C004",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C005",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C006",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C007",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C008",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C009",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C010",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C011",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C012",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C013",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C014",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C015",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C016",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C017",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C018",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C019",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C020",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C021",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C022",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C023",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C024",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C025",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C026",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C027",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C028",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C029",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C030",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C031",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C032",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C033",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C034",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C035",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C036",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C037",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C038",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C039",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C040",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C041",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C042",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C043",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C044",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C045",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C046",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C047",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C048",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C049",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C050",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C051",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C052",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C053",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C054",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C055",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C056",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C057",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C058",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C059",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C060",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C061",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C062",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C063",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C064",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C065",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C066",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C067",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C068",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C069",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C070",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C071",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C072",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C073",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C074",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C075",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C076",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C077",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C078",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C079",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C080",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C081",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C082",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C083",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C084",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C085",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C086",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C087",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C088",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C089",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_020"
+  }
+]

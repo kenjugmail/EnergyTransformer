@@ -1,0 +1,200 @@
+[
+  {
+    "arm": "softmax",
+    "seed": 47,
+    "lr": 0.001,
+    "steps": 728,
+    "cpu_s": 20.00454236800006,
+    "wall_s": 20.125139948997457,
+    "best": {
+      "steps": 728,
+      "cpu_s": 20.00454236800006,
+      "wall_s": 20.125139948997457,
+      "valid_bpb": 3.5069613513763978,
+      "last_train_nll": 2.3770360946655273,
+      "host_load_1m": 8.9794921875
+    },
+    "training_bytes": 745472,
+    "compile_setup_wall_s": 7.277013420000003,
+    "max_update_cpu_s": 0.03903710400001614,
+    "parameters": 145179,
+    "checkpoint": "runs/compute_confirmation_v2/pilot_softmax_47_0.001.pt",
+    "checkpoint_sha256": "046836ba2a1e583fe822fdbdc289a70a3e1ce33bbbc7268151b35741c4f5f585"
+  },
+  {
+    "arm": "softmax",
+    "seed": 47,
+    "lr": 0.002,
+    "steps": 728,
+    "cpu_s": 20.022409263999826,
+    "wall_s": 20.10859402600181,
+    "best": {
+      "steps": 728,
+      "cpu_s": 20.022409263999826,
+      "wall_s": 20.10859402600181,
+      "valid_bpb": 3.2899954952123878,
+      "last_train_nll": 2.234832763671875,
+      "host_load_1m": 8.9794921875
+    },
+    "training_bytes": 745472,
+    "compile_setup_wall_s": 0.022863204000714177,
+    "max_update_cpu_s": 0.034546560000023874,
+    "parameters": 145179,
+    "checkpoint": "runs/compute_confirmation_v2/pilot_softmax_47_0.002.pt",
+    "checkpoint_sha256": "96bf0272f9bf1f03a7887a09e35973bb26d7cb93584b6981e575d08bb4febfe8"
+  },
+  {
+    "arm": "softmax",
+    "seed": 47,
+    "lr": 0.004,
+    "steps": 730,
+    "cpu_s": 20.01918995199953,
+    "wall_s": 20.1479647119977,
+    "best": {
+      "steps": 730,
+      "cpu_s": 20.01918995199953,
+      "wall_s": 20.1479647119977,
+      "valid_bpb": 3.3469054429599203,
+      "last_train_nll": 2.2677102088928223,
+      "host_load_1m": 8.9794921875
+    },
+    "training_bytes": 747520,
+    "compile_setup_wall_s": 0.02339006799957133,
+    "max_update_cpu_s": 0.039284527999996044,
+    "parameters": 145179,
+    "checkpoint": "runs/compute_confirmation_v2/pilot_softmax_47_0.004.pt",
+    "checkpoint_sha256": "659e95f1323e70d35008d5fd14c01cfe7c0c01425ef6c8c9a92e418ae144d5e2"
+  },
+  {
+    "arm": "local_softmax",
+    "seed": 47,
+    "lr": 0.001,
+    "steps": 728,
+    "cpu_s": 20.00242233600001,
+    "wall_s": 20.089060000001155,
+    "best": {
+      "steps": 728,
+      "cpu_s": 20.00242233600001,
+      "wall_s": 20.089060000001155,
+      "valid_bpb": 3.5073285128381584,
+      "last_train_nll": 2.3639752864837646,
+      "host_load_1m": 8.71630859375
+    },
+    "training_bytes": 745472,
+    "compile_setup_wall_s": 5.5655705910003235,
+    "max_update_cpu_s": 0.035441711999993686,
+    "parameters": 145179,
+    "checkpoint": "runs/compute_confirmation_v2/pilot_local_softmax_47_0.001.pt",
+    "checkpoint_sha256": "d5180e2af129c3d940495ee447a032b922b011a0db4038b12e1c764f43a4dc45"
+  },
+  {
+    "arm": "local_softmax",
+    "seed": 47,
+    "lr": 0.002,
+    "steps": 724,
+    "cpu_s": 20.011580687999704,
+    "wall_s": 20.107777253003405,
+    "best": {
+      "steps": 724,
+      "cpu_s": 20.011580687999704,
+      "wall_s": 20.107777253003405,
+      "valid_bpb": 3.2888706605992786,
+      "last_train_nll": 2.2901387214660645,
+      "host_load_1m": 8.71630859375
+    },
+    "training_bytes": 741376,
+    "compile_setup_wall_s": 0.027220007999858353,
+    "max_update_cpu_s": 0.03375998399999958,
+    "parameters": 145179,
+    "checkpoint": "runs/compute_confirmation_v2/pilot_local_softmax_47_0.002.pt",
+    "checkpoint_sha256": "a9cca1e3f42187999860a12143301df163ddea6f7d061108e2d85007c584a1a7"
+  },
+  {
+    "arm": "local_softmax",
+    "seed": 47,
+    "lr": 0.004,
+    "steps": 720,
+    "cpu_s": 20.006823487999398,
+    "wall_s": 20.095461004993922,
+    "best": {
+      "steps": 720,
+      "cpu_s": 20.006823487999398,
+      "wall_s": 20.095461004993922,
+      "valid_bpb": 3.3079502510692915,
+      "last_train_nll": 2.459954023361206,
+      "host_load_1m": 8.71630859375
+    },
+    "training_bytes": 737280,
+    "compile_setup_wall_s": 0.028769737999937206,
+    "max_update_cpu_s": 0.03688089600001376,
+    "parameters": 145179,
+    "checkpoint": "runs/compute_confirmation_v2/pilot_local_softmax_47_0.004.pt",
+    "checkpoint_sha256": "c7cdcc680024fe474731dd8636c2c5209b521f2569bbde6a789ac48e822f2291"
+  },
+  {
+    "arm": "hybrid",
+    "seed": 47,
+    "lr": 0.001,
+    "steps": 616,
+    "cpu_s": 20.014781615999944,
+    "wall_s": 20.13658341298833,
+    "best": {
+      "steps": 616,
+      "cpu_s": 20.014781615999944,
+      "wall_s": 20.13658341298833,
+      "valid_bpb": 3.5256608888517786,
+      "last_train_nll": 2.429413318634033,
+      "host_load_1m": 8.9794921875
+    },
+    "training_bytes": 630784,
+    "compile_setup_wall_s": 21.458292762999918,
+    "max_update_cpu_s": 0.0483104639999965,
+    "parameters": 145169,
+    "checkpoint": "runs/compute_confirmation_v2/pilot_hybrid_47_0.001.pt",
+    "checkpoint_sha256": "09f648ff03c953532c6a5e3334459e5711ec9d843d21bfe80ce3ec67303bc1a7"
+  },
+  {
+    "arm": "hybrid",
+    "seed": 47,
+    "lr": 0.002,
+    "steps": 620,
+    "cpu_s": 20.02946492799999,
+    "wall_s": 20.137698030009233,
+    "best": {
+      "steps": 620,
+      "cpu_s": 20.02946492799999,
+      "wall_s": 20.137698030009233,
+      "valid_bpb": 3.258841683589956,
+      "last_train_nll": 2.125728130340576,
+      "host_load_1m": 8.9794921875
+    },
+    "training_bytes": 634880,
+    "compile_setup_wall_s": 0.029456708999532566,
+    "max_update_cpu_s": 0.04731136000000902,
+    "parameters": 145169,
+    "checkpoint": "runs/compute_confirmation_v2/pilot_hybrid_47_0.002.pt",
+    "checkpoint_sha256": "e0a4c9f00782b2da8affa750059f4de7ce99b1325fbf1cafdff66d7d1c1a1f0c"
+  },
+  {
+    "arm": "hybrid",
+    "seed": 47,
+    "lr": 0.004,
+    "steps": 623,
+    "cpu_s": 20.01500019200011,
+    "wall_s": 20.109286445999714,
+    "best": {
+      "steps": 623,
+      "cpu_s": 20.01500019200011,
+      "wall_s": 20.109286445999714,
+      "valid_bpb": 3.164513785795729,
+      "last_train_nll": 2.077780246734619,
+      "host_load_1m": 8.9794921875
+    },
+    "training_bytes": 637952,
+    "compile_setup_wall_s": 0.03201379999973142,
+    "max_update_cpu_s": 0.042231839999999465,
+    "parameters": 145169,
+    "checkpoint": "runs/compute_confirmation_v2/pilot_hybrid_47_0.004.pt",
+    "checkpoint_sha256": "80abdb8b828f13fd14b2da599fce02a71defe49b7b9c4def71ee27ec14573276"
+  }
+]

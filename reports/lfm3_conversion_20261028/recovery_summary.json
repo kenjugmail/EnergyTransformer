@@ -1,0 +1,20 @@
+{
+  "best_stage": "distilled",
+  "best_step": 512,
+  "best_validation_kl": 0.7717722058296204,
+  "test": {
+    "kl": 0.6585766039788723,
+    "nll": 1.7181181833148003,
+    "teacher_nll": 1.7610273510217667,
+    "agreement": 0.6685791015625,
+    "hidden_relative_mse": 0.4349694699048996,
+    "tokens": 16384
+  },
+  "training_tokens": 524288,
+  "trainable_parameters": 389739360,
+  "parameters": 1784445792,
+  "elapsed_seconds": 1096.1816833909834,
+  "best_sha256": "1747965adc9104b9bfb5f2490efd76588b3f4bcb1e45070f6e11ca51f8e9b33c",
+  "peak_cuda_allocated_gib": 13.147848129272461,
+  "limitations": "Short conversion pilot, not capability recovery certification. Evaluation uses cropped chat continuations; no long-context or broad benchmark claim."
+}

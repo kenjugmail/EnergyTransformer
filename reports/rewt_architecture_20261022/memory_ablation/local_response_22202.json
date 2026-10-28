@@ -1,0 +1,12 @@
+{
+  "case": {
+    "delta_size": 0,
+    "name": "local_response_22202",
+    "seed": 22202
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/memory_ablation/local_response_22202/best.pt",
+  "checkpoint_sha256": "00ef552e52c9e7fd70251a396373d8a2b2a259d20208561ccd71a7923a34c1bf",
+  "parameters": 32752,
+  "training_cpu_seconds": 48.62649716799979,
+  "validation_accuracy": 0.5494791666666666
+}

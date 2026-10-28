@@ -1,0 +1,24 @@
+{
+  "batch": 32,
+  "cache_history": true,
+  "context": 128,
+  "cpu_ms_per_byte_median": 0.06877349218750001,
+  "cpu_seconds_median": 0.28169622400000005,
+  "cpu_seconds_repeats": [
+    0.28169622400000005,
+    0.2811783520000004,
+    0.28530831999999995
+  ],
+  "early_backtrack": true,
+  "halting_tolerance": 0.0,
+  "isolated_process_id": 668507,
+  "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+  "parameter_bytes": 999956,
+  "positive_operator_allocation_bytes": 1144271494,
+  "process_peak_rss_before_profiler_bytes": 567222272,
+  "rounds": 4,
+  "rss_before_inference_bytes": 539811840,
+  "rss_note": "Linux process RSS sampled every 2 ms in a fresh process; includes Python/Torch/model/data buffers, excludes training and operator-profiler bookkeeping.",
+  "sampled_incremental_inference_rss_bytes": 28102656,
+  "sampled_inference_peak_rss_bytes": 567914496
+}

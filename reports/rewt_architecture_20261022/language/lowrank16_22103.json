@@ -1,0 +1,19 @@
+{
+  "best_step": 512,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "lowrank16_22103",
+    "overrides": {
+      "backbone": "scan",
+      "output_rank": 16
+    },
+    "seed": 22103,
+    "variant": "lowrank16"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22103/best.pt",
+  "checkpoint_sha256": "5b04e0702878b3c16cf67aabaa76878d19d689ead13edce01665cb1deb795a9f",
+  "parameters": 208800,
+  "training_cpu_seconds": 85.26088646400058,
+  "validation_bpb": 2.2819073522592572,
+  "validation_cpu_seconds": 1.2314989759997843
+}

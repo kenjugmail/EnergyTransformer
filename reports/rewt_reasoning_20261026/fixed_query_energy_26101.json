@@ -1,0 +1,27 @@
+{
+  "active_parameters": 68502,
+  "case": {
+    "config": {
+      "backtracks": 4,
+      "energy_rounds": 2,
+      "max_hops": 3,
+      "modes": 16,
+      "reread": false,
+      "step_size": 0.5,
+      "width": 48
+    },
+    "name": "fixed_query_energy_26101",
+    "seed": 26101,
+    "variant": "fixed_query_energy"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/fixed_query_energy_26101/best.pt",
+  "checkpoint_sha256": "c2b92a5e1db27537d1f6be85396ec5970c321c6b13129c920d23913ded75509a",
+  "maximum_gradient": 12.14815902709961,
+  "parameters": 68502,
+  "training_cpu_seconds": 33.61292516799995,
+  "training_examples_sha256": "34ff9826f654265bae6a942b0d8676138ad04ac1f06e920e095e53b9fda6bc2e",
+  "updates": 800,
+  "validation_ce": 1.7596773783365884,
+  "validation_complete": 0.16666666666666666,
+  "validation_cpu_seconds": 0.5837318399999987
+}

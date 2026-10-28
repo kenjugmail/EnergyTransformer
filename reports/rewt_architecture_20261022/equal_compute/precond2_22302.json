@@ -1,0 +1,20 @@
+{
+  "best_step": 115,
+  "case": {
+    "name": "precond2_22302",
+    "overrides": {
+      "solver": "preconditioned",
+      "step_size": 0.75
+    },
+    "seed": 22302,
+    "variant": "precond2"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond2_22302/best.pt",
+  "checkpoint_sha256": "084bed6de744dbd1db50bbb65648278f28b6d48d5dda1f0b6b94866ac680529e",
+  "parameters": 256096,
+  "training_cpu_seconds": 150.415927536,
+  "training_tokens": 353280,
+  "training_wall_seconds": 150.52989893598715,
+  "updates": 115,
+  "validation_bpb": 2.8722061901548495
+}

@@ -1,0 +1,16 @@
+{
+  "best_step": 512,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "control_22102",
+    "overrides": {},
+    "seed": 22102,
+    "variant": "control"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22102/best.pt",
+  "checkpoint_sha256": "998a72e11fa2b875be257f41704d64893937ca824426f8258f47107d27a78699",
+  "parameters": 256096,
+  "training_cpu_seconds": 692.9928259839994,
+  "validation_bpb": 2.0948079278644913,
+  "validation_cpu_seconds": 6.465492224000002
+}

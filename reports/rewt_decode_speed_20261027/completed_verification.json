@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-10-28T00:43:19.070811+00:00",
+  "tests_passed": 263,
+  "continuation_comparisons": 126,
+  "demo_published_response_matches": 12,
+  "benchmark_source_and_checkpoint_hashes_verified": true,
+  "local_document_links_verified": true,
+  "source_sha256": {
+    "rewt/streaming.py": "083e973c92bc293e963d3984b134c9c71f2659f14132e10db9285e70a3da5bc0",
+    "rewt/streaming_decode.py": "8de28b04be2365fc2e984378bfd99f4b554e1b9a40f9d06e913735d16a56c9d3",
+    "rewt/fast_energy.py": "325cd2e9b06b33dc44edb1e6836a0130efdda9f0bf1365ad051e20d2659c567c",
+    "rewt/fast_decode.py": "b69cf4cd65530d9a1e8b669195528c66fafca65386942307e82788bea7a8a3ec",
+    "scripts/sample_rewt_streaming.py": "407ea0abf6b536d1a9606ac52e1ca7dc412e0e235c8b88c98a9b4d066921f0f7",
+    "scripts/benchmark_rewt_fast_decode.py": "393534badb055f3119017fd597060af9a7ddb6ab96139a4c6a317c0859687a8a",
+    "scripts/verify_rewt_fast_energy.py": "d995509fdda9d9da3d4262425685212c25650d3905c0322875153971c64e4345",
+    "scripts/demo_rewt_streaming.py": "a87d14ce3b0adc29ab44805312cb3606a672baaedf4437e1c929ac104ba24e1f",
+    "scripts/plot_rewt_showcase.py": "39eec0d1becde8cb8b227c0825e58ad5255108584fc86911947d1619f912aa1b",
+    "tests_rewt/test_fast_decode.py": "131b6bb7bc30dbbd2d240f463359761bce705c8d1dc667bcd173c1c45bef4bea"
+  },
+  "scope": "Same-weight inference acceleration and reproducible proposal showcase. No retraining or new quality claim."
+}

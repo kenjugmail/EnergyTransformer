@@ -2,9 +2,22 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+.venv-*/
 .env
 *.tmp
 /data/
 /runs/
 /checkpoints/
 *.egg-info/
+/build/
+/dist/
+
+# Transient native-document snapshots can contain expiring provider asset URLs.
+/course_project/presentation_20261028/raw-google-slides.json
+/course_project/presentation_20261028/google-design-system.json
+/course_project/presentation_20261028/update_20261028/raw-*.json
+/course_project/presentation_20261028/update_20261028/design-*.json
+/course_project/presentation_20261028/update_20261028/native_requests.json
+/course_project/presentation_20261028/update_20261028/source_render/
+/course_project/presentation_20261028/update_20261028/reference_render/
+/course_project/presentation_20261028/update_20261028/local_render/

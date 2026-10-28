@@ -1,0 +1,45 @@
+{"fit": "pilot_softmax_47_0.001", "steps": 1, "cpu_s": 6.131731440000003, "wall_s": 8.332203445999767, "valid_bpb": 8.094462682515749, "last_train_nll": 5.595932960510254, "host_load_1m": 8.8095703125}
+{"fit": "pilot_local_softmax_47_0.001", "steps": 1, "cpu_s": 6.566460255999999, "wall_s": 6.636393603000215, "valid_bpb": 8.0920686123563, "last_train_nll": 5.594509601593018, "host_load_1m": 9.4609375}
+{"fit": "pilot_hybrid_47_0.001", "steps": 1, "cpu_s": 25.563496496000006, "wall_s": 26.718810086999838, "valid_bpb": 8.019305346847897, "last_train_nll": 5.5579423904418945, "host_load_1m": 9.17822265625}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/kt/Documents/EnergyTransformer/energy_real/compute_study.py", line 248, in <module>
+    run(parser.parse_args())
+  File "/home/kt/Documents/EnergyTransformer/energy_real/compute_study.py", line 182, in run
+    pilots = fit_group([(a, args.pilot_seed, lr) for a in ARMS for lr in plan['learning_rates']],
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/energy_real/compute_study.py", line 91, in fit_group
+    loss = job['objective'](x, y)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1261, in compile_wrapper
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/energy_real/compute_study.py", line 39, in objective
+    def objective(x, y):
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py", line 1548, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_functorch/aot_autograd.py", line 1289, in forward
+    return compiled_fn(full_args)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 2594, in __call__
+    return self.compiled_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 1189, in runtime_wrapper
+    result = _codegen_runtime_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/codegen.py:codegen(runtime_wrapper_orchestration)", line 11, in _runtime_wrapper
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/utils.py", line 118, in g
+    return f(*args)
+           ^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 3521, in forward
+    return CompiledFunction._fwd_fn(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_functorch/_aot_autograd/codegen.py:codegen(compiled_function_forward)", line 2, in _compiled_forward
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/_inductor/output_code.py", line 828, in __call__
+    return self.current_callable(inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/runs/cpu_compile_cache/e2/ce2wrebhvvwb2gifwlylhbczvjpi7gkwy4s7h7yw3fyvsnso6g7i.py", line 3886, in call
+    cpp_fused_arange_bitwise_and_eq_gt_le_masked_fill_scalar_tensor_sub_unsqueeze_where_15(buf262)
+KeyboardInterrupt

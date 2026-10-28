@@ -1,0 +1,7 @@
+{
+  "failures": [
+    "Duplicate history keyword in initial case-construction helper; no fits started.",
+    "The smoke/first micro harness read raw_norm instead of raw_gradient_norm from the existing optimizer diagnostics. Instrumentation failure; no completed micro result enters selection."
+  ],
+  "model_source_changed_after_tests": false
+}

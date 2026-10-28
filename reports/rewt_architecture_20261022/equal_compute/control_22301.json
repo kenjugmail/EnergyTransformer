@@ -1,0 +1,17 @@
+{
+  "best_step": 113,
+  "case": {
+    "name": "control_22301",
+    "overrides": {},
+    "seed": 22301,
+    "variant": "control"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/control_22301/best.pt",
+  "checkpoint_sha256": "a679eafa00993ea7f42b9888320d89d3bd2d2c552358f442e04b838cb27bb65f",
+  "parameters": 256096,
+  "training_cpu_seconds": 150.34770958400003,
+  "training_tokens": 347136,
+  "training_wall_seconds": 150.43869742611423,
+  "updates": 113,
+  "validation_bpb": 2.869666454336268
+}

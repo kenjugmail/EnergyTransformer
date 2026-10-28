@@ -1,0 +1,14 @@
+{
+  "completed_utc": "2026-10-26T17:11:37.262411+00:00",
+  "new_complete_fits": 36,
+  "smoke_fits": 8,
+  "fresh_task_responses_audited": 9504,
+  "tests_passed": 226,
+  "source_and_checkpoint_hashes_verified": true,
+  "earlier_reasoner_sources_and_checkpoints_preserved": true,
+  "documentation_links_verified": true,
+  "cli_sample_verified": true,
+  "cuda_float32_checks": "passed",
+  "scope": "Small matched-model study; no universal superiority. Equal-CPU language quality, short decoding and GPU training remain losses.",
+  "figure_sha256": "31ef3ff4faa78349fe4aeadf3c8143357ffb9cb88c253ec51698dbb92c8e388f"
+}

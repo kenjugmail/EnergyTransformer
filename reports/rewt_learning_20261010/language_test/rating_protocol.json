@@ -1,0 +1,16 @@
+{
+  "all_samples_read": true,
+  "anonymous_packet": true,
+  "created": "2026-10-10T13:48:12.306507+00:00",
+  "key_not_read_until_ratings_saved": true,
+  "rater": "Implementing assistant; exploratory, not independent human evaluation",
+  "ratings_sha256": "2ee4f9b900ea6a004e15037a2321f3a1a6059127a0a02158c45df81a952165c9",
+  "rubric": {
+    "coherence": "1 disconnected or contradictory events/characters; 2 weak local thread with substantial drift; 3 plausible connected sequence; 4 clear consistent narrative; 5 strong narrative continuity.",
+    "fluency": "1 mostly broken syntax or invented words; 2 some fluent clauses with frequent grammar failures; 3 generally readable with occasional errors; 4 consistently fluent; 5 polished prose.",
+    "relevance": "1 abandons prompt; 2 retains a name or broad story setting; 3 develops the starting scene loosely; 4 clearly continues the prompt; 5 closely sustains its specific details."
+  },
+  "sample_count": 90,
+  "text_packet_sha256": "e5c1a14e2ef18c7b96b1e229e7ee419db060045c2fdf7681162dcd04061fc5b0",
+  "usefulness": "Whole continuation readable and logically connected to the starting scene; isolated good sentences do not qualify."
+}

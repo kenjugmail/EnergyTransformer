@@ -1,0 +1,23 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 768,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "delta_22103",
+    "overrides": {
+      "backbone": "scan",
+      "delta_size": 16
+    },
+    "seed": 22103,
+    "variant": "delta"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/delta_22103/best.pt",
+  "checkpoint_sha256": "dd75b0d9f0affec71c36840a646865a1cb8facb35eefa7366a60fb44269d049d",
+  "maximum_gradient": 232.96080017089844,
+  "parameters": 257537,
+  "response_tokens": 396391,
+  "training_cpu_seconds": 192.34216782400335,
+  "validation_ce": 0.4938129245057626,
+  "validation_complete": 0.3580246913580247,
+  "validation_cpu_seconds": 12.807301984000333
+}

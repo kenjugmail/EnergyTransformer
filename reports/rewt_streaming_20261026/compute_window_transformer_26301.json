@@ -1,0 +1,33 @@
+{
+  "active_parameters": 111680,
+  "batch_sha256": "4a4076261991c956a767cbb052bc162f869eecf6ac709660a9973341fb7468c1",
+  "best_step": 1495,
+  "case": {
+    "config": {
+      "chunk": 32,
+      "heads": 4,
+      "hidden": 162,
+      "hybrid": false,
+      "layers": 2,
+      "modes": 16,
+      "rounds": 0,
+      "width": 64,
+      "window": 64
+    },
+    "name": "compute_window_transformer_26301",
+    "objective": "compute",
+    "seed": 26301,
+    "variant": "window_transformer"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_window_transformer_26301/best.pt",
+  "checkpoint_sha256": "1b76ea1d05187af3bf8c789e88e4edf25ce4d0a4ec1ced66f3a45cc771351a03",
+  "parameters": 111680,
+  "selection": [
+    -1.4913323453620864
+  ],
+  "target_tokens": 4592640,
+  "training_cpu_seconds": 90.0331310080021,
+  "training_wall_seconds": 89.45317996444646,
+  "updates": 1495,
+  "validation_cpu_seconds": 0.3980929119999246
+}

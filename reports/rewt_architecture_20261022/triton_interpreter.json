@@ -1,0 +1,454 @@
+{
+  "rows": [
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 0,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 0,
+      "tile": 64,
+      "max_abs": 1.4901161193847656e-08
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 0,
+      "tile": 128,
+      "max_abs": 1.4901161193847656e-08
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 0,
+      "tile": 256,
+      "max_abs": 1.4901161193847656e-08
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 1,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 1,
+      "tile": 64,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 1,
+      "tile": 128,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 1,
+      "tile": 256,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 4,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 4,
+      "tile": 64,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 4,
+      "tile": 128,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 4,
+      "tile": 256,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 12,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 12,
+      "tile": 64,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 12,
+      "tile": 128,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 5,
+      "dimensions": 280,
+      "rounds": 12,
+      "tile": 256,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 0,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 64,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 128,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 256,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 64,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 128,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 256,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 64,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 128,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 256,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 64,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 128,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 16,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 256,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 0,
+      "max_abs": 2.9802322387695312e-08
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 64,
+      "max_abs": 7.450580596923828e-09
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 128,
+      "max_abs": 7.450580596923828e-09
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 256,
+      "max_abs": 7.450580596923828e-09
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 64,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 128,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 256,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 0,
+      "max_abs": 2.384185791015625e-07
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 64,
+      "max_abs": 2.384185791015625e-07
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 128,
+      "max_abs": 2.384185791015625e-07
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 256,
+      "max_abs": 2.384185791015625e-07
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 0,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 64,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 128,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 32,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 256,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 0,
+      "max_abs": 2.384185791015625e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 64,
+      "max_abs": 2.9802322387695312e-08
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 128,
+      "max_abs": 2.9802322387695312e-08
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 0,
+      "tile": 256,
+      "max_abs": 2.9802322387695312e-08
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 64,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 128,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 1,
+      "tile": 256,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 0,
+      "max_abs": 4.76837158203125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 64,
+      "max_abs": 4.76837158203125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 128,
+      "max_abs": 4.76837158203125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 4,
+      "tile": 256,
+      "max_abs": 4.76837158203125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 0,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 64,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 128,
+      "max_abs": 1.1920928955078125e-07
+    },
+    {
+      "modes": 64,
+      "dimensions": 400,
+      "rounds": 12,
+      "tile": 256,
+      "max_abs": 1.1920928955078125e-07
+    }
+  ],
+  "mode": "Triton CPU interpreter",
+  "scope": "Indexing and formula verification only. GPU compiler, execution and CUDA graph tests are separate."
+}

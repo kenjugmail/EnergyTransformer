@@ -1,0 +1,23 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 768,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "patch4_22102",
+    "overrides": {
+      "backbone": "scan",
+      "patch_stride": 4
+    },
+    "seed": 22102,
+    "variant": "patch4"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/patch4_22102/best.pt",
+  "checkpoint_sha256": "d806f0200b7d1b052f4bc3bcc3a8f6ce1a9e3fc0b26fbc5d4d90892df94db1da",
+  "maximum_gradient": 224.45045471191406,
+  "parameters": 246688,
+  "response_tokens": 396210,
+  "training_cpu_seconds": 157.93080275200873,
+  "validation_ce": 0.48255343348245683,
+  "validation_complete": 0.345679012345679,
+  "validation_cpu_seconds": 9.034179679999397
+}

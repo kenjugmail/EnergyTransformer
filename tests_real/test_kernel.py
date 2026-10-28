@@ -66,6 +66,23 @@ def test_chunk_gla_gradients_match_serial_loop(case, chunk):
         assert (a[n].grad - b[n].grad).abs().max() < 1e-9, n
 
 
+@pytest.mark.parametrize('backend', ['dmat', 'matmul'])
+def test_single_step_both_reads_and_state_gradients(case, backend):
+    names = ('u', 'wk', 'v', 's0', 'f', 'u2')
+    values = {n: case[n] if n == 's0' else case[n][:, :1] for n in names}
+    a = {n: values[n].clone().requires_grad_(True) for n in names}
+    r, state, ctx = chunk_gla(a['u'], a['wk'], a['v'], a['f'].log(), a['s0'], 64, backend)
+    outputs = (r, read_again(ctx, a['u2']), state)
+    b = {n: values[n].clone().requires_grad_(True) for n in names}
+    expected = naive_gla(b['u'], b['wk'], b['v'], b['f'], b['s0'], b['u2'])
+    for got, want in zip(outputs, expected):
+        torch.testing.assert_close(got, want, atol=1e-10, rtol=1e-10)
+    sum(v.square().sum() for v in outputs).backward()
+    sum(v.square().sum() for v in expected).backward()
+    for name in names:
+        torch.testing.assert_close(a[name].grad, b[name].grad, atol=1e-9, rtol=1e-9)
+
+
 def test_reference_diagonal_scan_matches_serial_loop():
     """Guards the original spark_kit scan, with an additional direct serial test."""
     torch.manual_seed(0)

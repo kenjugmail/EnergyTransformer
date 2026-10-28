@@ -1,0 +1,4 @@
+{"time": "2026-10-22T21:01:43.725526+00:00", "message": "long_memory_validation", "case": "local_22201", "step": 384, "accuracy": 0.4765625}
+{"time": "2026-10-22T21:01:57.451184+00:00", "message": "long_memory_validation", "case": "local_22201", "step": 768, "accuracy": 0.546875}
+{"time": "2026-10-22T21:02:10.713924+00:00", "message": "long_memory_validation", "case": "local_22201", "step": 1152, "accuracy": 0.5390625}
+{"time": "2026-10-22T21:02:23.831136+00:00", "message": "long_memory_validation", "case": "local_22201", "step": 1536, "accuracy": 0.546875}

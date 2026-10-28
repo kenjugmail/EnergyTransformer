@@ -1,0 +1,6573 @@
+{
+  "source_unchanged": {
+    "__init__.py": true,
+    "data.py": true,
+    "evaluate.py": true,
+    "experiment.py": true,
+    "improve.py": true,
+    "improve_report.py": true,
+    "model.py": true,
+    "optim.py": true,
+    "profile.py": true,
+    "report.py": true,
+    "stabilize.py": true,
+    "tasks.py": true
+  },
+  "source_snapshot_unchanged": true,
+  "fresh_test_offsets": true,
+  "semantic_splits_disjoint": true,
+  "prior_test_tasks_excluded": true,
+  "target_bytes_per_model": 1048576,
+  "policy_checks": [
+    {
+      "arm": "legacy_fourier",
+      "seed": 101,
+      "kind": "language_policy",
+      "bpb": 2.9280634490059123,
+      "cpu_seconds": 0.20886247999987972,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.9280634490059123,
+        "brier": 0.6978657245635986,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 8192,
+          "energy_calls": 768,
+          "gradient_calls": 256
+        },
+        "cpu_ms_per_byte": 0.10198363281244127,
+        "cpu_seconds": 0.20886247999987972,
+        "energy_calls_per_position": 6.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 2.0,
+        "next_byte_accuracy": 0.43212890625,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.2601655450416729
+      },
+      "rounds": 2
+    },
+    {
+      "arm": "legacy_fourier",
+      "seed": 101,
+      "kind": "reasoning_policy",
+      "bpb": 0.875058889692291,
+      "cpu_seconds": 3.07584358400004,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "answer_bpb": 0.875058889692291,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.7965796579657966
+      },
+      "rounds": 4
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 101,
+      "kind": "language_policy",
+      "bpb": 2.9210482766772183,
+      "cpu_seconds": 0.2546820640000078,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.9210482766772183,
+        "brier": 0.6962280869483948,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 8192,
+          "energy_calls": 1024,
+          "gradient_calls": 512
+        },
+        "cpu_ms_per_byte": 0.12435647656250381,
+        "cpu_seconds": 0.2546820640000078,
+        "energy_calls_per_position": 8.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 4.0,
+        "next_byte_accuracy": 0.42919921875,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.3569670289289206
+      },
+      "rounds": 4
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 101,
+      "kind": "reasoning_policy",
+      "bpb": 0.8711822122988068,
+      "cpu_seconds": 3.2179555360000904,
+      "halting_tolerance": 0.005,
+      "metrics": {
+        "answer_bpb": 0.8711822122988068,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.798079807980798
+      },
+      "rounds": 8
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 101,
+      "kind": "language_policy",
+      "bpb": 2.9077626168980664,
+      "cpu_seconds": 0.1546907359997931,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.9077626168980664,
+        "brier": 0.6920526623725891,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 4096,
+          "energy_calls": 512,
+          "gradient_calls": 256
+        },
+        "cpu_ms_per_byte": 0.07553258593739898,
+        "cpu_seconds": 0.1546907359997931,
+        "energy_calls_per_position": 4.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 2.0,
+        "next_byte_accuracy": 0.43798828125,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.15539572504349053
+      },
+      "rounds": 2
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 101,
+      "kind": "reasoning_policy",
+      "bpb": 0.9346244778215476,
+      "cpu_seconds": 2.130745152000145,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "answer_bpb": 0.9346244778215476,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.7902790279027903
+      },
+      "rounds": 4
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 101,
+      "kind": "language_policy",
+      "bpb": 3.039438381808762,
+      "cpu_seconds": 1.1249305760002244,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 3.039438381808762,
+        "brier": 0.7181396484375,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 8192,
+          "energy_calls": 1408,
+          "gradient_calls": 512
+        },
+        "cpu_ms_per_byte": 0.5492825078126096,
+        "cpu_seconds": 1.1249305760002244,
+        "energy_calls_per_position": 11.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 4.0,
+        "next_byte_accuracy": 0.41064453125,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 1.1887504839105532
+      },
+      "rounds": 4
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 101,
+      "kind": "reasoning_policy",
+      "bpb": 0.8580387047203855,
+      "cpu_seconds": 6.06566303999989,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "answer_bpb": 0.8580387047203855,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.804080408040804
+      },
+      "rounds": 2
+    },
+    {
+      "arm": "legacy_fourier",
+      "seed": 202,
+      "kind": "language_policy",
+      "bpb": 2.9182872672002667,
+      "cpu_seconds": 0.16325185599998804,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.9182872672002667,
+        "brier": 0.6956015825271606,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 4096,
+          "energy_calls": 384,
+          "gradient_calls": 128
+        },
+        "cpu_ms_per_byte": 0.07971282031249416,
+        "cpu_seconds": 0.16325185599998804,
+        "energy_calls_per_position": 3.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 1.0,
+        "next_byte_accuracy": 0.4443359375,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.16870746004860848
+      },
+      "rounds": 1
+    },
+    {
+      "arm": "legacy_fourier",
+      "seed": 202,
+      "kind": "reasoning_policy",
+      "bpb": 0.8664411324549013,
+      "cpu_seconds": 4.872561632000043,
+      "halting_tolerance": 0.001,
+      "metrics": {
+        "answer_bpb": 0.8664411324549013,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.8028802880288028
+      },
+      "rounds": 8
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 202,
+      "kind": "language_policy",
+      "bpb": 2.899548037562255,
+      "cpu_seconds": 0.16504988799988496,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.899548037562255,
+        "brier": 0.6915557384490967,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 2048,
+          "energy_calls": 256,
+          "gradient_calls": 128
+        },
+        "cpu_ms_per_byte": 0.08059076562494383,
+        "cpu_seconds": 0.16504988799988496,
+        "energy_calls_per_position": 2.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 1.0,
+        "next_byte_accuracy": 0.4404296875,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.18443279096391052
+      },
+      "rounds": 1
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 202,
+      "kind": "reasoning_policy",
+      "bpb": 0.9268357477564552,
+      "cpu_seconds": 2.760172288000149,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "answer_bpb": 0.9268357477564552,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.7965796579657966
+      },
+      "rounds": 4
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 202,
+      "kind": "language_policy",
+      "bpb": 2.9009428168607525,
+      "cpu_seconds": 0.14947156800008088,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.9009428168607525,
+        "brier": 0.691828727722168,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 2048,
+          "energy_calls": 256,
+          "gradient_calls": 128
+        },
+        "cpu_ms_per_byte": 0.07298416406253949,
+        "cpu_seconds": 0.14947156800008088,
+        "energy_calls_per_position": 2.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 1.0,
+        "next_byte_accuracy": 0.4404296875,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.14950440905522555
+      },
+      "rounds": 1
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 202,
+      "kind": "reasoning_policy",
+      "bpb": 0.9414651557167569,
+      "cpu_seconds": 2.5532487200002834,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "answer_bpb": 0.9414651557167569,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.7965796579657966
+      },
+      "rounds": 4
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 202,
+      "kind": "language_policy",
+      "bpb": 3.05564740268728,
+      "cpu_seconds": 0.4274269440002172,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 3.05564740268728,
+        "brier": 0.7199873924255371,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 2048,
+          "energy_calls": 640,
+          "gradient_calls": 128
+        },
+        "cpu_ms_per_byte": 0.20870456250010605,
+        "cpu_seconds": 0.4274269440002172,
+        "energy_calls_per_position": 5.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 1.0,
+        "next_byte_accuracy": 0.40869140625,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.4282269759569317
+      },
+      "rounds": 1
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 202,
+      "kind": "reasoning_policy",
+      "bpb": 1.0214997146144558,
+      "cpu_seconds": 4.093810767999912,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "answer_bpb": 1.0214997146144558,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.7929792979297929
+      },
+      "rounds": 1
+    },
+    {
+      "arm": "legacy_fourier",
+      "seed": 303,
+      "kind": "language_policy",
+      "bpb": 2.8653706132868924,
+      "cpu_seconds": 0.24474888000008832,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.8653706132868924,
+        "brier": 0.68780916929245,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 4096,
+          "energy_calls": 384,
+          "gradient_calls": 128
+        },
+        "cpu_ms_per_byte": 0.11950628906254313,
+        "cpu_seconds": 0.24474888000008832,
+        "energy_calls_per_position": 3.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 1.0,
+        "next_byte_accuracy": 0.43359375,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.30259737093001604
+      },
+      "rounds": 1
+    },
+    {
+      "arm": "legacy_fourier",
+      "seed": 303,
+      "kind": "reasoning_policy",
+      "bpb": 0.8942223039864649,
+      "cpu_seconds": 4.82556404800016,
+      "halting_tolerance": 0.005,
+      "metrics": {
+        "answer_bpb": 0.8942223039864649,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.8022802280228023
+      },
+      "rounds": 8
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 303,
+      "kind": "language_policy",
+      "bpb": 2.9024844693430865,
+      "cpu_seconds": 0.11655998400010503,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.9024844693430865,
+        "brier": 0.6930892467498779,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 2048,
+          "energy_calls": 256,
+          "gradient_calls": 128
+        },
+        "cpu_ms_per_byte": 0.056914054687551285,
+        "cpu_seconds": 0.11655998400010503,
+        "energy_calls_per_position": 2.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 1.0,
+        "next_byte_accuracy": 0.427734375,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.12625718803610653
+      },
+      "rounds": 1
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 303,
+      "kind": "reasoning_policy",
+      "bpb": 0.8909495491668805,
+      "cpu_seconds": 2.8300425440002073,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "answer_bpb": 0.8909495491668805,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.8031803180318032
+      },
+      "rounds": 4
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 303,
+      "kind": "language_policy",
+      "bpb": 2.9048877549062437,
+      "cpu_seconds": 0.15741863999983252,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.9048877549062437,
+        "brier": 0.6933530569076538,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 2048,
+          "energy_calls": 256,
+          "gradient_calls": 128
+        },
+        "cpu_ms_per_byte": 0.07686457031241822,
+        "cpu_seconds": 0.15741863999983252,
+        "energy_calls_per_position": 2.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 1.0,
+        "next_byte_accuracy": 0.4267578125,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.15693340310826898
+      },
+      "rounds": 1
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 303,
+      "kind": "reasoning_policy",
+      "bpb": 0.9014916594491402,
+      "cpu_seconds": 2.8513616959999126,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "answer_bpb": 0.9014916594491402,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.8001800180018002
+      },
+      "rounds": 4
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 303,
+      "kind": "language_policy",
+      "bpb": 2.9976011942292717,
+      "cpu_seconds": 0.6157860799999071,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "bpb": 2.9976011942292717,
+        "brier": 0.7125113606452942,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 2048,
+          "energy_calls": 640,
+          "gradient_calls": 128
+        },
+        "cpu_ms_per_byte": 0.30067679687495463,
+        "cpu_seconds": 0.6157860799999071,
+        "energy_calls_per_position": 5.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 1.0,
+        "next_byte_accuracy": 0.40966796875,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.6480793650262058
+      },
+      "rounds": 1
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 303,
+      "kind": "reasoning_policy",
+      "bpb": 0.9891634872696733,
+      "cpu_seconds": 7.173469920000116,
+      "halting_tolerance": 0.0,
+      "metrics": {
+        "answer_bpb": 0.9891634872696733,
+        "answer_bytes": 3333,
+        "teacher_forced_byte_accuracy": 0.8001800180018002
+      },
+      "rounds": 4
+    }
+  ],
+  "reused_fit_provenance": [
+    {
+      "seed": 101,
+      "variant": "fourier_rewt",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 101,
+      "variant": "fourier_rewt",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 101,
+      "variant": "full_rewt",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 101,
+      "variant": "legacy_fourier",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 101,
+      "variant": "legacy_fourier",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 101,
+      "variant": "neural_energy",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 101,
+      "variant": "neural_energy",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 101,
+      "variant": "transformer",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 101,
+      "variant": "transformer",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 202,
+      "variant": "fourier_rewt",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 202,
+      "variant": "fourier_rewt",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 202,
+      "variant": "full_rewt",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 202,
+      "variant": "legacy_fourier",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 202,
+      "variant": "legacy_fourier",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 202,
+      "variant": "neural_energy",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 202,
+      "variant": "neural_energy",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 202,
+      "variant": "transformer",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 202,
+      "variant": "transformer",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 303,
+      "variant": "fourier_rewt",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 303,
+      "variant": "fourier_rewt",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 303,
+      "variant": "full_rewt",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 303,
+      "variant": "legacy_fourier",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 303,
+      "variant": "legacy_fourier",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 303,
+      "variant": "neural_energy",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 303,
+      "variant": "neural_energy",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 303,
+      "variant": "transformer",
+      "phase": "language",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    },
+    {
+      "seed": 303,
+      "variant": "transformer",
+      "phase": "reasoning",
+      "exact_checkpoint_bytes_preserved": true,
+      "training_record_preserved": true
+    }
+  ],
+  "reused_checkpoint_parity": [
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 101,
+      "variant": "fourier_rewt"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 101,
+      "variant": "fourier_rewt"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 101,
+      "variant": "full_rewt"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 101,
+      "variant": "legacy_fourier"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 101,
+      "variant": "legacy_fourier"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 101,
+      "variant": "neural_energy"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 101,
+      "variant": "neural_energy"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 101,
+      "variant": "transformer"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 101,
+      "variant": "transformer"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 202,
+      "variant": "fourier_rewt"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 202,
+      "variant": "fourier_rewt"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 202,
+      "variant": "full_rewt"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 202,
+      "variant": "legacy_fourier"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 202,
+      "variant": "legacy_fourier"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 202,
+      "variant": "neural_energy"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 202,
+      "variant": "neural_energy"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 202,
+      "variant": "transformer"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 202,
+      "variant": "transformer"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 303,
+      "variant": "fourier_rewt"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 303,
+      "variant": "fourier_rewt"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 303,
+      "variant": "full_rewt"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 303,
+      "variant": "legacy_fourier"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 303,
+      "variant": "legacy_fourier"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 303,
+      "variant": "neural_energy"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 303,
+      "variant": "neural_energy"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "language",
+      "positions": 16,
+      "seed": 303,
+      "variant": "transformer"
+    },
+    {
+      "exact_logits_equal": true,
+      "phase": "reasoning",
+      "positions": 16,
+      "seed": 303,
+      "variant": "transformer"
+    }
+  ],
+  "local_diagnostics": [
+    {
+      "arm": "legacy_fourier",
+      "seed": 101,
+      "common_gradient_share": 0.5880151391029358,
+      "common_shift_energy": 101.27149963378906,
+      "common_shift_probability": 1.7881393432617188e-07,
+      "output_ce_cosine": -0.0021823947317898273,
+      "fraction_first_order_descent": 0.41015625,
+      "two_round_bpb_change": -0.002450704574584961,
+      "eight_round_bpb_change": -0.005389690399169922,
+      "two_round_energy_change": -21.043861389160156
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 101,
+      "common_gradient_share": 2.0596122273190546e-16,
+      "common_shift_energy": -4.0978193283081055e-08,
+      "common_shift_probability": 2.384185791015625e-07,
+      "output_ce_cosine": -0.0026231310330331326,
+      "fraction_first_order_descent": 0.4140625,
+      "two_round_bpb_change": -0.0016293525695800781,
+      "eight_round_bpb_change": -0.003821134567260742,
+      "two_round_energy_change": -5.9106903076171875
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 101,
+      "common_gradient_share": 1.4113284142974834e-16,
+      "common_shift_energy": -8.568167686462402e-08,
+      "common_shift_probability": 3.8743019104003906e-07,
+      "output_ce_cosine": -0.0027960820589214563,
+      "fraction_first_order_descent": 0.427734375,
+      "two_round_bpb_change": -0.0017387866973876953,
+      "eight_round_bpb_change": -0.003916025161743164,
+      "two_round_energy_change": -4.924272537231445
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 101,
+      "common_gradient_share": 1.3899654492743419e-16,
+      "common_shift_energy": -3.725290298461914e-09,
+      "common_shift_probability": 3.8743019104003906e-07,
+      "output_ce_cosine": -0.00040755487862043083,
+      "fraction_first_order_descent": 0.5,
+      "two_round_bpb_change": -0.002218484878540039,
+      "eight_round_bpb_change": -0.004641056060791016,
+      "two_round_energy_change": -17.575172424316406
+    },
+    {
+      "arm": "legacy_fourier",
+      "seed": 202,
+      "common_gradient_share": 0.5905104279518127,
+      "common_shift_energy": 102.5516357421875,
+      "common_shift_probability": 2.086162567138672e-07,
+      "output_ce_cosine": -0.0035487560089677572,
+      "fraction_first_order_descent": 0.38671875,
+      "two_round_bpb_change": 0.00023508071899414062,
+      "eight_round_bpb_change": 0.00048732757568359375,
+      "two_round_energy_change": -21.82843780517578
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 202,
+      "common_gradient_share": 1.8146547988356432e-16,
+      "common_shift_energy": 4.0978193283081055e-08,
+      "common_shift_probability": 1.7881393432617188e-07,
+      "output_ce_cosine": -0.0036040223203599453,
+      "fraction_first_order_descent": 0.451171875,
+      "two_round_bpb_change": -0.0004241466522216797,
+      "eight_round_bpb_change": -6.67572021484375e-06,
+      "two_round_energy_change": -6.131734848022461
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 202,
+      "common_gradient_share": 1.7106639021567427e-16,
+      "common_shift_energy": 5.587935447692871e-09,
+      "common_shift_probability": 2.980232238769531e-07,
+      "output_ce_cosine": -0.004141286015510559,
+      "fraction_first_order_descent": 0.451171875,
+      "two_round_bpb_change": -0.00022149085998535156,
+      "eight_round_bpb_change": 0.0003299713134765625,
+      "two_round_energy_change": -5.449489593505859
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 202,
+      "common_gradient_share": 1.3349527769325432e-16,
+      "common_shift_energy": 1.0989606380462646e-07,
+      "common_shift_probability": 2.980232238769531e-07,
+      "output_ce_cosine": 0.002528406446799636,
+      "fraction_first_order_descent": 0.50390625,
+      "two_round_bpb_change": -0.0024297237396240234,
+      "eight_round_bpb_change": -0.0037827491760253906,
+      "two_round_energy_change": -37.62547302246094
+    },
+    {
+      "arm": "legacy_fourier",
+      "seed": 303,
+      "common_gradient_share": 0.5777722597122192,
+      "common_shift_energy": 102.88822937011719,
+      "common_shift_probability": 1.7881393432617188e-07,
+      "output_ce_cosine": -0.00497434800490737,
+      "fraction_first_order_descent": 0.37890625,
+      "two_round_bpb_change": 0.0008325576782226562,
+      "eight_round_bpb_change": 0.0008966922760009766,
+      "two_round_energy_change": -20.89836883544922
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 303,
+      "common_gradient_share": 1.980233990504996e-16,
+      "common_shift_energy": 1.862645149230957e-09,
+      "common_shift_probability": 2.980232238769531e-07,
+      "output_ce_cosine": -0.003941429313272238,
+      "fraction_first_order_descent": 0.41796875,
+      "two_round_bpb_change": -0.0002338886260986328,
+      "eight_round_bpb_change": 8.344650268554688e-06,
+      "two_round_energy_change": -6.107643127441406
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 303,
+      "common_gradient_share": 1.8305258139870246e-16,
+      "common_shift_energy": -3.5390257835388184e-08,
+      "common_shift_probability": 2.384185791015625e-07,
+      "output_ce_cosine": -0.0037297995295375586,
+      "fraction_first_order_descent": 0.416015625,
+      "two_round_bpb_change": -0.00040435791015625,
+      "eight_round_bpb_change": -0.00028705596923828125,
+      "two_round_energy_change": -5.999746322631836
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 303,
+      "common_gradient_share": 1.3776003564312052e-16,
+      "common_shift_energy": 5.21540641784668e-08,
+      "common_shift_probability": 1.7881393432617188e-07,
+      "output_ce_cosine": 0.0014922991394996643,
+      "fraction_first_order_descent": 0.498046875,
+      "two_round_bpb_change": -0.0018930435180664062,
+      "eight_round_bpb_change": -0.0024595260620117188,
+      "two_round_energy_change": -4.281606674194336
+    }
+  ],
+  "local_summaries": {
+    "legacy_fourier": {
+      "common_gradient_share": {
+        "mean": 0.5854326089223226,
+        "std": 0.006750357703513252,
+        "values": [
+          0.5880151391029358,
+          0.5905104279518127,
+          0.5777722597122192
+        ]
+      },
+      "common_shift_energy": {
+        "mean": 102.23712158203125,
+        "std": 0.8530200043293215,
+        "values": [
+          101.27149963378906,
+          102.5516357421875,
+          102.88822937011719
+        ]
+      },
+      "output_ce_cosine": {
+        "mean": -0.003568499581888318,
+        "std": 0.0013960813465990051,
+        "values": [
+          -0.0021823947317898273,
+          -0.0035487560089677572,
+          -0.00497434800490737
+        ]
+      },
+      "fraction_first_order_descent": {
+        "mean": 0.3919270833333333,
+        "std": 0.01626301562082916,
+        "values": [
+          0.41015625,
+          0.38671875,
+          0.37890625
+        ]
+      },
+      "two_round_bpb_change": {
+        "mean": -0.00046102205912272137,
+        "std": 0.0017488201918591708,
+        "values": [
+          -0.002450704574584961,
+          0.00023508071899414062,
+          0.0008325576782226562
+        ]
+      },
+      "eight_round_bpb_change": {
+        "mean": -0.0013352235158284504,
+        "std": 0.0035172320289612704,
+        "values": [
+          -0.005389690399169922,
+          0.00048732757568359375,
+          0.0008966922760009766
+        ]
+      }
+    },
+    "neural_energy": {
+      "common_gradient_share": {
+        "mean": 1.9515003388865645e-16,
+        "std": 1.2498100853249039e-17,
+        "values": [
+          2.0596122273190546e-16,
+          1.8146547988356432e-16,
+          1.980233990504996e-16
+        ]
+      },
+      "common_shift_energy": {
+        "mean": 6.20881716410319e-10,
+        "std": 4.09923018024466e-08,
+        "values": [
+          -4.0978193283081055e-08,
+          4.0978193283081055e-08,
+          1.862645149230957e-09
+        ]
+      },
+      "output_ce_cosine": {
+        "mean": -0.003389527555555105,
+        "std": 0.0006848237671232347,
+        "values": [
+          -0.0026231310330331326,
+          -0.0036040223203599453,
+          -0.003941429313272238
+        ]
+      },
+      "fraction_first_order_descent": {
+        "mean": 0.427734375,
+        "std": 0.02039122365021592,
+        "values": [
+          0.4140625,
+          0.451171875,
+          0.41796875
+        ]
+      },
+      "two_round_bpb_change": {
+        "mean": -0.0007624626159667969,
+        "std": 0.0007567517247306327,
+        "values": [
+          -0.0016293525695800781,
+          -0.0004241466522216797,
+          -0.0002338886260986328
+        ]
+      },
+      "eight_round_bpb_change": {
+        "mean": -0.0012731552124023438,
+        "std": 0.0022066276299980542,
+        "values": [
+          -0.003821134567260742,
+          -6.67572021484375e-06,
+          8.344650268554688e-06
+        ]
+      }
+    },
+    "fourier_rewt": {
+      "common_gradient_share": {
+        "mean": 1.6508393768137502e-16,
+        "std": 2.1590702941545007e-17,
+        "values": [
+          1.4113284142974834e-16,
+          1.7106639021567427e-16,
+          1.8305258139870246e-16
+        ]
+      },
+      "common_shift_energy": {
+        "mean": -3.849466641743978e-08,
+        "std": 4.5713931655387e-08,
+        "values": [
+          -8.568167686462402e-08,
+          5.587935447692871e-09,
+          -3.5390257835388184e-08
+        ]
+      },
+      "output_ce_cosine": {
+        "mean": -0.0035557225346565247,
+        "std": 0.0006892898674112748,
+        "values": [
+          -0.0027960820589214563,
+          -0.004141286015510559,
+          -0.0037297995295375586
+        ]
+      },
+      "fraction_first_order_descent": {
+        "mean": 0.431640625,
+        "std": 0.01790068630842125,
+        "values": [
+          0.427734375,
+          0.451171875,
+          0.416015625
+        ]
+      },
+      "two_round_bpb_change": {
+        "mean": -0.0007882118225097656,
+        "std": 0.0008282840901957765,
+        "values": [
+          -0.0017387866973876953,
+          -0.00022149085998535156,
+          -0.00040435791015625
+        ]
+      },
+      "eight_round_bpb_change": {
+        "mean": -0.001291036605834961,
+        "std": 0.0022941456701548817,
+        "values": [
+          -0.003916025161743164,
+          0.0003299713134765625,
+          -0.00028705596923828125
+        ]
+      }
+    },
+    "full_rewt": {
+      "common_gradient_share": {
+        "mean": 1.3675061942126967e-16,
+        "std": 2.886204449994313e-18,
+        "values": [
+          1.3899654492743419e-16,
+          1.3349527769325432e-16,
+          1.3776003564312052e-16
+        ]
+      },
+      "common_shift_energy": {
+        "mean": 5.2774945894877114e-08,
+        "std": 5.681322159175784e-08,
+        "values": [
+          -3.725290298461914e-09,
+          1.0989606380462646e-07,
+          5.21540641784668e-08
+        ]
+      },
+      "output_ce_cosine": {
+        "mean": 0.0012043835692262899,
+        "std": 0.0014890059629816702,
+        "values": [
+          -0.00040755487862043083,
+          0.002528406446799636,
+          0.0014922991394996643
+        ]
+      },
+      "fraction_first_order_descent": {
+        "mean": 0.5006510416666666,
+        "std": 0.0029834477180702085,
+        "values": [
+          0.5,
+          0.50390625,
+          0.498046875
+        ]
+      },
+      "two_round_bpb_change": {
+        "mean": -0.0021804173787434897,
+        "std": 0.00027035766302872474,
+        "values": [
+          -0.002218484878540039,
+          -0.0024297237396240234,
+          -0.0018930435180664062
+        ]
+      },
+      "eight_round_bpb_change": {
+        "mean": -0.003627777099609375,
+        "std": 0.0010989906925197403,
+        "values": [
+          -0.004641056060791016,
+          -0.0037827491760253906,
+          -0.0024595260620117188
+        ]
+      }
+    }
+  },
+  "reasoning_breakdown": [
+    {
+      "arm": "transformer",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "recall",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.030303030303030304,
+        "std": 0.0524863881081478,
+        "values": [
+          0.0,
+          0.09090909090909091,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.07017543859649122,
+        "std": 0.06077371254627639,
+        "values": [
+          0.0,
+          0.10526315789473684,
+          0.10526315789473684
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.10526315789473684,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.10526315789473684,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.07407407407407407,
+        "std": 0.06415002990995841,
+        "values": [
+          0.1111111111111111,
+          0.1111111111111111,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.07407407407407407,
+        "std": 0.06415002990995841,
+        "values": [
+          0.1111111111111111,
+          0.1111111111111111,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.1111111111111111
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.1111111111111111
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 1.0,
+        "std": 0.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "complete": {
+        "mean": 0.9814814814814815,
+        "std": 0.03207501495497923,
+        "values": [
+          1.0,
+          0.9444444444444444,
+          1.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 1.0,
+          "complete": 1.0
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 1.0,
+          "complete": 0.9444444444444444
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 1.0,
+          "complete": 1.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.023809523809523808,
+        "std": 0.041239304942116126,
+        "values": [
+          0.0,
+          0.07142857142857142,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.05555555555555555,
+        "std": 0.0,
+        "values": [
+          0.05555555555555555,
+          0.05555555555555555,
+          0.05555555555555555
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.047619047619047616,
+        "std": 0.0,
+        "values": [
+          0.047619047619047616,
+          0.047619047619047616,
+          0.047619047619047616
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 0.047619047619047616,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.047619047619047616,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.047619047619047616,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.058823529411764705,
+        "std": 0.058823529411764705,
+        "values": [
+          0.058823529411764705,
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 17,
+          "answer": 0.058823529411764705,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 17,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 17,
+          "answer": 0.11764705882352941,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": false,
+      "answer": {
+        "mean": 1.0,
+        "std": 0.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "complete": {
+        "mean": 0.9473684210526315,
+        "std": 0.09116056881941462,
+        "values": [
+          1.0,
+          0.8421052631578947,
+          1.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 1.0,
+          "complete": 1.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 1.0,
+          "complete": 0.8421052631578947
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 1.0,
+          "complete": 1.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.12820512820512822,
+        "std": 0.16012815380508713,
+        "values": [
+          0.07692307692307693,
+          0.3076923076923077,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.05128205128205129,
+        "std": 0.04441155916843275,
+        "values": [
+          0.07692307692307693,
+          0.07692307692307693,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 13,
+          "answer": 0.07692307692307693,
+          "complete": 0.07692307692307693
+        },
+        {
+          "seed": 202,
+          "count": 13,
+          "answer": 0.3076923076923077,
+          "complete": 0.07692307692307693
+        },
+        {
+          "seed": 303,
+          "count": 13,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.8253968253968254,
+        "std": 0.26226526415648105,
+        "values": [
+          1.0,
+          0.5238095238095238,
+          0.9523809523809523
+        ]
+      },
+      "complete": {
+        "mean": 0.7301587301587301,
+        "std": 0.4268041161825001,
+        "values": [
+          1.0,
+          0.23809523809523808,
+          0.9523809523809523
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 1.0,
+          "complete": 1.0
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.5238095238095238,
+          "complete": 0.23809523809523808
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.9523809523809523,
+          "complete": 0.9523809523809523
+        }
+      ]
+    },
+    {
+      "arm": "transformer",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.07142857142857142,
+        "std": 0.12371791482634838,
+        "values": [
+          0.0,
+          0.21428571428571427,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.023809523809523808,
+        "std": 0.041239304942116126,
+        "values": [
+          0.0,
+          0.07142857142857142,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.21428571428571427,
+          "complete": 0.07142857142857142
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "recall",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.018518518518518517,
+        "std": 0.032075014954979206,
+        "values": [
+          0.0,
+          0.0,
+          0.05555555555555555
+        ]
+      },
+      "complete": {
+        "mean": 0.018518518518518517,
+        "std": 0.032075014954979206,
+        "values": [
+          0.0,
+          0.0,
+          0.05555555555555555
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.05555555555555555
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.05555555555555555,
+        "std": 0.05555555555555555,
+        "values": [
+          0.05555555555555555,
+          0.0,
+          0.1111111111111111
+        ]
+      },
+      "complete": {
+        "mean": 0.05555555555555555,
+        "std": 0.05555555555555555,
+        "values": [
+          0.05555555555555555,
+          0.0,
+          0.1111111111111111
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.05555555555555555
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.1111111111111111
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.047619047619047616,
+        "std": 0.041239304942116126,
+        "values": [
+          0.0,
+          0.07142857142857142,
+          0.07142857142857142
+        ]
+      },
+      "complete": {
+        "mean": 0.047619047619047616,
+        "std": 0.041239304942116126,
+        "values": [
+          0.0,
+          0.07142857142857142,
+          0.07142857142857142
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.07407407407407407,
+        "std": 0.08486251286955258,
+        "values": [
+          0.05555555555555555,
+          0.16666666666666666,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.16666666666666666,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.045454545454545456,
+        "std": 0.045454545454545456,
+        "values": [
+          0.0,
+          0.045454545454545456,
+          0.09090909090909091
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 22,
+          "answer": 0.045454545454545456,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 22,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.015873015873015872,
+        "std": 0.02749286996141075,
+        "values": [
+          0.0,
+          0.047619047619047616,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.047619047619047616,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.05555555555555555,
+        "std": 0.09622504486493762,
+        "values": [
+          0.16666666666666666,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.16666666666666666,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.058823529411764705,
+        "std": 0.058823529411764705,
+        "values": [
+          0.11764705882352941,
+          0.058823529411764705,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 17,
+          "answer": 0.11764705882352941,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 17,
+          "answer": 0.058823529411764705,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 17,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.07017543859649122,
+        "std": 0.06077371254627639,
+        "values": [
+          0.10526315789473684,
+          0.10526315789473684,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.07017543859649122,
+        "std": 0.06077371254627639,
+        "values": [
+          0.10526315789473684,
+          0.10526315789473684,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.10526315789473684,
+          "complete": 0.10526315789473684
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.10526315789473684,
+          "complete": 0.10526315789473684
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.047619047619047616,
+        "std": 0.08247860988423225,
+        "values": [
+          0.14285714285714285,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.14285714285714285,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.025641025641025644,
+        "std": 0.04441155916843275,
+        "values": [
+          0.0,
+          0.0,
+          0.07692307692307693
+        ]
+      },
+      "complete": {
+        "mean": 0.025641025641025644,
+        "std": 0.04441155916843275,
+        "values": [
+          0.0,
+          0.0,
+          0.07692307692307693
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 13,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 13,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 13,
+          "answer": 0.07692307692307693,
+          "complete": 0.07692307692307693
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.14285714285714285,
+        "std": 0.14285714285714285,
+        "values": [
+          0.2857142857142857,
+          0.14285714285714285,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.2857142857142857,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.14285714285714285,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.1111111111111111,
+        "std": 0.07273929674533079,
+        "values": [
+          0.19047619047619047,
+          0.09523809523809523,
+          0.047619047619047616
+        ]
+      },
+      "complete": {
+        "mean": 0.1111111111111111,
+        "std": 0.07273929674533079,
+        "values": [
+          0.19047619047619047,
+          0.09523809523809523,
+          0.047619047619047616
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 0.19047619047619047,
+          "complete": 0.19047619047619047
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.09523809523809523
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.047619047619047616,
+          "complete": 0.047619047619047616
+        }
+      ]
+    },
+    {
+      "arm": "legacy_fourier",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.07142857142857142,
+        "std": 0.07142857142857142,
+        "values": [
+          0.14285714285714285,
+          0.07142857142857142,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.07142857142857142,
+        "std": 0.07142857142857142,
+        "values": [
+          0.14285714285714285,
+          0.07142857142857142,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.14285714285714285,
+          "complete": 0.14285714285714285
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.030303030303030304,
+        "std": 0.0524863881081478,
+        "values": [
+          0.0,
+          0.0,
+          0.09090909090909091
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "recall",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.037037037037037035,
+        "std": 0.06415002990995841,
+        "values": [
+          0.0,
+          0.1111111111111111,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 9,
+          "answer": 0.1111111111111111,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.03508771929824561,
+        "std": 0.030386856273138196,
+        "values": [
+          0.0,
+          0.05263157894736842,
+          0.05263157894736842
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.07407407407407407,
+        "std": 0.032075014954979206,
+        "values": [
+          0.1111111111111111,
+          0.05555555555555555,
+          0.05555555555555555
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.05555555555555555,
+        "std": 0.05555555555555555,
+        "values": [
+          0.0,
+          0.1111111111111111,
+          0.05555555555555555
+        ]
+      },
+      "complete": {
+        "mean": 0.05555555555555555,
+        "std": 0.05555555555555555,
+        "values": [
+          0.0,
+          0.1111111111111111,
+          0.05555555555555555
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.1111111111111111
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.05555555555555555
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.047619047619047616,
+        "std": 0.041239304942116126,
+        "values": [
+          0.07142857142857142,
+          0.0,
+          0.07142857142857142
+        ]
+      },
+      "complete": {
+        "mean": 0.047619047619047616,
+        "std": 0.041239304942116126,
+        "values": [
+          0.07142857142857142,
+          0.0,
+          0.07142857142857142
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.05555555555555555,
+        "std": 0.05555555555555555,
+        "values": [
+          0.05555555555555555,
+          0.1111111111111111,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.015151515151515152,
+        "std": 0.0262431940540739,
+        "values": [
+          0.0,
+          0.045454545454545456,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 22,
+          "answer": 0.045454545454545456,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.06349206349206349,
+        "std": 0.02749286996141075,
+        "values": [
+          0.047619047619047616,
+          0.047619047619047616,
+          0.09523809523809523
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 0.047619047619047616,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.047619047619047616,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0784313725490196,
+        "std": 0.06792356108113244,
+        "values": [
+          0.11764705882352941,
+          0.11764705882352941,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 17,
+          "answer": 0.11764705882352941,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 17,
+          "answer": 0.11764705882352941,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 17,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.07017543859649122,
+        "std": 0.030386856273138196,
+        "values": [
+          0.05263157894736842,
+          0.05263157894736842,
+          0.10526315789473684
+        ]
+      },
+      "complete": {
+        "mean": 0.07017543859649122,
+        "std": 0.030386856273138196,
+        "values": [
+          0.05263157894736842,
+          0.05263157894736842,
+          0.10526315789473684
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.05263157894736842
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.05263157894736842
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.10526315789473684,
+          "complete": 0.10526315789473684
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.07692307692307693,
+        "std": 0.07692307692307693,
+        "values": [
+          0.07692307692307693,
+          0.15384615384615385,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.07692307692307693,
+        "std": 0.07692307692307693,
+        "values": [
+          0.07692307692307693,
+          0.15384615384615385,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 13,
+          "answer": 0.07692307692307693,
+          "complete": 0.07692307692307693
+        },
+        {
+          "seed": 202,
+          "count": 13,
+          "answer": 0.15384615384615385,
+          "complete": 0.15384615384615385
+        },
+        {
+          "seed": 303,
+          "count": 13,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.1111111111111111,
+        "std": 0.02749286996141075,
+        "values": [
+          0.09523809523809523,
+          0.09523809523809523,
+          0.14285714285714285
+        ]
+      },
+      "complete": {
+        "mean": 0.1111111111111111,
+        "std": 0.02749286996141075,
+        "values": [
+          0.09523809523809523,
+          0.09523809523809523,
+          0.14285714285714285
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.09523809523809523
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.09523809523809523
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.14285714285714285,
+          "complete": 0.14285714285714285
+        }
+      ]
+    },
+    {
+      "arm": "neural_energy",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.023809523809523808,
+        "std": 0.041239304942116126,
+        "values": [
+          0.0,
+          0.07142857142857142,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.023809523809523808,
+        "std": 0.041239304942116126,
+        "values": [
+          0.0,
+          0.07142857142857142,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.09090909090909091,
+        "std": 0.0,
+        "values": [
+          0.09090909090909091,
+          0.09090909090909091,
+          0.09090909090909091
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "recall",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.3333333333333333,
+        "std": 0.5773502691896257,
+        "values": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.3333333333333333,
+        "std": 0.5773502691896257,
+        "values": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 1,
+          "answer": 1.0,
+          "complete": 1.0
+        },
+        {
+          "seed": 202,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.030303030303030304,
+        "std": 0.0524863881081478,
+        "values": [
+          0.0,
+          0.0,
+          0.09090909090909091
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.05555555555555555,
+        "std": 0.09622504486493762,
+        "values": [
+          0.0,
+          0.16666666666666666,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.16666666666666666,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.03508771929824561,
+        "std": 0.06077371254627639,
+        "values": [
+          0.0,
+          0.0,
+          0.10526315789473684
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.10526315789473684,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.037037037037037035,
+        "std": 0.032075014954979206,
+        "values": [
+          0.05555555555555555,
+          0.05555555555555555,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.05555555555555555,
+        "std": 0.0,
+        "values": [
+          0.05555555555555555,
+          0.05555555555555555,
+          0.05555555555555555
+        ]
+      },
+      "complete": {
+        "mean": 0.05555555555555555,
+        "std": 0.0,
+        "values": [
+          0.05555555555555555,
+          0.05555555555555555,
+          0.05555555555555555
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.05555555555555555
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.05555555555555555
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.05555555555555555
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.11904761904761904,
+        "std": 0.08247860988423225,
+        "values": [
+          0.21428571428571427,
+          0.07142857142857142,
+          0.07142857142857142
+        ]
+      },
+      "complete": {
+        "mean": 0.11904761904761904,
+        "std": 0.08247860988423225,
+        "values": [
+          0.21428571428571427,
+          0.07142857142857142,
+          0.07142857142857142
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.21428571428571427,
+          "complete": 0.21428571428571427
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.05555555555555555,
+        "std": 0.05555555555555555,
+        "values": [
+          0.05555555555555555,
+          0.0,
+          0.1111111111111111
+        ]
+      },
+      "complete": {
+        "mean": 0.018518518518518517,
+        "std": 0.032075014954979206,
+        "values": [
+          0.05555555555555555,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.05555555555555555
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.09523809523809523,
+        "std": 0.0,
+        "values": [
+          0.09523809523809523,
+          0.09523809523809523,
+          0.09523809523809523
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.03508771929824561,
+        "std": 0.030386856273138196,
+        "values": [
+          0.05263157894736842,
+          0.05263157894736842,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.09803921568627451,
+        "std": 0.06792356108113246,
+        "values": [
+          0.058823529411764705,
+          0.058823529411764705,
+          0.17647058823529413
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 17,
+          "answer": 0.058823529411764705,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 17,
+          "answer": 0.058823529411764705,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 17,
+          "answer": 0.17647058823529413,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.10526315789473684,
+        "std": 0.05263157894736842,
+        "values": [
+          0.15789473684210525,
+          0.05263157894736842,
+          0.10526315789473684
+        ]
+      },
+      "complete": {
+        "mean": 0.10526315789473684,
+        "std": 0.05263157894736842,
+        "values": [
+          0.15789473684210525,
+          0.05263157894736842,
+          0.10526315789473684
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.15789473684210525,
+          "complete": 0.15789473684210525
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.05263157894736842
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.10526315789473684,
+          "complete": 0.10526315789473684
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.05128205128205129,
+        "std": 0.0888231183368655,
+        "values": [
+          0.0,
+          0.15384615384615385,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.05128205128205129,
+        "std": 0.0888231183368655,
+        "values": [
+          0.0,
+          0.15384615384615385,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 13,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 13,
+          "answer": 0.15384615384615385,
+          "complete": 0.15384615384615385
+        },
+        {
+          "seed": 303,
+          "count": 13,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.14285714285714285,
+        "std": 0.047619047619047616,
+        "values": [
+          0.19047619047619047,
+          0.09523809523809523,
+          0.14285714285714285
+        ]
+      },
+      "complete": {
+        "mean": 0.14285714285714285,
+        "std": 0.047619047619047616,
+        "values": [
+          0.19047619047619047,
+          0.09523809523809523,
+          0.14285714285714285
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 0.19047619047619047,
+          "complete": 0.19047619047619047
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.09523809523809523
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.14285714285714285,
+          "complete": 0.14285714285714285
+        }
+      ]
+    },
+    {
+      "arm": "fourier_rewt",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.11904761904761904,
+        "std": 0.1486904285332952,
+        "values": [
+          0.2857142857142857,
+          0.07142857142857142,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.11904761904761904,
+        "std": 0.1486904285332952,
+        "values": [
+          0.2857142857142857,
+          0.07142857142857142,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.2857142857142857,
+          "complete": 0.2857142857142857
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 3,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.030303030303030304,
+        "std": 0.0524863881081478,
+        "values": [
+          0.0,
+          0.09090909090909091,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "recall",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 1,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.030303030303030304,
+        "std": 0.0524863881081478,
+        "values": [
+          0.0,
+          0.09090909090909091,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 11,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 11,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "arithmetic",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.037037037037037035,
+        "std": 0.06415002990995841,
+        "values": [
+          0.0,
+          0.0,
+          0.1111111111111111
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 9,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 9,
+          "answer": 0.1111111111111111,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "arithmetic",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.017543859649122806,
+        "std": 0.030386856273138196,
+        "values": [
+          0.0,
+          0.05263157894736842,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.05555555555555555,
+        "std": 0.05555555555555555,
+        "values": [
+          0.1111111111111111,
+          0.05555555555555555,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.018518518518518517,
+        "std": 0.032075014954979206,
+        "values": [
+          0.05555555555555555,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.05555555555555555
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.1111111111111111,
+        "std": 0.05555555555555555,
+        "values": [
+          0.05555555555555555,
+          0.1111111111111111,
+          0.16666666666666666
+        ]
+      },
+      "complete": {
+        "mean": 0.1111111111111111,
+        "std": 0.05555555555555555,
+        "values": [
+          0.05555555555555555,
+          0.1111111111111111,
+          0.16666666666666666
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.05555555555555555,
+          "complete": 0.05555555555555555
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.1111111111111111
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.16666666666666666,
+          "complete": 0.16666666666666666
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "recall",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.16666666666666666,
+        "std": 0.10910894511799618,
+        "values": [
+          0.2857142857142857,
+          0.14285714285714285,
+          0.07142857142857142
+        ]
+      },
+      "complete": {
+        "mean": 0.16666666666666666,
+        "std": 0.10910894511799618,
+        "values": [
+          0.2857142857142857,
+          0.14285714285714285,
+          0.07142857142857142
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.2857142857142857,
+          "complete": 0.2857142857142857
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.14285714285714285,
+          "complete": 0.14285714285714285
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.12962962962962962,
+        "std": 0.032075014954979206,
+        "values": [
+          0.1111111111111111,
+          0.16666666666666666,
+          0.1111111111111111
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 18,
+          "answer": 0.16666666666666666,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 18,
+          "answer": 0.1111111111111111,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "arithmetic",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.045454545454545456,
+        "std": 0.045454545454545456,
+        "values": [
+          0.0,
+          0.09090909090909091,
+          0.045454545454545456
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 22,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 22,
+          "answer": 0.09090909090909091,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 22,
+          "answer": 0.045454545454545456,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.07936507936507936,
+        "std": 0.07273929674533079,
+        "values": [
+          0.09523809523809523,
+          0.14285714285714285,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.14285714285714285,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "rules",
+      "steps": 1,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "arithmetic",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.058823529411764705,
+        "std": 0.0,
+        "values": [
+          0.058823529411764705,
+          0.058823529411764705,
+          0.058823529411764705
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 17,
+          "answer": 0.058823529411764705,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 17,
+          "answer": 0.058823529411764705,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 17,
+          "answer": 0.058823529411764705,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "rules",
+      "steps": 2,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 6,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.08771929824561403,
+        "std": 0.06077371254627639,
+        "values": [
+          0.05263157894736842,
+          0.05263157894736842,
+          0.15789473684210525
+        ]
+      },
+      "complete": {
+        "mean": 0.08771929824561403,
+        "std": 0.06077371254627639,
+        "values": [
+          0.05263157894736842,
+          0.05263157894736842,
+          0.15789473684210525
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.05263157894736842
+        },
+        {
+          "seed": 202,
+          "count": 19,
+          "answer": 0.05263157894736842,
+          "complete": 0.05263157894736842
+        },
+        {
+          "seed": 303,
+          "count": 19,
+          "answer": 0.15789473684210525,
+          "complete": 0.15789473684210525
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "rules",
+      "steps": 3,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "recall",
+      "steps": 8,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.07692307692307693,
+        "std": 0.0,
+        "values": [
+          0.07692307692307693,
+          0.07692307692307693,
+          0.07692307692307693
+        ]
+      },
+      "complete": {
+        "mean": 0.07692307692307693,
+        "std": 0.0,
+        "values": [
+          0.07692307692307693,
+          0.07692307692307693,
+          0.07692307692307693
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 13,
+          "answer": 0.07692307692307693,
+          "complete": 0.07692307692307693
+        },
+        {
+          "seed": 202,
+          "count": 13,
+          "answer": 0.07692307692307693,
+          "complete": 0.07692307692307693
+        },
+        {
+          "seed": 303,
+          "count": 13,
+          "answer": 0.07692307692307693,
+          "complete": 0.07692307692307693
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "rules",
+      "steps": 4,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.047619047619047616,
+        "std": 0.08247860988423225,
+        "values": [
+          0.14285714285714285,
+          0.0,
+          0.0
+        ]
+      },
+      "complete": {
+        "mean": 0.0,
+        "std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 7,
+          "answer": 0.14285714285714285,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 7,
+          "answer": 0.0,
+          "complete": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": false,
+      "answer": {
+        "mean": 0.06349206349206349,
+        "std": 0.02749286996141075,
+        "values": [
+          0.09523809523809523,
+          0.047619047619047616,
+          0.047619047619047616
+        ]
+      },
+      "complete": {
+        "mean": 0.06349206349206349,
+        "std": 0.02749286996141075,
+        "values": [
+          0.09523809523809523,
+          0.047619047619047616,
+          0.047619047619047616
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 21,
+          "answer": 0.09523809523809523,
+          "complete": 0.09523809523809523
+        },
+        {
+          "seed": 202,
+          "count": 21,
+          "answer": 0.047619047619047616,
+          "complete": 0.047619047619047616
+        },
+        {
+          "seed": 303,
+          "count": 21,
+          "answer": 0.047619047619047616,
+          "complete": 0.047619047619047616
+        }
+      ]
+    },
+    {
+      "arm": "full_rewt",
+      "family": "recall",
+      "steps": 16,
+      "withheld_template": true,
+      "answer": {
+        "mean": 0.023809523809523808,
+        "std": 0.041239304942116126,
+        "values": [
+          0.0,
+          0.0,
+          0.07142857142857142
+        ]
+      },
+      "complete": {
+        "mean": 0.023809523809523808,
+        "std": 0.041239304942116126,
+        "values": [
+          0.0,
+          0.0,
+          0.07142857142857142
+        ]
+      },
+      "by_seed": [
+        {
+          "seed": 101,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 202,
+          "count": 14,
+          "answer": 0.0,
+          "complete": 0.0
+        },
+        {
+          "seed": 303,
+          "count": 14,
+          "answer": 0.07142857142857142,
+          "complete": 0.07142857142857142
+        }
+      ]
+    }
+  ],
+  "validation_learning_curves": [
+    {
+      "arm": "transformer",
+      "cpu_seconds": 13.231020127999995,
+      "seed": 101,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 4.058109853030169
+    },
+    {
+      "arm": "transformer",
+      "cpu_seconds": 49.713971615999945,
+      "seed": 101,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 3.7444957055635184
+    },
+    {
+      "arm": "legacy_fourier",
+      "cpu_seconds": 49.62358836800001,
+      "seed": 101,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.600006201267638
+    },
+    {
+      "arm": "legacy_fourier",
+      "cpu_seconds": 232.31836910399971,
+      "seed": 101,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.9280634490059123
+    },
+    {
+      "arm": "neural_energy",
+      "cpu_seconds": 75.33203391999967,
+      "seed": 101,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.6278123562591373
+    },
+    {
+      "arm": "neural_energy",
+      "cpu_seconds": 323.0171538080004,
+      "seed": 101,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.9228427436563207
+    },
+    {
+      "arm": "fourier_rewt",
+      "cpu_seconds": 80.28446764800015,
+      "seed": 101,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.6207105046744084
+    },
+    {
+      "arm": "fourier_rewt",
+      "cpu_seconds": 334.558680368001,
+      "seed": 101,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.9077626168980664
+    },
+    {
+      "arm": "full_rewt",
+      "cpu_seconds": 212.05534809600033,
+      "seed": 101,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.642779662398426
+    },
+    {
+      "arm": "full_rewt",
+      "cpu_seconds": 1040.8221110240033,
+      "seed": 101,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 3.0421588033801097
+    },
+    {
+      "arm": "transformer",
+      "cpu_seconds": 12.570982704000002,
+      "seed": 202,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 4.066926371644
+    },
+    {
+      "arm": "transformer",
+      "cpu_seconds": 49.410826720000095,
+      "seed": 202,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 3.747434889066764
+    },
+    {
+      "arm": "legacy_fourier",
+      "cpu_seconds": 48.617901679999974,
+      "seed": 202,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.570538349903503
+    },
+    {
+      "arm": "legacy_fourier",
+      "cpu_seconds": 227.93671000000015,
+      "seed": 202,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.921077169762563
+    },
+    {
+      "arm": "neural_energy",
+      "cpu_seconds": 74.87029971200008,
+      "seed": 202,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.5863562822339587
+    },
+    {
+      "arm": "neural_energy",
+      "cpu_seconds": 326.30213979200056,
+      "seed": 202,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.8998029158508336
+    },
+    {
+      "arm": "fourier_rewt",
+      "cpu_seconds": 77.23285436800097,
+      "seed": 202,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.5843200076477433
+    },
+    {
+      "arm": "fourier_rewt",
+      "cpu_seconds": 337.09786611200184,
+      "seed": 202,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.9006968816700187
+    },
+    {
+      "arm": "full_rewt",
+      "cpu_seconds": 212.88704500800054,
+      "seed": 202,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.650417411923243
+    },
+    {
+      "arm": "full_rewt",
+      "cpu_seconds": 1045.5757859359996,
+      "seed": 202,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 3.0567866157665953
+    },
+    {
+      "arm": "transformer",
+      "cpu_seconds": 12.256618447999996,
+      "seed": 303,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 4.052784926194154
+    },
+    {
+      "arm": "transformer",
+      "cpu_seconds": 47.686884656000025,
+      "seed": 303,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 3.713690517106274
+    },
+    {
+      "arm": "legacy_fourier",
+      "cpu_seconds": 46.20014211199993,
+      "seed": 303,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.5810843260544103
+    },
+    {
+      "arm": "legacy_fourier",
+      "cpu_seconds": 230.4683156319999,
+      "seed": 303,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.864436059562104
+    },
+    {
+      "arm": "neural_energy",
+      "cpu_seconds": 69.48502919999987,
+      "seed": 303,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.620313224750915
+    },
+    {
+      "arm": "neural_energy",
+      "cpu_seconds": 339.21285140799984,
+      "seed": 303,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.9040529511189557
+    },
+    {
+      "arm": "fourier_rewt",
+      "cpu_seconds": 75.162108816,
+      "seed": 303,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.6196497156838867
+    },
+    {
+      "arm": "fourier_rewt",
+      "cpu_seconds": 340.84578836799824,
+      "seed": 303,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.9060414145282314
+    },
+    {
+      "arm": "full_rewt",
+      "cpu_seconds": 197.5680950879987,
+      "seed": 303,
+      "selected_step": 64,
+      "target_bytes": 262144,
+      "validation_bpb": 3.649389987566989
+    },
+    {
+      "arm": "full_rewt",
+      "cpu_seconds": 1070.6913539519985,
+      "seed": 303,
+      "selected_step": 256,
+      "target_bytes": 1048576,
+      "validation_bpb": 2.9959828374846524
+    }
+  ]
+}

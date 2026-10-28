@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "all_primary_seeds_complete": true,
+    "frozen_source_matches": true,
+    "data_and_task_semantic_splits_disjoint": true,
+    "primary_parameter_match_under_half_percent": true,
+    "all_profiles_saved": true,
+    "all_ablations_saved": true,
+    "primary_text_outputs": true,
+    "reasoning_outputs": true,
+    "all_energy_audits_decrease": true,
+    "rating_lock_rewt_pilot_20261009_v2": true,
+    "rating_lock_time_text": true
+  },
+  "unit_tests": {
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python -m pytest tests_rewt -q",
+    "passed": 26,
+    "failed": 0,
+    "observed_result": "26 passed in 3.92s",
+    "stage": "after bounded recurrent-conditioning correction"
+  },
+  "main_experiment_exit_code": 0,
+  "profiles_exit_code": 0,
+  "analysis_exit_code": 0
+}

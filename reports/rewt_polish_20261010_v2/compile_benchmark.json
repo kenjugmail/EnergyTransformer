@@ -1,0 +1,54 @@
+{
+  "batch": 24,
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/multistep_balanced/progress/best.pt",
+  "checkpoint_sha256": "917f367430ca4dcf4f9b8c8a7ced5f9d0e38cd62d20fe953b430cbfeed446737",
+  "context": 32,
+  "created": "2026-10-10T16:20:32.622179+00:00",
+  "identical_argmax": true,
+  "maximum_logit_difference": 4.1961669921875e-05,
+  "maximum_parameter_gradient_difference": 1.6689300537109375e-06,
+  "scope": "Single-thread CPU forward/backward, compiled analytic gradient only. Compile warmup reported separately; no optimizer updates or change to the training experiment.",
+  "script_sha256": "1cad9845a2998c6ea6ff9de301e59ae0b9f3783b7be1803e086c036fb44dfc67",
+  "source_sha256": {
+    "__init__.py": "cec12357813e592ad87c21229687e348a62d1c3deb7fae7c9275260b1ac0b2bc",
+    "bpe.py": "33b305a464f1487c22037848bba542e6120fb790f6be67c8192828a8d3494b8e",
+    "curriculum.py": "e33541936ad1d401d2f7999513f2bdb00fba39cebe5530b3c6d9932da49064d1",
+    "data.py": "ab4b434581188a681544cc679b2d9c589101f7bdaeb19461dd51771c64dab4b9",
+    "evaluate.py": "398d5be602eaf598941b831e6cbcac499ee40c3e0df48879055307a0bc992e52",
+    "experiment.py": "a37fb1dac93d215854be7231a3ed5ee947a29a8e28b5bb728e7255338b46127d",
+    "improve.py": "6402abc8a9ada3cfa0fe784449edb5e6134bb472586c8a89d389783da9d3964f",
+    "improve_report.py": "8135a4be23a7cf6190d8e6ba44956cc17e61acfc62adde81dc33e349abc921b1",
+    "memory.py": "092865ff6f64eea8ec9b9fa6f0866f41036c38de6d03a99e6f7814001217d920",
+    "model.py": "18fb0d1cbb681a2bb72b560a1971d9f6bf289f5b98c4eb9a2c409f5be0716b98",
+    "optim.py": "82b9c97645921256f643cd797825b4705a07b749df14b0bca627b997a38d3279",
+    "position_memory.py": "fb58574cda6e5bffccf88da2edc9fd2693a89e92ff4b70a74d5c67b6a923b75a",
+    "profile.py": "ccfe45180c62f4cebf73158aadd364d222e80083e5273b4aafa6f9668bcd19f5",
+    "report.py": "9dd216247786dd9d12eaf0e227fb0b20a22aaa40aa9bc3e4c7f09b15feabbf71",
+    "stabilize.py": "253aafa0f6388a19fc65038ce3a0bcf0bbe7cb141b3e1a7987d87adcb4bf9eff",
+    "story_data.py": "da4709e5fa11836b749b586afd39430749764ea52c706686e5c9c776c5de8f47",
+    "tasks.py": "88f5972e3e69f1ee21cd9cd0f7a86265a249e00556ceb4435df625a26b10b71a",
+    "tokenizer.py": "38b5b68d5913f577f55cb32b97fa2c2e81f4f26d9628fb09092c067ef51be2eb"
+  },
+  "speedup": 1.0881364488818919,
+  "timings": {
+    "compiled_gradient": {
+      "cpu_seconds": [
+        0.18958663999999992,
+        0.1874969120000003,
+        0.17728672000000145
+      ],
+      "median_cpu_seconds": 0.1874969120000003
+    },
+    "eager": {
+      "cpu_seconds": [
+        0.20402222400000092,
+        0.1972594240000003,
+        0.2129788959999992
+      ],
+      "median_cpu_seconds": 0.20402222400000092
+    }
+  },
+  "unchanged_weights": true,
+  "warmup_cpu_seconds_including_child_compilers": 18.842998496,
+  "warmup_wall_seconds": 23.84501495200675
+}

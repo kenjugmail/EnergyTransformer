@@ -1,0 +1,5 @@
+{
+  "recommended_checkpoint": "/home/kt/Documents/EnergyTransformer/runs/lfm3_capability_recovery_20261028/stage2/best.pt",
+  "reason": "Stage 2 scored 59/128 science and 13/50 exact responses. Stage 3 scored 58/128 and 9/50 despite lower validation KL. Prefer stage 2 for this exploratory recovery attempt.",
+  "limitation": "Within-run checkpoints were selected by validation KL, but this final recommendation is post-hoc based on the small capability suite; these scores are not an independent confirmation set."
+}

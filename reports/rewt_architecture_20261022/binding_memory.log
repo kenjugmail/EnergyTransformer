@@ -1,0 +1,71 @@
+{"time": "2026-10-22T20:53:31.632105+00:00", "message": "long_memory_validation", "case": "local_22202", "step": 384, "accuracy": 0.5338541666666666}
+{"time": "2026-10-22T20:53:44.465279+00:00", "message": "long_memory_validation", "case": "local_22202", "step": 768, "accuracy": 0.5520833333333334}
+{"time": "2026-10-22T20:53:57.996144+00:00", "message": "long_memory_validation", "case": "local_22202", "step": 1152, "accuracy": 0.5572916666666666}
+{"time": "2026-10-22T20:54:11.034831+00:00", "message": "long_memory_validation", "case": "local_22202", "step": 1536, "accuracy": 0.5286458333333334}
+{"time": "2026-10-22T20:54:24.997554+00:00", "message": "long_memory_validation", "case": "local_22203", "step": 384, "accuracy": 0.5130208333333334}
+{"time": "2026-10-22T20:54:38.481075+00:00", "message": "long_memory_validation", "case": "local_22203", "step": 768, "accuracy": 0.5494791666666666}
+{"time": "2026-10-22T20:54:52.219546+00:00", "message": "long_memory_validation", "case": "local_22203", "step": 1152, "accuracy": 0.53125}
+{"time": "2026-10-22T20:55:05.910648+00:00", "message": "long_memory_validation", "case": "local_22203", "step": 1536, "accuracy": 0.5416666666666666}
+{"time": "2026-10-22T20:55:22.849360+00:00", "message": "long_memory_validation", "case": "delta_22201", "step": 384, "accuracy": 0.9635416666666666}
+{"time": "2026-10-22T20:55:41.994929+00:00", "message": "long_memory_validation", "case": "delta_22201", "step": 768, "accuracy": 0.9713541666666666}
+{"time": "2026-10-22T20:56:00.745694+00:00", "message": "long_memory_validation", "case": "delta_22201", "step": 1152, "accuracy": 0.984375}
+{"time": "2026-10-22T20:56:19.169650+00:00", "message": "long_memory_validation", "case": "delta_22201", "step": 1536, "accuracy": 0.9921875}
+{"time": "2026-10-22T20:56:36.808024+00:00", "message": "long_memory_validation", "case": "delta_22202", "step": 384, "accuracy": 0.9791666666666666}
+{"time": "2026-10-22T20:56:55.233153+00:00", "message": "long_memory_validation", "case": "delta_22202", "step": 768, "accuracy": 0.9973958333333334}
+{"time": "2026-10-22T20:57:13.615223+00:00", "message": "long_memory_validation", "case": "delta_22202", "step": 1152, "accuracy": 0.9791666666666666}
+{"time": "2026-10-22T20:57:32.879894+00:00", "message": "long_memory_validation", "case": "delta_22202", "step": 1536, "accuracy": 0.984375}
+{"time": "2026-10-22T20:57:50.702092+00:00", "message": "long_memory_validation", "case": "delta_22203", "step": 384, "accuracy": 0.9348958333333334}
+{"time": "2026-10-22T20:58:09.761182+00:00", "message": "long_memory_validation", "case": "delta_22203", "step": 768, "accuracy": 0.9895833333333334}
+{"time": "2026-10-22T20:58:29.056351+00:00", "message": "long_memory_validation", "case": "delta_22203", "step": 1152, "accuracy": 0.9895833333333334}
+{"time": "2026-10-22T20:58:48.227479+00:00", "message": "long_memory_validation", "case": "delta_22203", "step": 1536, "accuracy": 0.9947916666666666}
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/concurrent/futures/process.py", line 263, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/scripts/study_rewt_binding_memory.py", line 103, in fit
+    loss.backward();gradient=float(torch.nn.utils.clip_grad_norm_(model.parameters(),1.,error_if_nonfinite=True));optimizer.step();cpu+=time.process_time()-start
+                                                                                                                  ^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/optim/optimizer.py", line 549, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/optim/optimizer.py", line 79, in _use_grad
+    ret = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/optim/adam.py", line 222, in step
+    self._accelerator_graph_capture_health_check()
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/optim/optimizer.py", line 485, in _accelerator_graph_capture_health_check
+    capturing = torch.accelerator.current_stream().is_capturing()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/accelerator/__init__.py", line 233, in current_stream
+    return torch._C._accelerator_getStream(device_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+The CUDA driver logged these messages, which may provide useful details:
+Returning 2 (CUDA_ERROR_OUT_OF_MEMORY) from cuDevicePrimaryCtxRetain
+
+
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kt/Documents/EnergyTransformer/scripts/study_rewt_binding_memory.py", line 131, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/scripts/study_rewt_binding_memory.py", line 128, in main
+    results=[f.result() for f in futures]
+             ^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+The CUDA driver logged these messages, which may provide useful details:
+Returning 2 (CUDA_ERROR_OUT_OF_MEMORY) from cuDevicePrimaryCtxRetain
+
+

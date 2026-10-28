@@ -1,0 +1,140 @@
+[
+  {
+    "case": {
+      "delta_size": 0,
+      "name": "local_22201",
+      "seed": 22201
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/binding_memory/local_22201/best.pt",
+    "checkpoint_sha256": "d2c9d45a14c719d7e55d0ac7a9cc9498720a0d47ebd1ccfc48266ceca513359e",
+    "parameters": 32752,
+    "test": {
+      "accuracy": 0.546875,
+      "groups": {
+        "16/False": 0.109375,
+        "16/True": 1.0,
+        "32/False": 0.078125,
+        "32/True": 1.0,
+        "64/False": 0.09375,
+        "64/True": 1.0
+      }
+    },
+    "training_cpu_seconds": 55.22863521600023,
+    "validation_accuracy": 0.546875
+  },
+  {
+    "case": {
+      "delta_size": 0,
+      "name": "local_22202",
+      "seed": 22202
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/binding_memory/local_22202/best.pt",
+    "checkpoint_sha256": "d42b45b11db69a820308343da8e36845273e893ece89d7119aa48370ce023593",
+    "parameters": 32752,
+    "test": {
+      "accuracy": 0.5520833333333334,
+      "groups": {
+        "16/False": 0.09375,
+        "16/True": 1.0,
+        "32/False": 0.078125,
+        "32/True": 1.0,
+        "64/False": 0.140625,
+        "64/True": 1.0
+      }
+    },
+    "training_cpu_seconds": 54.105097776000065,
+    "validation_accuracy": 0.5572916666666666
+  },
+  {
+    "case": {
+      "delta_size": 0,
+      "name": "local_22203",
+      "seed": 22203
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/binding_memory/local_22203/best.pt",
+    "checkpoint_sha256": "9eb6f518429bcd8d4a423ad965343a67661b55048a9e765e49d8d00e6254628d",
+    "parameters": 32752,
+    "test": {
+      "accuracy": 0.5442708333333334,
+      "groups": {
+        "16/False": 0.109375,
+        "16/True": 1.0,
+        "32/False": 0.0625,
+        "32/True": 1.0,
+        "64/False": 0.09375,
+        "64/True": 1.0
+      }
+    },
+    "training_cpu_seconds": 54.54661456000009,
+    "validation_accuracy": 0.5494791666666666
+  },
+  {
+    "case": {
+      "delta_size": 16,
+      "name": "delta_22201",
+      "seed": 22201
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/binding_memory/delta_22201/best.pt",
+    "checkpoint_sha256": "73cf5b61603b46c8e1aab66137e91ffc226f252e488e59f647dbfdcb172d8271",
+    "parameters": 34321,
+    "test": {
+      "accuracy": 0.9609375,
+      "groups": {
+        "16/False": 1.0,
+        "16/True": 1.0,
+        "32/False": 0.921875,
+        "32/True": 1.0,
+        "64/False": 0.84375,
+        "64/True": 1.0
+      }
+    },
+    "training_cpu_seconds": 73.05429028800032,
+    "validation_accuracy": 0.9921875
+  },
+  {
+    "case": {
+      "delta_size": 16,
+      "name": "delta_22202",
+      "seed": 22202
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/binding_memory/delta_22202/best.pt",
+    "checkpoint_sha256": "31bb52cdcf056036599f070c8c049afcd72f44c5c5c21461fafc227d587601c0",
+    "parameters": 34321,
+    "test": {
+      "accuracy": 0.9479166666666666,
+      "groups": {
+        "16/False": 0.984375,
+        "16/True": 1.0,
+        "32/False": 0.953125,
+        "32/True": 1.0,
+        "64/False": 0.75,
+        "64/True": 1.0
+      }
+    },
+    "training_cpu_seconds": 73.46754156799938,
+    "validation_accuracy": 0.9973958333333334
+  },
+  {
+    "case": {
+      "delta_size": 16,
+      "name": "delta_22203",
+      "seed": 22203
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/binding_memory/delta_22203/best.pt",
+    "checkpoint_sha256": "946313cdbb46814ebca8e48b999748026868893c6edda39f4c46895dd4ced0b6",
+    "parameters": 34321,
+    "test": {
+      "accuracy": 0.9713541666666666,
+      "groups": {
+        "16/False": 0.96875,
+        "16/True": 1.0,
+        "32/False": 0.96875,
+        "32/True": 1.0,
+        "64/False": 0.890625,
+        "64/True": 1.0
+      }
+    },
+    "training_cpu_seconds": 74.86675203200065,
+    "validation_accuracy": 0.9947916666666666
+  }
+]

@@ -1,0 +1,755 @@
+{
+  "adapted_reasoning": {
+    "all": {
+      "answer_correct": 0.056666666666666664,
+      "both_correct": 0.03333333333333333,
+      "count": 300,
+      "steps_correct": 0.03333333333333333,
+      "valid_format": 0.9966666666666667
+    },
+    "by_difficulty": {
+      "heldout_instance": {
+        "answer_correct": 0.06172839506172839,
+        "both_correct": 0.030864197530864196,
+        "count": 162,
+        "steps_correct": 0.030864197530864196,
+        "valid_format": 1.0
+      },
+      "heldout_instance+longer_chain": {
+        "answer_correct": 0.027777777777777776,
+        "both_correct": 0.0,
+        "count": 36,
+        "steps_correct": 0.0,
+        "valid_format": 1.0
+      },
+      "heldout_template": {
+        "answer_correct": 0.05813953488372093,
+        "both_correct": 0.05813953488372093,
+        "count": 86,
+        "steps_correct": 0.05813953488372093,
+        "valid_format": 0.9883720930232558
+      },
+      "heldout_template+longer_chain": {
+        "answer_correct": 0.0625,
+        "both_correct": 0.0,
+        "count": 16,
+        "steps_correct": 0.0,
+        "valid_format": 1.0
+      }
+    },
+    "by_family": {
+      "arithmetic": {
+        "answer_correct": 0.0,
+        "both_correct": 0.0,
+        "count": 100,
+        "steps_correct": 0.0,
+        "valid_format": 0.99
+      },
+      "recall": {
+        "answer_correct": 0.09,
+        "both_correct": 0.09,
+        "count": 100,
+        "steps_correct": 0.09,
+        "valid_format": 1.0
+      },
+      "rules": {
+        "answer_correct": 0.08,
+        "both_correct": 0.01,
+        "count": 100,
+        "steps_correct": 0.01,
+        "valid_format": 1.0
+      }
+    },
+    "by_steps": {
+      "1": {
+        "answer_correct": 0.058823529411764705,
+        "both_correct": 0.029411764705882353,
+        "count": 34,
+        "steps_correct": 0.029411764705882353,
+        "valid_format": 1.0
+      },
+      "16": {
+        "answer_correct": 0.05714285714285714,
+        "both_correct": 0.05714285714285714,
+        "count": 35,
+        "steps_correct": 0.05714285714285714,
+        "valid_format": 1.0
+      },
+      "2": {
+        "answer_correct": 0.037037037037037035,
+        "both_correct": 0.0,
+        "count": 54,
+        "steps_correct": 0.0,
+        "valid_format": 1.0
+      },
+      "3": {
+        "answer_correct": 0.03278688524590164,
+        "both_correct": 0.0,
+        "count": 61,
+        "steps_correct": 0.0,
+        "valid_format": 0.9836065573770492
+      },
+      "4": {
+        "answer_correct": 0.08333333333333333,
+        "both_correct": 0.05952380952380952,
+        "count": 84,
+        "steps_correct": 0.05952380952380952,
+        "valid_format": 1.0
+      },
+      "8": {
+        "answer_correct": 0.0625,
+        "both_correct": 0.0625,
+        "count": 32,
+        "steps_correct": 0.0625,
+        "valid_format": 1.0
+      }
+    }
+  },
+  "arm": "full_rewt",
+  "equal_cpu_time": {
+    "language": {
+      "bpb": 5.580303530315164,
+      "brier": 0.9916591048240662,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 8192,
+        "energy_calls": 896,
+        "gradient_calls": 256
+      },
+      "cpu_ms_per_byte": 0.17273215234370198,
+      "cpu_seconds": 0.7075108959998033,
+      "energy_calls_per_position": 7.0,
+      "evaluated_bytes": 4096,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.117919921875,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.7042475619819015
+    },
+    "teacher_training": {
+      "all_parameters": 249994,
+      "arm": "transformer",
+      "best_step": 64,
+      "best_validation_score": 4.058109853030169,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_stabilized_20261009/seed_101/full_rewt/equal_time_teacher/best.pt",
+      "clip_fraction": 0.0625,
+      "filtered_spike_fraction": 0.0,
+      "forecast_targets": null,
+      "initialization": "random",
+      "maximum_raw_gradient_norm": 1.1107922656980487,
+      "mean_high_frequency_gradient_fraction": 0.15602831619717772,
+      "mean_raw_gradient_norm": 0.4120031456629537,
+      "method": "clip",
+      "parameters": 249994,
+      "phase": "equal_time_teacher",
+      "process_peak_rss_bytes": 1179455488,
+      "processed_target_bytes": 262144,
+      "raw_spike_fraction": 0.0,
+      "remaining_phase_cpu_seconds": 15.416767008000079,
+      "remaining_phase_wall_seconds": 15.982894364045933,
+      "seed": 101,
+      "shared_teacher_training_cpu_seconds": 0.0,
+      "training_cpu_seconds": 15.234052303998851,
+      "training_plus_shared_teacher_cpu_seconds": 15.234052303998851,
+      "training_recipe": {
+        "corruption_probability": 0.25,
+        "curriculum": true,
+        "hard_negatives": true,
+        "maximum_rounds": 4,
+        "minimum_rounds": 1,
+        "output_noise": 0.5,
+        "process_supervision": true,
+        "process_weight": 0.05,
+        "repair_weight": 0.1,
+        "residual_gain": 0.25,
+        "state_gradient_interval_reasoning": 16,
+        "state_noise": 0.05,
+        "trace_training_energy": false,
+        "variable_rounds": true
+      },
+      "training_wall_seconds": 15.762739519472234,
+      "updates": 64,
+      "validation": {
+        "bpb": 4.058109853030169,
+        "brier": 0.8762089610099792,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 0,
+          "energy_calls": 0,
+          "gradient_calls": 0
+        },
+        "cpu_ms_per_byte": 0.033497210937483146,
+        "cpu_seconds": 0.06860228799996548,
+        "energy_calls_per_position": 0.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 0.0,
+        "next_byte_accuracy": 0.23095703125,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 0.07095838093664497
+      },
+      "validation_cpu_seconds": 0.06876291199978368
+    },
+    "training": {
+      "all_parameters": 250020,
+      "arm": "full_rewt",
+      "best_step": 14,
+      "best_validation_score": 5.0663309704545485,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_stabilized_20261009/seed_101/full_rewt/equal_time/best.pt",
+      "clip_fraction": 0.07142857142857142,
+      "filtered_spike_fraction": 0.0,
+      "forecast_targets": "frozen from-scratch Transformer hidden states; training only",
+      "initialization": "random",
+      "maximum_raw_gradient_norm": 1.158216697670649,
+      "mean_high_frequency_gradient_fraction": 0.026921964078268103,
+      "mean_raw_gradient_norm": 0.7950755449698178,
+      "method": "clip",
+      "parameters": 250020,
+      "phase": "equal_time",
+      "process_peak_rss_bytes": 1793331200,
+      "processed_target_bytes": 57344,
+      "raw_spike_fraction": 0.0,
+      "remaining_phase_cpu_seconds": 50.38987638399976,
+      "remaining_phase_wall_seconds": 52.265093995956704,
+      "seed": 101,
+      "shared_teacher_training_cpu_seconds": 15.234052303998851,
+      "training_cpu_seconds": 48.94730488000096,
+      "training_plus_shared_teacher_cpu_seconds": 64.18135718399981,
+      "training_recipe": {
+        "corruption_probability": 0.25,
+        "curriculum": true,
+        "hard_negatives": true,
+        "maximum_rounds": 4,
+        "minimum_rounds": 1,
+        "output_noise": 0.5,
+        "process_supervision": true,
+        "process_weight": 0.05,
+        "repair_weight": 0.1,
+        "residual_gain": 0.25,
+        "state_gradient_interval_reasoning": 16,
+        "state_noise": 0.05,
+        "trace_training_energy": false,
+        "variable_rounds": true
+      },
+      "training_wall_seconds": 50.81210250407457,
+      "updates": 14,
+      "validation": {
+        "bpb": 5.0663309704545485,
+        "brier": 0.9826234579086304,
+        "cost_batched_calls": {
+          "accepted": 0,
+          "attempts": 4096,
+          "energy_calls": 896,
+          "gradient_calls": 256
+        },
+        "cpu_ms_per_byte": 0.6697060781248876,
+        "cpu_seconds": 1.3715580479997698,
+        "energy_calls_per_position": 7.0,
+        "evaluated_bytes": 2048,
+        "gradient_calls_per_position": 2.0,
+        "next_byte_accuracy": 0.15576171875,
+        "python_peak_tracemalloc_bytes": null,
+        "wall_seconds": 1.3816647779894993
+      },
+      "validation_cpu_seconds": 1.3720789920002971
+    }
+  },
+  "language": {
+    "bpb": 3.362712106843773,
+    "brier": 0.7343111038208008,
+    "cost_batched_calls": {
+      "accepted": 0,
+      "attempts": 16384,
+      "energy_calls": 1408,
+      "gradient_calls": 512
+    },
+    "cpu_ms_per_byte": 0.24076376171877634,
+    "cpu_seconds": 0.9861683680001079,
+    "energy_calls_per_position": 11.0,
+    "evaluated_bytes": 4096,
+    "gradient_calls_per_position": 4.0,
+    "next_byte_accuracy": 0.389892578125,
+    "python_peak_tracemalloc_bytes": null,
+    "wall_seconds": 0.9938996160635725
+  },
+  "language_policy": {
+    "best_validation_bpb": 3.0388233718492765,
+    "halting_tolerance": 0.0,
+    "rounds": 4,
+    "validation": [
+      {
+        "bpb": 3.0469179072947856,
+        "cpu_seconds": 0.56240919999982,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "bpb": 3.0469179072947856,
+          "brier": 0.7190130352973938,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 2048,
+            "energy_calls": 640,
+            "gradient_calls": 128
+          },
+          "cpu_ms_per_byte": 0.2746138671874121,
+          "cpu_seconds": 0.56240919999982,
+          "energy_calls_per_position": 5.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 1.0,
+          "next_byte_accuracy": 0.40185546875,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 0.5662681419635192
+        },
+        "rounds": 1
+      },
+      {
+        "bpb": 3.0421588033801097,
+        "cpu_seconds": 0.7472300160002305,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "bpb": 3.0421588033801097,
+          "brier": 0.7183400392532349,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 4096,
+            "energy_calls": 896,
+            "gradient_calls": 256
+          },
+          "cpu_ms_per_byte": 0.36485840625011257,
+          "cpu_seconds": 0.7472300160002305,
+          "energy_calls_per_position": 7.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 2.0,
+          "next_byte_accuracy": 0.40771484375,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 0.7883203520905226
+        },
+        "rounds": 2
+      },
+      {
+        "bpb": 3.039438381808762,
+        "cpu_seconds": 1.1249305760002244,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "bpb": 3.039438381808762,
+          "brier": 0.7181396484375,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 8192,
+            "energy_calls": 1408,
+            "gradient_calls": 512
+          },
+          "cpu_ms_per_byte": 0.5492825078126096,
+          "cpu_seconds": 1.1249305760002244,
+          "energy_calls_per_position": 11.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 4.0,
+          "next_byte_accuracy": 0.41064453125,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 1.1887504839105532
+        },
+        "rounds": 4
+      },
+      {
+        "bpb": 3.038835066669535,
+        "cpu_seconds": 1.5273297759999878,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "bpb": 3.038835066669535,
+          "brier": 0.7182833552360535,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 16384,
+            "energy_calls": 2432,
+            "gradient_calls": 1024
+          },
+          "cpu_ms_per_byte": 0.745766492187494,
+          "cpu_seconds": 1.5273297759999878,
+          "energy_calls_per_position": 19.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 8.0,
+          "next_byte_accuracy": 0.41259765625,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 1.5593963200226426
+        },
+        "rounds": 8
+      },
+      {
+        "bpb": 3.0388233718492765,
+        "cpu_seconds": 1.6000857760000144,
+        "halting_tolerance": 0.001,
+        "metrics": {
+          "bpb": 3.0388233718492765,
+          "brier": 0.7182828187942505,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 16384,
+            "energy_calls": 2432,
+            "gradient_calls": 1024
+          },
+          "cpu_ms_per_byte": 0.781291882812507,
+          "cpu_seconds": 1.6000857760000144,
+          "energy_calls_per_position": 19.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 8.0,
+          "next_byte_accuracy": 0.4130859375,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 1.6640239800326526
+        },
+        "rounds": 8
+      },
+      {
+        "bpb": 3.038964741588286,
+        "cpu_seconds": 1.3856763359999604,
+        "halting_tolerance": 0.005,
+        "metrics": {
+          "bpb": 3.038964741588286,
+          "brier": 0.7181888222694397,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 12784,
+            "energy_calls": 1982,
+            "gradient_calls": 799
+          },
+          "cpu_ms_per_byte": 0.6765997734374807,
+          "cpu_seconds": 1.3856763359999604,
+          "energy_calls_per_position": 15.484375,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 6.2421875,
+          "next_byte_accuracy": 0.41357421875,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 1.5660383709473535
+        },
+        "rounds": 8
+      }
+    ]
+  },
+  "local_diagnostics": {
+    "common_shift_max_probability_change": 3.8743019104003906e-07,
+    "common_shift_mean_energy_change": -3.725290298461914e-09,
+    "fraction_first_order_ce_descent": 0.5,
+    "mean_common_output_squared_gradient_fraction": 1.3899654492743419e-16,
+    "mean_output_ce_gradient_cosine": -0.00040755487862043083,
+    "positions": 512,
+    "rounds": [
+      {
+        "bpb": 3.303004503250122,
+        "mean_energy": 78.36541748046875,
+        "rounds": 0
+      },
+      {
+        "bpb": 3.3017590045928955,
+        "mean_energy": 65.63182067871094,
+        "rounds": 1
+      },
+      {
+        "bpb": 3.300786018371582,
+        "mean_energy": 60.790245056152344,
+        "rounds": 2
+      },
+      {
+        "bpb": 3.2994730472564697,
+        "mean_energy": 58.171791076660156,
+        "rounds": 4
+      },
+      {
+        "bpb": 3.298363447189331,
+        "mean_energy": 57.65013885498047,
+        "rounds": 8
+      }
+    ],
+    "scope": "Fixed previous states and conditioning; not full rollout"
+  },
+  "physical_arm": "full_rewt",
+  "reasoning_policy": {
+    "best_validation_bpb": 0.8569068014971314,
+    "halting_tolerance": 0.0,
+    "rounds": 2,
+    "validation": [
+      {
+        "bpb": 0.8605802097420834,
+        "cpu_seconds": 4.598718256000211,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "answer_bpb": 0.8605802097420834,
+          "answer_bytes": 3333,
+          "teacher_forced_byte_accuracy": 0.8043804380438044
+        },
+        "rounds": 1
+      },
+      {
+        "bpb": 0.8580387047203855,
+        "cpu_seconds": 6.06566303999989,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "answer_bpb": 0.8580387047203855,
+          "answer_bytes": 3333,
+          "teacher_forced_byte_accuracy": 0.804080408040804
+        },
+        "rounds": 2
+      },
+      {
+        "bpb": 0.8569068014971314,
+        "cpu_seconds": 7.998280064000028,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "answer_bpb": 0.8569068014971314,
+          "answer_bytes": 3333,
+          "teacher_forced_byte_accuracy": 0.8052805280528053
+        },
+        "rounds": 4
+      },
+      {
+        "bpb": 0.8571481869134107,
+        "cpu_seconds": 12.37439118400016,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "answer_bpb": 0.8571481869134107,
+          "answer_bytes": 3333,
+          "teacher_forced_byte_accuracy": 0.8052805280528053
+        },
+        "rounds": 8
+      },
+      {
+        "bpb": 0.8569251298012376,
+        "cpu_seconds": 13.716929760000312,
+        "halting_tolerance": 0.001,
+        "metrics": {
+          "answer_bpb": 0.8569251298012376,
+          "answer_bytes": 3333,
+          "teacher_forced_byte_accuracy": 0.8052805280528053
+        },
+        "rounds": 8
+      },
+      {
+        "bpb": 0.8569936941705811,
+        "cpu_seconds": 11.354505632000382,
+        "halting_tolerance": 0.005,
+        "metrics": {
+          "answer_bpb": 0.8569936941705811,
+          "answer_bytes": 3333,
+          "teacher_forced_byte_accuracy": 0.8046804680468047
+        },
+        "rounds": 8
+      }
+    ]
+  },
+  "reasoning_teacher_forced": {
+    "answer_bpb": 0.8228500298976389,
+    "answer_bytes": 5229,
+    "teacher_forced_byte_accuracy": 0.8187033849684452
+  },
+  "reasoning_training": {
+    "all_parameters": 250020,
+    "arm": "full_rewt",
+    "best_step": 640,
+    "best_validation_score": 0.8580387047203855,
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_stabilized_20261009/seed_101/full_rewt/reasoning/best.pt",
+    "clip_fraction": 0.35125,
+    "filtered_spike_fraction": 0.25,
+    "forecast_targets": "frozen from-scratch Transformer hidden states; training only",
+    "initialization": "copy of this seed's course-trained LM",
+    "maximum_raw_gradient_norm": 1.4854639652247872e+17,
+    "mean_high_frequency_gradient_fraction": 0.35661714188726995,
+    "mean_raw_gradient_norm": 349931036949884.75,
+    "method": "clip",
+    "parameters": 250020,
+    "phase": "reasoning",
+    "process_peak_rss_bytes": 1132687360,
+    "processed_target_bytes": 202208,
+    "raw_spike_fraction": 0.25,
+    "remaining_phase_cpu_seconds": 1853.527028784,
+    "remaining_phase_wall_seconds": 2043.8238481960725,
+    "seed": 101,
+    "shared_teacher_training_cpu_seconds": 71.36586251199742,
+    "training_cpu_seconds": 1718.1746945280015,
+    "training_plus_shared_teacher_cpu_seconds": 1789.540557039999,
+    "training_recipe": {
+      "corruption_probability": 0.25,
+      "curriculum": true,
+      "hard_negatives": true,
+      "maximum_rounds": 4,
+      "minimum_rounds": 1,
+      "output_noise": 0.5,
+      "process_supervision": true,
+      "process_weight": 0.05,
+      "repair_weight": 0.1,
+      "residual_gain": 0.25,
+      "state_gradient_interval_reasoning": 16,
+      "state_noise": 0.05,
+      "trace_training_energy": false,
+      "variable_rounds": true
+    },
+    "training_wall_seconds": 1897.2224805430742,
+    "updates": 800,
+    "validation": {
+      "answer_bpb": 13.51186234451401,
+      "answer_bytes": 3333,
+      "teacher_forced_byte_accuracy": 0.3426342634263426
+    },
+    "validation_cpu_seconds": 130.64630444799997
+  },
+  "refinement_audit": {
+    "all_accepted_states_nonincreasing": true,
+    "fraction_rounds_decreasing": 1.0,
+    "maximum_accepted_energy_increase": -0.30956459045410156,
+    "mean_energy_drop": 23.867828369140625,
+    "positions": 32,
+    "rounds": 4
+  },
+  "seed": 101,
+  "text": {
+    "bytes": 96.0,
+    "count": 30,
+    "distinct_byte_trigram_fraction": 0.9099290780141847,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 0.9989583333333333,
+    "repeated_byte_trigram_fraction": 0.0900709219858156,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0010416666666666667
+  },
+  "training": {
+    "all_parameters": 250020,
+    "arm": "full_rewt",
+    "best_step": 256,
+    "best_validation_score": 3.0421588033801097,
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/full_rewt/language/best.pt",
+    "clip_fraction": 0.03125,
+    "filtered_spike_fraction": 0.0,
+    "forecast_targets": "frozen from-scratch Transformer hidden states; training only",
+    "initialization": "random",
+    "maximum_raw_gradient_norm": 2.0457026958465576,
+    "mean_high_frequency_gradient_fraction": 0.2789706844471249,
+    "mean_raw_gradient_norm": 0.3708926582476124,
+    "method": "clip",
+    "parameters": 250020,
+    "phase": "language",
+    "process_peak_rss_bytes": 1731231744,
+    "processed_target_bytes": 1048576,
+    "raw_spike_fraction": 0.0,
+    "remaining_phase_cpu_seconds": 1047.0127074400002,
+    "remaining_phase_wall_seconds": 1167.97409620299,
+    "seed": 101,
+    "shared_teacher_training_cpu_seconds": 49.713971615999945,
+    "training_cpu_seconds": 1040.8221110240033,
+    "training_plus_shared_teacher_cpu_seconds": 1090.5360826400033,
+    "training_recipe": {
+      "corruption_probability": 0.25,
+      "curriculum": true,
+      "hard_negatives": true,
+      "maximum_rounds": 4,
+      "minimum_rounds": 1,
+      "output_noise": 0.5,
+      "process_supervision": true,
+      "process_weight": 0.05,
+      "repair_weight": 0.1,
+      "residual_gain": 0.25,
+      "state_noise": 0.05,
+      "trace_training_energy": false,
+      "variable_rounds": true
+    },
+    "training_wall_seconds": 1160.7857202800224,
+    "updates": 256,
+    "validation": {
+      "bpb": 3.0421588033801097,
+      "brier": 0.7183400392532349,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 896,
+        "gradient_calls": 256
+      },
+      "cpu_ms_per_byte": 0.6470992187500579,
+      "cpu_seconds": 1.3252592000001187,
+      "energy_calls_per_position": 7.0,
+      "evaluated_bytes": 2048,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.40771484375,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 1.4570837729843333
+    },
+    "validation_cpu_seconds": 4.765213856000173
+  },
+  "training_reasoning": {
+    "all": {
+      "answer_correct": 0.052083333333333336,
+      "both_correct": 0.03125,
+      "count": 96,
+      "steps_correct": 0.03125,
+      "valid_format": 1.0
+    },
+    "by_difficulty": {
+      "heldout_instance": {
+        "answer_correct": 0.052083333333333336,
+        "both_correct": 0.03125,
+        "count": 96,
+        "steps_correct": 0.03125,
+        "valid_format": 1.0
+      }
+    },
+    "by_family": {
+      "arithmetic": {
+        "answer_correct": 0.0,
+        "both_correct": 0.0,
+        "count": 32,
+        "steps_correct": 0.0,
+        "valid_format": 1.0
+      },
+      "recall": {
+        "answer_correct": 0.09375,
+        "both_correct": 0.09375,
+        "count": 32,
+        "steps_correct": 0.09375,
+        "valid_format": 1.0
+      },
+      "rules": {
+        "answer_correct": 0.0625,
+        "both_correct": 0.0,
+        "count": 32,
+        "steps_correct": 0.0,
+        "valid_format": 1.0
+      }
+    },
+    "by_steps": {
+      "1": {
+        "answer_correct": 0.043478260869565216,
+        "both_correct": 0.043478260869565216,
+        "count": 23,
+        "steps_correct": 0.043478260869565216,
+        "valid_format": 1.0
+      },
+      "16": {
+        "answer_correct": 0.0,
+        "both_correct": 0.0,
+        "count": 7,
+        "steps_correct": 0.0,
+        "valid_format": 1.0
+      },
+      "2": {
+        "answer_correct": 0.047619047619047616,
+        "both_correct": 0.0,
+        "count": 21,
+        "steps_correct": 0.0,
+        "valid_format": 1.0
+      },
+      "3": {
+        "answer_correct": 0.04,
+        "both_correct": 0.0,
+        "count": 25,
+        "steps_correct": 0.0,
+        "valid_format": 1.0
+      },
+      "4": {
+        "answer_correct": 0.1,
+        "both_correct": 0.1,
+        "count": 10,
+        "steps_correct": 0.1,
+        "valid_format": 1.0
+      },
+      "8": {
+        "answer_correct": 0.1,
+        "both_correct": 0.1,
+        "count": 10,
+        "steps_correct": 0.1,
+        "valid_format": 1.0
+      }
+    }
+  }
+}

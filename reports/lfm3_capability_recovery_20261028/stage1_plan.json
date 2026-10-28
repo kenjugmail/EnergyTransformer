@@ -1,0 +1,31 @@
+{
+  "arguments": {
+    "initial": "runs/lfm3_conversion_20261028/converted/model.pt",
+    "output": "runs/lfm3_capability_recovery_20261028/stage1",
+    "corpus": "/home/kt/Documents/EnergyTransformer/data/lfm3_capability_recovery_v1",
+    "steps": 1024,
+    "batch": 2,
+    "length": 512,
+    "lr": 3e-05,
+    "ffn_layers": 6,
+    "inherited_lr_scale": 0.2,
+    "prompt_weight": 0.1,
+    "hard_weight": 0.2,
+    "hidden_weight": 0.05,
+    "prefix_fraction": 0.75,
+    "eval_batches": 16,
+    "eval_every": 128,
+    "logit_chunk": 32,
+    "seed": 281710,
+    "device": "cuda"
+  },
+  "initial_sha256": "60838c01d17e6df8e3194222848b88c9efb41c4543103d4b8f0011820a3f8a62",
+  "corpus_manifest_sha256": "ec26d6b36b5c69789b867abe01a48b5579f002afe2193324d916ae1c7da005f6",
+  "source_sha256": {
+    "rewt/lfm_conversion.py": "b90beed4155eeb9995ddf2af8698b5536040219f541faa6429a5031cef61a35f",
+    "rewt/lfm_distill.py": "966754754d6c0563f7ce6d5f09b2b29469a3fba8c9cb157d9a54eeaf3fbcb14a",
+    "scripts/recover_lfm3_capabilities.py": "53fed5deb6cb6f5320f7e3f7655dc6af1705f7453fd4c822c040824e9e91f9f3",
+    "scripts/prepare_lfm3_recovery.py": "19257f9e778f21d80745d14778580bce1d60e5afc5b49dd1edef8a977a8e603d"
+  },
+  "selection": "Lowest fixed validation answer-weighted KL; capability evaluation is performed only after the training run and never used for checkpoint selection."
+}

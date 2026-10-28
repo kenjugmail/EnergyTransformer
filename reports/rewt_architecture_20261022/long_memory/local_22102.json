@@ -1,0 +1,12 @@
+{
+  "case": {
+    "delta_size": 0,
+    "name": "local_22102",
+    "seed": 22102
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/long_memory/local_22102/best.pt",
+  "checkpoint_sha256": "cccf05dcedb18becff9785db8d0611e632137ab2aa70e135803189b4b4be8443",
+  "parameters": 32752,
+  "training_cpu_seconds": 27.941925744000002,
+  "validation_accuracy": 0.5494791666666666
+}

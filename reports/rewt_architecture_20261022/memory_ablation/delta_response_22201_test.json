@@ -1,0 +1,24 @@
+{
+  "ablation_family": "delta_response",
+  "case": {
+    "delta_size": 16,
+    "name": "delta_response_22201",
+    "seed": 22201
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/memory_ablation/delta_response_22201/best.pt",
+  "checkpoint_sha256": "b2df863bb40f38145c9145a6f52f59a60ea800300c260c868c15f38dc32385dc",
+  "parameters": 34321,
+  "test": {
+    "accuracy": 0.4479166666666667,
+    "groups": {
+      "16/False": 0.21875,
+      "16/True": 0.90625,
+      "32/False": 0.125,
+      "32/True": 0.71875,
+      "64/False": 0.140625,
+      "64/True": 0.578125
+    }
+  },
+  "training_cpu_seconds": 63.31333715199949,
+  "validation_accuracy": 0.6901041666666666
+}

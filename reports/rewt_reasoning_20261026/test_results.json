@@ -1,0 +1,665 @@
+[
+  {
+    "active_parameters": 68502,
+    "case": {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_energy_26101",
+      "seed": 26101,
+      "variant": "reread_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/reread_energy_26101/best.pt",
+    "checkpoint_sha256": "3d45182ac03aaab69afc241da6dd9afb0bd69d33656a01fdfa476a0430d25e38",
+    "fixed_query": {
+      "answer": 0.3333333333333333,
+      "complete": 0.3333333333333333,
+      "count_accuracy": 1.0,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 0.0,
+        "2/withheld_wording": 0.0,
+        "3/familiar_format": 0.0,
+        "3/withheld_wording": 0.0
+      },
+      "prompts": 960,
+      "response_ce": 9.801571092936987,
+      "valid_format": 1.0
+    },
+    "inference_weights_unchanged": true,
+    "max_within_read_energy_increase": -0.04654407501220703,
+    "maximum_gradient": 12.105263710021973,
+    "parameters": 68502,
+    "test": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.42538408000000005,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 960,
+      "response_ce": 0.011093275089903425,
+      "valid_format": 1.0
+    },
+    "test_distractors": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.6014587520000001,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 480,
+      "response_ce": 0.003964054708679517,
+      "valid_format": 1.0
+    },
+    "training_cpu_seconds": 25.927488688000004,
+    "training_examples_sha256": "34ff9826f654265bae6a942b0d8676138ad04ac1f06e920e095e53b9fda6bc2e",
+    "updates": 800,
+    "validation_ce": 0.3129910243882073,
+    "validation_complete": 0.6972222222222222,
+    "validation_cpu_seconds": 0.41229304000000067,
+    "zero_energy": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 960,
+      "response_ce": 0.01283457208968078,
+      "valid_format": 1.0
+    }
+  },
+  {
+    "active_parameters": 68502,
+    "case": {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_energy_26102",
+      "seed": 26102,
+      "variant": "reread_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/reread_energy_26102/best.pt",
+    "checkpoint_sha256": "eb6917ea80bcc3194711ec7cbefd770934d2a53fa29caa959671c5e56e553aee",
+    "fixed_query": {
+      "answer": 0.3333333333333333,
+      "complete": 0.3333333333333333,
+      "count_accuracy": 1.0,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 0.0,
+        "2/withheld_wording": 0.0,
+        "3/familiar_format": 0.0,
+        "3/withheld_wording": 0.0
+      },
+      "prompts": 960,
+      "response_ce": 6.173680144393196,
+      "valid_format": 1.0
+    },
+    "inference_weights_unchanged": true,
+    "max_within_read_energy_increase": -0.020053088665008545,
+    "maximum_gradient": 12.568002700805664,
+    "parameters": 68502,
+    "test": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.6003245119999999,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 960,
+      "response_ce": 0.006634315118814508,
+      "valid_format": 1.0
+    },
+    "test_distractors": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.4063469599999998,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 480,
+      "response_ce": 0.01264349843064944,
+      "valid_format": 1.0
+    },
+    "training_cpu_seconds": 34.07161305599996,
+    "training_examples_sha256": "36beb9e2b88584e892f8b8f0ced13350323acf78bf5b4320527b1ee90c6b7240",
+    "updates": 800,
+    "validation_ce": 0.5552094154887729,
+    "validation_complete": 0.5972222222222222,
+    "validation_cpu_seconds": 0.6285873119999996,
+    "zero_energy": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 960,
+      "response_ce": 0.00729682605403165,
+      "valid_format": 1.0
+    }
+  },
+  {
+    "active_parameters": 68502,
+    "case": {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_energy_26103",
+      "seed": 26103,
+      "variant": "reread_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/reread_energy_26103/best.pt",
+    "checkpoint_sha256": "7fc41b47cc92b7c9465475ce0b904e1647e76236cbc028b514187e67e6fa37a6",
+    "fixed_query": {
+      "answer": 0.3333333333333333,
+      "complete": 0.3333333333333333,
+      "count_accuracy": 1.0,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 0.0,
+        "2/withheld_wording": 0.0,
+        "3/familiar_format": 0.0,
+        "3/withheld_wording": 0.0
+      },
+      "prompts": 960,
+      "response_ce": 9.198598259477876,
+      "valid_format": 1.0
+    },
+    "inference_weights_unchanged": true,
+    "max_within_read_energy_increase": -0.0727049708366394,
+    "maximum_gradient": 13.165608406066895,
+    "parameters": 68502,
+    "test": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.556030048,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 960,
+      "response_ce": 0.008553986018523575,
+      "valid_format": 1.0
+    },
+    "test_distractors": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.2477130879999998,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 480,
+      "response_ce": 0.009378854557871819,
+      "valid_format": 1.0
+    },
+    "training_cpu_seconds": 34.53044939199989,
+    "training_examples_sha256": "0a770f1bc5eba57d5cfb1dcb0d5c7cfde76cdd32d561e61c437e6c72fa3c27d8",
+    "updates": 800,
+    "validation_ce": 0.2032092774907748,
+    "validation_complete": 0.8527777777777777,
+    "validation_cpu_seconds": 0.5597887999999971,
+    "zero_energy": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 960,
+      "response_ce": 0.010906881575162211,
+      "valid_format": 1.0
+    }
+  },
+  {
+    "active_parameters": 68502,
+    "case": {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": false,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "fixed_query_energy_26101",
+      "seed": 26101,
+      "variant": "fixed_query_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/fixed_query_energy_26101/best.pt",
+    "checkpoint_sha256": "c2b92a5e1db27537d1f6be85396ec5970c321c6b13129c920d23913ded75509a",
+    "inference_weights_unchanged": true,
+    "max_within_read_energy_increase": -0.03066152334213257,
+    "maximum_gradient": 12.14815902709961,
+    "parameters": 68502,
+    "test": {
+      "answer": 0.34375,
+      "complete": 0.31979166666666664,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.5030893440000002,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 0.91875,
+        "2/familiar_format": 0.0,
+        "2/withheld_wording": 0.0,
+        "3/familiar_format": 0.0,
+        "3/withheld_wording": 0.0
+      },
+      "prompts": 960,
+      "response_ce": 1.2605448206265768,
+      "valid_format": 1.0
+    },
+    "test_distractors": {
+      "answer": 0.2916666666666667,
+      "complete": 0.275,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.42419164799999987,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 0.65,
+        "2/familiar_format": 0.0,
+        "2/withheld_wording": 0.0,
+        "3/familiar_format": 0.0,
+        "3/withheld_wording": 0.0
+      },
+      "prompts": 480,
+      "response_ce": 2.07781720161438,
+      "valid_format": 1.0
+    },
+    "training_cpu_seconds": 33.61292516799995,
+    "training_examples_sha256": "34ff9826f654265bae6a942b0d8676138ad04ac1f06e920e095e53b9fda6bc2e",
+    "updates": 800,
+    "validation_ce": 1.7596773783365884,
+    "validation_complete": 0.16666666666666666,
+    "validation_cpu_seconds": 0.5837318399999987
+  },
+  {
+    "active_parameters": 68502,
+    "case": {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": false,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "fixed_query_energy_26102",
+      "seed": 26102,
+      "variant": "fixed_query_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/fixed_query_energy_26102/best.pt",
+    "checkpoint_sha256": "03eca8936adf4770f01fc0ba536a5002912f301013ea2f708d01e292019ec927",
+    "inference_weights_unchanged": true,
+    "max_within_read_energy_increase": -0.03230547904968262,
+    "maximum_gradient": 12.662583351135254,
+    "parameters": 68502,
+    "test": {
+      "answer": 0.33125,
+      "complete": 0.25104166666666666,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.550212288,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 0.50625,
+        "2/familiar_format": 0.0,
+        "2/withheld_wording": 0.0,
+        "3/familiar_format": 0.0,
+        "3/withheld_wording": 0.0
+      },
+      "prompts": 960,
+      "response_ce": 1.2713043173154195,
+      "valid_format": 1.0
+    },
+    "test_distractors": {
+      "answer": 0.27708333333333335,
+      "complete": 0.25416666666666665,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.48022991999999975,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 0.525,
+        "2/familiar_format": 0.0,
+        "2/withheld_wording": 0.0,
+        "3/familiar_format": 0.0,
+        "3/withheld_wording": 0.0
+      },
+      "prompts": 480,
+      "response_ce": 2.1995922406514485,
+      "valid_format": 1.0
+    },
+    "training_cpu_seconds": 45.878641248000044,
+    "training_examples_sha256": "36beb9e2b88584e892f8b8f0ced13350323acf78bf5b4320527b1ee90c6b7240",
+    "updates": 800,
+    "validation_ce": 1.709646807776557,
+    "validation_complete": 0.16666666666666666,
+    "validation_cpu_seconds": 0.7109064959999856
+  },
+  {
+    "active_parameters": 68502,
+    "case": {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": false,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "fixed_query_energy_26103",
+      "seed": 26103,
+      "variant": "fixed_query_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/fixed_query_energy_26103/best.pt",
+    "checkpoint_sha256": "4c1976744986401054a22a854f049769f5fe6d9f064621182ed6c88c0aa1dfa6",
+    "inference_weights_unchanged": true,
+    "max_within_read_energy_increase": -0.05330602824687958,
+    "maximum_gradient": 13.267640113830566,
+    "parameters": 68502,
+    "test": {
+      "answer": 0.3333333333333333,
+      "complete": 0.25104166666666666,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.4915155040000001,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 0.50625,
+        "2/familiar_format": 0.0,
+        "2/withheld_wording": 0.0,
+        "3/familiar_format": 0.0,
+        "3/withheld_wording": 0.0
+      },
+      "prompts": 960,
+      "response_ce": 1.2713493843873342,
+      "valid_format": 1.0
+    },
+    "test_distractors": {
+      "answer": 0.2791666666666667,
+      "complete": 0.25416666666666665,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.3832544959999997,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 0.525,
+        "2/familiar_format": 0.0,
+        "2/withheld_wording": 0.0,
+        "3/familiar_format": 0.0,
+        "3/withheld_wording": 0.0
+      },
+      "prompts": 480,
+      "response_ce": 2.160473601023356,
+      "valid_format": 1.0
+    },
+    "training_cpu_seconds": 35.435473919999886,
+    "training_examples_sha256": "0a770f1bc5eba57d5cfb1dcb0d5c7cfde76cdd32d561e61c437e6c72fa3c27d8",
+    "updates": 800,
+    "validation_ce": 1.7909839418199327,
+    "validation_complete": 0.16666666666666666,
+    "validation_cpu_seconds": 0.5534311999999986
+  },
+  {
+    "active_parameters": 60950,
+    "case": {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 0,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_no_energy_26101",
+      "seed": 26101,
+      "variant": "reread_no_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/reread_no_energy_26101/best.pt",
+    "checkpoint_sha256": "7803d7011c84535ab79c151b00aa2b9f27187402dfcf944121225da2afcdde7b",
+    "inference_weights_unchanged": true,
+    "max_within_read_energy_increase": 0.0,
+    "maximum_gradient": 12.105961799621582,
+    "parameters": 68502,
+    "test": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.42272457600000024,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 960,
+      "response_ce": 0.012918091126872847,
+      "valid_format": 1.0
+    },
+    "test_distractors": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.34139668799999967,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 480,
+      "response_ce": 0.0047449423931539055,
+      "valid_format": 1.0
+    },
+    "training_cpu_seconds": 23.686432272000154,
+    "training_examples_sha256": "34ff9826f654265bae6a942b0d8676138ad04ac1f06e920e095e53b9fda6bc2e",
+    "updates": 800,
+    "validation_ce": 0.31424677504433524,
+    "validation_complete": 0.7111111111111111,
+    "validation_cpu_seconds": 0.3916681440000076
+  },
+  {
+    "active_parameters": 60950,
+    "case": {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 0,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_no_energy_26102",
+      "seed": 26102,
+      "variant": "reread_no_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/reread_no_energy_26102/best.pt",
+    "checkpoint_sha256": "a93489648f38560bb29c197e33a138af605e751e70e217c7f8347b90ed81eb1e",
+    "inference_weights_unchanged": true,
+    "max_within_read_energy_increase": 0.0,
+    "maximum_gradient": 12.566912651062012,
+    "parameters": 68502,
+    "test": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.2511750079999997,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 960,
+      "response_ce": 0.007414669108887513,
+      "valid_format": 1.0
+    },
+    "test_distractors": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.22509175999999975,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 480,
+      "response_ce": 0.014112738023201624,
+      "valid_format": 1.0
+    },
+    "training_cpu_seconds": 20.616986144000137,
+    "training_examples_sha256": "36beb9e2b88584e892f8b8f0ced13350323acf78bf5b4320527b1ee90c6b7240",
+    "updates": 800,
+    "validation_ce": 0.5476061940193176,
+    "validation_complete": 0.6083333333333333,
+    "validation_cpu_seconds": 0.36269627199999377
+  },
+  {
+    "active_parameters": 60950,
+    "case": {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 0,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_no_energy_26103",
+      "seed": 26103,
+      "variant": "reread_no_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/reread_no_energy_26103/best.pt",
+    "checkpoint_sha256": "940a43b546a76424e61259af21f05864441e8def4afab0b7756874851ea45227",
+    "inference_weights_unchanged": true,
+    "max_within_read_energy_increase": 0.0,
+    "maximum_gradient": 13.164505958557129,
+    "parameters": 68502,
+    "test": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.655217232,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 960,
+      "response_ce": 0.010851269029080868,
+      "valid_format": 1.0
+    },
+    "test_distractors": {
+      "answer": 1.0,
+      "complete": 1.0,
+      "count_accuracy": 1.0,
+      "generation_and_scoring_cpu": 0.45027983999999943,
+      "groups": {
+        "1/familiar_format": 1.0,
+        "1/withheld_wording": 1.0,
+        "2/familiar_format": 1.0,
+        "2/withheld_wording": 1.0,
+        "3/familiar_format": 1.0,
+        "3/withheld_wording": 1.0
+      },
+      "prompts": 480,
+      "response_ce": 0.012276363372802735,
+      "valid_format": 1.0
+    },
+    "training_cpu_seconds": 23.188138224000028,
+    "training_examples_sha256": "0a770f1bc5eba57d5cfb1dcb0d5c7cfde76cdd32d561e61c437e6c72fa3c27d8",
+    "updates": 800,
+    "validation_ce": 0.19313690976964104,
+    "validation_complete": 0.8583333333333333,
+    "validation_cpu_seconds": 0.4254002079999992
+  }
+]

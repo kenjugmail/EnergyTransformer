@@ -1,0 +1,47 @@
+{
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/language_bpe/fourier80/best.pt",
+  "checkpoint_sha256": "1d2001fbf47de4230ca6118712cfcbbae99ae46be159ca02288a1637dff3a038",
+  "max_new_tokens": 96,
+  "prompts": [
+    {
+      "index": 3248,
+      "tokens_hex": "54ac88aac9ea8e8a72b5fa7384686ff3d989e5bb86989e6b2e20d665e22ce8a7"
+    },
+    {
+      "index": 3440,
+      "tokens_hex": "d6cfe6ae8281ac652c868eea8e81776f8fd8658573a6c9872057a16c88204a61"
+    },
+    {
+      "index": 3897,
+      "tokens_hex": "d665e22c828ac892ad727994726fd4e6898292aeed798c9073652e204197abbb"
+    },
+    {
+      "index": 160,
+      "tokens_hex": "d6cfe6ae8281ac652c868e998292f8b2a2b76ca6c987e42eb8926f76878c6f6c"
+    },
+    {
+      "index": 3216,
+      "tokens_hex": "d6cfe6ae8281ac652c868e998292f8b2a2b76ca6c987e42eb8926f7687826eac"
+    },
+    {
+      "index": 2170,
+      "tokens_hex": "4d9e799920fc73a365d5b48fc9c32eb8a77782988e7474798aff6faebb86836b"
+    },
+    {
+      "index": 4107,
+      "tokens_hex": "d6cfe6ae8281ac652c868e99828c756d62b292f8b29790736584686ff37687bb"
+    },
+    {
+      "index": 2085,
+      "tokens_hex": "d6cfe6ae8281ac652c868e998292f8b2a2b76ca6c987e42eb8926f768789c178"
+    }
+  ],
+  "seed": 1773,
+  "temperatures": [
+    null,
+    0.3,
+    0.5,
+    0.7
+  ],
+  "validation_only": true
+}

@@ -1,0 +1,20 @@
+{
+  "best_step": 512,
+  "initial_validation": {
+    "kl": 0.6812941261382294,
+    "nll": 1.447991387015186,
+    "teacher_nll": 1.171552532841398,
+    "agreement": 0.6998446263447412,
+    "hidden_relative_mse": 0.450588455553665,
+    "weighted_tokens": 13514.99984741211,
+    "tokens": 17781
+  },
+  "best_validation_kl": 0.6581492217541539,
+  "token_exposures": 550381,
+  "weighted_token_exposures": 426801.0965499878,
+  "trainable_parameters": 672881504,
+  "elapsed_seconds": 1484.1740934969857,
+  "peak_cuda_allocated_gib": 16.82595729827881,
+  "best_sha256": "1d956a462cfaa0e7b91b37f7b09086f015b05a67971222d4e006af21b84fdf55",
+  "selection": "Lowest fixed validation answer-weighted KL; recovered-checkpoint capability evaluation is performed after training and never used for checkpoint selection. Baseline evaluations may run concurrently."
+}

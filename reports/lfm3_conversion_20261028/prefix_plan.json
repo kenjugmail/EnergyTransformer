@@ -1,0 +1,34 @@
+{
+  "arguments": {
+    "teacher": "/home/kt/Documents/EnergyTransformer/data/lfm3_1_7b_teacher/40ebe0aa6662c9d40389c2f5d565b6a2c6aebacd",
+    "initial": "runs/lfm3_conversion_20261028/recovery_512/best.pt",
+    "corpus": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus",
+    "output": "runs/lfm3_conversion_20261028/prefix_recovery",
+    "align_steps": 0,
+    "distill_steps": 128,
+    "batch": 2,
+    "length": 512,
+    "lr": 2e-05,
+    "align_lr": 0.0003,
+    "hard_weight": 0.1,
+    "hidden_weight": 0.1,
+    "logit_chunk": 32,
+    "eval_batches": 4,
+    "eval_every": 64,
+    "test_batches": 16,
+    "seed": 281707,
+    "device": "cuda",
+    "threads": 4,
+    "all_weights": false,
+    "train_prefix_fraction": 1.0,
+    "eval_prefix_fraction": 1.0
+  },
+  "initial_sha256": "1747965adc9104b9bfb5f2490efd76588b3f4bcb1e45070f6e11ca51f8e9b33c",
+  "corpus_manifest_sha256": "f96d3664d330cb8b6511b51234fe7235c77f520381e262351361b3c9d4ea6a0a",
+  "source_sha256": {
+    "rewt/lfm_conversion.py": "b90beed4155eeb9995ddf2af8698b5536040219f541faa6429a5031cef61a35f",
+    "rewt/lfm_distill.py": "c6ca76b3234d549d15eda2c00398b43cb3f7a7985f655db44b0d8f74ef465220",
+    "scripts/distill_rewt_lfm3.py": "b88e371e73d00c1e69264fb613669efd6736121d10df87448c555e65517336c7"
+  },
+  "selection": "Lowest validation KL among initial, aligned and end-to-end checkpoints; test only after selection."
+}

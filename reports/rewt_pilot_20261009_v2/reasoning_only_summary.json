@@ -1,0 +1,106 @@
+{
+  "fourier_rewt": [
+    {
+      "answer_correct": 0.01,
+      "both_correct": 0.0,
+      "count": 100,
+      "seed": 101,
+      "steps_correct": 0.0,
+      "valid_format": 1.0
+    },
+    {
+      "answer_correct": 0.04,
+      "both_correct": 0.01,
+      "count": 100,
+      "seed": 202,
+      "steps_correct": 0.01,
+      "valid_format": 1.0
+    },
+    {
+      "answer_correct": 0.03,
+      "both_correct": 0.0,
+      "count": 100,
+      "seed": 303,
+      "steps_correct": 0.0,
+      "valid_format": 0.93
+    }
+  ],
+  "full_rewt": [
+    {
+      "answer_correct": 0.02,
+      "both_correct": 0.0,
+      "count": 100,
+      "seed": 101,
+      "steps_correct": 0.0,
+      "valid_format": 1.0
+    },
+    {
+      "answer_correct": 0.01,
+      "both_correct": 0.0,
+      "count": 100,
+      "seed": 202,
+      "steps_correct": 0.0,
+      "valid_format": 1.0
+    },
+    {
+      "answer_correct": 0.06,
+      "both_correct": 0.0,
+      "count": 100,
+      "seed": 303,
+      "steps_correct": 0.0,
+      "valid_format": 1.0
+    }
+  ],
+  "neural_energy": [
+    {
+      "answer_correct": 0.02,
+      "both_correct": 0.0,
+      "count": 100,
+      "seed": 101,
+      "steps_correct": 0.01,
+      "valid_format": 1.0
+    },
+    {
+      "answer_correct": 0.05,
+      "both_correct": 0.01,
+      "count": 100,
+      "seed": 202,
+      "steps_correct": 0.01,
+      "valid_format": 1.0
+    },
+    {
+      "answer_correct": 0.04,
+      "both_correct": 0.0,
+      "count": 100,
+      "seed": 303,
+      "steps_correct": 0.0,
+      "valid_format": 0.9
+    }
+  ],
+  "transformer": [
+    {
+      "answer_correct": 0.01,
+      "both_correct": 0.0,
+      "count": 100,
+      "seed": 101,
+      "steps_correct": 0.0,
+      "valid_format": 0.38
+    },
+    {
+      "answer_correct": 0.0,
+      "both_correct": 0.0,
+      "count": 100,
+      "seed": 202,
+      "steps_correct": 0.0,
+      "valid_format": 0.32
+    },
+    {
+      "answer_correct": 0.04,
+      "both_correct": 0.01,
+      "count": 100,
+      "seed": 303,
+      "steps_correct": 0.02,
+      "valid_format": 0.66
+    }
+  ]
+}

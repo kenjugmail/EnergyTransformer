@@ -1,0 +1,23 @@
+{
+  "active_position_parameters": 6144,
+  "affected_artifact": "plan.json",
+  "auxiliary_inputs": "Pre-refinement conditioning features; the unused workspace arm is not part of this run.",
+  "auxiliary_training_parameters": 13318,
+  "clarification": "Several inherited prose fragments in the original plan describe unused arms and an older delimiter weight. The frozen script and actual execution define the run below. This record does not change code, checkpoints, selection or data.",
+  "curriculum": "Arithmetic and rules: first 128 updates one hop, then 1920 updates with four one-hop and four two-hop examples per family per batch. Recall: two examples per delay 1/4/8/16 in every batch from the first update.",
+  "executed_arms": [
+    "progress"
+  ],
+  "inference_parameters": 256096,
+  "interpretation": "One continued initialization lineage, 2.46% more active parameters than the one-step parent. No isolated position-embedding effect or independent-seed replication is claimed.",
+  "numeric_loss": "0.5 Huber error measured in integer units, ramped over 128 updates.",
+  "observed_rule_query_key_alignment_weight": 0.2,
+  "preserve_original": true,
+  "remaining_step_auxiliary_weight": 2,
+  "trace_delimiter_cross_entropy_weight": 32,
+  "trace_value_cross_entropy_weight": 16,
+  "transfer_depths": [
+    3,
+    4
+  ]
+}

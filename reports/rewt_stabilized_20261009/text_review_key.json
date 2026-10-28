@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "C000",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C001",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C002",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C003",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C004",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C005",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C006",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C007",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C008",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C009",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C010",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C011",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C012",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C013",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C014",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C015",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C016",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C017",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C018",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C019",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C020",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C021",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C022",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C023",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C024",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C025",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C026",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C027",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C028",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C029",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C030",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C031",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C032",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C033",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C034",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C035",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C036",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C037",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C038",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C039",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C040",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C041",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C042",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C043",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C044",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C045",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C046",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C047",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C048",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C049",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C050",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C051",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C052",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C053",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C054",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C055",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C056",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C057",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C058",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C059",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C060",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C061",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C062",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C063",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C064",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C065",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C066",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C067",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C068",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C069",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C070",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C071",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C072",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C073",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C074",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C075",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C076",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C077",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C078",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C079",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C080",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C081",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C082",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C083",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C084",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C085",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C086",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C087",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C088",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C089",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C090",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C091",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C092",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C093",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C094",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C095",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C096",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C097",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C098",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C099",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C100",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C101",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C102",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C103",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C104",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C105",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C106",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C107",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C108",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C109",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C110",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C111",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C112",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C113",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C114",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C115",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C116",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C117",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C118",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C119",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C120",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C121",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C122",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C123",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C124",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C125",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C126",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C127",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C128",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C129",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C130",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C131",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C132",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C133",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C134",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C135",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C136",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C137",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C138",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C139",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C140",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C141",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C142",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C143",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C144",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C145",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C146",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C147",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C148",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C149",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C150",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C151",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C152",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C153",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C154",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C155",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C156",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C157",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C158",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C159",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C160",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C161",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C162",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C163",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C164",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C165",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C166",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C167",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C168",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C169",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C170",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C171",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C172",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C173",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C174",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C175",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C176",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C177",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C178",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C179",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C180",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C181",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C182",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C183",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C184",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C185",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C186",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C187",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C188",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C189",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C190",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C191",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C192",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C193",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C194",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C195",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C196",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C197",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C198",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C199",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C200",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C201",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C202",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C203",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C204",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C205",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C206",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C207",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C208",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C209",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C210",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C211",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C212",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C213",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C214",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C215",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C216",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C217",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C218",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C219",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C220",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C221",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C222",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C223",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C224",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C225",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C226",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C227",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C228",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C229",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C230",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C231",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C232",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C233",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C234",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C235",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C236",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C237",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C238",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C239",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C240",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C241",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C242",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C243",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C244",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C245",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C246",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C247",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C248",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C249",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C250",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C251",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C252",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C253",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C254",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C255",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C256",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C257",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C258",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C259",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C260",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C261",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C262",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C263",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C264",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C265",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C266",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C267",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C268",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C269",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C270",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C271",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C272",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C273",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C274",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C275",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C276",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C277",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C278",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C279",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C280",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C281",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C282",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C283",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C284",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C285",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C286",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C287",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C288",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C289",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C290",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C291",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C292",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C293",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C294",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C295",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C296",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C297",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C298",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C299",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C300",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C301",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C302",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C303",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C304",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C305",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C306",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C307",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C308",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C309",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C310",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C311",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C312",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C313",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C314",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C315",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C316",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C317",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C318",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C319",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C320",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C321",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C322",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C323",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C324",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C325",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C326",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C327",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C328",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C329",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C330",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C331",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C332",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C333",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_011"
+  },
+  {
+    "id": "C334",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C335",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C336",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C337",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C338",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C339",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C340",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C341",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C342",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C343",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C344",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C345",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C346",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C347",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C348",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C349",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C350",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C351",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C352",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C353",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C354",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C355",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C356",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C357",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C358",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C359",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C360",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C361",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C362",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C363",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C364",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C365",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C366",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C367",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C368",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C369",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C370",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C371",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C372",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C373",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C374",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C375",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C376",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C377",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C378",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C379",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C380",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C381",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C382",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C383",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C384",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C385",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C386",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C387",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C388",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C389",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C390",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C391",
+    "arm": "transformer",
+    "seed": 303,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C392",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_028"
+  },
+  {
+    "id": "C393",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C394",
+    "arm": "neural_energy",
+    "seed": 101,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C395",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_023"
+  },
+  {
+    "id": "C396",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C397",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_018"
+  },
+  {
+    "id": "C398",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C399",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C400",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C401",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C402",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C403",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C404",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C405",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C406",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C407",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_015"
+  },
+  {
+    "id": "C408",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C409",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_000"
+  },
+  {
+    "id": "C410",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C411",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C412",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_016"
+  },
+  {
+    "id": "C413",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_005"
+  },
+  {
+    "id": "C414",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C415",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_003"
+  },
+  {
+    "id": "C416",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_022"
+  },
+  {
+    "id": "C417",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C418",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C419",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_007"
+  },
+  {
+    "id": "C420",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C421",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_013"
+  },
+  {
+    "id": "C422",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_021"
+  },
+  {
+    "id": "C423",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_019"
+  },
+  {
+    "id": "C424",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_009"
+  },
+  {
+    "id": "C425",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C426",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C427",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C428",
+    "arm": "neural_energy",
+    "seed": 303,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C429",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_012"
+  },
+  {
+    "id": "C430",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_017"
+  },
+  {
+    "id": "C431",
+    "arm": "transformer",
+    "seed": 101,
+    "prompt_id": "text_001"
+  },
+  {
+    "id": "C432",
+    "arm": "fourier_rewt",
+    "seed": 101,
+    "prompt_id": "text_008"
+  },
+  {
+    "id": "C433",
+    "arm": "full_rewt",
+    "seed": 303,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C434",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C435",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_027"
+  },
+  {
+    "id": "C436",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_024"
+  },
+  {
+    "id": "C437",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C438",
+    "arm": "full_rewt",
+    "seed": 101,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C439",
+    "arm": "fourier_rewt",
+    "seed": 202,
+    "prompt_id": "text_014"
+  },
+  {
+    "id": "C440",
+    "arm": "full_rewt",
+    "seed": 202,
+    "prompt_id": "text_006"
+  },
+  {
+    "id": "C441",
+    "arm": "fourier_rewt",
+    "seed": 303,
+    "prompt_id": "text_004"
+  },
+  {
+    "id": "C442",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_020"
+  },
+  {
+    "id": "C443",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_002"
+  },
+  {
+    "id": "C444",
+    "arm": "neural_energy",
+    "seed": 202,
+    "prompt_id": "text_026"
+  },
+  {
+    "id": "C445",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_025"
+  },
+  {
+    "id": "C446",
+    "arm": "legacy_fourier",
+    "seed": 101,
+    "prompt_id": "text_010"
+  },
+  {
+    "id": "C447",
+    "arm": "legacy_fourier",
+    "seed": 303,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C448",
+    "arm": "transformer",
+    "seed": 202,
+    "prompt_id": "text_029"
+  },
+  {
+    "id": "C449",
+    "arm": "legacy_fourier",
+    "seed": 202,
+    "prompt_id": "text_020"
+  }
+]

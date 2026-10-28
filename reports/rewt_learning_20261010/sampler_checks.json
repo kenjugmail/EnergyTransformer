@@ -1,0 +1,91 @@
+[
+  {
+    "arguments": [
+      "scripts/sample_rewt.py",
+      "--checkpoint",
+      "runs/rewt_learning_20261010/binding/aligned/best.pt",
+      "--prompt",
+      "A=19;B=A+23;B=?\n",
+      "--greedy",
+      "--stop-newline",
+      "--max-new",
+      "40",
+      "--json"
+    ],
+    "checkpoint_file_unchanged": true,
+    "result": {
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/binding/aligned/best.pt",
+      "checkpoint_sha256": "96d648b633c27ee4440f41556e94f63cea760b1839dff9ef8515808df9d2b012",
+      "cost": {
+        "attempts": 62,
+        "energy_calls": 124,
+        "gradient_calls": 62
+      },
+      "generated_bytes": 16,
+      "generated_tokens": 16,
+      "generation": "steps=42;ans=42\n",
+      "generation_hex": "73746570733d34323b616e733d34320a",
+      "prompt": "A=19;B=A+23;B=?\n"
+    }
+  },
+  {
+    "arguments": [
+      "scripts/sample_rewt.py",
+      "--checkpoint",
+      "runs/rewt_learning_20261010/language_bpe_extended/fourier80/best.pt",
+      "--prompt",
+      "Once upon a time, there was a little girl named Lily.",
+      "--max-new",
+      "40",
+      "--temperature",
+      "0.5",
+      "--seed",
+      "1991",
+      "--json"
+    ],
+    "checkpoint_file_unchanged": true,
+    "result": {
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/language_bpe_extended/fourier80/best.pt",
+      "checkpoint_sha256": "0d47ac452774d0355d134d9eba967388fe0ca5d2be624b94fcc2cd5c10a5629a",
+      "cost": {
+        "attempts": 126,
+        "energy_calls": 252,
+        "gradient_calls": 126
+      },
+      "generated_bytes": 88,
+      "generated_tokens": 40,
+      "generation": " One day, Lily's mommy said, \"Yes, there was a little girl named Lily!\"\nLily was very ni",
+      "generation_hex": "204f6e65206461792c204c696c792773206d6f6d6d7920736169642c20225965732c207468657265207761732061206c6974746c65206769726c206e616d6564204c696c7921220a4c696c79207761732076657279206e69",
+      "prompt": "Once upon a time, there was a little girl named Lily."
+    }
+  },
+  {
+    "arguments": [
+      "scripts/sample_rewt.py",
+      "--checkpoint",
+      "runs/rewt_learning_20261010/multistep_balanced/progress/best.pt",
+      "--prompt",
+      "walk E 2:L>U;T>D;E>L;S>T=?\n",
+      "--greedy",
+      "--stop-newline",
+      "--max-new",
+      "40",
+      "--json"
+    ],
+    "checkpoint_file_unchanged": true,
+    "result": {
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/multistep_balanced/progress/best.pt",
+      "checkpoint_sha256": "917f367430ca4dcf4f9b8c8a7ced5f9d0e38cd62d20fe953b430cbfeed446737",
+      "cost": {
+        "attempts": 84,
+        "energy_calls": 168,
+        "gradient_calls": 84
+      },
+      "generated_bytes": 16,
+      "generated_tokens": 16,
+      "generation": "steps=L,U;ans=U\n",
+      "generation_hex": "73746570733d4c2c553b616e733d550a",
+      "prompt": "walk E 2:L>U;T>D;E>L;S>T=?\n"
+    }
+  }
+]

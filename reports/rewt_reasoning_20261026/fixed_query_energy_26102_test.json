@@ -1,0 +1,63 @@
+{
+  "active_parameters": 68502,
+  "case": {
+    "config": {
+      "backtracks": 4,
+      "energy_rounds": 2,
+      "max_hops": 3,
+      "modes": 16,
+      "reread": false,
+      "step_size": 0.5,
+      "width": 48
+    },
+    "name": "fixed_query_energy_26102",
+    "seed": 26102,
+    "variant": "fixed_query_energy"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/fixed_query_energy_26102/best.pt",
+  "checkpoint_sha256": "03eca8936adf4770f01fc0ba536a5002912f301013ea2f708d01e292019ec927",
+  "inference_weights_unchanged": true,
+  "max_within_read_energy_increase": -0.03230547904968262,
+  "maximum_gradient": 12.662583351135254,
+  "parameters": 68502,
+  "test": {
+    "answer": 0.33125,
+    "complete": 0.25104166666666666,
+    "count_accuracy": 1.0,
+    "generation_and_scoring_cpu": 0.550212288,
+    "groups": {
+      "1/familiar_format": 1.0,
+      "1/withheld_wording": 0.50625,
+      "2/familiar_format": 0.0,
+      "2/withheld_wording": 0.0,
+      "3/familiar_format": 0.0,
+      "3/withheld_wording": 0.0
+    },
+    "prompts": 960,
+    "response_ce": 1.2713043173154195,
+    "valid_format": 1.0
+  },
+  "test_distractors": {
+    "answer": 0.27708333333333335,
+    "complete": 0.25416666666666665,
+    "count_accuracy": 1.0,
+    "generation_and_scoring_cpu": 0.48022991999999975,
+    "groups": {
+      "1/familiar_format": 1.0,
+      "1/withheld_wording": 0.525,
+      "2/familiar_format": 0.0,
+      "2/withheld_wording": 0.0,
+      "3/familiar_format": 0.0,
+      "3/withheld_wording": 0.0
+    },
+    "prompts": 480,
+    "response_ce": 2.1995922406514485,
+    "valid_format": 1.0
+  },
+  "training_cpu_seconds": 45.878641248000044,
+  "training_examples_sha256": "36beb9e2b88584e892f8b8f0ced13350323acf78bf5b4320527b1ee90c6b7240",
+  "updates": 800,
+  "validation_ce": 1.709646807776557,
+  "validation_complete": 0.16666666666666666,
+  "validation_cpu_seconds": 0.7109064959999856
+}

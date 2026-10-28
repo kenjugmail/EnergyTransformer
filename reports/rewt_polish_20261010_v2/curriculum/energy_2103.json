@@ -1,0 +1,22 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 1536,
+  "best_validation_macro": 0.3672839506172839,
+  "case": {
+    "family": "energy",
+    "heads": 2,
+    "learning_rate": 0.001,
+    "name": "energy_2103",
+    "seed": 2103,
+    "warm": false
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/curriculum/energy_2103/best.pt",
+  "checkpoint_sha256": "066d6cb65e494252975118401d5c73a21fb10248b498ad75052c271ce83daad0",
+  "initial_validation": null,
+  "maximum_raw_gradient_norm": 279.20203553912205,
+  "parameters": 256096,
+  "processed_response_tokens": 788465,
+  "test_not_evaluated": true,
+  "training_cpu_seconds": 1588.4001742240046,
+  "validation_cpu_seconds": 110.7745771039996
+}

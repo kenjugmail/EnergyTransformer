@@ -1,0 +1,20 @@
+[
+  {
+    "fourier_minus_neural_bpb": -0.0002951222288807287,
+    "revised_minus_raw_bpb": 0.01648419311989846,
+    "revised_minus_raw_complete": 0.005,
+    "seed": 101
+  },
+  {
+    "fourier_minus_neural_bpb": 0.002613104397209298,
+    "revised_minus_raw_bpb": -0.032145965203370874,
+    "revised_minus_raw_complete": 0.0,
+    "seed": 202
+  },
+  {
+    "fourier_minus_neural_bpb": 0.0027926542847103164,
+    "revised_minus_raw_bpb": 0.008959264214047025,
+    "revised_minus_raw_complete": -0.005,
+    "seed": 303
+  }
+]

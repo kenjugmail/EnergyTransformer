@@ -1,0 +1,424 @@
+{
+  "device": "NVIDIA GB10",
+  "dtype": "float32",
+  "medians": {
+    "hybrid": {
+      "gpu_ms": 7.05452823638916,
+      "wall_ms": 7.1698849787935615
+    },
+    "hybrid_energy": {
+      "gpu_ms": 8.280863761901855,
+      "wall_ms": 8.303120033815503
+    },
+    "transformer": {
+      "gpu_ms": 2.8765439987182617,
+      "wall_ms": 3.0135730048641562
+    },
+    "window_transformer": {
+      "gpu_ms": 3.0629758834838867,
+      "wall_ms": 3.1501660123467445
+    }
+  },
+  "rows": [
+    {
+      "energy_nonincreasing": null,
+      "greedy_equal": true,
+      "max_cached_error": 6.198883056640625e-06,
+      "max_cpu_gpu_error": 1.8596649169921875e-05,
+      "variant": "transformer"
+    },
+    {
+      "energy_nonincreasing": null,
+      "greedy_equal": true,
+      "max_cached_error": 6.198883056640625e-06,
+      "max_cpu_gpu_error": 1.52587890625e-05,
+      "variant": "window_transformer"
+    },
+    {
+      "energy_nonincreasing": true,
+      "greedy_equal": true,
+      "max_cached_error": 6.67572021484375e-06,
+      "max_cpu_gpu_error": 9.551644325256348e-06,
+      "variant": "hybrid"
+    },
+    {
+      "energy_nonincreasing": true,
+      "greedy_equal": true,
+      "max_cached_error": 8.58306884765625e-06,
+      "max_cpu_gpu_error": 1.4781951904296875e-05,
+      "variant": "hybrid_energy"
+    }
+  ],
+  "samples": [
+    {
+      "gpu_ms": 3.4385600090026855,
+      "repetition": 0,
+      "variant": "transformer",
+      "wall_ms": 3.498631063848734
+    },
+    {
+      "gpu_ms": 3.0629758834838867,
+      "repetition": 0,
+      "variant": "window_transformer",
+      "wall_ms": 3.0803100671619177
+    },
+    {
+      "gpu_ms": 6.8746562004089355,
+      "repetition": 0,
+      "variant": "hybrid",
+      "wall_ms": 6.89073302783072
+    },
+    {
+      "gpu_ms": 8.18832015991211,
+      "repetition": 0,
+      "variant": "hybrid_energy",
+      "wall_ms": 8.204703102819622
+    },
+    {
+      "gpu_ms": 7.876416206359863,
+      "repetition": 1,
+      "variant": "hybrid_energy",
+      "wall_ms": 7.89313402492553
+    },
+    {
+      "gpu_ms": 6.920000076293945,
+      "repetition": 1,
+      "variant": "hybrid",
+      "wall_ms": 6.943964981473982
+    },
+    {
+      "gpu_ms": 3.026495933532715,
+      "repetition": 1,
+      "variant": "window_transformer",
+      "wall_ms": 3.042886033654213
+    },
+    {
+      "gpu_ms": 2.7044479846954346,
+      "repetition": 1,
+      "variant": "transformer",
+      "wall_ms": 2.721428987570107
+    },
+    {
+      "gpu_ms": 2.499648094177246,
+      "repetition": 2,
+      "variant": "transformer",
+      "wall_ms": 2.7639410691335797
+    },
+    {
+      "gpu_ms": 2.530208110809326,
+      "repetition": 2,
+      "variant": "window_transformer",
+      "wall_ms": 2.5421809405088425
+    },
+    {
+      "gpu_ms": 6.542880058288574,
+      "repetition": 2,
+      "variant": "hybrid",
+      "wall_ms": 6.5600930247455835
+    },
+    {
+      "gpu_ms": 8.676799774169922,
+      "repetition": 2,
+      "variant": "hybrid_energy",
+      "wall_ms": 8.701072074472904
+    },
+    {
+      "gpu_ms": 13.611968040466309,
+      "repetition": 3,
+      "variant": "hybrid_energy",
+      "wall_ms": 13.747578021138906
+    },
+    {
+      "gpu_ms": 7.761119842529297,
+      "repetition": 3,
+      "variant": "hybrid",
+      "wall_ms": 7.780877989716828
+    },
+    {
+      "gpu_ms": 2.9841599464416504,
+      "repetition": 3,
+      "variant": "window_transformer",
+      "wall_ms": 3.0811260221526027
+    },
+    {
+      "gpu_ms": 2.6977920532226562,
+      "repetition": 3,
+      "variant": "transformer",
+      "wall_ms": 2.7149179950356483
+    },
+    {
+      "gpu_ms": 3.5579519271850586,
+      "repetition": 4,
+      "variant": "transformer",
+      "wall_ms": 3.5738779697567225
+    },
+    {
+      "gpu_ms": 2.721280097961426,
+      "repetition": 4,
+      "variant": "window_transformer",
+      "wall_ms": 2.7375889476388693
+    },
+    {
+      "gpu_ms": 7.150815963745117,
+      "repetition": 4,
+      "variant": "hybrid",
+      "wall_ms": 7.1698849787935615
+    },
+    {
+      "gpu_ms": 7.912735939025879,
+      "repetition": 4,
+      "variant": "hybrid_energy",
+      "wall_ms": 7.92734301649034
+    },
+    {
+      "gpu_ms": 7.369440078735352,
+      "repetition": 5,
+      "variant": "hybrid_energy",
+      "wall_ms": 7.386878016404808
+    },
+    {
+      "gpu_ms": 6.978303909301758,
+      "repetition": 5,
+      "variant": "hybrid",
+      "wall_ms": 6.99625292327255
+    },
+    {
+      "gpu_ms": 3.05401611328125,
+      "repetition": 5,
+      "variant": "window_transformer",
+      "wall_ms": 3.1501660123467445
+    },
+    {
+      "gpu_ms": 2.7376320362091064,
+      "repetition": 5,
+      "variant": "transformer",
+      "wall_ms": 2.753797103650868
+    },
+    {
+      "gpu_ms": 2.798880100250244,
+      "repetition": 6,
+      "variant": "transformer",
+      "wall_ms": 2.994213020429015
+    },
+    {
+      "gpu_ms": 2.466559886932373,
+      "repetition": 6,
+      "variant": "window_transformer",
+      "wall_ms": 2.650597016327083
+    },
+    {
+      "gpu_ms": 6.839968204498291,
+      "repetition": 6,
+      "variant": "hybrid",
+      "wall_ms": 6.8570689763873816
+    },
+    {
+      "gpu_ms": 7.822015762329102,
+      "repetition": 6,
+      "variant": "hybrid_energy",
+      "wall_ms": 7.8410221030935645
+    },
+    {
+      "gpu_ms": 8.6693115234375,
+      "repetition": 7,
+      "variant": "hybrid_energy",
+      "wall_ms": 8.686545072123408
+    },
+    {
+      "gpu_ms": 7.05452823638916,
+      "repetition": 7,
+      "variant": "hybrid",
+      "wall_ms": 7.080364972352982
+    },
+    {
+      "gpu_ms": 7.129568099975586,
+      "repetition": 7,
+      "variant": "window_transformer",
+      "wall_ms": 7.158893044106662
+    },
+    {
+      "gpu_ms": 3.036288022994995,
+      "repetition": 7,
+      "variant": "transformer",
+      "wall_ms": 3.049622057005763
+    },
+    {
+      "gpu_ms": 2.8765439987182617,
+      "repetition": 8,
+      "variant": "transformer",
+      "wall_ms": 2.888501971028745
+    },
+    {
+      "gpu_ms": 2.83951997756958,
+      "repetition": 8,
+      "variant": "window_transformer",
+      "wall_ms": 2.851892961189151
+    },
+    {
+      "gpu_ms": 7.5030717849731445,
+      "repetition": 8,
+      "variant": "hybrid",
+      "wall_ms": 7.710894919000566
+    },
+    {
+      "gpu_ms": 8.178208351135254,
+      "repetition": 8,
+      "variant": "hybrid_energy",
+      "wall_ms": 8.196912007406354
+    },
+    {
+      "gpu_ms": 9.244095802307129,
+      "repetition": 9,
+      "variant": "hybrid_energy",
+      "wall_ms": 9.262256906367838
+    },
+    {
+      "gpu_ms": 7.916255950927734,
+      "repetition": 9,
+      "variant": "hybrid",
+      "wall_ms": 7.935982081107795
+    },
+    {
+      "gpu_ms": 3.6791679859161377,
+      "repetition": 9,
+      "variant": "window_transformer",
+      "wall_ms": 3.6940709687769413
+    },
+    {
+      "gpu_ms": 3.337599992752075,
+      "repetition": 9,
+      "variant": "transformer",
+      "wall_ms": 3.3525499748066068
+    },
+    {
+      "gpu_ms": 2.822175979614258,
+      "repetition": 10,
+      "variant": "transformer",
+      "wall_ms": 3.065446042455733
+    },
+    {
+      "gpu_ms": 7.517151832580566,
+      "repetition": 10,
+      "variant": "window_transformer",
+      "wall_ms": 7.534031057730317
+    },
+    {
+      "gpu_ms": 17.759584426879883,
+      "repetition": 10,
+      "variant": "hybrid",
+      "wall_ms": 17.78248103801161
+    },
+    {
+      "gpu_ms": 9.25926399230957,
+      "repetition": 10,
+      "variant": "hybrid_energy",
+      "wall_ms": 9.276720928028226
+    },
+    {
+      "gpu_ms": 8.655584335327148,
+      "repetition": 11,
+      "variant": "hybrid_energy",
+      "wall_ms": 8.67673591710627
+    },
+    {
+      "gpu_ms": 7.053279876708984,
+      "repetition": 11,
+      "variant": "hybrid",
+      "wall_ms": 7.069100975058973
+    },
+    {
+      "gpu_ms": 3.6052799224853516,
+      "repetition": 11,
+      "variant": "window_transformer",
+      "wall_ms": 3.619718016125262
+    },
+    {
+      "gpu_ms": 2.8898561000823975,
+      "repetition": 11,
+      "variant": "transformer",
+      "wall_ms": 3.0135730048641562
+    },
+    {
+      "gpu_ms": 3.321376085281372,
+      "repetition": 12,
+      "variant": "transformer",
+      "wall_ms": 3.3413979690521955
+    },
+    {
+      "gpu_ms": 7.948383808135986,
+      "repetition": 12,
+      "variant": "window_transformer",
+      "wall_ms": 8.312528021633625
+    },
+    {
+      "gpu_ms": 7.200287818908691,
+      "repetition": 12,
+      "variant": "hybrid",
+      "wall_ms": 7.305549923330545
+    },
+    {
+      "gpu_ms": 8.280863761901855,
+      "repetition": 12,
+      "variant": "hybrid_energy",
+      "wall_ms": 8.303120033815503
+    },
+    {
+      "gpu_ms": 18.017536163330078,
+      "repetition": 13,
+      "variant": "hybrid_energy",
+      "wall_ms": 18.047810066491365
+    },
+    {
+      "gpu_ms": 7.23740816116333,
+      "repetition": 13,
+      "variant": "hybrid",
+      "wall_ms": 7.257790071889758
+    },
+    {
+      "gpu_ms": 3.2113280296325684,
+      "repetition": 13,
+      "variant": "window_transformer",
+      "wall_ms": 3.2256379490718246
+    },
+    {
+      "gpu_ms": 2.806943893432617,
+      "repetition": 13,
+      "variant": "transformer",
+      "wall_ms": 2.8198299696668983
+    },
+    {
+      "gpu_ms": 6.848927974700928,
+      "repetition": 14,
+      "variant": "transformer",
+      "wall_ms": 6.864877068437636
+    },
+    {
+      "gpu_ms": 3.2957119941711426,
+      "repetition": 14,
+      "variant": "window_transformer",
+      "wall_ms": 3.3105979673564434
+    },
+    {
+      "gpu_ms": 6.796703815460205,
+      "repetition": 14,
+      "variant": "hybrid",
+      "wall_ms": 7.588206906802952
+    },
+    {
+      "gpu_ms": 7.616159915924072,
+      "repetition": 14,
+      "variant": "hybrid_energy",
+      "wall_ms": 7.7113580191507936
+    }
+  ],
+  "scope": "Shared-device float32 eager forward+cross-entropy+backward at 24x128; no optimizer, compilation, mixed precision, or exclusive GPU. Alternating order, 15 measured repetitions. Events include gaps between host launches.",
+  "source_sha256": {
+    "rewt/streaming.py": "083e973c92bc293e963d3984b134c9c71f2659f14132e10db9285e70a3da5bc0",
+    "rewt/streaming_decode.py": "f331f481ab8ed7936ed1dd03cc1a485909e7444dc5e02b709d601889570d6d23",
+    "scripts/check_rewt_streaming_cuda.py": "d4038d768f82de3efbc990cc2470a8084c2910892be8fb1d54612b110fd20212"
+  },
+  "status": "passed",
+  "tf32": false,
+  "utilization_after": "15 %",
+  "utilization_before": "7 %"
+}

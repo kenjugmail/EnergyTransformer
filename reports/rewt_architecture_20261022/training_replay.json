@@ -1,0 +1,121 @@
+{
+  "records": [
+    {
+      "variant": "control",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "certified",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "precond2",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "precond4",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "precond8",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "scan",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "feedback8",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "delta",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "patch4",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "diversity",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "hybrid_modes",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "lowrank16",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    },
+    {
+      "variant": "combined",
+      "optimizer_steps": 3,
+      "outputs_gradients_and_weights_bitwise_equal": true
+    }
+  ],
+  "note": "All 13 variants replayed for three optimizer updates with final defaults. Added direct packing, directional robustness, structured opt-in and GPU variants do not change the frozen training paths.",
+  "frozen_source_sha256": {
+    "optim.py": "82b9c97645921256f643cd797825b4705a07b749df14b0bca627b997a38d3279",
+    "decode.py": "c0a8abb8c9016e28c1573245b12529a489f7f32a97f580138ee058bd5b7ff838",
+    "experiment.py": "a37fb1dac93d215854be7231a3ed5ee947a29a8e28b5bb728e7255338b46127d",
+    "profile.py": "ccfe45180c62f4cebf73158aadd364d222e80083e5273b4aafa6f9668bcd19f5",
+    "position_memory.py": "c3a33fc819167255a43c146971e2353ff59619f5bb27ef6fafa8ee31b05ae772",
+    "architecture.py": "b13c5e8a2d1dffbbae9ac4ccec985bc2052697efa60df526ee4050855e01ff48",
+    "memory.py": "092865ff6f64eea8ec9b9fa6f0866f41036c38de6d03a99e6f7814001217d920",
+    "advanced_kernels.py": "6b708c1939bdc99334f9243053a66b4081b464618e561143cd2b8392a0a5c448",
+    "improve_report.py": "8135a4be23a7cf6190d8e6ba44956cc17e61acfc62adde81dc33e349abc921b1",
+    "bpe.py": "33b305a464f1487c22037848bba542e6120fb790f6be67c8192828a8d3494b8e",
+    "story_data.py": "da4709e5fa11836b749b586afd39430749764ea52c706686e5c9c776c5de8f47",
+    "data.py": "ab4b434581188a681544cc679b2d9c589101f7bdaeb19461dd51771c64dab4b9",
+    "report.py": "9dd216247786dd9d12eaf0e227fb0b20a22aaa40aa9bc3e4c7f09b15feabbf71",
+    "curriculum.py": "e33541936ad1d401d2f7999513f2bdb00fba39cebe5530b3c6d9932da49064d1",
+    "tokenizer.py": "38b5b68d5913f577f55cb32b97fa2c2e81f4f26d9628fb09092c067ef51be2eb",
+    "kernels.py": "2504c7186acec630e9c6009ac3ef89b9c93485001aaa0d9cac9ac107ad58d074",
+    "model.py": "73541d7bbd6668689a38104881dfb21a7fdacdd6d626e6827e4bb1f8dbe35464",
+    "__init__.py": "cec12357813e592ad87c21229687e348a62d1c3deb7fae7c9275260b1ac0b2bc",
+    "evaluate.py": "398d5be602eaf598941b831e6cbcac499ee40c3e0df48879055307a0bc992e52",
+    "tasks.py": "88f5972e3e69f1ee21cd9cd0f7a86265a249e00556ceb4435df625a26b10b71a",
+    "improve.py": "6402abc8a9ada3cfa0fe784449edb5e6134bb472586c8a89d389783da9d3964f",
+    "stabilize.py": "253aafa0f6388a19fc65038ce3a0bcf0bbe7cb141b3e1a7987d87adcb4bf9eff"
+  },
+  "final_source_sha256": {
+    "optim.py": "82b9c97645921256f643cd797825b4705a07b749df14b0bca627b997a38d3279",
+    "decode.py": "9e5940f0408a5d37ee1e1587e8268091cf91b7a0104bc7684a30952f9451aee1",
+    "experiment.py": "a37fb1dac93d215854be7231a3ed5ee947a29a8e28b5bb728e7255338b46127d",
+    "profile.py": "ccfe45180c62f4cebf73158aadd364d222e80083e5273b4aafa6f9668bcd19f5",
+    "position_memory.py": "39c82457b5528afb0b4d3d3c675357822c864c3fc0e295f3325a1976690014e9",
+    "architecture.py": "6f1a153b2256faea31f354c94f026df28e85214d0013336874fca795f3c6689c",
+    "memory.py": "39df1e2d5d2f820435893c3d2faf2151532b3656fa0263d3a610ac37f9090dec",
+    "advanced_kernels.py": "f70aad01aae5d4070a784d3a8ce4545db274f38ccff878f6c5bc5d6845dcb504",
+    "improve_report.py": "8135a4be23a7cf6190d8e6ba44956cc17e61acfc62adde81dc33e349abc921b1",
+    "bpe.py": "33b305a464f1487c22037848bba542e6120fb790f6be67c8192828a8d3494b8e",
+    "story_data.py": "da4709e5fa11836b749b586afd39430749764ea52c706686e5c9c776c5de8f47",
+    "data.py": "ab4b434581188a681544cc679b2d9c589101f7bdaeb19461dd51771c64dab4b9",
+    "report.py": "9dd216247786dd9d12eaf0e227fb0b20a22aaa40aa9bc3e4c7f09b15feabbf71",
+    "curriculum.py": "e33541936ad1d401d2f7999513f2bdb00fba39cebe5530b3c6d9932da49064d1",
+    "tokenizer.py": "38b5b68d5913f577f55cb32b97fa2c2e81f4f26d9628fb09092c067ef51be2eb",
+    "triton_refine.py": "c49f6562bc0deafb0372922c807985d375780b075bd7e3acf817986df93978c9",
+    "kernels.py": "2504c7186acec630e9c6009ac3ef89b9c93485001aaa0d9cac9ac107ad58d074",
+    "structured_solver.py": "8f672b36df940edbfc4106cf5a632b20368fe1a19587978d6d450aacb5923026",
+    "model.py": "0b7201c790e2730869b07242d4be4a4dfbdc744a96a1cd4544d0289bbf731d87",
+    "__init__.py": "cec12357813e592ad87c21229687e348a62d1c3deb7fae7c9275260b1ac0b2bc",
+    "evaluate.py": "398d5be602eaf598941b831e6cbcac499ee40c3e0df48879055307a0bc992e52",
+    "tasks.py": "88f5972e3e69f1ee21cd9cd0f7a86265a249e00556ceb4435df625a26b10b71a",
+    "improve.py": "6402abc8a9ada3cfa0fe784449edb5e6134bb472586c8a89d389783da9d3964f",
+    "ring_decode.py": "9bd14b2499e0b12a3e06112221f7b72135f48d8114255c25e90f4006dcdaecba",
+    "stabilize.py": "253aafa0f6388a19fc65038ce3a0bcf0bbe7cb141b3e1a7987d87adcb4bf9eff"
+  }
+}

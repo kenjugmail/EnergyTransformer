@@ -1,0 +1,53 @@
+{
+  "presentation_id": "11p2zXD7gTftP4EZXtRqXL948wSRPqkao5pTgoINKgVQ",
+  "url": "https://docs.google.com/presentation/d/11p2zXD7gTftP4EZXtRqXL948wSRPqkao5pTgoINKgVQ",
+  "folder_id": "1koV8uZJWTtd3MAZRb86d2TAnzCTAEIh3",
+  "mime_type": "application/vnd.google-apps.presentation",
+  "verified_slide_count": 15,
+  "verified_embedded_note_pages": 15,
+  "native_issue_checker_errors": 0,
+  "import_revision": "OPetbF8qFuZ69Q",
+  "equation_repair_revision": "YbBsI6B9KRn0Fw",
+  "native_pdf_export": "Connector returned unmaterialized reference; local PDF is the backup. All native slide thumbnails inspected through browser; repaired slides are rechecked separately.",
+  "native_visual_review": {
+    "all_15_slides_inspected": true,
+    "repaired_slides_reinspected": [
+      "p3",
+      "p8",
+      "p9"
+    ],
+    "remaining_visual_defects": [],
+    "method": "Google-rendered thumbnail images inspected in browser; final text and speaker notes verified through connector readback."
+  },
+  "equation_repairs": [
+    {
+      "slide": "p5",
+      "occurrences_changed": 1,
+      "reason": "Google Arial lacks Unicode subscript s glyph"
+    },
+    {
+      "slide": "p13",
+      "occurrences_changed": 2,
+      "reason": "Use readable portable wave indices and gradient notation"
+    }
+  ],
+  "offline_sha256": {
+    "REWT_class_presentation.pptx": "6678707f44bb283952a898bf38e5c14c4ab56cc58b45c7a307a8f8b8e5a1b8ab",
+    "REWT_class_presentation.pdf": "cc64a6d5b99f4d2947b0f4967b60525da3ae950640c53dafa56f41ef7d19fa84",
+    "speaker_notes.txt": "cad222cd4fda733b6fced2ac0e6308d6dd8073f3b6ce9e0c3802d9fcbdbf7bcd",
+    "rehearsal_and_qa.txt": "1cbb51f22da581b0c390c5d439720d9cb539c37e749971a4b2835d6ca40e4c67",
+    "presenter_reference.pdf": "96d594dfd5b2869c62c4310f631b4a214e14ff3c484d1b95f521e7b5b3c3d7a7",
+    "presenter_reference.html": "29dd02eac27b4faea5440a7ea736d1e24e1975721f79a9e5ea773391f6d1483e",
+    "presenter_reference.json": "667712d0b0ecf2a6338c1a9f161ce6c82e3a775d2ba88cd99d9874d5d5462caf"
+  },
+  "updated_utc": "2026-10-28T13:56:05.261046+00:00",
+  "latest_revision": "qPHs9ezgOxwI6Q",
+  "title": "REWT \u2014 Compact Memory, Energy Refinement and LFM3 Recovery | October 28, 2026",
+  "presenter_reference": {
+    "url": "https://docs.google.com/document/d/1lTWL-q_2IcA7wKsH_Di9v4lonHuqEd7sPTFNCMgSKFU",
+    "local_pdf_pages": 16,
+    "native_content_verified": true,
+    "local_pages_visually_reviewed": 16,
+    "html_has_section_and_slide_navigation": true
+  }
+}

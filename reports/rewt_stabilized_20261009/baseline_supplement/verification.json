@@ -1,0 +1,11 @@
+{
+  "model_records_complete": 3,
+  "reasoning_samples": 900,
+  "text_samples": 90,
+  "primary_comparison_unchanged": true,
+  "supplemental_family_known_during_review": true,
+  "assistant_text_samples_actually_reviewed": 90,
+  "assistant_ratings_locked_before_identity_join": true,
+  "assistant_rating_cases_and_batches_hashes_verified": true,
+  "human_ratings_pending": true
+}

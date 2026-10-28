@@ -1,0 +1,105 @@
+{
+  "note": "Post-training zero-round intervention, no retraining, no policy selection. GRU future carry also changes when refinement is removed. Results are conditional on the learned parameters and this small validation set.",
+  "rows": [
+    {
+      "case": "control_22101",
+      "changed_generations": 41,
+      "no_refinement_complete": 0.345679012345679,
+      "no_refinement_response_ce": 0.4771416377829389,
+      "normal_complete": 0.3333333333333333,
+      "normal_response_ce": 0.4760357698298931,
+      "normal_rounds": 2,
+      "total_generations": 162,
+      "weights_unchanged": true
+    },
+    {
+      "case": "control_22102",
+      "changed_generations": 25,
+      "no_refinement_complete": 0.3580246913580247,
+      "no_refinement_response_ce": 0.4800622234095076,
+      "normal_complete": 0.35185185185185186,
+      "normal_response_ce": 0.478958090509737,
+      "normal_rounds": 2,
+      "total_generations": 162,
+      "weights_unchanged": true
+    },
+    {
+      "case": "control_22103",
+      "changed_generations": 29,
+      "no_refinement_complete": 0.345679012345679,
+      "no_refinement_response_ce": 0.5187567597161092,
+      "normal_complete": 0.3395061728395061,
+      "normal_response_ce": 0.5151703430948766,
+      "normal_rounds": 2,
+      "total_generations": 162,
+      "weights_unchanged": true
+    },
+    {
+      "case": "precond4_22101",
+      "changed_generations": 52,
+      "no_refinement_complete": 0.3395061728395061,
+      "no_refinement_response_ce": 0.49362923798983166,
+      "normal_complete": 0.3395061728395061,
+      "normal_response_ce": 0.4869503678417415,
+      "normal_rounds": 4,
+      "total_generations": 162,
+      "weights_unchanged": true
+    },
+    {
+      "case": "precond4_22102",
+      "changed_generations": 60,
+      "no_refinement_complete": 0.3580246913580247,
+      "no_refinement_response_ce": 0.4645374782258085,
+      "normal_complete": 0.35185185185185186,
+      "normal_response_ce": 0.4585566508373206,
+      "normal_rounds": 4,
+      "total_generations": 162,
+      "weights_unchanged": true
+    },
+    {
+      "case": "precond4_22103",
+      "changed_generations": 49,
+      "no_refinement_complete": 0.3395061728395061,
+      "no_refinement_response_ce": 0.522878009032924,
+      "normal_complete": 0.3395061728395061,
+      "normal_response_ce": 0.5142837050367466,
+      "normal_rounds": 4,
+      "total_generations": 162,
+      "weights_unchanged": true
+    },
+    {
+      "case": "delta_22101",
+      "changed_generations": 3,
+      "no_refinement_complete": 0.35185185185185186,
+      "no_refinement_response_ce": 0.46775171121455666,
+      "normal_complete": 0.35185185185185186,
+      "normal_response_ce": 0.4675375571107899,
+      "normal_rounds": 2,
+      "total_generations": 162,
+      "weights_unchanged": true
+    },
+    {
+      "case": "delta_22102",
+      "changed_generations": 2,
+      "no_refinement_complete": 0.35185185185185186,
+      "no_refinement_response_ce": 0.4564949310253202,
+      "normal_complete": 0.35185185185185186,
+      "normal_response_ce": 0.4563582692930275,
+      "normal_rounds": 2,
+      "total_generations": 162,
+      "weights_unchanged": true
+    },
+    {
+      "case": "delta_22103",
+      "changed_generations": 2,
+      "no_refinement_complete": 0.3580246913580247,
+      "no_refinement_response_ce": 0.49402991855066014,
+      "normal_complete": 0.3580246913580247,
+      "normal_response_ce": 0.4938129245057626,
+      "normal_rounds": 2,
+      "total_generations": 162,
+      "weights_unchanged": true
+    }
+  ],
+  "validation_only": true
+}

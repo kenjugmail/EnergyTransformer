@@ -1,0 +1,27 @@
+{
+  "seed": 281710,
+  "steps": 1024,
+  "rows": {
+    "prefix": 1840,
+    "complete_document": 1182,
+    "has_assistant": 2012,
+    "partial_document": 866,
+    "random_crop": 208,
+    "no_assistant": 36
+  },
+  "unique_training_documents": 1909,
+  "real_token_exposures": 739862,
+  "assistant_token_exposures": 500750,
+  "batches_without_assistant_targets": 0,
+  "source_exposures": {
+    "explore-instruct-rewrite": 36,
+    "smol-magpie-ultra-short": 729,
+    "smol-contraints": 332,
+    "self-oss-instruct": 313,
+    "openhermes-50k": 336,
+    "smol-summarize-20k": 93,
+    "smol-summarize-5k": 26,
+    "smollm-rewrite-30k": 141,
+    "everyday-conversations": 42
+  }
+}

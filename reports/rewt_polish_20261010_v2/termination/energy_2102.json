@@ -1,0 +1,160 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 768,
+  "best_validation_macro": 0.3688271604938272,
+  "case": {
+    "base_record": {
+      "auxiliary_parameters": 13318,
+      "best_step": 1792,
+      "best_validation_macro": 0.3611111111111111,
+      "case": {
+        "family": "energy",
+        "heads": 2,
+        "learning_rate": 0.001,
+        "name": "energy_2102",
+        "seed": 2102,
+        "warm": false
+      },
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/curriculum/energy_2102/best.pt",
+      "checkpoint_sha256": "49830bcd87e11abf60a1249aa47f5a430daa754b8e6ce4c9244a91a84b701623",
+      "initial_validation": null,
+      "maximum_raw_gradient_norm": 317.11732001933984,
+      "parameters": 256096,
+      "processed_response_tokens": 788432,
+      "test_not_evaluated": true,
+      "training_cpu_seconds": 1726.3179411519918,
+      "validation_cpu_seconds": 114.51432868799992
+    },
+    "family": "energy",
+    "heads": 2,
+    "learning_rate": 0.0005,
+    "name": "energy_2102",
+    "seed": 2102,
+    "warm": false
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/energy_2102/best.pt",
+  "checkpoint_sha256": "7d43a8a4477d0188979b1945bb91682a104d03985bf15f877204ab1326c43213",
+  "initial_validation": {
+    "groups": {
+      "arithmetic/1/familiar_format": 0.05555555555555555,
+      "arithmetic/1/withheld_wording": 0.0,
+      "arithmetic/2/familiar_format": 0.0,
+      "arithmetic/2/withheld_wording": 0.0,
+      "arithmetic/3/familiar_format": 0.0,
+      "arithmetic/3/withheld_wording": 0.0,
+      "recall/16/familiar_format": 0.9722222222222222,
+      "recall/16/withheld_wording": 0.8888888888888888,
+      "recall/4/familiar_format": 1.0,
+      "recall/4/withheld_wording": 1.0,
+      "recall/8/familiar_format": 1.0,
+      "recall/8/withheld_wording": 1.0,
+      "rules/1/familiar_format": 0.3611111111111111,
+      "rules/1/withheld_wording": 0.16666666666666666,
+      "rules/2/familiar_format": 0.027777777777777776,
+      "rules/2/withheld_wording": 0.027777777777777776,
+      "rules/3/familiar_format": 0.0,
+      "rules/3/withheld_wording": 0.0
+    },
+    "macro_complete": 0.3611111111111111,
+    "summary": {
+      "all": {
+        "answer_correct": 0.4027777777777778,
+        "both_correct": 0.3611111111111111,
+        "count": 648,
+        "steps_correct": 0.36574074074074076,
+        "valid_format": 0.9922839506172839
+      },
+      "by_difficulty": {
+        "familiar_format": {
+          "answer_correct": 0.4074074074074074,
+          "both_correct": 0.37962962962962965,
+          "count": 324,
+          "steps_correct": 0.38271604938271603,
+          "valid_format": 0.9907407407407407
+        },
+        "withheld_wording": {
+          "answer_correct": 0.39814814814814814,
+          "both_correct": 0.3425925925925926,
+          "count": 324,
+          "steps_correct": 0.3487654320987654,
+          "valid_format": 0.9938271604938271
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": 0.013888888888888888,
+          "both_correct": 0.009259259259259259,
+          "count": 216,
+          "steps_correct": 0.009259259259259259,
+          "valid_format": 0.9814814814814815
+        },
+        "recall": {
+          "answer_correct": 0.9768518518518519,
+          "both_correct": 0.9768518518518519,
+          "count": 216,
+          "steps_correct": 0.9814814814814815,
+          "valid_format": 0.9953703703703703
+        },
+        "rules": {
+          "answer_correct": 0.2175925925925926,
+          "both_correct": 0.09722222222222222,
+          "count": 216,
+          "steps_correct": 0.10648148148148148,
+          "valid_format": 1.0
+        }
+      },
+      "by_steps": {
+        "1": {
+          "answer_correct": 0.1736111111111111,
+          "both_correct": 0.14583333333333334,
+          "count": 144,
+          "steps_correct": 0.1597222222222222,
+          "valid_format": 0.9930555555555556
+        },
+        "16": {
+          "answer_correct": 0.9305555555555556,
+          "both_correct": 0.9305555555555556,
+          "count": 72,
+          "steps_correct": 0.9444444444444444,
+          "valid_format": 0.9861111111111112
+        },
+        "2": {
+          "answer_correct": 0.08333333333333333,
+          "both_correct": 0.013888888888888888,
+          "count": 144,
+          "steps_correct": 0.013888888888888888,
+          "valid_format": 1.0
+        },
+        "3": {
+          "answer_correct": 0.09027777777777778,
+          "both_correct": 0.0,
+          "count": 144,
+          "steps_correct": 0.0,
+          "valid_format": 0.9791666666666666
+        },
+        "4": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 72,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "8": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 72,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      }
+    }
+  },
+  "maximum_raw_gradient_norm": 237.48625536695695,
+  "parameters": 256096,
+  "processed_response_tokens": 404223,
+  "test_not_evaluated": true,
+  "total_training_cpu_seconds": 2542.5214893599923,
+  "total_validation_cpu_seconds": 179.22060083200006,
+  "training_cpu_seconds": 816.2035482080007,
+  "validation_cpu_seconds": 64.70627214400014
+}

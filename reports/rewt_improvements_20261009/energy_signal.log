@@ -1,0 +1,26 @@
+{
+  "legacy_fourier": {
+    "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.13937023282051086,
+    "energy_ranks_true_below_fixed_wrong_fraction": 0.97265625,
+    "energy_ranks_true_below_strongest_wrong_fraction": 0.4368489583333333,
+    "when_prediction_wrong_hard_ranking_fraction": 0.1932098070780436
+  },
+  "neural_energy": {
+    "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.007345000437150399,
+    "energy_ranks_true_below_fixed_wrong_fraction": 0.94140625,
+    "energy_ranks_true_below_strongest_wrong_fraction": 0.4778645833333333,
+    "when_prediction_wrong_hard_ranking_fraction": 0.2233513742685318
+  },
+  "fourier_rewt": {
+    "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.11393361538648605,
+    "energy_ranks_true_below_fixed_wrong_fraction": 0.939453125,
+    "energy_ranks_true_below_strongest_wrong_fraction": 0.4713541666666667,
+    "when_prediction_wrong_hard_ranking_fraction": 0.21379685401916504
+  },
+  "full_rewt": {
+    "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.09326375524202983,
+    "energy_ranks_true_below_fixed_wrong_fraction": 0.9348958333333334,
+    "energy_ranks_true_below_strongest_wrong_fraction": 0.4466145833333333,
+    "when_prediction_wrong_hard_ranking_fraction": 0.24190453191598257
+  }
+}

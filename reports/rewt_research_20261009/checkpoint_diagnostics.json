@@ -1,0 +1,2553 @@
+{
+  "checkpoint_sha256": {
+    "runs/rewt_pilot_20261009_v2/seed_101/fourier_rewt/language/best.pt": "14b1c3278cbe0aa3e0fce48c0314f2145a10f2d819eab0814636d872367eae35",
+    "runs/rewt_pilot_20261009_v2/seed_101/full_rewt/language/best.pt": "f17ec7e60b32964bf62774f0ba92d7237dcbf3364b0f86440e24d1496abbac21",
+    "runs/rewt_pilot_20261009_v2/seed_202/fourier_rewt/language/best.pt": "068b742008d9570cdf9283b7ecaf3409d681b56403c6913cdda7658d45bde881",
+    "runs/rewt_pilot_20261009_v2/seed_202/full_rewt/language/best.pt": "f7c9de0510794f16e7609c8ed19bcb2aa3c71b3a861aad870879e203700ce7ee",
+    "runs/rewt_pilot_20261009_v2/seed_303/fourier_rewt/language/best.pt": "20a272e206c17649e92dbc7ff28a8b8961cfeeab05c0d49d119b219ce19b56f9",
+    "runs/rewt_pilot_20261009_v2/seed_303/full_rewt/language/best.pt": "90fcb61412cfed4f275fb91d68b019ccd9593e035b05c64929c0a8c2f94507dc"
+  },
+  "diagnostics_source_sha256": "df4cfbf0e3a421ae667ec05b2ee6ca59f074e91b660917ba6df0c0a1cb5e1d87",
+  "no_weight_updates": true,
+  "positions_per_model": 1024,
+  "protocol": "Exploratory validation-only read-only checkpoint diagnostics",
+  "round_sweep_scope": "Conditioning and previous state fixed from each original two-round prefix; not a new full-model rollout",
+  "rows": [
+    {
+      "amplitudes": {
+        "maximum": 0.12487240135669708,
+        "mean": 0.0846785504692752,
+        "median": 0.09528960287570953,
+        "minimum": 5.638908078253735e-06
+      },
+      "arm": "fourier_rewt",
+      "common_logit_shift_probe": {
+        "logit_offset": 1.0,
+        "max_probability_change": 1.7881393432617188e-07,
+        "mean_energy_change": 127.54449462890625
+      },
+      "correct_below_hard_wrong_fraction": 0.294921875,
+      "correct_below_hard_wrong_when_prediction_wrong": 0.023676879703998566,
+      "correct_below_random_wrong_fraction": 0.9765625,
+      "final_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 1.5918861627578735,
+              "mean": 1.1640836005535675,
+              "median": 1.203157901763916,
+              "minimum": 0.18894334137439728
+            },
+            "wave_norm": {
+              "maximum": 0.20349687337875366,
+              "mean": 0.1417007996715256,
+              "median": 0.14329753816127777,
+              "minimum": 0.054142627865076065
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.3536151647567749,
+              "mean": 0.12525868958618958,
+              "median": 0.12090820074081421,
+              "minimum": 0.06847769767045975
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 1.5117875337600708,
+              "mean": 0.9552115516926278,
+              "median": 0.9681234359741211,
+              "minimum": 0.12424453347921371
+            },
+            "wave_norm": {
+              "maximum": 0.22122721374034882,
+              "mean": 0.14234773479984142,
+              "median": 0.14105930924415588,
+              "minimum": 0.06393733620643616
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.5690320730209351,
+              "mean": 0.15806181319931056,
+              "median": 0.14628157019615173,
+              "minimum": 0.08711555600166321
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 1.3368549346923828,
+              "mean": 0.9924975376343355,
+              "median": 1.0035316944122314,
+              "minimum": 0.14778877794742584
+            },
+            "wave_norm": {
+              "maximum": 0.46974459290504456,
+              "mean": 0.31438289303332567,
+              "median": 0.31694403290748596,
+              "minimum": 0.12932166457176208
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.1705162525177002,
+              "mean": 0.32283106111572124,
+              "median": 0.3135089576244354,
+              "minimum": 0.1759267896413803
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 1.468630313873291,
+              "mean": 0.8532338159857318,
+              "median": 0.8470385670661926,
+              "minimum": 0.1908460259437561
+            },
+            "wave_norm": {
+              "maximum": 0.2374686598777771,
+              "mean": 0.13721048847946804,
+              "median": 0.1385364830493927,
+              "minimum": 0.05815514922142029
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.4313414692878723,
+              "mean": 0.17049448609759565,
+              "median": 0.1613796502351761,
+              "minimum": 0.08204925060272217
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.3779296875,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.10441745072603226,
+          "mean": -0.006976389719373088,
+          "median": -0.00871730875223875,
+          "minimum": -0.10315723717212677
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6330835819244385,
+          "mean": 0.5800475955256843,
+          "median": 0.5930052995681763,
+          "minimum": 0.07605304569005966
+        }
+      },
+      "frequency_norms": {
+        "maximum": 1.6942474842071533,
+        "mean": 1.583050824701786,
+        "median": 1.5827001333236694,
+        "minimum": 1.4343130588531494
+      },
+      "frozen_prefix_rounds": [
+        {
+          "bpb": 3.747112274169922,
+          "fraction_positions_nll_improved": 0.0,
+          "mean_energy": 34.51924133300781,
+          "mean_probability_l1_change": 0.0,
+          "next_byte_accuracy": 0.2998046875,
+          "rounds": 0
+        },
+        {
+          "bpb": 3.7488460540771484,
+          "fraction_positions_nll_improved": 0.3603515625,
+          "mean_energy": 28.602863311767578,
+          "mean_probability_l1_change": 0.008738781325519085,
+          "next_byte_accuracy": 0.298828125,
+          "rounds": 1
+        },
+        {
+          "bpb": 3.7501442432403564,
+          "fraction_positions_nll_improved": 0.365234375,
+          "mean_energy": 26.39434814453125,
+          "mean_probability_l1_change": 0.014986079186201096,
+          "next_byte_accuracy": 0.298828125,
+          "rounds": 2
+        },
+        {
+          "bpb": 3.7517952919006348,
+          "fraction_positions_nll_improved": 0.37109375,
+          "mean_energy": 25.23147964477539,
+          "mean_probability_l1_change": 0.02272830903530121,
+          "next_byte_accuracy": 0.30078125,
+          "rounds": 4
+        },
+        {
+          "bpb": 3.753143787384033,
+          "fraction_positions_nll_improved": 0.380859375,
+          "mean_energy": 25.01531410217285,
+          "mean_probability_l1_change": 0.028994055464863777,
+          "next_byte_accuracy": 0.30078125,
+          "rounds": 8
+        }
+      ],
+      "hard_wrong_energy_margin": {
+        "maximum": 10.5472412109375,
+        "mean": -1.4087600484490395,
+        "median": -1.353759765625,
+        "minimum": -16.8037109375
+      },
+      "initial_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 4.405241012573242,
+              "mean": 3.1029426314053126,
+              "median": 3.1840829849243164,
+              "minimum": 0.40007632970809937
+            },
+            "wave_norm": {
+              "maximum": 0.2030717134475708,
+              "mean": 0.1412632071042026,
+              "median": 0.14345978200435638,
+              "minimum": 0.05114811658859253
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.1589096337556839,
+              "mean": 0.04712319220197969,
+              "median": 0.044799089431762695,
+              "minimum": 0.0250388253480196
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 4.2074408531188965,
+              "mean": 2.7046483916492434,
+              "median": 2.7421960830688477,
+              "minimum": 0.23348240554332733
+            },
+            "wave_norm": {
+              "maximum": 0.22380974888801575,
+              "mean": 0.14262623949252884,
+              "median": 0.14277154207229614,
+              "minimum": 0.05971267446875572
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.2687154710292816,
+              "mean": 0.0560156968604133,
+              "median": 0.05208335816860199,
+              "minimum": 0.029540352523326874
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 3.0161828994750977,
+              "mean": 2.2268611541367136,
+              "median": 2.264359474182129,
+              "minimum": 0.2925528287887573
+            },
+            "wave_norm": {
+              "maximum": 0.4556237459182739,
+              "mean": 0.31400299044616986,
+              "median": 0.315218448638916,
+              "minimum": 0.12682117521762848
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.5367704629898071,
+              "mean": 0.1441043779195752,
+              "median": 0.13967378437519073,
+              "minimum": 0.07005926966667175
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 4.1248040199279785,
+              "mean": 2.4661921738879755,
+              "median": 2.4768571853637695,
+              "minimum": 0.3808062970638275
+            },
+            "wave_norm": {
+              "maximum": 0.22649505734443665,
+              "mean": 0.13674491710116854,
+              "median": 0.13851593434810638,
+              "minimum": 0.05678073316812515
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.17999087274074554,
+              "mean": 0.05900008699245518,
+              "median": 0.054748788475990295,
+              "minimum": 0.029366787523031235
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.3623046875,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.08969413489103317,
+          "mean": -0.005811950499023055,
+          "median": -0.0071620577946305275,
+          "minimum": -0.09457237273454666
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6420366168022156,
+          "mean": 0.5993097180544282,
+          "median": 0.6105381846427917,
+          "minimum": 0.10939439386129379
+        }
+      },
+      "initial_quadratic_energy": {
+        "maximum": 67.53829193115234,
+        "mean": 34.47407724941149,
+        "median": 34.79741668701172,
+        "minimum": 2.7109951972961426
+      },
+      "initial_wave_energy": {
+        "maximum": 0.5961946845054626,
+        "mean": 0.04516343626346497,
+        "median": 0.05686670541763306,
+        "minimum": -0.7774651646614075
+      },
+      "positions": 1024,
+      "quadratic_energy": {
+        "maximum": 50.34744644165039,
+        "mean": 26.407358807278797,
+        "median": 26.755647659301758,
+        "minimum": 2.3975462913513184
+      },
+      "random_wrong_energy_margin": {
+        "maximum": 32.9296875,
+        "mean": 16.10185121744871,
+        "median": 17.37744140625,
+        "minimum": -5.8876953125
+      },
+      "reconstruction_max_error": 0.0,
+      "seed": 101,
+      "selected_training_step": 120,
+      "wave_energy": {
+        "maximum": 0.5551350712776184,
+        "mean": -0.013009590797992132,
+        "median": -0.0027115866541862488,
+        "minimum": -0.7563443183898926
+      }
+    },
+    {
+      "amplitudes": {
+        "maximum": 0.12479732185602188,
+        "mean": 0.07570754267889479,
+        "median": 0.08203595131635666,
+        "minimum": 2.060419319604989e-05
+      },
+      "arm": "full_rewt",
+      "common_logit_shift_probe": {
+        "logit_offset": 1.0,
+        "max_probability_change": 1.7881393432617188e-07,
+        "mean_energy_change": 130.88958740234375
+      },
+      "correct_below_hard_wrong_fraction": 0.3046875,
+      "correct_below_hard_wrong_when_prediction_wrong": 0.028368793427944183,
+      "correct_below_random_wrong_fraction": 0.974609375,
+      "final_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 0.8995392322540283,
+              "mean": 0.4304420701228082,
+              "median": 0.3914714753627777,
+              "minimum": 0.0967739149928093
+            },
+            "wave_norm": {
+              "maximum": 0.14766398072242737,
+              "mean": 0.09386580482896534,
+              "median": 0.09360499680042267,
+              "minimum": 0.042159292846918106
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.8815513849258423,
+              "mean": 0.2518012807558989,
+              "median": 0.23728956282138824,
+              "minimum": 0.07452130317687988
+            }
+          },
+          "communication": {
+            "quadratic_norm": {
+              "maximum": 0.7602687478065491,
+              "mean": 0.2843492747924756,
+              "median": 0.23492367565631866,
+              "minimum": 0.06382793933153152
+            },
+            "wave_norm": {
+              "maximum": 0.1407122164964676,
+              "mean": 0.08077829040121287,
+              "median": 0.0799584612250328,
+              "minimum": 0.03474687784910202
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.8209900856018066,
+              "mean": 0.32914424878254067,
+              "median": 0.3316534757614136,
+              "minimum": 0.0789019837975502
+            }
+          },
+          "diffusion": {
+            "quadratic_norm": {
+              "maximum": 0.2208917886018753,
+              "mean": 0.1762403101711243,
+              "median": 0.18073458969593048,
+              "minimum": 0.023833462968468666
+            },
+            "wave_norm": {
+              "maximum": 0.16032519936561584,
+              "mean": 0.09023850503217545,
+              "median": 0.08973903954029083,
+              "minimum": 0.03471505641937256
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 2.298856258392334,
+              "mean": 0.5276619331998518,
+              "median": 0.5013378262519836,
+              "minimum": 0.1879536658525467
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 0.8589501976966858,
+              "mean": 0.3559099442427396,
+              "median": 0.3152134418487549,
+              "minimum": 0.07604160904884338
+            },
+            "wave_norm": {
+              "maximum": 0.13650476932525635,
+              "mean": 0.08885205732804025,
+              "median": 0.08875501155853271,
+              "minimum": 0.03554337099194527
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.9899123311042786,
+              "mean": 0.31049459292262327,
+              "median": 0.2813778817653656,
+              "minimum": 0.08151615411043167
+            }
+          },
+          "forecast": {
+            "quadratic_norm": {
+              "maximum": 0.3687727451324463,
+              "mean": 0.24386780604254454,
+              "median": 0.24706095457077026,
+              "minimum": 0.05652114003896713
+            },
+            "wave_norm": {
+              "maximum": 0.3047918379306793,
+              "mean": 0.20111567840649514,
+              "median": 0.20054545998573303,
+              "minimum": 0.08751414716243744
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 2.5580899715423584,
+              "mean": 0.8544871038466226,
+              "median": 0.7931603193283081,
+              "minimum": 0.3693677484989166
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 1.0941890478134155,
+              "mean": 0.7585721217910759,
+              "median": 0.7513042688369751,
+              "minimum": 0.15511097013950348
+            },
+            "wave_norm": {
+              "maximum": 0.3443644642829895,
+              "mean": 0.19801409685169347,
+              "median": 0.1967484951019287,
+              "minimum": 0.07979059964418411
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.9722483158111572,
+              "mean": 0.2667662711319281,
+              "median": 0.2571510970592499,
+              "minimum": 0.12302717566490173
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 0.8935216069221497,
+              "mean": 0.4309844937888556,
+              "median": 0.3974436819553375,
+              "minimum": 0.1000690683722496
+            },
+            "wave_norm": {
+              "maximum": 0.1687338501214981,
+              "mean": 0.1012384759815177,
+              "median": 0.09989548474550247,
+              "minimum": 0.041716575622558594
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.7378067970275879,
+              "mean": 0.2652433540279162,
+              "median": 0.2550503611564636,
+              "minimum": 0.08405499905347824
+            }
+          },
+          "specialist_0": {
+            "quadratic_norm": {
+              "maximum": 0.21037065982818604,
+              "mean": 0.15223953144959523,
+              "median": 0.15567003190517426,
+              "minimum": 0.048082806169986725
+            },
+            "wave_norm": {
+              "maximum": 0.17035357654094696,
+              "mean": 0.09942859027796658,
+              "median": 0.0984850600361824,
+              "minimum": 0.03936643525958061
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.597791314125061,
+              "mean": 0.6676861048617866,
+              "median": 0.6486876606941223,
+              "minimum": 0.30218812823295593
+            }
+          },
+          "specialist_1": {
+            "quadratic_norm": {
+              "maximum": 0.1644301563501358,
+              "mean": 0.10964202096147346,
+              "median": 0.10998421907424927,
+              "minimum": 0.0374223068356514
+            },
+            "wave_norm": {
+              "maximum": 0.1620994657278061,
+              "mean": 0.09436704665495199,
+              "median": 0.09312299638986588,
+              "minimum": 0.03724076226353645
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.9866375923156738,
+              "mean": 0.880048588180216,
+              "median": 0.8554419279098511,
+              "minimum": 0.4130588471889496
+            }
+          },
+          "specialist_2": {
+            "quadratic_norm": {
+              "maximum": 0.4213891625404358,
+              "mean": 0.2950701685549575,
+              "median": 0.30926913022994995,
+              "minimum": 0.04335050657391548
+            },
+            "wave_norm": {
+              "maximum": 0.1659964621067047,
+              "mean": 0.09183813045092393,
+              "median": 0.09127902239561081,
+              "minimum": 0.03266763314604759
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.8664857149124146,
+              "mean": 0.3309097147430293,
+              "median": 0.29995983839035034,
+              "minimum": 0.13255059719085693
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.3701171875,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.1463819295167923,
+          "mean": -0.011144298397633534,
+          "median": -0.008973847143352032,
+          "minimum": -0.19336247444152832
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6149107813835144,
+          "mean": 0.5203080569370968,
+          "median": 0.5253399610519409,
+          "minimum": 0.0014234405243769288
+        }
+      },
+      "frequency_norms": {
+        "maximum": 1.7621724605560303,
+        "mean": 1.6398539692163467,
+        "median": 1.6283729076385498,
+        "minimum": 1.5169366598129272
+      },
+      "frozen_prefix_rounds": [
+        {
+          "bpb": 3.7523276805877686,
+          "fraction_positions_nll_improved": 0.0,
+          "mean_energy": 14.36003589630127,
+          "mean_probability_l1_change": 0.0,
+          "next_byte_accuracy": 0.3115234375,
+          "rounds": 0
+        },
+        {
+          "bpb": 3.7541439533233643,
+          "fraction_positions_nll_improved": 0.3779296875,
+          "mean_energy": 12.678258895874023,
+          "mean_probability_l1_change": 0.008133569732308388,
+          "next_byte_accuracy": 0.310546875,
+          "rounds": 1
+        },
+        {
+          "bpb": 3.755620241165161,
+          "fraction_positions_nll_improved": 0.3740234375,
+          "mean_energy": 11.969812393188477,
+          "mean_probability_l1_change": 0.014004616998136044,
+          "next_byte_accuracy": 0.3115234375,
+          "rounds": 2
+        },
+        {
+          "bpb": 3.7576863765716553,
+          "fraction_positions_nll_improved": 0.3740234375,
+          "mean_energy": 11.52267074584961,
+          "mean_probability_l1_change": 0.02133116126060486,
+          "next_byte_accuracy": 0.3125,
+          "rounds": 4
+        },
+        {
+          "bpb": 3.759597063064575,
+          "fraction_positions_nll_improved": 0.3681640625,
+          "mean_energy": 11.403315544128418,
+          "mean_probability_l1_change": 0.02725103124976158,
+          "next_byte_accuracy": 0.3115234375,
+          "rounds": 8
+        }
+      ],
+      "hard_wrong_energy_margin": {
+        "maximum": 11.653564453125,
+        "mean": -1.4786497075110674,
+        "median": -1.5693359375,
+        "minimum": -16.057861328125
+      },
+      "initial_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 2.386028289794922,
+              "mean": 1.1022214974509552,
+              "median": 1.003551721572876,
+              "minimum": 0.18500706553459167
+            },
+            "wave_norm": {
+              "maximum": 0.14673852920532227,
+              "mean": 0.09405375265851035,
+              "median": 0.09399910271167755,
+              "minimum": 0.041474178433418274
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.4859813451766968,
+              "mean": 0.10306226260581752,
+              "median": 0.09333208203315735,
+              "minimum": 0.027998320758342743
+            }
+          },
+          "communication": {
+            "quadratic_norm": {
+              "maximum": 2.19569730758667,
+              "mean": 0.7927776085634832,
+              "median": 0.646673858165741,
+              "minimum": 0.11812795698642731
+            },
+            "wave_norm": {
+              "maximum": 0.1368425339460373,
+              "mean": 0.08110940951883094,
+              "median": 0.08026434481143951,
+              "minimum": 0.03463415056467056
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.5011686086654663,
+              "mean": 0.12868216478454997,
+              "median": 0.12554824352264404,
+              "minimum": 0.023672912269830704
+            }
+          },
+          "diffusion": {
+            "quadratic_norm": {
+              "maximum": 0.3598219156265259,
+              "mean": 0.3202726670569973,
+              "median": 0.3345361649990082,
+              "minimum": 0.0
+            },
+            "wave_norm": {
+              "maximum": 0.1527305543422699,
+              "mean": 0.09065133912736201,
+              "median": 0.09008001536130905,
+              "minimum": 0.03732813522219658
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 102671040512.0,
+              "mean": 681021356.2809688,
+              "median": 0.27990615367889404,
+              "minimum": 0.11838828027248383
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 2.307234525680542,
+              "mean": 0.9500244330847636,
+              "median": 0.855510413646698,
+              "minimum": 0.1337982714176178
+            },
+            "wave_norm": {
+              "maximum": 0.13698773086071014,
+              "mean": 0.08923007881458034,
+              "median": 0.08919618278741837,
+              "minimum": 0.03656358644366264
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.5528133511543274,
+              "mean": 0.12260495836562768,
+              "median": 0.10552597045898438,
+              "minimum": 0.0294352974742651
+            }
+          },
+          "forecast": {
+            "quadratic_norm": {
+              "maximum": 0.5254931449890137,
+              "mean": 0.4281567354191793,
+              "median": 0.43685051798820496,
+              "minimum": 0.0
+            },
+            "wave_norm": {
+              "maximum": 0.3201240003108978,
+              "mean": 0.20212400332820835,
+              "median": 0.20196613669395447,
+              "minimum": 0.08737336099147797
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 254073208832.0,
+              "mean": 1573686840.4701343,
+              "median": 0.46467533707618713,
+              "minimum": 0.19912418723106384
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 2.3104617595672607,
+              "mean": 1.5494246386515442,
+              "median": 1.5132484436035156,
+              "minimum": 0.28414198756217957
+            },
+            "wave_norm": {
+              "maximum": 0.33425483107566833,
+              "mean": 0.19856290506140795,
+              "median": 0.19679731130599976,
+              "minimum": 0.08025570958852768
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.5095176100730896,
+              "mean": 0.1321608476646361,
+              "median": 0.12812961637973785,
+              "minimum": 0.05065270885825157
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 2.3891663551330566,
+              "mean": 1.1073132136807544,
+              "median": 1.0207983255386353,
+              "minimum": 0.19592638313770294
+            },
+            "wave_norm": {
+              "maximum": 0.169806107878685,
+              "mean": 0.10154149767186027,
+              "median": 0.10048101842403412,
+              "minimum": 0.041423626244068146
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.366498738527298,
+              "mean": 0.10798380288179033,
+              "median": 0.09981567412614822,
+              "minimum": 0.033858686685562134
+            }
+          },
+          "specialist_0": {
+            "quadratic_norm": {
+              "maximum": 0.3608930706977844,
+              "mean": 0.2735023954010103,
+              "median": 0.28239336609840393,
+              "minimum": 0.06510978192090988
+            },
+            "wave_norm": {
+              "maximum": 0.17937655746936798,
+              "mean": 0.09979238457526662,
+              "median": 0.0996178388595581,
+              "minimum": 0.042446836829185486
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.6168062686920166,
+              "mean": 0.3771932798990747,
+              "median": 0.3619016706943512,
+              "minimum": 0.1647474765777588
+            }
+          },
+          "specialist_1": {
+            "quadratic_norm": {
+              "maximum": 0.27665451169013977,
+              "mean": 0.19000794600651716,
+              "median": 0.1927717626094818,
+              "minimum": 0.05626792088150978
+            },
+            "wave_norm": {
+              "maximum": 0.17124463617801666,
+              "mean": 0.09499864836107008,
+              "median": 0.09329810738563538,
+              "minimum": 0.039455145597457886
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.8855916261672974,
+              "mean": 0.5187331091728993,
+              "median": 0.4998191297054291,
+              "minimum": 0.2033604234457016
+            }
+          },
+          "specialist_2": {
+            "quadratic_norm": {
+              "maximum": 0.714547336101532,
+              "mean": 0.5490054893816705,
+              "median": 0.5788614153862,
+              "minimum": 0.08681740611791611
+            },
+            "wave_norm": {
+              "maximum": 0.16221140325069427,
+              "mean": 0.09233368568311562,
+              "median": 0.09091734886169434,
+              "minimum": 0.03267941623926163
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.874328076839447,
+              "mean": 0.17767772189108655,
+              "median": 0.16372409462928772,
+              "minimum": 0.061362601816654205
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.3798828125,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.13521911203861237,
+          "mean": -0.009785890465640157,
+          "median": -0.008632314391434193,
+          "minimum": -0.1862238645553589
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6252134442329407,
+          "mean": 0.5358137559915122,
+          "median": 0.5409390330314636,
+          "minimum": 0.005686800926923752
+        }
+      },
+      "initial_quadratic_energy": {
+        "maximum": 34.819950103759766,
+        "mean": 14.341784947551787,
+        "median": 12.866498947143555,
+        "minimum": 1.2864205837249756
+      },
+      "initial_wave_energy": {
+        "maximum": 0.6191880702972412,
+        "mean": 0.018251490444981755,
+        "median": 0.028512567281723022,
+        "minimum": -0.7047299146652222
+      },
+      "positions": 1024,
+      "quadratic_energy": {
+        "maximum": 27.385435104370117,
+        "mean": 12.008632243494503,
+        "median": 11.090763092041016,
+        "minimum": 1.0478960275650024
+      },
+      "random_wrong_energy_margin": {
+        "maximum": 35.18115234375,
+        "mean": 16.719814332202077,
+        "median": 17.635498046875,
+        "minimum": -6.2783203125
+      },
+      "reconstruction_max_error": 0.0,
+      "seed": 101,
+      "selected_training_step": 120,
+      "wave_energy": {
+        "maximum": 0.5922372341156006,
+        "mean": -0.03882012605481577,
+        "median": -0.02783602476119995,
+        "minimum": -0.8064365386962891
+      }
+    },
+    {
+      "amplitudes": {
+        "maximum": 0.12495849281549454,
+        "mean": 0.10033629054077284,
+        "median": 0.11451698839664459,
+        "minimum": 5.622086518997094e-06
+      },
+      "arm": "fourier_rewt",
+      "common_logit_shift_probe": {
+        "logit_offset": 1.0,
+        "max_probability_change": 2.384185791015625e-07,
+        "mean_energy_change": 127.26199340820312
+      },
+      "correct_below_hard_wrong_fraction": 0.3134765625,
+      "correct_below_hard_wrong_when_prediction_wrong": 0.02865329571068287,
+      "correct_below_random_wrong_fraction": 0.9716796875,
+      "final_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 1.7540878057479858,
+              "mean": 1.2063303120667115,
+              "median": 1.2218438386917114,
+              "minimum": 0.28732749819755554
+            },
+            "wave_norm": {
+              "maximum": 0.24938632547855377,
+              "mean": 0.17231633079063613,
+              "median": 0.17254380881786346,
+              "minimum": 0.059968121349811554
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.3302040994167328,
+              "mean": 0.14665320862695808,
+              "median": 0.1426466852426529,
+              "minimum": 0.07667062431573868
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 1.4838273525238037,
+              "mean": 1.0208160148467869,
+              "median": 1.0288528203964233,
+              "minimum": 0.15567956864833832
+            },
+            "wave_norm": {
+              "maximum": 0.25499817728996277,
+              "mean": 0.16595880370368832,
+              "median": 0.16725866496562958,
+              "minimum": 0.0535457544028759
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.4255736172199249,
+              "mean": 0.16848978630150668,
+              "median": 0.1626257300376892,
+              "minimum": 0.09185706079006195
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 1.3327233791351318,
+              "mean": 1.0300196009193314,
+              "median": 1.0436636209487915,
+              "minimum": 0.20626552402973175
+            },
+            "wave_norm": {
+              "maximum": 0.5290181636810303,
+              "mean": 0.35898627794813365,
+              "median": 0.3624441623687744,
+              "minimum": 0.13621513545513153
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.0353202819824219,
+              "mean": 0.3526956331479596,
+              "median": 0.3481605350971222,
+              "minimum": 0.231061190366745
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 1.3664411306381226,
+              "mean": 0.8285994158650283,
+              "median": 0.8178589344024658,
+              "minimum": 0.2172464281320572
+            },
+            "wave_norm": {
+              "maximum": 0.23174022138118744,
+              "mean": 0.15832378885170328,
+              "median": 0.15749555826187134,
+              "minimum": 0.05140987038612366
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.44668638706207275,
+              "mean": 0.19835656761279097,
+              "median": 0.1959831863641739,
+              "minimum": 0.10154818743467331
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.345703125,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.11216887086629868,
+          "mean": -0.008977225492707852,
+          "median": -0.010933876037597656,
+          "minimum": -0.09663647413253784
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6674113869667053,
+          "mean": 0.584810061060125,
+          "median": 0.5919560790061951,
+          "minimum": 0.23570209741592407
+        }
+      },
+      "frequency_norms": {
+        "maximum": 1.6926461458206177,
+        "mean": 1.5859074220061302,
+        "median": 1.573346495628357,
+        "minimum": 1.499096393585205
+      },
+      "frozen_prefix_rounds": [
+        {
+          "bpb": 3.676058053970337,
+          "fraction_positions_nll_improved": 0.0,
+          "mean_energy": 36.46324157714844,
+          "mean_probability_l1_change": 0.0,
+          "next_byte_accuracy": 0.318359375,
+          "rounds": 0
+        },
+        {
+          "bpb": 3.6785149574279785,
+          "fraction_positions_nll_improved": 0.34765625,
+          "mean_energy": 30.469144821166992,
+          "mean_probability_l1_change": 0.01037672907114029,
+          "next_byte_accuracy": 0.3193359375,
+          "rounds": 1
+        },
+        {
+          "bpb": 3.6804449558258057,
+          "fraction_positions_nll_improved": 0.349609375,
+          "mean_energy": 28.179811477661133,
+          "mean_probability_l1_change": 0.017836757004261017,
+          "next_byte_accuracy": 0.318359375,
+          "rounds": 2
+        },
+        {
+          "bpb": 3.683007001876831,
+          "fraction_positions_nll_improved": 0.3466796875,
+          "mean_energy": 26.941509246826172,
+          "mean_probability_l1_change": 0.02708689495921135,
+          "next_byte_accuracy": 0.3173828125,
+          "rounds": 4
+        },
+        {
+          "bpb": 3.6851706504821777,
+          "fraction_positions_nll_improved": 0.345703125,
+          "mean_energy": 26.702529907226562,
+          "mean_probability_l1_change": 0.03454820066690445,
+          "next_byte_accuracy": 0.31640625,
+          "rounds": 8
+        }
+      ],
+      "hard_wrong_energy_margin": {
+        "maximum": 10.05810546875,
+        "mean": -1.4245501682162285,
+        "median": -1.6767578125,
+        "minimum": -15.395263671875
+      },
+      "initial_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 4.494844913482666,
+              "mean": 3.132433746533934,
+              "median": 3.1654999256134033,
+              "minimum": 0.6354259252548218
+            },
+            "wave_norm": {
+              "maximum": 0.25194740295410156,
+              "mean": 0.17162076697786688,
+              "median": 0.17138345539569855,
+              "minimum": 0.0623721145093441
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.12725843489170074,
+              "mean": 0.05641437579106423,
+              "median": 0.054053328931331635,
+              "minimum": 0.029839731752872467
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 4.084303379058838,
+              "mean": 2.779648396273842,
+              "median": 2.7956483364105225,
+              "minimum": 0.36653849482536316
+            },
+            "wave_norm": {
+              "maximum": 0.25669682025909424,
+              "mean": 0.1665330183932383,
+              "median": 0.16698071360588074,
+              "minimum": 0.057074882090091705
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.16326823830604553,
+              "mean": 0.062178089126973646,
+              "median": 0.05947223678231239,
+              "minimum": 0.03312644734978676
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 2.9894657135009766,
+              "mean": 2.284568713279441,
+              "median": 2.303884506225586,
+              "minimum": 0.4368990659713745
+            },
+            "wave_norm": {
+              "maximum": 0.49848097562789917,
+              "mean": 0.35992719419300556,
+              "median": 0.36384522914886475,
+              "minimum": 0.13908052444458008
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.4629409611225128,
+              "mean": 0.15977837954415008,
+              "median": 0.15728184580802917,
+              "minimum": 0.08986277878284454
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 3.8067703247070312,
+              "mean": 2.3815178814402316,
+              "median": 2.375364303588867,
+              "minimum": 0.4485827386379242
+            },
+            "wave_norm": {
+              "maximum": 0.23593921959400177,
+              "mean": 0.15847043117901194,
+              "median": 0.15810921788215637,
+              "minimum": 0.051422860473394394
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.17968672513961792,
+              "mean": 0.06930748549712007,
+              "median": 0.06785731017589569,
+              "minimum": 0.034800104796886444
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.3505859375,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.10726190358400345,
+          "mean": -0.00726957964827335,
+          "median": -0.009517735801637173,
+          "minimum": -0.08455562591552734
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6750473380088806,
+          "mean": 0.6064562867104542,
+          "median": 0.6131330728530884,
+          "minimum": 0.2561231553554535
+        }
+      },
+      "initial_quadratic_energy": {
+        "maximum": 67.45233154296875,
+        "mean": 36.38844520319253,
+        "median": 35.563175201416016,
+        "minimum": 4.063667297363281
+      },
+      "initial_wave_energy": {
+        "maximum": 0.9970040321350098,
+        "mean": 0.07479465780124883,
+        "median": 0.06812351942062378,
+        "minimum": -0.824547290802002
+      },
+      "positions": 1024,
+      "quadratic_energy": {
+        "maximum": 52.01996994018555,
+        "mean": 28.17808226076886,
+        "median": 27.720706939697266,
+        "minimum": 3.1449594497680664
+      },
+      "random_wrong_energy_margin": {
+        "maximum": 33.87548828125,
+        "mean": 15.581313394010067,
+        "median": 16.336181640625,
+        "minimum": -8.934417724609375
+      },
+      "reconstruction_max_error": 0.0,
+      "seed": 202,
+      "selected_training_step": 120,
+      "wave_energy": {
+        "maximum": 0.9942997694015503,
+        "mean": 0.0017284445693803718,
+        "median": -0.0027882903814315796,
+        "minimum": -0.8696610927581787
+      }
+    },
+    {
+      "amplitudes": {
+        "maximum": 0.12478340417146683,
+        "mean": 0.07434458268983904,
+        "median": 0.08101817220449448,
+        "minimum": 9.809377843339462e-07
+      },
+      "arm": "full_rewt",
+      "common_logit_shift_probe": {
+        "logit_offset": 1.0,
+        "max_probability_change": 2.384185791015625e-07,
+        "mean_energy_change": 131.50527954101562
+      },
+      "correct_below_hard_wrong_fraction": 0.2998046875,
+      "correct_below_hard_wrong_when_prediction_wrong": 0.01836158148944378,
+      "correct_below_random_wrong_fraction": 0.9765625,
+      "final_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 1.1841999292373657,
+              "mean": 0.4373876149620628,
+              "median": 0.3650318384170532,
+              "minimum": 0.09283290803432465
+            },
+            "wave_norm": {
+              "maximum": 0.1654423624277115,
+              "mean": 0.09309638663762598,
+              "median": 0.09205928444862366,
+              "minimum": 0.04248955845832825
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.9051192998886108,
+              "mean": 0.28829125963238766,
+              "median": 0.2510371208190918,
+              "minimum": 0.060289401561021805
+            }
+          },
+          "communication": {
+            "quadratic_norm": {
+              "maximum": 1.2241085767745972,
+              "mean": 0.47045078518567607,
+              "median": 0.3916117548942566,
+              "minimum": 0.1394941508769989
+            },
+            "wave_norm": {
+              "maximum": 0.12450775504112244,
+              "mean": 0.08482816587638808,
+              "median": 0.08455591648817062,
+              "minimum": 0.038263119757175446
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.46755513548851013,
+              "mean": 0.20758832759020152,
+              "median": 0.20908398926258087,
+              "minimum": 0.04866298288106918
+            }
+          },
+          "diffusion": {
+            "quadratic_norm": {
+              "maximum": 0.21908260881900787,
+              "mean": 0.1716582814569847,
+              "median": 0.17525680363178253,
+              "minimum": 0.021033791825175285
+            },
+            "wave_norm": {
+              "maximum": 0.1475764811038971,
+              "mean": 0.08815990287257591,
+              "median": 0.08779274672269821,
+              "minimum": 0.0395779125392437
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 2.1831443309783936,
+              "mean": 0.5296172157104593,
+              "median": 0.5109972953796387,
+              "minimum": 0.2197941690683365
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 1.1349267959594727,
+              "mean": 0.3894087140506599,
+              "median": 0.3138085603713989,
+              "minimum": 0.07247744500637054
+            },
+            "wave_norm": {
+              "maximum": 0.15990746021270752,
+              "mean": 0.09167525170050794,
+              "median": 0.09107763320207596,
+              "minimum": 0.04189668223261833
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.3953782320022583,
+              "mean": 0.3448449392162729,
+              "median": 0.29209795594215393,
+              "minimum": 0.05902278423309326
+            }
+          },
+          "forecast": {
+            "quadratic_norm": {
+              "maximum": 0.3340626657009125,
+              "mean": 0.22821964751710766,
+              "median": 0.22922372817993164,
+              "minimum": 0.04862978309392929
+            },
+            "wave_norm": {
+              "maximum": 0.3164385259151459,
+              "mean": 0.1901879824581556,
+              "median": 0.18959365785121918,
+              "minimum": 0.09869293123483658
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 2.2703466415405273,
+              "mean": 0.8557609833660536,
+              "median": 0.809820830821991,
+              "minimum": 0.433681458234787
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 1.2229646444320679,
+              "mean": 0.7521394638461061,
+              "median": 0.7228400707244873,
+              "minimum": 0.182029128074646
+            },
+            "wave_norm": {
+              "maximum": 0.3074444830417633,
+              "mean": 0.20495580350689124,
+              "median": 0.2049420326948166,
+              "minimum": 0.09780757874250412
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.7810317873954773,
+              "mean": 0.2842182995736948,
+              "median": 0.27545133233070374,
+              "minimum": 0.12421596795320511
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 1.177875280380249,
+              "mean": 0.46298563161690254,
+              "median": 0.3876780569553375,
+              "minimum": 0.1285298764705658
+            },
+            "wave_norm": {
+              "maximum": 0.15166166424751282,
+              "mean": 0.09781530825421214,
+              "median": 0.09817344695329666,
+              "minimum": 0.03720391169190407
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.7725821137428284,
+              "mean": 0.27194306160890847,
+              "median": 0.24429699778556824,
+              "minimum": 0.05757427588105202
+            }
+          },
+          "specialist_0": {
+            "quadratic_norm": {
+              "maximum": 0.17073014378547668,
+              "mean": 0.0983842939385795,
+              "median": 0.09786130487918854,
+              "minimum": 0.04620063677430153
+            },
+            "wave_norm": {
+              "maximum": 0.138180211186409,
+              "mean": 0.08792171805907856,
+              "median": 0.08684574067592621,
+              "minimum": 0.042914584279060364
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.6680562496185303,
+              "mean": 0.9173581760551315,
+              "median": 0.8981830477714539,
+              "minimum": 0.4128207564353943
+            }
+          },
+          "specialist_1": {
+            "quadratic_norm": {
+              "maximum": 0.2481072098016739,
+              "mean": 0.14906121784588322,
+              "median": 0.14823567867279053,
+              "minimum": 0.05403975769877434
+            },
+            "wave_norm": {
+              "maximum": 0.14799654483795166,
+              "mean": 0.08609581526980037,
+              "median": 0.0848449170589447,
+              "minimum": 0.03507855907082558
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.4435508251190186,
+              "mean": 0.5941466149233747,
+              "median": 0.5710315704345703,
+              "minimum": 0.2686771750450134
+            }
+          },
+          "specialist_2": {
+            "quadratic_norm": {
+              "maximum": 0.2549217641353607,
+              "mean": 0.12784753445157548,
+              "median": 0.12896277010440826,
+              "minimum": 0.05170174315571785
+            },
+            "wave_norm": {
+              "maximum": 0.16250702738761902,
+              "mean": 0.09101956835729652,
+              "median": 0.09077147394418716,
+              "minimum": 0.037789445370435715
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.8333905935287476,
+              "mean": 0.7405616028408986,
+              "median": 0.7064286470413208,
+              "minimum": 0.2612897753715515
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.3955078125,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.13709567487239838,
+          "mean": -0.01324533340568479,
+          "median": -0.009801398031413555,
+          "minimum": -0.25320982933044434
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6214837431907654,
+          "mean": 0.47254599354346283,
+          "median": 0.49066489934921265,
+          "minimum": 0.048388510942459106
+        }
+      },
+      "frequency_norms": {
+        "maximum": 1.7442995309829712,
+        "mean": 1.6482548415660858,
+        "median": 1.6463139057159424,
+        "minimum": 1.5354008674621582
+      },
+      "frozen_prefix_rounds": [
+        {
+          "bpb": 3.723343849182129,
+          "fraction_positions_nll_improved": 0.0,
+          "mean_energy": 14.75011157989502,
+          "mean_probability_l1_change": 0.0,
+          "next_byte_accuracy": 0.3076171875,
+          "rounds": 0
+        },
+        {
+          "bpb": 3.7254765033721924,
+          "fraction_positions_nll_improved": 0.388671875,
+          "mean_energy": 12.53170108795166,
+          "mean_probability_l1_change": 0.00980573520064354,
+          "next_byte_accuracy": 0.306640625,
+          "rounds": 1
+        },
+        {
+          "bpb": 3.727187395095825,
+          "fraction_positions_nll_improved": 0.38671875,
+          "mean_energy": 11.649559020996094,
+          "mean_probability_l1_change": 0.01689067855477333,
+          "next_byte_accuracy": 0.30859375,
+          "rounds": 2
+        },
+        {
+          "bpb": 3.729529857635498,
+          "fraction_positions_nll_improved": 0.390625,
+          "mean_energy": 11.134424209594727,
+          "mean_probability_l1_change": 0.025720205157995224,
+          "next_byte_accuracy": 0.30859375,
+          "rounds": 4
+        },
+        {
+          "bpb": 3.7315990924835205,
+          "fraction_positions_nll_improved": 0.3955078125,
+          "mean_energy": 11.013111114501953,
+          "mean_probability_l1_change": 0.03279343992471695,
+          "next_byte_accuracy": 0.3095703125,
+          "rounds": 8
+        }
+      ],
+      "hard_wrong_energy_margin": {
+        "maximum": 9.3697509765625,
+        "mean": -1.5172917544841766,
+        "median": -1.47412109375,
+        "minimum": -15.1614990234375
+      },
+      "initial_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 3.304677963256836,
+              "mean": 1.1654608875105623,
+              "median": 0.961688220500946,
+              "minimum": 0.18655481934547424
+            },
+            "wave_norm": {
+              "maximum": 0.16493022441864014,
+              "mean": 0.09321936067499337,
+              "median": 0.09189016371965408,
+              "minimum": 0.04150189831852913
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.5145477056503296,
+              "mean": 0.12119595240801573,
+              "median": 0.0938299149274826,
+              "minimum": 0.019852738827466965
+            }
+          },
+          "communication": {
+            "quadratic_norm": {
+              "maximum": 3.402296543121338,
+              "mean": 1.259627589926822,
+              "median": 1.0270987749099731,
+              "minimum": 0.37312597036361694
+            },
+            "wave_norm": {
+              "maximum": 0.1318056434392929,
+              "mean": 0.08507716919484665,
+              "median": 0.0849163606762886,
+              "minimum": 0.037759292870759964
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.21716800332069397,
+              "mean": 0.08444264304671378,
+              "median": 0.0801922157406807,
+              "minimum": 0.015813225880265236
+            }
+          },
+          "diffusion": {
+            "quadratic_norm": {
+              "maximum": 0.3570879101753235,
+              "mean": 0.3134501548483968,
+              "median": 0.3274384140968323,
+              "minimum": 0.0
+            },
+            "wave_norm": {
+              "maximum": 0.148922860622406,
+              "mean": 0.08847886766307056,
+              "median": 0.08733569085597992,
+              "minimum": 0.03667740151286125
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 93927538688.0,
+              "mean": 530892456.2813607,
+              "median": 0.27782800793647766,
+              "minimum": 0.10987318307161331
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 3.142070770263672,
+              "mean": 1.0643305138364667,
+              "median": 0.8571702837944031,
+              "minimum": 0.15432249009609222
+            },
+            "wave_norm": {
+              "maximum": 0.1573735922574997,
+              "mean": 0.09207314650848275,
+              "median": 0.09157615154981613,
+              "minimum": 0.04245573282241821
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.6601124405860901,
+              "mean": 0.1437800639669149,
+              "median": 0.10707607865333557,
+              "minimum": 0.01950773037970066
+            }
+          },
+          "forecast": {
+            "quadratic_norm": {
+              "maximum": 0.473614901304245,
+              "mean": 0.39830575593805406,
+              "median": 0.40515097975730896,
+              "minimum": 0.0
+            },
+            "wave_norm": {
+              "maximum": 0.3285861313343048,
+              "mean": 0.19039293425885262,
+              "median": 0.1899569183588028,
+              "minimum": 0.09154035896062851
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 204433309696.0,
+              "mean": 1313758192.4729414,
+              "median": 0.4705567955970764,
+              "minimum": 0.24442659318447113
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 2.780036211013794,
+              "mean": 1.5651498790248297,
+              "median": 1.4881101846694946,
+              "minimum": 0.3511033356189728
+            },
+            "wave_norm": {
+              "maximum": 0.30278047919273376,
+              "mean": 0.20544642566528637,
+              "median": 0.20594075322151184,
+              "minimum": 0.09662965685129166
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.4316614270210266,
+              "mean": 0.14165286659044796,
+              "median": 0.13391174376010895,
+              "minimum": 0.04799341782927513
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 3.3021223545074463,
+              "mean": 1.2188282400020398,
+              "median": 1.0271226167678833,
+              "minimum": 0.25222665071487427
+            },
+            "wave_norm": {
+              "maximum": 0.1505568027496338,
+              "mean": 0.09810760385880712,
+              "median": 0.09913479536771774,
+              "minimum": 0.03627731278538704
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.3726872503757477,
+              "mean": 0.11582143469240691,
+              "median": 0.09244287759065628,
+              "minimum": 0.018376924097537994
+            }
+          },
+          "specialist_0": {
+            "quadratic_norm": {
+              "maximum": 0.27063536643981934,
+              "mean": 0.17152561808325117,
+              "median": 0.1714792102575302,
+              "minimum": 0.07949340343475342
+            },
+            "wave_norm": {
+              "maximum": 0.13446085155010223,
+              "mean": 0.08837474145911983,
+              "median": 0.08784724771976471,
+              "minimum": 0.04172467067837715
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.0861421823501587,
+              "mean": 0.5331260582024697,
+              "median": 0.520935595035553,
+              "minimum": 0.23290708661079407
+            }
+          },
+          "specialist_1": {
+            "quadratic_norm": {
+              "maximum": 0.43489423394203186,
+              "mean": 0.28085180056950776,
+              "median": 0.27872487902641296,
+              "minimum": 0.07696030288934708
+            },
+            "wave_norm": {
+              "maximum": 0.14677444100379944,
+              "mean": 0.08596358483555377,
+              "median": 0.08484336733818054,
+              "minimum": 0.04112367331981659
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.8954735398292542,
+              "mean": 0.31614963167521637,
+              "median": 0.2979688048362732,
+              "minimum": 0.12608319520950317
+            }
+          },
+          "specialist_2": {
+            "quadratic_norm": {
+              "maximum": 0.46212270855903625,
+              "mean": 0.23316117587091867,
+              "median": 0.23654145002365112,
+              "minimum": 0.061439283192157745
+            },
+            "wave_norm": {
+              "maximum": 0.16534866392612457,
+              "mean": 0.09137833486602176,
+              "median": 0.09090489149093628,
+              "minimum": 0.04088031128048897
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.5407029390335083,
+              "mean": 0.41220079141203314,
+              "median": 0.38439634442329407,
+              "minimum": 0.12831050157546997
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.390625,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.1361253261566162,
+          "mean": -0.011647760581611322,
+          "median": -0.00852204393595457,
+          "minimum": -0.2722862958908081
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6314593553543091,
+          "mean": 0.4881040406435204,
+          "median": 0.5141122937202454,
+          "minimum": 0.05781519040465355
+        }
+      },
+      "initial_quadratic_energy": {
+        "maximum": 55.39807891845703,
+        "mean": 14.764994231518358,
+        "median": 10.358375549316406,
+        "minimum": 2.388704538345337
+      },
+      "initial_wave_energy": {
+        "maximum": 0.6765414476394653,
+        "mean": -0.014883154386552633,
+        "median": -0.018152255564928055,
+        "minimum": -0.61691814661026
+      },
+      "positions": 1024,
+      "quadratic_energy": {
+        "maximum": 41.5074462890625,
+        "mean": 11.732186868786812,
+        "median": 8.616109848022461,
+        "minimum": 2.1871042251586914
+      },
+      "random_wrong_energy_margin": {
+        "maximum": 32.9619140625,
+        "mean": 16.49074199795723,
+        "median": 17.72119140625,
+        "minimum": -10.73291015625
+      },
+      "reconstruction_max_error": 0.0,
+      "seed": 202,
+      "selected_training_step": 120,
+      "wave_energy": {
+        "maximum": 0.6127070188522339,
+        "mean": -0.08262778502376023,
+        "median": -0.09273944795131683,
+        "minimum": -0.7336424589157104
+      }
+    },
+    {
+      "amplitudes": {
+        "maximum": 0.12489145249128342,
+        "mean": 0.08748119309308977,
+        "median": 0.10099418461322784,
+        "minimum": 1.8370665202382952e-05
+      },
+      "arm": "fourier_rewt",
+      "common_logit_shift_probe": {
+        "logit_offset": 1.0,
+        "max_probability_change": 1.7881393432617188e-07,
+        "mean_energy_change": 128.16207885742188
+      },
+      "correct_below_hard_wrong_fraction": 0.3046875,
+      "correct_below_hard_wrong_when_prediction_wrong": 0.02404526248574257,
+      "correct_below_random_wrong_fraction": 0.97265625,
+      "final_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 1.5295326709747314,
+              "mean": 1.1269061533967033,
+              "median": 1.1527817249298096,
+              "minimum": 0.21386966109275818
+            },
+            "wave_norm": {
+              "maximum": 0.24228276312351227,
+              "mean": 0.15410461079591187,
+              "median": 0.15446655452251434,
+              "minimum": 0.049248725175857544
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.39674362540245056,
+              "mean": 0.14041891381930327,
+              "median": 0.13649332523345947,
+              "minimum": 0.06927493959665298
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 1.312830924987793,
+              "mean": 0.9380804157808598,
+              "median": 0.9598209857940674,
+              "minimum": 0.04810984060168266
+            },
+            "wave_norm": {
+              "maximum": 0.22487062215805054,
+              "mean": 0.14116063027540804,
+              "median": 0.14059141278266907,
+              "minimum": 0.055068839341402054
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.1446481943130493,
+              "mean": 0.1570619550839183,
+              "median": 0.14924712479114532,
+              "minimum": 0.08083401620388031
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 1.269608497619629,
+              "mean": 0.9931454729667166,
+              "median": 1.0072503089904785,
+              "minimum": 0.17435358464717865
+            },
+            "wave_norm": {
+              "maximum": 0.44639188051223755,
+              "mean": 0.32390265399590135,
+              "median": 0.32459160685539246,
+              "minimum": 0.12214972078800201
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.9910805821418762,
+              "mean": 0.3304115345235914,
+              "median": 0.3262922763824463,
+              "minimum": 0.19575540721416473
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 1.3075836896896362,
+              "mean": 0.8924555089179194,
+              "median": 0.8996521234512329,
+              "minimum": 0.18758319318294525
+            },
+            "wave_norm": {
+              "maximum": 0.22259347140789032,
+              "mean": 0.13800676283426583,
+              "median": 0.13738152384757996,
+              "minimum": 0.05318208038806915
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.34670490026474,
+              "mean": 0.16016725816734834,
+              "median": 0.15135076642036438,
+              "minimum": 0.07458954304456711
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.3798828125,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.11647824198007584,
+          "mean": -0.007271545027405679,
+          "median": -0.008074237033724785,
+          "minimum": -0.09517891705036163
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6210671067237854,
+          "mean": 0.5642841361432147,
+          "median": 0.5773822069168091,
+          "minimum": 0.015467080287635326
+        }
+      },
+      "frequency_norms": {
+        "maximum": 1.6575483083724976,
+        "mean": 1.5615979433059692,
+        "median": 1.55394446849823,
+        "minimum": 1.4970003366470337
+      },
+      "frozen_prefix_rounds": [
+        {
+          "bpb": 3.706965208053589,
+          "fraction_positions_nll_improved": 0.0,
+          "mean_energy": 33.62468719482422,
+          "mean_probability_l1_change": 0.0,
+          "next_byte_accuracy": 0.3095703125,
+          "rounds": 0
+        },
+        {
+          "bpb": 3.7082786560058594,
+          "fraction_positions_nll_improved": 0.3701171875,
+          "mean_energy": 28.071819305419922,
+          "mean_probability_l1_change": 0.00926968827843666,
+          "next_byte_accuracy": 0.3095703125,
+          "rounds": 1
+        },
+        {
+          "bpb": 3.7093706130981445,
+          "fraction_positions_nll_improved": 0.3671875,
+          "mean_energy": 25.94519805908203,
+          "mean_probability_l1_change": 0.0158785842359066,
+          "next_byte_accuracy": 0.3095703125,
+          "rounds": 2
+        },
+        {
+          "bpb": 3.7108850479125977,
+          "fraction_positions_nll_improved": 0.3701171875,
+          "mean_energy": 24.791671752929688,
+          "mean_probability_l1_change": 0.023998968303203583,
+          "next_byte_accuracy": 0.30859375,
+          "rounds": 4
+        },
+        {
+          "bpb": 3.7121949195861816,
+          "fraction_positions_nll_improved": 0.375,
+          "mean_energy": 24.568614959716797,
+          "mean_probability_l1_change": 0.030429231002926826,
+          "next_byte_accuracy": 0.30859375,
+          "rounds": 8
+        }
+      ],
+      "hard_wrong_energy_margin": {
+        "maximum": 12.94287109375,
+        "mean": -1.650601677596569,
+        "median": -1.900146484375,
+        "minimum": -16.9420166015625
+      },
+      "initial_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 3.9360005855560303,
+              "mean": 2.9483380992896855,
+              "median": 3.021120548248291,
+              "minimum": 0.4113770127296448
+            },
+            "wave_norm": {
+              "maximum": 0.23327666521072388,
+              "mean": 0.15365801257576095,
+              "median": 0.15375564992427826,
+              "minimum": 0.04908548295497894
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.1479734629392624,
+              "mean": 0.05371356491923507,
+              "median": 0.051444146782159805,
+              "minimum": 0.028353746980428696
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 3.654156446456909,
+              "mean": 2.5955354041288956,
+              "median": 2.6503491401672363,
+              "minimum": 0.09070088714361191
+            },
+            "wave_norm": {
+              "maximum": 0.21483343839645386,
+              "mean": 0.1419359755163896,
+              "median": 0.14098812639713287,
+              "minimum": 0.05509035661816597
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.607384979724884,
+              "mean": 0.05723331679473631,
+              "median": 0.05365390703082085,
+              "minimum": 0.03276843577623367
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 2.8083078861236572,
+              "mean": 2.212172997649759,
+              "median": 2.250190019607544,
+              "minimum": 0.3058089017868042
+            },
+            "wave_norm": {
+              "maximum": 0.45859527587890625,
+              "mean": 0.3243175468160189,
+              "median": 0.3252546489238739,
+              "minimum": 0.11543294042348862
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.4337508976459503,
+              "mean": 0.1489146265303134,
+              "median": 0.14547370374202728,
+              "minimum": 0.08827463537454605
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 3.634512186050415,
+              "mean": 2.4591356797900517,
+              "median": 2.4907989501953125,
+              "minimum": 0.3603542149066925
+            },
+            "wave_norm": {
+              "maximum": 0.20919272303581238,
+              "mean": 0.13798884001153056,
+              "median": 0.13736435770988464,
+              "minimum": 0.0523081049323082
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.14515747129917145,
+              "mean": 0.058402467704581795,
+              "median": 0.05538403242826462,
+              "minimum": 0.032693296670913696
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.37109375,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.1082943007349968,
+          "mean": -0.0059998262737774866,
+          "median": -0.006794118322432041,
+          "minimum": -0.08320102840662003
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.634415864944458,
+          "mean": 0.5865358644459775,
+          "median": 0.5979800820350647,
+          "minimum": 0.021228307858109474
+        }
+      },
+      "initial_quadratic_energy": {
+        "maximum": 56.36794662475586,
+        "mean": 33.58983113896102,
+        "median": 33.93865966796875,
+        "minimum": 2.935443878173828
+      },
+      "initial_wave_energy": {
+        "maximum": 0.7878257632255554,
+        "mean": 0.03485879397339886,
+        "median": 0.043068185448646545,
+        "minimum": -0.7802758812904358
+      },
+      "positions": 1024,
+      "quadratic_energy": {
+        "maximum": 43.03581237792969,
+        "mean": 25.983978069853038,
+        "median": 26.225072860717773,
+        "minimum": 2.8114981651306152
+      },
+      "random_wrong_energy_margin": {
+        "maximum": 39.521484375,
+        "mean": 16.097051680088043,
+        "median": 16.564697265625,
+        "minimum": -12.3800048828125
+      },
+      "reconstruction_max_error": 0.0,
+      "seed": 303,
+      "selected_training_step": 120,
+      "wave_energy": {
+        "maximum": 0.7091805934906006,
+        "mean": -0.038779223505116533,
+        "median": -0.03281751275062561,
+        "minimum": -0.7615346908569336
+      }
+    },
+    {
+      "amplitudes": {
+        "maximum": 0.12433404475450516,
+        "mean": 0.07503634684433702,
+        "median": 0.0835186168551445,
+        "minimum": 7.936535439512227e-06
+      },
+      "arm": "full_rewt",
+      "common_logit_shift_probe": {
+        "logit_offset": 1.0,
+        "max_probability_change": 2.384185791015625e-07,
+        "mean_energy_change": 133.98370361328125
+      },
+      "correct_below_hard_wrong_fraction": 0.3017578125,
+      "correct_below_hard_wrong_when_prediction_wrong": 0.03851444274187088,
+      "correct_below_random_wrong_fraction": 0.9716796875,
+      "final_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 0.6699535846710205,
+              "mean": 0.26529891534300987,
+              "median": 0.23717989027500153,
+              "minimum": 0.09305796027183533
+            },
+            "wave_norm": {
+              "maximum": 0.1428729146718979,
+              "mean": 0.09024618643888971,
+              "median": 0.08956316113471985,
+              "minimum": 0.0458332821726799
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.011860728263855,
+              "mean": 0.38967845716979355,
+              "median": 0.3780849575996399,
+              "minimum": 0.09158012270927429
+            }
+          },
+          "communication": {
+            "quadratic_norm": {
+              "maximum": 0.895087718963623,
+              "mean": 0.4864274165011011,
+              "median": 0.4857517182826996,
+              "minimum": 0.16086778044700623
+            },
+            "wave_norm": {
+              "maximum": 0.16936057806015015,
+              "mean": 0.08656373617486679,
+              "median": 0.08493853360414505,
+              "minimum": 0.040497977286577225
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.6487449407577515,
+              "mean": 0.18664570945838932,
+              "median": 0.17805255949497223,
+              "minimum": 0.062897689640522
+            }
+          },
+          "diffusion": {
+            "quadratic_norm": {
+              "maximum": 0.22340670228004456,
+              "mean": 0.17475798810482956,
+              "median": 0.17718790471553802,
+              "minimum": 0.028184734284877777
+            },
+            "wave_norm": {
+              "maximum": 0.14564263820648193,
+              "mean": 0.08865081579278922,
+              "median": 0.0881732776761055,
+              "minimum": 0.04046549275517464
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 2.188979148864746,
+              "mean": 0.5216811594436876,
+              "median": 0.4942017197608948,
+              "minimum": 0.2662968337535858
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 0.6324417591094971,
+              "mean": 0.23797531765740132,
+              "median": 0.20057997107505798,
+              "minimum": 0.07434230297803879
+            },
+            "wave_norm": {
+              "maximum": 0.1670471727848053,
+              "mean": 0.08848619353739196,
+              "median": 0.08676134049892426,
+              "minimum": 0.03723519295454025
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.3198552131652832,
+              "mean": 0.45140285525121726,
+              "median": 0.41619372367858887,
+              "minimum": 0.09493953734636307
+            }
+          },
+          "forecast": {
+            "quadratic_norm": {
+              "maximum": 0.37883129715919495,
+              "mean": 0.25083102889038855,
+              "median": 0.25086671113967896,
+              "minimum": 0.05571141839027405
+            },
+            "wave_norm": {
+              "maximum": 0.3165663778781891,
+              "mean": 0.17821753527823603,
+              "median": 0.17443135380744934,
+              "minimum": 0.08099774271249771
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 2.225416898727417,
+              "mean": 0.7385942710097879,
+              "median": 0.6839608550071716,
+              "minimum": 0.3540903627872467
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 0.9079089760780334,
+              "mean": 0.5877973288734211,
+              "median": 0.5823955535888672,
+              "minimum": 0.1945306807756424
+            },
+            "wave_norm": {
+              "maximum": 0.35719022154808044,
+              "mean": 0.20204802242369624,
+              "median": 0.19759714603424072,
+              "minimum": 0.0802626982331276
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.8737633228302002,
+              "mean": 0.3559434893686557,
+              "median": 0.3450131416320801,
+              "minimum": 0.14961087703704834
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 0.6328607797622681,
+              "mean": 0.2572391877984046,
+              "median": 0.22973914444446564,
+              "minimum": 0.11819043010473251
+            },
+            "wave_norm": {
+              "maximum": 0.17979227006435394,
+              "mean": 0.09764549805913703,
+              "median": 0.095090851187706,
+              "minimum": 0.04023364186286926
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.26471745967865,
+              "mean": 0.4275534011685522,
+              "median": 0.41465461254119873,
+              "minimum": 0.11281906813383102
+            }
+          },
+          "specialist_0": {
+            "quadratic_norm": {
+              "maximum": 0.3597637116909027,
+              "mean": 0.2645007148894365,
+              "median": 0.26917293667793274,
+              "minimum": 0.06936914473772049
+            },
+            "wave_norm": {
+              "maximum": 0.16139566898345947,
+              "mean": 0.09289014089881675,
+              "median": 0.09209229052066803,
+              "minimum": 0.04753429815173149
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.021003007888794,
+              "mean": 0.3591861530294409,
+              "median": 0.34723952412605286,
+              "minimum": 0.18786954879760742
+            }
+          },
+          "specialist_1": {
+            "quadratic_norm": {
+              "maximum": 0.6676114201545715,
+              "mean": 0.4974465994600905,
+              "median": 0.5106958150863647,
+              "minimum": 0.1718558818101883
+            },
+            "wave_norm": {
+              "maximum": 0.18922969698905945,
+              "mean": 0.09540772999753244,
+              "median": 0.09231610596179962,
+              "minimum": 0.03711779788136482
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.5996996164321899,
+              "mean": 0.19533387491537724,
+              "median": 0.1853920966386795,
+              "minimum": 0.0811709612607956
+            }
+          },
+          "specialist_2": {
+            "quadratic_norm": {
+              "maximum": 0.29473888874053955,
+              "mean": 0.20482129884840106,
+              "median": 0.20831038057804108,
+              "minimum": 0.06025603041052818
+            },
+            "wave_norm": {
+              "maximum": 0.14306658506393433,
+              "mean": 0.0853262003402051,
+              "median": 0.08412347733974457,
+              "minimum": 0.034056417644023895
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 1.12773859500885,
+              "mean": 0.4279509079788113,
+              "median": 0.40888237953186035,
+              "minimum": 0.19943401217460632
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.3759765625,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.16159014403820038,
+          "mean": -0.011679840152119425,
+          "median": -0.011040033772587776,
+          "minimum": -0.1750737577676773
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.5960515141487122,
+          "mean": 0.38996288029147763,
+          "median": 0.42260751128196716,
+          "minimum": 0.004996083676815033
+        }
+      },
+      "frequency_norms": {
+        "maximum": 1.702505111694336,
+        "mean": 1.6256897300481796,
+        "median": 1.6263495683670044,
+        "minimum": 1.4660367965698242
+      },
+      "frozen_prefix_rounds": [
+        {
+          "bpb": 3.7696073055267334,
+          "fraction_positions_nll_improved": 0.0,
+          "mean_energy": 19.159988403320312,
+          "mean_probability_l1_change": 0.0,
+          "next_byte_accuracy": 0.291015625,
+          "rounds": 0
+        },
+        {
+          "bpb": 3.7711241245269775,
+          "fraction_positions_nll_improved": 0.3828125,
+          "mean_energy": 17.899551391601562,
+          "mean_probability_l1_change": 0.007781385909765959,
+          "next_byte_accuracy": 0.2900390625,
+          "rounds": 1
+        },
+        {
+          "bpb": 3.7723395824432373,
+          "fraction_positions_nll_improved": 0.380859375,
+          "mean_energy": 17.322959899902344,
+          "mean_probability_l1_change": 0.013439923524856567,
+          "next_byte_accuracy": 0.2900390625,
+          "rounds": 2
+        },
+        {
+          "bpb": 3.773987293243408,
+          "fraction_positions_nll_improved": 0.373046875,
+          "mean_energy": 16.918651580810547,
+          "mean_probability_l1_change": 0.020563289523124695,
+          "next_byte_accuracy": 0.2890625,
+          "rounds": 4
+        },
+        {
+          "bpb": 3.77540922164917,
+          "fraction_positions_nll_improved": 0.3740234375,
+          "mean_energy": 16.790836334228516,
+          "mean_probability_l1_change": 0.026422809809446335,
+          "next_byte_accuracy": 0.2880859375,
+          "rounds": 8
+        }
+      ],
+      "hard_wrong_energy_margin": {
+        "maximum": 13.03955078125,
+        "mean": -1.6909472793340683,
+        "median": -1.8594970703125,
+        "minimum": -20.1790771484375
+      },
+      "initial_gradient": {
+        "blocks": {
+          "attention": {
+            "quadratic_norm": {
+              "maximum": 1.8947744369506836,
+              "mean": 0.6597709223860875,
+              "median": 0.5882213711738586,
+              "minimum": 0.18609856069087982
+            },
+            "wave_norm": {
+              "maximum": 0.14235755801200867,
+              "mean": 0.09062391904080869,
+              "median": 0.09010520577430725,
+              "minimum": 0.034822821617126465
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.4878646731376648,
+              "mean": 0.17121292296724278,
+              "median": 0.15522129833698273,
+              "minimum": 0.032119184732437134
+            }
+          },
+          "communication": {
+            "quadratic_norm": {
+              "maximum": 2.311501979827881,
+              "mean": 1.1385434925905429,
+              "median": 1.0920629501342773,
+              "minimum": 0.3599328100681305
+            },
+            "wave_norm": {
+              "maximum": 0.16205841302871704,
+              "mean": 0.08670883215381764,
+              "median": 0.08477094024419785,
+              "minimum": 0.035618800669908524
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.263362854719162,
+              "mean": 0.08171260361268651,
+              "median": 0.0778425931930542,
+              "minimum": 0.021905483677983284
+            }
+          },
+          "diffusion": {
+            "quadratic_norm": {
+              "maximum": 0.36154603958129883,
+              "mean": 0.3239760930009652,
+              "median": 0.33573099970817566,
+              "minimum": 0.0
+            },
+            "wave_norm": {
+              "maximum": 0.1427186280488968,
+              "mean": 0.0886870482499944,
+              "median": 0.08843652158975601,
+              "minimum": 0.03472929820418358
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 84167254016.0,
+              "mean": 578160448.2712452,
+              "median": 0.2687353789806366,
+              "minimum": 0.11273489147424698
+            }
+          },
+          "feedforward": {
+            "quadratic_norm": {
+              "maximum": 1.7126294374465942,
+              "mean": 0.5753147482246277,
+              "median": 0.48112455010414124,
+              "minimum": 0.10579881817102432
+            },
+            "wave_norm": {
+              "maximum": 0.16666553914546967,
+              "mean": 0.08856625737098511,
+              "median": 0.0868220403790474,
+              "minimum": 0.04072508215904236
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.737575352191925,
+              "mean": 0.20422704899101518,
+              "median": 0.17881499230861664,
+              "minimum": 0.032344527542591095
+            }
+          },
+          "forecast": {
+            "quadratic_norm": {
+              "maximum": 0.5523725748062134,
+              "mean": 0.4477702816366218,
+              "median": 0.4592677354812622,
+              "minimum": 0.0
+            },
+            "wave_norm": {
+              "maximum": 0.3425581157207489,
+              "mean": 0.17896929629932856,
+              "median": 0.17367692291736603,
+              "minimum": 0.08222338557243347
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 148539506688.0,
+              "mean": 1107675392.396752,
+              "median": 0.38940390944480896,
+              "minimum": 0.1887146383523941
+            }
+          },
+          "output": {
+            "quadratic_norm": {
+              "maximum": 1.939231276512146,
+              "mean": 1.1481421288044658,
+              "median": 1.1404454708099365,
+              "minimum": 0.34086984395980835
+            },
+            "wave_norm": {
+              "maximum": 0.35578101873397827,
+              "mean": 0.20251230027497513,
+              "median": 0.19671398401260376,
+              "minimum": 0.08022160828113556
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.467811644077301,
+              "mean": 0.18637064600625308,
+              "median": 0.17612753808498383,
+              "minimum": 0.07261338829994202
+            }
+          },
+          "recurrent": {
+            "quadratic_norm": {
+              "maximum": 1.8226065635681152,
+              "mean": 0.6398290282522794,
+              "median": 0.553138017654419,
+              "minimum": 0.2277829945087433
+            },
+            "wave_norm": {
+              "maximum": 0.18298254907131195,
+              "mean": 0.09760462808480952,
+              "median": 0.095785953104496,
+              "minimum": 0.03441948443651199
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.4835489094257355,
+              "mean": 0.186732189518807,
+              "median": 0.17304538190364838,
+              "minimum": 0.040850743651390076
+            }
+          },
+          "specialist_0": {
+            "quadratic_norm": {
+              "maximum": 0.6314211487770081,
+              "mean": 0.49976458291348536,
+              "median": 0.5119773745536804,
+              "minimum": 0.1246042251586914
+            },
+            "wave_norm": {
+              "maximum": 0.1649172306060791,
+              "mean": 0.09305040699473466,
+              "median": 0.09231113642454147,
+              "minimum": 0.042113047093153
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.570578932762146,
+              "mean": 0.18960981837153668,
+              "median": 0.18603771924972534,
+              "minimum": 0.08606994152069092
+            }
+          },
+          "specialist_1": {
+            "quadratic_norm": {
+              "maximum": 1.1745665073394775,
+              "mean": 0.9442409374460112,
+              "median": 0.9773693084716797,
+              "minimum": 0.3615865111351013
+            },
+            "wave_norm": {
+              "maximum": 0.19372686743736267,
+              "mean": 0.09520752523530973,
+              "median": 0.09213380515575409,
+              "minimum": 0.03999413922429085
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.2463805228471756,
+              "mean": 0.10253560333148926,
+              "median": 0.09733881056308746,
+              "minimum": 0.04844321310520172
+            }
+          },
+          "specialist_2": {
+            "quadratic_norm": {
+              "maximum": 0.5295301675796509,
+              "mean": 0.39248479300295,
+              "median": 0.4053631126880646,
+              "minimum": 0.0968003123998642
+            },
+            "wave_norm": {
+              "maximum": 0.1435890942811966,
+              "mean": 0.08614827633391542,
+              "median": 0.0856054276227951,
+              "minimum": 0.029073210433125496
+            },
+            "wave_to_quadratic_norm": {
+              "maximum": 0.7255329489707947,
+              "mean": 0.22524652626452735,
+              "median": 0.21759280562400818,
+              "minimum": 0.09940195828676224
+            }
+          }
+        },
+        "fraction_first_order_ce_descent": 0.3837890625,
+        "output_ce_gradient_cosine": {
+          "maximum": 0.15782524645328522,
+          "mean": -0.010598526476329084,
+          "median": -0.01102021150290966,
+          "minimum": -0.1792231947183609
+        },
+        "output_common_shift_gradient_fraction": {
+          "maximum": 0.6022705435752869,
+          "mean": 0.39496240779969227,
+          "median": 0.44191011786460876,
+          "minimum": 4.940823055221699e-05
+        }
+      },
+      "initial_quadratic_energy": {
+        "maximum": 35.06277084350586,
+        "mean": 19.199957873439416,
+        "median": 19.50651741027832,
+        "minimum": 2.776317834854126
+      },
+      "initial_wave_energy": {
+        "maximum": 0.6913255453109741,
+        "mean": -0.03996878936322901,
+        "median": -0.05537201836705208,
+        "minimum": -0.8170611262321472
+      },
+      "positions": 1024,
+      "quadratic_energy": {
+        "maximum": 32.36282730102539,
+        "mean": 17.41905518528074,
+        "median": 17.618728637695312,
+        "minimum": 2.3176538944244385
+      },
+      "random_wrong_energy_margin": {
+        "maximum": 37.66796875,
+        "mean": 16.650759130716324,
+        "median": 17.4443359375,
+        "minimum": -12.8701171875
+      },
+      "reconstruction_max_error": 0.0,
+      "seed": 303,
+      "selected_training_step": 120,
+      "wave_energy": {
+        "maximum": 0.6752144694328308,
+        "mean": -0.09609520622325363,
+        "median": -0.10859500616788864,
+        "minimum": -0.8013167381286621
+      }
+    }
+  ],
+  "source_sha256": {
+    "__init__.py": "cec12357813e592ad87c21229687e348a62d1c3deb7fae7c9275260b1ac0b2bc",
+    "data.py": "32cfed1d38a92dc9e238c36f271c372f5ad1711ba4848f34745641197b2c888d",
+    "evaluate.py": "f19fcbf48736a478d6303949b1a7bbe2a9d85b8b392cbfae4af41c4a225de73a",
+    "experiment.py": "fadbea4c118991138d67fcd016d2e474e7343f1f9d345a562e52481e90328be6",
+    "model.py": "6166f2eb7c8cc4ad116524903a3e668e64b4fa6a34b60269a8302b9559b28b25",
+    "optim.py": "d7208637345c8934b6b3b287569233d2c0cf10f5bc83c9e0f6675029c0be7135",
+    "profile.py": "8c4869a13911cafb49ca9919cd2e576e9c51865c43528047a240972e1fc34fb6",
+    "report.py": "9dd216247786dd9d12eaf0e227fb0b20a22aaa40aa9bc3e4c7f09b15feabbf71",
+    "tasks.py": "84967f1c54fcf1cedc7a2ec816b1fd8353356c232f6eca0c726f6e28b68f0355"
+  },
+  "test_data_used": false,
+  "validation_offsets": [
+    90387581,
+    94613950,
+    93520819,
+    94769856,
+    91465413,
+    93959398,
+    90108034,
+    94983859
+  ]
+}

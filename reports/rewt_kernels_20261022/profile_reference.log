@@ -1,0 +1,128 @@
+USDT:2026-10-22 15:58:09 2926762:2926762 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-22 15:58:09 2926762:2926762 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-10-22 15:58:11 2926762:2926762 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-22 15:58:11 2926762:2926762 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-10-22 15:58:14 2926762:2926762 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-22 15:58:14 2926762:2926762 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{
+  "prefill": [
+    {
+      "name": "rewt::forward",
+      "calls": 1,
+      "total_us": 37857.965,
+      "self_us": 2539.3910000000615
+    },
+    {
+      "name": "rewt::observed_bank",
+      "calls": 1,
+      "total_us": 2567.8379999999997,
+      "self_us": 374.304000000001
+    },
+    {
+      "name": "rewt::retrieve",
+      "calls": 16,
+      "total_us": 789.0879999999988,
+      "self_us": 317.4879999999739
+    },
+    {
+      "name": "rewt::condition",
+      "calls": 16,
+      "total_us": 8138.540999999999,
+      "self_us": 1060.335999999972
+    },
+    {
+      "name": "rewt::energy",
+      "calls": 64,
+      "total_us": 10639.879999999997,
+      "self_us": 2853.390999999914
+    },
+    {
+      "name": "rewt::gradient",
+      "calls": 32,
+      "total_us": 9150.571999999993,
+      "self_us": 2166.462999999935
+    }
+  ],
+  "training": [
+    {
+      "name": "rewt::forward",
+      "calls": 1,
+      "total_us": 47532.837999999996,
+      "self_us": 2943.663000000124
+    },
+    {
+      "name": "rewt::observed_bank",
+      "calls": 1,
+      "total_us": 1403.487,
+      "self_us": 197.53499999999985
+    },
+    {
+      "name": "rewt::retrieve",
+      "calls": 16,
+      "total_us": 1299.7269999999871,
+      "self_us": 445.1359999999877
+    },
+    {
+      "name": "rewt::condition",
+      "calls": 16,
+      "total_us": 10672.380000000012,
+      "self_us": 1282.5120000000043
+    },
+    {
+      "name": "rewt::energy",
+      "calls": 64,
+      "total_us": 14497.448999999997,
+      "self_us": 3347.4239999998726
+    },
+    {
+      "name": "rewt::gradient",
+      "calls": 32,
+      "total_us": 12550.011000000002,
+      "self_us": 2214.655000000049
+    },
+    {
+      "name": "rewt::backward",
+      "calls": 1,
+      "total_us": 53097.268,
+      "self_us": 9257.400999999976
+    }
+  ],
+  "decode": [
+    {
+      "name": "rewt::forward",
+      "calls": 1,
+      "total_us": 4010.655,
+      "self_us": 2007.520000000001
+    },
+    {
+      "name": "rewt::observed_bank",
+      "calls": 1,
+      "total_us": 252.46399999999994,
+      "self_us": 81.26400000000012
+    },
+    {
+      "name": "rewt::retrieve",
+      "calls": 1,
+      "total_us": 45.903999999999996,
+      "self_us": 23.264000000000465
+    },
+    {
+      "name": "rewt::condition",
+      "calls": 1,
+      "total_us": 408.144,
+      "self_us": 75.18399999999997
+    },
+    {
+      "name": "rewt::energy",
+      "calls": 4,
+      "total_us": 575.8390000000002,
+      "self_us": 167.34400000000278
+    },
+    {
+      "name": "rewt::gradient",
+      "calls": 2,
+      "total_us": 336.75199999999995,
+      "self_us": 134.95999999999935
+    }
+  ]
+}

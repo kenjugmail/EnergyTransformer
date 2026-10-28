@@ -1,0 +1,123 @@
+{
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/binding/aligned/best.pt",
+  "checkpoint_sha256": "96d648b633c27ee4440f41556e94f63cea760b1839dff9ef8515808df9d2b012",
+  "identical_generation": true,
+  "measurements": {
+    "cached": [
+      {
+        "continuation_cpu_seconds": 0.01920614399999998,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.0251521600000002,
+        "total_cpu_seconds": 0.04435830400000018
+      },
+      {
+        "continuation_cpu_seconds": 0.015302032000000132,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.013410655999999577,
+        "total_cpu_seconds": 0.02871268799999971
+      },
+      {
+        "continuation_cpu_seconds": 0.015801232000000276,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.013137519999999903,
+        "total_cpu_seconds": 0.02893875200000018
+      },
+      {
+        "continuation_cpu_seconds": 0.016125039999999924,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.01310044800000032,
+        "total_cpu_seconds": 0.029225488000000244
+      },
+      {
+        "continuation_cpu_seconds": 0.015815375999999937,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.012892015999999895,
+        "total_cpu_seconds": 0.02870739199999983
+      }
+    ],
+    "uncached": [
+      {
+        "continuation_cpu_seconds": 0.015670239999999946,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.014918384000000007,
+        "total_cpu_seconds": 0.030588623999999953
+      },
+      {
+        "continuation_cpu_seconds": 0.016024336000000083,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.014402688000000108,
+        "total_cpu_seconds": 0.03042702400000019
+      },
+      {
+        "continuation_cpu_seconds": 0.015373264000000386,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.015321280000000215,
+        "total_cpu_seconds": 0.0306945440000006
+      },
+      {
+        "continuation_cpu_seconds": 0.015055391999999834,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.015186416000000147,
+        "total_cpu_seconds": 0.03024180799999998
+      },
+      {
+        "continuation_cpu_seconds": 0.017042992000000368,
+        "generated_bytes": 16,
+        "generated_hex": "73746570733d34323b616e733d34320a",
+        "prefill_cpu_seconds": 0.015502944000000074,
+        "total_cpu_seconds": 0.03254593600000044
+      }
+    ]
+  },
+  "median_cpu_seconds": {
+    "cached": {
+      "continuation_cpu_seconds": 0.015815375999999937,
+      "prefill_cpu_seconds": 0.013137519999999903,
+      "total_cpu_seconds": 0.02893875200000018
+    },
+    "uncached": {
+      "continuation_cpu_seconds": 0.015670239999999946,
+      "prefill_cpu_seconds": 0.015186416000000147,
+      "total_cpu_seconds": 0.030588623999999953
+    }
+  },
+  "prompt_hex": "413d31393b423d412b32333b423d3f0a",
+  "scope": "Five alternating measured repeats after warmup, one CPU thread. Prefill processes the complete prompt; continuation begins from its logits and excludes prefill. Both policies recompute observed encodings at each decode call; no persistent inference KV cache or GPU measurement.",
+  "script_sha256": "488327467aee0827980cb0062d3797f41b7652d881ab5727d9c39045309fc4c1",
+  "source_sha256": {
+    "__init__.py": "cec12357813e592ad87c21229687e348a62d1c3deb7fae7c9275260b1ac0b2bc",
+    "bpe.py": "33b305a464f1487c22037848bba542e6120fb790f6be67c8192828a8d3494b8e",
+    "curriculum.py": "e33541936ad1d401d2f7999513f2bdb00fba39cebe5530b3c6d9932da49064d1",
+    "data.py": "ab4b434581188a681544cc679b2d9c589101f7bdaeb19461dd51771c64dab4b9",
+    "evaluate.py": "398d5be602eaf598941b831e6cbcac499ee40c3e0df48879055307a0bc992e52",
+    "experiment.py": "a37fb1dac93d215854be7231a3ed5ee947a29a8e28b5bb728e7255338b46127d",
+    "improve.py": "6402abc8a9ada3cfa0fe784449edb5e6134bb472586c8a89d389783da9d3964f",
+    "improve_report.py": "8135a4be23a7cf6190d8e6ba44956cc17e61acfc62adde81dc33e349abc921b1",
+    "memory.py": "092865ff6f64eea8ec9b9fa6f0866f41036c38de6d03a99e6f7814001217d920",
+    "model.py": "18fb0d1cbb681a2bb72b560a1971d9f6bf289f5b98c4eb9a2c409f5be0716b98",
+    "optim.py": "82b9c97645921256f643cd797825b4705a07b749df14b0bca627b997a38d3279",
+    "position_memory.py": "fb58574cda6e5bffccf88da2edc9fd2693a89e92ff4b70a74d5c67b6a923b75a",
+    "profile.py": "ccfe45180c62f4cebf73158aadd364d222e80083e5273b4aafa6f9668bcd19f5",
+    "report.py": "9dd216247786dd9d12eaf0e227fb0b20a22aaa40aa9bc3e4c7f09b15feabbf71",
+    "stabilize.py": "253aafa0f6388a19fc65038ce3a0bcf0bbe7cb141b3e1a7987d87adcb4bf9eff",
+    "story_data.py": "da4709e5fa11836b749b586afd39430749764ea52c706686e5c9c776c5de8f47",
+    "tasks.py": "88f5972e3e69f1ee21cd9cd0f7a86265a249e00556ceb4435df625a26b10b71a",
+    "tokenizer.py": "38b5b68d5913f577f55cb32b97fa2c2e81f4f26d9628fb09092c067ef51be2eb"
+  },
+  "speedup": {
+    "continuation_cpu_seconds": 0.9908231078413823,
+    "prefill_cpu_seconds": 1.1559575932139596,
+    "total_cpu_seconds": 1.0570125484333175
+  },
+  "unchanged_checkpoint": true,
+  "unchanged_weights": true
+}

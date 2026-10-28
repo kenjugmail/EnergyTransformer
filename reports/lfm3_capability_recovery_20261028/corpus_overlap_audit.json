@@ -1,0 +1,21 @@
+{
+  "exact_token_prefix_overlaps": {
+    "None": {
+      "new_valid_overlap": 0,
+      "old_valid_overlap": 0,
+      "old_test_overlap": 0
+    },
+    "128": {
+      "new_valid_overlap": 0,
+      "old_valid_overlap": 0,
+      "old_test_overlap": 0
+    },
+    "512": {
+      "new_valid_overlap": 0,
+      "old_valid_overlap": 0,
+      "old_test_overlap": 0
+    }
+  },
+  "corpus_manifest_sha256": "ec26d6b36b5c69789b867abe01a48b5579f002afe2193324d916ae1c7da005f6",
+  "limitations": "Prefix overlaps can be shared user instructions or boilerplate, not necessarily shared answers. No semantic deduplication."
+}

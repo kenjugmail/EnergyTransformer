@@ -1,0 +1,72 @@
+{
+  "main_slides": 12,
+  "appendix_slides": 3,
+  "planned_seconds": 600,
+  "slides": [
+    {
+      "slide": 1,
+      "seconds": 25
+    },
+    {
+      "slide": 2,
+      "seconds": 40
+    },
+    {
+      "slide": 3,
+      "seconds": 55
+    },
+    {
+      "slide": 4,
+      "seconds": 55
+    },
+    {
+      "slide": 5,
+      "seconds": 50
+    },
+    {
+      "slide": 6,
+      "seconds": 40
+    },
+    {
+      "slide": 7,
+      "seconds": 55
+    },
+    {
+      "slide": 8,
+      "seconds": 50
+    },
+    {
+      "slide": 9,
+      "seconds": 65
+    },
+    {
+      "slide": 10,
+      "seconds": 65
+    },
+    {
+      "slide": 11,
+      "seconds": 50
+    },
+    {
+      "slide": 12,
+      "seconds": 50
+    },
+    {
+      "slide": 13,
+      "seconds": 0
+    },
+    {
+      "slide": 14,
+      "seconds": 0
+    },
+    {
+      "slide": 15,
+      "seconds": 0
+    }
+  ],
+  "editable": true,
+  "source_results": [
+    "reports/rewt_architecture_20261022/summary.json",
+    "reports/rewt_reasoning_20261026/summary.json"
+  ]
+}

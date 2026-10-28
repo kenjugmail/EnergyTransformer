@@ -1,0 +1,281 @@
+{
+  "audited_responses": 9504,
+  "completed_fits": 36,
+  "equal_update_batch_hashes_verified": true,
+  "frozen_energy_ablations": {
+    "compute": {
+      "disabled": 1.4979739976428026,
+      "with_energy": 1.4926228877068297
+    },
+    "language": {
+      "disabled": 1.5692969954080513,
+      "with_energy": 1.5630656485640915
+    },
+    "tasks": {
+      "disabled": 0.3663194444444444,
+      "with_energy": 0.3663194444444444
+    }
+  },
+  "paired_intervals": {
+    "compute_hybrid_energy_minus_transformer_bpb": {
+      "ci95": [
+        0.023169621100164333,
+        0.03403202331417684
+      ],
+      "delta": 0.028555206209407435
+    },
+    "compute_hybrid_minus_transformer_bpb": {
+      "ci95": [
+        0.013204211612054892,
+        0.023855573595612516
+      ],
+      "delta": 0.01871333748973414
+    },
+    "language_hybrid_energy_minus_transformer_bpb": {
+      "ci95": [
+        -0.049128697823868,
+        -0.03775225921686479
+      ],
+      "delta": -0.04340016996153562
+    },
+    "language_hybrid_minus_transformer_bpb": {
+      "ci95": [
+        -0.048131564387277066,
+        -0.03728437690616936
+      ],
+      "delta": -0.04271335416324096
+    },
+    "tasks_hybrid_energy_minus_transformer": {
+      "ci95": [
+        0.12787905092592594,
+        0.1579861111111111
+      ],
+      "delta": 0.14293981481481483
+    },
+    "tasks_hybrid_minus_transformer": {
+      "ci95": [
+        0.13657407407407407,
+        0.16898148148148148
+      ],
+      "delta": 0.1527777777777778
+    }
+  },
+  "source_and_checkpoint_hashes_verified": true,
+  "summary": {
+    "hybrid": {
+      "active_parameters": 109656,
+      "compute_bpb": 1.4827810189871564,
+      "compute_seed_bpb": [
+        1.48198036981888,
+        1.4991460783877761,
+        1.467216608754813
+      ],
+      "compute_updates": [
+        1176,
+        1104,
+        1300
+      ],
+      "language_bpb": 1.5637524643623861,
+      "language_seed_bpb": [
+        1.5621891709878752,
+        1.5675735391997827,
+        1.5614946828995004
+      ],
+      "long_language_bpb": 1.5596109692359967,
+      "long_recall": 0.861111111111111,
+      "long_recall_depth": {
+        "128": 0.6388888888888888,
+        "32": 1.0,
+        "64": 0.9444444444444444
+      },
+      "parameters": 111784,
+      "task_complete": 0.3761574074074074,
+      "task_groups": {
+        "depth": {
+          "1": 0.14583333333333334,
+          "16": 1.0,
+          "2": 0.06770833333333333,
+          "3": 0.015625,
+          "4": 0.9322916666666666,
+          "8": 0.9947916666666666
+        },
+        "difficulty": {
+          "familiar_format": 0.4085648148148148,
+          "withheld_wording": 0.34375
+        },
+        "family": {
+          "arithmetic": 0.036458333333333336,
+          "recall": 0.9756944444444444,
+          "rules": 0.11631944444444445
+        }
+      },
+      "task_seed_complete": [
+        0.3576388888888889,
+        0.3732638888888889,
+        0.3975694444444444
+      ]
+    },
+    "hybrid_energy": {
+      "active_parameters": 111784,
+      "compute_bpb": 1.4926228877068297,
+      "compute_seed_bpb": [
+        1.4944684910360726,
+        1.4938662186019207,
+        1.489533953482496
+      ],
+      "compute_updates": [
+        1102,
+        1088,
+        1143
+      ],
+      "language_bpb": 1.5630656485640915,
+      "language_seed_bpb": [
+        1.5665402368171568,
+        1.5614701632625614,
+        1.5611865456125564
+      ],
+      "long_language_bpb": 1.5556064117190203,
+      "long_recall": 0.7731481481481481,
+      "long_recall_depth": {
+        "128": 0.4722222222222222,
+        "32": 1.0,
+        "64": 0.8472222222222222
+      },
+      "parameters": 111784,
+      "task_complete": 0.3663194444444444,
+      "task_groups": {
+        "depth": {
+          "1": 0.1015625,
+          "16": 0.9947916666666666,
+          "2": 0.041666666666666664,
+          "3": 0.013020833333333334,
+          "4": 0.9895833333333334,
+          "8": 1.0
+        },
+        "difficulty": {
+          "familiar_format": 0.3923611111111111,
+          "withheld_wording": 0.3402777777777778
+        },
+        "family": {
+          "arithmetic": 0.017361111111111112,
+          "recall": 0.9947916666666666,
+          "rules": 0.08680555555555555
+        }
+      },
+      "task_seed_complete": [
+        0.3506944444444444,
+        0.3697916666666667,
+        0.3784722222222222
+      ]
+    },
+    "transformer": {
+      "active_parameters": 111680,
+      "compute_bpb": 1.4640676814974223,
+      "compute_seed_bpb": [
+        1.4591847979850388,
+        1.4656980623037599,
+        1.467320184203468
+      ],
+      "compute_updates": [
+        1553,
+        1520,
+        1593
+      ],
+      "language_bpb": 1.606465818525627,
+      "language_seed_bpb": [
+        1.6161184290097061,
+        1.5942220842560528,
+        1.609056942311122
+      ],
+      "long_language_bpb": 1.7903900174799627,
+      "long_recall": 0.14351851851851852,
+      "long_recall_depth": {
+        "128": 0.013888888888888888,
+        "32": 0.3194444444444444,
+        "64": 0.09722222222222221
+      },
+      "parameters": 111680,
+      "task_complete": 0.22337962962962962,
+      "task_groups": {
+        "depth": {
+          "1": 0.059895833333333336,
+          "16": 0.65625,
+          "2": 0.0026041666666666665,
+          "3": 0.0,
+          "4": 0.6041666666666666,
+          "8": 0.625
+        },
+        "difficulty": {
+          "familiar_format": 0.2511574074074074,
+          "withheld_wording": 0.19560185185185183
+        },
+        "family": {
+          "arithmetic": 0.015625,
+          "recall": 0.6284722222222222,
+          "rules": 0.026041666666666668
+        }
+      },
+      "task_seed_complete": [
+        0.3194444444444444,
+        0.2899305555555556,
+        0.06076388888888889
+      ]
+    },
+    "window_transformer": {
+      "active_parameters": 111680,
+      "compute_bpb": 1.4666071007599808,
+      "compute_seed_bpb": [
+        1.4623144631855332,
+        1.4706334692651317,
+        1.4668733698292777
+      ],
+      "compute_updates": [
+        1495,
+        1412,
+        1560
+      ],
+      "language_bpb": 1.5996804573008407,
+      "language_seed_bpb": [
+        1.6027374114968296,
+        1.59257569372585,
+        1.603728266679843
+      ],
+      "long_language_bpb": 1.5936281525842342,
+      "long_recall": 0.21296296296296297,
+      "long_recall_depth": {
+        "128": 0.09722222222222222,
+        "32": 0.16666666666666666,
+        "64": 0.375
+      },
+      "parameters": 111680,
+      "task_complete": 0.2378472222222222,
+      "task_groups": {
+        "depth": {
+          "1": 0.06510416666666667,
+          "16": 0.5885416666666666,
+          "2": 0.0026041666666666665,
+          "3": 0.0,
+          "4": 0.7083333333333334,
+          "8": 0.7083333333333334
+        },
+        "difficulty": {
+          "familiar_format": 0.24537037037037038,
+          "withheld_wording": 0.23032407407407407
+        },
+        "family": {
+          "arithmetic": 0.008680555555555556,
+          "recall": 0.6684027777777778,
+          "rules": 0.036458333333333336
+        }
+      },
+      "task_seed_complete": [
+        0.3420138888888889,
+        0.3159722222222222,
+        0.05555555555555555
+      ]
+    }
+  },
+  "training_cpu_seconds": 3346.8382468800105,
+  "uncertainty": "Paired bootstrap over documents or family/depth-stratified semantic IDs; three observed seeds held fixed. These intervals do not quantify uncertainty over arbitrary future training seeds.",
+  "validation_cpu_seconds": 49.361898847999534
+}

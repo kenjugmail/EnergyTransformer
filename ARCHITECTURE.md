@@ -1,5 +1,15 @@
 # Architecture: function-state language research and the v14 text bridge
 
+This document describes the historical v14 prototype. The current native model,
+fact readers, graph programs, and local-training option are documented in
+[the integrated architecture](reports/hybrid_integration/ARCHITECTURE.md).
+The mixed energy/local-attention layer schedule and bounded cache are documented
+in [the native mixer extension](reports/competitive/ARCHITECTURE.md).
+The recurrence-preserving CPU kernel changes and optional preallocated full-
+attention cache are measured in [the execution follow-up](reports/stronger_comparison/REPORT.md).
+The [compute-controlled confirmation](reports/compute_confirmation/REPORT.md)
+compares the same architectures with compiled training and matched CPU budgets.
+
 ## Persistent protected state
 
 For a key i and categorical value vector W_i, store

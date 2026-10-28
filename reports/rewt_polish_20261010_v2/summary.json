@@ -1,0 +1,5570 @@
+{
+  "aggregate_executed_training_cpu_seconds": 16390.920473295988,
+  "aggregate_executed_validation_cpu_seconds": 1952.4488361599992,
+  "cases": {
+    "energy_2101": {
+      "all": {
+        "answer_correct": {
+          "correct": 541,
+          "fraction": 0.4174382716049383
+        },
+        "both_correct": {
+          "correct": 462,
+          "fraction": 0.35648148148148145
+        },
+        "count": 1296,
+        "semantic_identities": 648,
+        "steps_correct": {
+          "correct": 464,
+          "fraction": 0.35802469135802467
+        },
+        "valid_format": {
+          "correct": 1296,
+          "fraction": 1.0
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": {
+            "correct": 7,
+            "fraction": 0.016203703703703703
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.0023148148148148147
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.0023148148148148147
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        },
+        "recall": {
+          "answer_correct": {
+            "correct": 428,
+            "fraction": 0.9907407407407407
+          },
+          "both_correct": {
+            "correct": 424,
+            "fraction": 0.9814814814814815
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 424,
+            "fraction": 0.9814814814814815
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        },
+        "rules": {
+          "answer_correct": {
+            "correct": 106,
+            "fraction": 0.24537037037037038
+          },
+          "both_correct": {
+            "correct": 37,
+            "fraction": 0.08564814814814815
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 39,
+            "fraction": 0.09027777777777778
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        }
+      },
+      "by_family_wording": {
+        "arithmetic/familiar_format": {
+          "answer_correct": {
+            "correct": 6,
+            "fraction": 0.027777777777777776
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/familiar_format": {
+          "answer_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/withheld_wording": {
+          "answer_correct": {
+            "correct": 212,
+            "fraction": 0.9814814814814815
+          },
+          "both_correct": {
+            "correct": 208,
+            "fraction": 0.9629629629629629
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 208,
+            "fraction": 0.9629629629629629
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "rules/familiar_format": {
+          "answer_correct": {
+            "correct": 59,
+            "fraction": 0.27314814814814814
+          },
+          "both_correct": {
+            "correct": 21,
+            "fraction": 0.09722222222222222
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 22,
+            "fraction": 0.10185185185185185
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "rules/withheld_wording": {
+          "answer_correct": {
+            "correct": 47,
+            "fraction": 0.2175925925925926
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.07407407407407407
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 17,
+            "fraction": 0.0787037037037037
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        }
+      },
+      "forward_only_profile": {
+        "cpu_ms_per_byte_median": 0.9210279999999349,
+        "cpu_seconds_median": 0.029472895999997917,
+        "cpu_seconds_repeats": [
+          0.029772400000002364,
+          0.029471008000001575,
+          0.029472895999997917
+        ],
+        "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+        "parameter_bytes": 1024384,
+        "positive_operator_allocation_bytes": 7325304
+      },
+      "generation_and_checking_cpu_seconds": 18.542392416000002,
+      "groups": {
+        "arithmetic/1/familiar_format": {
+          "answer_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/2/familiar_format": {
+          "answer_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/3/familiar_format": {
+          "answer_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/withheld_wording": {
+          "answer_correct": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          },
+          "both_correct": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/withheld_wording": {
+          "answer_correct": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          },
+          "both_correct": {
+            "correct": 66,
+            "fraction": 0.9166666666666666
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 66,
+            "fraction": 0.9166666666666666
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/familiar_format": {
+          "answer_correct": {
+            "correct": 22,
+            "fraction": 0.3055555555555556
+          },
+          "both_correct": {
+            "correct": 18,
+            "fraction": 0.25
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 18,
+            "fraction": 0.25
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 18,
+            "fraction": 0.25
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 17,
+            "fraction": 0.2361111111111111
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/familiar_format": {
+          "answer_correct": {
+            "correct": 23,
+            "fraction": 0.3194444444444444
+          },
+          "both_correct": {
+            "correct": 3,
+            "fraction": 0.041666666666666664
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 4,
+            "fraction": 0.05555555555555555
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 17,
+            "fraction": 0.2361111111111111
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/familiar_format": {
+          "answer_correct": {
+            "correct": 14,
+            "fraction": 0.19444444444444445
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 12,
+            "fraction": 0.16666666666666666
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        }
+      },
+      "macro_complete": 0.35648148148148145,
+      "outputs_sha256": "d065620cf33894b24edf0eaf9bc1cf547502e5709acf925ab55cdab2a6650377"
+    },
+    "energy_2102": {
+      "all": {
+        "answer_correct": {
+          "correct": 536,
+          "fraction": 0.41358024691358025
+        },
+        "both_correct": {
+          "correct": 465,
+          "fraction": 0.3587962962962963
+        },
+        "count": 1296,
+        "semantic_identities": 648,
+        "steps_correct": {
+          "correct": 467,
+          "fraction": 0.3603395061728395
+        },
+        "valid_format": {
+          "correct": 1296,
+          "fraction": 1.0
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": {
+            "correct": 8,
+            "fraction": 0.018518518518518517
+          },
+          "both_correct": {
+            "correct": 2,
+            "fraction": 0.004629629629629629
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 3,
+            "fraction": 0.006944444444444444
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        },
+        "recall": {
+          "answer_correct": {
+            "correct": 432,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 432,
+            "fraction": 1.0
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 432,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        },
+        "rules": {
+          "answer_correct": {
+            "correct": 96,
+            "fraction": 0.2222222222222222
+          },
+          "both_correct": {
+            "correct": 31,
+            "fraction": 0.07175925925925926
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 32,
+            "fraction": 0.07407407407407407
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        }
+      },
+      "by_family_wording": {
+        "arithmetic/familiar_format": {
+          "answer_correct": {
+            "correct": 6,
+            "fraction": 0.027777777777777776
+          },
+          "both_correct": {
+            "correct": 2,
+            "fraction": 0.009259259259259259
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 3,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/withheld_wording": {
+          "answer_correct": {
+            "correct": 2,
+            "fraction": 0.009259259259259259
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/familiar_format": {
+          "answer_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/withheld_wording": {
+          "answer_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "rules/familiar_format": {
+          "answer_correct": {
+            "correct": 50,
+            "fraction": 0.23148148148148148
+          },
+          "both_correct": {
+            "correct": 29,
+            "fraction": 0.13425925925925927
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 29,
+            "fraction": 0.13425925925925927
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "rules/withheld_wording": {
+          "answer_correct": {
+            "correct": 46,
+            "fraction": 0.21296296296296297
+          },
+          "both_correct": {
+            "correct": 2,
+            "fraction": 0.009259259259259259
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 3,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        }
+      },
+      "forward_only_profile": {
+        "cpu_ms_per_byte_median": 0.9179519999999997,
+        "cpu_seconds_median": 0.02937446399999999,
+        "cpu_seconds_repeats": [
+          0.028321680000001237,
+          0.02937446399999999,
+          0.03207601600000132
+        ],
+        "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+        "parameter_bytes": 1024384,
+        "positive_operator_allocation_bytes": 7325304
+      },
+      "generation_and_checking_cpu_seconds": 17.825052495999998,
+      "groups": {
+        "arithmetic/1/familiar_format": {
+          "answer_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "both_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 3,
+            "fraction": 0.041666666666666664
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/2/familiar_format": {
+          "answer_correct": {
+            "correct": 3,
+            "fraction": 0.041666666666666664
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/3/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/familiar_format": {
+          "answer_correct": {
+            "correct": 19,
+            "fraction": 0.2638888888888889
+          },
+          "both_correct": {
+            "correct": 18,
+            "fraction": 0.25
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 18,
+            "fraction": 0.25
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 12,
+            "fraction": 0.16666666666666666
+          },
+          "both_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/familiar_format": {
+          "answer_correct": {
+            "correct": 18,
+            "fraction": 0.25
+          },
+          "both_correct": {
+            "correct": 9,
+            "fraction": 0.125
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 9,
+            "fraction": 0.125
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 17,
+            "fraction": 0.2361111111111111
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/familiar_format": {
+          "answer_correct": {
+            "correct": 13,
+            "fraction": 0.18055555555555555
+          },
+          "both_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 17,
+            "fraction": 0.2361111111111111
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        }
+      },
+      "macro_complete": 0.3587962962962963,
+      "outputs_sha256": "6a678c2125079a8368094cd0bc09967fb8dbd30aaadd69f8d77bd0beae049a25"
+    },
+    "energy_2103": {
+      "all": {
+        "answer_correct": {
+          "correct": 555,
+          "fraction": 0.42824074074074076
+        },
+        "both_correct": {
+          "correct": 485,
+          "fraction": 0.3742283950617284
+        },
+        "count": 1296,
+        "semantic_identities": 648,
+        "steps_correct": {
+          "correct": 490,
+          "fraction": 0.37808641975308643
+        },
+        "valid_format": {
+          "correct": 1291,
+          "fraction": 0.996141975308642
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": {
+            "correct": 6,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.0023148148148148147
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.0023148148148148147
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        },
+        "recall": {
+          "answer_correct": {
+            "correct": 427,
+            "fraction": 0.9884259259259259
+          },
+          "both_correct": {
+            "correct": 427,
+            "fraction": 0.9884259259259259
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 427,
+            "fraction": 0.9884259259259259
+          },
+          "valid_format": {
+            "correct": 427,
+            "fraction": 0.9884259259259259
+          }
+        },
+        "rules": {
+          "answer_correct": {
+            "correct": 122,
+            "fraction": 0.2824074074074074
+          },
+          "both_correct": {
+            "correct": 57,
+            "fraction": 0.13194444444444445
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 62,
+            "fraction": 0.14351851851851852
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        }
+      },
+      "by_family_wording": {
+        "arithmetic/familiar_format": {
+          "answer_correct": {
+            "correct": 3,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/withheld_wording": {
+          "answer_correct": {
+            "correct": 3,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/familiar_format": {
+          "answer_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/withheld_wording": {
+          "answer_correct": {
+            "correct": 211,
+            "fraction": 0.9768518518518519
+          },
+          "both_correct": {
+            "correct": 211,
+            "fraction": 0.9768518518518519
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 211,
+            "fraction": 0.9768518518518519
+          },
+          "valid_format": {
+            "correct": 211,
+            "fraction": 0.9768518518518519
+          }
+        },
+        "rules/familiar_format": {
+          "answer_correct": {
+            "correct": 64,
+            "fraction": 0.2962962962962963
+          },
+          "both_correct": {
+            "correct": 46,
+            "fraction": 0.21296296296296297
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 51,
+            "fraction": 0.2361111111111111
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "rules/withheld_wording": {
+          "answer_correct": {
+            "correct": 58,
+            "fraction": 0.26851851851851855
+          },
+          "both_correct": {
+            "correct": 11,
+            "fraction": 0.05092592592592592
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 11,
+            "fraction": 0.05092592592592592
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        }
+      },
+      "forward_only_profile": {
+        "cpu_ms_per_byte_median": 1.0510944999999605,
+        "cpu_seconds_median": 0.03363502399999874,
+        "cpu_seconds_repeats": [
+          0.0328054559999984,
+          0.03428265600000202,
+          0.03363502399999874
+        ],
+        "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+        "parameter_bytes": 1024384,
+        "positive_operator_allocation_bytes": 7325304
+      },
+      "generation_and_checking_cpu_seconds": 15.940851072000001,
+      "groups": {
+        "arithmetic/1/familiar_format": {
+          "answer_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/2/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/3/familiar_format": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/withheld_wording": {
+          "answer_correct": {
+            "correct": 67,
+            "fraction": 0.9305555555555556
+          },
+          "both_correct": {
+            "correct": 67,
+            "fraction": 0.9305555555555556
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 67,
+            "fraction": 0.9305555555555556
+          },
+          "valid_format": {
+            "correct": 67,
+            "fraction": 0.9305555555555556
+          }
+        },
+        "recall/4/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/familiar_format": {
+          "answer_correct": {
+            "correct": 27,
+            "fraction": 0.375
+          },
+          "both_correct": {
+            "correct": 27,
+            "fraction": 0.375
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 28,
+            "fraction": 0.3888888888888889
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 19,
+            "fraction": 0.2638888888888889
+          },
+          "both_correct": {
+            "correct": 6,
+            "fraction": 0.08333333333333333
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 6,
+            "fraction": 0.08333333333333333
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/familiar_format": {
+          "answer_correct": {
+            "correct": 22,
+            "fraction": 0.3055555555555556
+          },
+          "both_correct": {
+            "correct": 14,
+            "fraction": 0.19444444444444445
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 17,
+            "fraction": 0.2361111111111111
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 22,
+            "fraction": 0.3055555555555556
+          },
+          "both_correct": {
+            "correct": 4,
+            "fraction": 0.05555555555555555
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 4,
+            "fraction": 0.05555555555555555
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/familiar_format": {
+          "answer_correct": {
+            "correct": 15,
+            "fraction": 0.20833333333333334
+          },
+          "both_correct": {
+            "correct": 5,
+            "fraction": 0.06944444444444445
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 6,
+            "fraction": 0.08333333333333333
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 17,
+            "fraction": 0.2361111111111111
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        }
+      },
+      "macro_complete": 0.3742283950617284,
+      "outputs_sha256": "6f2945522081f86c96d7a389f1926a771efa9ee06d723d69bf1695bf8f797c74"
+    },
+    "previous_warm_parent": {
+      "all": {
+        "answer_correct": {
+          "correct": 412,
+          "fraction": 0.31790123456790126
+        },
+        "both_correct": {
+          "correct": 347,
+          "fraction": 0.26774691358024694
+        },
+        "count": 1296,
+        "semantic_identities": 648,
+        "steps_correct": {
+          "correct": 385,
+          "fraction": 0.2970679012345679
+        },
+        "valid_format": {
+          "correct": 1205,
+          "fraction": 0.9297839506172839
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.0023148148148148147
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.0023148148148148147
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.0023148148148148147
+          },
+          "valid_format": {
+            "correct": 409,
+            "fraction": 0.9467592592592593
+          }
+        },
+        "recall": {
+          "answer_correct": {
+            "correct": 257,
+            "fraction": 0.5949074074074074
+          },
+          "both_correct": {
+            "correct": 241,
+            "fraction": 0.5578703703703703
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 277,
+            "fraction": 0.6412037037037037
+          },
+          "valid_format": {
+            "correct": 368,
+            "fraction": 0.8518518518518519
+          }
+        },
+        "rules": {
+          "answer_correct": {
+            "correct": 154,
+            "fraction": 0.35648148148148145
+          },
+          "both_correct": {
+            "correct": 105,
+            "fraction": 0.24305555555555555
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 107,
+            "fraction": 0.24768518518518517
+          },
+          "valid_format": {
+            "correct": 428,
+            "fraction": 0.9907407407407407
+          }
+        }
+      },
+      "by_family_wording": {
+        "arithmetic/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "valid_format": {
+            "correct": 214,
+            "fraction": 0.9907407407407407
+          }
+        },
+        "arithmetic/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 195,
+            "fraction": 0.9027777777777778
+          }
+        },
+        "recall/familiar_format": {
+          "answer_correct": {
+            "correct": 155,
+            "fraction": 0.7175925925925926
+          },
+          "both_correct": {
+            "correct": 153,
+            "fraction": 0.7083333333333334
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 167,
+            "fraction": 0.7731481481481481
+          },
+          "valid_format": {
+            "correct": 197,
+            "fraction": 0.9120370370370371
+          }
+        },
+        "recall/withheld_wording": {
+          "answer_correct": {
+            "correct": 102,
+            "fraction": 0.4722222222222222
+          },
+          "both_correct": {
+            "correct": 88,
+            "fraction": 0.4074074074074074
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 110,
+            "fraction": 0.5092592592592593
+          },
+          "valid_format": {
+            "correct": 171,
+            "fraction": 0.7916666666666666
+          }
+        },
+        "rules/familiar_format": {
+          "answer_correct": {
+            "correct": 90,
+            "fraction": 0.4166666666666667
+          },
+          "both_correct": {
+            "correct": 65,
+            "fraction": 0.30092592592592593
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 67,
+            "fraction": 0.3101851851851852
+          },
+          "valid_format": {
+            "correct": 214,
+            "fraction": 0.9907407407407407
+          }
+        },
+        "rules/withheld_wording": {
+          "answer_correct": {
+            "correct": 64,
+            "fraction": 0.2962962962962963
+          },
+          "both_correct": {
+            "correct": 40,
+            "fraction": 0.18518518518518517
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 40,
+            "fraction": 0.18518518518518517
+          },
+          "valid_format": {
+            "correct": 214,
+            "fraction": 0.9907407407407407
+          }
+        }
+      },
+      "forward_only_profile": {
+        "cpu_ms_per_byte_median": 1.0074740000001192,
+        "cpu_seconds_median": 0.032239168000003815,
+        "cpu_seconds_repeats": [
+          0.03248339199999606,
+          0.03049856000000517,
+          0.032239168000003815
+        ],
+        "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+        "parameter_bytes": 1024384,
+        "positive_operator_allocation_bytes": 16782758
+      },
+      "generation_and_checking_cpu_seconds": 17.543928368,
+      "groups": {
+        "arithmetic/1/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 65,
+            "fraction": 0.9027777777777778
+          }
+        },
+        "arithmetic/2/familiar_format": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "arithmetic/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 64,
+            "fraction": 0.8888888888888888
+          }
+        },
+        "arithmetic/3/familiar_format": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "arithmetic/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 66,
+            "fraction": 0.9166666666666666
+          }
+        },
+        "recall/16/familiar_format": {
+          "answer_correct": {
+            "correct": 43,
+            "fraction": 0.5972222222222222
+          },
+          "both_correct": {
+            "correct": 43,
+            "fraction": 0.5972222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 44,
+            "fraction": 0.6111111111111112
+          },
+          "valid_format": {
+            "correct": 63,
+            "fraction": 0.875
+          }
+        },
+        "recall/16/withheld_wording": {
+          "answer_correct": {
+            "correct": 26,
+            "fraction": 0.3611111111111111
+          },
+          "both_correct": {
+            "correct": 19,
+            "fraction": 0.2638888888888889
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 26,
+            "fraction": 0.3611111111111111
+          },
+          "valid_format": {
+            "correct": 52,
+            "fraction": 0.7222222222222222
+          }
+        },
+        "recall/4/familiar_format": {
+          "answer_correct": {
+            "correct": 56,
+            "fraction": 0.7777777777777778
+          },
+          "both_correct": {
+            "correct": 56,
+            "fraction": 0.7777777777777778
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 63,
+            "fraction": 0.875
+          },
+          "valid_format": {
+            "correct": 68,
+            "fraction": 0.9444444444444444
+          }
+        },
+        "recall/4/withheld_wording": {
+          "answer_correct": {
+            "correct": 41,
+            "fraction": 0.5694444444444444
+          },
+          "both_correct": {
+            "correct": 41,
+            "fraction": 0.5694444444444444
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 50,
+            "fraction": 0.6944444444444444
+          },
+          "valid_format": {
+            "correct": 65,
+            "fraction": 0.9027777777777778
+          }
+        },
+        "recall/8/familiar_format": {
+          "answer_correct": {
+            "correct": 56,
+            "fraction": 0.7777777777777778
+          },
+          "both_correct": {
+            "correct": 54,
+            "fraction": 0.75
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 60,
+            "fraction": 0.8333333333333334
+          },
+          "valid_format": {
+            "correct": 66,
+            "fraction": 0.9166666666666666
+          }
+        },
+        "recall/8/withheld_wording": {
+          "answer_correct": {
+            "correct": 35,
+            "fraction": 0.4861111111111111
+          },
+          "both_correct": {
+            "correct": 28,
+            "fraction": 0.3888888888888889
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 34,
+            "fraction": 0.4722222222222222
+          },
+          "valid_format": {
+            "correct": 54,
+            "fraction": 0.75
+          }
+        },
+        "rules/1/familiar_format": {
+          "answer_correct": {
+            "correct": 43,
+            "fraction": 0.5972222222222222
+          },
+          "both_correct": {
+            "correct": 42,
+            "fraction": 0.5833333333333334
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 43,
+            "fraction": 0.5972222222222222
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 39,
+            "fraction": 0.5416666666666666
+          },
+          "both_correct": {
+            "correct": 37,
+            "fraction": 0.5138888888888888
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 37,
+            "fraction": 0.5138888888888888
+          },
+          "valid_format": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          }
+        },
+        "rules/2/familiar_format": {
+          "answer_correct": {
+            "correct": 33,
+            "fraction": 0.4583333333333333
+          },
+          "both_correct": {
+            "correct": 23,
+            "fraction": 0.3194444444444444
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 24,
+            "fraction": 0.3333333333333333
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "rules/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "both_correct": {
+            "correct": 3,
+            "fraction": 0.041666666666666664
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 3,
+            "fraction": 0.041666666666666664
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/familiar_format": {
+          "answer_correct": {
+            "correct": 14,
+            "fraction": 0.19444444444444445
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "rules/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 9,
+            "fraction": 0.125
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        }
+      },
+      "macro_complete": 0.26774691358024694,
+      "outputs_sha256": "865f7b068c31e96b670880464f8aa491ae4c5dca9f52b394ef33f393dce57758"
+    },
+    "selected_warm": {
+      "all": {
+        "answer_correct": {
+          "correct": 634,
+          "fraction": 0.48919753086419754
+        },
+        "both_correct": {
+          "correct": 563,
+          "fraction": 0.43441358024691357
+        },
+        "count": 1296,
+        "semantic_identities": 648,
+        "steps_correct": {
+          "correct": 564,
+          "fraction": 0.4351851851851852
+        },
+        "valid_format": {
+          "correct": 1293,
+          "fraction": 0.9976851851851852
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": {
+            "correct": 18,
+            "fraction": 0.041666666666666664
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.037037037037037035
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 16,
+            "fraction": 0.037037037037037035
+          },
+          "valid_format": {
+            "correct": 430,
+            "fraction": 0.9953703703703703
+          }
+        },
+        "recall": {
+          "answer_correct": {
+            "correct": 432,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 432,
+            "fraction": 1.0
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 432,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        },
+        "rules": {
+          "answer_correct": {
+            "correct": 184,
+            "fraction": 0.42592592592592593
+          },
+          "both_correct": {
+            "correct": 115,
+            "fraction": 0.2662037037037037
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 116,
+            "fraction": 0.26851851851851855
+          },
+          "valid_format": {
+            "correct": 431,
+            "fraction": 0.9976851851851852
+          }
+        }
+      },
+      "by_family_wording": {
+        "arithmetic/familiar_format": {
+          "answer_correct": {
+            "correct": 17,
+            "fraction": 0.0787037037037037
+          },
+          "both_correct": {
+            "correct": 15,
+            "fraction": 0.06944444444444445
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 15,
+            "fraction": 0.06944444444444445
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "valid_format": {
+            "correct": 214,
+            "fraction": 0.9907407407407407
+          }
+        },
+        "recall/familiar_format": {
+          "answer_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/withheld_wording": {
+          "answer_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "rules/familiar_format": {
+          "answer_correct": {
+            "correct": 112,
+            "fraction": 0.5185185185185185
+          },
+          "both_correct": {
+            "correct": 89,
+            "fraction": 0.41203703703703703
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 90,
+            "fraction": 0.4166666666666667
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "rules/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 0.3333333333333333
+          },
+          "both_correct": {
+            "correct": 26,
+            "fraction": 0.12037037037037036
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 26,
+            "fraction": 0.12037037037037036
+          },
+          "valid_format": {
+            "correct": 215,
+            "fraction": 0.9953703703703703
+          }
+        }
+      },
+      "forward_only_profile": {
+        "cpu_ms_per_byte_median": 0.9891239999999524,
+        "cpu_seconds_median": 0.031651967999998476,
+        "cpu_seconds_repeats": [
+          0.031651967999998476,
+          0.030679040000002544,
+          0.031685935999998804
+        ],
+        "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+        "parameter_bytes": 1024384,
+        "positive_operator_allocation_bytes": 7325304
+      },
+      "generation_and_checking_cpu_seconds": 16.309405327999997,
+      "groups": {
+        "arithmetic/1/familiar_format": {
+          "answer_correct": {
+            "correct": 13,
+            "fraction": 0.18055555555555555
+          },
+          "both_correct": {
+            "correct": 13,
+            "fraction": 0.18055555555555555
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 13,
+            "fraction": 0.18055555555555555
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "arithmetic/2/familiar_format": {
+          "answer_correct": {
+            "correct": 4,
+            "fraction": 0.05555555555555555
+          },
+          "both_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "arithmetic/3/familiar_format": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/familiar_format": {
+          "answer_correct": {
+            "correct": 50,
+            "fraction": 0.6944444444444444
+          },
+          "both_correct": {
+            "correct": 48,
+            "fraction": 0.6666666666666666
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 48,
+            "fraction": 0.6666666666666666
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 22,
+            "fraction": 0.3055555555555556
+          },
+          "both_correct": {
+            "correct": 8,
+            "fraction": 0.1111111111111111
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 8,
+            "fraction": 0.1111111111111111
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/familiar_format": {
+          "answer_correct": {
+            "correct": 40,
+            "fraction": 0.5555555555555556
+          },
+          "both_correct": {
+            "correct": 30,
+            "fraction": 0.4166666666666667
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 31,
+            "fraction": 0.4305555555555556
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 27,
+            "fraction": 0.375
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/familiar_format": {
+          "answer_correct": {
+            "correct": 22,
+            "fraction": 0.3055555555555556
+          },
+          "both_correct": {
+            "correct": 11,
+            "fraction": 0.1527777777777778
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 11,
+            "fraction": 0.1527777777777778
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 23,
+            "fraction": 0.3194444444444444
+          },
+          "both_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        }
+      },
+      "macro_complete": 0.43441358024691357,
+      "outputs_sha256": "9e8644321c3179c96cfa0d001b8ef9b047b77a7f3ba867c8299cb5c9da9636a4"
+    },
+    "selected_warm_zero_rounds": {
+      "all": {
+        "answer_correct": {
+          "correct": 558,
+          "fraction": 0.4305555555555556
+        },
+        "both_correct": {
+          "correct": 499,
+          "fraction": 0.38503086419753085
+        },
+        "count": 1296,
+        "semantic_identities": 648,
+        "steps_correct": {
+          "correct": 514,
+          "fraction": 0.3966049382716049
+        },
+        "valid_format": {
+          "correct": 1284,
+          "fraction": 0.9907407407407407
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": {
+            "correct": 13,
+            "fraction": 0.03009259259259259
+          },
+          "both_correct": {
+            "correct": 12,
+            "fraction": 0.027777777777777776
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 15,
+            "fraction": 0.034722222222222224
+          },
+          "valid_format": {
+            "correct": 423,
+            "fraction": 0.9791666666666666
+          }
+        },
+        "recall": {
+          "answer_correct": {
+            "correct": 418,
+            "fraction": 0.9675925925925926
+          },
+          "both_correct": {
+            "correct": 418,
+            "fraction": 0.9675925925925926
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 429,
+            "fraction": 0.9930555555555556
+          },
+          "valid_format": {
+            "correct": 432,
+            "fraction": 1.0
+          }
+        },
+        "rules": {
+          "answer_correct": {
+            "correct": 127,
+            "fraction": 0.29398148148148145
+          },
+          "both_correct": {
+            "correct": 69,
+            "fraction": 0.1597222222222222
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 70,
+            "fraction": 0.16203703703703703
+          },
+          "valid_format": {
+            "correct": 429,
+            "fraction": 0.9930555555555556
+          }
+        }
+      },
+      "by_family_wording": {
+        "arithmetic/familiar_format": {
+          "answer_correct": {
+            "correct": 8,
+            "fraction": 0.037037037037037035
+          },
+          "both_correct": {
+            "correct": 7,
+            "fraction": 0.032407407407407406
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 9,
+            "fraction": 0.041666666666666664
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/withheld_wording": {
+          "answer_correct": {
+            "correct": 5,
+            "fraction": 0.023148148148148147
+          },
+          "both_correct": {
+            "correct": 5,
+            "fraction": 0.023148148148148147
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 6,
+            "fraction": 0.027777777777777776
+          },
+          "valid_format": {
+            "correct": 207,
+            "fraction": 0.9583333333333334
+          }
+        },
+        "recall/familiar_format": {
+          "answer_correct": {
+            "correct": 214,
+            "fraction": 0.9907407407407407
+          },
+          "both_correct": {
+            "correct": 214,
+            "fraction": 0.9907407407407407
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/withheld_wording": {
+          "answer_correct": {
+            "correct": 204,
+            "fraction": 0.9444444444444444
+          },
+          "both_correct": {
+            "correct": 204,
+            "fraction": 0.9444444444444444
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 213,
+            "fraction": 0.9861111111111112
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "rules/familiar_format": {
+          "answer_correct": {
+            "correct": 69,
+            "fraction": 0.3194444444444444
+          },
+          "both_correct": {
+            "correct": 45,
+            "fraction": 0.20833333333333334
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 46,
+            "fraction": 0.21296296296296297
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "rules/withheld_wording": {
+          "answer_correct": {
+            "correct": 58,
+            "fraction": 0.26851851851851855
+          },
+          "both_correct": {
+            "correct": 24,
+            "fraction": 0.1111111111111111
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 24,
+            "fraction": 0.1111111111111111
+          },
+          "valid_format": {
+            "correct": 213,
+            "fraction": 0.9861111111111112
+          }
+        }
+      },
+      "forward_only_profile": null,
+      "generation_and_checking_cpu_seconds": 6.155560896000001,
+      "groups": {
+        "arithmetic/1/familiar_format": {
+          "answer_correct": {
+            "correct": 7,
+            "fraction": 0.09722222222222222
+          },
+          "both_correct": {
+            "correct": 7,
+            "fraction": 0.09722222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 9,
+            "fraction": 0.125
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 5,
+            "fraction": 0.06944444444444445
+          },
+          "both_correct": {
+            "correct": 5,
+            "fraction": 0.06944444444444445
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 6,
+            "fraction": 0.08333333333333333
+          },
+          "valid_format": {
+            "correct": 68,
+            "fraction": 0.9444444444444444
+          }
+        },
+        "arithmetic/2/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 68,
+            "fraction": 0.9444444444444444
+          }
+        },
+        "arithmetic/3/familiar_format": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "arithmetic/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "recall/16/familiar_format": {
+          "answer_correct": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          },
+          "both_correct": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/withheld_wording": {
+          "answer_correct": {
+            "correct": 62,
+            "fraction": 0.8611111111111112
+          },
+          "both_correct": {
+            "correct": 62,
+            "fraction": 0.8611111111111112
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/withheld_wording": {
+          "answer_correct": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          },
+          "both_correct": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/withheld_wording": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/familiar_format": {
+          "answer_correct": {
+            "correct": 28,
+            "fraction": 0.3888888888888889
+          },
+          "both_correct": {
+            "correct": 25,
+            "fraction": 0.3472222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 26,
+            "fraction": 0.3611111111111111
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 22,
+            "fraction": 0.3055555555555556
+          },
+          "both_correct": {
+            "correct": 13,
+            "fraction": 0.18055555555555555
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 13,
+            "fraction": 0.18055555555555555
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/familiar_format": {
+          "answer_correct": {
+            "correct": 30,
+            "fraction": 0.4166666666666667
+          },
+          "both_correct": {
+            "correct": 19,
+            "fraction": 0.2638888888888889
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 19,
+            "fraction": 0.2638888888888889
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 21,
+            "fraction": 0.2916666666666667
+          },
+          "both_correct": {
+            "correct": 10,
+            "fraction": 0.1388888888888889
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 10,
+            "fraction": 0.1388888888888889
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "rules/3/familiar_format": {
+          "answer_correct": {
+            "correct": 11,
+            "fraction": 0.1527777777777778
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 15,
+            "fraction": 0.20833333333333334
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "valid_format": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          }
+        }
+      },
+      "macro_complete": 0.38503086419753085,
+      "outputs_sha256": "1c4cfb2c2f152b54becb30f77408d1a38ddc4ee073f6eacbfba2511502689006"
+    },
+    "transformer_2101_lr0.003": {
+      "all": {
+        "answer_correct": {
+          "correct": 332,
+          "fraction": 0.25617283950617287
+        },
+        "both_correct": {
+          "correct": 306,
+          "fraction": 0.2361111111111111
+        },
+        "count": 1296,
+        "semantic_identities": 648,
+        "steps_correct": {
+          "correct": 307,
+          "fraction": 0.2368827160493827
+        },
+        "valid_format": {
+          "correct": 696,
+          "fraction": 0.5370370370370371
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": {
+            "correct": 5,
+            "fraction": 0.011574074074074073
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.0023148148148148147
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.004629629629629629
+          },
+          "valid_format": {
+            "correct": 162,
+            "fraction": 0.375
+          }
+        },
+        "recall": {
+          "answer_correct": {
+            "correct": 286,
+            "fraction": 0.6620370370370371
+          },
+          "both_correct": {
+            "correct": 286,
+            "fraction": 0.6620370370370371
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 286,
+            "fraction": 0.6620370370370371
+          },
+          "valid_format": {
+            "correct": 288,
+            "fraction": 0.6666666666666666
+          }
+        },
+        "rules": {
+          "answer_correct": {
+            "correct": 41,
+            "fraction": 0.09490740740740741
+          },
+          "both_correct": {
+            "correct": 19,
+            "fraction": 0.04398148148148148
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 19,
+            "fraction": 0.04398148148148148
+          },
+          "valid_format": {
+            "correct": 246,
+            "fraction": 0.5694444444444444
+          }
+        }
+      },
+      "by_family_wording": {
+        "arithmetic/familiar_format": {
+          "answer_correct": {
+            "correct": 5,
+            "fraction": 0.023148148148148147
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.009259259259259259
+          },
+          "valid_format": {
+            "correct": 126,
+            "fraction": 0.5833333333333334
+          }
+        },
+        "arithmetic/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 36,
+            "fraction": 0.16666666666666666
+          }
+        },
+        "recall/familiar_format": {
+          "answer_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/withheld_wording": {
+          "answer_correct": {
+            "correct": 70,
+            "fraction": 0.32407407407407407
+          },
+          "both_correct": {
+            "correct": 70,
+            "fraction": 0.32407407407407407
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 70,
+            "fraction": 0.32407407407407407
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 0.3333333333333333
+          }
+        },
+        "rules/familiar_format": {
+          "answer_correct": {
+            "correct": 37,
+            "fraction": 0.1712962962962963
+          },
+          "both_correct": {
+            "correct": 19,
+            "fraction": 0.08796296296296297
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 19,
+            "fraction": 0.08796296296296297
+          },
+          "valid_format": {
+            "correct": 210,
+            "fraction": 0.9722222222222222
+          }
+        },
+        "rules/withheld_wording": {
+          "answer_correct": {
+            "correct": 4,
+            "fraction": 0.018518518518518517
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 36,
+            "fraction": 0.16666666666666666
+          }
+        }
+      },
+      "forward_only_profile": {
+        "cpu_ms_per_byte_median": 0.017313500000004645,
+        "cpu_seconds_median": 0.0005540320000001486,
+        "cpu_seconds_repeats": [
+          0.0006579680000005084,
+          0.0005540320000001486,
+          0.0004886400000003732
+        ],
+        "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+        "parameter_bytes": 1024960,
+        "positive_operator_allocation_bytes": 536642
+      },
+      "generation_and_checking_cpu_seconds": 8.344571232,
+      "groups": {
+        "arithmetic/1/familiar_format": {
+          "answer_correct": {
+            "correct": 3,
+            "fraction": 0.041666666666666664
+          },
+          "both_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "valid_format": {
+            "correct": 59,
+            "fraction": 0.8194444444444444
+          }
+        },
+        "arithmetic/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 5,
+            "fraction": 0.06944444444444445
+          }
+        },
+        "arithmetic/2/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 41,
+            "fraction": 0.5694444444444444
+          }
+        },
+        "arithmetic/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 24,
+            "fraction": 0.3333333333333333
+          }
+        },
+        "arithmetic/3/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 26,
+            "fraction": 0.3611111111111111
+          }
+        },
+        "arithmetic/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 7,
+            "fraction": 0.09722222222222222
+          }
+        },
+        "recall/16/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/withheld_wording": {
+          "answer_correct": {
+            "correct": 31,
+            "fraction": 0.4305555555555556
+          },
+          "both_correct": {
+            "correct": 31,
+            "fraction": 0.4305555555555556
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 31,
+            "fraction": 0.4305555555555556
+          },
+          "valid_format": {
+            "correct": 33,
+            "fraction": 0.4583333333333333
+          }
+        },
+        "recall/4/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/withheld_wording": {
+          "answer_correct": {
+            "correct": 12,
+            "fraction": 0.16666666666666666
+          },
+          "both_correct": {
+            "correct": 12,
+            "fraction": 0.16666666666666666
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 12,
+            "fraction": 0.16666666666666666
+          },
+          "valid_format": {
+            "correct": 12,
+            "fraction": 0.16666666666666666
+          }
+        },
+        "recall/8/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/withheld_wording": {
+          "answer_correct": {
+            "correct": 27,
+            "fraction": 0.375
+          },
+          "both_correct": {
+            "correct": 27,
+            "fraction": 0.375
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 27,
+            "fraction": 0.375
+          },
+          "valid_format": {
+            "correct": 27,
+            "fraction": 0.375
+          }
+        },
+        "rules/1/familiar_format": {
+          "answer_correct": {
+            "correct": 17,
+            "fraction": 0.2361111111111111
+          },
+          "both_correct": {
+            "correct": 17,
+            "fraction": 0.2361111111111111
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 17,
+            "fraction": 0.2361111111111111
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "rules/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 3,
+            "fraction": 0.041666666666666664
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 33,
+            "fraction": 0.4583333333333333
+          }
+        },
+        "rules/2/familiar_format": {
+          "answer_correct": {
+            "correct": 11,
+            "fraction": 0.1527777777777778
+          },
+          "both_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "rules/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 3,
+            "fraction": 0.041666666666666664
+          }
+        },
+        "rules/3/familiar_format": {
+          "answer_correct": {
+            "correct": 9,
+            "fraction": 0.125
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 68,
+            "fraction": 0.9444444444444444
+          }
+        },
+        "rules/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 0,
+            "fraction": 0.0
+          }
+        }
+      },
+      "macro_complete": 0.2361111111111111,
+      "outputs_sha256": "0d420e2493b38abd72facc4be27c4ba43ce393e23b6168fdcbbf85155630a13a"
+    },
+    "transformer_2102_lr0.003": {
+      "all": {
+        "answer_correct": {
+          "correct": 309,
+          "fraction": 0.23842592592592593
+        },
+        "both_correct": {
+          "correct": 280,
+          "fraction": 0.21604938271604937
+        },
+        "count": 1296,
+        "semantic_identities": 648,
+        "steps_correct": {
+          "correct": 282,
+          "fraction": 0.2175925925925926
+        },
+        "valid_format": {
+          "correct": 689,
+          "fraction": 0.5316358024691358
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": {
+            "correct": 3,
+            "fraction": 0.006944444444444444
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.004629629629629629
+          },
+          "valid_format": {
+            "correct": 193,
+            "fraction": 0.44675925925925924
+          }
+        },
+        "recall": {
+          "answer_correct": {
+            "correct": 264,
+            "fraction": 0.6111111111111112
+          },
+          "both_correct": {
+            "correct": 264,
+            "fraction": 0.6111111111111112
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 264,
+            "fraction": 0.6111111111111112
+          },
+          "valid_format": {
+            "correct": 264,
+            "fraction": 0.6111111111111112
+          }
+        },
+        "rules": {
+          "answer_correct": {
+            "correct": 42,
+            "fraction": 0.09722222222222222
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.037037037037037035
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 16,
+            "fraction": 0.037037037037037035
+          },
+          "valid_format": {
+            "correct": 232,
+            "fraction": 0.5370370370370371
+          }
+        }
+      },
+      "by_family_wording": {
+        "arithmetic/familiar_format": {
+          "answer_correct": {
+            "correct": 3,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.009259259259259259
+          },
+          "valid_format": {
+            "correct": 145,
+            "fraction": 0.6712962962962963
+          }
+        },
+        "arithmetic/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 48,
+            "fraction": 0.2222222222222222
+          }
+        },
+        "recall/familiar_format": {
+          "answer_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/withheld_wording": {
+          "answer_correct": {
+            "correct": 48,
+            "fraction": 0.2222222222222222
+          },
+          "both_correct": {
+            "correct": 48,
+            "fraction": 0.2222222222222222
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 48,
+            "fraction": 0.2222222222222222
+          },
+          "valid_format": {
+            "correct": 48,
+            "fraction": 0.2222222222222222
+          }
+        },
+        "rules/familiar_format": {
+          "answer_correct": {
+            "correct": 37,
+            "fraction": 0.1712962962962963
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.07407407407407407
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 16,
+            "fraction": 0.07407407407407407
+          },
+          "valid_format": {
+            "correct": 211,
+            "fraction": 0.9768518518518519
+          }
+        },
+        "rules/withheld_wording": {
+          "answer_correct": {
+            "correct": 5,
+            "fraction": 0.023148148148148147
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 21,
+            "fraction": 0.09722222222222222
+          }
+        }
+      },
+      "forward_only_profile": {
+        "cpu_ms_per_byte_median": 0.017121000000008824,
+        "cpu_seconds_median": 0.0005478720000002824,
+        "cpu_seconds_repeats": [
+          0.0005478720000002824,
+          0.0006986879999999474,
+          0.0004982400000006493
+        ],
+        "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+        "parameter_bytes": 1024960,
+        "positive_operator_allocation_bytes": 536642
+      },
+      "generation_and_checking_cpu_seconds": 8.715588863999999,
+      "groups": {
+        "arithmetic/1/familiar_format": {
+          "answer_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          },
+          "valid_format": {
+            "correct": 59,
+            "fraction": 0.8194444444444444
+          }
+        },
+        "arithmetic/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 2,
+            "fraction": 0.027777777777777776
+          }
+        },
+        "arithmetic/2/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 51,
+            "fraction": 0.7083333333333334
+          }
+        },
+        "arithmetic/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          }
+        },
+        "arithmetic/3/familiar_format": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 35,
+            "fraction": 0.4861111111111111
+          }
+        },
+        "arithmetic/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 30,
+            "fraction": 0.4166666666666667
+          }
+        },
+        "recall/16/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/withheld_wording": {
+          "answer_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "valid_format": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          }
+        },
+        "recall/4/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 0,
+            "fraction": 0.0
+          }
+        },
+        "recall/8/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/withheld_wording": {
+          "answer_correct": {
+            "correct": 32,
+            "fraction": 0.4444444444444444
+          },
+          "both_correct": {
+            "correct": 32,
+            "fraction": 0.4444444444444444
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 32,
+            "fraction": 0.4444444444444444
+          },
+          "valid_format": {
+            "correct": 32,
+            "fraction": 0.4444444444444444
+          }
+        },
+        "rules/1/familiar_format": {
+          "answer_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 5,
+            "fraction": 0.06944444444444445
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 21,
+            "fraction": 0.2916666666666667
+          }
+        },
+        "rules/2/familiar_format": {
+          "answer_correct": {
+            "correct": 14,
+            "fraction": 0.19444444444444445
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 70,
+            "fraction": 0.9722222222222222
+          }
+        },
+        "rules/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 0,
+            "fraction": 0.0
+          }
+        },
+        "rules/3/familiar_format": {
+          "answer_correct": {
+            "correct": 7,
+            "fraction": 0.09722222222222222
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 69,
+            "fraction": 0.9583333333333334
+          }
+        },
+        "rules/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 0,
+            "fraction": 0.0
+          }
+        }
+      },
+      "macro_complete": 0.21604938271604937,
+      "outputs_sha256": "8a8fc31537ed297ef9e24c4a92fcd7c7ccf56169fffd0c7346c3d4635a266ecb"
+    },
+    "transformer_2103_lr0.003": {
+      "all": {
+        "answer_correct": {
+          "correct": 381,
+          "fraction": 0.29398148148148145
+        },
+        "both_correct": {
+          "correct": 345,
+          "fraction": 0.2662037037037037
+        },
+        "count": 1296,
+        "semantic_identities": 648,
+        "steps_correct": {
+          "correct": 346,
+          "fraction": 0.26697530864197533
+        },
+        "valid_format": {
+          "correct": 772,
+          "fraction": 0.595679012345679
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.0023148148148148147
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 214,
+            "fraction": 0.49537037037037035
+          }
+        },
+        "recall": {
+          "answer_correct": {
+            "correct": 329,
+            "fraction": 0.7615740740740741
+          },
+          "both_correct": {
+            "correct": 329,
+            "fraction": 0.7615740740740741
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 330,
+            "fraction": 0.7638888888888888
+          },
+          "valid_format": {
+            "correct": 332,
+            "fraction": 0.7685185185185185
+          }
+        },
+        "rules": {
+          "answer_correct": {
+            "correct": 51,
+            "fraction": 0.11805555555555555
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.037037037037037035
+          },
+          "count": 432,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 16,
+            "fraction": 0.037037037037037035
+          },
+          "valid_format": {
+            "correct": 226,
+            "fraction": 0.5231481481481481
+          }
+        }
+      },
+      "by_family_wording": {
+        "arithmetic/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.004629629629629629
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 183,
+            "fraction": 0.8472222222222222
+          }
+        },
+        "arithmetic/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 31,
+            "fraction": 0.14351851851851852
+          }
+        },
+        "recall/familiar_format": {
+          "answer_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 216,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 216,
+            "fraction": 1.0
+          }
+        },
+        "recall/withheld_wording": {
+          "answer_correct": {
+            "correct": 113,
+            "fraction": 0.5231481481481481
+          },
+          "both_correct": {
+            "correct": 113,
+            "fraction": 0.5231481481481481
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 114,
+            "fraction": 0.5277777777777778
+          },
+          "valid_format": {
+            "correct": 116,
+            "fraction": 0.5370370370370371
+          }
+        },
+        "rules/familiar_format": {
+          "answer_correct": {
+            "correct": 49,
+            "fraction": 0.22685185185185186
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.07407407407407407
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 16,
+            "fraction": 0.07407407407407407
+          },
+          "valid_format": {
+            "correct": 210,
+            "fraction": 0.9722222222222222
+          }
+        },
+        "rules/withheld_wording": {
+          "answer_correct": {
+            "correct": 2,
+            "fraction": 0.009259259259259259
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 216,
+          "semantic_identities": 216,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 16,
+            "fraction": 0.07407407407407407
+          }
+        }
+      },
+      "forward_only_profile": {
+        "cpu_ms_per_byte_median": 0.017408500000037908,
+        "cpu_seconds_median": 0.000557072000001213,
+        "cpu_seconds_repeats": [
+          0.0007605280000007042,
+          0.000557072000001213,
+          0.0005076640000005739
+        ],
+        "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+        "parameter_bytes": 1024960,
+        "positive_operator_allocation_bytes": 536642
+      },
+      "generation_and_checking_cpu_seconds": 8.569101664,
+      "groups": {
+        "arithmetic/1/familiar_format": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 64,
+            "fraction": 0.8888888888888888
+          }
+        },
+        "arithmetic/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 0,
+            "fraction": 0.0
+          }
+        },
+        "arithmetic/2/familiar_format": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 62,
+            "fraction": 0.8611111111111112
+          }
+        },
+        "arithmetic/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 26,
+            "fraction": 0.3611111111111111
+          }
+        },
+        "arithmetic/3/familiar_format": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 57,
+            "fraction": 0.7916666666666666
+          }
+        },
+        "arithmetic/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 5,
+            "fraction": 0.06944444444444445
+          }
+        },
+        "recall/16/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/16/withheld_wording": {
+          "answer_correct": {
+            "correct": 32,
+            "fraction": 0.4444444444444444
+          },
+          "both_correct": {
+            "correct": 32,
+            "fraction": 0.4444444444444444
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 32,
+            "fraction": 0.4444444444444444
+          },
+          "valid_format": {
+            "correct": 34,
+            "fraction": 0.4722222222222222
+          }
+        },
+        "recall/4/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/4/withheld_wording": {
+          "answer_correct": {
+            "correct": 42,
+            "fraction": 0.5833333333333334
+          },
+          "both_correct": {
+            "correct": 42,
+            "fraction": 0.5833333333333334
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 42,
+            "fraction": 0.5833333333333334
+          },
+          "valid_format": {
+            "correct": 42,
+            "fraction": 0.5833333333333334
+          }
+        },
+        "recall/8/familiar_format": {
+          "answer_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "both_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 72,
+            "fraction": 1.0
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "recall/8/withheld_wording": {
+          "answer_correct": {
+            "correct": 39,
+            "fraction": 0.5416666666666666
+          },
+          "both_correct": {
+            "correct": 39,
+            "fraction": 0.5416666666666666
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 40,
+            "fraction": 0.5555555555555556
+          },
+          "valid_format": {
+            "correct": 40,
+            "fraction": 0.5555555555555556
+          }
+        },
+        "rules/1/familiar_format": {
+          "answer_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "both_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 16,
+            "fraction": 0.2222222222222222
+          },
+          "valid_format": {
+            "correct": 72,
+            "fraction": 1.0
+          }
+        },
+        "rules/1/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 11,
+            "fraction": 0.1527777777777778
+          }
+        },
+        "rules/2/familiar_format": {
+          "answer_correct": {
+            "correct": 23,
+            "fraction": 0.3194444444444444
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 71,
+            "fraction": 0.9861111111111112
+          }
+        },
+        "rules/2/withheld_wording": {
+          "answer_correct": {
+            "correct": 1,
+            "fraction": 0.013888888888888888
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 5,
+            "fraction": 0.06944444444444445
+          }
+        },
+        "rules/3/familiar_format": {
+          "answer_correct": {
+            "correct": 10,
+            "fraction": 0.1388888888888889
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 67,
+            "fraction": 0.9305555555555556
+          }
+        },
+        "rules/3/withheld_wording": {
+          "answer_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "both_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "count": 72,
+          "semantic_identities": 72,
+          "steps_correct": {
+            "correct": 0,
+            "fraction": 0.0
+          },
+          "valid_format": {
+            "correct": 0,
+            "fraction": 0.0
+          }
+        }
+      },
+      "macro_complete": 0.2662037037037037,
+      "outputs_sha256": "0b4b23b275273296e25ee3cc3df7d1978e6d5f0657ee0058c42a12e90a6ba6e9"
+    }
+  },
+  "cold_seed_results": {
+    "energy": {
+      "cases": [
+        "energy_2101",
+        "energy_2102",
+        "energy_2103"
+      ],
+      "family_wording_seed_scores": {
+        "arithmetic/familiar_format": [
+          0.004629629629629629,
+          0.009259259259259259,
+          0.004629629629629629
+        ],
+        "arithmetic/withheld_wording": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "recall/familiar_format": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall/withheld_wording": [
+          0.9629629629629629,
+          1.0,
+          0.9768518518518519
+        ],
+        "rules/familiar_format": [
+          0.09722222222222222,
+          0.13425925925925927,
+          0.21296296296296297
+        ],
+        "rules/withheld_wording": [
+          0.07407407407407407,
+          0.009259259259259259,
+          0.05092592592592592
+        ]
+      },
+      "macro_seed_scores": [
+        0.35648148148148145,
+        0.3587962962962963,
+        0.3742283950617284
+      ],
+      "mean_macro": 0.3631687242798354
+    },
+    "transformer": {
+      "cases": [
+        "transformer_2101_lr0.003",
+        "transformer_2102_lr0.003",
+        "transformer_2103_lr0.003"
+      ],
+      "family_wording_seed_scores": {
+        "arithmetic/familiar_format": [
+          0.004629629629629629,
+          0.0,
+          0.0
+        ],
+        "arithmetic/withheld_wording": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "recall/familiar_format": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "recall/withheld_wording": [
+          0.32407407407407407,
+          0.2222222222222222,
+          0.5231481481481481
+        ],
+        "rules/familiar_format": [
+          0.08796296296296297,
+          0.07407407407407407,
+          0.07407407407407407
+        ],
+        "rules/withheld_wording": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "macro_seed_scores": [
+        0.2361111111111111,
+        0.21604938271604937,
+        0.2662037037037037
+      ],
+      "mean_macro": 0.23945473251028807
+    }
+  },
+  "completed_fit_ledger": [
+    {
+      "auxiliary_parameters": 21222,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/transformer_2103_lr0.003/best.pt",
+      "checkpoint_sha256": "79b240c4b0f3305edd0a98994154c5199ee8d62bdcb2c0203d581a364b200652",
+      "inference_parameters": 256240,
+      "maximum_raw_gradient_norm": 354.35701139327426,
+      "name": "transformer_2103_lr0.003",
+      "processed_response_tokens": 1192533,
+      "selected_additional_step": 1024,
+      "selected_validation_complete": 0.18209876543209877,
+      "source_best_step": 1792,
+      "training_cpu_seconds": 355.08842097599563,
+      "validation_cpu_seconds": 135.22621830399981,
+      "warm": false
+    },
+    {
+      "auxiliary_parameters": 21222,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/transformer_2102_lr0.003/best.pt",
+      "checkpoint_sha256": "d4891233fb02cb1c71825b7aff693659c97c02f87831968f6ea4538f3aa7e76f",
+      "inference_parameters": 256240,
+      "maximum_raw_gradient_norm": 353.5719203217027,
+      "name": "transformer_2102_lr0.003",
+      "processed_response_tokens": 1192655,
+      "selected_additional_step": 1024,
+      "selected_validation_complete": 0.1867283950617284,
+      "source_best_step": 2048,
+      "training_cpu_seconds": 361.496864831999,
+      "validation_cpu_seconds": 135.73891704000005,
+      "warm": false
+    },
+    {
+      "auxiliary_parameters": 21222,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/transformer_2101_lr0.003/best.pt",
+      "checkpoint_sha256": "8209881e18f2b02936872f445933db9c63a1a53b06ddded673a4e298e8a9ab72",
+      "inference_parameters": 256240,
+      "maximum_raw_gradient_norm": 349.95609110960356,
+      "name": "transformer_2101_lr0.003",
+      "processed_response_tokens": 1192635,
+      "selected_additional_step": 512,
+      "selected_validation_complete": 0.1898148148148148,
+      "source_best_step": 2048,
+      "training_cpu_seconds": 373.92818124800016,
+      "validation_cpu_seconds": 154.46566606400006,
+      "warm": false
+    },
+    {
+      "auxiliary_parameters": 21222,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/transformer_2102_lr0.001/best.pt",
+      "checkpoint_sha256": "e7e0d5c7235761d97376cb979d8a8f192d987ec5b76c00f84f6162538cfa42aa",
+      "inference_parameters": 256240,
+      "maximum_raw_gradient_norm": 356.3613752572817,
+      "name": "transformer_2102_lr0.001",
+      "processed_response_tokens": 1192655,
+      "selected_additional_step": 1024,
+      "selected_validation_complete": 0.11419753086419752,
+      "source_best_step": 2048,
+      "training_cpu_seconds": 366.5722119040022,
+      "validation_cpu_seconds": 155.50695143999988,
+      "warm": false
+    },
+    {
+      "auxiliary_parameters": 21222,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/transformer_2101_lr0.001/best.pt",
+      "checkpoint_sha256": "9ba173cb6ead2e60971981c473d5518f99502621b35f83aa28d07691d64ba246",
+      "inference_parameters": 256240,
+      "maximum_raw_gradient_norm": 350.90467689403744,
+      "name": "transformer_2101_lr0.001",
+      "processed_response_tokens": 1192635,
+      "selected_additional_step": 1024,
+      "selected_validation_complete": 0.16820987654320987,
+      "source_best_step": 2048,
+      "training_cpu_seconds": 382.38528209600014,
+      "validation_cpu_seconds": 172.95706990399998,
+      "warm": false
+    },
+    {
+      "auxiliary_parameters": 21222,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/transformer_2103_lr0.001/best.pt",
+      "checkpoint_sha256": "bad2a228aee72b541aff7cb442a837c742321fb7d4f1de4dcf0c098c70970386",
+      "inference_parameters": 256240,
+      "maximum_raw_gradient_norm": 352.21600563255225,
+      "name": "transformer_2103_lr0.001",
+      "processed_response_tokens": 1192533,
+      "selected_additional_step": 1024,
+      "selected_validation_complete": 0.15123456790123457,
+      "source_best_step": 2048,
+      "training_cpu_seconds": 343.73656601599777,
+      "validation_cpu_seconds": 149.14624630400036,
+      "warm": false
+    },
+    {
+      "auxiliary_parameters": 13318,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/warm_heads1_absolute_wave/best.pt",
+      "checkpoint_sha256": "b6ac439f463ed498d36a3c9e284b0991d7dde929f6e2432906249b78bc5e307d",
+      "inference_parameters": 256096,
+      "maximum_raw_gradient_norm": 442.9579281269195,
+      "name": "warm_heads1_absolute_wave",
+      "processed_response_tokens": 1192635,
+      "selected_additional_step": 1024,
+      "selected_validation_complete": 0.4243827160493827,
+      "source_best_step": 2048,
+      "training_cpu_seconds": 2555.759702672005,
+      "validation_cpu_seconds": 196.21490796800015,
+      "warm": true
+    },
+    {
+      "auxiliary_parameters": 13318,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/energy_2102/best.pt",
+      "checkpoint_sha256": "7d43a8a4477d0188979b1945bb91682a104d03985bf15f877204ab1326c43213",
+      "inference_parameters": 256096,
+      "maximum_raw_gradient_norm": 317.11732001933984,
+      "name": "energy_2102",
+      "processed_response_tokens": 1192655,
+      "selected_additional_step": 768,
+      "selected_validation_complete": 0.3688271604938272,
+      "source_best_step": 1792,
+      "training_cpu_seconds": 2542.5214893599923,
+      "validation_cpu_seconds": 179.22060083200006,
+      "warm": false
+    },
+    {
+      "auxiliary_parameters": 13318,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/warm_heads1/best.pt",
+      "checkpoint_sha256": "cb3380574b326de60ad32c3dc9535d314fa5cccc139d910ecea27e02fee1f810",
+      "inference_parameters": 256096,
+      "maximum_raw_gradient_norm": 406.29872446426873,
+      "name": "warm_heads1",
+      "processed_response_tokens": 1192635,
+      "selected_additional_step": 768,
+      "selected_validation_complete": 0.43209876543209874,
+      "source_best_step": 2048,
+      "training_cpu_seconds": 2569.9793939840056,
+      "validation_cpu_seconds": 194.03066108799996,
+      "warm": true
+    },
+    {
+      "auxiliary_parameters": 13318,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/warm_heads2/best.pt",
+      "checkpoint_sha256": "2b184d2c5213345ecde465b0cbb5a4da11b090d04eb8d6ba90f6309c0949b09d",
+      "inference_parameters": 256096,
+      "maximum_raw_gradient_norm": 384.22755000396415,
+      "name": "warm_heads2",
+      "processed_response_tokens": 1192635,
+      "selected_additional_step": 1024,
+      "selected_validation_complete": 0.4382716049382716,
+      "source_best_step": 2048,
+      "training_cpu_seconds": 2567.765099951993,
+      "validation_cpu_seconds": 191.34299753599996,
+      "warm": true
+    },
+    {
+      "auxiliary_parameters": 13318,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/warm_heads2_absolute_wave/best.pt",
+      "checkpoint_sha256": "1ff9e6bc6b56317061f933a5817541b5cda855e40f7666c49bfdbb1c4595d8f1",
+      "inference_parameters": 256096,
+      "maximum_raw_gradient_norm": 384.22755000396415,
+      "name": "warm_heads2_absolute_wave",
+      "processed_response_tokens": 1192635,
+      "selected_additional_step": 768,
+      "selected_validation_complete": 0.4305555555555556,
+      "source_best_step": 2048,
+      "training_cpu_seconds": 2558.408680623994,
+      "validation_cpu_seconds": 190.64286345599982,
+      "warm": true
+    },
+    {
+      "auxiliary_parameters": 13318,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/energy_2101/best.pt",
+      "checkpoint_sha256": "333e381b188a4cfc52fcd5a9bc7ce4dfc971bfcf8e6bac66e391663bd594ccc7",
+      "inference_parameters": 256096,
+      "maximum_raw_gradient_norm": 264.4457310718778,
+      "name": "energy_2101",
+      "processed_response_tokens": 1192635,
+      "selected_additional_step": 0,
+      "selected_validation_complete": 0.36882716049382713,
+      "source_best_step": 1280,
+      "training_cpu_seconds": 2571.0873205919984,
+      "validation_cpu_seconds": 187.4136426879997,
+      "warm": false
+    },
+    {
+      "auxiliary_parameters": 13318,
+      "charged_updates": 3072,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/energy_2103/best.pt",
+      "checkpoint_sha256": "b5e0947ab173f2b60a200932a325158170318137c2dbc425607061186d75d05a",
+      "inference_parameters": 256096,
+      "maximum_raw_gradient_norm": 279.20203553912205,
+      "name": "energy_2103",
+      "processed_response_tokens": 1192533,
+      "selected_additional_step": 1024,
+      "selected_validation_complete": 0.375,
+      "source_best_step": 1536,
+      "training_cpu_seconds": 2323.7353762240023,
+      "validation_cpu_seconds": 168.6298225279994,
+      "warm": false
+    }
+  ],
+  "cost_scope": "Ledger entries are per-model main-plus-termination lineage costs; absolute-wave warm alternatives share their main fits, so summing ledger entries would double-count them. Aggregate executed totals count each main and termination fit once. Warm parent-lineage training, data preparation, test evaluation, compilation probes, smoke runs and interrupted harness work are excluded. Cold budgets match updates and examples, not CPU time. Both Transformer learning-rate screen candidates are retained.",
+  "inference_scope": "Raw-byte prompts and fixed learned model weights. Auxiliary heads, task payloads and symbolic checkers are absent from generation.",
+  "paired_comparisons": {
+    "previous_warm_parent": {
+      "complete_accuracy_difference": 0.16666666666666666,
+      "conditional_95_percent_interval": [
+        0.1450617283950617,
+        0.1875
+      ],
+      "repetitions": 5000,
+      "scope": "Fixed selected checkpoints; test-sample uncertainty only. Semantic identities are resampled within family/depth, with paired wording and model outputs kept together. Does not cover training-seed or model-selection uncertainty.",
+      "seed": 7101
+    },
+    "selected_warm_zero_rounds": {
+      "complete_accuracy_difference": 0.04938271604938272,
+      "conditional_95_percent_interval": [
+        0.03395061728395062,
+        0.06481481481481481
+      ],
+      "repetitions": 5000,
+      "scope": "Fixed selected checkpoints; test-sample uncertainty only. Semantic identities are resampled within family/depth, with paired wording and model outputs kept together. Does not cover training-seed or model-selection uncertainty.",
+      "seed": 7101
+    }
+  },
+  "test_plan_sha256": "d2431a4031ba9493e5cdd0ecd22fbb889842b6fcbfcfc2452ae153b6844ba231",
+  "test_results_sha256": "68ef0e7984a3b78480103f61e12979a6dcb311fff1ed139852b5e147a1d082ac"
+}

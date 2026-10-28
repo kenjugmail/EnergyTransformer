@@ -89,6 +89,13 @@ def chunk_gla(u: Tensor, wk: Tensor, v: Tensor, lf: Tensor, s0: Tensor, chunk: i
     vdim = v.shape[-1]
     if s0.shape != (b, h, k, vdim):
         raise ValueError('Incoming state shape differs')
+    if t == 1:
+        if force == 'matmul' and not bool(torch.isfinite(lf).all()):
+            raise ValueError('forced matmul path outside its validity domain: nonfinite log decay')
+        decay = lf[:, 0].exp()
+        ctx = _StepCtx(wk[:, 0], v[:, 0], decay, s0)
+        final = decay[..., None] * s0 + wk[:, 0, ..., None] * v[:, 0, :, None, :]
+        return _read_step(u, ctx), final, ctx
     up, rem = _pad_to_chunk(u, chunk)
     wkp, _ = _pad_to_chunk(wk, chunk)
     vp, _ = _pad_to_chunk(v, chunk)
@@ -150,6 +157,19 @@ class _Ctx:
             wk, keys, v, lc, shifted, dmat, causal, starts, chunk, n, t, b, h, vdim)
 
 
+class _StepCtx:
+    __slots__ = ('wk', 'v', 'decay', 'initial')
+
+    def __init__(self, wk, v, decay, initial):
+        self.wk, self.v, self.decay, self.initial = wk, v, decay, initial
+
+
+def _read_step(u: Tensor, c: _StepCtx) -> Tensor:
+    inter = torch.einsum('bhk,bhkv->bhv', u[:, 0] * c.decay, c.initial)
+    intra = (u[:, 0] * c.wk).sum(-1)[..., None] * c.v
+    return (inter + intra)[:, None]
+
+
 def _read(u_: Tensor, c: _Ctx) -> Tensor:
     # contribution of the state entering this chunk
     inter = torch.einsum('bnchk,bnhkv->bnchv', u_ * c.lc.exp(), c.starts)
@@ -157,13 +177,19 @@ def _read(u_: Tensor, c: _Ctx) -> Tensor:
     if c.dmat is None:
         att = torch.einsum('bnchk,bndhk->bnchd', u_ * c.shifted.exp(), c.keys)
         att = torch.where(c.causal[None, None, :, None, :], att, att.new_zeros(()))
+    elif u_.device.type == 'cpu':
+        # Explicit slot reduction avoids the expensive tiny batched matrix
+        # products selected for this three-operand contraction on CPU.
+        att = (u_[:, :, :, None] * c.wk[:, :, None] * c.dmat).sum(-1).permute(0, 1, 2, 4, 3)
     else:
         att = torch.einsum('bnchk,bndhk,bncdhk->bnchd', u_, c.wk, c.dmat)
     intra = torch.einsum('bnchd,bndhv->bnchv', att, c.v)
     return (inter + intra).reshape(c.b, c.n * c.chunk, c.h, c.vdim)[:, :c.t]
 
 
-def read_again(ctx: _Ctx, u2: Tensor) -> Tensor:
+def read_again(ctx: _Ctx | _StepCtx, u2: Tensor) -> Tensor:
     """Second read against the same states, reusing the saved chunk context."""
+    if isinstance(ctx, _StepCtx):
+        return _read_step(u2, ctx)
     u2p, _ = _pad_to_chunk(u2, ctx.chunk)
     return _read(u2p.view(ctx.b, ctx.n, ctx.chunk, ctx.h, -1), ctx)

@@ -1,0 +1,25 @@
+{
+  "best_step": 512,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "scan_22101",
+    "overrides": {
+      "backbone": "scan"
+    },
+    "seed": 22101,
+    "variant": "scan"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22101/best.pt",
+  "checkpoint_sha256": "92753d873202c2156a55cfdbc2d9e487cac956b8543b4f353bf28d4f388c1702",
+  "parameters": 246688,
+  "test": {
+    "bpb": 2.098418504532551,
+    "original_bytes": 63549,
+    "token_accuracy": 0.319915771484375,
+    "token_nll": 2.82082636654377,
+    "tokens": 32768
+  },
+  "training_cpu_seconds": 91.74191534400006,
+  "validation_bpb": 2.096724468562382,
+  "validation_cpu_seconds": 1.2713148799998635
+}

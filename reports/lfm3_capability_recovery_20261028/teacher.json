@@ -1,0 +1,3441 @@
+{
+  "model": {
+    "teacher_revision": "40ebe0aa6662c9d40389c2f5d565b6a2c6aebacd",
+    "sha256": "135922caef64e81e52af88ede8b7c3ddaa9d6da220a9737fb3065275dbfb4330"
+  },
+  "suite_sha256": "abce8917e0fb2d43f8bf5ecace245ce2b741e8cf443e9fae9e1b44fcf893606b",
+  "protocol": "Greedy generation, original non-thinking chat template, 64 new tokens. Exact probes strip surrounding whitespace; knowledge matching is case-insensitive. JSON uses parsed object equality. ARC uses first-position logits restricted to single-token A/B/C/D(/E) labels, a custom zero-shot protocol.",
+  "arc": [
+    {
+      "id": "Mercury_7218050",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        12.0,
+        9.8125,
+        11.0,
+        18.25
+      ],
+      "correct": true,
+      "prompt_tokens": 69
+    },
+    {
+      "id": "NYSEDREGENTS_2012_8_18",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        9.8125,
+        24.125,
+        15.0,
+        10.8125
+      ],
+      "correct": true,
+      "prompt_tokens": 53
+    },
+    {
+      "id": "Mercury_SC_400375",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        12.9375,
+        11.0625,
+        19.75,
+        9.875
+      ],
+      "correct": true,
+      "prompt_tokens": 69
+    },
+    {
+      "id": "Mercury_7222408",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        12.75,
+        23.375,
+        14.3125,
+        10.8125
+      ],
+      "correct": true,
+      "prompt_tokens": 63
+    },
+    {
+      "id": "AIMS_2008_8_7",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        23.0,
+        14.3125,
+        12.25,
+        10.6875
+      ],
+      "correct": true,
+      "prompt_tokens": 69
+    },
+    {
+      "id": "Mercury_SC_406024",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        16.25,
+        18.5,
+        13.3125,
+        17.625
+      ],
+      "correct": true,
+      "prompt_tokens": 77
+    },
+    {
+      "id": "TIMSS_2003_8_pg99",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.75,
+        13.875,
+        22.625,
+        10.875
+      ],
+      "correct": true,
+      "prompt_tokens": 86
+    },
+    {
+      "id": "Mercury_405107",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "C",
+      "label_logits": [
+        13.75,
+        14.625,
+        19.875,
+        12.5625
+      ],
+      "correct": false,
+      "prompt_tokens": 106
+    },
+    {
+      "id": "VASoL_2009_5_24",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        11.0625,
+        26.125,
+        14.25,
+        11.125
+      ],
+      "correct": true,
+      "prompt_tokens": 58
+    },
+    {
+      "id": "MSA_2013_5_15",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.25,
+        15.125,
+        19.5,
+        10.9375
+      ],
+      "correct": true,
+      "prompt_tokens": 63
+    },
+    {
+      "id": "LEAP__7_10342",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.0625,
+        11.875,
+        8.9375,
+        6.78125
+      ],
+      "correct": true,
+      "prompt_tokens": 95
+    },
+    {
+      "id": "Mercury_SC_LBS11008",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "C",
+      "label_logits": [
+        15.0625,
+        19.5,
+        19.875,
+        15.625
+      ],
+      "correct": false,
+      "prompt_tokens": 60
+    },
+    {
+      "id": "NYSEDREGENTS_2008_4_20",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        8.3125,
+        21.875,
+        12.25,
+        7.4375
+      ],
+      "correct": true,
+      "prompt_tokens": 60
+    },
+    {
+      "id": "Mercury_7165795",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "C",
+      "label_logits": [
+        14.3125,
+        14.0,
+        15.0,
+        13.625
+      ],
+      "correct": false,
+      "prompt_tokens": 64
+    },
+    {
+      "id": "ACTAAP_2010_5_9",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        18.25,
+        14.6875,
+        15.5625,
+        11.9375
+      ],
+      "correct": true,
+      "prompt_tokens": 79
+    },
+    {
+      "id": "Mercury_7167038",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        11.375,
+        11.75,
+        22.75,
+        11.3125
+      ],
+      "correct": true,
+      "prompt_tokens": 64
+    },
+    {
+      "id": "Mercury_405940",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        12.1875,
+        11.8125,
+        11.4375,
+        13.5625
+      ],
+      "correct": true,
+      "prompt_tokens": 78
+    },
+    {
+      "id": "Mercury_SC_400707",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        11.0625,
+        22.5,
+        14.875,
+        9.125
+      ],
+      "correct": true,
+      "prompt_tokens": 79
+    },
+    {
+      "id": "Mercury_7145215",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        9.5,
+        20.25,
+        12.9375,
+        8.375
+      ],
+      "correct": true,
+      "prompt_tokens": 122
+    },
+    {
+      "id": "Mercury_7200568",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        12.8125,
+        10.25,
+        16.875,
+        10.5
+      ],
+      "correct": true,
+      "prompt_tokens": 69
+    },
+    {
+      "id": "VASoL_2008_3_38",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        9.9375,
+        17.75,
+        25.5,
+        12.375
+      ],
+      "correct": true,
+      "prompt_tokens": 48
+    },
+    {
+      "id": "Mercury_407132",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "C",
+      "label_logits": [
+        12.4375,
+        14.125,
+        15.0625,
+        12.9375
+      ],
+      "correct": false,
+      "prompt_tokens": 94
+    },
+    {
+      "id": "Mercury_7136150",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        12.4375,
+        11.5,
+        19.625,
+        9.9375
+      ],
+      "correct": true,
+      "prompt_tokens": 84
+    },
+    {
+      "id": "LEAP__5_10308",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        19.5,
+        17.75,
+        16.0,
+        11.5625
+      ],
+      "correct": true,
+      "prompt_tokens": 75
+    },
+    {
+      "id": "Mercury_7214235",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "C",
+      "label_logits": [
+        12.6875,
+        10.75,
+        19.0,
+        14.3125
+      ],
+      "correct": false,
+      "prompt_tokens": 69
+    },
+    {
+      "id": "Mercury_7004008",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        12.6875,
+        12.6875,
+        23.75,
+        11.6875
+      ],
+      "correct": true,
+      "prompt_tokens": 54
+    },
+    {
+      "id": "Mercury_405771",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.125,
+        12.625,
+        20.25,
+        9.25
+      ],
+      "correct": true,
+      "prompt_tokens": 55
+    },
+    {
+      "id": "MEA_2014_8_7",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        9.75,
+        11.1875,
+        19.875,
+        9.375
+      ],
+      "correct": true,
+      "prompt_tokens": 68
+    },
+    {
+      "id": "MCAS_2000_8_20",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "B",
+      "label_logits": [
+        13.6875,
+        21.25,
+        20.125,
+        12.9375
+      ],
+      "correct": false,
+      "prompt_tokens": 64
+    },
+    {
+      "id": "MCAS_2006_9_40",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "B",
+      "label_logits": [
+        8.8125,
+        9.0625,
+        8.5,
+        6.21875
+      ],
+      "correct": false,
+      "prompt_tokens": 192
+    },
+    {
+      "id": "Mercury_7077648",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        16.625,
+        17.375,
+        17.25,
+        15.5
+      ],
+      "correct": true,
+      "prompt_tokens": 50
+    },
+    {
+      "id": "MCAS_1999_8_9",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        13.875,
+        12.6875,
+        14.6875,
+        18.25
+      ],
+      "correct": true,
+      "prompt_tokens": 89
+    },
+    {
+      "id": "MCAS_2012_8_23650",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        16.125,
+        17.25,
+        15.4375,
+        10.125
+      ],
+      "correct": true,
+      "prompt_tokens": 66
+    },
+    {
+      "id": "Mercury_7247048",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.1875,
+        20.375,
+        15.0625,
+        12.8125
+      ],
+      "correct": true,
+      "prompt_tokens": 73
+    },
+    {
+      "id": "Mercury_7215548",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.0,
+        25.75,
+        10.875,
+        10.4375
+      ],
+      "correct": true,
+      "prompt_tokens": 53
+    },
+    {
+      "id": "Mercury_7228533",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.625,
+        12.75,
+        23.75,
+        11.3125
+      ],
+      "correct": true,
+      "prompt_tokens": 64
+    },
+    {
+      "id": "Mercury_SC_408362",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.375,
+        21.25,
+        12.4375,
+        10.1875
+      ],
+      "correct": true,
+      "prompt_tokens": 68
+    },
+    {
+      "id": "MCAS_2000_8_28",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        10.375,
+        13.0625,
+        17.875,
+        20.0
+      ],
+      "correct": true,
+      "prompt_tokens": 75
+    },
+    {
+      "id": "Mercury_7186130",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        12.5625,
+        12.1875,
+        18.25,
+        10.5625
+      ],
+      "correct": true,
+      "prompt_tokens": 75
+    },
+    {
+      "id": "Mercury_7011288",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        11.625,
+        12.6875,
+        16.375,
+        22.125
+      ],
+      "correct": true,
+      "prompt_tokens": 51
+    },
+    {
+      "id": "Mercury_7216860",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        9.875,
+        13.25,
+        25.75,
+        12.625
+      ],
+      "correct": true,
+      "prompt_tokens": 47
+    },
+    {
+      "id": "Mercury_7219118",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        11.625,
+        13.4375,
+        18.0,
+        8.5625
+      ],
+      "correct": true,
+      "prompt_tokens": 81
+    },
+    {
+      "id": "MEA_2013_5_16",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        15.0625,
+        10.9375,
+        12.375,
+        8.9375
+      ],
+      "correct": true,
+      "prompt_tokens": 86
+    },
+    {
+      "id": "CSZ_2004_5_CSZ10100",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "C",
+      "label_logits": [
+        15.25,
+        18.375,
+        19.25,
+        18.25
+      ],
+      "correct": false,
+      "prompt_tokens": 50
+    },
+    {
+      "id": "NYSEDREGENTS_2010_8_6",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "C",
+      "label_logits": [
+        10.0,
+        13.3125,
+        21.0,
+        17.875
+      ],
+      "correct": false,
+      "prompt_tokens": 63
+    },
+    {
+      "id": "Mercury_7207060",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        9.0625,
+        10.25,
+        16.625,
+        7.9375
+      ],
+      "correct": true,
+      "prompt_tokens": 94
+    },
+    {
+      "id": "Mercury_7004183",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        12.5625,
+        21.375,
+        12.875,
+        10.25
+      ],
+      "correct": true,
+      "prompt_tokens": 52
+    },
+    {
+      "id": "Mercury_402091",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        14.8125,
+        18.125,
+        22.375,
+        12.8125
+      ],
+      "correct": true,
+      "prompt_tokens": 49
+    },
+    {
+      "id": "Mercury_SC_400035",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        11.875,
+        11.8125,
+        23.25,
+        10.8125
+      ],
+      "correct": true,
+      "prompt_tokens": 54
+    },
+    {
+      "id": "MEAP_2005_8_33",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        21.25,
+        13.5625,
+        12.5625,
+        10.25
+      ],
+      "correct": true,
+      "prompt_tokens": 70
+    },
+    {
+      "id": "Mercury_7216580",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        8.75,
+        13.25,
+        25.75,
+        11.0625
+      ],
+      "correct": true,
+      "prompt_tokens": 57
+    },
+    {
+      "id": "Mercury_7162785",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.4375,
+        21.5,
+        13.6875,
+        12.5
+      ],
+      "correct": true,
+      "prompt_tokens": 60
+    },
+    {
+      "id": "Mercury_7137480",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        16.375,
+        11.1875,
+        16.75,
+        9.0625
+      ],
+      "correct": true,
+      "prompt_tokens": 126
+    },
+    {
+      "id": "Mercury_7263848",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        15.125,
+        11.1875,
+        20.25,
+        11.875
+      ],
+      "correct": true,
+      "prompt_tokens": 62
+    },
+    {
+      "id": "MCAS_2001_5_19",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.9375,
+        14.6875,
+        27.875,
+        12.9375
+      ],
+      "correct": true,
+      "prompt_tokens": 44
+    },
+    {
+      "id": "Mercury_7185710",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        19.25,
+        15.0,
+        14.9375,
+        10.375
+      ],
+      "correct": true,
+      "prompt_tokens": 77
+    },
+    {
+      "id": "MDSA_2012_8_36",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        14.6875,
+        12.375,
+        22.125,
+        9.9375
+      ],
+      "correct": true,
+      "prompt_tokens": 103
+    },
+    {
+      "id": "MCAS_2005_8_21",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.75,
+        20.5,
+        11.625,
+        7.8125
+      ],
+      "correct": true,
+      "prompt_tokens": 87
+    },
+    {
+      "id": "Mercury_SC_LBS10169",
+      "subset": "ARC-Easy",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        16.375,
+        14.5625,
+        11.125,
+        10.9375
+      ],
+      "correct": true,
+      "prompt_tokens": 75
+    },
+    {
+      "id": "Mercury_7185255",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "B",
+      "label_logits": [
+        9.6875,
+        18.0,
+        17.875,
+        7.78125
+      ],
+      "correct": false,
+      "prompt_tokens": 85
+    },
+    {
+      "id": "Mercury_178710",
+      "subset": "ARC-Easy",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        13.875,
+        15.5,
+        18.625,
+        9.5625
+      ],
+      "correct": true,
+      "prompt_tokens": 60
+    },
+    {
+      "id": "Mercury_SC_400595",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "B",
+      "label_logits": [
+        17.375,
+        27.875,
+        19.5,
+        14.125
+      ],
+      "correct": false,
+      "prompt_tokens": 47
+    },
+    {
+      "id": "NYSEDREGENTS_2015_8_26",
+      "subset": "ARC-Easy",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        10.0625,
+        14.4375,
+        13.1875,
+        27.375
+      ],
+      "correct": true,
+      "prompt_tokens": 47
+    },
+    {
+      "id": "Mercury_7141890",
+      "subset": "ARC-Easy",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        17.25,
+        23.0,
+        19.125,
+        12.0
+      ],
+      "correct": true,
+      "prompt_tokens": 58
+    },
+    {
+      "id": "Mercury_7081603",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        12.125,
+        13.375,
+        17.5,
+        9.5625
+      ],
+      "correct": true,
+      "prompt_tokens": 117
+    },
+    {
+      "id": "MDSA_2011_5_3",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        14.25,
+        19.0,
+        12.5,
+        9.6875
+      ],
+      "correct": true,
+      "prompt_tokens": 103
+    },
+    {
+      "id": "Mercury_7102323",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "C",
+      "label_logits": [
+        12.6875,
+        13.0,
+        18.25,
+        17.5
+      ],
+      "correct": false,
+      "prompt_tokens": 94
+    },
+    {
+      "id": "Mercury_7228358",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "B",
+      "label_logits": [
+        13.5,
+        22.25,
+        18.5,
+        14.875
+      ],
+      "correct": false,
+      "prompt_tokens": 104
+    },
+    {
+      "id": "Mercury_7171570",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        13.4375,
+        11.6875,
+        14.625,
+        18.5
+      ],
+      "correct": true,
+      "prompt_tokens": 75
+    },
+    {
+      "id": "Mercury_409115",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        9.0,
+        9.6875,
+        10.3125,
+        8.75
+      ],
+      "correct": true,
+      "prompt_tokens": 128
+    },
+    {
+      "id": "Mercury_7142415",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        17.5,
+        13.625,
+        11.4375,
+        8.625
+      ],
+      "correct": true,
+      "prompt_tokens": 126
+    },
+    {
+      "id": "Mercury_7234605",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "C",
+      "label_logits": [
+        11.125,
+        10.875,
+        11.375,
+        8.1875
+      ],
+      "correct": false,
+      "prompt_tokens": 71
+    },
+    {
+      "id": "Mercury_402145",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        17.125,
+        17.625,
+        16.0,
+        12.0
+      ],
+      "correct": true,
+      "prompt_tokens": 57
+    },
+    {
+      "id": "Mercury_7138460",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.875,
+        10.4375,
+        18.25,
+        8.5625
+      ],
+      "correct": true,
+      "prompt_tokens": 74
+    },
+    {
+      "id": "Mercury_7094308",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.25,
+        11.6875,
+        12.5625,
+        7.1875
+      ],
+      "correct": true,
+      "prompt_tokens": 107
+    },
+    {
+      "id": "Mercury_405143",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.75,
+        16.125,
+        22.5,
+        10.9375
+      ],
+      "correct": true,
+      "prompt_tokens": 70
+    },
+    {
+      "id": "Mercury_7230318",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "A",
+      "label_logits": [
+        17.875,
+        13.375,
+        10.6875,
+        13.0625
+      ],
+      "correct": false,
+      "prompt_tokens": 69
+    },
+    {
+      "id": "NYSEDREGENTS_2008_4_12",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.625,
+        12.875,
+        22.875,
+        10.75
+      ],
+      "correct": true,
+      "prompt_tokens": 63
+    },
+    {
+      "id": "Mercury_183890",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "C",
+      "label_logits": [
+        17.5,
+        12.5625,
+        19.0,
+        17.875
+      ],
+      "correct": false,
+      "prompt_tokens": 63
+    },
+    {
+      "id": "Mercury_7271758",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "A",
+      "label_logits": [
+        13.3125,
+        13.0625,
+        12.375,
+        7.34375
+      ],
+      "correct": false,
+      "prompt_tokens": 93
+    },
+    {
+      "id": "Mercury_409114",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        9.125,
+        10.3125,
+        7.0,
+        8.25
+      ],
+      "correct": true,
+      "prompt_tokens": 93
+    },
+    {
+      "id": "Mercury_SC_LBS10902",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        11.25,
+        19.375,
+        16.75,
+        13.5625
+      ],
+      "correct": true,
+      "prompt_tokens": 60
+    },
+    {
+      "id": "MEAP_2005_8_13",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "B",
+      "label_logits": [
+        12.4375,
+        15.375,
+        11.5,
+        11.125
+      ],
+      "correct": false,
+      "prompt_tokens": 84
+    },
+    {
+      "id": "Mercury_7207550",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "B",
+      "label_logits": [
+        14.25,
+        22.0,
+        17.25,
+        11.3125
+      ],
+      "correct": false,
+      "prompt_tokens": 119
+    },
+    {
+      "id": "OHAT_2010_8_8",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        11.9375,
+        24.5,
+        14.75,
+        11.1875
+      ],
+      "correct": true,
+      "prompt_tokens": 75
+    },
+    {
+      "id": "NYSEDREGENTS_2008_4_28",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.6875,
+        13.375,
+        19.375,
+        9.625
+      ],
+      "correct": true,
+      "prompt_tokens": 81
+    },
+    {
+      "id": "Mercury_415086",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "B",
+      "label_logits": [
+        8.3125,
+        9.9375,
+        8.4375,
+        8.4375
+      ],
+      "correct": false,
+      "prompt_tokens": 87
+    },
+    {
+      "id": "Mercury_SC_409009",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        17.0,
+        13.25,
+        12.25,
+        8.6875
+      ],
+      "correct": true,
+      "prompt_tokens": 84
+    },
+    {
+      "id": "MEAP_2005_5_15",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "C",
+      "label_logits": [
+        13.0,
+        12.6875,
+        14.625,
+        12.875
+      ],
+      "correct": false,
+      "prompt_tokens": 105
+    },
+    {
+      "id": "Mercury_416671",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        11.25,
+        12.9375,
+        16.5,
+        18.0
+      ],
+      "correct": true,
+      "prompt_tokens": 79
+    },
+    {
+      "id": "TIMSS_2003_8_pg85",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        12.875,
+        22.75,
+        16.625,
+        12.5
+      ],
+      "correct": true,
+      "prompt_tokens": 60
+    },
+    {
+      "id": "Mercury_401763",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.75,
+        12.6875,
+        10.8125,
+        12.25
+      ],
+      "correct": true,
+      "prompt_tokens": 92
+    },
+    {
+      "id": "Mercury_7132020",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        17.625,
+        14.125,
+        14.1875,
+        10.5625
+      ],
+      "correct": true,
+      "prompt_tokens": 47
+    },
+    {
+      "id": "MCAS_2012_8_23640",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        11.0,
+        12.6875,
+        14.4375,
+        23.875
+      ],
+      "correct": true,
+      "prompt_tokens": 55
+    },
+    {
+      "id": "Mercury_SC_400392",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        11.875,
+        15.0,
+        20.875,
+        12.0625
+      ],
+      "correct": true,
+      "prompt_tokens": 74
+    },
+    {
+      "id": "NYSEDREGENTS_2015_4_29",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "C",
+      "label_logits": [
+        19.125,
+        14.4375,
+        22.25,
+        11.375
+      ],
+      "correct": false,
+      "prompt_tokens": 57
+    },
+    {
+      "id": "Mercury_7188195",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        14.5,
+        13.5625,
+        18.25,
+        16.5
+      ],
+      "correct": true,
+      "prompt_tokens": 100
+    },
+    {
+      "id": "Mercury_415093",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "B",
+      "label_logits": [
+        11.3125,
+        14.5625,
+        13.5625,
+        10.3125
+      ],
+      "correct": false,
+      "prompt_tokens": 179
+    },
+    {
+      "id": "Mercury_7206430",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        15.5625,
+        13.625,
+        14.375,
+        9.375
+      ],
+      "correct": true,
+      "prompt_tokens": 99
+    },
+    {
+      "id": "Mercury_SC_414001",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "A",
+      "label_logits": [
+        12.1875,
+        11.25,
+        11.3125,
+        10.6875
+      ],
+      "correct": false,
+      "prompt_tokens": 101
+    },
+    {
+      "id": "Mercury_SC_400032",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        13.0625,
+        12.75,
+        21.875,
+        11.0625
+      ],
+      "correct": true,
+      "prompt_tokens": 49
+    },
+    {
+      "id": "Mercury_SC_402257",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "C",
+      "label_logits": [
+        18.75,
+        17.0,
+        20.375,
+        19.125
+      ],
+      "correct": false,
+      "prompt_tokens": 46
+    },
+    {
+      "id": "Mercury_SC_402164",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        12.25,
+        12.3125,
+        20.125,
+        16.25
+      ],
+      "correct": true,
+      "prompt_tokens": 68
+    },
+    {
+      "id": "MSA_2012_5_2",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "D",
+      "label_logits": [
+        13.0625,
+        11.5625,
+        13.0625,
+        18.0
+      ],
+      "correct": false,
+      "prompt_tokens": 69
+    },
+    {
+      "id": "Mercury_184975",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        12.5,
+        16.5,
+        19.375,
+        10.4375
+      ],
+      "correct": true,
+      "prompt_tokens": 60
+    },
+    {
+      "id": "Mercury_7086660",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "A",
+      "label_logits": [
+        14.4375,
+        11.4375,
+        11.5,
+        6.84375
+      ],
+      "correct": false,
+      "prompt_tokens": 93
+    },
+    {
+      "id": "Mercury_406550",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        11.125,
+        18.75,
+        12.6875,
+        8.875
+      ],
+      "correct": true,
+      "prompt_tokens": 94
+    },
+    {
+      "id": "Mercury_7206553",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "C",
+      "label_logits": [
+        10.625,
+        13.875,
+        15.25,
+        10.375
+      ],
+      "correct": false,
+      "prompt_tokens": 56
+    },
+    {
+      "id": "VASoL_2008_3_25",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        8.9375,
+        24.125,
+        18.0,
+        10.125
+      ],
+      "correct": true,
+      "prompt_tokens": 61
+    },
+    {
+      "id": "Mercury_7139650",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "B",
+      "label_logits": [
+        11.5,
+        20.125,
+        14.6875,
+        8.5625
+      ],
+      "correct": false,
+      "prompt_tokens": 85
+    },
+    {
+      "id": "Mercury_7057103",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        10.5625,
+        12.3125,
+        21.375,
+        10.75
+      ],
+      "correct": true,
+      "prompt_tokens": 89
+    },
+    {
+      "id": "Mercury_SC_400985",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        12.0,
+        14.0625,
+        20.375,
+        10.8125
+      ],
+      "correct": true,
+      "prompt_tokens": 84
+    },
+    {
+      "id": "Mercury_SC_415422",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        9.0,
+        9.5625,
+        17.25,
+        7.3125
+      ],
+      "correct": true,
+      "prompt_tokens": 77
+    },
+    {
+      "id": "Mercury_SC_401357",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        13.1875,
+        20.875,
+        18.0,
+        11.6875
+      ],
+      "correct": true,
+      "prompt_tokens": 50
+    },
+    {
+      "id": "Mercury_SC_405086",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.875,
+        26.5,
+        13.3125,
+        14.5
+      ],
+      "correct": true,
+      "prompt_tokens": 52
+    },
+    {
+      "id": "TIMSS_1995_8_K18",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        19.5,
+        13.0,
+        12.5,
+        9.0625
+      ],
+      "correct": true,
+      "prompt_tokens": 74
+    },
+    {
+      "id": "Mercury_7058135",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        12.3125,
+        19.875,
+        16.125,
+        10.1875
+      ],
+      "correct": true,
+      "prompt_tokens": 84
+    },
+    {
+      "id": "Mercury_SC_407710",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "B",
+      "label_logits": [
+        14.5,
+        18.125,
+        12.5625,
+        16.0
+      ],
+      "correct": false,
+      "prompt_tokens": 85
+    },
+    {
+      "id": "Mercury_7131530",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "A",
+      "label_logits": [
+        11.8125,
+        11.0625,
+        8.9375,
+        7.875
+      ],
+      "correct": false,
+      "prompt_tokens": 154
+    },
+    {
+      "id": "AKDE&ED_2008_8_48",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "C",
+      "label_logits": [
+        15.875,
+        13.8125,
+        18.0,
+        10.0625
+      ],
+      "correct": false,
+      "prompt_tokens": 70
+    },
+    {
+      "id": "Mercury_416376",
+      "subset": "ARC-Challenge",
+      "expected": "D",
+      "prediction": "D",
+      "label_logits": [
+        11.0,
+        12.4375,
+        12.125,
+        16.75
+      ],
+      "correct": true,
+      "prompt_tokens": 69
+    },
+    {
+      "id": "Mercury_410602",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "B",
+      "label_logits": [
+        10.25,
+        11.25,
+        9.1875,
+        8.9375
+      ],
+      "correct": false,
+      "prompt_tokens": 76
+    },
+    {
+      "id": "Mercury_SC_415471",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        18.75,
+        13.9375,
+        12.5625,
+        9.75
+      ],
+      "correct": true,
+      "prompt_tokens": 61
+    },
+    {
+      "id": "Mercury_184100",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "C",
+      "label_logits": [
+        11.5625,
+        8.375,
+        18.875,
+        13.6875
+      ],
+      "correct": true,
+      "prompt_tokens": 67
+    },
+    {
+      "id": "Mercury_SC_415476",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.9375,
+        20.25,
+        16.125,
+        9.75
+      ],
+      "correct": true,
+      "prompt_tokens": 72
+    },
+    {
+      "id": "Mercury_7263638",
+      "subset": "ARC-Challenge",
+      "expected": "B",
+      "prediction": "B",
+      "label_logits": [
+        10.8125,
+        11.625,
+        9.125,
+        7.65625
+      ],
+      "correct": true,
+      "prompt_tokens": 82
+    },
+    {
+      "id": "LEAP__7_10339",
+      "subset": "ARC-Challenge",
+      "expected": "A",
+      "prediction": "A",
+      "label_logits": [
+        16.25,
+        11.3125,
+        9.0,
+        7.6875
+      ],
+      "correct": true,
+      "prompt_tokens": 133
+    },
+    {
+      "id": "Mercury_7027160",
+      "subset": "ARC-Challenge",
+      "expected": "C",
+      "prediction": "B",
+      "label_logits": [
+        17.125,
+        18.375,
+        17.375,
+        13.5
+      ],
+      "correct": false,
+      "prompt_tokens": 68
+    }
+  ],
+  "probes": [
+    {
+      "id": "format_0",
+      "category": "format",
+      "response": "lavender",
+      "token_ids": [
+        8452,
+        2368,
+        124900
+      ],
+      "correct": true,
+      "expected": "lavender",
+      "prompt_tokens": 19,
+      "terminated": true
+    },
+    {
+      "id": "format_1",
+      "category": "format",
+      "response": "TELESCOPE",
+      "token_ids": [
+        119884,
+        26679,
+        5856,
+        124900
+      ],
+      "correct": true,
+      "expected": "TELESCOPE",
+      "prompt_tokens": 23,
+      "terminated": true
+    },
+    {
+      "id": "format_2",
+      "category": "format",
+      "response": "Reverse the characters in \"drawer\".  \nOriginal: d r a w e r  \nReversed: r e w a r d  \n\nOutput: **reward**? Wait, let's check:  \n- \"drawer\" letters: d, r, a, w, e, r  \n-",
+      "token_ids": [
+        1120,
+        5252,
+        278,
+        8426,
+        296,
+        496,
+        9671,
+        269,
+        2784,
+        3103,
+        28788,
+        34,
+        277,
+        376,
+        267,
+        288,
+        320,
+        376,
+        3103,
+        1120,
+        1552,
+        290,
+        34,
+        376,
+        320,
+        288,
+        267,
+        376,
+        277,
+        64650,
+        15190,
+        34,
+        7575,
+        5477,
+        507,
+        962,
+        39,
+        34689,
+        20,
+        2443,
+        589,
+        3498,
+        34,
+        3103,
+        21,
+        496,
+        9671,
+        269,
+        10,
+        10008,
+        34,
+        277,
+        20,
+        376,
+        20,
+        267,
+        20,
+        288,
+        20,
+        320,
+        20,
+        376,
+        3103,
+        21
+      ],
+      "correct": false,
+      "expected": "reward",
+      "prompt_tokens": 24,
+      "terminated": false
+    },
+    {
+      "id": "format_3",
+      "category": "format",
+      "response": "apple, pear, plum",
+      "token_ids": [
+        40403,
+        20,
+        32115,
+        20,
+        45578,
+        124900
+      ],
+      "correct": true,
+      "expected": "apple, pear, plum",
+      "prompt_tokens": 33,
+      "terminated": true
+    },
+    {
+      "id": "format_4",
+      "category": "format",
+      "response": "bridge",
+      "token_ids": [
+        25324,
+        124900
+      ],
+      "correct": true,
+      "expected": "bridge",
+      "prompt_tokens": 26,
+      "terminated": true
+    },
+    {
+      "id": "format_5",
+      "category": "format",
+      "response": "29 is odd.",
+      "token_ids": [
+        1734,
+        355,
+        16636,
+        22,
+        124900
+      ],
+      "correct": false,
+      "expected": "odd",
+      "prompt_tokens": 25,
+      "terminated": true
+    },
+    {
+      "id": "format_6",
+      "category": "format",
+      "response": "red  \ngreen  \nblue",
+      "token_ids": [
+        1096,
+        3103,
+        18825,
+        3103,
+        24475,
+        124900
+      ],
+      "correct": false,
+      "expected": "red\ngreen\nblue",
+      "prompt_tokens": 31,
+      "terminated": true
+    },
+    {
+      "id": "format_7",
+      "category": "format",
+      "response": "silver_fox_runs",
+      "token_ids": [
+        47261,
+        420,
+        6393,
+        1473,
+        13752,
+        5994,
+        124900
+      ],
+      "correct": true,
+      "expected": "silver_fox_runs",
+      "prompt_tokens": 31,
+      "terminated": true
+    },
+    {
+      "id": "arithmetic_0",
+      "category": "arithmetic",
+      "response": "38 + 27 = 65\n\nThe sum of 38 and 27 is 65.</think>65",
+      "token_ids": [
+        2481,
+        1510,
+        229,
+        1641,
+        550,
+        229,
+        2257,
+        8,
+        597,
+        9632,
+        302,
+        229,
+        2481,
+        309,
+        229,
+        1641,
+        355,
+        229,
+        2257,
+        22,
+        124902,
+        2257,
+        124900
+      ],
+      "correct": false,
+      "expected": "65",
+      "prompt_tokens": 24,
+      "terminated": true
+    },
+    {
+      "id": "arithmetic_1",
+      "category": "arithmetic",
+      "response": "91 - 36 = 55\n\nAnswer: 55",
+      "token_ids": [
+        9505,
+        640,
+        229,
+        2523,
+        550,
+        229,
+        3377,
+        8,
+        39630,
+        34,
+        229,
+        3377,
+        124900
+      ],
+      "correct": false,
+      "expected": "55",
+      "prompt_tokens": 24,
+      "terminated": true
+    },
+    {
+      "id": "arithmetic_2",
+      "category": "arithmetic",
+      "response": "12 * 7 = 84\n\n84",
+      "token_ids": [
+        873,
+        767,
+        229,
+        31,
+        550,
+        229,
+        8957,
+        8,
+        8957,
+        124900
+      ],
+      "correct": false,
+      "expected": "84",
+      "prompt_tokens": 24,
+      "terminated": true
+    },
+    {
+      "id": "arithmetic_3",
+      "category": "arithmetic",
+      "response": "144 / 12 = 12\n\nAnswer: 12",
+      "token_ids": [
+        12947,
+        1406,
+        229,
+        873,
+        550,
+        229,
+        873,
+        8,
+        39630,
+        34,
+        229,
+        873,
+        124900
+      ],
+      "correct": false,
+      "expected": "12",
+      "prompt_tokens": 24,
+      "terminated": true
+    },
+    {
+      "id": "arithmetic_4",
+      "category": "arithmetic",
+      "response": "We need to calculate 3 * (8 + 5). First, solve the parentheses: 8 + 5 = 13. Then multiply by 3: 3 * 13 = 39. So the answer is 39.\n\nAnswer with just the number: 39.</think>39",
+      "token_ids": [
+        2083,
+        1094,
+        310,
+        16420,
+        229,
+        27,
+        767,
+        342,
+        32,
+        1510,
+        229,
+        29,
+        690,
+        5206,
+        20,
+        11994,
+        278,
+        92510,
+        34,
+        229,
+        32,
+        1510,
+        229,
+        29,
+        550,
+        229,
+        1031,
+        22,
+        5150,
+        38984,
+        467,
+        229,
+        27,
+        34,
+        229,
+        27,
+        767,
+        229,
+        1031,
+        550,
+        229,
+        2687,
+        22,
+        1672,
+        278,
+        5141,
+        355,
+        229,
+        2687,
+        63908,
+        39630,
+        415,
+        1303,
+        278,
+        1579,
+        34,
+        229,
+        2687,
+        22,
+        124902,
+        2687,
+        124900
+      ],
+      "correct": false,
+      "expected": "39",
+      "prompt_tokens": 27,
+      "terminated": true
+    },
+    {
+      "id": "arithmetic_5",
+      "category": "arithmetic",
+      "response": "2 ** 6 = 2^6 = 64.\n\n64",
+      "token_ids": [
+        26,
+        7575,
+        229,
+        30,
+        550,
+        229,
+        26,
+        70,
+        30,
+        550,
+        229,
+        2251,
+        63908,
+        2251,
+        124900
+      ],
+      "correct": false,
+      "expected": "64",
+      "prompt_tokens": 24,
+      "terminated": true
+    },
+    {
+      "id": "arithmetic_6",
+      "category": "arithmetic",
+      "response": "250 * 0.12 = 30\n\nWe can compute as: 250 * 0.12 = 250 * (12/100) = (250 * 12) / 100 = 3000 / 100 = 30.\n\nThus, the result is 30.</think>30",
+      "token_ids": [
+        7395,
+        767,
+        229,
+        24,
+        22,
+        873,
+        550,
+        229,
+        1163,
+        8,
+        2083,
+        510,
+        22999,
+        405,
+        34,
+        229,
+        7395,
+        767,
+        229,
+        24,
+        22,
+        873,
+        550,
+        229,
+        7395,
+        767,
+        342,
+        873,
+        23,
+        1595,
+        17,
+        550,
+        342,
+        7395,
+        767,
+        229,
+        873,
+        17,
+        1406,
+        229,
+        1595,
+        550,
+        229,
+        4590,
+        24,
+        1406,
+        229,
+        1595,
+        550,
+        229,
+        1163,
+        63908,
+        21009,
+        20,
+        278,
+        1224,
+        355,
+        229,
+        1163,
+        22,
+        124902,
+        1163,
+        124900
+      ],
+      "correct": false,
+      "expected": "30",
+      "prompt_tokens": 26,
+      "terminated": true
+    },
+    {
+      "id": "arithmetic_7",
+      "category": "arithmetic",
+      "response": "We need to calculate 7 * 8 - 9.\n\nFirst, perform the multiplication: 7 * 8 = 56.\n\nThen, subtract 9: 56 - 9 = 47.\n\nSo the result is 47.\n\nAnswer with just the number: 47.</think>47",
+      "token_ids": [
+        2083,
+        1094,
+        310,
+        16420,
+        229,
+        31,
+        767,
+        229,
+        32,
+        640,
+        229,
+        33,
+        63908,
+        9077,
+        20,
+        1962,
+        278,
+        37207,
+        34,
+        229,
+        31,
+        767,
+        229,
+        32,
+        550,
+        229,
+        7067,
+        63908,
+        11969,
+        20,
+        91901,
+        229,
+        33,
+        34,
+        229,
+        7067,
+        640,
+        229,
+        33,
+        550,
+        229,
+        3244,
+        63908,
+        4597,
+        278,
+        1224,
+        355,
+        229,
+        3244,
+        63908,
+        39630,
+        415,
+        1303,
+        278,
+        1579,
+        34,
+        229,
+        3244,
+        22,
+        124902,
+        3244,
+        124900
+      ],
+      "correct": false,
+      "expected": "47",
+      "prompt_tokens": 27,
+      "terminated": true
+    },
+    {
+      "id": "knowledge_0",
+      "category": "knowledge",
+      "response": "Tokyo",
+      "token_ids": [
+        40049,
+        11053,
+        124900
+      ],
+      "correct": true,
+      "expected": "Tokyo",
+      "prompt_tokens": 32,
+      "terminated": true
+    },
+    {
+      "id": "knowledge_1",
+      "category": "knowledge",
+      "response": "Jupiter",
+      "token_ids": [
+        50,
+        23917,
+        124900
+      ],
+      "correct": true,
+      "expected": "Jupiter",
+      "prompt_tokens": 35,
+      "terminated": true
+    },
+    {
+      "id": "knowledge_2",
+      "category": "knowledge",
+      "response": "CO\u2082 (carbon dioxide)",
+      "token_ids": [
+        3924,
+        87943,
+        342,
+        41431,
+        15792,
+        17,
+        124900
+      ],
+      "correct": false,
+      "expected": "carbon dioxide",
+      "prompt_tokens": 36,
+      "terminated": true
+    },
+    {
+      "id": "knowledge_3",
+      "category": "knowledge",
+      "response": "Gold: Au",
+      "token_ids": [
+        30348,
+        34,
+        10383,
+        124900
+      ],
+      "correct": false,
+      "expected": "Au",
+      "prompt_tokens": 33,
+      "terminated": true
+    },
+    {
+      "id": "knowledge_4",
+      "category": "knowledge",
+      "response": "Hexagon: 6 sides. The question asks: \"How many sides does a hexagon have?\" The answer is simply the number of sides of a hexagon, which is 6. The user requests: \"Answer with only the name, symbol, or number; no explanation.\" So I should output just \"6\"",
+      "token_ids": [
+        96508,
+        6519,
+        34,
+        229,
+        30,
+        10108,
+        22,
+        440,
+        3451,
+        20589,
+        34,
+        496,
+        3522,
+        1196,
+        10108,
+        1676,
+        267,
+        92888,
+        551,
+        8022,
+        440,
+        5141,
+        355,
+        4916,
+        278,
+        1579,
+        302,
+        10108,
+        302,
+        267,
+        92888,
+        20,
+        643,
+        355,
+        229,
+        30,
+        22,
+        440,
+        4695,
+        19352,
+        34,
+        496,
+        39630,
+        415,
+        1049,
+        278,
+        1653,
+        20,
+        6130,
+        20,
+        432,
+        1579,
+        35,
+        794,
+        13816,
+        2426,
+        1672,
+        358,
+        1252,
+        6159,
+        1303,
+        496,
+        30,
+        10
+      ],
+      "correct": false,
+      "expected": "6",
+      "prompt_tokens": 33,
+      "terminated": false
+    },
+    {
+      "id": "knowledge_5",
+      "category": "knowledge",
+      "response": "Heart",
+      "token_ids": [
+        47244,
+        124900
+      ],
+      "correct": true,
+      "expected": "heart",
+      "prompt_tokens": 34,
+      "terminated": true
+    },
+    {
+      "id": "knowledge_6",
+      "category": "knowledge",
+      "response": "0 \u00b0C",
+      "token_ids": [
+        24,
+        16683,
+        43,
+        124900
+      ],
+      "correct": false,
+      "expected": "0",
+      "prompt_tokens": 40,
+      "terminated": true
+    },
+    {
+      "id": "knowledge_7",
+      "category": "knowledge",
+      "response": "Bubble formation (or vaporization at the surface) \u2014 but the specific term for a liquid turning into a gas at its surface is **evaporation** (or **boiling** if throughout the liquid). The question says \"at its surface\" which is **evaporation**. So answer: Evaporation. However,",
+      "token_ids": [
+        42,
+        17435,
+        6900,
+        342,
+        276,
+        25136,
+        1773,
+        462,
+        278,
+        3755,
+        17,
+        1679,
+        702,
+        278,
+        3179,
+        1743,
+        374,
+        267,
+        9528,
+        13447,
+        918,
+        267,
+        4415,
+        462,
+        851,
+        3755,
+        355,
+        7575,
+        6622,
+        45723,
+        962,
+        342,
+        276,
+        7575,
+        2652,
+        7705,
+        962,
+        787,
+        4626,
+        278,
+        9528,
+        690,
+        440,
+        3451,
+        2997,
+        496,
+        275,
+        851,
+        3755,
+        10,
+        643,
+        355,
+        7575,
+        6622,
+        45723,
+        88050,
+        1672,
+        5141,
+        34,
+        7049,
+        45723,
+        22,
+        2375,
+        20
+      ],
+      "correct": false,
+      "expected": "evaporation",
+      "prompt_tokens": 37,
+      "terminated": false
+    },
+    {
+      "id": "code_output_0",
+      "category": "code_output",
+      "response": "8</think>8",
+      "token_ids": [
+        32,
+        124902,
+        32,
+        124900
+      ],
+      "correct": false,
+      "expected": "12",
+      "prompt_tokens": 40,
+      "terminated": true
+    },
+    {
+      "id": "code_output_1",
+      "category": "code_output",
+      "response": "\"stressed\"[::-1] prints the string \"stressed\" reversed. The original string is \"stressed\". Reversing it gives \"stressed\" backwards: \"stressed\" -> \"stressed\"? Wait, let's check: \"stressed\" letters: s t r e s s e d",
+      "token_ids": [
+        10,
+        319,
+        13931,
+        105953,
+        117625,
+        25,
+        69,
+        35743,
+        278,
+        4160,
+        496,
+        319,
+        13931,
+        10,
+        35725,
+        22,
+        440,
+        2896,
+        4160,
+        355,
+        496,
+        319,
+        13931,
+        2784,
+        915,
+        1552,
+        299,
+        435,
+        6101,
+        496,
+        319,
+        13931,
+        10,
+        44043,
+        34,
+        496,
+        319,
+        13931,
+        10,
+        9495,
+        496,
+        319,
+        13931,
+        93587,
+        34689,
+        20,
+        2443,
+        589,
+        3498,
+        34,
+        496,
+        319,
+        13931,
+        10,
+        10008,
+        34,
+        274,
+        265,
+        376,
+        320,
+        274,
+        274,
+        320,
+        277
+      ],
+      "correct": false,
+      "expected": "desserts",
+      "prompt_tokens": 37,
+      "terminated": false
+    },
+    {
+      "id": "code_output_2",
+      "category": "code_output",
+      "response": "2</think>2",
+      "token_ids": [
+        26,
+        124902,
+        26,
+        124900
+      ],
+      "correct": false,
+      "expected": "3",
+      "prompt_tokens": 48,
+      "terminated": true
+    },
+    {
+      "id": "code_output_3",
+      "category": "code_output",
+      "response": "5 2",
+      "token_ids": [
+        29,
+        229,
+        26,
+        124900
+      ],
+      "correct": false,
+      "expected": "3 2",
+      "prompt_tokens": 42,
+      "terminated": true
+    },
+    {
+      "id": "code_output_4",
+      "category": "code_output",
+      "response": "[0, 1, 4, 9]",
+      "token_ids": [
+        67,
+        24,
+        20,
+        229,
+        25,
+        20,
+        229,
+        28,
+        20,
+        229,
+        33,
+        69,
+        124900
+      ],
+      "correct": true,
+      "expected": "[0, 1, 4, 9]",
+      "prompt_tokens": 41,
+      "terminated": true
+    },
+    {
+      "id": "code_output_5",
+      "category": "code_output",
+      "response": "7 + 2",
+      "token_ids": [
+        31,
+        1510,
+        229,
+        26,
+        124900
+      ],
+      "correct": false,
+      "expected": "9",
+      "prompt_tokens": 57,
+      "terminated": true
+    },
+    {
+      "id": "json_30",
+      "category": "json",
+      "response": "{\n  \"name\": \"Imani\",\n  \"city\": \"Nairobi\"\n}",
+      "token_ids": [
+        2718,
+        229,
+        496,
+        2554,
+        6380,
+        496,
+        49,
+        44644,
+        6107,
+        229,
+        496,
+        47749,
+        6380,
+        496,
+        54,
+        26227,
+        5866,
+        1110,
+        101,
+        124900
+      ],
+      "correct": true,
+      "expected": {
+        "name": "Imani",
+        "city": "Nairobi"
+      },
+      "prompt_tokens": 43,
+      "terminated": true
+    },
+    {
+      "id": "json_31",
+      "category": "json",
+      "response": "{\n  \"name\": \"Hugo\",\n  \"city\": \"Porto\"\n}",
+      "token_ids": [
+        2718,
+        229,
+        496,
+        2554,
+        6380,
+        496,
+        48,
+        61876,
+        6107,
+        229,
+        496,
+        47749,
+        6380,
+        496,
+        12916,
+        87,
+        1110,
+        101,
+        124900
+      ],
+      "correct": true,
+      "expected": {
+        "name": "Hugo",
+        "city": "Porto"
+      },
+      "prompt_tokens": 40,
+      "terminated": true
+    },
+    {
+      "id": "json_32",
+      "category": "json",
+      "response": "{\n  \"name\": \"Yuki\",\n  \"city\": \"Kyoto\"\n}",
+      "token_ids": [
+        2718,
+        229,
+        496,
+        2554,
+        6380,
+        496,
+        65,
+        17120,
+        6107,
+        229,
+        496,
+        47749,
+        6380,
+        496,
+        106198,
+        5051,
+        1110,
+        101,
+        124900
+      ],
+      "correct": true,
+      "expected": {
+        "name": "Yuki",
+        "city": "Kyoto"
+      },
+      "prompt_tokens": 41,
+      "terminated": true
+    },
+    {
+      "id": "json_33",
+      "category": "json",
+      "response": "{\n  \"name\": \"Amara\",\n  \"city\": \"Accra\"\n}",
+      "token_ids": [
+        2718,
+        229,
+        496,
+        2554,
+        6380,
+        496,
+        6369,
+        2648,
+        6107,
+        229,
+        496,
+        47749,
+        6380,
+        496,
+        12811,
+        352,
+        1110,
+        101,
+        124900
+      ],
+      "correct": true,
+      "expected": {
+        "name": "Amara",
+        "city": "Accra"
+      },
+      "prompt_tokens": 42,
+      "terminated": true
+    },
+    {
+      "id": "tool_json_34",
+      "category": "tool_json",
+      "response": "{\n  \"tool\": \"get_weather\",\n  \"arguments\": {\n    \"city\": \"Oslo\",\n    \"unit\": \"celsius\"\n  }\n}",
+      "token_ids": [
+        2718,
+        229,
+        496,
+        46765,
+        6380,
+        496,
+        1265,
+        71,
+        51492,
+        6107,
+        229,
+        496,
+        56735,
+        6380,
+        827,
+        360,
+        496,
+        47749,
+        6380,
+        496,
+        14306,
+        1336,
+        6107,
+        360,
+        496,
+        10328,
+        6380,
+        496,
+        75,
+        41592,
+        1110,
+        229,
+        1130,
+        101,
+        124900
+      ],
+      "correct": true,
+      "expected": {
+        "tool": "get_weather",
+        "arguments": {
+          "city": "Oslo",
+          "unit": "celsius"
+        }
+      },
+      "prompt_tokens": 79,
+      "terminated": true
+    },
+    {
+      "id": "tool_json_35",
+      "category": "tool_json",
+      "response": "{\n  \"tool\": \"get_weather\",\n  \"arguments\": {\n    \"city\": \"Lima\",\n    \"unit\": \"celsius\"\n  }\n}",
+      "token_ids": [
+        2718,
+        229,
+        496,
+        46765,
+        6380,
+        496,
+        1265,
+        71,
+        51492,
+        6107,
+        229,
+        496,
+        56735,
+        6380,
+        827,
+        360,
+        496,
+        47749,
+        6380,
+        496,
+        52,
+        3505,
+        6107,
+        360,
+        496,
+        10328,
+        6380,
+        496,
+        75,
+        41592,
+        1110,
+        229,
+        1130,
+        101,
+        124900
+      ],
+      "correct": true,
+      "expected": {
+        "tool": "get_weather",
+        "arguments": {
+          "city": "Lima",
+          "unit": "celsius"
+        }
+      },
+      "prompt_tokens": 79,
+      "terminated": true
+    },
+    {
+      "id": "tool_json_36",
+      "category": "tool_json",
+      "response": "{\n  \"tool\": \"get_weather\",\n  \"arguments\": {\n    \"city\": \"Miami\",\n    \"unit\": \"fahrenheit\"\n  }\n}",
+      "token_ids": [
+        2718,
+        229,
+        496,
+        46765,
+        6380,
+        496,
+        1265,
+        71,
+        51492,
+        6107,
+        229,
+        496,
+        56735,
+        6380,
+        827,
+        360,
+        496,
+        47749,
+        6380,
+        496,
+        53,
+        17772,
+        6107,
+        360,
+        496,
+        10328,
+        6380,
+        496,
+        16241,
+        7105,
+        1110,
+        229,
+        1130,
+        101,
+        124900
+      ],
+      "correct": true,
+      "expected": {
+        "tool": "get_weather",
+        "arguments": {
+          "city": "Miami",
+          "unit": "fahrenheit"
+        }
+      },
+      "prompt_tokens": 79,
+      "terminated": true
+    },
+    {
+      "id": "tool_json_37",
+      "category": "tool_json",
+      "response": "{\n  \"tool\": \"get_weather\",\n  \"arguments\": {\n    \"city\": \"Rome\",\n    \"unit\": \"celsius\"\n  }\n}",
+      "token_ids": [
+        2718,
+        229,
+        496,
+        46765,
+        6380,
+        496,
+        1265,
+        71,
+        51492,
+        6107,
+        229,
+        496,
+        56735,
+        6380,
+        827,
+        360,
+        496,
+        47749,
+        6380,
+        496,
+        58,
+        570,
+        6107,
+        360,
+        496,
+        10328,
+        6380,
+        496,
+        75,
+        41592,
+        1110,
+        229,
+        1130,
+        101,
+        124900
+      ],
+      "correct": true,
+      "expected": {
+        "tool": "get_weather",
+        "arguments": {
+          "city": "Rome",
+          "unit": "celsius"
+        }
+      },
+      "prompt_tokens": 79,
+      "terminated": true
+    },
+    {
+      "id": "recall_4_lines_0",
+      "category": "recall_4_lines",
+      "response": "The access code is 66002. The records mention items being archived, but the question asks for the access code, which is given at the beginning: 66002.\n\nAnswer: 66002",
+      "token_ids": [
+        597,
+        2696,
+        4713,
+        355,
+        229,
+        21732,
+        5342,
+        22,
+        440,
+        7768,
+        5668,
+        6802,
+        1493,
+        3386,
+        1898,
+        20,
+        702,
+        278,
+        3451,
+        20589,
+        374,
+        278,
+        2696,
+        4713,
+        20,
+        643,
+        355,
+        2496,
+        462,
+        278,
+        5908,
+        34,
+        229,
+        21732,
+        5342,
+        63908,
+        39630,
+        34,
+        229,
+        21732,
+        5342,
+        124900
+      ],
+      "correct": false,
+      "expected": "66002",
+      "prompt_tokens": 77,
+      "terminated": true
+    },
+    {
+      "id": "recall_4_lines_1",
+      "category": "recall_4_lines",
+      "response": "46081",
+      "token_ids": [
+        25090,
+        9230,
+        124900
+      ],
+      "correct": true,
+      "expected": "46081",
+      "prompt_tokens": 77,
+      "terminated": true
+    },
+    {
+      "id": "recall_4_lines_2",
+      "category": "recall_4_lines",
+      "response": "The access code is 37524. The records mention items being archived, but the question asks for the access code, which is given at the beginning: 37524. \n\nAnswer: 37524",
+      "token_ids": [
+        597,
+        2696,
+        4713,
+        355,
+        229,
+        22937,
+        1325,
+        22,
+        440,
+        7768,
+        5668,
+        6802,
+        1493,
+        3386,
+        1898,
+        20,
+        702,
+        278,
+        3451,
+        20589,
+        374,
+        278,
+        2696,
+        4713,
+        20,
+        643,
+        355,
+        2496,
+        462,
+        278,
+        5908,
+        34,
+        229,
+        22937,
+        1325,
+        22,
+        64019,
+        39630,
+        34,
+        229,
+        22937,
+        1325,
+        124900
+      ],
+      "correct": false,
+      "expected": "37524",
+      "prompt_tokens": 77,
+      "terminated": true
+    },
+    {
+      "id": "recall_4_lines_3",
+      "category": "recall_4_lines",
+      "response": "31138",
+      "token_ids": [
+        23171,
+        2481,
+        124900
+      ],
+      "correct": true,
+      "expected": "31138",
+      "prompt_tokens": 77,
+      "terminated": true
+    },
+    {
+      "id": "recall_48_lines_0",
+      "category": "recall_48_lines",
+      "response": "35519",
+      "token_ids": [
+        26869,
+        412,
+        124900
+      ],
+      "correct": true,
+      "expected": "35519",
+      "prompt_tokens": 561,
+      "terminated": true
+    },
+    {
+      "id": "recall_48_lines_1",
+      "category": "recall_48_lines",
+      "response": "68798",
+      "token_ids": [
+        25718,
+        2860,
+        124900
+      ],
+      "correct": true,
+      "expected": "68798",
+      "prompt_tokens": 561,
+      "terminated": true
+    },
+    {
+      "id": "recall_48_lines_2",
+      "category": "recall_48_lines",
+      "response": "49425",
+      "token_ids": [
+        32678,
+        1197,
+        124900
+      ],
+      "correct": true,
+      "expected": "49425",
+      "prompt_tokens": 561,
+      "terminated": true
+    },
+    {
+      "id": "recall_48_lines_3",
+      "category": "recall_48_lines",
+      "response": "83446",
+      "token_ids": [
+        26540,
+        3694,
+        124900
+      ],
+      "correct": true,
+      "expected": "83446",
+      "prompt_tokens": 561,
+      "terminated": true
+    },
+    {
+      "id": "recall_112_lines_0",
+      "category": "recall_112_lines",
+      "response": "49096",
+      "token_ids": [
+        27428,
+        8740,
+        124900
+      ],
+      "correct": true,
+      "expected": "49096",
+      "prompt_tokens": 1265,
+      "terminated": true
+    },
+    {
+      "id": "recall_112_lines_1",
+      "category": "recall_112_lines",
+      "response": "29280</think>29280",
+      "token_ids": [
+        24785,
+        1845,
+        124902,
+        24785,
+        1845,
+        124900
+      ],
+      "correct": false,
+      "expected": "29280",
+      "prompt_tokens": 1265,
+      "terminated": true
+    },
+    {
+      "id": "recall_112_lines_2",
+      "category": "recall_112_lines",
+      "response": "55127</think>55127",
+      "token_ids": [
+        32036,
+        1641,
+        124902,
+        32036,
+        1641,
+        124900
+      ],
+      "correct": false,
+      "expected": "55127",
+      "prompt_tokens": 1265,
+      "terminated": true
+    },
+    {
+      "id": "recall_112_lines_3",
+      "category": "recall_112_lines",
+      "response": "38933",
+      "token_ids": [
+        28749,
+        2124,
+        124900
+      ],
+      "correct": true,
+      "expected": "38933",
+      "prompt_tokens": 1265,
+      "terminated": true
+    }
+  ],
+  "summary": {
+    "arc": {
+      "ARC-Easy": {
+        "correct": 53,
+        "total": 64,
+        "accuracy": 0.828125,
+        "wilson95": [
+          0.7178655850983409,
+          0.9012235873268377
+        ]
+      },
+      "ARC-Challenge": {
+        "correct": 41,
+        "total": 64,
+        "accuracy": 0.640625,
+        "wilson95": [
+          0.5182062363615084,
+          0.7471176946778538
+        ]
+      }
+    },
+    "probes": {
+      "format": {
+        "correct": 5,
+        "total": 8,
+        "accuracy": 0.625,
+        "wilson95": [
+          0.30573785458380187,
+          0.863158240538479
+        ]
+      },
+      "arithmetic": {
+        "correct": 0,
+        "total": 8,
+        "accuracy": 0.0,
+        "wilson95": [
+          0.0,
+          0.3244156195108769
+        ]
+      },
+      "knowledge": {
+        "correct": 3,
+        "total": 8,
+        "accuracy": 0.375,
+        "wilson95": [
+          0.13684175946152105,
+          0.6942621454161981
+        ]
+      },
+      "code_output": {
+        "correct": 1,
+        "total": 6,
+        "accuracy": 0.16666666666666666,
+        "wilson95": [
+          0.03005258587173032,
+          0.563509436563646
+        ]
+      },
+      "json": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0,
+        "wilson95": [
+          0.5100999795960008,
+          1.0
+        ]
+      },
+      "tool_json": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0,
+        "wilson95": [
+          0.5100999795960008,
+          1.0
+        ]
+      },
+      "recall_4_lines": {
+        "correct": 2,
+        "total": 4,
+        "accuracy": 0.5,
+        "wilson95": [
+          0.15003570882017148,
+          0.8499642911798285
+        ]
+      },
+      "recall_48_lines": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0,
+        "wilson95": [
+          0.5100999795960008,
+          1.0
+        ]
+      },
+      "recall_112_lines": {
+        "correct": 2,
+        "total": 4,
+        "accuracy": 0.5,
+        "wilson95": [
+          0.15003570882017148,
+          0.8499642911798285
+        ]
+      }
+    },
+    "overall_probes": {
+      "correct": 25,
+      "total": 50
+    },
+    "elapsed_seconds": 65.04067494196352
+  }
+}

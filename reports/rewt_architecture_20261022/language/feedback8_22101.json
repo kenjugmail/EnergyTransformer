@@ -1,0 +1,19 @@
+{
+  "best_step": 512,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "feedback8_22101",
+    "overrides": {
+      "backbone": "scan",
+      "feedback_stride": 8
+    },
+    "seed": 22101,
+    "variant": "feedback8"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22101/best.pt",
+  "checkpoint_sha256": "cd6b5d8550ce41a3d17d930748fd507c41fb22e088edcbedba24c8e0fba4f96c",
+  "parameters": 249040,
+  "training_cpu_seconds": 123.79745342400292,
+  "validation_bpb": 2.0966942370447996,
+  "validation_cpu_seconds": 1.48183542400011
+}

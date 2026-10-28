@@ -1,0 +1,12 @@
+{
+  "case": {
+    "delta_size": 16,
+    "name": "delta_22202",
+    "seed": 22202
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/binding_memory/delta_22202/best.pt",
+  "checkpoint_sha256": "31bb52cdcf056036599f070c8c049afcd72f44c5c5c21461fafc227d587601c0",
+  "parameters": 34321,
+  "training_cpu_seconds": 73.46754156799938,
+  "validation_accuracy": 0.9973958333333334
+}

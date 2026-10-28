@@ -1,0 +1,196 @@
+{
+  "arm": "neural_energy",
+  "seed": 101,
+  "checkpoint_sha256": "3c9c2a47b1d4fbfdcdfb5c86eb54f577f3c894d90459061785bf12553489a421",
+  "inference_policy": {
+    "best_validation_bpb": 2.9203572503860515,
+    "halting_tolerance": 0.0,
+    "rounds": 4,
+    "validation": [
+      {
+        "bpb": 2.925444497198573,
+        "cpu_seconds": 0.32992076800019277,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "bpb": 2.925444497198573,
+          "brier": 0.6963138580322266,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 2048,
+            "energy_calls": 256,
+            "gradient_calls": 128
+          },
+          "cpu_ms_per_byte": 0.16109412500009412,
+          "cpu_seconds": 0.32992076800019277,
+          "energy_calls_per_position": 2.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 1.0,
+          "next_byte_accuracy": 0.4306640625,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 0.3322031879797578
+        },
+        "rounds": 1
+      },
+      {
+        "bpb": 2.9228427436563207,
+        "cpu_seconds": 0.1608822880000389,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "bpb": 2.9228427436563207,
+          "brier": 0.6961939930915833,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 4096,
+            "energy_calls": 512,
+            "gradient_calls": 256
+          },
+          "cpu_ms_per_byte": 0.07855580468751899,
+          "cpu_seconds": 0.1608822880000389,
+          "energy_calls_per_position": 4.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 2.0,
+          "next_byte_accuracy": 0.4306640625,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 0.16035606805235147
+        },
+        "rounds": 2
+      },
+      {
+        "bpb": 2.9210482766772183,
+        "cpu_seconds": 0.2546820640000078,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "bpb": 2.9210482766772183,
+          "brier": 0.6962280869483948,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 8192,
+            "energy_calls": 1024,
+            "gradient_calls": 512
+          },
+          "cpu_ms_per_byte": 0.12435647656250381,
+          "cpu_seconds": 0.2546820640000078,
+          "energy_calls_per_position": 8.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 4.0,
+          "next_byte_accuracy": 0.42919921875,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 0.3569670289289206
+        },
+        "rounds": 4
+      },
+      {
+        "bpb": 2.9203572503860515,
+        "cpu_seconds": 0.4738280639999175,
+        "halting_tolerance": 0.0,
+        "metrics": {
+          "bpb": 2.9203572503860515,
+          "brier": 0.6963075399398804,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 16384,
+            "energy_calls": 2048,
+            "gradient_calls": 1024
+          },
+          "cpu_ms_per_byte": 0.23136135937495972,
+          "cpu_seconds": 0.4738280639999175,
+          "energy_calls_per_position": 16.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 8.0,
+          "next_byte_accuracy": 0.43017578125,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 0.5151161899557337
+        },
+        "rounds": 8
+      },
+      {
+        "bpb": 2.9203596581431635,
+        "cpu_seconds": 0.5461916639999345,
+        "halting_tolerance": 0.001,
+        "metrics": {
+          "bpb": 2.9203596581431635,
+          "brier": 0.6963098049163818,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 16384,
+            "energy_calls": 2048,
+            "gradient_calls": 1024
+          },
+          "cpu_ms_per_byte": 0.266695148437468,
+          "cpu_seconds": 0.5461916639999345,
+          "energy_calls_per_position": 16.0,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 8.0,
+          "next_byte_accuracy": 0.43017578125,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 0.6312005650252104
+        },
+        "rounds": 8
+      },
+      {
+        "bpb": 2.9205667252548024,
+        "cpu_seconds": 0.40057588799982113,
+        "halting_tolerance": 0.005,
+        "metrics": {
+          "bpb": 2.9205667252548024,
+          "brier": 0.6962864398956299,
+          "cost_batched_calls": {
+            "accepted": 0,
+            "attempts": 12432,
+            "energy_calls": 1554,
+            "gradient_calls": 777
+          },
+          "cpu_ms_per_byte": 0.19559369531241266,
+          "cpu_seconds": 0.40057588799982113,
+          "energy_calls_per_position": 12.140625,
+          "evaluated_bytes": 2048,
+          "gradient_calls_per_position": 6.0703125,
+          "next_byte_accuracy": 0.4296875,
+          "python_peak_tracemalloc_bytes": null,
+          "wall_seconds": 0.4243586469674483
+        },
+        "rounds": 8
+      }
+    ]
+  },
+  "device": "cpu",
+  "torch_threads": 1,
+  "measurements": [
+    {
+      "batch_size": 1,
+      "prefix_bytes": 32,
+      "generated_bytes_per_sample": 96,
+      "includes_prefix_prefill": true,
+      "cpu_seconds": [
+        0.17808632000000002,
+        0.17520524800000015,
+        0.17741363199999993
+      ],
+      "wall_seconds": [
+        0.1815704939654097,
+        0.17523151298519224,
+        0.17745650000870228
+      ],
+      "median_cpu_ms_per_generated_byte": 1.8480586666666659,
+      "median_wall_ms_per_generated_byte": 1.8485052084239821
+    },
+    {
+      "batch_size": 10,
+      "prefix_bytes": 32,
+      "generated_bytes_per_sample": 96,
+      "includes_prefix_prefill": true,
+      "cpu_seconds": [
+        0.21965768000000008,
+        0.21719451199999984,
+        0.21942304000000012
+      ],
+      "wall_seconds": [
+        0.22059650695882738,
+        0.2214630029629916,
+        0.21946297294925898
+      ],
+      "median_cpu_ms_per_generated_byte": 0.2285656666666668,
+      "median_wall_ms_per_generated_byte": 0.22978802808211185
+    }
+  ]
+}

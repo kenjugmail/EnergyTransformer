@@ -1,0 +1,1 @@
+Stopped before any validation or test evaluation: neural control checkpoint arm was misspelled. Partial training is excluded from results; all four fits restart from the declared random weights.

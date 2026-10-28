@@ -1,0 +1,26 @@
+{
+  "seed": 202,
+  "replayed_step": 341,
+  "checkpoint_sha256": "ef06baa1220b2909c8707152ef84a7cb6c767f794750ac58648dafa1391e5876",
+  "rounds": 1,
+  "curriculum_stage": 2,
+  "state_gradient_interval": 16,
+  "loss": 0.5216394662857056,
+  "ce": 0.3950400948524475,
+  "all_gradient_elements_finite": true,
+  "nonfinite_gradient_elements": 0,
+  "float32_norm": 1042.2130126953125,
+  "float64_norm": 1042.2487022068015,
+  "maximum_absolute_gradient": 99.32259368896484,
+  "initialization_corruption_fraction": 0.125,
+  "original_filter_diagnostics": {
+    "raw_gradient_norm": 1042.2487022068015,
+    "filtered_gradient_norm": 1042.2487022068015,
+    "applied_gradient_norm": 0.9999999997746002,
+    "high_frequency_fraction": 0.40142706959583524,
+    "spike": true,
+    "filtered_spike": true,
+    "clipped": true
+  },
+  "original_diagnostics_json_finite": true
+}

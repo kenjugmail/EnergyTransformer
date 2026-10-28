@@ -1,0 +1,22 @@
+{
+  "fourier_rewt": {
+    "coherence": 1.0,
+    "fluency": 1.0,
+    "relevance": 1.0
+  },
+  "full_rewt": {
+    "coherence": 1.0,
+    "fluency": 1.0,
+    "relevance": 1.0
+  },
+  "neural_energy": {
+    "coherence": 1.0,
+    "fluency": 1.0,
+    "relevance": 1.0
+  },
+  "transformer": {
+    "coherence": 1.0,
+    "fluency": 1.0,
+    "relevance": 1.0
+  }
+}

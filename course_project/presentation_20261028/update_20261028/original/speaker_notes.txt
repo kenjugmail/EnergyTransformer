@@ -1,0 +1,119 @@
+REWT · TEN-MINUTE REHEARSAL SCRIPT
+12 main slides, 3 backup slides. Timings total 10:00.
+
+SLIDE 1 · 25 seconds
+
+My project asks whether a model can improve an answer by revising its internal state before emitting it. REWT stands for Recurrent Energy Wave Transformer. I will explain energy and waves intuitively, then separate what the experiments establish from what is still unproven. The strongest results so far concern learned memory and a new repeated-read module.
+
+Sources / evidence:
+Project implementation: rewt/model.py, rewt/architecture.py, rewt/reasoning.py
+
+SLIDE 2 · 40 seconds
+
+Suppose the input says A leads to B, B to C and C to D, with distractors and shuffled order. To move three times from A, the model needs to use B as its next query and then C. We can score both the intermediate sequence and the final answer. This is a deliberately narrow test of composition. It is useful because a correct-looking final answer cannot hide a wrong intermediate trace.
+
+Sources / evidence:
+Task generators: rewt/tasks.py, rewt/curriculum.py; new study: scripts/study_rewt_reasoning.py
+
+SLIDE 3 · 55 seconds
+
+Energy here is just a scalar compatibility score, not physical energy. Imagine the current state as a ball on this landscape. A gradient tells it which direction lowers the score. Backtracking rejects a proposed update that raises the current energy. The landscape is learned, so a low valley can still represent a wrong answer. Also, gradient descent may reach a local valley rather than the global minimum. This drawing is a one-dimensional illustration; the actual joint state has many coordinates.
+
+Sources / evidence:
+Energy Transformer: https://arxiv.org/abs/2302.07253
+Implementation: rewt/model.py, energy(), gradient(), refine(). Plot is illustrative, generated locally.
+
+SLIDE 4 · 55 seconds
+
+The language-model core has recurrent, attention, feedforward and output blocks. Proposal networks build the initial guess from observed context. One scalar energy then scores the joint workspace. Its positive quadratic term anchors the state, while learned cosine components can couple different blocks. A wave is simply a Fourier component over state coordinates. This is different from applying a Fourier transform across the token sequence. The implementation is a small research model; calling it energy-based does not imply that every useful behavior is caused by the wave term.
+
+Sources / evidence:
+Core implementation: rewt/model.py
+Derivations: reports/rewt_architecture_20261022/DESIGN.md
+
+SLIDE 5 · 50 seconds
+
+There are two different optimization problems. During training, the loss compares predictions with labels and updates the parameters that define proposals and the energy landscape. During inference, those weights stay fixed. Only the candidate state changes. The state update uses the derivative of energy with respect to the state, not an optimizer step on the model weights. In the experiments I verify that inference leaves the checkpoint tensors unchanged. A separate numerical test checks the hand-derived state gradient against automatic differentiation.
+
+Sources / evidence:
+Training and inference: rewt/model.py, rewt/reasoning.py
+Verification: tests_rewt/test_reasoning.py; reports/rewt_reasoning_20261026/verification.json
+
+SLIDE 6 · 40 seconds
+
+A numerical guarantee is not an accuracy result. I separately check descent, complete answers and cost. The studies keep semantic problem identities separate across training, validation and test, so changing the wording cannot turn a training problem into a test example. Checkpoints are selected on validation. The fresh tests run after the declared fits are complete. Three initialization seeds reveal some training variation, although three seeds and synthetic tasks are still a limited basis for general claims.
+
+Sources / evidence:
+Study plans and source/data checksums: reports/rewt_architecture_20261022/plan.json and reports/rewt_reasoning_20261026/plan.json
+
+SLIDE 7 · 55 seconds
+
+The clearest earlier architectural success is persistent delta memory. The model sees a key written twice and must retrieve its latest value despite distractors. With explicit training of binding, copy and writes, delta memory reaches 95.7 percent, compared with 54.9 percent for the supervised local control. The local attention window is only sixteen bytes. At the longest 191-byte gap, the difference is 83.9 versus 9.4 percent. The delta model is slightly larger and uses an additional write-gate label. This supports that combined memory recipe within a narrow grammar, not unrestricted memory or general reasoning.
+
+Sources / evidence:
+Local results: reports/rewt_architecture_20261022/summary.json, memory_ablation and memory_ablation_groups
+Delta-rule background: https://arxiv.org/abs/2406.06484
+
+SLIDE 8 · 50 seconds
+
+The core limitation was more revealing than an average score. On frozen checkpoints, removing refinement did not hurt complete-answer accuracy. For the GRU control, the zero-round policy was slightly better; for delta, it tied. Refinement did improve cross-entropy, but that is not the same as correcting whole answers. The landscape was conditioned once on the prefix. Extra optimization rounds did not perform another fact lookup. That observation motivated changing the information flow rather than simply adding more rounds. These figures are validation interventions, not new test scores.
+
+Sources / evidence:
+reports/rewt_architecture_20261022/refinement_contribution.json and FINDINGS.md
+
+SLIDE 9 · 65 seconds
+
+The new module uses a learned extractor over raw bytes. It predicts fact keys and values, a starting query and the requested number of reads. The current query softly attends to memory. The predicted result becomes the next query. For the example, that is A to B, then B to C, then C to D. Energy refinement can operate inside each read, but changing the retrieved context creates a new energy; there is no single descent guarantee across the whole chain. This is a structured reasoning head. It decodes intermediate nodes and their length, then serializes the trace. It is not free-form language generation. Parsers and solutions are used only to supply training labels and score results afterward.
+
+Sources / evidence:
+rewt/reasoning.py; scripts/study_rewt_reasoning.py
+Illustrative flow, not a claim about this example’s measured prediction.
+
+SLIDE 10 · 65 seconds
+
+The main fresh test contains 960 prompts, representing 480 underlying problems in familiar and two withheld phrasings. The fixed-query control averages 27.4 percent. Every repeated-read seed scores 100 percent, both with and without energy refinement. Both also solve all 480 extra prompts with eight distractor edges instead of the two used in training. The important attribution is that changing the query helps here; the waves show no accuracy advantage. Removing energy from the trained energy checkpoints also preserves the perfect score. These are matched ablations of a new structured head, not a comparison against a Transformer or the old autoregressive model.
+
+Sources / evidence:
+reports/rewt_reasoning_20261026/summary.json, test_results.json and test_plan.json
+All 18,720 model/condition output rows were rechecked against the saved tasks.
+
+SLIDE 11 · 50 seconds
+
+One hundred percent needs its scope stated immediately. These are acyclic letter-rule chains with at most three steps, a known vocabulary and a small set of grammars. The model is strongly biased toward differentiable lookup and receives explicit intermediate supervision. It does not establish fluent text or improved arithmetic. Wording transfer remains fragile: mean validation accuracy is 71.6 percent on a split containing different withheld phrasings, even though the test phrasings happen to be easier for this architecture. The old language model is not silently replaced by this specialized head.
+
+Sources / evidence:
+Study scope and exact templates: scripts/study_rewt_reasoning.py; rewt/curriculum.py
+Validation outputs and selection scores: reports/rewt_reasoning_20261026/
+
+SLIDE 12 · 50 seconds
+
+The next objective is to make refinement earn its cost. That means teaching it to repair an actual wrong answer, integrating the repeated-read mechanism into a general language model, and comparing quality at matched compute with strong Transformer controls. The current contribution is an implemented, audited research system with positive and negative evidence. Persistent memory and repeated reads work on bounded tasks. Energy descent is reliable numerically, but it is not by itself evidence of reasoning. That distinction is the main lesson I would like you to take away.
+
+Sources / evidence:
+Future directions grounded in reports/rewt_architecture_20261022/FINDINGS.md and reports/rewt_reasoning_20261026/FINDINGS.md
+
+SLIDE 13 · 0 seconds
+
+Backup explanation: delta is the displacement from a new read’s anchor. Positive diagonal precision provides quadratic stabilization, and bounded Fourier modes add learned preferences. The analytic derivative is differentiated through during training. Candidate steps are checked under the same coefficients within each read. Since the next read changes those coefficients, numerical descent does not apply across reads. This formula describes the new head specifically; the older language-model energy also includes block-compatibility penalties.
+
+Sources / evidence:
+rewt/reasoning.py: energy(), gradient(), refine(). Numerical comparison: tests_rewt/test_reasoning.py
+
+SLIDE 14 · 0 seconds
+
+Backup cost detail: the zero-energy arm has the same 68,502 allocated parameters, but 60,950 receive gradients. The energy-only parameters are inactive when no refinement is executed. Mean training process times include batch preparation and optimization, excluding validation, initialization and checkpoint I/O. The frozen-policy intervention uses the already trained energy models: turning off energy leaves all test answers correct, while freezing the query leaves only one-hop tasks correct. A zero-width bootstrap interval for the tied perfect scores must not be interpreted as proof of universal equality.
+
+Sources / evidence:
+reports/rewt_reasoning_20261026/summary.json
+Training CPU totals: 276.95 seconds over nine main fits; smoke runs and other work are additional.
+
+SLIDE 15 · 0 seconds
+
+Background references are linked on this slide. The project’s numerical and quality results are from the local recorded experiments, not borrowed from those papers. The new repeated-read head is an explicitly constrained research extension and should not be presented as a reproduction of the published Energy Transformer or DeltaNet systems.
+
+Sources / evidence:
+https://arxiv.org/abs/1706.03762
+https://arxiv.org/abs/2302.07253
+https://arxiv.org/abs/2406.06484
+reports/rewt_architecture_20261022/FINDINGS.md
+reports/rewt_reasoning_20261026/FINDINGS.md

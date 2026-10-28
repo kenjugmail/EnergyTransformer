@@ -1,0 +1,30 @@
+{
+  "best_step": 512,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "combined_22102",
+    "overrides": {
+      "backbone": "scan",
+      "delta_size": 16,
+      "feedback_stride": 8,
+      "rounds": 4,
+      "solver": "preconditioned",
+      "step_size": 0.75
+    },
+    "seed": 22102,
+    "variant": "combined"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22102/best.pt",
+  "checkpoint_sha256": "1bc5168126913d9b93835f3098860d4a89821bd36c2ef99bfae9ee79fb7c2902",
+  "parameters": 259889,
+  "test": {
+    "bpb": 2.067989103582748,
+    "original_bytes": 63549,
+    "token_accuracy": 0.32568359375,
+    "token_nll": 2.7799212485551834,
+    "tokens": 32768
+  },
+  "training_cpu_seconds": 178.7002886400005,
+  "validation_bpb": 2.0777301369283836,
+  "validation_cpu_seconds": 2.2925442880000446
+}

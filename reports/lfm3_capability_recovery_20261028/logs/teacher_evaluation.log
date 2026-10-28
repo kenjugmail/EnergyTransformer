@@ -1,0 +1,165 @@
+Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/286 [00:00<00:04, 59.82it/s]Loading weights:   5%|▍         | 14/286 [00:00<00:11, 24.46it/s]Loading weights:   6%|▋         | 18/286 [00:01<00:22, 12.17it/s]Loading weights:   8%|▊         | 22/286 [00:01<00:23, 11.39it/s]Loading weights:   8%|▊         | 24/286 [00:01<00:26,  9.94it/s]Loading weights:   9%|▉         | 26/286 [00:02<00:29,  8.90it/s]Loading weights:  12%|█▏        | 33/286 [00:02<00:15, 16.00it/s]Loading weights:  13%|█▎        | 36/286 [00:02<00:14, 17.16it/s]Loading weights:  14%|█▎        | 39/286 [00:02<00:19, 12.85it/s]Loading weights:  15%|█▍        | 42/286 [00:03<00:36,  6.69it/s]Loading weights:  16%|█▋        | 47/286 [00:04<00:27,  8.70it/s]Loading weights:  17%|█▋        | 49/286 [00:04<00:34,  6.92it/s]Loading weights:  20%|█▉        | 57/286 [00:04<00:18, 12.23it/s]Loading weights:  21%|██        | 60/286 [00:05<00:17, 13.27it/s]Loading weights:  22%|██▏       | 63/286 [00:05<00:17, 12.47it/s]Loading weights:  23%|██▎       | 65/286 [00:05<00:20, 10.53it/s]Loading weights:  25%|██▍       | 71/286 [00:06<00:23,  9.18it/s]Loading weights:  28%|██▊       | 79/286 [00:06<00:15, 13.40it/s]Loading weights:  30%|███       | 86/286 [00:06<00:11, 16.85it/s]Loading weights:  31%|███       | 89/286 [00:07<00:18, 10.41it/s]Loading weights:  32%|███▏      | 91/286 [00:08<00:21,  9.28it/s]Loading weights:  33%|███▎      | 95/286 [00:08<00:19,  9.63it/s]Loading weights:  34%|███▍      | 97/286 [00:09<00:27,  6.97it/s]Loading weights:  37%|███▋      | 105/286 [00:09<00:14, 12.80it/s]Loading weights:  38%|███▊      | 110/286 [00:09<00:12, 13.62it/s]Loading weights:  40%|███▉      | 113/286 [00:10<00:19,  9.10it/s]Loading weights:  40%|████      | 115/286 [00:10<00:21,  7.86it/s]Loading weights:  42%|████▏     | 120/286 [00:10<00:14, 11.24it/s]Loading weights:  45%|████▌     | 129/286 [00:11<00:08, 18.09it/s]Loading weights:  47%|████▋     | 134/286 [00:11<00:09, 16.88it/s]Loading weights:  48%|████▊     | 137/286 [00:12<00:13, 10.68it/s]Loading weights:  49%|████▊     | 139/286 [00:12<00:15,  9.31it/s]Loading weights:  53%|█████▎    | 152/286 [00:12<00:06, 20.55it/s]Loading weights:  55%|█████▍    | 157/286 [00:12<00:05, 22.69it/s]Loading weights:  57%|█████▋    | 162/286 [00:13<00:09, 12.62it/s]Loading weights:  60%|█████▉    | 171/286 [00:13<00:05, 19.23it/s]Loading weights:  62%|██████▏   | 177/286 [00:13<00:04, 23.61it/s]Loading weights:  64%|██████▍   | 183/286 [00:14<00:04, 21.26it/s]Loading weights:  66%|██████▌   | 188/286 [00:14<00:05, 17.12it/s]Loading weights:  67%|██████▋   | 192/286 [00:14<00:05, 15.94it/s]Loading weights:  68%|██████▊   | 195/286 [00:15<00:06, 13.71it/s]Loading weights:  70%|███████   | 201/286 [00:15<00:04, 18.85it/s]Loading weights:  72%|███████▏  | 205/286 [00:15<00:03, 21.69it/s]Loading weights:  73%|███████▎  | 209/286 [00:16<00:07, 10.27it/s]Loading weights:  74%|███████▍  | 212/286 [00:16<00:07,  9.81it/s]Loading weights:  75%|███████▌  | 215/286 [00:17<00:09,  7.59it/s]Loading weights:  76%|███████▌  | 217/286 [00:17<00:09,  6.95it/s]Loading weights:  78%|███████▊  | 223/286 [00:17<00:05, 11.17it/s]Loading weights:  80%|████████  | 230/286 [00:18<00:04, 13.62it/s]Loading weights:  81%|████████▏ | 233/286 [00:19<00:05,  9.51it/s]Loading weights:  82%|████████▏ | 235/286 [00:19<00:06,  8.09it/s]Loading weights:  84%|████████▎ | 239/286 [00:19<00:04,  9.60it/s]Loading weights:  87%|████████▋ | 249/286 [00:20<00:02, 13.35it/s]Loading weights:  90%|████████▉ | 256/286 [00:20<00:02, 14.65it/s]Loading weights:  90%|█████████ | 258/286 [00:21<00:02,  9.65it/s]Loading weights:  95%|█████████▌| 273/286 [00:21<00:00, 19.70it/s]Loading weights:  97%|█████████▋| 278/286 [00:21<00:00, 17.31it/s]Loading weights:  98%|█████████▊| 281/286 [00:22<00:00,  9.91it/s]Loading weights: 100%|██████████| 286/286 [00:22<00:00, 12.49it/s]
+{"stage": "arc", "completed": 32}
+{"stage": "arc", "completed": 64}
+{"stage": "arc", "completed": 96}
+{"stage": "arc", "completed": 128}
+{"stage": "probe", "id": "format_0", "category": "format", "response": "lavender", "token_ids": [8452, 2368, 124900], "correct": true, "expected": "lavender", "prompt_tokens": 19, "terminated": true}
+{"stage": "probe", "id": "format_1", "category": "format", "response": "TELESCOPE", "token_ids": [119884, 26679, 5856, 124900], "correct": true, "expected": "TELESCOPE", "prompt_tokens": 23, "terminated": true}
+{"stage": "probe", "id": "format_2", "category": "format", "response": "Reverse the characters in \"drawer\".  \nOriginal: d r a w e r  \nReversed: r e w a r d  \n\nOutput: **reward**? Wait, let's check:  \n- \"drawer\" letters: d, r, a, w, e, r  \n-", "token_ids": [1120, 5252, 278, 8426, 296, 496, 9671, 269, 2784, 3103, 28788, 34, 277, 376, 267, 288, 320, 376, 3103, 1120, 1552, 290, 34, 376, 320, 288, 267, 376, 277, 64650, 15190, 34, 7575, 5477, 507, 962, 39, 34689, 20, 2443, 589, 3498, 34, 3103, 21, 496, 9671, 269, 10, 10008, 34, 277, 20, 376, 20, 267, 20, 288, 20, 320, 20, 376, 3103, 21], "correct": false, "expected": "reward", "prompt_tokens": 24, "terminated": false}
+{"stage": "probe", "id": "format_3", "category": "format", "response": "apple, pear, plum", "token_ids": [40403, 20, 32115, 20, 45578, 124900], "correct": true, "expected": "apple, pear, plum", "prompt_tokens": 33, "terminated": true}
+{"stage": "probe", "id": "format_4", "category": "format", "response": "bridge", "token_ids": [25324, 124900], "correct": true, "expected": "bridge", "prompt_tokens": 26, "terminated": true}
+{"stage": "probe", "id": "format_5", "category": "format", "response": "29 is odd.", "token_ids": [1734, 355, 16636, 22, 124900], "correct": false, "expected": "odd", "prompt_tokens": 25, "terminated": true}
+{"stage": "probe", "id": "format_6", "category": "format", "response": "red  \ngreen  \nblue", "token_ids": [1096, 3103, 18825, 3103, 24475, 124900], "correct": false, "expected": "red\ngreen\nblue", "prompt_tokens": 31, "terminated": true}
+{"stage": "probe", "id": "format_7", "category": "format", "response": "silver_fox_runs", "token_ids": [47261, 420, 6393, 1473, 13752, 5994, 124900], "correct": true, "expected": "silver_fox_runs", "prompt_tokens": 31, "terminated": true}
+{"stage": "probe", "id": "arithmetic_0", "category": "arithmetic", "response": "38 + 27 = 65\n\nThe sum of 38 and 27 is 65.</think>65", "token_ids": [2481, 1510, 229, 1641, 550, 229, 2257, 8, 597, 9632, 302, 229, 2481, 309, 229, 1641, 355, 229, 2257, 22, 124902, 2257, 124900], "correct": false, "expected": "65", "prompt_tokens": 24, "terminated": true}
+{"stage": "probe", "id": "arithmetic_1", "category": "arithmetic", "response": "91 - 36 = 55\n\nAnswer: 55", "token_ids": [9505, 640, 229, 2523, 550, 229, 3377, 8, 39630, 34, 229, 3377, 124900], "correct": false, "expected": "55", "prompt_tokens": 24, "terminated": true}
+{"stage": "probe", "id": "arithmetic_2", "category": "arithmetic", "response": "12 * 7 = 84\n\n84", "token_ids": [873, 767, 229, 31, 550, 229, 8957, 8, 8957, 124900], "correct": false, "expected": "84", "prompt_tokens": 24, "terminated": true}
+{"stage": "probe", "id": "arithmetic_3", "category": "arithmetic", "response": "144 / 12 = 12\n\nAnswer: 12", "token_ids": [12947, 1406, 229, 873, 550, 229, 873, 8, 39630, 34, 229, 873, 124900], "correct": false, "expected": "12", "prompt_tokens": 24, "terminated": true}
+{"stage": "probe", "id": "arithmetic_4", "category": "arithmetic", "response": "We need to calculate 3 * (8 + 5). First, solve the parentheses: 8 + 5 = 13. Then multiply by 3: 3 * 13 = 39. So the answer is 39.\n\nAnswer with just the number: 39.</think>39", "token_ids": [2083, 1094, 310, 16420, 229, 27, 767, 342, 32, 1510, 229, 29, 690, 5206, 20, 11994, 278, 92510, 34, 229, 32, 1510, 229, 29, 550, 229, 1031, 22, 5150, 38984, 467, 229, 27, 34, 229, 27, 767, 229, 1031, 550, 229, 2687, 22, 1672, 278, 5141, 355, 229, 2687, 63908, 39630, 415, 1303, 278, 1579, 34, 229, 2687, 22, 124902, 2687, 124900], "correct": false, "expected": "39", "prompt_tokens": 27, "terminated": true}
+{"stage": "probe", "id": "arithmetic_5", "category": "arithmetic", "response": "2 ** 6 = 2^6 = 64.\n\n64", "token_ids": [26, 7575, 229, 30, 550, 229, 26, 70, 30, 550, 229, 2251, 63908, 2251, 124900], "correct": false, "expected": "64", "prompt_tokens": 24, "terminated": true}
+{"stage": "probe", "id": "arithmetic_6", "category": "arithmetic", "response": "250 * 0.12 = 30\n\nWe can compute as: 250 * 0.12 = 250 * (12/100) = (250 * 12) / 100 = 3000 / 100 = 30.\n\nThus, the result is 30.</think>30", "token_ids": [7395, 767, 229, 24, 22, 873, 550, 229, 1163, 8, 2083, 510, 22999, 405, 34, 229, 7395, 767, 229, 24, 22, 873, 550, 229, 7395, 767, 342, 873, 23, 1595, 17, 550, 342, 7395, 767, 229, 873, 17, 1406, 229, 1595, 550, 229, 4590, 24, 1406, 229, 1595, 550, 229, 1163, 63908, 21009, 20, 278, 1224, 355, 229, 1163, 22, 124902, 1163, 124900], "correct": false, "expected": "30", "prompt_tokens": 26, "terminated": true}
+{"stage": "probe", "id": "arithmetic_7", "category": "arithmetic", "response": "We need to calculate 7 * 8 - 9.\n\nFirst, perform the multiplication: 7 * 8 = 56.\n\nThen, subtract 9: 56 - 9 = 47.\n\nSo the result is 47.\n\nAnswer with just the number: 47.</think>47", "token_ids": [2083, 1094, 310, 16420, 229, 31, 767, 229, 32, 640, 229, 33, 63908, 9077, 20, 1962, 278, 37207, 34, 229, 31, 767, 229, 32, 550, 229, 7067, 63908, 11969, 20, 91901, 229, 33, 34, 229, 7067, 640, 229, 33, 550, 229, 3244, 63908, 4597, 278, 1224, 355, 229, 3244, 63908, 39630, 415, 1303, 278, 1579, 34, 229, 3244, 22, 124902, 3244, 124900], "correct": false, "expected": "47", "prompt_tokens": 27, "terminated": true}
+{"stage": "probe", "id": "knowledge_0", "category": "knowledge", "response": "Tokyo", "token_ids": [40049, 11053, 124900], "correct": true, "expected": "Tokyo", "prompt_tokens": 32, "terminated": true}
+{"stage": "probe", "id": "knowledge_1", "category": "knowledge", "response": "Jupiter", "token_ids": [50, 23917, 124900], "correct": true, "expected": "Jupiter", "prompt_tokens": 35, "terminated": true}
+{"stage": "probe", "id": "knowledge_2", "category": "knowledge", "response": "CO\u2082 (carbon dioxide)", "token_ids": [3924, 87943, 342, 41431, 15792, 17, 124900], "correct": false, "expected": "carbon dioxide", "prompt_tokens": 36, "terminated": true}
+{"stage": "probe", "id": "knowledge_3", "category": "knowledge", "response": "Gold: Au", "token_ids": [30348, 34, 10383, 124900], "correct": false, "expected": "Au", "prompt_tokens": 33, "terminated": true}
+{"stage": "probe", "id": "knowledge_4", "category": "knowledge", "response": "Hexagon: 6 sides. The question asks: \"How many sides does a hexagon have?\" The answer is simply the number of sides of a hexagon, which is 6. The user requests: \"Answer with only the name, symbol, or number; no explanation.\" So I should output just \"6\"", "token_ids": [96508, 6519, 34, 229, 30, 10108, 22, 440, 3451, 20589, 34, 496, 3522, 1196, 10108, 1676, 267, 92888, 551, 8022, 440, 5141, 355, 4916, 278, 1579, 302, 10108, 302, 267, 92888, 20, 643, 355, 229, 30, 22, 440, 4695, 19352, 34, 496, 39630, 415, 1049, 278, 1653, 20, 6130, 20, 432, 1579, 35, 794, 13816, 2426, 1672, 358, 1252, 6159, 1303, 496, 30, 10], "correct": false, "expected": "6", "prompt_tokens": 33, "terminated": false}
+{"stage": "probe", "id": "knowledge_5", "category": "knowledge", "response": "Heart", "token_ids": [47244, 124900], "correct": true, "expected": "heart", "prompt_tokens": 34, "terminated": true}
+{"stage": "probe", "id": "knowledge_6", "category": "knowledge", "response": "0 \u00b0C", "token_ids": [24, 16683, 43, 124900], "correct": false, "expected": "0", "prompt_tokens": 40, "terminated": true}
+{"stage": "probe", "id": "knowledge_7", "category": "knowledge", "response": "Bubble formation (or vaporization at the surface) \u2014 but the specific term for a liquid turning into a gas at its surface is **evaporation** (or **boiling** if throughout the liquid). The question says \"at its surface\" which is **evaporation**. So answer: Evaporation. However,", "token_ids": [42, 17435, 6900, 342, 276, 25136, 1773, 462, 278, 3755, 17, 1679, 702, 278, 3179, 1743, 374, 267, 9528, 13447, 918, 267, 4415, 462, 851, 3755, 355, 7575, 6622, 45723, 962, 342, 276, 7575, 2652, 7705, 962, 787, 4626, 278, 9528, 690, 440, 3451, 2997, 496, 275, 851, 3755, 10, 643, 355, 7575, 6622, 45723, 88050, 1672, 5141, 34, 7049, 45723, 22, 2375, 20], "correct": false, "expected": "evaporation", "prompt_tokens": 37, "terminated": false}
+{"stage": "probe", "id": "code_output_0", "category": "code_output", "response": "8</think>8", "token_ids": [32, 124902, 32, 124900], "correct": false, "expected": "12", "prompt_tokens": 40, "terminated": true}
+{"stage": "probe", "id": "code_output_1", "category": "code_output", "response": "\"stressed\"[::-1] prints the string \"stressed\" reversed. The original string is \"stressed\". Reversing it gives \"stressed\" backwards: \"stressed\" -> \"stressed\"? Wait, let's check: \"stressed\" letters: s t r e s s e d", "token_ids": [10, 319, 13931, 105953, 117625, 25, 69, 35743, 278, 4160, 496, 319, 13931, 10, 35725, 22, 440, 2896, 4160, 355, 496, 319, 13931, 2784, 915, 1552, 299, 435, 6101, 496, 319, 13931, 10, 44043, 34, 496, 319, 13931, 10, 9495, 496, 319, 13931, 93587, 34689, 20, 2443, 589, 3498, 34, 496, 319, 13931, 10, 10008, 34, 274, 265, 376, 320, 274, 274, 320, 277], "correct": false, "expected": "desserts", "prompt_tokens": 37, "terminated": false}
+{"stage": "probe", "id": "code_output_2", "category": "code_output", "response": "2</think>2", "token_ids": [26, 124902, 26, 124900], "correct": false, "expected": "3", "prompt_tokens": 48, "terminated": true}
+{"stage": "probe", "id": "code_output_3", "category": "code_output", "response": "5 2", "token_ids": [29, 229, 26, 124900], "correct": false, "expected": "3 2", "prompt_tokens": 42, "terminated": true}
+{"stage": "probe", "id": "code_output_4", "category": "code_output", "response": "[0, 1, 4, 9]", "token_ids": [67, 24, 20, 229, 25, 20, 229, 28, 20, 229, 33, 69, 124900], "correct": true, "expected": "[0, 1, 4, 9]", "prompt_tokens": 41, "terminated": true}
+{"stage": "probe", "id": "code_output_5", "category": "code_output", "response": "7 + 2", "token_ids": [31, 1510, 229, 26, 124900], "correct": false, "expected": "9", "prompt_tokens": 57, "terminated": true}
+{"stage": "probe", "id": "json_30", "category": "json", "response": "{\n  \"name\": \"Imani\",\n  \"city\": \"Nairobi\"\n}", "token_ids": [2718, 229, 496, 2554, 6380, 496, 49, 44644, 6107, 229, 496, 47749, 6380, 496, 54, 26227, 5866, 1110, 101, 124900], "correct": true, "expected": {"name": "Imani", "city": "Nairobi"}, "prompt_tokens": 43, "terminated": true}
+{"stage": "probe", "id": "json_31", "category": "json", "response": "{\n  \"name\": \"Hugo\",\n  \"city\": \"Porto\"\n}", "token_ids": [2718, 229, 496, 2554, 6380, 496, 48, 61876, 6107, 229, 496, 47749, 6380, 496, 12916, 87, 1110, 101, 124900], "correct": true, "expected": {"name": "Hugo", "city": "Porto"}, "prompt_tokens": 40, "terminated": true}
+{"stage": "probe", "id": "json_32", "category": "json", "response": "{\n  \"name\": \"Yuki\",\n  \"city\": \"Kyoto\"\n}", "token_ids": [2718, 229, 496, 2554, 6380, 496, 65, 17120, 6107, 229, 496, 47749, 6380, 496, 106198, 5051, 1110, 101, 124900], "correct": true, "expected": {"name": "Yuki", "city": "Kyoto"}, "prompt_tokens": 41, "terminated": true}
+{"stage": "probe", "id": "json_33", "category": "json", "response": "{\n  \"name\": \"Amara\",\n  \"city\": \"Accra\"\n}", "token_ids": [2718, 229, 496, 2554, 6380, 496, 6369, 2648, 6107, 229, 496, 47749, 6380, 496, 12811, 352, 1110, 101, 124900], "correct": true, "expected": {"name": "Amara", "city": "Accra"}, "prompt_tokens": 42, "terminated": true}
+{"stage": "probe", "id": "tool_json_34", "category": "tool_json", "response": "{\n  \"tool\": \"get_weather\",\n  \"arguments\": {\n    \"city\": \"Oslo\",\n    \"unit\": \"celsius\"\n  }\n}", "token_ids": [2718, 229, 496, 46765, 6380, 496, 1265, 71, 51492, 6107, 229, 496, 56735, 6380, 827, 360, 496, 47749, 6380, 496, 14306, 1336, 6107, 360, 496, 10328, 6380, 496, 75, 41592, 1110, 229, 1130, 101, 124900], "correct": true, "expected": {"tool": "get_weather", "arguments": {"city": "Oslo", "unit": "celsius"}}, "prompt_tokens": 79, "terminated": true}
+{"stage": "probe", "id": "tool_json_35", "category": "tool_json", "response": "{\n  \"tool\": \"get_weather\",\n  \"arguments\": {\n    \"city\": \"Lima\",\n    \"unit\": \"celsius\"\n  }\n}", "token_ids": [2718, 229, 496, 46765, 6380, 496, 1265, 71, 51492, 6107, 229, 496, 56735, 6380, 827, 360, 496, 47749, 6380, 496, 52, 3505, 6107, 360, 496, 10328, 6380, 496, 75, 41592, 1110, 229, 1130, 101, 124900], "correct": true, "expected": {"tool": "get_weather", "arguments": {"city": "Lima", "unit": "celsius"}}, "prompt_tokens": 79, "terminated": true}
+{"stage": "probe", "id": "tool_json_36", "category": "tool_json", "response": "{\n  \"tool\": \"get_weather\",\n  \"arguments\": {\n    \"city\": \"Miami\",\n    \"unit\": \"fahrenheit\"\n  }\n}", "token_ids": [2718, 229, 496, 46765, 6380, 496, 1265, 71, 51492, 6107, 229, 496, 56735, 6380, 827, 360, 496, 47749, 6380, 496, 53, 17772, 6107, 360, 496, 10328, 6380, 496, 16241, 7105, 1110, 229, 1130, 101, 124900], "correct": true, "expected": {"tool": "get_weather", "arguments": {"city": "Miami", "unit": "fahrenheit"}}, "prompt_tokens": 79, "terminated": true}
+{"stage": "probe", "id": "tool_json_37", "category": "tool_json", "response": "{\n  \"tool\": \"get_weather\",\n  \"arguments\": {\n    \"city\": \"Rome\",\n    \"unit\": \"celsius\"\n  }\n}", "token_ids": [2718, 229, 496, 46765, 6380, 496, 1265, 71, 51492, 6107, 229, 496, 56735, 6380, 827, 360, 496, 47749, 6380, 496, 58, 570, 6107, 360, 496, 10328, 6380, 496, 75, 41592, 1110, 229, 1130, 101, 124900], "correct": true, "expected": {"tool": "get_weather", "arguments": {"city": "Rome", "unit": "celsius"}}, "prompt_tokens": 79, "terminated": true}
+{"stage": "probe", "id": "recall_4_lines_0", "category": "recall_4_lines", "response": "The access code is 66002. The records mention items being archived, but the question asks for the access code, which is given at the beginning: 66002.\n\nAnswer: 66002", "token_ids": [597, 2696, 4713, 355, 229, 21732, 5342, 22, 440, 7768, 5668, 6802, 1493, 3386, 1898, 20, 702, 278, 3451, 20589, 374, 278, 2696, 4713, 20, 643, 355, 2496, 462, 278, 5908, 34, 229, 21732, 5342, 63908, 39630, 34, 229, 21732, 5342, 124900], "correct": false, "expected": "66002", "prompt_tokens": 77, "terminated": true}
+{"stage": "probe", "id": "recall_4_lines_1", "category": "recall_4_lines", "response": "46081", "token_ids": [25090, 9230, 124900], "correct": true, "expected": "46081", "prompt_tokens": 77, "terminated": true}
+{"stage": "probe", "id": "recall_4_lines_2", "category": "recall_4_lines", "response": "The access code is 37524. The records mention items being archived, but the question asks for the access code, which is given at the beginning: 37524. \n\nAnswer: 37524", "token_ids": [597, 2696, 4713, 355, 229, 22937, 1325, 22, 440, 7768, 5668, 6802, 1493, 3386, 1898, 20, 702, 278, 3451, 20589, 374, 278, 2696, 4713, 20, 643, 355, 2496, 462, 278, 5908, 34, 229, 22937, 1325, 22, 64019, 39630, 34, 229, 22937, 1325, 124900], "correct": false, "expected": "37524", "prompt_tokens": 77, "terminated": true}
+{"stage": "probe", "id": "recall_4_lines_3", "category": "recall_4_lines", "response": "31138", "token_ids": [23171, 2481, 124900], "correct": true, "expected": "31138", "prompt_tokens": 77, "terminated": true}
+{"stage": "probe", "id": "recall_48_lines_0", "category": "recall_48_lines", "response": "35519", "token_ids": [26869, 412, 124900], "correct": true, "expected": "35519", "prompt_tokens": 561, "terminated": true}
+{"stage": "probe", "id": "recall_48_lines_1", "category": "recall_48_lines", "response": "68798", "token_ids": [25718, 2860, 124900], "correct": true, "expected": "68798", "prompt_tokens": 561, "terminated": true}
+{"stage": "probe", "id": "recall_48_lines_2", "category": "recall_48_lines", "response": "49425", "token_ids": [32678, 1197, 124900], "correct": true, "expected": "49425", "prompt_tokens": 561, "terminated": true}
+{"stage": "probe", "id": "recall_48_lines_3", "category": "recall_48_lines", "response": "83446", "token_ids": [26540, 3694, 124900], "correct": true, "expected": "83446", "prompt_tokens": 561, "terminated": true}
+{"stage": "probe", "id": "recall_112_lines_0", "category": "recall_112_lines", "response": "49096", "token_ids": [27428, 8740, 124900], "correct": true, "expected": "49096", "prompt_tokens": 1265, "terminated": true}
+{"stage": "probe", "id": "recall_112_lines_1", "category": "recall_112_lines", "response": "29280</think>29280", "token_ids": [24785, 1845, 124902, 24785, 1845, 124900], "correct": false, "expected": "29280", "prompt_tokens": 1265, "terminated": true}
+{"stage": "probe", "id": "recall_112_lines_2", "category": "recall_112_lines", "response": "55127</think>55127", "token_ids": [32036, 1641, 124902, 32036, 1641, 124900], "correct": false, "expected": "55127", "prompt_tokens": 1265, "terminated": true}
+{"stage": "probe", "id": "recall_112_lines_3", "category": "recall_112_lines", "response": "38933", "token_ids": [28749, 2124, 124900], "correct": true, "expected": "38933", "prompt_tokens": 1265, "terminated": true}
+{
+  "arc": {
+    "ARC-Easy": {
+      "correct": 53,
+      "total": 64,
+      "accuracy": 0.828125,
+      "wilson95": [
+        0.7178655850983409,
+        0.9012235873268377
+      ]
+    },
+    "ARC-Challenge": {
+      "correct": 41,
+      "total": 64,
+      "accuracy": 0.640625,
+      "wilson95": [
+        0.5182062363615084,
+        0.7471176946778538
+      ]
+    }
+  },
+  "probes": {
+    "format": {
+      "correct": 5,
+      "total": 8,
+      "accuracy": 0.625,
+      "wilson95": [
+        0.30573785458380187,
+        0.863158240538479
+      ]
+    },
+    "arithmetic": {
+      "correct": 0,
+      "total": 8,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.3244156195108769
+      ]
+    },
+    "knowledge": {
+      "correct": 3,
+      "total": 8,
+      "accuracy": 0.375,
+      "wilson95": [
+        0.13684175946152105,
+        0.6942621454161981
+      ]
+    },
+    "code_output": {
+      "correct": 1,
+      "total": 6,
+      "accuracy": 0.16666666666666666,
+      "wilson95": [
+        0.03005258587173032,
+        0.563509436563646
+      ]
+    },
+    "json": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.5100999795960008,
+        1.0
+      ]
+    },
+    "tool_json": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.5100999795960008,
+        1.0
+      ]
+    },
+    "recall_4_lines": {
+      "correct": 2,
+      "total": 4,
+      "accuracy": 0.5,
+      "wilson95": [
+        0.15003570882017148,
+        0.8499642911798285
+      ]
+    },
+    "recall_48_lines": {
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.5100999795960008,
+        1.0
+      ]
+    },
+    "recall_112_lines": {
+      "correct": 2,
+      "total": 4,
+      "accuracy": 0.5,
+      "wilson95": [
+        0.15003570882017148,
+        0.8499642911798285
+      ]
+    }
+  },
+  "overall_probes": {
+    "correct": 25,
+    "total": 50
+  },
+  "elapsed_seconds": 65.04067494196352
+}

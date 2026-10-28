@@ -1,0 +1,65 @@
+{
+  "all_model_source_hashes_still_match": true,
+  "artifact_script_sha256": {
+    "plot_results.py": "047ce5f36f79c346a416e6182b2bc158af327f05c1c2f4c73672962c16b47dd7",
+    "test_language.py": "2f7aee6c21828229f8a294657e68f68b150829f40d600a404c267c83b0aa742e",
+    "test_multistep.py": "f1e9cd962cbbd574fd16666ac68d26efcf2ce0fa8511d058d6438ac641232551",
+    "uncertainty.py": "c31cfc25a7fd8f81b518c3176145a7fe7725fdf51ec2da5a6e2f469f13bd775d"
+  },
+  "completed_fit_checkpoints_verified": 48,
+  "created": "2026-10-10T13:55:36.262468+00:00",
+  "device": "CPU",
+  "final_artifact_check": "2026-10-10T14:52:20.401249+00:00",
+  "language_test_weights_unchanged": {
+    "fourier80": true,
+    "neural80": true,
+    "transformer": true
+  },
+  "local_documentation_links_resolve": true,
+  "locked_test_weights_unchanged": {
+    "multistep_test": true,
+    "onehop_test": true
+  },
+  "model_source_sha256": {
+    "__init__.py": "cec12357813e592ad87c21229687e348a62d1c3deb7fae7c9275260b1ac0b2bc",
+    "bpe.py": "33b305a464f1487c22037848bba542e6120fb790f6be67c8192828a8d3494b8e",
+    "data.py": "ab4b434581188a681544cc679b2d9c589101f7bdaeb19461dd51771c64dab4b9",
+    "evaluate.py": "398d5be602eaf598941b831e6cbcac499ee40c3e0df48879055307a0bc992e52",
+    "experiment.py": "a37fb1dac93d215854be7231a3ed5ee947a29a8e28b5bb728e7255338b46127d",
+    "improve.py": "6402abc8a9ada3cfa0fe784449edb5e6134bb472586c8a89d389783da9d3964f",
+    "improve_report.py": "8135a4be23a7cf6190d8e6ba44956cc17e61acfc62adde81dc33e349abc921b1",
+    "memory.py": "45e65b19d620b68e15323b30a10fb1adadecb67c96fc5e5ff7f07e3927c3562a",
+    "model.py": "0f9bf06c86e9d0c481aa4dcd4933eacdb88e70fb34b7d2e9d0702413f7e65d9b",
+    "optim.py": "82b9c97645921256f643cd797825b4705a07b749df14b0bca627b997a38d3279",
+    "position_memory.py": "77c34eb4b47054f1dc36fa77e13b7acc983ebc29cba510db793accd6bbf73083",
+    "profile.py": "ccfe45180c62f4cebf73158aadd364d222e80083e5273b4aafa6f9668bcd19f5",
+    "report.py": "9dd216247786dd9d12eaf0e227fb0b20a22aaa40aa9bc3e4c7f09b15feabbf71",
+    "stabilize.py": "253aafa0f6388a19fc65038ce3a0bcf0bbe7cb141b3e1a7987d87adcb4bf9eff",
+    "story_data.py": "da4709e5fa11836b749b586afd39430749764ea52c706686e5c9c776c5de8f47",
+    "tasks.py": "88f5972e3e69f1ee21cd9cd0f7a86265a249e00556ceb4435df625a26b10b71a",
+    "tokenizer.py": "38b5b68d5913f577f55cb32b97fa2c2e81f4f26d9628fb09092c067ef51be2eb"
+  },
+  "notes": "No REWT inference modules changed during any active fit. Inference inputs and frozen weights are audited in the locked test reports. These tests verify implementation behavior; they do not certify linguistic or reasoning accuracy.",
+  "numpy": "2.5.3",
+  "python": "3.12.3",
+  "sampler_cases_verified": 3,
+  "sampler_sha256": "d4f90f1b5575702b74cd18d72baee82b98cc47a42cf44b2aa7e0d8936dec3feb",
+  "test_source_sha256": {
+    "test_bpe.py": "859f3e662bc89c4d927ea78e66b18d39a878759c56357bb82ca60d41a1c0268b",
+    "test_data_tasks.py": "df3165635646a64e141a7d564f19afef4e2e5faf3809ec066493b1c6b97cc968",
+    "test_experiment.py": "b7937a98054c59a581f839300cdce32350ba97783deccae2b004d5c914c93920",
+    "test_improvements.py": "a1329e1522938ef59210e07579d9412a50c14c25da6d55b0f42c5f8fde0cfc58",
+    "test_learning.py": "2e2354e0587a259d003bfd69abed4e3a4a27e86d475c36ffda8c2db0e7865971",
+    "test_memory_heads.py": "c327c56bd2748a24d90d56a6c2872e5fcfa2dfe97884686ab6854780b004ace2",
+    "test_model.py": "0dcb75a243c73df00f4e190a8cabe5c5ace039a54b08628242dcb48d4a5a1480",
+    "test_position_memory.py": "7c3e729d48423577184a5788d9bc6ed3bee67703ea91118135535033f02db61a",
+    "test_stabilize.py": "5fb55f15d6f44859c3e89d394aa98a6b4b86c6b13a546f65d75bbc8642e9b9bc",
+    "test_story_data.py": "c0de285fc2b9679ca4456bda13805dbcd4b7c3eb63502b6bde91d3b9502ee677",
+    "test_tokenizer.py": "1ac8d07e34d03f1ff760c25bbd9565576435b41a875aa9708951f144c2661b55"
+  },
+  "tests_elapsed_seconds": 9.36,
+  "tests_passed": 88,
+  "torch": "2.14.0+cu130",
+  "training_threads": 1,
+  "verification_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python -m pytest tests_rewt -q"
+}

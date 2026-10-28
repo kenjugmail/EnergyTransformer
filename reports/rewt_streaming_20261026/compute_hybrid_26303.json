@@ -1,0 +1,33 @@
+{
+  "active_parameters": 109656,
+  "batch_sha256": "3baf6ce3adecaa7e5ed32d21e08cc6978cccb1d9f6c4db6848018d1dde7adc7f",
+  "best_step": 1300,
+  "case": {
+    "config": {
+      "chunk": 32,
+      "heads": 4,
+      "hidden": 144,
+      "hybrid": true,
+      "layers": 2,
+      "modes": 16,
+      "rounds": 0,
+      "width": 64,
+      "window": 64
+    },
+    "name": "compute_hybrid_26303",
+    "objective": "compute",
+    "seed": 26303,
+    "variant": "hybrid"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_hybrid_26303/best.pt",
+  "checkpoint_sha256": "b6e89115e4cbc6e21ebcef2ea2988cb592f9bb30504fc2b89b69f5c296597820",
+  "parameters": 111784,
+  "selection": [
+    -1.4998612574143153
+  ],
+  "target_tokens": 3993600,
+  "training_cpu_seconds": 90.04065377599863,
+  "training_wall_seconds": 89.47033171716612,
+  "updates": 1300,
+  "validation_cpu_seconds": 0.3965713280001637
+}

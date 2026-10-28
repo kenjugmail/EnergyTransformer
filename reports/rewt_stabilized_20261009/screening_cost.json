@@ -1,0 +1,7 @@
+{
+  "screening_trials": 14,
+  "screen_training_cpu_seconds": 1103.684818224,
+  "screen_validation_cpu_seconds": 7.242146592000026,
+  "scope": "Validation-only selection cost, separate from per-model training and equal-time caps",
+  "baseline_tuning": "One common learning rate selected in the Fourier screen; the five variants are not each tuned to their own optimum"
+}

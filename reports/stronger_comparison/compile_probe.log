@@ -1,0 +1,3 @@
+{"arm": "softmax", "compile_and_first_backward_wall_s": 17.568648155999654, "median_forward_backward_cpu_s": {"eager": 0.020095000000000862, "compiled": 0.0185226639999998}, "gradient_parity": true}
+{"arm": "local_softmax", "compile_and_first_backward_wall_s": 6.866947505000098, "median_forward_backward_cpu_s": {"eager": 0.020251471999999993, "compiled": 0.018445768000000307}, "gradient_parity": true}
+{"arm": "hybrid", "compile_and_first_backward_wall_s": 27.037716440999247, "median_forward_backward_cpu_s": {"eager": 0.02721583199999955, "compiled": 0.020488304000000568}, "gradient_parity": true}

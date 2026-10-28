@@ -1,0 +1,22 @@
+{
+  "document_indices": [
+    846,
+    859,
+    2376,
+    402,
+    562,
+    2801,
+    1861,
+    4934
+  ],
+  "max_new": 96,
+  "seed": 1023,
+  "selection_scope": "Validation only, eight fixed document beginnings; test prefixes remain unused.",
+  "temperatures": [
+    0.0,
+    0.4,
+    0.5,
+    0.7,
+    0.8
+  ]
+}

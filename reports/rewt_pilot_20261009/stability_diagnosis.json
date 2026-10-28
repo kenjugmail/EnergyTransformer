@@ -1,0 +1,90 @@
+{
+  "original": [
+    {
+      "step": 21,
+      "finite": true,
+      "ce": 3.5531833171844482,
+      "maximum_joint_state": 6.643678188323975
+    },
+    {
+      "step": 22,
+      "finite": true,
+      "ce": 3.233081579208374,
+      "maximum_joint_state": 7.375949382781982
+    },
+    {
+      "step": 23,
+      "finite": true,
+      "ce": 3.4480106830596924,
+      "maximum_joint_state": 7.587026596069336
+    },
+    {
+      "step": 24,
+      "finite": true,
+      "ce": 3.138035297393799,
+      "maximum_joint_state": 7.947032928466797
+    },
+    {
+      "step": 25,
+      "finite": true,
+      "ce": 3.3827154636383057,
+      "maximum_joint_state": 6.906877517700195
+    },
+    {
+      "step": 26,
+      "finite": false,
+      "ce": "nonfinite",
+      "maximum_joint_state": "nonfinite"
+    }
+  ],
+  "bounded_conditioning": [
+    {
+      "step": 21,
+      "finite": true,
+      "ce": 3.676647663116455,
+      "maximum_joint_state": 4.868690490722656
+    },
+    {
+      "step": 22,
+      "finite": true,
+      "ce": 3.368530511856079,
+      "maximum_joint_state": 5.506464004516602
+    },
+    {
+      "step": 23,
+      "finite": true,
+      "ce": 3.5099737644195557,
+      "maximum_joint_state": 5.8876776695251465
+    },
+    {
+      "step": 24,
+      "finite": true,
+      "ce": 3.2193830013275146,
+      "maximum_joint_state": 6.6674346923828125
+    },
+    {
+      "step": 25,
+      "finite": true,
+      "ce": 3.470752477645874,
+      "maximum_joint_state": 7.129873275756836
+    },
+    {
+      "step": 26,
+      "finite": true,
+      "ce": 3.8160006999969482,
+      "maximum_joint_state": 8.139854431152344
+    },
+    {
+      "step": 27,
+      "finite": true,
+      "ce": 3.357369899749756,
+      "maximum_joint_state": 8.369451522827148
+    },
+    {
+      "step": 28,
+      "finite": true,
+      "ce": 3.2117245197296143,
+      "maximum_joint_state": 9.20877456665039
+    }
+  ]
+}

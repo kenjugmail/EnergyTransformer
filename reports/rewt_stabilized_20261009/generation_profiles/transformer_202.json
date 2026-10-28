@@ -1,0 +1,50 @@
+{
+  "arm": "transformer",
+  "seed": 202,
+  "checkpoint_sha256": "099864cb91e9fa3eda7bbd27d1151954b3efdd6cc95655bfc573e51f9dcf2c56",
+  "inference_policy": {
+    "halting_tolerance": 0.0,
+    "rounds": null,
+    "validation": []
+  },
+  "device": "cpu",
+  "torch_threads": 1,
+  "measurements": [
+    {
+      "batch_size": 1,
+      "prefix_bytes": 32,
+      "generated_bytes_per_sample": 96,
+      "includes_prefix_prefill": true,
+      "cpu_seconds": [
+        0.10813815999999998,
+        0.10501268799999997,
+        0.10399678400000001
+      ],
+      "wall_seconds": [
+        0.10814346699044108,
+        0.10507364699151367,
+        0.1039996009785682
+      ],
+      "median_cpu_ms_per_generated_byte": 1.0938821666666663,
+      "median_wall_ms_per_generated_byte": 1.0945171561616007
+    },
+    {
+      "batch_size": 10,
+      "prefix_bytes": 32,
+      "generated_bytes_per_sample": 96,
+      "includes_prefix_prefill": true,
+      "cpu_seconds": [
+        1.0368017280000004,
+        1.0392355679999996,
+        1.038463472
+      ],
+      "wall_seconds": [
+        1.0400983459549025,
+        1.0400275139836594,
+        1.061866436037235
+      ],
+      "median_cpu_ms_per_generated_byte": 1.0817327833333334,
+      "median_wall_ms_per_generated_byte": 1.0834357770363567
+    }
+  ]
+}

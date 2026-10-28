@@ -1,0 +1,26 @@
+{
+  "base_update": 2048,
+  "best_step": 4096,
+  "best_validation_bpb": 1.6255288209268133,
+  "case": "transformer",
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/language_bpe_extended/transformer/best.pt",
+  "checkpoint_sha256": "cd9cdf1449c2bfd4034c06fb96b96c29bc07a7aed2b0eeebca5296e7d7ec52b2",
+  "config": {
+    "context": 128,
+    "feedforward": 453,
+    "heads": 4,
+    "layers": 2,
+    "width": 80
+  },
+  "energy_audit": null,
+  "maximum_raw_gradient_norm": 1.0329445439367475,
+  "parameters": 250122,
+  "processed_target_raw_bytes": 32362917,
+  "processed_target_tokens": 16777216,
+  "seed": 991,
+  "test_not_evaluated": true,
+  "total_training_cpu_seconds": 504.14254575999956,
+  "training_cpu_seconds": 239.81596963200008,
+  "updates": 2048,
+  "validation_cpu_seconds": 0.30002662399996893
+}

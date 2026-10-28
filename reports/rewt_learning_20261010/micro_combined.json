@@ -1,0 +1,114 @@
+{
+  "case": "combined",
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/micro/combined/model.pt",
+  "checkpoint_sha256": "58e3be5ad419555fa77939ff2ea2bdb55d664d71238c542180957a92f43e6698",
+  "config": {
+    "activation": "fourier",
+    "attention_weight": 0.04,
+    "auxiliary_hidden": 32,
+    "backtracks": 4,
+    "cache_history": true,
+    "communication_weight": 0.04,
+    "compatibility_geometry": "anchor_relative",
+    "context_kernel": 3,
+    "coupled_modes": true,
+    "decoder_weight": 0.04,
+    "diffusion_levels": 3,
+    "diffusion_samples": 2,
+    "early_backtrack": true,
+    "frequency_bound": 2.0,
+    "halting_tolerance": 0.0,
+    "hidden": 736,
+    "history": 128,
+    "horizons": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "learned_frequencies": true,
+    "minimum_refinement_rounds": 1,
+    "modes": 32,
+    "normalize_frequency_blocks": true,
+    "output_geometry": "centered",
+    "recurrent_type": "gru",
+    "rounds": 2,
+    "schedule": "all",
+    "specialist_weight": 0.02,
+    "specialists": 3,
+    "step_size": 0.25,
+    "support": false,
+    "width": 48
+  },
+  "energy_audit": {
+    "all_accepted_states_nonincreasing": true,
+    "fraction_rounds_decreasing": 1.0,
+    "maximum_accepted_energy_increase": -0.010657191276550293,
+    "mean_energy_drop": 0.29745596647262573,
+    "positions": 32,
+    "rounds": 2
+  },
+  "maximum_raw_gradient_norm": 2.293586027405149,
+  "parameters": 249952,
+  "semantic_weight": 4.0,
+  "summary": {
+    "all": {
+      "answer_correct": 1.0,
+      "both_correct": 1.0,
+      "count": 12,
+      "steps_correct": 1.0,
+      "valid_format": 1.0
+    },
+    "by_difficulty": {
+      "heldout_instance": {
+        "answer_correct": 1.0,
+        "both_correct": 1.0,
+        "count": 12,
+        "steps_correct": 1.0,
+        "valid_format": 1.0
+      }
+    },
+    "by_family": {
+      "arithmetic": {
+        "answer_correct": 1.0,
+        "both_correct": 1.0,
+        "count": 4,
+        "steps_correct": 1.0,
+        "valid_format": 1.0
+      },
+      "recall": {
+        "answer_correct": 1.0,
+        "both_correct": 1.0,
+        "count": 4,
+        "steps_correct": 1.0,
+        "valid_format": 1.0
+      },
+      "rules": {
+        "answer_correct": 1.0,
+        "both_correct": 1.0,
+        "count": 4,
+        "steps_correct": 1.0,
+        "valid_format": 1.0
+      }
+    },
+    "by_steps": {
+      "1": {
+        "answer_correct": 1.0,
+        "both_correct": 1.0,
+        "count": 10,
+        "steps_correct": 1.0,
+        "valid_format": 1.0
+      },
+      "4": {
+        "answer_correct": 1.0,
+        "both_correct": 1.0,
+        "count": 2,
+        "steps_correct": 1.0,
+        "valid_format": 1.0
+      }
+    }
+  },
+  "training_cpu_seconds": 53.691550992,
+  "training_only_fixture": true,
+  "updates": 200
+}

@@ -1,0 +1,3857 @@
+{
+  "status": "frozen_before_test",
+  "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+  "datasets_sha256": "3d5e2c61ff897ebde3660d9ec2780b112da346fbfe80f9597a4bd3fe03054f06",
+  "original_selection_sha256": "602da4ef49ea16e1a7f04093ad5e80b0cce60da9160a88f4af35335a249ff790",
+  "records": [
+    {
+      "config": {
+        "task": "fashion",
+        "method": "bp",
+        "seed": 11,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "d74e4ad25ef67d4bc7d1d3f176b755d996f9ab5cab5f5177688872736966ff94",
+      "initial_sha256": "ce868ab6a97dc602cf8494facd7826c428c4977dd3f56a49f2c105fcf1e9238c",
+      "checkpoint": "fashion_bp_d8_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.12200000137090683,
+        "nll": 2.3282084465026855,
+        "bits_per_target": 3.3588948249816895,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.12200000137090683
+          }
+        },
+        "elapsed_s": 0.005981511028949171
+      },
+      "selected_validation": {
+        "accuracy": 0.8289999961853027,
+        "nll": 0.6817492842674255,
+        "bits_per_target": 0.98355633020401,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8289999961853027
+          }
+        },
+        "elapsed_s": 0.004113401053473353
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pc",
+        "seed": 11,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "60ba15ba498267d75ff8fe69d76e17575ad7d7e2853400cef7bc3db2d887e45f",
+      "initial_sha256": "ce868ab6a97dc602cf8494facd7826c428c4977dd3f56a49f2c105fcf1e9238c",
+      "checkpoint": "fashion_pc_d8_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.12200000137090683,
+        "nll": 2.3282084465026855,
+        "bits_per_target": 3.3588948249816895,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.12200000137090683
+          }
+        },
+        "elapsed_s": 0.004172521992586553
+      },
+      "selected_validation": {
+        "accuracy": 0.8209999799728394,
+        "nll": 0.7229822874069214,
+        "bits_per_target": 1.0430430173873901,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8209999799728394
+          }
+        },
+        "elapsed_s": 0.003224699990823865
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pcalm",
+        "seed": 11,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "53c193311034b8207a9359afae4eb8d04f7c32f2c7bc7ff33ee184211d35d1c1",
+      "initial_sha256": "ce868ab6a97dc602cf8494facd7826c428c4977dd3f56a49f2c105fcf1e9238c",
+      "checkpoint": "fashion_pcalm_d8_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.12200000137090683,
+        "nll": 2.3282084465026855,
+        "bits_per_target": 3.3588948249816895,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.12200000137090683
+          }
+        },
+        "elapsed_s": 0.003859753953292966
+      },
+      "selected_validation": {
+        "accuracy": 0.8169999718666077,
+        "nll": 0.7025194764137268,
+        "bits_per_target": 1.0135213136672974,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8169999718666077
+          }
+        },
+        "elapsed_s": 0.0032602029968984425
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "energy",
+        "seed": 11,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "4fae26cf55ba347a2cc0b9dce0d138adead864a6bd5737d400120a276aef615e",
+      "initial_sha256": "ce868ab6a97dc602cf8494facd7826c428c4977dd3f56a49f2c105fcf1e9238c",
+      "checkpoint": "fashion_energy_d8_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.125,
+        "nll": 2.310697317123413,
+        "bits_per_target": 3.3336315155029297,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.125
+          }
+        },
+        "elapsed_s": 0.4267914340016432
+      },
+      "selected_validation": {
+        "accuracy": 0.828000009059906,
+        "nll": 0.5110209584236145,
+        "bits_per_target": 0.7372474074363708,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.828000009059906
+          }
+        },
+        "elapsed_s": 0.43875567201757804
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "bp",
+        "seed": 22,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 300,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "c1e974d87187d2578a89e0699c27f2ac99a2a85a8e14f9bda49edd2c0300f782",
+      "initial_sha256": "cd068de0d38769f3175981e41ae7d809f13b36b49ada6cdd8a775fe7f8fde0c9",
+      "checkpoint": "fashion_bp_d8_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.06199999898672104,
+        "nll": 2.3500709533691406,
+        "bits_per_target": 3.3904356956481934,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.06199999898672104
+          }
+        },
+        "elapsed_s": 0.004204249999020249
+      },
+      "selected_validation": {
+        "accuracy": 0.8149999976158142,
+        "nll": 0.6961196660995483,
+        "bits_per_target": 1.0042884349822998,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8149999976158142
+          }
+        },
+        "elapsed_s": 0.003158090985380113
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pc",
+        "seed": 22,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "347bcac21d9350b5f0d7a836b5405a73ce90669ff735a56e59bf541ce7111d9c",
+      "initial_sha256": "cd068de0d38769f3175981e41ae7d809f13b36b49ada6cdd8a775fe7f8fde0c9",
+      "checkpoint": "fashion_pc_d8_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.06199999898672104,
+        "nll": 2.3500709533691406,
+        "bits_per_target": 3.3904356956481934,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.06199999898672104
+          }
+        },
+        "elapsed_s": 0.003833770053461194
+      },
+      "selected_validation": {
+        "accuracy": 0.8240000009536743,
+        "nll": 0.7011801600456238,
+        "bits_per_target": 1.0115891695022583,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8240000009536743
+          }
+        },
+        "elapsed_s": 0.003923513984773308
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pcalm",
+        "seed": 22,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 300,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "5a677d9cdfc7bd0f4a2093ee801b5f098c6336ba77cd3d75c5d2d88e934b8fd0",
+      "initial_sha256": "cd068de0d38769f3175981e41ae7d809f13b36b49ada6cdd8a775fe7f8fde0c9",
+      "checkpoint": "fashion_pcalm_d8_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.06199999898672104,
+        "nll": 2.3500709533691406,
+        "bits_per_target": 3.3904356956481934,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.06199999898672104
+          }
+        },
+        "elapsed_s": 0.0038738339790143073
+      },
+      "selected_validation": {
+        "accuracy": 0.8130000233650208,
+        "nll": 0.7038838863372803,
+        "bits_per_target": 1.0154898166656494,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8130000233650208
+          }
+        },
+        "elapsed_s": 0.003561961988452822
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "energy",
+        "seed": 22,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "ff9d1277080ffb72b506fe4f58a731433e1238ce4e5a733512022b4f3f1b1a7a",
+      "initial_sha256": "cd068de0d38769f3175981e41ae7d809f13b36b49ada6cdd8a775fe7f8fde0c9",
+      "checkpoint": "fashion_energy_d8_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.04500000178813934,
+        "nll": 2.319139003753662,
+        "bits_per_target": 3.3458104133605957,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.04500000178813934
+          }
+        },
+        "elapsed_s": 0.41117630701046437
+      },
+      "selected_validation": {
+        "accuracy": 0.8149999976158142,
+        "nll": 0.5470300316810608,
+        "bits_per_target": 0.7891975045204163,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8149999976158142
+          }
+        },
+        "elapsed_s": 0.40008488501189277
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "bp",
+        "seed": 33,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 300,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "58451fb7960dbbe03d45cce52b459148ec11602c16d28ef64f84990fc5cd3073",
+      "initial_sha256": "deb6dccc34e05f7faa4c9175a62c17ef61fe34c2d8938349dfa34d75d3c9c0f5",
+      "checkpoint": "fashion_bp_d8_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.08900000154972076,
+        "nll": 2.3236284255981445,
+        "bits_per_target": 3.3522872924804688,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.08900000154972076
+          }
+        },
+        "elapsed_s": 0.004439018026459962
+      },
+      "selected_validation": {
+        "accuracy": 0.8199999928474426,
+        "nll": 0.690692126750946,
+        "bits_per_target": 0.996458113193512,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8199999928474426
+          }
+        },
+        "elapsed_s": 0.00404743297258392
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pc",
+        "seed": 33,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 300,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "bfb147f3cd6e49c0e03119e4dacb7fbd33c29ca6678fe71872c4b192739babd2",
+      "initial_sha256": "deb6dccc34e05f7faa4c9175a62c17ef61fe34c2d8938349dfa34d75d3c9c0f5",
+      "checkpoint": "fashion_pc_d8_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.08900000154972076,
+        "nll": 2.3236284255981445,
+        "bits_per_target": 3.3522872924804688,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.08900000154972076
+          }
+        },
+        "elapsed_s": 0.00436698499834165
+      },
+      "selected_validation": {
+        "accuracy": 0.8199999928474426,
+        "nll": 0.683796763420105,
+        "bits_per_target": 0.9865102171897888,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8199999928474426
+          }
+        },
+        "elapsed_s": 0.003310922998934984
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pcalm",
+        "seed": 33,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 300,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "0ca2aa0f4d01e9da152a0cb95af2909d88f35a9168cb39603c474118b10e83b6",
+      "initial_sha256": "deb6dccc34e05f7faa4c9175a62c17ef61fe34c2d8938349dfa34d75d3c9c0f5",
+      "checkpoint": "fashion_pcalm_d8_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.08900000154972076,
+        "nll": 2.3236284255981445,
+        "bits_per_target": 3.3522872924804688,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.08900000154972076
+          }
+        },
+        "elapsed_s": 0.0051397200440987945
+      },
+      "selected_validation": {
+        "accuracy": 0.8209999799728394,
+        "nll": 0.6907121539115906,
+        "bits_per_target": 0.996487021446228,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8209999799728394
+          }
+        },
+        "elapsed_s": 0.003121771034784615
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "energy",
+        "seed": 33,
+        "width": 32,
+        "depth": 8,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 8,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 300,
+      "updates": 400,
+      "parameter_count": 32842,
+      "best_sha256": "e5519d8c2c4b81dab0a37a829ce2a56483850ce33b2010a705984db12df83fea",
+      "initial_sha256": "deb6dccc34e05f7faa4c9175a62c17ef61fe34c2d8938349dfa34d75d3c9c0f5",
+      "checkpoint": "fashion_energy_d8_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.09000000357627869,
+        "nll": 2.294520616531372,
+        "bits_per_target": 3.310293436050415,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.09000000357627869
+          }
+        },
+        "elapsed_s": 0.4113204210298136
+      },
+      "selected_validation": {
+        "accuracy": 0.8130000233650208,
+        "nll": 0.5203734040260315,
+        "bits_per_target": 0.750740110874176,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8130000233650208
+          }
+        },
+        "elapsed_s": 0.40757953096181154
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "bp",
+        "seed": 11,
+        "width": 32,
+        "depth": 32,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 64,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 32,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 58186,
+      "best_sha256": "62eea56d120864443ffd80b4fb2fef37ed8e8665e2c7ac9986d7ade4511624cd",
+      "initial_sha256": "7dcf55ac977c01b18077e6166ef9ba75e02271e84c8ff62b98b18a75d58797fa",
+      "checkpoint": "fashion_bp_d32_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.10899999737739563,
+        "nll": 2.4166066646575928,
+        "bits_per_target": 3.48642635345459,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.10899999737739563
+          }
+        },
+        "elapsed_s": 0.01016415999038145
+      },
+      "selected_validation": {
+        "accuracy": 0.8289999961853027,
+        "nll": 0.7063177824020386,
+        "bits_per_target": 1.0190011262893677,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8289999961853027
+          }
+        },
+        "elapsed_s": 0.01092614297522232
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pc",
+        "seed": 11,
+        "width": 32,
+        "depth": 32,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 64,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 32,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 58186,
+      "best_sha256": "5c9af90e013f7e075ddc0b6691294e8c2e9117d9a87b13e97eb24107b78eec8e",
+      "initial_sha256": "7dcf55ac977c01b18077e6166ef9ba75e02271e84c8ff62b98b18a75d58797fa",
+      "checkpoint": "fashion_pc_d32_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.10899999737739563,
+        "nll": 2.4166066646575928,
+        "bits_per_target": 3.48642635345459,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.10899999737739563
+          }
+        },
+        "elapsed_s": 0.009777536964975297
+      },
+      "selected_validation": {
+        "accuracy": 0.7039999961853027,
+        "nll": 0.9927443861961365,
+        "bits_per_target": 1.432227373123169,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.7039999961853027
+          }
+        },
+        "elapsed_s": 0.010641167988069355
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pcalm",
+        "seed": 11,
+        "width": 32,
+        "depth": 32,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 64,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 32,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 200,
+      "updates": 400,
+      "parameter_count": 58186,
+      "best_sha256": "65c3befb27d54a154dfc94ef9b6a36517143cd9d8722752b3d1a016437682aab",
+      "initial_sha256": "7dcf55ac977c01b18077e6166ef9ba75e02271e84c8ff62b98b18a75d58797fa",
+      "checkpoint": "fashion_pcalm_d32_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.10899999737739563,
+        "nll": 2.4166066646575928,
+        "bits_per_target": 3.48642635345459,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.10899999737739563
+          }
+        },
+        "elapsed_s": 0.009100274997763336
+      },
+      "selected_validation": {
+        "accuracy": 0.8069999814033508,
+        "nll": 0.6886889934539795,
+        "bits_per_target": 0.9935681819915771,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8069999814033508
+          }
+        },
+        "elapsed_s": 0.010733888018876314
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "bp",
+        "seed": 22,
+        "width": 32,
+        "depth": 32,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 64,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 32,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 58186,
+      "best_sha256": "40266ea6bb42af4900d7a9f5cfcbc5071bb1ae80b99e7d88c889427df2c74a97",
+      "initial_sha256": "93a83339adc0592c8d5484f85007704af9b98793be3e031a0410133b4f7c3f3c",
+      "checkpoint": "fashion_bp_d32_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.10199999809265137,
+        "nll": 2.50736141204834,
+        "bits_per_target": 3.6173579692840576,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.10199999809265137
+          }
+        },
+        "elapsed_s": 0.009165811003185809
+      },
+      "selected_validation": {
+        "accuracy": 0.8069999814033508,
+        "nll": 0.7095925211906433,
+        "bits_per_target": 1.0237256288528442,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8069999814033508
+          }
+        },
+        "elapsed_s": 0.009238465980160981
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pc",
+        "seed": 22,
+        "width": 32,
+        "depth": 32,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 64,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 32,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 58186,
+      "best_sha256": "5c2089bf3ee8a07e35324de80c5293e5cab8e62b7b63b023fe0ccc23b9be3af4",
+      "initial_sha256": "93a83339adc0592c8d5484f85007704af9b98793be3e031a0410133b4f7c3f3c",
+      "checkpoint": "fashion_pc_d32_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.10199999809265137,
+        "nll": 2.50736141204834,
+        "bits_per_target": 3.6173579692840576,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.10199999809265137
+          }
+        },
+        "elapsed_s": 0.011666111007798463
+      },
+      "selected_validation": {
+        "accuracy": 0.7059999704360962,
+        "nll": 0.9532610177993774,
+        "bits_per_target": 1.3752648830413818,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.7059999704360962
+          }
+        },
+        "elapsed_s": 0.011684143042657524
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pcalm",
+        "seed": 22,
+        "width": 32,
+        "depth": 32,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 64,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 32,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 300,
+      "updates": 400,
+      "parameter_count": 58186,
+      "best_sha256": "9e807646e8d1da88a594b42815ebb976564206445071fc9d2dbcda339e547f02",
+      "initial_sha256": "93a83339adc0592c8d5484f85007704af9b98793be3e031a0410133b4f7c3f3c",
+      "checkpoint": "fashion_pcalm_d32_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.10199999809265137,
+        "nll": 2.50736141204834,
+        "bits_per_target": 3.6173579692840576,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.10199999809265137
+          }
+        },
+        "elapsed_s": 0.012697980972006917
+      },
+      "selected_validation": {
+        "accuracy": 0.8109999895095825,
+        "nll": 0.6848890781402588,
+        "bits_per_target": 0.9880860447883606,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8109999895095825
+          }
+        },
+        "elapsed_s": 0.008965618966612965
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "bp",
+        "seed": 33,
+        "width": 32,
+        "depth": 32,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 64,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 32,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 300,
+      "updates": 400,
+      "parameter_count": 58186,
+      "best_sha256": "b73988a6b3cfbdae17d23d2b12e92eb6f1f2a14720f88a1372db0f0a9c1ffe90",
+      "initial_sha256": "90a8d028139085d247f54fc643c7ae273c5c3913c9b3860bf482656518b0bcfc",
+      "checkpoint": "fashion_bp_d32_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.11500000208616257,
+        "nll": 2.346651792526245,
+        "bits_per_target": 3.385502815246582,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.11500000208616257
+          }
+        },
+        "elapsed_s": 0.011975789966527373
+      },
+      "selected_validation": {
+        "accuracy": 0.8270000219345093,
+        "nll": 0.6584246158599854,
+        "bits_per_target": 0.9499059319496155,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8270000219345093
+          }
+        },
+        "elapsed_s": 0.010817247966770083
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pc",
+        "seed": 33,
+        "width": 32,
+        "depth": 32,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 64,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 32,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 400,
+      "updates": 400,
+      "parameter_count": 58186,
+      "best_sha256": "0805caa70ba533c16bc198267da4d9ab23b140dc741a895a2f3b6c134edab4b7",
+      "initial_sha256": "90a8d028139085d247f54fc643c7ae273c5c3913c9b3860bf482656518b0bcfc",
+      "checkpoint": "fashion_pc_d32_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.11500000208616257,
+        "nll": 2.346651792526245,
+        "bits_per_target": 3.385502815246582,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.11500000208616257
+          }
+        },
+        "elapsed_s": 0.010674575984012336
+      },
+      "selected_validation": {
+        "accuracy": 0.6919999718666077,
+        "nll": 0.9865721464157104,
+        "bits_per_target": 1.4233227968215942,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.6919999718666077
+          }
+        },
+        "elapsed_s": 0.01114219200098887
+      }
+    },
+    {
+      "config": {
+        "task": "fashion",
+        "method": "pcalm",
+        "seed": 33,
+        "width": 32,
+        "depth": 32,
+        "memory": false,
+        "steps": 400,
+        "batch": 32,
+        "settle_steps": 64,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 784,
+        "outputs": 10,
+        "width": 32,
+        "depth": 32,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 300,
+      "updates": 400,
+      "parameter_count": 58186,
+      "best_sha256": "1b5f16eaa2559af2a74970ff081e7075974800c2c214bd5f035a8a32ed4363a1",
+      "initial_sha256": "90a8d028139085d247f54fc643c7ae273c5c3913c9b3860bf482656518b0bcfc",
+      "checkpoint": "fashion_pcalm_d32_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.11500000208616257,
+        "nll": 2.346651792526245,
+        "bits_per_target": 3.385502815246582,
+        "temperature": 1.0,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.11500000208616257
+          }
+        },
+        "elapsed_s": 0.00936582701979205
+      },
+      "selected_validation": {
+        "accuracy": 0.8240000009536743,
+        "nll": 0.686255693435669,
+        "bits_per_target": 0.9900577068328857,
+        "temperature": 0.1,
+        "count": 1000,
+        "groups": {
+          "fashion": {
+            "count": 1000,
+            "accuracy": 0.8240000009536743
+          }
+        },
+        "elapsed_s": 0.01119523198576644
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "bp",
+        "seed": 11,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 500,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "9629460cdae95c1735029461b676f202d2bb50e177f683c7986175a8c34eef2b",
+      "initial_sha256": "5b32e726a72a0ee751c00429f526d55944ed63020976a588cfebad7b9c4578ba",
+      "checkpoint": "graph_bp_d4_w48_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.15625,
+        "nll": 1.968934416770935,
+        "bits_per_target": 2.840571880340576,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.15625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 40,
+        "elapsed_s": 0.002020845015067607
+      },
+      "selected_validation": {
+        "accuracy": 0.427734375,
+        "nll": 1.508779764175415,
+        "bits_per_target": 2.1767091751098633,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.427734375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0009542229818180203
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pc",
+        "seed": 11,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 750,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "4fd493cc88d0446a3a2953d26e292a4c30d1d943f7ccc7090c6412005521d1d9",
+      "initial_sha256": "5b32e726a72a0ee751c00429f526d55944ed63020976a588cfebad7b9c4578ba",
+      "checkpoint": "graph_pc_d4_w48_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.15625,
+        "nll": 1.968934416770935,
+        "bits_per_target": 2.840571880340576,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.15625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 40,
+        "elapsed_s": 0.0024486850015819073
+      },
+      "selected_validation": {
+        "accuracy": 0.38671875,
+        "nll": 1.5635015964508057,
+        "bits_per_target": 2.2556560039520264,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.38671875
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0027115489938296378
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pcalm",
+        "seed": 11,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 500,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "ab483c7371076354748e8be2ba2b4e1ede11fe1bb41271a1798f9c26b9fac4d9",
+      "initial_sha256": "5b32e726a72a0ee751c00429f526d55944ed63020976a588cfebad7b9c4578ba",
+      "checkpoint": "graph_pcalm_d4_w48_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.15625,
+        "nll": 1.968934416770935,
+        "bits_per_target": 2.840571880340576,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.15625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 40,
+        "elapsed_s": 0.009635522030293941
+      },
+      "selected_validation": {
+        "accuracy": 0.380859375,
+        "nll": 1.6012804508209229,
+        "bits_per_target": 2.31015944480896,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.380859375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.001431501004844904
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "energy",
+        "seed": 11,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 500,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "928302ae4f24319fce319cd6736d83704e501fa08d4afe67c100852ccd79399b",
+      "initial_sha256": "5b32e726a72a0ee751c00429f526d55944ed63020976a588cfebad7b9c4578ba",
+      "checkpoint": "graph_energy_d4_w48_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.138671875,
+        "nll": 1.9532604217529297,
+        "bits_per_target": 2.8179590702056885,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.138671875
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 71,
+        "unnecessary_abstentions": 62,
+        "elapsed_s": 0.17686310200951993
+      },
+      "selected_validation": {
+        "accuracy": 0.408203125,
+        "nll": 1.4511399269104004,
+        "bits_per_target": 2.093552350997925,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.408203125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.16857330600032583
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "bp",
+        "seed": 11,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 1000,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "55cb05f224f76256dbba0ac2a432158068d51b6e33cd2fa3c3318dd77a94da37",
+      "initial_sha256": "e86b171a2ce74340008cfc200fa577bfbc16ea2eb81c9c92135c559b746c9d2c",
+      "checkpoint": "graph_bp_d4_w48_mem1_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.130859375,
+        "nll": 1.9778236150741577,
+        "bits_per_target": 2.853396415710449,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.130859375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 31,
+        "elapsed_s": 0.003381818998605013
+      },
+      "selected_validation": {
+        "accuracy": 0.486328125,
+        "nll": 1.3445546627044678,
+        "bits_per_target": 1.9397823810577393,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.486328125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0020728930248878896
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pc",
+        "seed": 11,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 250,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "72fdeef226b975a1a7661a673283676cd786a5eeb0c722c5a8c6f5d676203470",
+      "initial_sha256": "e86b171a2ce74340008cfc200fa577bfbc16ea2eb81c9c92135c559b746c9d2c",
+      "checkpoint": "graph_pc_d4_w48_mem1_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.130859375,
+        "nll": 1.9778236150741577,
+        "bits_per_target": 2.853396415710449,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.130859375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 31,
+        "elapsed_s": 0.002482396026607603
+      },
+      "selected_validation": {
+        "accuracy": 0.3984375,
+        "nll": 1.5665278434753418,
+        "bits_per_target": 2.260021924972534,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.3984375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0018388450262136757
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pcalm",
+        "seed": 11,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 250,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "964f85b4b3124e8c8a411e3f0022885c843445f93df3f2f18494db62391a682b",
+      "initial_sha256": "e86b171a2ce74340008cfc200fa577bfbc16ea2eb81c9c92135c559b746c9d2c",
+      "checkpoint": "graph_pcalm_d4_w48_mem1_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.130859375,
+        "nll": 1.9778236150741577,
+        "bits_per_target": 2.853396415710449,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.130859375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 31,
+        "elapsed_s": 0.003201308019924909
+      },
+      "selected_validation": {
+        "accuracy": 0.3828125,
+        "nll": 1.5538558959960938,
+        "bits_per_target": 2.2417402267456055,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.3828125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.001770142000168562
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "energy",
+        "seed": 11,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 1000,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "9d7a4597cb579060ffaefdd913be4bd56fa8e4c4abe7e8861dbdf0818c1610c3",
+      "initial_sha256": "e86b171a2ce74340008cfc200fa577bfbc16ea2eb81c9c92135c559b746c9d2c",
+      "checkpoint": "graph_energy_d4_w48_mem1_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.1328125,
+        "nll": 1.9564509391784668,
+        "bits_per_target": 2.8225619792938232,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.1328125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 46,
+        "elapsed_s": 0.22945422696648166
+      },
+      "selected_validation": {
+        "accuracy": 0.45703125,
+        "nll": 1.3023266792297363,
+        "bits_per_target": 1.8788602352142334,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.45703125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.24795225099660456
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "bp",
+        "seed": 22,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 750,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "024eb279ce52cb3497a62177adc1af318dd62715d38f75f16882172cbf4deb94",
+      "initial_sha256": "e491aa11f468e54b38ee187651cc783c3149cff3fee7c9723539e69e292ef7bb",
+      "checkpoint": "graph_bp_d4_w48_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.11328125,
+        "nll": 1.9684807062149048,
+        "bits_per_target": 2.8399174213409424,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.11328125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 19,
+        "elapsed_s": 0.0014975660014897585
+      },
+      "selected_validation": {
+        "accuracy": 0.400390625,
+        "nll": 1.5033340454101562,
+        "bits_per_target": 2.1688525676727295,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.400390625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0011000300291925669
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pc",
+        "seed": 22,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 250,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "7a7338986b47c2768c457103b52a112659de6f30c9774612dd82837ceb15ae41",
+      "initial_sha256": "e491aa11f468e54b38ee187651cc783c3149cff3fee7c9723539e69e292ef7bb",
+      "checkpoint": "graph_pc_d4_w48_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.11328125,
+        "nll": 1.9684807062149048,
+        "bits_per_target": 2.8399174213409424,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.11328125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 19,
+        "elapsed_s": 0.0014457579818554223
+      },
+      "selected_validation": {
+        "accuracy": 0.380859375,
+        "nll": 1.555309534072876,
+        "bits_per_target": 2.243837356567383,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.380859375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0011965740122832358
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pcalm",
+        "seed": 22,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 250,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "636169db89f04df1a3dfae91e4878dddfceada4b8b568f93dbf7f93d34195016",
+      "initial_sha256": "e491aa11f468e54b38ee187651cc783c3149cff3fee7c9723539e69e292ef7bb",
+      "checkpoint": "graph_pcalm_d4_w48_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.11328125,
+        "nll": 1.9684807062149048,
+        "bits_per_target": 2.8399174213409424,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.11328125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 73,
+        "unnecessary_abstentions": 19,
+        "elapsed_s": 0.005210232979152352
+      },
+      "selected_validation": {
+        "accuracy": 0.376953125,
+        "nll": 1.564636468887329,
+        "bits_per_target": 2.257293224334717,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.376953125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0008401420200243592
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "energy",
+        "seed": 22,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 750,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "d620507ea42216fcf6f99e306201571ea5dbf321b2b56423568ff67ecf2da927",
+      "initial_sha256": "e491aa11f468e54b38ee187651cc783c3149cff3fee7c9723539e69e292ef7bb",
+      "checkpoint": "graph_energy_d4_w48_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.12109375,
+        "nll": 1.9535982608795166,
+        "bits_per_target": 2.818446397781372,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.12109375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 72,
+        "unnecessary_abstentions": 23,
+        "elapsed_s": 0.1540734419832006
+      },
+      "selected_validation": {
+        "accuracy": 0.40625,
+        "nll": 1.442955493927002,
+        "bits_per_target": 2.08174467086792,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.40625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.16750081500504166
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "bp",
+        "seed": 22,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 1000,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "a002c66b3850b7f1115d37b92d7dd26c76bdaf58bb16821b722193a5b46358d9",
+      "initial_sha256": "1c5d3838376ba1a10eaf53572d4b2aa4f414869b03f89e296b19733070e064fe",
+      "checkpoint": "graph_bp_d4_w48_mem1_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.134765625,
+        "nll": 1.9711346626281738,
+        "bits_per_target": 2.8437461853027344,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.134765625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 74,
+        "unnecessary_abstentions": 10,
+        "elapsed_s": 0.002600572013761848
+      },
+      "selected_validation": {
+        "accuracy": 0.474609375,
+        "nll": 1.370919108390808,
+        "bits_per_target": 1.977818250656128,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.474609375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.002674092014785856
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pc",
+        "seed": 22,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 250,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "48ee7e7497d720bd5fefbdbab6c070a9c8910c0013b9d78d4577efbfd6dfae25",
+      "initial_sha256": "1c5d3838376ba1a10eaf53572d4b2aa4f414869b03f89e296b19733070e064fe",
+      "checkpoint": "graph_pc_d4_w48_mem1_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.134765625,
+        "nll": 1.9711346626281738,
+        "bits_per_target": 2.8437461853027344,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.134765625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 74,
+        "unnecessary_abstentions": 10,
+        "elapsed_s": 0.005502648011315614
+      },
+      "selected_validation": {
+        "accuracy": 0.376953125,
+        "nll": 1.5529189109802246,
+        "bits_per_target": 2.2403883934020996,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.376953125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0039895460358820856
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pcalm",
+        "seed": 22,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 250,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "23651411e0a71a9a8a4937f1634f481e85f183efb9c334c4172feceb46919ca2",
+      "initial_sha256": "1c5d3838376ba1a10eaf53572d4b2aa4f414869b03f89e296b19733070e064fe",
+      "checkpoint": "graph_pcalm_d4_w48_mem1_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.134765625,
+        "nll": 1.9711346626281738,
+        "bits_per_target": 2.8437461853027344,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.134765625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 74,
+        "unnecessary_abstentions": 10,
+        "elapsed_s": 0.0031606670236214995
+      },
+      "selected_validation": {
+        "accuracy": 0.369140625,
+        "nll": 1.5658137798309326,
+        "bits_per_target": 2.2589917182922363,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.369140625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0026634999667294323
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "energy",
+        "seed": 22,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 1000,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "03134c37ed3f86ccb4b53efa856584b10c1315c3b355ca58012f76c720ef2f76",
+      "initial_sha256": "1c5d3838376ba1a10eaf53572d4b2aa4f414869b03f89e296b19733070e064fe",
+      "checkpoint": "graph_energy_d4_w48_mem1_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.140625,
+        "nll": 1.9553067684173584,
+        "bits_per_target": 2.820911407470703,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.140625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 71,
+        "unnecessary_abstentions": 17,
+        "elapsed_s": 0.29201587004354224
+      },
+      "selected_validation": {
+        "accuracy": 0.447265625,
+        "nll": 1.3133577108383179,
+        "bits_per_target": 1.8947746753692627,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.447265625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.21806431299773976
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "bp",
+        "seed": 33,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 1000,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "450da24f137a15c2847ed7977832d2f9560eca337e0b2b7640284d4d8bdb20f6",
+      "initial_sha256": "de534b5e0305f6c2e432dcca312cdd8c474e6052aa19352ec97ddcf78796d60d",
+      "checkpoint": "graph_bp_d4_w48_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.140625,
+        "nll": 1.9518585205078125,
+        "bits_per_target": 2.81593656539917,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.140625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 41,
+        "unnecessary_abstentions": 198,
+        "elapsed_s": 0.0015124619822017848
+      },
+      "selected_validation": {
+        "accuracy": 0.404296875,
+        "nll": 1.529540777206421,
+        "bits_per_target": 2.2066609859466553,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.404296875
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0011430070153437555
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pc",
+        "seed": 33,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 250,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "c806f69530b147e260e431a3efc11a7d703eaf6244c7f2a7f0688db854af1af1",
+      "initial_sha256": "de534b5e0305f6c2e432dcca312cdd8c474e6052aa19352ec97ddcf78796d60d",
+      "checkpoint": "graph_pc_d4_w48_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.140625,
+        "nll": 1.9518585205078125,
+        "bits_per_target": 2.81593656539917,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.140625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 41,
+        "unnecessary_abstentions": 198,
+        "elapsed_s": 0.0013122709933668375
+      },
+      "selected_validation": {
+        "accuracy": 0.38671875,
+        "nll": 1.5464189052581787,
+        "bits_per_target": 2.231010913848877,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.38671875
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0008838390349410474
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pcalm",
+        "seed": 33,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 250,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "702ef58868024d99d147b3782788e71cf800f49c7b64fdb1f436c98e8f5ab4d4",
+      "initial_sha256": "de534b5e0305f6c2e432dcca312cdd8c474e6052aa19352ec97ddcf78796d60d",
+      "checkpoint": "graph_pcalm_d4_w48_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.140625,
+        "nll": 1.9518585205078125,
+        "bits_per_target": 2.81593656539917,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.140625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 41,
+        "unnecessary_abstentions": 198,
+        "elapsed_s": 0.0020399659988470376
+      },
+      "selected_validation": {
+        "accuracy": 0.375,
+        "nll": 1.5570244789123535,
+        "bits_per_target": 2.2463114261627197,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.375
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.001106989977415651
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "energy",
+        "seed": 33,
+        "width": 48,
+        "depth": 4,
+        "memory": false,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 1000,
+      "updates": 1000,
+      "parameter_count": 12199,
+      "best_sha256": "6e46e952770ad955c1d7e66f1c3fd2947bea2c91bba47d5d0d10b44dd009709c",
+      "initial_sha256": "de534b5e0305f6c2e432dcca312cdd8c474e6052aa19352ec97ddcf78796d60d",
+      "checkpoint": "graph_energy_d4_w48_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.142578125,
+        "nll": 1.9470512866973877,
+        "bits_per_target": 2.8090012073516846,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.142578125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 53,
+        "unnecessary_abstentions": 109,
+        "elapsed_s": 0.2734486510162242
+      },
+      "selected_validation": {
+        "accuracy": 0.400390625,
+        "nll": 1.4460208415985107,
+        "bits_per_target": 2.086167097091675,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.400390625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.1462410400272347
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "bp",
+        "seed": 33,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 1000,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "e905fbe80d718a274c61fad2a996537a5777fe0d84bc05a790ada01f4c1db948",
+      "initial_sha256": "7a310b885fdb8d43a0c5ed4110a9716730a81e73f754d214d6b41001b05382a3",
+      "checkpoint": "graph_bp_d4_w48_mem1_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.171875,
+        "nll": 1.9582479000091553,
+        "bits_per_target": 2.8251545429229736,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.171875
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 52,
+        "unnecessary_abstentions": 99,
+        "elapsed_s": 0.002085260988678783
+      },
+      "selected_validation": {
+        "accuracy": 0.470703125,
+        "nll": 1.3155378103256226,
+        "bits_per_target": 1.8979198932647705,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.470703125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0021829080069437623
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pc",
+        "seed": 33,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 250,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "a7d5b3cccede9cb8101a7c0d2bdffd082d06f105cbec10e371daa9b83d0d5f54",
+      "initial_sha256": "7a310b885fdb8d43a0c5ed4110a9716730a81e73f754d214d6b41001b05382a3",
+      "checkpoint": "graph_pc_d4_w48_mem1_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.171875,
+        "nll": 1.9582479000091553,
+        "bits_per_target": 2.8251545429229736,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.171875
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 52,
+        "unnecessary_abstentions": 99,
+        "elapsed_s": 0.0028629880398511887
+      },
+      "selected_validation": {
+        "accuracy": 0.37890625,
+        "nll": 1.5534660816192627,
+        "bits_per_target": 2.241177797317505,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.37890625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.0023211489897221327
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "pcalm",
+        "seed": 33,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 750,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "2ca60f128ce09c24df69c6ad05cc4e27b62ad994bb6b7b9b11d59b137962851c",
+      "initial_sha256": "7a310b885fdb8d43a0c5ed4110a9716730a81e73f754d214d6b41001b05382a3",
+      "checkpoint": "graph_pcalm_d4_w48_mem1_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.171875,
+        "nll": 1.9582479000091553,
+        "bits_per_target": 2.8251545429229736,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.171875
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 52,
+        "unnecessary_abstentions": 99,
+        "elapsed_s": 0.003372347040567547
+      },
+      "selected_validation": {
+        "accuracy": 0.369140625,
+        "nll": 1.6247903108596802,
+        "bits_per_target": 2.3440768718719482,
+        "temperature": 0.3,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.369140625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.002181789022870362
+      }
+    },
+    {
+      "config": {
+        "task": "graph",
+        "method": "energy",
+        "seed": 33,
+        "width": 48,
+        "depth": 4,
+        "memory": true,
+        "steps": 1000,
+        "batch": 32,
+        "settle_steps": 16,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 16
+      },
+      "model_config": {
+        "inputs": 99,
+        "outputs": 7,
+        "width": 48,
+        "depth": 4,
+        "activation": "tanh",
+        "memory_keys": 12,
+        "memory_values": 7
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 1000,
+      "updates": 1000,
+      "parameter_count": 14935,
+      "best_sha256": "f3187f6f36a2ee192f7d41bf92e6d221d61a4afa3ac9f1c3c70b4ec1a0ecf466",
+      "initial_sha256": "7a310b885fdb8d43a0c5ed4110a9716730a81e73f754d214d6b41001b05382a3",
+      "checkpoint": "graph_energy_d4_w48_mem1_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.158203125,
+        "nll": 1.9516828060150146,
+        "bits_per_target": 2.815683126449585,
+        "temperature": 1.0,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.158203125
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 61,
+        "unnecessary_abstentions": 62,
+        "elapsed_s": 0.2641952429548837
+      },
+      "selected_validation": {
+        "accuracy": 0.447265625,
+        "nll": 1.305670976638794,
+        "bits_per_target": 1.8836849927902222,
+        "temperature": 0.1,
+        "count": 512,
+        "groups": {
+          "seen": {
+            "count": 512,
+            "accuracy": 0.447265625
+          }
+        },
+        "expected_unknown": 76,
+        "unsupported_answers": 0,
+        "unnecessary_abstentions": 0,
+        "elapsed_s": 0.19657709897728637
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "bp",
+        "seed": 11,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 200,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "5b7a0d0c387e5d12b6f1bd49bd6e460e357ea6314b3e83601823a2867f3d2bd1",
+      "initial_sha256": "0a56a9029abfd06f6b3cc81ed7a1742e133bd2a4cb56e4f9b555342ea7009b6d",
+      "checkpoint": "bytes_bp_d3_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.6333465576171875,
+        "bits_per_target": 8.127201080322266,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.0013506700051948428
+      },
+      "selected_validation": {
+        "accuracy": 0.09375,
+        "nll": 5.081883430480957,
+        "bits_per_target": 7.331607818603516,
+        "temperature": 0.03,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.09375
+          }
+        },
+        "elapsed_s": 0.00024395104264840484
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "bp_ce",
+        "seed": 11,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 200,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "8ccdfe13d21f129e85b464b712f48488501798cbb658da37162eb9b31c3ad49f",
+      "initial_sha256": "0a56a9029abfd06f6b3cc81ed7a1742e133bd2a4cb56e4f9b555342ea7009b6d",
+      "checkpoint": "bytes_bp_ce_d3_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.6333465576171875,
+        "bits_per_target": 8.127201080322266,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.0023848770069889724
+      },
+      "selected_validation": {
+        "accuracy": 0.15625,
+        "nll": 3.7402453422546387,
+        "bits_per_target": 5.39603328704834,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.15625
+          }
+        },
+        "elapsed_s": 0.0004778870497830212
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "pcalm",
+        "seed": 11,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 200,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "2c0aa0f7cbf8524025869b4a48449526036ba1f12359dbae629e1783fcd02f6d",
+      "initial_sha256": "0a56a9029abfd06f6b3cc81ed7a1742e133bd2a4cb56e4f9b555342ea7009b6d",
+      "checkpoint": "bytes_pcalm_d3_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.6333465576171875,
+        "bits_per_target": 8.127201080322266,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.0014204139588400722
+      },
+      "selected_validation": {
+        "accuracy": 0.078125,
+        "nll": 5.1432600021362305,
+        "bits_per_target": 7.4201555252075195,
+        "temperature": 0.1,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.078125
+          }
+        },
+        "elapsed_s": 0.00072140694828704
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "energy",
+        "seed": 11,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 150,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "ca228f5f08619387032ebc7b34d4682ece4e7af0d7f1b893cca5bba770ae75a7",
+      "initial_sha256": "0a56a9029abfd06f6b3cc81ed7a1742e133bd2a4cb56e4f9b555342ea7009b6d",
+      "checkpoint": "bytes_energy_d3_w32_mem0_seed11/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.532353401184082,
+        "bits_per_target": 7.981498718261719,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.7081855930155143
+      },
+      "selected_validation": {
+        "accuracy": 0.140625,
+        "nll": 3.955418825149536,
+        "bits_per_target": 5.70646333694458,
+        "temperature": 0.1,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.140625
+          }
+        },
+        "elapsed_s": 0.7163983180071227
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "bp",
+        "seed": 22,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 200,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "d6138cc6789fa09cee5324c56c9d08f0c4a4425e348dff9a9e083766666f2374",
+      "initial_sha256": "6e418479adae41fbfa0c36ba48b12e9831f4604304712e825dc1c88e6ea7221f",
+      "checkpoint": "bytes_bp_d3_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.617481708526611,
+        "bits_per_target": 8.104312896728516,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.0008568629855290055
+      },
+      "selected_validation": {
+        "accuracy": 0.0703125,
+        "nll": 5.038853168487549,
+        "bits_per_target": 7.269528388977051,
+        "temperature": 0.03,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0703125
+          }
+        },
+        "elapsed_s": 0.0002675830037333071
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "bp_ce",
+        "seed": 22,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 150,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "4244a20ce9ec934ba22cb619c58ccd303185c9e49943b0454c90f99afe1dbc66",
+      "initial_sha256": "6e418479adae41fbfa0c36ba48b12e9831f4604304712e825dc1c88e6ea7221f",
+      "checkpoint": "bytes_bp_ce_d3_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.617481708526611,
+        "bits_per_target": 8.104312896728516,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.002005148970056325
+      },
+      "selected_validation": {
+        "accuracy": 0.1484375,
+        "nll": 3.699674606323242,
+        "bits_per_target": 5.3375020027160645,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.1484375
+          }
+        },
+        "elapsed_s": 0.00036518299020826817
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "pcalm",
+        "seed": 22,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 200,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "4e715caeb722a8836e0ed032f027e98caa085d5a0de18156ab79e4e8dfd5f59d",
+      "initial_sha256": "6e418479adae41fbfa0c36ba48b12e9831f4604304712e825dc1c88e6ea7221f",
+      "checkpoint": "bytes_pcalm_d3_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.617481708526611,
+        "bits_per_target": 8.104312896728516,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.0015740300295874476
+      },
+      "selected_validation": {
+        "accuracy": 0.0625,
+        "nll": 5.1846771240234375,
+        "bits_per_target": 7.479907989501953,
+        "temperature": 0.1,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0625
+          }
+        },
+        "elapsed_s": 0.00035889598075300455
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "energy",
+        "seed": 22,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 150,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "94f61886980a9dfb27c7641adcf0a33b42246e1ed621862a80aa098a669fa1c2",
+      "initial_sha256": "6e418479adae41fbfa0c36ba48b12e9831f4604304712e825dc1c88e6ea7221f",
+      "checkpoint": "bytes_energy_d3_w32_mem0_seed22/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.54655122756958,
+        "bits_per_target": 8.001981735229492,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.7193996109999716
+      },
+      "selected_validation": {
+        "accuracy": 0.0625,
+        "nll": 3.9760336875915527,
+        "bits_per_target": 5.736204147338867,
+        "temperature": 0.1,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0625
+          }
+        },
+        "elapsed_s": 0.6328477489878424
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "bp",
+        "seed": 33,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 200,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "1db4c8a77605c068e7898ebfe1763670438476e286b61741e4767158b9c950c5",
+      "initial_sha256": "bfd10a97782d4c1a53c5b55312a41f2eb68b95da7d81d0cd5b753e856d2928ed",
+      "checkpoint": "bytes_bp_d3_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.555862903594971,
+        "bits_per_target": 8.015416145324707,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.0012577740126289427
+      },
+      "selected_validation": {
+        "accuracy": 0.1640625,
+        "nll": 5.027055263519287,
+        "bits_per_target": 7.25250768661499,
+        "temperature": 0.1,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.1640625
+          }
+        },
+        "elapsed_s": 0.00034459203016012907
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "bp_ce",
+        "seed": 33,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 150,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "5fe2054dc17ecf6e163b33220ca9c2e06022d030366c52e3ed0e6b4138ed0903",
+      "initial_sha256": "bfd10a97782d4c1a53c5b55312a41f2eb68b95da7d81d0cd5b753e856d2928ed",
+      "checkpoint": "bytes_bp_ce_d3_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.555862903594971,
+        "bits_per_target": 8.015416145324707,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.0012326390133239329
+      },
+      "selected_validation": {
+        "accuracy": 0.1640625,
+        "nll": 3.6959686279296875,
+        "bits_per_target": 5.332155704498291,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.1640625
+          }
+        },
+        "elapsed_s": 0.000287007016595453
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "pcalm",
+        "seed": 33,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 200,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "c0721c94cffa423e9431408d7b621fa0ef71148533c9364613615f074c78992c",
+      "initial_sha256": "bfd10a97782d4c1a53c5b55312a41f2eb68b95da7d81d0cd5b753e856d2928ed",
+      "checkpoint": "bytes_pcalm_d3_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.555862903594971,
+        "bits_per_target": 8.015416145324707,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.0013559660292230546
+      },
+      "selected_validation": {
+        "accuracy": 0.1640625,
+        "nll": 4.971156597137451,
+        "bits_per_target": 7.171863079071045,
+        "temperature": 0.1,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.1640625
+          }
+        },
+        "elapsed_s": 0.001816109986975789
+      }
+    },
+    {
+      "config": {
+        "task": "bytes",
+        "method": "energy",
+        "seed": 33,
+        "width": 32,
+        "depth": 3,
+        "memory": false,
+        "steps": 200,
+        "batch": 8,
+        "settle_steps": 12,
+        "state_lr": 0.2,
+        "dual_lr": 1.0,
+        "rho": 1.0,
+        "weight_lr": 0.001,
+        "temperature": 0.1,
+        "positive_weight": 0.1,
+        "activation": "tanh",
+        "candidate_chunk": 32
+      },
+      "model_config": {
+        "inputs": 64,
+        "outputs": 256,
+        "width": 32,
+        "depth": 3,
+        "activation": "tanh",
+        "memory_keys": 0,
+        "memory_values": 0
+      },
+      "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+      "best_step": 150,
+      "updates": 200,
+      "parameter_count": 12640,
+      "best_sha256": "433e7f69451fd97358d11fc51e2b6292c5f4b1db8d6ab3205dba4d7829a5f28b",
+      "initial_sha256": "bfd10a97782d4c1a53c5b55312a41f2eb68b95da7d81d0cd5b753e856d2928ed",
+      "checkpoint": "bytes_energy_d3_w32_mem0_seed33/best.pt",
+      "initial_validation": {
+        "accuracy": 0.0,
+        "nll": 5.539557456970215,
+        "bits_per_target": 7.991891860961914,
+        "temperature": 1.0,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.0
+          }
+        },
+        "elapsed_s": 0.7143368669785559
+      },
+      "selected_validation": {
+        "accuracy": 0.1328125,
+        "nll": 3.8947741985321045,
+        "bits_per_target": 5.618971347808838,
+        "temperature": 0.1,
+        "count": 128,
+        "groups": {
+          "bytes": {
+            "count": 128,
+            "accuracy": 0.1328125
+          }
+        },
+        "elapsed_s": 0.7637999669532292
+      }
+    }
+  ]
+}

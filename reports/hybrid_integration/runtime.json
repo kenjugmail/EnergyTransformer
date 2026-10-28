@@ -1,0 +1,24 @@
+{
+  "checkpoint": "runs/hybrid_native/selected.pt",
+  "checkpoint_sha256": "d78d835793c624f5b94fc32be179337deae3d8a92c766298822b46b3b7eeea6d",
+  "source_sha256": "a01b6feaec70f9ef568c5c15b69293bf5269d8321c985e3faa4d103de92ebafa",
+  "parent_checkpoint": "runs/enwik8_energy_10m/best.pt",
+  "parent_sha256": "0bd5ef6b8e956ba97aa7fc7d4a1841c349c46bc72b36568c3a592a2304cfdba6",
+  "config": {
+    "kind": "energy",
+    "vocab": 256,
+    "width": 384,
+    "layers": 6,
+    "heads": 4,
+    "slots": 16,
+    "ff_width": 1536,
+    "prior": 0.25,
+    "chunk": 64,
+    "activation_checkpointing": false,
+    "backend": "dmat",
+    "memory_dim": 32,
+    "memory_capacity": 256
+  },
+  "selected_seed": 33,
+  "scope": "One-hop symbolic-query adapter; original native weights frozen."
+}

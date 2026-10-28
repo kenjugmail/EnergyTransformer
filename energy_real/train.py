@@ -1,7 +1,7 @@
 """Resumable, budgeted byte-LM experiments. Historical weights are warm starts only."""
 from __future__ import annotations
 import argparse
-from dataclasses import asdict
+from dataclasses import asdict, replace
 import json
 import math
 from pathlib import Path
@@ -73,27 +73,47 @@ def validate(args):
         raise ValueError('stop_after must be an absolute step in the planned run')
     if args.max_tokens is not None and (args.max_tokens < 1 or type(args.max_tokens) is not int):
         raise ValueError('Positive integer token budget required')
+    if args.learning_rule == 'pcalm':
+        if args.amp != 'none':
+            raise ValueError('Experimental PC-ALM requires --amp none')
+        if not 1 <= args.activity_steps <= 256 or any(not math.isfinite(x) or x <= 0 for x in
+                (args.state_lr, args.dual_lr, args.rho)):
+            raise ValueError('Invalid PC-ALM activity schedule')
+
+
+def model_config(args):
+    """Validate architecture before parameter matching or device/data access."""
+    cfg = Config(kind=args.kind, width=args.width, layers=args.layers, heads=args.heads,
+                 slots=args.slots, ff_width=args.ff_width, chunk=args.chunk, backend=args.backend,
+                 activation_checkpointing=args.activation_checkpointing,
+                 memory_dim=args.memory_dim, memory_capacity=args.memory_capacity,
+                 attention_window=args.attention_window, attention_every=args.attention_every)
+    cfg.validate()
+    softmax_layers = (args.layers if args.kind == 'softmax' else
+                      args.layers // args.attention_every if args.kind == 'hybrid' else 0)
+    softmax_ff = matched_ff(args.width, args.heads, args.slots, args.ff_width)
+    ff = args.ff_width + round((softmax_ff - args.ff_width) * softmax_layers / args.layers)
+    cfg = replace(cfg, ff_width=ff)
+    cfg.validate()
+    return cfg
 
 
 def run(args, *, corpus_factory=Enwik8):
     validate(args)
+    cfg = model_config(args)
     device = torch.device(args.device)
     if device.type == 'cuda':
         from .device import require_idle_gpu, set_memory_limit
         require_idle_gpu()
         set_memory_limit(device, args.max_cuda_gib)
-    ff = matched_ff(args.width, args.heads, args.slots, args.ff_width) if args.kind == 'softmax' else args.ff_width
-    cfg = Config(kind=args.kind, width=args.width, layers=args.layers, heads=args.heads,
-                 slots=args.slots, ff_width=ff, chunk=args.chunk, backend=args.backend,
-                 activation_checkpointing=args.activation_checkpointing)
-    cfg.validate()
     train = corpus_factory(args.data, 'train', expected_sha256=args.data_sha256)
     valid = corpus_factory(args.data, 'valid')
     file_hash = train.file_identity()
     identity = {'config': asdict(cfg), 'data_sha256': file_hash, 'source_sha256': source_identity(),
                 'runtime': environment(device), 'schedule': {k: getattr(args, k) for k in
                 ('steps', 'batch', 'seq', 'accum', 'lr', 'warmup', 'seed', 'weight_decay',
-                 'eval_every', 'eval_bytes', 'eval_batch', 'amp', 'max_tokens', 'max_seconds', 'max_cuda_gib')}}
+                 'eval_every', 'eval_bytes', 'eval_batch', 'amp', 'max_tokens', 'max_seconds', 'max_cuda_gib',
+                 'learning_rule', 'activity_steps', 'state_lr', 'dual_lr', 'rho')}}
     with exclusive_run(args.out, args.resume) as out:
         torch.manual_seed(args.seed)
         if device.type == 'cuda':
@@ -144,7 +164,8 @@ def run(args, *, corpus_factory=Enwik8):
             old = torch.load(args.warm_start, weights_only=True, map_location='cpu')
             old_cfg = Config(**old['config'])
             # Kernel/backend choices may change for an explicitly labelled new run.
-            architecture = ('kind', 'vocab', 'width', 'layers', 'heads', 'slots', 'ff_width', 'prior')
+            architecture = ('kind', 'vocab', 'width', 'layers', 'heads', 'slots', 'ff_width', 'prior',
+                            'memory_dim', 'memory_capacity', 'attention_window', 'attention_every')
             if any(getattr(old_cfg, k) != getattr(cfg, k) for k in architecture):
                 raise ValueError('Warm-start architecture mismatch')
             model.load_state_dict(old['weights'], strict=True)
@@ -206,12 +227,23 @@ def run(args, *, corpus_factory=Enwik8):
                         group['lr'] = lr
                     optimizer.zero_grad(set_to_none=True)
                     loss_sum = 0.
+                    local_residual = None
                     for _ in range(args.accum):
                         x, y = train.batch(rng, args.batch, args.seq, device)
-                        with torch.autocast(device_type=device.type, dtype=torch.bfloat16,
-                                            enabled=args.amp == 'bfloat16' and device.type == 'cuda'):
-                            logits, _ = model(x)
-                            loss = F.cross_entropy(logits.float().flatten(0, 1), y.flatten()) / args.accum
+                        if args.learning_rule == 'pcalm':
+                            from .local_lm import pcalm_loss
+                            def check_activity_budget():
+                                if stop['requested'] or previous_elapsed + time.perf_counter() - started >= args.max_seconds:
+                                    raise TimeoutError('Stopped during PC-ALM activity inference; resume from committed checkpoint')
+                            local = pcalm_loss(model, x, y, steps=args.activity_steps, state_lr=args.state_lr,
+                                               dual_lr=args.dual_lr, rho=args.rho, check_budget=check_activity_budget)
+                            loss = local.loss / args.accum
+                            local_residual = local.residual_rms
+                        else:
+                            with torch.autocast(device_type=device.type, dtype=torch.bfloat16,
+                                                enabled=args.amp == 'bfloat16' and device.type == 'cuda'):
+                                logits, _ = model(x)
+                                loss = F.cross_entropy(logits.float().flatten(0, 1), y.flatten()) / args.accum
                         loss.backward()
                         loss_sum += float(loss.detach())
                     norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 1., error_if_nonfinite=True)
@@ -225,7 +257,8 @@ def run(args, *, corpus_factory=Enwik8):
                     tokens += tokens_per_step
                     emit({'event': 'step', 'step': step, 'tokens': tokens, 'loss': loss_sum,
                           'lr': lr, 'grad_norm': float(norm), 'train_s': train_seconds,
-                          'step_s': duration, 'tok_s': tokens_per_step / duration})
+                          'step_s': duration, 'tok_s': tokens_per_step / duration,
+                          'learning_rule': args.learning_rule, 'local_residual_rms': local_residual})
                     if step % args.eval_every == 0 or step == args.steps:
                         begin = time.perf_counter()
                         score = evaluate(model, valid, args.seq, args.eval_bytes, device, args.eval_batch,
@@ -267,7 +300,9 @@ def run(args, *, corpus_factory=Enwik8):
 
 def parser():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--kind', default='energy', choices=['energy', 'softmax'])
+    p.add_argument('--kind', default='energy', choices=['energy', 'softmax', 'hybrid'])
+    p.add_argument('--attention-window', type=int, default=0)
+    p.add_argument('--attention-every', type=int, default=3)
     p.add_argument('--data', default='data/enwik8')
     p.add_argument('--data-sha256', default=LOCAL_CORPUS_SHA256)
     p.add_argument('--out', required=True)
@@ -281,6 +316,13 @@ def parser():
     p.add_argument('--backend', choices=['dmat', 'matmul'], default='dmat')
     p.add_argument('--amp', choices=['none', 'bfloat16'], default='bfloat16')
     p.add_argument('--activation-checkpointing', action='store_true')
+    p.add_argument('--memory-dim', type=int, default=0)
+    p.add_argument('--memory-capacity', type=int, default=256)
+    p.add_argument('--learning-rule', choices=['bp', 'pcalm'], default='bp')
+    p.add_argument('--activity-steps', type=int, default=8)
+    p.add_argument('--state-lr', type=float, default=.02)
+    p.add_argument('--dual-lr', type=float, default=.1)
+    p.add_argument('--rho', type=float, default=1.)
     p.add_argument('--device', default='cuda')
     p.add_argument('--resume', action='store_true')
     p.add_argument('--warm-start', type=Path)

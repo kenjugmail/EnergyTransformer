@@ -1,0 +1,54 @@
+{
+  "before": {
+    "recall_4_lines": {
+      "correct_code_content": 4,
+      "strict_exact_output": 0,
+      "total": 4
+    },
+    "recall_48_lines": {
+      "correct_code_content": 0,
+      "strict_exact_output": 0,
+      "total": 4
+    },
+    "recall_112_lines": {
+      "correct_code_content": 0,
+      "strict_exact_output": 0,
+      "total": 4
+    }
+  },
+  "after": {
+    "recall_4_lines": {
+      "correct_code_content": 4,
+      "strict_exact_output": 4,
+      "total": 4
+    },
+    "recall_48_lines": {
+      "correct_code_content": 0,
+      "strict_exact_output": 0,
+      "total": 4
+    },
+    "recall_112_lines": {
+      "correct_code_content": 0,
+      "strict_exact_output": 0,
+      "total": 4
+    }
+  },
+  "teacher": {
+    "recall_4_lines": {
+      "correct_code_content": 4,
+      "strict_exact_output": 2,
+      "total": 4
+    },
+    "recall_48_lines": {
+      "correct_code_content": 4,
+      "strict_exact_output": 4,
+      "total": 4
+    },
+    "recall_112_lines": {
+      "correct_code_content": 4,
+      "strict_exact_output": 2,
+      "total": 4
+    }
+  },
+  "rubric": "Secondary diagnostic added after inspecting baseline responses: at least one five-digit code appears and all five-digit codes equal the expected secret. Reported separately; does not change fixed strict scoring."
+}

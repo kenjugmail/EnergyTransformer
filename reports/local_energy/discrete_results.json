@@ -1,0 +1,332 @@
+{
+  "status": "completed",
+  "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+  "environment": {
+    "torch": "2.14.0+cu130",
+    "machine": "aarch64",
+    "device": "cpu",
+    "cuda": "13.0",
+    "threads": 2,
+    "gpu": null
+  },
+  "selection_sha256": "bd09d8e863336945fba533591ffe06e133a48e0b55d91c0f578af0058f2ee088",
+  "parameters": 7,
+  "records": [
+    {
+      "seed": 11,
+      "steps": 400,
+      "best_step": 400,
+      "initial_validation": {
+        "accuracy": 0.626953125,
+        "nll": 1.9417189359664917,
+        "unsupported_answers": 37,
+        "groups": {
+          "seen": 0.626953125
+        }
+      },
+      "selected_validation": {
+        "accuracy": 1.0,
+        "nll": 0.024118361994624138,
+        "unsupported_answers": 0,
+        "groups": {
+          "seen": 1.0
+        }
+      },
+      "weights": {
+        "active_relation": 6.231306076049805,
+        "missing_to_unknown": 4.635467052459717,
+        "stale_set": -0.6985335350036621,
+        "hypothetical": 0.009320014156401157,
+        "other_relation": -0.03033185377717018,
+        "answer_unknown": 1.134053349494934,
+        "unknown_absorbing": 4.369040012359619
+      },
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/local_energy_discrete/best_seed11.pt",
+      "sha256": "e8a6bc737f11eb2bea93274e9a6953d99db6755fe8db7ae68bdcadd386f77577",
+      "initial_sha256": "8f27cc28584edcd83d44c9b88ffb84325107574ec2d2dba3bfe1be45c475b815",
+      "elapsed_s": 1.095864075992722,
+      "history": [
+        {
+          "step": 100,
+          "loss": 0.14120395481586456,
+          "validation_accuracy": 1.0
+        },
+        {
+          "step": 200,
+          "loss": 0.05089449882507324,
+          "validation_accuracy": 1.0
+        },
+        {
+          "step": 300,
+          "loss": 0.03432202339172363,
+          "validation_accuracy": 1.0
+        },
+        {
+          "step": 400,
+          "loss": 0.023683475330471992,
+          "validation_accuracy": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "steps": 400,
+      "best_step": 400,
+      "initial_validation": {
+        "accuracy": 0.435546875,
+        "nll": 1.9422616958618164,
+        "unsupported_answers": 76,
+        "groups": {
+          "seen": 0.435546875
+        }
+      },
+      "selected_validation": {
+        "accuracy": 1.0,
+        "nll": 0.024197060614824295,
+        "unsupported_answers": 0,
+        "groups": {
+          "seen": 1.0
+        }
+      },
+      "weights": {
+        "active_relation": 6.226207256317139,
+        "missing_to_unknown": 4.636263370513916,
+        "stale_set": -0.6825269460678101,
+        "hypothetical": -0.048443540930747986,
+        "other_relation": -0.05368681997060776,
+        "answer_unknown": 1.0778213739395142,
+        "unknown_absorbing": 4.382349491119385
+      },
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/local_energy_discrete/best_seed22.pt",
+      "sha256": "bf4c112053a89805f5551b18be0713d79f32dd30a962b6b2a521366bd7f4dffa",
+      "initial_sha256": "423a96b4712b5444b897863e1a4d36b915610c5628f121b66a183792e3f7e9b1",
+      "elapsed_s": 0.18648130900692195,
+      "history": [
+        {
+          "step": 100,
+          "loss": 0.13627786934375763,
+          "validation_accuracy": 1.0
+        },
+        {
+          "step": 200,
+          "loss": 0.05631529167294502,
+          "validation_accuracy": 1.0
+        },
+        {
+          "step": 300,
+          "loss": 0.03285558149218559,
+          "validation_accuracy": 1.0
+        },
+        {
+          "step": 400,
+          "loss": 0.025384819135069847,
+          "validation_accuracy": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 33,
+      "steps": 400,
+      "best_step": 400,
+      "initial_validation": {
+        "accuracy": 0.484375,
+        "nll": 1.9415674209594727,
+        "unsupported_answers": 76,
+        "groups": {
+          "seen": 0.484375
+        }
+      },
+      "selected_validation": {
+        "accuracy": 1.0,
+        "nll": 0.02422342263162136,
+        "unsupported_answers": 0,
+        "groups": {
+          "seen": 1.0
+        }
+      },
+      "weights": {
+        "active_relation": 6.236786365509033,
+        "missing_to_unknown": 4.593335151672363,
+        "stale_set": -0.6813259124755859,
+        "hypothetical": -0.029287034645676613,
+        "other_relation": -0.055113207548856735,
+        "answer_unknown": 1.0869160890579224,
+        "unknown_absorbing": 4.369368076324463
+      },
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/local_energy_discrete/best_seed33.pt",
+      "sha256": "0fef574f38f87ae5d7bfc2d7d56c3cdd8765b4a70898c5316aa66982b7bea323",
+      "initial_sha256": "592b08b933d6021e3cb8f06690e2b1fdea7e9ac45bf68577d037b472424dcf65",
+      "elapsed_s": 0.17022024298785254,
+      "history": [
+        {
+          "step": 100,
+          "loss": 0.14435003697872162,
+          "validation_accuracy": 1.0
+        },
+        {
+          "step": 200,
+          "loss": 0.051099956035614014,
+          "validation_accuracy": 1.0
+        },
+        {
+          "step": 300,
+          "loss": 0.03260771185159683,
+          "validation_accuracy": 1.0
+        },
+        {
+          "step": 400,
+          "loss": 0.022792130708694458,
+          "validation_accuracy": 1.0
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "seed": 11,
+      "initial": {
+        "accuracy": 0.4000000059604645,
+        "nll": 1.9424912929534912,
+        "unsupported_answers": 197,
+        "groups": {
+          "conflicting_updates": 0.5299999713897705,
+          "heldout_pair": 0.35499998927116394,
+          "long_delay": 0.2150000035762787,
+          "longer_path": 0.30000001192092896,
+          "missing": 0.4350000023841858,
+          "seen": 0.5649999976158142
+        }
+      },
+      "trained": {
+        "accuracy": 1.0,
+        "nll": 0.03223216533660889,
+        "unsupported_answers": 0,
+        "groups": {
+          "conflicting_updates": 1.0,
+          "heldout_pair": 1.0,
+          "long_delay": 1.0,
+          "longer_path": 1.0,
+          "missing": 1.0,
+          "seen": 1.0
+        }
+      },
+      "single_example_s_excluding_factor_encoding": [
+        4.985596751794219e-05,
+        5.060801049694419e-05,
+        4.353595431894064e-05,
+        4.2687985114753246e-05,
+        4.2479950934648514e-05,
+        4.220695700496435e-05,
+        4.2464002035558224e-05,
+        4.1744031477719545e-05,
+        4.174397327005863e-05,
+        4.156801151111722e-05
+      ],
+      "learning_interval": {
+        "difference": 0.6,
+        "low": 0.5733333333333334,
+        "high": 0.6266666666666667,
+        "unit": "episode",
+        "draws": 2000
+      }
+    },
+    {
+      "seed": 22,
+      "initial": {
+        "accuracy": 0.2541666626930237,
+        "nll": 1.945034384727478,
+        "unsupported_answers": 358,
+        "groups": {
+          "conflicting_updates": 0.39500001072883606,
+          "heldout_pair": 0.20999999344348907,
+          "long_delay": 0.36500000953674316,
+          "longer_path": 0.1850000023841858,
+          "missing": 0.0,
+          "seen": 0.3700000047683716
+        }
+      },
+      "trained": {
+        "accuracy": 1.0,
+        "nll": 0.03297053277492523,
+        "unsupported_answers": 0,
+        "groups": {
+          "conflicting_updates": 1.0,
+          "heldout_pair": 1.0,
+          "long_delay": 1.0,
+          "longer_path": 1.0,
+          "missing": 1.0,
+          "seen": 1.0
+        }
+      },
+      "single_example_s_excluding_factor_encoding": [
+        5.303998477756977e-05,
+        4.844798240810633e-05,
+        4.3775944504886866e-05,
+        4.30400250479579e-05,
+        4.1888037230819464e-05,
+        4.188797902315855e-05,
+        4.208000609651208e-05,
+        4.131201421841979e-05,
+        4.1696010157465935e-05,
+        4.147202707827091e-05
+      ],
+      "learning_interval": {
+        "difference": 0.7458333333333333,
+        "low": 0.7216666666666667,
+        "high": 0.77,
+        "unit": "episode",
+        "draws": 2000
+      }
+    },
+    {
+      "seed": 33,
+      "initial": {
+        "accuracy": 0.2958333194255829,
+        "nll": 1.945096492767334,
+        "unsupported_answers": 358,
+        "groups": {
+          "conflicting_updates": 0.45500001311302185,
+          "heldout_pair": 0.26499998569488525,
+          "long_delay": 0.4099999964237213,
+          "longer_path": 0.20999999344348907,
+          "missing": 0.0,
+          "seen": 0.4350000023841858
+        }
+      },
+      "trained": {
+        "accuracy": 1.0,
+        "nll": 0.033299293369054794,
+        "unsupported_answers": 0,
+        "groups": {
+          "conflicting_updates": 1.0,
+          "heldout_pair": 1.0,
+          "long_delay": 1.0,
+          "longer_path": 1.0,
+          "missing": 1.0,
+          "seen": 1.0
+        }
+      },
+      "single_example_s_excluding_factor_encoding": [
+        5.7775003369897604e-05,
+        4.894396988674998e-05,
+        4.617602098733187e-05,
+        4.755199188366532e-05,
+        4.3552019633352757e-05,
+        4.3328036554157734e-05,
+        4.31039952673018e-05,
+        4.184001591056585e-05,
+        4.14240057580173e-05,
+        4.14240057580173e-05
+      ],
+      "learning_interval": {
+        "difference": 0.7041666666666667,
+        "low": 0.6783333333333333,
+        "high": 0.73,
+        "unit": "episode",
+        "draws": 2000
+      }
+    }
+  ],
+  "scope": "Exact marginalization over discrete paths. Seven learned scalar costs; supplied features, parser, and graph composition. No general language claim.",
+  "full_results_sha256": "b70be51ed62ed2a39e95fff0526f670f2ab486c4a1512fbeec0d5b237171d211"
+}

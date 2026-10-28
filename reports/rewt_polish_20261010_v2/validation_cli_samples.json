@@ -1,0 +1,69 @@
+{
+  "selected_warm": "warm_heads2",
+  "unchanged_checkpoint": true,
+  "samples": [
+    {
+      "scope": "Illustrative validation example selected for display; not a new test score",
+      "id": "5b40729acd966c8d10e9e8a00fac8e13ad3e1bc8a48d2eb3239762ede0ea1aaf",
+      "family": "rules",
+      "steps": 2,
+      "difficulty": "familiar_format",
+      "expected": "steps=Q,R;ans=R\n",
+      "complete_correct": true,
+      "prompt": "walk V 2:B>A;V>Q;G>B;Q>R=?\n",
+      "generation": "steps=Q,R;ans=R\n",
+      "generation_hex": "73746570733d512c523b616e733d520a",
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/warm_heads2/best.pt",
+      "checkpoint_sha256": "2b184d2c5213345ecde465b0cbb5a4da11b090d04eb8d6ba90f6309c0949b09d",
+      "generated_tokens": 16,
+      "generated_bytes": 16,
+      "cost": {
+        "gradient_calls": 84,
+        "energy_calls": 168,
+        "attempts": 84
+      }
+    },
+    {
+      "scope": "Illustrative validation example selected for display; not a new test score",
+      "id": "514b49a8cd5603adb314776dd75a2743f314ee54c3a2eadf16f245c73a2780ba",
+      "family": "recall",
+      "steps": 16,
+      "difficulty": "withheld_wording",
+      "expected": "steps=9;ans=9\n",
+      "complete_correct": true,
+      "prompt": "which K?X=7;X=6;X=3;X=1;X=8;X=9;X=5;K=9;X=2;X=3;X=4;X=5;X=9;X=6;X=3;X=2;X=3=?\n",
+      "generation": "steps=9;ans=9\n",
+      "generation_hex": "73746570733d393b616e733d390a",
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/warm_heads2/best.pt",
+      "checkpoint_sha256": "2b184d2c5213345ecde465b0cbb5a4da11b090d04eb8d6ba90f6309c0949b09d",
+      "generated_tokens": 14,
+      "generated_bytes": 14,
+      "cost": {
+        "gradient_calls": 182,
+        "energy_calls": 364,
+        "attempts": 182
+      }
+    },
+    {
+      "scope": "Illustrative validation example selected for display; not a new test score",
+      "id": "762e73a60f94109bce78cdf60fbd7a82404a5d9b40d98bead68cef252b946d29",
+      "family": "arithmetic",
+      "steps": 1,
+      "difficulty": "familiar_format",
+      "expected": "steps=17;ans=17\n",
+      "complete_correct": false,
+      "prompt": "sum 14+3=?\n",
+      "generation": "steps=28;ans=28\n",
+      "generation_hex": "73746570733d32383b616e733d32380a",
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/termination/warm_heads2/best.pt",
+      "checkpoint_sha256": "2b184d2c5213345ecde465b0cbb5a4da11b090d04eb8d6ba90f6309c0949b09d",
+      "generated_tokens": 16,
+      "generated_bytes": 16,
+      "cost": {
+        "gradient_calls": 52,
+        "energy_calls": 104,
+        "attempts": 52
+      }
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "case": "control_22101",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22101/inference.pt",
+    "sha256": "3bc3153a9786cf01c6f32abd6209465039ef68139c17229df9925ac7d4cae345",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22101/best.pt",
+    "source_sha256": "79eab11f1b23f2fa98e833a5e4810743515f3beb43e14aaf8ea08e4fc7e54ab2",
+    "weights_unchanged": true
+  },
+  {
+    "case": "control_22102",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22102/inference.pt",
+    "sha256": "ebe52d2b646121d8f6d238ecd505d50af0df2f10f557a288b18600b5d01c7755",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22102/best.pt",
+    "source_sha256": "998a72e11fa2b875be257f41704d64893937ca824426f8258f47107d27a78699",
+    "weights_unchanged": true
+  },
+  {
+    "case": "control_22103",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22103/inference.pt",
+    "sha256": "5aea57a11f7cd6cf16dd004e0c780e88dbb333c10cc1acd9c7deed031ba454f9",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22103/best.pt",
+    "source_sha256": "997f2b49eb5b56fc122deb4d4cec9f19f39ec863557bcae0dbc60f6adf5a3a53",
+    "weights_unchanged": true
+  },
+  {
+    "case": "precond4_22101",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22101/inference.pt",
+    "sha256": "d17b225914b6448e330ebd8bb2854660a8deca1e31c997c67e708fe055634d30",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22101/best.pt",
+    "source_sha256": "b2ca841da4568250aa8ed0f22ed8ced31e2fafdbb11b2057a3811dc7e7845f76",
+    "weights_unchanged": true
+  },
+  {
+    "case": "precond4_22102",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22102/inference.pt",
+    "sha256": "58a857fdbbbe8b1cb855b1a402208da24317dd3286d4c1fa5a33c5cab8c8af78",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22102/best.pt",
+    "source_sha256": "9a7087e444f396a2cb314f71170beeabc1ffab10d1fd68a31aa4a863bfc6748f",
+    "weights_unchanged": true
+  },
+  {
+    "case": "precond4_22103",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22103/inference.pt",
+    "sha256": "9cad8480ebb1d81147b0bd461213b93c1664869121786afff26ce6b879e4c024",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22103/best.pt",
+    "source_sha256": "88f16cda0f266659b36f595facd3f75dbb8fc756813d73dca991b44038394397",
+    "weights_unchanged": true
+  },
+  {
+    "case": "scan_22101",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22101/inference.pt",
+    "sha256": "3deae0ba68d3972bda522701de5b4b7e50183ae7a5f66cca816c7fab9bcf58e8",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22101/best.pt",
+    "source_sha256": "92753d873202c2156a55cfdbc2d9e487cac956b8543b4f353bf28d4f388c1702",
+    "weights_unchanged": true
+  },
+  {
+    "case": "scan_22102",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22102/inference.pt",
+    "sha256": "8ca93d74e79d8d22fb874f1f15c20f00af7812f995c5317de2f621ac7b610da3",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22102/best.pt",
+    "source_sha256": "771700b160d198278502fc5ffd49ffb0625e20b52acc5738215ec3b4232e9de9",
+    "weights_unchanged": true
+  },
+  {
+    "case": "scan_22103",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22103/inference.pt",
+    "sha256": "0a25423026fc22541634628525c2e76ef96faff211ee5de5c22e405877cb83e3",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22103/best.pt",
+    "source_sha256": "f0109e1ef0d7bb607566464077363bfc487e987c5f0593658e5185ade74de34a",
+    "weights_unchanged": true
+  },
+  {
+    "case": "feedback8_22101",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22101/inference.pt",
+    "sha256": "dfdd0630fec292f57e1d7dc687f5f067294cc580ef1d10c810a3595bc19991f3",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22101/best.pt",
+    "source_sha256": "cd6b5d8550ce41a3d17d930748fd507c41fb22e088edcbedba24c8e0fba4f96c",
+    "weights_unchanged": true
+  },
+  {
+    "case": "feedback8_22102",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22102/inference.pt",
+    "sha256": "ba60d99858df4bbeeb301c7b987e3db8b8d42d0fbaa17c7e20bb9ee0d07ba41a",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22102/best.pt",
+    "source_sha256": "85cc79edc6dcda4b4fbe2c94d31f14670a6e42d0c4ead96f7f02c924f4c292f4",
+    "weights_unchanged": true
+  },
+  {
+    "case": "feedback8_22103",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22103/inference.pt",
+    "sha256": "28a07eb0241e941e74a8d466b327d696ce83cb4bb38addcab236d7e3a3a1dc44",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22103/best.pt",
+    "source_sha256": "e254f3882884d30e029973ec2c8b8456b95c71a90760562330e4bb075bac6204",
+    "weights_unchanged": true
+  },
+  {
+    "case": "delta_22101",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/delta_22101/inference.pt",
+    "sha256": "77cd9377d95b763f101a6d2dbb12ce4bb92e0737acc3058a6b8190c97e7d0764",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/delta_22101/best.pt",
+    "source_sha256": "1c8b0b5114b69fcaecd5f4e4aac1a048b3e4b7c963d447f2d350189abbf14c96",
+    "weights_unchanged": true
+  },
+  {
+    "case": "delta_22102",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/delta_22102/inference.pt",
+    "sha256": "61582bedf1cd2cc88522d7465900343022d2b0625b21b0dea90fe0ab6a622527",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/delta_22102/best.pt",
+    "source_sha256": "a43856526ded9ec6cf91a78388383acb9f0093f29012236e2eabbbd86b3c207b",
+    "weights_unchanged": true
+  },
+  {
+    "case": "delta_22103",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/delta_22103/inference.pt",
+    "sha256": "4a3f2df3b65623cb7490d16af3568e35d79aee5da2fe05876a4f66df7408cd12",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/delta_22103/best.pt",
+    "source_sha256": "a5a3126d883e3c8a551708d14dc70691767bf0af138f08ab0f96bd2284e365a0",
+    "weights_unchanged": true
+  },
+  {
+    "case": "patch4_22101",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/patch4_22101/inference.pt",
+    "sha256": "0f23e5ea7b871b4f4cdcad0a4e0ae4cfb5209e584bca75517eefeccccc6b5404",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/patch4_22101/best.pt",
+    "source_sha256": "06a6a844e8a20fdc508e553b5e28c70fc43e2183ae38f2af8f5028aaafc0c946",
+    "weights_unchanged": true
+  },
+  {
+    "case": "patch4_22102",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/patch4_22102/inference.pt",
+    "sha256": "2b51fc153ef4bcf03fad44d3ebbb15e88ec820d8352a693d5050944b30463249",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/patch4_22102/best.pt",
+    "source_sha256": "641396b82637133bf88c674ad31571f000771c26ba882d62ca88c1129e18859d",
+    "weights_unchanged": true
+  },
+  {
+    "case": "patch4_22103",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/patch4_22103/inference.pt",
+    "sha256": "1eedb1e60abb77516cd626ab10baa2816e2f20ae9011957be04e0d07fc2c5b48",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/patch4_22103/best.pt",
+    "source_sha256": "f0853bd2b66921d9f750b94a9e2998bc826aa90715f1baeaab0bdd693c0575c5",
+    "weights_unchanged": true
+  },
+  {
+    "case": "lowrank16_22101",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22101/inference.pt",
+    "sha256": "30e20de9234828bae0c4329d01ccc30187cd411f57b27f01adb8ddb4ef9e0129",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22101/best.pt",
+    "source_sha256": "7d8505a7b5b2d34848eef0f616d91c44b608a6b8a36a7a8a178b54ed9bf62d4d",
+    "weights_unchanged": true
+  },
+  {
+    "case": "lowrank16_22102",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22102/inference.pt",
+    "sha256": "35072b71742b52d275d44819ec9e294ba85e6c6ce54df622749a5f064ec1bb52",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22102/best.pt",
+    "source_sha256": "3dbb488494bd633a1c0864743396c7ce3265a7e9445a01960c61803cccf65dd8",
+    "weights_unchanged": true
+  },
+  {
+    "case": "lowrank16_22103",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22103/inference.pt",
+    "sha256": "2a62cf46b88d8dac2b52bf27819d02c52673b29a54661d90b2c8ec37d4066070",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22103/best.pt",
+    "source_sha256": "5b04e0702878b3c16cf67aabaa76878d19d689ead13edce01665cb1deb795a9f",
+    "weights_unchanged": true
+  },
+  {
+    "case": "combined_22101",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22101/inference.pt",
+    "sha256": "38a529c6b08c2dc3df3d6ec3205494804b211e118cc5b20af290de9f61fdcfce",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22101/best.pt",
+    "source_sha256": "4b8b4e50ee23b37dbcfcbe852ddf5895a9033be259b1ff59eefe46204086e49d",
+    "weights_unchanged": true
+  },
+  {
+    "case": "combined_22102",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22102/inference.pt",
+    "sha256": "ebc4827c6976e088badfc801e471bbfff899bc35d4e3bdaf183ddcadaa59f5be",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22102/best.pt",
+    "source_sha256": "1bc5168126913d9b93835f3098860d4a89821bd36c2ef99bfae9ee79fb7c2902",
+    "weights_unchanged": true
+  },
+  {
+    "case": "combined_22103",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22103/inference.pt",
+    "sha256": "5c15759f7b9773ca75ed9ee0974d756a46bcb9670bdf345f6161d49a9dd8c333",
+    "source": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22103/best.pt",
+    "source_sha256": "2e2c1627e50b08718dc32d474d7a0ebc7fbbca42d39bc50e31b0f7681d113411",
+    "weights_unchanged": true
+  }
+]

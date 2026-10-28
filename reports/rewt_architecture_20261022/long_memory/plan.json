@@ -1,0 +1,106 @@
+{
+  "batch_size": 24,
+  "cases": [
+    {
+      "delta_size": 0,
+      "name": "local_22101",
+      "seed": 22101
+    },
+    {
+      "delta_size": 0,
+      "name": "local_22102",
+      "seed": 22102
+    },
+    {
+      "delta_size": 0,
+      "name": "local_22103",
+      "seed": 22103
+    },
+    {
+      "delta_size": 16,
+      "name": "delta_22101",
+      "seed": 22101
+    },
+    {
+      "delta_size": 16,
+      "name": "delta_22102",
+      "seed": 22102
+    },
+    {
+      "delta_size": 16,
+      "name": "delta_22103",
+      "seed": 22103
+    }
+  ],
+  "config": {
+    "activation": "fourier",
+    "attention_heads": 2,
+    "attention_weight": 0.04,
+    "auxiliary_hidden": 32,
+    "backbone": "scan",
+    "backtracks": 4,
+    "cache_history": false,
+    "communication_weight": 0.04,
+    "compatibility_geometry": "anchor_relative",
+    "context_kernel": 3,
+    "coupled_modes": true,
+    "decoder_weight": 0.04,
+    "delta_chunk_size": 32,
+    "delta_size": 0,
+    "diffusion_levels": 3,
+    "diffusion_samples": 2,
+    "early_backtrack": false,
+    "feedback_stride": 0,
+    "frequency_bound": 2.0,
+    "halting_tolerance": 0.0,
+    "hidden": 96,
+    "history": 16,
+    "horizons": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "initial_carry_scale": 0.0,
+    "learned_frequencies": true,
+    "minimum_refinement_rounds": 1,
+    "mode_layout": "shared",
+    "modes": 8,
+    "normalize_frequency_blocks": false,
+    "output_geometry": "centered",
+    "output_rank": 0,
+    "packed": true,
+    "patch_stride": 1,
+    "position_initial_scale": 0.02,
+    "position_period": 16,
+    "recurrent_type": "gru",
+    "refinement_backend": "reference",
+    "rounds": 2,
+    "schedule": "all",
+    "solver": "krylov2",
+    "specialist_weight": 0.02,
+    "specialists": 3,
+    "step_size": 0.25,
+    "support": false,
+    "wave_geometry": "anchor_relative",
+    "width": 16
+  },
+  "data_sha256": {
+    "test": "912ff9c5ab034bbaeddcd89900772dabb1c606ee0cc76d5ff9be9ac35d7c1829",
+    "valid": "c279d6f686cf48f268a3a47ae0703be5b51ceb6b57b6b5ce92e53c656a4258c6"
+  },
+  "note": "Keys A..H and values 0..9. Requested key written twice with a different value; distractors contain other keys only. Correct answer is the latest write. Far queries exceed the 16-byte local window; test includes 259-byte prompts. Cold learned memory, no symbolic executor or labels at inference.",
+  "selection": "validation accuracy on balanced near/far overwrite queries",
+  "test_records": [
+    16,
+    32,
+    64
+  ],
+  "train_records": [
+    8,
+    16,
+    24
+  ],
+  "updates": 768,
+  "validation_every": 192
+}

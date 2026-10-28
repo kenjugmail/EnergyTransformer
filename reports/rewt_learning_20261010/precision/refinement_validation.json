@@ -1,0 +1,312 @@
+{
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/precision/one_head/best.pt",
+  "checkpoint_sha256": "de5a5dc46188e6d6f169025620e11387160d1ba81dc269d74a7c2c5e09a88476",
+  "results": [
+    {
+      "cpu_seconds": 1.584646256,
+      "rounds": 0,
+      "summary": {
+        "all": {
+          "answer_correct": 0.6295336787564767,
+          "both_correct": 0.6269430051813472,
+          "count": 386,
+          "steps_correct": 0.6424870466321243,
+          "valid_format": 0.9844559585492227
+        },
+        "by_difficulty": {
+          "heldout_instance": {
+            "answer_correct": 0.6295336787564767,
+            "both_correct": 0.6269430051813472,
+            "count": 386,
+            "steps_correct": 0.6424870466321243,
+            "valid_format": 0.9844559585492227
+          }
+        },
+        "by_family": {
+          "arithmetic": {
+            "answer_correct": 0.5360824742268041,
+            "both_correct": 0.5360824742268041,
+            "count": 194,
+            "steps_correct": 0.5567010309278351,
+            "valid_format": 1.0
+          },
+          "recall": {
+            "answer_correct": 0.8541666666666666,
+            "both_correct": 0.84375,
+            "count": 96,
+            "steps_correct": 0.8541666666666666,
+            "valid_format": 0.9375
+          },
+          "rules": {
+            "answer_correct": 0.59375,
+            "both_correct": 0.59375,
+            "count": 96,
+            "steps_correct": 0.6041666666666666,
+            "valid_format": 1.0
+          }
+        },
+        "by_steps": {
+          "1": {
+            "answer_correct": 0.5563139931740614,
+            "both_correct": 0.552901023890785,
+            "count": 293,
+            "steps_correct": 0.5699658703071673,
+            "valid_format": 1.0
+          },
+          "4": {
+            "answer_correct": 0.8602150537634409,
+            "both_correct": 0.8602150537634409,
+            "count": 93,
+            "steps_correct": 0.8709677419354839,
+            "valid_format": 0.9354838709677419
+          }
+        }
+      }
+    },
+    {
+      "cpu_seconds": 2.3449471840000005,
+      "rounds": 1,
+      "summary": {
+        "all": {
+          "answer_correct": 0.8160621761658031,
+          "both_correct": 0.8160621761658031,
+          "count": 386,
+          "steps_correct": 0.8264248704663213,
+          "valid_format": 1.0
+        },
+        "by_difficulty": {
+          "heldout_instance": {
+            "answer_correct": 0.8160621761658031,
+            "both_correct": 0.8160621761658031,
+            "count": 386,
+            "steps_correct": 0.8264248704663213,
+            "valid_format": 1.0
+          }
+        },
+        "by_family": {
+          "arithmetic": {
+            "answer_correct": 0.7938144329896907,
+            "both_correct": 0.7938144329896907,
+            "count": 194,
+            "steps_correct": 0.8092783505154639,
+            "valid_format": 1.0
+          },
+          "recall": {
+            "answer_correct": 0.9791666666666666,
+            "both_correct": 0.9791666666666666,
+            "count": 96,
+            "steps_correct": 0.9791666666666666,
+            "valid_format": 1.0
+          },
+          "rules": {
+            "answer_correct": 0.6979166666666666,
+            "both_correct": 0.6979166666666666,
+            "count": 96,
+            "steps_correct": 0.7083333333333334,
+            "valid_format": 1.0
+          }
+        },
+        "by_steps": {
+          "1": {
+            "answer_correct": 0.7610921501706485,
+            "both_correct": 0.7610921501706485,
+            "count": 293,
+            "steps_correct": 0.7747440273037542,
+            "valid_format": 1.0
+          },
+          "4": {
+            "answer_correct": 0.989247311827957,
+            "both_correct": 0.989247311827957,
+            "count": 93,
+            "steps_correct": 0.989247311827957,
+            "valid_format": 1.0
+          }
+        }
+      }
+    },
+    {
+      "cpu_seconds": 3.080538896,
+      "rounds": 2,
+      "summary": {
+        "all": {
+          "answer_correct": 0.883419689119171,
+          "both_correct": 0.883419689119171,
+          "count": 386,
+          "steps_correct": 0.8963730569948186,
+          "valid_format": 0.9948186528497409
+        },
+        "by_difficulty": {
+          "heldout_instance": {
+            "answer_correct": 0.883419689119171,
+            "both_correct": 0.883419689119171,
+            "count": 386,
+            "steps_correct": 0.8963730569948186,
+            "valid_format": 0.9948186528497409
+          }
+        },
+        "by_family": {
+          "arithmetic": {
+            "answer_correct": 0.8814432989690721,
+            "both_correct": 0.8814432989690721,
+            "count": 194,
+            "steps_correct": 0.8917525773195877,
+            "valid_format": 0.9896907216494846
+          },
+          "recall": {
+            "answer_correct": 1.0,
+            "both_correct": 1.0,
+            "count": 96,
+            "steps_correct": 1.0,
+            "valid_format": 1.0
+          },
+          "rules": {
+            "answer_correct": 0.7708333333333334,
+            "both_correct": 0.7708333333333334,
+            "count": 96,
+            "steps_correct": 0.8020833333333334,
+            "valid_format": 1.0
+          }
+        },
+        "by_steps": {
+          "1": {
+            "answer_correct": 0.8464163822525598,
+            "both_correct": 0.8464163822525598,
+            "count": 293,
+            "steps_correct": 0.863481228668942,
+            "valid_format": 0.9931740614334471
+          },
+          "4": {
+            "answer_correct": 1.0,
+            "both_correct": 1.0,
+            "count": 93,
+            "steps_correct": 1.0,
+            "valid_format": 1.0
+          }
+        }
+      }
+    },
+    {
+      "cpu_seconds": 4.365546048,
+      "rounds": 4,
+      "summary": {
+        "all": {
+          "answer_correct": 0.8238341968911918,
+          "both_correct": 0.8186528497409327,
+          "count": 386,
+          "steps_correct": 0.8497409326424871,
+          "valid_format": 0.9844559585492227
+        },
+        "by_difficulty": {
+          "heldout_instance": {
+            "answer_correct": 0.8238341968911918,
+            "both_correct": 0.8186528497409327,
+            "count": 386,
+            "steps_correct": 0.8497409326424871,
+            "valid_format": 0.9844559585492227
+          }
+        },
+        "by_family": {
+          "arithmetic": {
+            "answer_correct": 0.7731958762886598,
+            "both_correct": 0.7680412371134021,
+            "count": 194,
+            "steps_correct": 0.8041237113402062,
+            "valid_format": 0.9690721649484536
+          },
+          "recall": {
+            "answer_correct": 0.9791666666666666,
+            "both_correct": 0.9791666666666666,
+            "count": 96,
+            "steps_correct": 0.9895833333333334,
+            "valid_format": 1.0
+          },
+          "rules": {
+            "answer_correct": 0.7708333333333334,
+            "both_correct": 0.7604166666666666,
+            "count": 96,
+            "steps_correct": 0.8020833333333334,
+            "valid_format": 1.0
+          }
+        },
+        "by_steps": {
+          "1": {
+            "answer_correct": 0.7747440273037542,
+            "both_correct": 0.7679180887372014,
+            "count": 293,
+            "steps_correct": 0.8054607508532423,
+            "valid_format": 0.9795221843003413
+          },
+          "4": {
+            "answer_correct": 0.978494623655914,
+            "both_correct": 0.978494623655914,
+            "count": 93,
+            "steps_correct": 0.989247311827957,
+            "valid_format": 1.0
+          }
+        }
+      }
+    },
+    {
+      "cpu_seconds": 7.024370143999999,
+      "rounds": 8,
+      "summary": {
+        "all": {
+          "answer_correct": 0.7383419689119171,
+          "both_correct": 0.7305699481865285,
+          "count": 386,
+          "steps_correct": 0.7642487046632125,
+          "valid_format": 0.9740932642487047
+        },
+        "by_difficulty": {
+          "heldout_instance": {
+            "answer_correct": 0.7383419689119171,
+            "both_correct": 0.7305699481865285,
+            "count": 386,
+            "steps_correct": 0.7642487046632125,
+            "valid_format": 0.9740932642487047
+          }
+        },
+        "by_family": {
+          "arithmetic": {
+            "answer_correct": 0.654639175257732,
+            "both_correct": 0.6391752577319587,
+            "count": 194,
+            "steps_correct": 0.6855670103092784,
+            "valid_format": 0.9742268041237113
+          },
+          "recall": {
+            "answer_correct": 0.9270833333333334,
+            "both_correct": 0.9270833333333334,
+            "count": 96,
+            "steps_correct": 0.9270833333333334,
+            "valid_format": 0.9583333333333334
+          },
+          "rules": {
+            "answer_correct": 0.71875,
+            "both_correct": 0.71875,
+            "count": 96,
+            "steps_correct": 0.7604166666666666,
+            "valid_format": 0.9895833333333334
+          }
+        },
+        "by_steps": {
+          "1": {
+            "answer_correct": 0.6791808873720137,
+            "both_correct": 0.6689419795221843,
+            "count": 293,
+            "steps_correct": 0.7133105802047781,
+            "valid_format": 0.9795221843003413
+          },
+          "4": {
+            "answer_correct": 0.9247311827956989,
+            "both_correct": 0.9247311827956989,
+            "count": 93,
+            "steps_correct": 0.9247311827956989,
+            "valid_format": 0.956989247311828
+          }
+        }
+      }
+    }
+  ],
+  "validation_only": true
+}

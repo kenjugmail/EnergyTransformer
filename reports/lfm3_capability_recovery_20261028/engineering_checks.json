@@ -1,0 +1,9 @@
+{
+  "conversion_and_loss_tests": "16 passed in 2.86s",
+  "full_rewt_suite": "279 passed in 30.49s",
+  "updated_padding_projection_tests": "6 passed in 2.76s",
+  "evaluation_scorer": "JSON equality, code-fence rejection, knowledge case folding and format case sensitivity checked",
+  "syntax": "All new training, preparation, evaluation, auditing and reporting entrypoints compile",
+  "parameter_audit": "See stage1_parameter_audit.json; all frozen tensors exactly unchanged",
+  "scope": "Numerical and implementation checks; they do not certify general model equivalence."
+}

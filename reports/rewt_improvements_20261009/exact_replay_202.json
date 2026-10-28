@@ -1,0 +1,12 @@
+{
+  "seed": 202,
+  "checkpoint_step": 340,
+  "requested_until_step": 348,
+  "temporary_directory": "/tmp/rewt_exact_replay_202_1vhe6v_4",
+  "outcome": "FloatingPointError: Non-finite gradient",
+  "gradient_elements_finite": true,
+  "nonfinite_elements": 0,
+  "norm_fp32": "inf",
+  "norm_fp64": 5.196855820262513e+20,
+  "max_absolute_component": 6.209913250720724e+19
+}

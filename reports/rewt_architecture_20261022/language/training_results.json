@@ -1,0 +1,461 @@
+[
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "control_22102",
+      "overrides": {},
+      "seed": 22102,
+      "variant": "control"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22102/best.pt",
+    "checkpoint_sha256": "998a72e11fa2b875be257f41704d64893937ca824426f8258f47107d27a78699",
+    "parameters": 256096,
+    "training_cpu_seconds": 692.9928259839994,
+    "validation_bpb": 2.0948079278644913,
+    "validation_cpu_seconds": 6.465492224000002
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "control_22101",
+      "overrides": {},
+      "seed": 22101,
+      "variant": "control"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22101/best.pt",
+    "checkpoint_sha256": "79eab11f1b23f2fa98e833a5e4810743515f3beb43e14aaf8ea08e4fc7e54ab2",
+    "parameters": 256096,
+    "training_cpu_seconds": 700.7535954559993,
+    "validation_bpb": 2.0811651515258935,
+    "validation_cpu_seconds": 6.188979503999974
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "control_22103",
+      "overrides": {},
+      "seed": 22103,
+      "variant": "control"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22103/best.pt",
+    "checkpoint_sha256": "997f2b49eb5b56fc122deb4d4cec9f19f39ec863557bcae0dbc60f6adf5a3a53",
+    "parameters": 256096,
+    "training_cpu_seconds": 691.9920176320006,
+    "validation_bpb": 2.0889198130373035,
+    "validation_cpu_seconds": 6.53563513600011
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "precond4_22101",
+      "overrides": {
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22101,
+      "variant": "precond4"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22101/best.pt",
+    "checkpoint_sha256": "b2ca841da4568250aa8ed0f22ed8ced31e2fafdbb11b2057a3811dc7e7845f76",
+    "parameters": 256096,
+    "training_cpu_seconds": 685.7427751999998,
+    "validation_bpb": 2.0795749692650545,
+    "validation_cpu_seconds": 5.099055664000048
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "precond4_22103",
+      "overrides": {
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22103,
+      "variant": "precond4"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22103/best.pt",
+    "checkpoint_sha256": "88f16cda0f266659b36f595facd3f75dbb8fc756813d73dca991b44038394397",
+    "parameters": 256096,
+    "training_cpu_seconds": 685.3226588000075,
+    "validation_bpb": 2.0883526449257195,
+    "validation_cpu_seconds": 5.199497104000102
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "precond4_22102",
+      "overrides": {
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22102,
+      "variant": "precond4"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22102/best.pt",
+    "checkpoint_sha256": "9a7087e444f396a2cb314f71170beeabc1ffab10d1fd68a31aa4a863bfc6748f",
+    "parameters": 256096,
+    "training_cpu_seconds": 716.4811914079978,
+    "validation_bpb": 2.0941323654561916,
+    "validation_cpu_seconds": 6.054595440000185
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "scan_22101",
+      "overrides": {
+        "backbone": "scan"
+      },
+      "seed": 22101,
+      "variant": "scan"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22101/best.pt",
+    "checkpoint_sha256": "92753d873202c2156a55cfdbc2d9e487cac956b8543b4f353bf28d4f388c1702",
+    "parameters": 246688,
+    "training_cpu_seconds": 91.74191534400006,
+    "validation_bpb": 2.096724468562382,
+    "validation_cpu_seconds": 1.2713148799998635
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "scan_22102",
+      "overrides": {
+        "backbone": "scan"
+      },
+      "seed": 22102,
+      "variant": "scan"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22102/best.pt",
+    "checkpoint_sha256": "771700b160d198278502fc5ffd49ffb0625e20b52acc5738215ec3b4232e9de9",
+    "parameters": 246688,
+    "training_cpu_seconds": 93.09434411199709,
+    "validation_bpb": 2.1098521335551803,
+    "validation_cpu_seconds": 1.201962896000623
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "scan_22103",
+      "overrides": {
+        "backbone": "scan"
+      },
+      "seed": 22103,
+      "variant": "scan"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/scan_22103/best.pt",
+    "checkpoint_sha256": "f0109e1ef0d7bb607566464077363bfc487e987c5f0593658e5185ade74de34a",
+    "parameters": 246688,
+    "training_cpu_seconds": 93.73430830399457,
+    "validation_bpb": 2.097223920736198,
+    "validation_cpu_seconds": 1.2209097279996968
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "feedback8_22101",
+      "overrides": {
+        "backbone": "scan",
+        "feedback_stride": 8
+      },
+      "seed": 22101,
+      "variant": "feedback8"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22101/best.pt",
+    "checkpoint_sha256": "cd6b5d8550ce41a3d17d930748fd507c41fb22e088edcbedba24c8e0fba4f96c",
+    "parameters": 249040,
+    "training_cpu_seconds": 123.79745342400292,
+    "validation_bpb": 2.0966942370447996,
+    "validation_cpu_seconds": 1.48183542400011
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "feedback8_22102",
+      "overrides": {
+        "backbone": "scan",
+        "feedback_stride": 8
+      },
+      "seed": 22102,
+      "variant": "feedback8"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22102/best.pt",
+    "checkpoint_sha256": "85cc79edc6dcda4b4fbe2c94d31f14670a6e42d0c4ead96f7f02c924f4c292f4",
+    "parameters": 249040,
+    "training_cpu_seconds": 132.64081233599336,
+    "validation_bpb": 2.1097963948877676,
+    "validation_cpu_seconds": 1.655360687999746
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "feedback8_22103",
+      "overrides": {
+        "backbone": "scan",
+        "feedback_stride": 8
+      },
+      "seed": 22103,
+      "variant": "feedback8"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/feedback8_22103/best.pt",
+    "checkpoint_sha256": "e254f3882884d30e029973ec2c8b8456b95c71a90760562330e4bb075bac6204",
+    "parameters": 249040,
+    "training_cpu_seconds": 119.52031758400199,
+    "validation_bpb": 2.0972286007436884,
+    "validation_cpu_seconds": 1.3800999999998567
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "delta_22101",
+      "overrides": {
+        "backbone": "scan",
+        "delta_size": 16
+      },
+      "seed": 22101,
+      "variant": "delta"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/delta_22101/best.pt",
+    "checkpoint_sha256": "1c8b0b5114b69fcaecd5f4e4aac1a048b3e4b7c963d447f2d350189abbf14c96",
+    "parameters": 257537,
+    "training_cpu_seconds": 113.01535531200125,
+    "validation_bpb": 2.0653974078050923,
+    "validation_cpu_seconds": 1.4338005760005217
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "delta_22102",
+      "overrides": {
+        "backbone": "scan",
+        "delta_size": 16
+      },
+      "seed": 22102,
+      "variant": "delta"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/delta_22102/best.pt",
+    "checkpoint_sha256": "a43856526ded9ec6cf91a78388383acb9f0093f29012236e2eabbbd86b3c207b",
+    "parameters": 257537,
+    "training_cpu_seconds": 108.08618774400202,
+    "validation_bpb": 2.0793386843371007,
+    "validation_cpu_seconds": 1.3555800959998123
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "delta_22103",
+      "overrides": {
+        "backbone": "scan",
+        "delta_size": 16
+      },
+      "seed": 22103,
+      "variant": "delta"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/delta_22103/best.pt",
+    "checkpoint_sha256": "a5a3126d883e3c8a551708d14dc70691767bf0af138f08ab0f96bd2284e365a0",
+    "parameters": 257537,
+    "training_cpu_seconds": 115.68364921600187,
+    "validation_bpb": 2.074140415922118,
+    "validation_cpu_seconds": 1.445413391999864
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "patch4_22101",
+      "overrides": {
+        "backbone": "scan",
+        "patch_stride": 4
+      },
+      "seed": 22101,
+      "variant": "patch4"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/patch4_22101/best.pt",
+    "checkpoint_sha256": "06a6a844e8a20fdc508e553b5e28c70fc43e2183ae38f2af8f5028aaafc0c946",
+    "parameters": 246688,
+    "training_cpu_seconds": 88.69773796799609,
+    "validation_bpb": 2.097083964114083,
+    "validation_cpu_seconds": 1.1717268800007332
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "patch4_22102",
+      "overrides": {
+        "backbone": "scan",
+        "patch_stride": 4
+      },
+      "seed": 22102,
+      "variant": "patch4"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/patch4_22102/best.pt",
+    "checkpoint_sha256": "641396b82637133bf88c674ad31571f000771c26ba882d62ca88c1129e18859d",
+    "parameters": 246688,
+    "training_cpu_seconds": 89.03119801600724,
+    "validation_bpb": 2.110021988992923,
+    "validation_cpu_seconds": 1.0876846239998486
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "patch4_22103",
+      "overrides": {
+        "backbone": "scan",
+        "patch_stride": 4
+      },
+      "seed": 22103,
+      "variant": "patch4"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/patch4_22103/best.pt",
+    "checkpoint_sha256": "f0853bd2b66921d9f750b94a9e2998bc826aa90715f1baeaab0bdd693c0575c5",
+    "parameters": 246688,
+    "training_cpu_seconds": 95.93341496001085,
+    "validation_bpb": 2.0975714833778047,
+    "validation_cpu_seconds": 1.1493733600000269
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "lowrank16_22101",
+      "overrides": {
+        "backbone": "scan",
+        "output_rank": 16
+      },
+      "seed": 22101,
+      "variant": "lowrank16"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22101/best.pt",
+    "checkpoint_sha256": "7d8505a7b5b2d34848eef0f616d91c44b608a6b8a36a7a8a178b54ed9bf62d4d",
+    "parameters": 208800,
+    "training_cpu_seconds": 103.99489615999846,
+    "validation_bpb": 2.2822663820282227,
+    "validation_cpu_seconds": 1.3920915360004074
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "lowrank16_22102",
+      "overrides": {
+        "backbone": "scan",
+        "output_rank": 16
+      },
+      "seed": 22102,
+      "variant": "lowrank16"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22102/best.pt",
+    "checkpoint_sha256": "3dbb488494bd633a1c0864743396c7ce3265a7e9445a01960c61803cccf65dd8",
+    "parameters": 208800,
+    "training_cpu_seconds": 89.0006195359947,
+    "validation_bpb": 2.3006948098180633,
+    "validation_cpu_seconds": 1.1212269119996563
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "lowrank16_22103",
+      "overrides": {
+        "backbone": "scan",
+        "output_rank": 16
+      },
+      "seed": 22103,
+      "variant": "lowrank16"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/lowrank16_22103/best.pt",
+    "checkpoint_sha256": "5b04e0702878b3c16cf67aabaa76878d19d689ead13edce01665cb1deb795a9f",
+    "parameters": 208800,
+    "training_cpu_seconds": 85.26088646400058,
+    "validation_bpb": 2.2819073522592572,
+    "validation_cpu_seconds": 1.2314989759997843
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "combined_22101",
+      "overrides": {
+        "backbone": "scan",
+        "delta_size": 16,
+        "feedback_stride": 8,
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22101,
+      "variant": "combined"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22101/best.pt",
+    "checkpoint_sha256": "4b8b4e50ee23b37dbcfcbe852ddf5895a9033be259b1ff59eefe46204086e49d",
+    "parameters": 259889,
+    "training_cpu_seconds": 157.032638064009,
+    "validation_bpb": 2.075725053150385,
+    "validation_cpu_seconds": 1.9162651360006748
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "combined_22102",
+      "overrides": {
+        "backbone": "scan",
+        "delta_size": 16,
+        "feedback_stride": 8,
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22102,
+      "variant": "combined"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22102/best.pt",
+    "checkpoint_sha256": "1bc5168126913d9b93835f3098860d4a89821bd36c2ef99bfae9ee79fb7c2902",
+    "parameters": 259889,
+    "training_cpu_seconds": 178.7002886400005,
+    "validation_bpb": 2.0777301369283836,
+    "validation_cpu_seconds": 2.2925442880000446
+  },
+  {
+    "best_step": 512,
+    "case": {
+      "diversity_weight": 0.0,
+      "name": "combined_22103",
+      "overrides": {
+        "backbone": "scan",
+        "delta_size": 16,
+        "feedback_stride": 8,
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22103,
+      "variant": "combined"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/combined_22103/best.pt",
+    "checkpoint_sha256": "2e2c1627e50b08718dc32d474d7a0ebc7fbbca42d39bc50e31b0f7681d113411",
+    "parameters": 259889,
+    "training_cpu_seconds": 162.33769755200137,
+    "validation_bpb": 2.0712053414612903,
+    "validation_cpu_seconds": 1.8844844800000828
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "modes": 16,
+    "dimensions": 400,
+    "warps": 2,
+    "registers_per_thread": 156,
+    "spills": 8,
+    "shared_bytes": 128,
+    "blocks_per_sm_register_limit": 6
+  },
+  {
+    "modes": 16,
+    "dimensions": 400,
+    "warps": 4,
+    "registers_per_thread": 80,
+    "spills": 8,
+    "shared_bytes": 256,
+    "blocks_per_sm_register_limit": 6
+  },
+  {
+    "modes": 16,
+    "dimensions": 400,
+    "warps": 8,
+    "registers_per_thread": 48,
+    "spills": 8,
+    "shared_bytes": 4096,
+    "blocks_per_sm_register_limit": 5
+  },
+  {
+    "modes": 32,
+    "dimensions": 400,
+    "warps": 2,
+    "registers_per_thread": 255,
+    "spills": 26,
+    "shared_bytes": 256,
+    "blocks_per_sm_register_limit": 4
+  },
+  {
+    "modes": 32,
+    "dimensions": 400,
+    "warps": 4,
+    "registers_per_thread": 158,
+    "spills": 8,
+    "shared_bytes": 512,
+    "blocks_per_sm_register_limit": 3
+  },
+  {
+    "modes": 32,
+    "dimensions": 400,
+    "warps": 8,
+    "registers_per_thread": 80,
+    "spills": 8,
+    "shared_bytes": 4096,
+    "blocks_per_sm_register_limit": 3
+  },
+  {
+    "modes": 64,
+    "dimensions": 400,
+    "warps": 2,
+    "registers_per_thread": 168,
+    "spills": 684,
+    "shared_bytes": 512,
+    "blocks_per_sm_register_limit": 6
+  },
+  {
+    "modes": 64,
+    "dimensions": 400,
+    "warps": 4,
+    "registers_per_thread": 255,
+    "spills": 32,
+    "shared_bytes": 1024,
+    "blocks_per_sm_register_limit": 2
+  },
+  {
+    "modes": 64,
+    "dimensions": 400,
+    "warps": 8,
+    "registers_per_thread": 154,
+    "spills": 8,
+    "shared_bytes": 4096,
+    "blocks_per_sm_register_limit": 1
+  }
+]

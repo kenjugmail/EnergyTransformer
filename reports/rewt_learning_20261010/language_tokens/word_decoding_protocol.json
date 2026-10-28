@@ -1,0 +1,47 @@
+{
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/language_tokens/stable_fourier/best.pt",
+  "checkpoint_sha256": "1375416729b15ad2312290f8d2eaea3bd3e51106b4f2e7145551f1adfcac7d52",
+  "max_new_tokens": 96,
+  "prompts": [
+    {
+      "index": 3249,
+      "tokens_hex": "4c696c6180869fb68283e420706c6163652e89c26b83a220706c616e6580eb83"
+    },
+    {
+      "index": 3442,
+      "tokens_hex": "aa9e8483206e617567687479ccbc2042696c6c792e8884203320796561727320"
+    },
+    {
+      "index": 3898,
+      "tokens_hex": "aaac839d9e8483b02e8784206e6f737980f182206578706c6f7265f02e879583"
+    },
+    {
+      "index": 160,
+      "tokens_hex": "aaac839d2c9e84839cb0bc932e87be20686f6c6964617973b563617573658520"
+    },
+    {
+      "index": 3218,
+      "tokens_hex": "aaac839d2c9e84839c206d6f6e6b6579ef206c697665648c83207a6f6f2e88be"
+    },
+    {
+      "index": 2171,
+      "tokens_hex": "aaac839d2c2074776f206b696473abecb781b56163682e899583207265616c6c"
+    },
+    {
+      "index": 4108,
+      "tokens_hex": "aaac839d2c9e8483b0bc20416d792e87849bf82cfb8264617984862062697274"
+    },
+    {
+      "index": 2086,
+      "tokens_hex": "aaac839d2c9e848320636c657665729cccbcc02ec0beec8d8f82792063617273"
+    }
+  ],
+  "seed": 1773,
+  "temperatures": [
+    null,
+    0.3,
+    0.5,
+    0.7
+  ],
+  "validation_only": true
+}

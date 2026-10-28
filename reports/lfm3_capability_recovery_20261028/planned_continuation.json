@@ -1,0 +1,13 @@
+{
+  "initial": "runs/lfm3_capability_recovery_20261028/stage1/best.pt",
+  "output": "runs/lfm3_capability_recovery_20261028/stage2",
+  "steps": 512,
+  "length": 1024,
+  "batch": 2,
+  "lr": 1.5e-05,
+  "ffn_layers": 6,
+  "inherited_lr_scale": 0.2,
+  "seed": 281712,
+  "reason": "After the initial short-conversation pass, extend training sequences beyond the 256-token attention window while retaining short conversations. Select only by fixed validation KL; retain the input checkpoint if no improvement.",
+  "optimizer": "Fresh AdamW optimizer; continuation is not an exact optimizer-state resume."
+}

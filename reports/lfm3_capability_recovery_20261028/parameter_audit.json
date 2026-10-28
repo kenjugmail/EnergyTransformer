@@ -1,0 +1,99 @@
+{
+  "before_sha256": "60838c01d17e6df8e3194222848b88c9efb41c4543103d4b8f0011820a3f8a62",
+  "after_sha256": "1d956a462cfaa0e7b91b37f7b09086f015b05a67971222d4e006af21b84fdf55",
+  "architecture_unchanged": true,
+  "frozen_weights_exactly_unchanged": true,
+  "groups": {
+    "frozen": {
+      "tensors": 91,
+      "parameters": 1111564288,
+      "changed_tensors": 0,
+      "relative_l2_change": 0.0
+    },
+    "mixers_and_operator_norms": {
+      "tensors": 242,
+      "parameters": 389475104,
+      "changed_tensors": 242,
+      "relative_l2_change": 0.03023271040178946
+    },
+    "last_ffns_and_ffn_norms": {
+      "tensors": 30,
+      "parameters": 283140096,
+      "changed_tensors": 30,
+      "relative_l2_change": 0.006398494642446424
+    },
+    "final_norm": {
+      "tensors": 1,
+      "parameters": 2048,
+      "changed_tensors": 1,
+      "relative_l2_change": 7.805874667564485e-05
+    },
+    "energy": {
+      "tensors": 4,
+      "parameters": 264256,
+      "changed_tensors": 4,
+      "relative_l2_change": 0.016033724201452222
+    }
+  },
+  "after_metadata": {
+    "teacher_repo": "LiquidAI/LFM3-1.7B",
+    "teacher_revision": "40ebe0aa6662c9d40389c2f5d565b6a2c6aebacd",
+    "teacher_sha256": "135922caef64e81e52af88ede8b7c3ddaa9d6da220a9737fb3065275dbfb4330",
+    "seed": 281701,
+    "training_steps": 2560,
+    "stage": "capability_recovery",
+    "parameters": 1784445792,
+    "config": {
+      "vocab_size": 128000,
+      "width": 2048,
+      "hidden": 7680,
+      "heads": 16,
+      "kv_heads": 4,
+      "head_dim": 128,
+      "donor_layers": [
+        "conv",
+        "conv",
+        "full_attention",
+        "conv",
+        "sliding_attention",
+        "conv",
+        "full_attention",
+        "conv",
+        "sliding_attention",
+        "conv",
+        "full_attention",
+        "conv",
+        "sliding_attention",
+        "conv",
+        "full_attention",
+        "conv",
+        "sliding_attention",
+        "conv",
+        "full_attention",
+        "conv",
+        "sliding_attention",
+        "conv",
+        "full_attention",
+        "conv"
+      ],
+      "window": 256,
+      "conv_width": 7,
+      "chunk": 32,
+      "modes": 64,
+      "rounds": 2,
+      "norm_eps": 1e-05,
+      "full_theta": 1000000.0,
+      "full_rotary_fraction": 0.5,
+      "window_theta": 10000,
+      "pad_token_id": 124893,
+      "eos_token_id": 124900,
+      "teacher_repo": "LiquidAI/LFM3-1.7B",
+      "teacher_revision": "40ebe0aa6662c9d40389c2f5d565b6a2c6aebacd"
+    },
+    "run": "/home/kt/Documents/EnergyTransformer/runs/lfm3_capability_recovery_20261028/stage2",
+    "corpus_manifest_sha256": "ec26d6b36b5c69789b867abe01a48b5579f002afe2193324d916ae1c7da005f6",
+    "run_training_steps": 512,
+    "run_token_exposures": 550381,
+    "ffn_layers_unfrozen": 6
+  }
+}

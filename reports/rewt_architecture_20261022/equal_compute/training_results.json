@@ -1,0 +1,305 @@
+[
+  {
+    "best_step": 119,
+    "case": {
+      "name": "precond2_22301",
+      "overrides": {
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22301,
+      "variant": "precond2"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond2_22301/best.pt",
+    "checkpoint_sha256": "5f2bbf161172fdc3d0b90ba29b523ca1ebe1977fba72e70be520ee32f97c49d0",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.979451136,
+    "training_tokens": 365568,
+    "training_wall_seconds": 151.0837880743784,
+    "updates": 119,
+    "validation_bpb": 2.836947346421999
+  },
+  {
+    "best_step": 112,
+    "case": {
+      "name": "control_22302",
+      "overrides": {},
+      "seed": 22302,
+      "variant": "control"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/control_22302/best.pt",
+    "checkpoint_sha256": "eb6dcd58c8272a2e65dae083857184ddef0ce2eca81b895b0f617293da7b6e9b",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.06509889599988,
+    "training_tokens": 344064,
+    "training_wall_seconds": 150.21502246288583,
+    "updates": 112,
+    "validation_bpb": 2.8824237998737847
+  },
+  {
+    "best_step": 113,
+    "case": {
+      "name": "control_22301",
+      "overrides": {},
+      "seed": 22301,
+      "variant": "control"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/control_22301/best.pt",
+    "checkpoint_sha256": "a679eafa00993ea7f42b9888320d89d3bd2d2c552358f442e04b838cb27bb65f",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.34770958400003,
+    "training_tokens": 347136,
+    "training_wall_seconds": 150.43869742611423,
+    "updates": 113,
+    "validation_bpb": 2.869666454336268
+  },
+  {
+    "best_step": 113,
+    "case": {
+      "name": "control_22303",
+      "overrides": {},
+      "seed": 22303,
+      "variant": "control"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/control_22303/best.pt",
+    "checkpoint_sha256": "677a2825bc758812f20f1fc95cd7524c2d4edf5c3c3dc85f8c585fc83755760f",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.65327640000004,
+    "training_tokens": 347136,
+    "training_wall_seconds": 150.78960995579837,
+    "updates": 113,
+    "validation_bpb": 2.913242137162798
+  },
+  {
+    "best_step": 115,
+    "case": {
+      "name": "precond2_22302",
+      "overrides": {
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22302,
+      "variant": "precond2"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond2_22302/best.pt",
+    "checkpoint_sha256": "084bed6de744dbd1db50bbb65648278f28b6d48d5dda1f0b6b94866ac680529e",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.415927536,
+    "training_tokens": 353280,
+    "training_wall_seconds": 150.52989893598715,
+    "updates": 115,
+    "validation_bpb": 2.8722061901548495
+  },
+  {
+    "best_step": 117,
+    "case": {
+      "name": "precond2_22303",
+      "overrides": {
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22303,
+      "variant": "precond2"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond2_22303/best.pt",
+    "checkpoint_sha256": "6b7cd5f113a1856c369bc367e1ecf6cce8b405b71fc92d5d2a4cee33f03ea2f8",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.29882820800023,
+    "training_tokens": 359424,
+    "training_wall_seconds": 150.38575288734864,
+    "updates": 117,
+    "validation_bpb": 2.893038079042784
+  },
+  {
+    "best_step": 111,
+    "case": {
+      "name": "precond4_22301",
+      "overrides": {
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22301,
+      "variant": "precond4"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond4_22301/best.pt",
+    "checkpoint_sha256": "a78a1324e3ce1d50e3152e0293781e418a59b84ed0b2a85ed98c4c4cabb8665b",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.66698590399977,
+    "training_tokens": 340992,
+    "training_wall_seconds": 150.7917583178496,
+    "updates": 111,
+    "validation_bpb": 2.886821809187991
+  },
+  {
+    "best_step": 112,
+    "case": {
+      "name": "precond4_22302",
+      "overrides": {
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22302,
+      "variant": "precond4"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond4_22302/best.pt",
+    "checkpoint_sha256": "6b8d0bee75a432b95802d985707627a883c7bc2758d797883f5768b72f8077cf",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.368090016,
+    "training_tokens": 344064,
+    "training_wall_seconds": 150.42488929000683,
+    "updates": 112,
+    "validation_bpb": 2.888401500247204
+  },
+  {
+    "best_step": 112,
+    "case": {
+      "name": "precond4_22303",
+      "overrides": {
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22303,
+      "variant": "precond4"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond4_22303/best.pt",
+    "checkpoint_sha256": "8dec1bc22005fd55ec3206d085bd14f26172dcffe15b847de2c08423ed113266",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.13833798399986,
+    "training_tokens": 344064,
+    "training_wall_seconds": 150.2640212549013,
+    "updates": 112,
+    "validation_bpb": 2.9112783971476555
+  },
+  {
+    "best_step": 105,
+    "case": {
+      "name": "precond8_22301",
+      "overrides": {
+        "rounds": 8,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22301,
+      "variant": "precond8"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond8_22301/best.pt",
+    "checkpoint_sha256": "80016a535331495bf7ae94ec6606ba1f3cb0a77dcd45e50cc4e8f091cb818d76",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.5205028160002,
+    "training_tokens": 322560,
+    "training_wall_seconds": 150.6268320690724,
+    "updates": 105,
+    "validation_bpb": 2.916507495943738
+  },
+  {
+    "best_step": 105,
+    "case": {
+      "name": "precond8_22303",
+      "overrides": {
+        "rounds": 8,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22303,
+      "variant": "precond8"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond8_22303/best.pt",
+    "checkpoint_sha256": "476cce988ad1fd57f7acbbda50f048b4371aedf2174e65656bceede2cbd979fc",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.12232196799994,
+    "training_tokens": 322560,
+    "training_wall_seconds": 150.1900020086323,
+    "updates": 105,
+    "validation_bpb": 2.9542226338450277
+  },
+  {
+    "best_step": 104,
+    "case": {
+      "name": "precond8_22302",
+      "overrides": {
+        "rounds": 8,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22302,
+      "variant": "precond8"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond8_22302/best.pt",
+    "checkpoint_sha256": "2571cff8985fdb326cd46c2ffb6388006b0a388d7025539e80d1f8a035dc68f2",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.95851350399994,
+    "training_tokens": 319488,
+    "training_wall_seconds": 151.09794353693724,
+    "updates": 104,
+    "validation_bpb": 2.936100469294198
+  },
+  {
+    "best_step": 117,
+    "case": {
+      "name": "precond4_structured_22301",
+      "overrides": {
+        "preconditioner_factorization": "structured",
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22301,
+      "variant": "precond4_structured"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond4_structured_22301/best.pt",
+    "checkpoint_sha256": "8eb64fcc589c10c8fb6013754d87dccca74b02ad6c312e8124270d7f8be55288",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.58100832000002,
+    "training_tokens": 359424,
+    "training_wall_seconds": 150.68374179769307,
+    "updates": 117,
+    "validation_bpb": 2.8480807071801184
+  },
+  {
+    "best_step": 119,
+    "case": {
+      "name": "precond4_structured_22302",
+      "overrides": {
+        "preconditioner_factorization": "structured",
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22302,
+      "variant": "precond4_structured"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond4_structured_22302/best.pt",
+    "checkpoint_sha256": "37886b8dfeab7fd94a4dbc0cf86cbc56d08daebbc06d6bbcf5dbf98f4dac5252",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.57857718399976,
+    "training_tokens": 365568,
+    "training_wall_seconds": 150.65980371116893,
+    "updates": 119,
+    "validation_bpb": 2.8435320947812595
+  },
+  {
+    "best_step": 119,
+    "case": {
+      "name": "precond4_structured_22303",
+      "overrides": {
+        "preconditioner_factorization": "structured",
+        "rounds": 4,
+        "solver": "preconditioned",
+        "step_size": 0.75
+      },
+      "seed": 22303,
+      "variant": "precond4_structured"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond4_structured_22303/best.pt",
+    "checkpoint_sha256": "bfe79863aa88e00ca2569ed47f4f748a0442fa339331585c47b537ee2a0bb638",
+    "parameters": 256096,
+    "training_cpu_seconds": 150.60718776000027,
+    "training_tokens": 365568,
+    "training_wall_seconds": 150.72571600810625,
+    "updates": 119,
+    "validation_bpb": 2.8774535875584193
+  }
+]

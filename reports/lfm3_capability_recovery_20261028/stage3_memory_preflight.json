@@ -1,0 +1,11 @@
+{
+  "system": {
+    "MemTotal": 121.68940353393555,
+    "MemAvailable": 37.949859619140625,
+    "SwapFree": 0.7105598449707031
+  },
+  "cuda_free_gib": 22.01223373413086,
+  "cuda_total_gib": 121.68940353393555,
+  "estimated_full_ffn_training_peak_gib": 32.0,
+  "note": "Preflight during the stage-2 evaluation, which will exit before full FFN training starts."
+}

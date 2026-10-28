@@ -1,0 +1,20 @@
+{
+  "checkpoint_sha256": "cee979f7495e7bf59235819b3f87583cfa7ce8d6a6116e921e053c6886505385",
+  "cpu_seconds": 1.284052912,
+  "groups": {
+    "arithmetic": {
+      "complete_correct": 0,
+      "correct_trace_length": 62,
+      "count": 69,
+      "first_step_correct": 15
+    },
+    "rules": {
+      "complete_correct": 1,
+      "correct_trace_length": 5,
+      "count": 52,
+      "first_step_correct": 43
+    }
+  },
+  "step": 768,
+  "validation_only": true
+}

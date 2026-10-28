@@ -1,0 +1,9 @@
+{
+  "checkpoint_step": 768,
+  "summary": {
+    "linear_mean_absolute_error": 0.8495507751850738,
+    "pointer_operand_mass": 0.9595952021706965,
+    "sum_absolute_error": 1.688657048283164
+  },
+  "validation_only": true
+}

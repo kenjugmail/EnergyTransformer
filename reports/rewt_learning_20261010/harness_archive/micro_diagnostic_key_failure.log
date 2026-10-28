@@ -1,0 +1,31 @@
+{"time": "2026-10-10T09:46:01.908090+00:00", "message": "micro_started", "case": "semantic", "parameters": 249989, "updates": 200, "training_tasks": 12}
+{"time": "2026-10-10T09:46:01.908229+00:00", "message": "micro_started", "case": "control", "parameters": 249989, "updates": 200, "training_tasks": 12}
+{"time": "2026-10-10T09:46:01.908334+00:00", "message": "micro_started", "case": "relative", "parameters": 249989, "updates": 200, "training_tasks": 12}
+{"time": "2026-10-10T09:46:11.484008+00:00", "message": "micro_started", "case": "memory", "parameters": 249952, "updates": 200, "training_tasks": 12}
+{"time": "2026-10-10T09:46:11.496701+00:00", "message": "micro_started", "case": "combined", "parameters": 249952, "updates": 200, "training_tasks": 12}
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/concurrent/futures/process.py", line 263, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/reports/rewt_learning_20261010/micro.py", line 83, in fit
+    event('micro_progress',case=name,step=step+1,loss=float(loss.detach()),raw_norm=diagnostics['raw_norm'])
+                                                                                    ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'raw_norm'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/kt/Documents/EnergyTransformer/reports/rewt_learning_20261010/micro.py", line 125, in <module>
+    main()
+  File "/home/kt/Documents/EnergyTransformer/reports/rewt_learning_20261010/micro.py", line 119, in main
+    results=[future.result() for future in as_completed(futures)]
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+KeyError: 'raw_norm'

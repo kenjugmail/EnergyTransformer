@@ -1,0 +1,23 @@
+{
+  "case": {
+    "delta_size": 0,
+    "name": "local_22101",
+    "seed": 22101
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/long_memory/local_22101/best.pt",
+  "checkpoint_sha256": "365c5c4f5978625c049374fc8b929ef66ae1d4dab446a156e9d333106d62865b",
+  "parameters": 32752,
+  "test": {
+    "accuracy": 0.5520833333333334,
+    "groups": {
+      "16/False": 0.109375,
+      "16/True": 0.984375,
+      "32/False": 0.15625,
+      "32/True": 0.96875,
+      "64/False": 0.109375,
+      "64/True": 0.984375
+    }
+  },
+  "training_cpu_seconds": 30.284348704000067,
+  "validation_accuracy": 0.5182291666666666
+}

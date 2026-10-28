@@ -1,0 +1,76 @@
+{
+  "case": {
+    "config": {
+      "context": 128,
+      "feedforward": 453,
+      "heads": 4,
+      "layers": 2,
+      "width": 80
+    },
+    "learning_rate": 0.004
+  },
+  "name": "w80_lr0.004",
+  "training": {
+    "all_parameters": 250122,
+    "arm": "transformer",
+    "best_step": 64,
+    "best_validation_score": 4.010178288234704,
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_stabilized_20261009/baseline_supplement/screen/w80_lr0.004/best.pt",
+    "clip_fraction": 0.0625,
+    "filtered_spike_fraction": 0.0,
+    "forecast_targets": null,
+    "initialization": "random",
+    "maximum_raw_gradient_norm": 1.1802316155180614,
+    "mean_high_frequency_gradient_fraction": 0.12611919032548613,
+    "mean_raw_gradient_norm": 0.46269155218263575,
+    "method": "clip",
+    "parameters": 250122,
+    "phase": "supplement_validation_screen",
+    "process_peak_rss_bytes": 1050271744,
+    "processed_target_bytes": 262144,
+    "raw_spike_fraction": 0.0,
+    "remaining_phase_cpu_seconds": 15.651301328000002,
+    "remaining_phase_wall_seconds": 17.76839952589944,
+    "seed": 101,
+    "shared_teacher_training_cpu_seconds": 0.0,
+    "training_cpu_seconds": 15.465508607999993,
+    "training_plus_shared_teacher_cpu_seconds": 15.465508607999993,
+    "training_recipe": {
+      "corruption_probability": 0.25,
+      "curriculum": true,
+      "hard_negatives": true,
+      "maximum_rounds": 4,
+      "minimum_rounds": 1,
+      "output_noise": 0.5,
+      "process_supervision": true,
+      "process_weight": 0.05,
+      "repair_weight": 0.1,
+      "residual_gain": 0.25,
+      "state_noise": 0.05,
+      "trace_training_energy": false,
+      "variable_rounds": true
+    },
+    "training_wall_seconds": 17.55052220763173,
+    "updates": 64,
+    "validation": {
+      "bpb": 4.010178288234704,
+      "brier": 0.8733153343200684,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 0,
+        "energy_calls": 0,
+        "gradient_calls": 0
+      },
+      "cpu_ms_per_byte": 0.013280859374999177,
+      "cpu_seconds": 0.027199199999998314,
+      "energy_calls_per_position": 0.0,
+      "evaluated_bytes": 2048,
+      "gradient_calls_per_position": 0.0,
+      "next_byte_accuracy": 0.23779296875,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.027141019934788346
+    },
+    "validation_cpu_seconds": 0.06053023999999141
+  },
+  "validation_bpb": 4.010178288234704
+}

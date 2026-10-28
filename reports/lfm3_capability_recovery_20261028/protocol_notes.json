@@ -1,0 +1,7 @@
+{
+  "generation_comparison": "All headline student/donor comparisons use greedy generation, repetition_penalty=1.0, non-thinking chat prompts, and 64 new tokens.",
+  "superseded_diagnostic": "teacher_inherited_penalty.json used the donor default repetition penalty 1.1. It is retained as a diagnostic and excluded from headline comparisons.",
+  "scoring": "Strict exact-response scoring is fixed in evaluation_suite.json. Recall-content extraction is a separate diagnostic added after inspecting baseline outputs.",
+  "selection": "Every training run selects its best checkpoint using validation KL. Baseline and intermediate capability results were inspected during the exploratory work; none of their prompts or answers were used as training examples.",
+  "provenance": "Per-stage training sources and plans are retained in the run directories. The streaming dependency matches the original inference bundle; see streaming_dependency_audit.json."
+}

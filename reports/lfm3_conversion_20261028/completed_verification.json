@@ -1,0 +1,51 @@
+{
+  "completed_utc": "2026-10-28T01:54:46.873564+00:00",
+  "tests_passed": 277,
+  "conversion_and_distillation_tests": 14,
+  "training_updates": 1024,
+  "training_token_exposures": 851968,
+  "parameters": 1784445792,
+  "trainable_recovery_parameters": 389739360,
+  "best_sha256": "60838c01d17e6df8e3194222848b88c9efb41c4543103d4b8f0011820a3f8a62",
+  "standalone_bundle": "/home/kt/Documents/EnergyTransformer/runs/lfm3_conversion_20261028/converted",
+  "standalone_cli_from_outside_repository": "passed; same token IDs as final comparison",
+  "source_and_corpus_hashes_verified": true,
+  "exact_conversation_splits_disjoint": true,
+  "archived_training_sources_verified": true,
+  "bundle_files_verified": true,
+  "full_width_float32_audit": {
+    "tokens": 513,
+    "relative_l2": 1.4113917359281913e-06,
+    "max_absolute_error": 2.6226043701171875e-05,
+    "acceptance_relative_l2": 0.0001,
+    "matmul_precision": "highest",
+    "dtype": "float32"
+  },
+  "cached_state_audit": {
+    "prefix": 513,
+    "extended_prefix": 1024,
+    "chunk_relative_l2": 0.015240765176713467,
+    "chunk_max_absolute_error": 0.25,
+    "acceptance_relative_l2": 0.05,
+    "owned_state_bytes": 19695616,
+    "state_unchanged_after_branch": true,
+    "bounded_after_extension": true,
+    "dtype": "BF16 autocast with FP32 recurrent state; shape-dependent rounding is not exact parity"
+  },
+  "capability_status": "Architecture conversion implemented; full donor capability recovery is not established. Format-following and factual-wording failures remain.",
+  "no_training_process_left_running": true,
+  "source_sha256": {
+    "rewt/lfm_conversion.py": "b90beed4155eeb9995ddf2af8698b5536040219f541faa6429a5031cef61a35f",
+    "rewt/lfm_distill.py": "c6ca76b3234d549d15eda2c00398b43cb3f7a7985f655db44b0d8f74ef465220",
+    "rewt/streaming.py": "083e973c92bc293e963d3984b134c9c71f2659f14132e10db9285e70a3da5bc0",
+    "scripts/prepare_rewt_lfm3.py": "29d6c898a02d8e407b736f512947b9e99ad0f1c16d4d4d7d43e3600c74cd39bc",
+    "scripts/distill_rewt_lfm3.py": "b88e371e73d00c1e69264fb613669efd6736121d10df87448c555e65517336c7",
+    "scripts/sample_rewt_lfm3.py": "12ffaaca196d819d5525a1742b2ad018dbcb701492635aa686f0db1a16244c33",
+    "scripts/verify_rewt_lfm3.py": "8eb23729ddafdbaf06b9d3a75f2ed6e47f71b5c7cbafc12b62a3616694ed3bc2",
+    "scripts/package_rewt_lfm3.py": "1c356ffc2f4ac40949b359670c95d6e838b07aba30dc0decfaf3c0d6470553c6",
+    "scripts/summarize_rewt_lfm3.py": "fb8d62980f679a3d415bc3a4e036cfa3c5a1b4e5b00485296579d663cc5a0f98",
+    "tests_rewt/test_lfm_conversion.py": "5417e69463c3fda068c292dba7cdd866ac084221443ba8ab42028a53c0c3efb1",
+    "tests_rewt/test_lfm_distill.py": "17bc47530312de4a4bcd0eb6f58ae397be1199f4ff35be4d7e9cceb018aecf89"
+  },
+  "report_sha256": "6543308125efe0a53e44028945b32254e6672aeba11bc73b2ae9744003f4ecb9"
+}

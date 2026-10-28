@@ -1,0 +1,75 @@
+{"time": "2026-10-22T22:03:50.365809+00:00", "message": "equal_compute_started", "case": "control_22302"}
+{"time": "2026-10-22T22:03:50.365810+00:00", "message": "equal_compute_started", "case": "control_22301"}
+{"time": "2026-10-22T22:03:50.365810+00:00", "message": "equal_compute_started", "case": "control_22303"}
+{"time": "2026-10-22T22:03:50.383686+00:00", "message": "equal_compute_started", "case": "precond2_22301"}
+{"time": "2026-10-22T22:04:30.140887+00:00", "message": "equal_compute_validation", "case": "control_22303", "step": 28, "cpu": 37.90488148800001, "bpb": 3.4819588876237377}
+{"time": "2026-10-22T22:04:30.346734+00:00", "message": "equal_compute_validation", "case": "precond2_22301", "step": 29, "cpu": 38.44345092799999, "bpb": 3.4255722055245252}
+{"time": "2026-10-22T22:04:30.867959+00:00", "message": "equal_compute_validation", "case": "control_22301", "step": 29, "cpu": 38.79431084799999, "bpb": 3.4262255434422766}
+{"time": "2026-10-22T22:04:31.103949+00:00", "message": "equal_compute_validation", "case": "control_22302", "step": 29, "cpu": 38.88535879999999, "bpb": 3.43427040977837}
+{"time": "2026-10-22T22:05:08.575932+00:00", "message": "equal_compute_validation", "case": "precond2_22301", "step": 59, "cpu": 75.290930448, "bpb": 3.1345676540639635}
+{"time": "2026-10-22T22:05:08.970067+00:00", "message": "equal_compute_validation", "case": "control_22302", "step": 57, "cpu": 75.03736984000001, "bpb": 3.1702513581924725}
+{"time": "2026-10-22T22:05:09.361735+00:00", "message": "equal_compute_validation", "case": "control_22303", "step": 57, "cpu": 75.41043560000004, "bpb": 3.188403532459581}
+{"time": "2026-10-22T22:05:09.907299+00:00", "message": "equal_compute_validation", "case": "control_22301", "step": 58, "cpu": 76.16918556800003, "bpb": 3.146326139614109}
+{"time": "2026-10-22T22:05:48.319263+00:00", "message": "equal_compute_validation", "case": "precond2_22301", "step": 89, "cpu": 113.515449824, "bpb": 2.946014943172493}
+{"time": "2026-10-22T22:05:48.573476+00:00", "message": "equal_compute_validation", "case": "control_22301", "step": 85, "cpu": 113.06595225599999, "bpb": 2.9727275165439693}
+{"time": "2026-10-22T22:05:49.470090+00:00", "message": "equal_compute_validation", "case": "control_22302", "step": 85, "cpu": 113.76331827199998, "bpb": 2.9838583931274965}
+{"time": "2026-10-22T22:05:49.620212+00:00", "message": "equal_compute_validation", "case": "control_22303", "step": 85, "cpu": 113.87945860800004, "bpb": 3.013074615245576}
+{"time": "2026-10-22T22:06:27.081203+00:00", "message": "equal_compute_validation", "case": "precond2_22301", "step": 119, "cpu": 150.979451136, "bpb": 2.836947346421999}
+{"time": "2026-10-22T22:06:27.316200+00:00", "message": "equal_compute_validation", "case": "control_22302", "step": 112, "cpu": 150.06509889599988, "bpb": 2.8824237998737847}
+{"time": "2026-10-22T22:06:27.377688+00:00", "message": "equal_compute_validation", "case": "control_22301", "step": 113, "cpu": 150.34770958400003, "bpb": 2.869666454336268}
+{"time": "2026-10-22T22:06:27.428759+00:00", "message": "equal_compute_started", "case": "precond2_22302"}
+{"time": "2026-10-22T22:06:27.615201+00:00", "message": "equal_compute_started", "case": "precond2_22303"}
+{"time": "2026-10-22T22:06:27.687158+00:00", "message": "equal_compute_started", "case": "precond4_22301"}
+{"time": "2026-10-22T22:06:27.814698+00:00", "message": "equal_compute_validation", "case": "control_22303", "step": 113, "cpu": 150.65327640000004, "bpb": 2.913242137162798}
+{"time": "2026-10-22T22:06:28.142779+00:00", "message": "equal_compute_started", "case": "precond4_22302"}
+{"time": "2026-10-22T22:07:06.903374+00:00", "message": "equal_compute_validation", "case": "precond2_22303", "step": 29, "cpu": 37.79728276800009, "bpb": 3.4546028464924885}
+{"time": "2026-10-22T22:07:07.374275+00:00", "message": "equal_compute_validation", "case": "precond4_22301", "step": 28, "cpu": 38.200930863999986, "bpb": 3.434915541047915}
+{"time": "2026-10-22T22:07:07.434715+00:00", "message": "equal_compute_validation", "case": "precond4_22302", "step": 28, "cpu": 37.8585003040001, "bpb": 3.4405204599715904}
+{"time": "2026-10-22T22:07:07.442154+00:00", "message": "equal_compute_validation", "case": "precond2_22302", "step": 29, "cpu": 38.610950384000034, "bpb": 3.4328161029956727}
+{"time": "2026-10-22T22:07:46.220210+00:00", "message": "equal_compute_validation", "case": "precond4_22301", "step": 55, "cpu": 75.49474892799995, "bpb": 3.1749795409261403}
+{"time": "2026-10-22T22:07:46.295949+00:00", "message": "equal_compute_validation", "case": "precond2_22302", "step": 57, "cpu": 76.03992182400003, "bpb": 3.1719092342109496}
+{"time": "2026-10-22T22:07:46.330672+00:00", "message": "equal_compute_validation", "case": "precond2_22303", "step": 58, "cpu": 75.7852128000001, "bpb": 3.1788394159193087}
+{"time": "2026-10-22T22:07:47.453857+00:00", "message": "equal_compute_validation", "case": "precond4_22302", "step": 56, "cpu": 76.33980158400007, "bpb": 3.1791540632475686}
+{"time": "2026-10-22T22:08:24.812105+00:00", "message": "equal_compute_validation", "case": "precond2_22302", "step": 86, "cpu": 113.00650331199998, "bpb": 2.9799265879718053}
+{"time": "2026-10-22T22:08:25.478621+00:00", "message": "equal_compute_validation", "case": "precond4_22301", "step": 83, "cpu": 113.23681681599993, "bpb": 2.991348867107051}
+{"time": "2026-10-22T22:08:25.724510+00:00", "message": "equal_compute_validation", "case": "precond2_22303", "step": 88, "cpu": 113.73077636800016, "bpb": 2.9921509671586413}
+{"time": "2026-10-22T22:08:25.943625+00:00", "message": "equal_compute_validation", "case": "precond4_22302", "step": 84, "cpu": 113.31413193600008, "bpb": 2.994528965467165}
+{"time": "2026-10-22T22:09:03.596816+00:00", "message": "equal_compute_validation", "case": "precond2_22302", "step": 115, "cpu": 150.415927536, "bpb": 2.8722061901548495}
+{"time": "2026-10-22T22:09:03.604144+00:00", "message": "equal_compute_validation", "case": "precond2_22303", "step": 117, "cpu": 150.29882820800023, "bpb": 2.893038079042784}
+{"time": "2026-10-22T22:09:03.727757+00:00", "message": "equal_compute_started", "case": "precond4_22303"}
+{"time": "2026-10-22T22:09:03.734187+00:00", "message": "equal_compute_started", "case": "precond8_22301"}
+{"time": "2026-10-22T22:09:04.221376+00:00", "message": "equal_compute_validation", "case": "precond4_22301", "step": 111, "cpu": 150.66698590399977, "bpb": 2.886821809187991}
+{"time": "2026-10-22T22:09:04.247237+00:00", "message": "equal_compute_validation", "case": "precond4_22302", "step": 112, "cpu": 150.368090016, "bpb": 2.888401500247204}
+{"time": "2026-10-22T22:09:04.374311+00:00", "message": "equal_compute_started", "case": "precond8_22302"}
+{"time": "2026-10-22T22:09:04.406422+00:00", "message": "equal_compute_started", "case": "precond8_22303"}
+{"time": "2026-10-22T22:09:43.189219+00:00", "message": "equal_compute_validation", "case": "precond4_22303", "step": 30, "cpu": 37.87000998399998, "bpb": 3.4397348397568037}
+{"time": "2026-10-22T22:09:43.538269+00:00", "message": "equal_compute_validation", "case": "precond8_22301", "step": 28, "cpu": 38.16246032000015, "bpb": 3.4367526768793755}
+{"time": "2026-10-22T22:09:43.876962+00:00", "message": "equal_compute_validation", "case": "precond8_22303", "step": 28, "cpu": 37.88488091200014, "bpb": 3.476109410583511}
+{"time": "2026-10-22T22:09:44.328886+00:00", "message": "equal_compute_validation", "case": "precond8_22302", "step": 28, "cpu": 38.28627708799985, "bpb": 3.443558605497864}
+{"time": "2026-10-22T22:10:22.041422+00:00", "message": "equal_compute_validation", "case": "precond4_22303", "step": 58, "cpu": 75.14752676800009, "bpb": 3.176699122067077}
+{"time": "2026-10-22T22:10:22.460937+00:00", "message": "equal_compute_validation", "case": "precond8_22301", "step": 54, "cpu": 75.41657243200012, "bpb": 3.184259441276907}
+{"time": "2026-10-22T22:10:22.638161+00:00", "message": "equal_compute_validation", "case": "precond8_22303", "step": 54, "cpu": 75.0130405440002, "bpb": 3.212773640091253}
+{"time": "2026-10-22T22:10:24.007617+00:00", "message": "equal_compute_validation", "case": "precond8_22302", "step": 54, "cpu": 76.27639532799992, "bpb": 3.1979282127282023}
+{"time": "2026-10-22T22:11:01.290413+00:00", "message": "equal_compute_validation", "case": "precond8_22301", "step": 79, "cpu": 112.56187894400028, "bpb": 3.0182219802615484}
+{"time": "2026-10-22T22:11:01.586197+00:00", "message": "equal_compute_validation", "case": "precond4_22303", "step": 85, "cpu": 113.20328185599993, "bpb": 3.0073405857834965}
+{"time": "2026-10-22T22:11:01.734759+00:00", "message": "equal_compute_validation", "case": "precond8_22303", "step": 79, "cpu": 112.55294585600001, "bpb": 3.0533262284862945}
+{"time": "2026-10-22T22:11:03.003897+00:00", "message": "equal_compute_validation", "case": "precond8_22302", "step": 78, "cpu": 113.54392499199997, "bpb": 3.039595397030455}
+{"time": "2026-10-22T22:11:39.895600+00:00", "message": "equal_compute_validation", "case": "precond4_22303", "step": 112, "cpu": 150.13833798399986, "bpb": 2.9112783971476555}
+{"time": "2026-10-22T22:11:40.302541+00:00", "message": "equal_compute_started", "case": "precond4_structured_22301"}
+{"time": "2026-10-22T22:11:40.828320+00:00", "message": "equal_compute_validation", "case": "precond8_22301", "step": 105, "cpu": 150.5205028160002, "bpb": 2.916507495943738}
+{"time": "2026-10-22T22:11:40.860512+00:00", "message": "equal_compute_validation", "case": "precond8_22303", "step": 105, "cpu": 150.12232196799994, "bpb": 2.9542226338450277}
+{"time": "2026-10-22T22:11:41.250134+00:00", "message": "equal_compute_started", "case": "precond4_structured_22302"}
+{"time": "2026-10-22T22:11:41.285606+00:00", "message": "equal_compute_started", "case": "precond4_structured_22303"}
+{"time": "2026-10-22T22:11:42.000367+00:00", "message": "equal_compute_validation", "case": "precond8_22302", "step": 104, "cpu": 150.95851350399994, "bpb": 2.936100469294198}
+{"time": "2026-10-22T22:12:20.588094+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22301", "step": 30, "cpu": 38.831459215999985, "bpb": 3.4134992944474227}
+{"time": "2026-10-22T22:12:20.685481+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22303", "step": 30, "cpu": 37.94192520000007, "bpb": 3.4347026561574148}
+{"time": "2026-10-22T22:12:20.720821+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22302", "step": 30, "cpu": 37.98544580799978, "bpb": 3.4234583060273356}
+{"time": "2026-10-22T22:12:58.778116+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22301", "step": 58, "cpu": 75.57361472000036, "bpb": 3.142748174076895}
+{"time": "2026-10-22T22:12:59.247267+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22302", "step": 59, "cpu": 75.17299347200014, "bpb": 3.147700021244383}
+{"time": "2026-10-22T22:12:59.356873+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22303", "step": 59, "cpu": 75.3080904480002, "bpb": 3.1658003383668785}
+{"time": "2026-10-22T22:13:38.120700+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22302", "step": 89, "cpu": 112.70382116799999, "bpb": 2.9501026746441066}
+{"time": "2026-10-22T22:13:38.216645+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22301", "step": 88, "cpu": 113.62861464000014, "bpb": 2.9535859975653826}
+{"time": "2026-10-22T22:13:38.400561+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22303", "step": 89, "cpu": 113.00410412800017, "bpb": 2.9788716344349364}
+{"time": "2026-10-22T22:14:16.522248+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22301", "step": 117, "cpu": 150.58100832000002, "bpb": 2.8480807071801184}
+{"time": "2026-10-22T22:14:17.212168+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22302", "step": 119, "cpu": 150.57857718399976, "bpb": 2.8435320947812595}
+{"time": "2026-10-22T22:14:17.217118+00:00", "message": "equal_compute_validation", "case": "precond4_structured_22303", "step": 119, "cpu": 150.60718776000027, "bpb": 2.8774535875584193}

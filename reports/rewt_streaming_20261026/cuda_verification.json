@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "device": "NVIDIA GB10",
+  "dtype": "float32",
+  "tf32": false,
+  "rows": [
+    {
+      "variant": "transformer",
+      "max_cpu_gpu_error": 1.8596649169921875e-05,
+      "max_cached_error": 6.198883056640625e-06,
+      "greedy_equal": true,
+      "energy_nonincreasing": null
+    },
+    {
+      "variant": "window_transformer",
+      "max_cpu_gpu_error": 1.52587890625e-05,
+      "max_cached_error": 6.198883056640625e-06,
+      "greedy_equal": true,
+      "energy_nonincreasing": null
+    },
+    {
+      "variant": "hybrid",
+      "max_cpu_gpu_error": 9.551644325256348e-06,
+      "max_cached_error": 6.67572021484375e-06,
+      "greedy_equal": true,
+      "energy_nonincreasing": true
+    },
+    {
+      "variant": "hybrid_energy",
+      "max_cpu_gpu_error": 1.4781951904296875e-05,
+      "max_cached_error": 8.58306884765625e-06,
+      "greedy_equal": true,
+      "energy_nonincreasing": true
+    }
+  ],
+  "scope": "Numerical checks only, no GPU speed comparison.",
+  "source_sha256": {
+    "rewt/streaming.py": "083e973c92bc293e963d3984b134c9c71f2659f14132e10db9285e70a3da5bc0",
+    "rewt/streaming_decode.py": "f331f481ab8ed7936ed1dd03cc1a485909e7444dc5e02b709d601889570d6d23"
+  }
+}

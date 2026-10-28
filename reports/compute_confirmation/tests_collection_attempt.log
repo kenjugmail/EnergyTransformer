@@ -1,0 +1,235 @@
+
+==================================== ERRORS ====================================
+__ ERROR collecting runs/publication_install/source/tests/test_publication.py __
+import file mismatch:
+imported module 'test_publication' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/spark_kit/tests/test_publication.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_publication.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_________ ERROR collecting spark_kit/tests/test_checkpoint_install.py __________
+import file mismatch:
+imported module 'test_checkpoint_install' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/spark_kit/tests/test_checkpoint_install.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/spark_kit/tests/test_checkpoint_install.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+__________ ERROR collecting spark_kit/tests/test_launch_contracts.py ___________
+import file mismatch:
+imported module 'test_launch_contracts' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/spark_kit/tests/test_launch_contracts.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/spark_kit/tests/test_launch_contracts.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_____________ ERROR collecting spark_kit/tests/test_publication.py _____________
+import file mismatch:
+imported module 'test_publication' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/spark_kit/tests/test_publication.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/spark_kit/tests/test_publication.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+______________ ERROR collecting spark_kit/tests/test_spark_kit.py ______________
+import file mismatch:
+imported module 'test_spark_kit' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/spark_kit/tests/test_spark_kit.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/spark_kit/tests/test_spark_kit.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+____________ ERROR collecting spark_kit/tests/test_v23_hardening.py ____________
+import file mismatch:
+imported module 'test_v23_hardening' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/spark_kit/tests/test_v23_hardening.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/spark_kit/tests/test_v23_hardening.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+____________________ ERROR collecting tests/test_binding.py ____________________
+import file mismatch:
+imported module 'test_binding' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_binding.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_binding.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+________________ ERROR collecting tests/test_binding_trained.py ________________
+import file mismatch:
+imported module 'test_binding_trained' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_binding_trained.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_binding_trained.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+____________________ ERROR collecting tests/test_bridge.py _____________________
+import file mismatch:
+imported module 'test_bridge' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_bridge.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_bridge.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_______________ ERROR collecting tests/test_geometric_memory.py ________________
+import file mismatch:
+imported module 'test_geometric_memory' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_geometric_memory.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_geometric_memory.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+________________ ERROR collecting tests/test_hf_publication.py _________________
+import file mismatch:
+imported module 'test_hf_publication' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_hf_publication.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_hf_publication.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+____________________ ERROR collecting tests/test_ledger.py _____________________
+import file mismatch:
+imported module 'test_ledger' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_ledger.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_ledger.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+___________________ ERROR collecting tests/test_portable.py ____________________
+import file mismatch:
+imported module 'test_portable' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_portable.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_portable.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+__________________ ERROR collecting tests/test_publication.py __________________
+import file mismatch:
+imported module 'test_publication' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/spark_kit/tests/test_publication.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_publication.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+________________ ERROR collecting tests/test_quadratic_edit.py _________________
+import file mismatch:
+imported module 'test_quadratic_edit' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_quadratic_edit.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_quadratic_edit.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+____________________ ERROR collecting tests/test_review.py _____________________
+import file mismatch:
+imported module 'test_review' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_review.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_review.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_________________ ERROR collecting tests/test_write_router.py __________________
+import file mismatch:
+imported module 'test_write_router' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests/test_write_router.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests/test_write_router.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_______________ ERROR collecting tests_real/test_experiments.py ________________
+import file mismatch:
+imported module 'test_experiments' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_experiments.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_experiments.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+__________________ ERROR collecting tests_real/test_kernel.py __________________
+import file mismatch:
+imported module 'test_kernel' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_kernel.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_kernel.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+__________________ ERROR collecting tests_real/test_memory.py __________________
+import file mismatch:
+imported module 'test_memory' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_memory.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_memory.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_______________ ERROR collecting tests_real/test_reasoning_v2.py _______________
+import file mismatch:
+imported module 'test_reasoning_v2' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_reasoning_v2.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_reasoning_v2.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_____________ ERROR collecting tests_real/test_recall_followup.py ______________
+import file mismatch:
+imported module 'test_recall_followup' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_recall_followup.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_recall_followup.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_______________ ERROR collecting tests_real/test_recall_study.py _______________
+import file mismatch:
+imported module 'test_recall_study' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_recall_study.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_recall_study.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_________________ ERROR collecting tests_real/test_repairs.py __________________
+import file mismatch:
+imported module 'test_repairs' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_repairs.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_repairs.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+___________ ERROR collecting tests_real/test_research_publication.py ___________
+import file mismatch:
+imported module 'test_research_publication' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_research_publication.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_research_publication.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_________________ ERROR collecting tests_real/test_service.py __________________
+import file mismatch:
+imported module 'test_service' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_service.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_service.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+__________________ ERROR collecting tests_real/test_stages.py __________________
+import file mismatch:
+imported module 'test_stages' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_stages.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_stages.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+_________________ ERROR collecting tests_real/test_training.py _________________
+import file mismatch:
+imported module 'test_training' has this __file__ attribute:
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/tests_real/test_training.py
+which is not the same as the test file we want to collect:
+  /home/kt/Documents/EnergyTransformer/tests_real/test_training.py
+HINT: remove __pycache__ / .pyc files and/or use a unique basename for your test file modules
+=============================== warnings summary ===============================
+runs/publication_install/source/spark_kit/tests/test_spark_kit.py:42
+  /home/kt/Documents/EnergyTransformer/runs/publication_install/source/spark_kit/tests/test_spark_kit.py:42: PytestUnknownMarkWarning: Unknown pytest.mark.integration - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.integration
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR runs/publication_install/source/tests/test_publication.py
+ERROR spark_kit/tests/test_checkpoint_install.py
+ERROR spark_kit/tests/test_launch_contracts.py
+ERROR spark_kit/tests/test_publication.py
+ERROR spark_kit/tests/test_spark_kit.py
+ERROR spark_kit/tests/test_v23_hardening.py
+ERROR tests/test_binding.py
+ERROR tests/test_binding_trained.py
+ERROR tests/test_bridge.py
+ERROR tests/test_geometric_memory.py
+ERROR tests/test_hf_publication.py
+ERROR tests/test_ledger.py
+ERROR tests/test_portable.py
+ERROR tests/test_publication.py
+ERROR tests/test_quadratic_edit.py
+ERROR tests/test_review.py
+ERROR tests/test_write_router.py
+ERROR tests_real/test_experiments.py
+ERROR tests_real/test_kernel.py
+ERROR tests_real/test_memory.py
+ERROR tests_real/test_reasoning_v2.py
+ERROR tests_real/test_recall_followup.py
+ERROR tests_real/test_recall_study.py
+ERROR tests_real/test_repairs.py
+ERROR tests_real/test_research_publication.py
+ERROR tests_real/test_service.py
+ERROR tests_real/test_stages.py
+ERROR tests_real/test_training.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 28 errors during collection !!!!!!!!!!!!!!!!!!!
+1 warning, 28 errors in 2.30s

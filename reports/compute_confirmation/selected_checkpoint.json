@@ -1,0 +1,27 @@
+{
+  "rule": "Lowest frozen validation loss among hybrid seeds; test scores not used",
+  "fit": {
+    "arm": "hybrid",
+    "seed": 606,
+    "lr": 0.004,
+    "steps": 3429,
+    "cpu_s": 90.02164303999609,
+    "wall_s": 90.35022062398639,
+    "best": {
+      "steps": 3429,
+      "cpu_s": 90.02164303999609,
+      "wall_s": 90.35022062398639,
+      "valid_bpb": 2.438946150361725,
+      "last_train_nll": 1.8671975135803223,
+      "host_load_1m": 26.00341796875
+    },
+    "training_bytes": 3511296,
+    "compile_setup_wall_s": 0.03701368499969249,
+    "max_update_cpu_s": 0.06192688000010094,
+    "parameters": 145169,
+    "checkpoint": "runs/compute_confirmation_v2/main_606_hybrid_606_0.004.pt",
+    "checkpoint_sha256": "ec42c5b4f08b93f2a10049b96250b7cb57173a39f3d3936664e02cc1b4e92fd1"
+  },
+  "path": "runs/compute_confirmation_selected/hybrid.pt",
+  "sha256": "ec42c5b4f08b93f2a10049b96250b7cb57173a39f3d3936664e02cc1b4e92fd1"
+}

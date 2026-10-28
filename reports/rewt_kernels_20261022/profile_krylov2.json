@@ -1,0 +1,390 @@
+{
+  "prefill": {
+    "batch": 24,
+    "length": 16,
+    "stages": [
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "total_us": 22524.053,
+        "self_us": 1424.2699999999932
+      },
+      {
+        "name": "rewt::observed_bank",
+        "calls": 1,
+        "total_us": 1778.048,
+        "self_us": 295.4720000000018
+      },
+      {
+        "name": "rewt::retrieve",
+        "calls": 16,
+        "total_us": 874.8960000000097,
+        "self_us": 343.98399999999765
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 16,
+        "total_us": 9413.869000000002,
+        "self_us": 1225.8389999999918
+      },
+      {
+        "name": "rewt::krylov2",
+        "calls": 16,
+        "total_us": 6113.146999999993,
+        "self_us": 1662.1740000000864
+      }
+    ],
+    "operators": [
+      {
+        "name": "aten::addmm",
+        "calls": 112,
+        "self_us": 5170.062000000018
+      },
+      {
+        "name": "aten::mm",
+        "calls": 186,
+        "self_us": 2082.847999999955
+      },
+      {
+        "name": "rewt::krylov2",
+        "calls": 16,
+        "self_us": 1662.1740000000864
+      },
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "self_us": 1424.2699999999932
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 16,
+        "self_us": 1225.8389999999918
+      },
+      {
+        "name": "aten::cat",
+        "calls": 154,
+        "self_us": 906.3840000000132
+      },
+      {
+        "name": "aten::mkldnn_convolution",
+        "calls": 1,
+        "self_us": 718.6400000000008
+      },
+      {
+        "name": "aten::mul",
+        "calls": 612,
+        "self_us": 606.7200000000386
+      },
+      {
+        "name": "aten::tanh",
+        "calls": 33,
+        "self_us": 560.1440000000134
+      },
+      {
+        "name": "aten::sum",
+        "calls": 248,
+        "self_us": 522.7359999999675
+      },
+      {
+        "name": "aten::silu",
+        "calls": 17,
+        "self_us": 476.38400000000047
+      },
+      {
+        "name": "aten::copy_",
+        "calls": 488,
+        "self_us": 409.6160000000506
+      },
+      {
+        "name": "aten::slice",
+        "calls": 519,
+        "self_us": 400.0320000000062
+      },
+      {
+        "name": "rewt::retrieve",
+        "calls": 16,
+        "self_us": 343.98399999999765
+      },
+      {
+        "name": "rewt::observed_bank",
+        "calls": 1,
+        "self_us": 295.4720000000018
+      }
+    ],
+    "cost": {
+      "gradient_calls": 32,
+      "energy_calls": 176,
+      "accepted": 0,
+      "attempts": 3072
+    }
+  },
+  "training": {
+    "batch": 24,
+    "length": 16,
+    "stages": [
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "total_us": 27182.977,
+        "self_us": 1863.2479999999778
+      },
+      {
+        "name": "rewt::observed_bank",
+        "calls": 1,
+        "total_us": 2453.119,
+        "self_us": 384.0479999999993
+      },
+      {
+        "name": "rewt::retrieve",
+        "calls": 16,
+        "total_us": 1081.4880000000003,
+        "self_us": 341.7439999999897
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 16,
+        "total_us": 10603.641000000001,
+        "self_us": 1256.3190000000213
+      },
+      {
+        "name": "rewt::krylov2",
+        "calls": 16,
+        "total_us": 7814.330000000004,
+        "self_us": 2417.8529999999646
+      },
+      {
+        "name": "rewt::backward",
+        "calls": 1,
+        "total_us": 36122.013,
+        "self_us": 3910.2229999997326
+      }
+    ],
+    "operators": [
+      {
+        "name": "aten::mm",
+        "calls": 557,
+        "self_us": 14421.93100000002
+      },
+      {
+        "name": "aten::addmm",
+        "calls": 112,
+        "self_us": 5811.452000000008
+      },
+      {
+        "name": "rewt::backward",
+        "calls": 1,
+        "self_us": 3910.2229999997326
+      },
+      {
+        "name": "aten::add_",
+        "calls": 687,
+        "self_us": 2767.5650000000633
+      },
+      {
+        "name": "rewt::krylov2",
+        "calls": 16,
+        "self_us": 2417.8529999999646
+      },
+      {
+        "name": "aten::mul",
+        "calls": 935,
+        "self_us": 2328.382999999867
+      },
+      {
+        "name": "aten::convolution_backward",
+        "calls": 1,
+        "self_us": 2080.4950000000026
+      },
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "self_us": 1863.2479999999778
+      },
+      {
+        "name": "aten::silu_backward",
+        "calls": 17,
+        "self_us": 1609.7749999999978
+      },
+      {
+        "name": "aten::copy_",
+        "calls": 910,
+        "self_us": 1377.2319999999413
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 16,
+        "self_us": 1256.3190000000213
+      },
+      {
+        "name": "aten::cat",
+        "calls": 202,
+        "self_us": 1231.2800000000418
+      },
+      {
+        "name": "aten::sum",
+        "calls": 473,
+        "self_us": 1005.8870000001461
+      },
+      {
+        "name": "aten::mkldnn_convolution",
+        "calls": 1,
+        "self_us": 879.1030000000001
+      },
+      {
+        "name": "aten::where",
+        "calls": 223,
+        "self_us": 780.0000000000318
+      }
+    ],
+    "cost": {
+      "gradient_calls": 32,
+      "energy_calls": 176,
+      "accepted": 0,
+      "attempts": 3072
+    }
+  },
+  "decode": {
+    "batch": 1,
+    "length": 1,
+    "stages": [
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "total_us": 2960.2709999999997,
+        "self_us": 1037.151999999998
+      },
+      {
+        "name": "rewt::observed_bank",
+        "calls": 1,
+        "total_us": 337.904,
+        "self_us": 118.75199999999973
+      },
+      {
+        "name": "rewt::retrieve",
+        "calls": 1,
+        "total_us": 73.16800000000012,
+        "self_us": 33.26399999999967
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 1,
+        "total_us": 571.279,
+        "self_us": 97.9840000000006
+      },
+      {
+        "name": "rewt::krylov2",
+        "calls": 1,
+        "total_us": 238.9119999999998,
+        "self_us": 96.11199999999963
+      }
+    ],
+    "operators": [
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "self_us": 1037.151999999998
+      },
+      {
+        "name": "aten::mm",
+        "calls": 21,
+        "self_us": 410.68800000000016
+      },
+      {
+        "name": "aten::addmm",
+        "calls": 7,
+        "self_us": 365.8240000000012
+      },
+      {
+        "name": "rewt::observed_bank",
+        "calls": 1,
+        "self_us": 118.75199999999973
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 1,
+        "self_us": 97.9840000000006
+      },
+      {
+        "name": "rewt::krylov2",
+        "calls": 1,
+        "self_us": 96.11199999999963
+      },
+      {
+        "name": "aten::_slow_conv2d_forward",
+        "calls": 1,
+        "self_us": 51.75999999999976
+      },
+      {
+        "name": "aten::mul",
+        "calls": 57,
+        "self_us": 47.568000000000666
+      },
+      {
+        "name": "rewt::retrieve",
+        "calls": 1,
+        "self_us": 33.26399999999967
+      },
+      {
+        "name": "aten::cat",
+        "calls": 19,
+        "self_us": 30.73600000000033
+      },
+      {
+        "name": "aten::sum",
+        "calls": 23,
+        "self_us": 30.35200000000009
+      },
+      {
+        "name": "aten::slice",
+        "calls": 57,
+        "self_us": 24.83200000000005
+      },
+      {
+        "name": "aten::sub",
+        "calls": 29,
+        "self_us": 23.616000000000554
+      },
+      {
+        "name": "aten::copy_",
+        "calls": 52,
+        "self_us": 22.559999999998922
+      },
+      {
+        "name": "aten::_convolution",
+        "calls": 1,
+        "self_us": 21.58400000000006
+      }
+    ],
+    "cost": {
+      "gradient_calls": 2,
+      "energy_calls": 11,
+      "accepted": 0,
+      "attempts": 8
+    }
+  },
+  "scope": "CPU1 profiler attribution; timings include profiler overhead and are not benchmarks.",
+  "source_sha256": {
+    "optim.py": "82b9c97645921256f643cd797825b4705a07b749df14b0bca627b997a38d3279",
+    "decode.py": "c0a8abb8c9016e28c1573245b12529a489f7f32a97f580138ee058bd5b7ff838",
+    "experiment.py": "a37fb1dac93d215854be7231a3ed5ee947a29a8e28b5bb728e7255338b46127d",
+    "profile.py": "ccfe45180c62f4cebf73158aadd364d222e80083e5273b4aafa6f9668bcd19f5",
+    "position_memory.py": "94a08f38757ba5a69f0fed21919180d0eb3634ba0f11be885c89e1e7f41fdef2",
+    "memory.py": "092865ff6f64eea8ec9b9fa6f0866f41036c38de6d03a99e6f7814001217d920",
+    "improve_report.py": "8135a4be23a7cf6190d8e6ba44956cc17e61acfc62adde81dc33e349abc921b1",
+    "bpe.py": "33b305a464f1487c22037848bba542e6120fb790f6be67c8192828a8d3494b8e",
+    "story_data.py": "da4709e5fa11836b749b586afd39430749764ea52c706686e5c9c776c5de8f47",
+    "data.py": "ab4b434581188a681544cc679b2d9c589101f7bdaeb19461dd51771c64dab4b9",
+    "report.py": "9dd216247786dd9d12eaf0e227fb0b20a22aaa40aa9bc3e4c7f09b15feabbf71",
+    "curriculum.py": "e33541936ad1d401d2f7999513f2bdb00fba39cebe5530b3c6d9932da49064d1",
+    "tokenizer.py": "38b5b68d5913f577f55cb32b97fa2c2e81f4f26d9628fb09092c067ef51be2eb",
+    "kernels.py": "2504c7186acec630e9c6009ac3ef89b9c93485001aaa0d9cac9ac107ad58d074",
+    "model.py": "2cac4b05b3a64b2a6b4edf0e6845c18fe9ea37ad0cd334a2dd4eb391d18bd939",
+    "__init__.py": "cec12357813e592ad87c21229687e348a62d1c3deb7fae7c9275260b1ac0b2bc",
+    "evaluate.py": "398d5be602eaf598941b831e6cbcac499ee40c3e0df48879055307a0bc992e52",
+    "tasks.py": "88f5972e3e69f1ee21cd9cd0f7a86265a249e00556ceb4435df625a26b10b71a",
+    "improve.py": "6402abc8a9ada3cfa0fe784449edb5e6134bb472586c8a89d389783da9d3964f",
+    "stabilize.py": "253aafa0f6388a19fc65038ce3a0bcf0bbe7cb141b3e1a7987d87adcb4bf9eff"
+  },
+  "script_sha256": "51d52302770672d2f0e9525dac77eced0e01cc9409475c7cbf12318a81788537",
+  "checkpoint_sha256": "2b184d2c5213345ecde465b0cbb5a4da11b090d04eb8d6ba90f6309c0949b09d"
+}

@@ -1,0 +1,22 @@
+{
+  "best_step": 117,
+  "case": {
+    "name": "precond4_structured_22301",
+    "overrides": {
+      "preconditioner_factorization": "structured",
+      "rounds": 4,
+      "solver": "preconditioned",
+      "step_size": 0.75
+    },
+    "seed": 22301,
+    "variant": "precond4_structured"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/equal_compute/precond4_structured_22301/best.pt",
+  "checkpoint_sha256": "8eb64fcc589c10c8fb6013754d87dccca74b02ad6c312e8124270d7f8be55288",
+  "parameters": 256096,
+  "training_cpu_seconds": 150.58100832000002,
+  "training_tokens": 359424,
+  "training_wall_seconds": 150.68374179769307,
+  "updates": 117,
+  "validation_bpb": 2.8480807071801184
+}

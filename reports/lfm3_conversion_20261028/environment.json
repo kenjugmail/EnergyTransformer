@@ -1,0 +1,17 @@
+{
+  "python": "3.12.3",
+  "machine": "aarch64",
+  "packages": {
+    "torch": "2.14.0+cu130",
+    "numpy": "2.5.3",
+    "transformers": "5.21.0",
+    "tokenizers": "0.23.3",
+    "accelerate": "1.15.0",
+    "huggingface_hub": "1.33.0",
+    "safetensors": "0.8.0",
+    "pyarrow": "26.0.0"
+  },
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "notes": "Local GB10 with other workloads present. No isolated speed benchmark claim."
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "case": {
+      "delta_size": 0,
+      "name": "local_22101",
+      "seed": 22101
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/long_memory/local_22101/best.pt",
+    "checkpoint_sha256": "365c5c4f5978625c049374fc8b929ef66ae1d4dab446a156e9d333106d62865b",
+    "parameters": 32752,
+    "training_cpu_seconds": 30.284348704000067,
+    "validation_accuracy": 0.5182291666666666
+  },
+  {
+    "case": {
+      "delta_size": 0,
+      "name": "local_22102",
+      "seed": 22102
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/long_memory/local_22102/best.pt",
+    "checkpoint_sha256": "cccf05dcedb18becff9785db8d0611e632137ab2aa70e135803189b4b4be8443",
+    "parameters": 32752,
+    "training_cpu_seconds": 27.941925744000002,
+    "validation_accuracy": 0.5494791666666666
+  },
+  {
+    "case": {
+      "delta_size": 0,
+      "name": "local_22103",
+      "seed": 22103
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/long_memory/local_22103/best.pt",
+    "checkpoint_sha256": "5e16e08fe83125cf288d01a0f69039f2c7aa415d9c751ebc50ff0811e5c4e502",
+    "parameters": 32752,
+    "training_cpu_seconds": 30.057605039999807,
+    "validation_accuracy": 0.5104166666666666
+  },
+  {
+    "case": {
+      "delta_size": 16,
+      "name": "delta_22101",
+      "seed": 22101
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/long_memory/delta_22101/best.pt",
+    "checkpoint_sha256": "eaf974dc22bbac981a97ec25d30b7d0a97e56dfef50fe1fe6599494f17760f76",
+    "parameters": 34321,
+    "training_cpu_seconds": 40.37197982399998,
+    "validation_accuracy": 0.4817708333333333
+  },
+  {
+    "case": {
+      "delta_size": 16,
+      "name": "delta_22102",
+      "seed": 22102
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/long_memory/delta_22102/best.pt",
+    "checkpoint_sha256": "491e8dc021a11ffae082eadb0c224a8264000edff97b2e6fbe6676097ecb12b1",
+    "parameters": 34321,
+    "training_cpu_seconds": 38.11126688000016,
+    "validation_accuracy": 0.4401041666666667
+  },
+  {
+    "case": {
+      "delta_size": 16,
+      "name": "delta_22103",
+      "seed": 22103
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/long_memory/delta_22103/best.pt",
+    "checkpoint_sha256": "43db5f0a99e9e580917117fa93bdcd58280aca2b04bc04bdd868716fa209a442",
+    "parameters": 34321,
+    "training_cpu_seconds": 36.20515785600054,
+    "validation_accuracy": 0.3828125
+  }
+]

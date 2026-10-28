@@ -1,0 +1,35 @@
+{
+  "completed_utc": "2026-10-28T13:56:05.261046+00:00",
+  "tests": {
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python -m pytest -q tests tests_real tests_rewt",
+    "passed": 580,
+    "skipped": 32,
+    "seconds": 101.83
+  },
+  "native_presentation": {
+    "id": "11p2zXD7gTftP4EZXtRqXL948wSRPqkao5pTgoINKgVQ",
+    "revision": "qPHs9ezgOxwI6Q",
+    "slides": 15,
+    "speaker_notes": 15,
+    "all_updated_text_verified": true,
+    "visual_defects_remaining": [],
+    "issue_checker_total": 0
+  },
+  "reference": {
+    "url": "https://docs.google.com/document/d/1lTWL-q_2IcA7wKsH_Di9v4lonHuqEd7sPTFNCMgSKFU",
+    "local_pdf_pages": 16,
+    "native_content_verified": true,
+    "local_pages_visually_reviewed": 16,
+    "html_has_section_and_slide_navigation": true
+  },
+  "offline_sha256": {
+    "REWT_class_presentation.pptx": "6678707f44bb283952a898bf38e5c14c4ab56cc58b45c7a307a8f8b8e5a1b8ab",
+    "REWT_class_presentation.pdf": "cc64a6d5b99f4d2947b0f4967b60525da3ae950640c53dafa56f41ef7d19fa84",
+    "speaker_notes.txt": "cad222cd4fda733b6fced2ac0e6308d6dd8073f3b6ce9e0c3802d9fcbdbf7bcd",
+    "rehearsal_and_qa.txt": "1cbb51f22da581b0c390c5d439720d9cb539c37e749971a4b2835d6ca40e4c67",
+    "presenter_reference.pdf": "96d594dfd5b2869c62c4310f631b4a214e14ff3c484d1b95f521e7b5b3c3d7a7",
+    "presenter_reference.html": "29dd02eac27b4faea5440a7ea736d1e24e1975721f79a9e5ea773391f6d1483e",
+    "presenter_reference.json": "667712d0b0ecf2a6338c1a9f161ce6c82e3a775d2ba88cd99d9874d5d5462caf"
+  },
+  "publication_scope": "Source, tests, reports, generated research evidence, presentation and reference documents. Existing exclusions retain downloaded data, model checkpoints and virtual environments locally."
+}

@@ -1,0 +1,1143 @@
+{
+  "batch_decode": 1,
+  "cpu_core": 5,
+  "decode_samples": [
+    {
+      "allocated_state_bytes": 163840,
+      "decode_cpu_seconds": 0.010369167999999984,
+      "decode_wall_seconds": 0.010370163945481181,
+      "prefill_cpu_seconds": 0.0012155040000000339,
+      "prefill_wall_seconds": 0.0012155229924246669,
+      "prefix": 128,
+      "repetition": 0,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.01064016000000001,
+      "decode_wall_seconds": 0.010641237022355199,
+      "prefill_cpu_seconds": 0.0012464160000000835,
+      "prefill_wall_seconds": 0.0012470579240471125,
+      "prefix": 128,
+      "repetition": 0,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013100896000000084,
+      "decode_wall_seconds": 0.013103145989589393,
+      "prefill_cpu_seconds": 0.0019384000000000068,
+      "prefill_wall_seconds": 0.0019392999820411205,
+      "prefix": 128,
+      "repetition": 0,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015259104000000079,
+      "decode_wall_seconds": 0.015335182077251375,
+      "prefill_cpu_seconds": 0.0019597120000000023,
+      "prefill_wall_seconds": 0.001960627967491746,
+      "prefix": 128,
+      "repetition": 0,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015296784000000008,
+      "decode_wall_seconds": 0.015298990067094564,
+      "prefill_cpu_seconds": 0.0019366240000000534,
+      "prefill_wall_seconds": 0.0019382439786568284,
+      "prefix": 128,
+      "repetition": 1,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.012952528000000019,
+      "decode_wall_seconds": 0.012954840902239084,
+      "prefill_cpu_seconds": 0.001796639999999905,
+      "prefill_wall_seconds": 0.0017973800422623754,
+      "prefix": 128,
+      "repetition": 1,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010654896000000025,
+      "decode_wall_seconds": 0.01065605296753347,
+      "prefill_cpu_seconds": 0.0012618880000000443,
+      "prefill_wall_seconds": 0.0012631230056285858,
+      "prefix": 128,
+      "repetition": 1,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 163840,
+      "decode_cpu_seconds": 0.010394687999999985,
+      "decode_wall_seconds": 0.010396356927230954,
+      "prefill_cpu_seconds": 0.001137215999999941,
+      "prefill_wall_seconds": 0.001137778046540916,
+      "prefix": 128,
+      "repetition": 1,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 163840,
+      "decode_cpu_seconds": 0.010319695999999934,
+      "decode_wall_seconds": 0.010320788016542792,
+      "prefill_cpu_seconds": 0.001101519999999967,
+      "prefill_wall_seconds": 0.0011017619399353862,
+      "prefix": 128,
+      "repetition": 2,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.01059388799999994,
+      "decode_wall_seconds": 0.010595253086648881,
+      "prefill_cpu_seconds": 0.00127972799999998,
+      "prefill_wall_seconds": 0.001280547003261745,
+      "prefix": 128,
+      "repetition": 2,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013079983999999989,
+      "decode_wall_seconds": 0.01308200997300446,
+      "prefill_cpu_seconds": 0.001895839999999982,
+      "prefill_wall_seconds": 0.0018970910459756851,
+      "prefix": 128,
+      "repetition": 2,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015124880000000007,
+      "decode_wall_seconds": 0.015126814018003643,
+      "prefill_cpu_seconds": 0.0019329759999999752,
+      "prefill_wall_seconds": 0.001934099942445755,
+      "prefix": 128,
+      "repetition": 2,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015057776000000023,
+      "decode_wall_seconds": 0.015059820958413184,
+      "prefill_cpu_seconds": 0.0018932320000000225,
+      "prefill_wall_seconds": 0.0018942280439659953,
+      "prefix": 128,
+      "repetition": 3,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.012947375999999955,
+      "decode_wall_seconds": 0.01294949697330594,
+      "prefill_cpu_seconds": 0.0018110080000000028,
+      "prefill_wall_seconds": 0.001812372007407248,
+      "prefix": 128,
+      "repetition": 3,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010555007999999977,
+      "decode_wall_seconds": 0.010556149063631892,
+      "prefill_cpu_seconds": 0.0012727839999999713,
+      "prefill_wall_seconds": 0.001273603062145412,
+      "prefix": 128,
+      "repetition": 3,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 163840,
+      "decode_cpu_seconds": 0.010308943999999931,
+      "decode_wall_seconds": 0.01032000407576561,
+      "prefill_cpu_seconds": 0.0011026560000000352,
+      "prefill_wall_seconds": 0.0011030739406123757,
+      "prefix": 128,
+      "repetition": 3,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 163840,
+      "decode_cpu_seconds": 0.010299216000000055,
+      "decode_wall_seconds": 0.010300260968506336,
+      "prefill_cpu_seconds": 0.0010491999999999724,
+      "prefill_wall_seconds": 0.0010495540918782353,
+      "prefix": 128,
+      "repetition": 4,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.01058904000000005,
+      "decode_wall_seconds": 0.010591029073111713,
+      "prefill_cpu_seconds": 0.0012541759999999957,
+      "prefill_wall_seconds": 0.0012548179365694523,
+      "prefix": 128,
+      "repetition": 4,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.01303467199999997,
+      "decode_wall_seconds": 0.013037657015956938,
+      "prefill_cpu_seconds": 0.0019077440000000445,
+      "prefill_wall_seconds": 0.0019087239634245634,
+      "prefix": 128,
+      "repetition": 4,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015107232000000081,
+      "decode_wall_seconds": 0.015108958003111184,
+      "prefill_cpu_seconds": 0.0019674400000000425,
+      "prefill_wall_seconds": 0.00196917203720659,
+      "prefix": 128,
+      "repetition": 4,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 557056,
+      "decode_cpu_seconds": 0.010737312000000054,
+      "decode_wall_seconds": 0.010738725075498223,
+      "prefill_cpu_seconds": 0.0058781279999999825,
+      "prefill_wall_seconds": 0.005879468051716685,
+      "prefix": 512,
+      "repetition": 0,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010656175999999906,
+      "decode_wall_seconds": 0.010657893028110266,
+      "prefill_cpu_seconds": 0.005555599999999883,
+      "prefill_wall_seconds": 0.00555743498262018,
+      "prefix": 512,
+      "repetition": 0,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013066527999999966,
+      "decode_wall_seconds": 0.013068586005829275,
+      "prefill_cpu_seconds": 0.0071427680000000215,
+      "prefill_wall_seconds": 0.007144221919588745,
+      "prefix": 512,
+      "repetition": 0,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015134320000000034,
+      "decode_wall_seconds": 0.015136573929339647,
+      "prefill_cpu_seconds": 0.007570831999999861,
+      "prefill_wall_seconds": 0.007573390961624682,
+      "prefix": 512,
+      "repetition": 0,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015177904000000186,
+      "decode_wall_seconds": 0.015179998008534312,
+      "prefill_cpu_seconds": 0.007604095999999894,
+      "prefill_wall_seconds": 0.007606126950122416,
+      "prefix": 512,
+      "repetition": 1,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013147360000000052,
+      "decode_wall_seconds": 0.013150793965905905,
+      "prefill_cpu_seconds": 0.007008112000000066,
+      "prefill_wall_seconds": 0.007009885041043162,
+      "prefix": 512,
+      "repetition": 1,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010697136000000107,
+      "decode_wall_seconds": 0.010713013005442917,
+      "prefill_cpu_seconds": 0.0055175999999999,
+      "prefill_wall_seconds": 0.00551833095960319,
+      "prefix": 512,
+      "repetition": 1,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 557056,
+      "decode_cpu_seconds": 0.01072316799999995,
+      "decode_wall_seconds": 0.010724661056883633,
+      "prefill_cpu_seconds": 0.005628943999999914,
+      "prefill_wall_seconds": 0.005629595019854605,
+      "prefix": 512,
+      "repetition": 1,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 557056,
+      "decode_cpu_seconds": 0.010704512,
+      "decode_wall_seconds": 0.010705652995966375,
+      "prefill_cpu_seconds": 0.005725167999999892,
+      "prefill_wall_seconds": 0.0057258669985458255,
+      "prefix": 512,
+      "repetition": 2,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010912032000000016,
+      "decode_wall_seconds": 0.011495606042444706,
+      "prefill_cpu_seconds": 0.0055562239999999985,
+      "prefill_wall_seconds": 0.005557627067901194,
+      "prefix": 512,
+      "repetition": 2,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013133711999999909,
+      "decode_wall_seconds": 0.013152361963875592,
+      "prefill_cpu_seconds": 0.007483743999999959,
+      "prefill_wall_seconds": 0.007485918002203107,
+      "prefix": 512,
+      "repetition": 2,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015289856000000102,
+      "decode_wall_seconds": 0.01529222191311419,
+      "prefill_cpu_seconds": 0.007508416000000073,
+      "prefill_wall_seconds": 0.0075102869886904955,
+      "prefix": 512,
+      "repetition": 2,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015204719999999838,
+      "decode_wall_seconds": 0.015206701937131584,
+      "prefill_cpu_seconds": 0.00771942400000003,
+      "prefill_wall_seconds": 0.007721006986685097,
+      "prefix": 512,
+      "repetition": 3,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013010160000000104,
+      "decode_wall_seconds": 0.013012490002438426,
+      "prefill_cpu_seconds": 0.007052239999999932,
+      "prefill_wall_seconds": 0.007054382003843784,
+      "prefix": 512,
+      "repetition": 3,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010682175999999988,
+      "decode_wall_seconds": 0.010684133041650057,
+      "prefill_cpu_seconds": 0.005473695999999917,
+      "prefill_wall_seconds": 0.005474761943332851,
+      "prefix": 512,
+      "repetition": 3,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 557056,
+      "decode_cpu_seconds": 0.010738383999999934,
+      "decode_wall_seconds": 0.01073942903894931,
+      "prefill_cpu_seconds": 0.005755136000000105,
+      "prefill_wall_seconds": 0.00575589993968606,
+      "prefix": 512,
+      "repetition": 3,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 557056,
+      "decode_cpu_seconds": 0.010657408000000146,
+      "decode_wall_seconds": 0.010659461026079953,
+      "prefill_cpu_seconds": 0.005596463999999912,
+      "prefill_wall_seconds": 0.005597339011728764,
+      "prefix": 512,
+      "repetition": 4,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.01069543999999989,
+      "decode_wall_seconds": 0.01069637294858694,
+      "prefill_cpu_seconds": 0.005485872000000169,
+      "prefill_wall_seconds": 0.005486618960276246,
+      "prefix": 512,
+      "repetition": 4,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013079776000000098,
+      "decode_wall_seconds": 0.01308200997300446,
+      "prefill_cpu_seconds": 0.007245439999999936,
+      "prefill_wall_seconds": 0.007247566012665629,
+      "prefix": 512,
+      "repetition": 4,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015135231999999998,
+      "decode_wall_seconds": 0.015137886046431959,
+      "prefill_cpu_seconds": 0.007543424000000076,
+      "prefill_wall_seconds": 0.007545727072283626,
+      "prefix": 512,
+      "repetition": 4,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 2129920,
+      "decode_cpu_seconds": 0.013179967999999986,
+      "decode_wall_seconds": 0.013201290043070912,
+      "prefill_cpu_seconds": 0.0450308960000001,
+      "prefill_wall_seconds": 0.04507267998997122,
+      "prefix": 2048,
+      "repetition": 0,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010677727999999886,
+      "decode_wall_seconds": 0.010678965016268194,
+      "prefill_cpu_seconds": 0.022289280000000078,
+      "prefill_wall_seconds": 0.022291020024567842,
+      "prefix": 2048,
+      "repetition": 0,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.014132896000000006,
+      "decode_wall_seconds": 0.014135067933239043,
+      "prefill_cpu_seconds": 0.03052452799999994,
+      "prefill_wall_seconds": 0.030526331975124776,
+      "prefix": 2048,
+      "repetition": 0,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015150959999999936,
+      "decode_wall_seconds": 0.015152893960475922,
+      "prefill_cpu_seconds": 0.029326688000000045,
+      "prefill_wall_seconds": 0.02932832995429635,
+      "prefix": 2048,
+      "repetition": 0,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015202304,
+      "decode_wall_seconds": 0.015226077986881137,
+      "prefill_cpu_seconds": 0.028967024000000174,
+      "prefill_wall_seconds": 0.028968905098736286,
+      "prefix": 2048,
+      "repetition": 1,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.012999216000000091,
+      "decode_wall_seconds": 0.013001768966205418,
+      "prefill_cpu_seconds": 0.027476303999999896,
+      "prefill_wall_seconds": 0.027478181989863515,
+      "prefix": 2048,
+      "repetition": 1,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010628896000000054,
+      "decode_wall_seconds": 0.01063027698546648,
+      "prefill_cpu_seconds": 0.022268976000000107,
+      "prefill_wall_seconds": 0.022270523943006992,
+      "prefix": 2048,
+      "repetition": 1,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 2129920,
+      "decode_cpu_seconds": 0.012092592000000124,
+      "decode_wall_seconds": 0.012094023986719549,
+      "prefill_cpu_seconds": 0.04503558400000007,
+      "prefill_wall_seconds": 0.045049976906739175,
+      "prefix": 2048,
+      "repetition": 1,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 2129920,
+      "decode_cpu_seconds": 0.012022559999999904,
+      "decode_wall_seconds": 0.012023687013424933,
+      "prefill_cpu_seconds": 0.04432184000000006,
+      "prefill_wall_seconds": 0.04432331898715347,
+      "prefix": 2048,
+      "repetition": 2,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010680320000000076,
+      "decode_wall_seconds": 0.010681540938094258,
+      "prefill_cpu_seconds": 0.02216347200000013,
+      "prefill_wall_seconds": 0.02216514793690294,
+      "prefix": 2048,
+      "repetition": 2,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013145039999999941,
+      "decode_wall_seconds": 0.01314660208299756,
+      "prefill_cpu_seconds": 0.02791096000000004,
+      "prefill_wall_seconds": 0.02792607108131051,
+      "prefix": 2048,
+      "repetition": 2,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015119535999999822,
+      "decode_wall_seconds": 0.015121469972655177,
+      "prefill_cpu_seconds": 0.029222048000000056,
+      "prefill_wall_seconds": 0.029224328929558396,
+      "prefix": 2048,
+      "repetition": 2,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.01517940800000006,
+      "decode_wall_seconds": 0.015181357972323895,
+      "prefill_cpu_seconds": 0.029236287999999888,
+      "prefill_wall_seconds": 0.029239098075777292,
+      "prefix": 2048,
+      "repetition": 3,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013007551999999922,
+      "decode_wall_seconds": 0.01301063399296254,
+      "prefill_cpu_seconds": 0.027571263999999873,
+      "prefill_wall_seconds": 0.027581622009165585,
+      "prefix": 2048,
+      "repetition": 3,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.01067430399999969,
+      "decode_wall_seconds": 0.010675620986148715,
+      "prefill_cpu_seconds": 0.02223935999999993,
+      "prefill_wall_seconds": 0.02224098693113774,
+      "prefix": 2048,
+      "repetition": 3,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 2129920,
+      "decode_cpu_seconds": 0.012254672000000078,
+      "decode_wall_seconds": 0.012255960027687252,
+      "prefill_cpu_seconds": 0.04513617599999975,
+      "prefill_wall_seconds": 0.045168921002186835,
+      "prefix": 2048,
+      "repetition": 3,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 2129920,
+      "decode_cpu_seconds": 0.012170879999999773,
+      "decode_wall_seconds": 0.012173271970823407,
+      "prefill_cpu_seconds": 0.04474801599999978,
+      "prefill_wall_seconds": 0.04474978393409401,
+      "prefix": 2048,
+      "repetition": 4,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010709327999999907,
+      "decode_wall_seconds": 0.010710244998335838,
+      "prefill_cpu_seconds": 0.02256564800000005,
+      "prefill_wall_seconds": 0.0225670849904418,
+      "prefix": 2048,
+      "repetition": 4,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013032192000000276,
+      "decode_wall_seconds": 0.013034186093136668,
+      "prefill_cpu_seconds": 0.027821888000000072,
+      "prefill_wall_seconds": 0.027823542011901736,
+      "prefix": 2048,
+      "repetition": 4,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015145056000000157,
+      "decode_wall_seconds": 0.015147021971642971,
+      "prefill_cpu_seconds": 0.02921883199999975,
+      "prefill_wall_seconds": 0.029230744927190244,
+      "prefix": 2048,
+      "repetition": 4,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 8421376,
+      "decode_cpu_seconds": 0.020105871999999803,
+      "decode_wall_seconds": 0.020108247990719974,
+      "prefill_cpu_seconds": 0.548741616,
+      "prefill_wall_seconds": 0.5487969339592382,
+      "prefix": 8192,
+      "repetition": 0,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.01072617599999992,
+      "decode_wall_seconds": 0.010737780947238207,
+      "prefill_cpu_seconds": 0.0917567840000002,
+      "prefill_wall_seconds": 0.09175907599274069,
+      "prefix": 8192,
+      "repetition": 0,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013021600000000078,
+      "decode_wall_seconds": 0.013023865991272032,
+      "prefill_cpu_seconds": 0.1088543839999998,
+      "prefill_wall_seconds": 0.1088567579863593,
+      "prefix": 8192,
+      "repetition": 0,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015144655999999923,
+      "decode_wall_seconds": 0.015166302095167339,
+      "prefill_cpu_seconds": 0.11670790399999964,
+      "prefill_wall_seconds": 0.11672725295647979,
+      "prefix": 8192,
+      "repetition": 0,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015115808000000008,
+      "decode_wall_seconds": 0.015118604991585016,
+      "prefill_cpu_seconds": 0.11674742400000016,
+      "prefill_wall_seconds": 0.11674893298186362,
+      "prefix": 8192,
+      "repetition": 1,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013062960000000068,
+      "decode_wall_seconds": 0.01306508097331971,
+      "prefill_cpu_seconds": 0.10917636799999997,
+      "prefill_wall_seconds": 0.1091786150354892,
+      "prefix": 8192,
+      "repetition": 1,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010716383999999746,
+      "decode_wall_seconds": 0.010718084988184273,
+      "prefill_cpu_seconds": 0.08921351999999994,
+      "prefill_wall_seconds": 0.08921497501432896,
+      "prefix": 8192,
+      "repetition": 1,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 8421376,
+      "decode_cpu_seconds": 0.020033776000000003,
+      "decode_wall_seconds": 0.020034919027239084,
+      "prefill_cpu_seconds": 0.5486963039999995,
+      "prefill_wall_seconds": 0.5488315569236875,
+      "prefix": 8192,
+      "repetition": 1,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 8421376,
+      "decode_cpu_seconds": 0.020291648000000606,
+      "decode_wall_seconds": 0.02029413601849228,
+      "prefill_cpu_seconds": 0.5538146080000006,
+      "prefill_wall_seconds": 0.5538181409938261,
+      "prefix": 8192,
+      "repetition": 2,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010708976000000092,
+      "decode_wall_seconds": 0.01071086898446083,
+      "prefill_cpu_seconds": 0.0890406239999999,
+      "prefill_wall_seconds": 0.08904279803391546,
+      "prefix": 8192,
+      "repetition": 2,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013078400000000379,
+      "decode_wall_seconds": 0.013080426026135683,
+      "prefill_cpu_seconds": 0.10972763200000024,
+      "prefill_wall_seconds": 0.10972959105856717,
+      "prefix": 8192,
+      "repetition": 2,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015292480000000275,
+      "decode_wall_seconds": 0.015295310062356293,
+      "prefill_cpu_seconds": 0.11847828800000038,
+      "prefill_wall_seconds": 0.11849015206098557,
+      "prefix": 8192,
+      "repetition": 2,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015252944000000213,
+      "decode_wall_seconds": 0.015274861943908036,
+      "prefill_cpu_seconds": 0.11673084799999955,
+      "prefill_wall_seconds": 0.11673253204207867,
+      "prefix": 8192,
+      "repetition": 3,
+      "variant": "hybrid_energy"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.01304252799999972,
+      "decode_wall_seconds": 0.013044825987890363,
+      "prefill_cpu_seconds": 0.10954703999999982,
+      "prefill_wall_seconds": 0.1095638939877972,
+      "prefix": 8192,
+      "repetition": 3,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010657359999999727,
+      "decode_wall_seconds": 0.010658596991561353,
+      "prefill_cpu_seconds": 0.08922558400000025,
+      "prefill_wall_seconds": 0.08922737394459546,
+      "prefix": 8192,
+      "repetition": 3,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 8421376,
+      "decode_cpu_seconds": 0.019843631999999722,
+      "decode_wall_seconds": 0.019844935042783618,
+      "prefill_cpu_seconds": 0.5488450240000002,
+      "prefill_wall_seconds": 0.5488557129865512,
+      "prefix": 8192,
+      "repetition": 3,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 8421376,
+      "decode_cpu_seconds": 0.02019132800000012,
+      "decode_wall_seconds": 0.020192710915580392,
+      "prefill_cpu_seconds": 0.548333392,
+      "prefill_wall_seconds": 0.5484119040193036,
+      "prefix": 8192,
+      "repetition": 4,
+      "variant": "transformer"
+    },
+    {
+      "allocated_state_bytes": 64512,
+      "decode_cpu_seconds": 0.010659407999999537,
+      "decode_wall_seconds": 0.010660500964149833,
+      "prefill_cpu_seconds": 0.08923212799999991,
+      "prefill_wall_seconds": 0.0892339659621939,
+      "prefix": 8192,
+      "repetition": 4,
+      "variant": "window_transformer"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.013122351999999893,
+      "decode_wall_seconds": 0.013123562093824148,
+      "prefill_cpu_seconds": 0.10904710400000006,
+      "prefill_wall_seconds": 0.10904891695827246,
+      "prefix": 8192,
+      "repetition": 4,
+      "variant": "hybrid"
+    },
+    {
+      "allocated_state_bytes": 36864,
+      "decode_cpu_seconds": 0.015126176000000768,
+      "decode_wall_seconds": 0.015128414030186832,
+      "prefill_cpu_seconds": 0.11697753600000027,
+      "prefill_wall_seconds": 0.11697965196799487,
+      "prefix": 8192,
+      "repetition": 4,
+      "variant": "hybrid_energy"
+    }
+  ],
+  "generated_tokens": 32,
+  "prefill_chunk": 128,
+  "source_sha256": {
+    "rewt/streaming.py": "083e973c92bc293e963d3984b134c9c71f2659f14132e10db9285e70a3da5bc0",
+    "rewt/streaming_decode.py": "f331f481ab8ed7936ed1dd03cc1a485909e7444dc5e02b709d601889570d6d23",
+    "scripts/benchmark_rewt_streaming.py": "635a7a6725d6ac8ce26e844b228f22254540cacf7b101ef7c94d38d46798a683"
+  },
+  "sources": {
+    "hybrid": {
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_26301/best.pt",
+      "sha256": "d8164e0bf59b018da503b5eeeb3917e8c200a2ea6d62058b21088a175033e010"
+    },
+    "hybrid_energy": {
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_energy_26301/best.pt",
+      "sha256": "690d9161c88be402c4ac62fd0b3bf96f88850897530af780e2124dbc60fb25c7"
+    },
+    "transformer": {
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_transformer_26301/best.pt",
+      "sha256": "9adbb28d13ca6f71cc717cdf051cdac7b7695c889512bc0163ba299bec0af190"
+    },
+    "window_transformer": {
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_window_transformer_26301/best.pt",
+      "sha256": "7a14ec4e4bb3fd5957abf077c8e1667b6e2ee7026c3d250518430d84b1a24bc9"
+    }
+  },
+  "summary": {
+    "hybrid": {
+      "decode": {
+        "128": {
+          "allocated_state_bytes": 36864,
+          "decode_cpu_seconds": 0.01303467199999997,
+          "decode_wall_seconds": 0.013037657015956938,
+          "prefill_cpu_seconds": 0.001895839999999982,
+          "prefill_wall_seconds": 0.0018970910459756851
+        },
+        "512": {
+          "allocated_state_bytes": 36864,
+          "decode_cpu_seconds": 0.013079776000000098,
+          "decode_wall_seconds": 0.01308200997300446,
+          "prefill_cpu_seconds": 0.0071427680000000215,
+          "prefill_wall_seconds": 0.007144221919588745
+        },
+        "2048": {
+          "allocated_state_bytes": 36864,
+          "decode_cpu_seconds": 0.013032192000000276,
+          "decode_wall_seconds": 0.013034186093136668,
+          "prefill_cpu_seconds": 0.027821888000000072,
+          "prefill_wall_seconds": 0.027823542011901736
+        },
+        "8192": {
+          "allocated_state_bytes": 36864,
+          "decode_cpu_seconds": 0.013062960000000068,
+          "decode_wall_seconds": 0.01306508097331971,
+          "prefill_cpu_seconds": 0.10917636799999997,
+          "prefill_wall_seconds": 0.1091786150354892
+        }
+      },
+      "training_cpu_seconds": 0.05563687999999978
+    },
+    "hybrid_energy": {
+      "decode": {
+        "128": {
+          "allocated_state_bytes": 36864,
+          "decode_cpu_seconds": 0.015124880000000007,
+          "decode_wall_seconds": 0.015126814018003643,
+          "prefill_cpu_seconds": 0.0019366240000000534,
+          "prefill_wall_seconds": 0.0019382439786568284
+        },
+        "512": {
+          "allocated_state_bytes": 36864,
+          "decode_cpu_seconds": 0.015177904000000186,
+          "decode_wall_seconds": 0.015179998008534312,
+          "prefill_cpu_seconds": 0.007570831999999861,
+          "prefill_wall_seconds": 0.007573390961624682
+        },
+        "2048": {
+          "allocated_state_bytes": 36864,
+          "decode_cpu_seconds": 0.015150959999999936,
+          "decode_wall_seconds": 0.015152893960475922,
+          "prefill_cpu_seconds": 0.029222048000000056,
+          "prefill_wall_seconds": 0.029230744927190244
+        },
+        "8192": {
+          "allocated_state_bytes": 36864,
+          "decode_cpu_seconds": 0.015144655999999923,
+          "decode_wall_seconds": 0.015166302095167339,
+          "prefill_cpu_seconds": 0.11674742400000016,
+          "prefill_wall_seconds": 0.11674893298186362
+        }
+      },
+      "training_cpu_seconds": 0.05804867199999997
+    },
+    "transformer": {
+      "decode": {
+        "128": {
+          "allocated_state_bytes": 163840,
+          "decode_cpu_seconds": 0.010319695999999934,
+          "decode_wall_seconds": 0.010320788016542792,
+          "prefill_cpu_seconds": 0.0011026560000000352,
+          "prefill_wall_seconds": 0.0011030739406123757
+        },
+        "512": {
+          "allocated_state_bytes": 557056,
+          "decode_cpu_seconds": 0.01072316799999995,
+          "decode_wall_seconds": 0.010724661056883633,
+          "prefill_cpu_seconds": 0.005725167999999892,
+          "prefill_wall_seconds": 0.0057258669985458255
+        },
+        "2048": {
+          "allocated_state_bytes": 2129920,
+          "decode_cpu_seconds": 0.012170879999999773,
+          "decode_wall_seconds": 0.012173271970823407,
+          "prefill_cpu_seconds": 0.0450308960000001,
+          "prefill_wall_seconds": 0.045049976906739175
+        },
+        "8192": {
+          "allocated_state_bytes": 8421376,
+          "decode_cpu_seconds": 0.020105871999999803,
+          "decode_wall_seconds": 0.020108247990719974,
+          "prefill_cpu_seconds": 0.548741616,
+          "prefill_wall_seconds": 0.5488315569236875
+        }
+      },
+      "training_cpu_seconds": 0.04549705599999854
+    },
+    "window_transformer": {
+      "decode": {
+        "128": {
+          "allocated_state_bytes": 64512,
+          "decode_cpu_seconds": 0.01059388799999994,
+          "decode_wall_seconds": 0.010595253086648881,
+          "prefill_cpu_seconds": 0.0012618880000000443,
+          "prefill_wall_seconds": 0.0012631230056285858
+        },
+        "512": {
+          "allocated_state_bytes": 64512,
+          "decode_cpu_seconds": 0.01069543999999989,
+          "decode_wall_seconds": 0.01069637294858694,
+          "prefill_cpu_seconds": 0.0055175999999999,
+          "prefill_wall_seconds": 0.00551833095960319
+        },
+        "2048": {
+          "allocated_state_bytes": 64512,
+          "decode_cpu_seconds": 0.010677727999999886,
+          "decode_wall_seconds": 0.010678965016268194,
+          "prefill_cpu_seconds": 0.022268976000000107,
+          "prefill_wall_seconds": 0.022270523943006992
+        },
+        "8192": {
+          "allocated_state_bytes": 64512,
+          "decode_cpu_seconds": 0.010708976000000092,
+          "decode_wall_seconds": 0.01071086898446083,
+          "prefill_cpu_seconds": 0.08922558400000025,
+          "prefill_wall_seconds": 0.08922737394459546
+        }
+      },
+      "training_cpu_seconds": 0.04705038400000028
+    }
+  },
+  "threads": 1,
+  "timing_scope": "CPU process and wall time; shared machine; no study workers. Preallocated full attention KV and bounded local/delta caches. All models consume the same random input bytes. Median alternating reps; session allocation included in prefill.",
+  "torch_version": "2.14.0+cu130",
+  "training_samples": [
+    {
+      "cpu_seconds": 0.04660536000000004,
+      "repetition": 0,
+      "variant": "transformer",
+      "wall_seconds": 0.04662449099123478
+    },
+    {
+      "cpu_seconds": 0.047193136000000635,
+      "repetition": 0,
+      "variant": "window_transformer",
+      "wall_seconds": 0.047208796022459865
+    },
+    {
+      "cpu_seconds": 0.05611598399999984,
+      "repetition": 0,
+      "variant": "hybrid",
+      "wall_seconds": 0.056118829059414566
+    },
+    {
+      "cpu_seconds": 0.06338024000000075,
+      "repetition": 0,
+      "variant": "hybrid_energy",
+      "wall_seconds": 0.06338305107783526
+    },
+    {
+      "cpu_seconds": 0.05787619200000016,
+      "repetition": 1,
+      "variant": "hybrid_energy",
+      "wall_seconds": 0.05787888099439442
+    },
+    {
+      "cpu_seconds": 0.05517327999999999,
+      "repetition": 1,
+      "variant": "hybrid",
+      "wall_seconds": 0.055176154943183064
+    },
+    {
+      "cpu_seconds": 0.04678361599999992,
+      "repetition": 1,
+      "variant": "window_transformer",
+      "wall_seconds": 0.046786843915469944
+    },
+    {
+      "cpu_seconds": 0.04522260799999955,
+      "repetition": 1,
+      "variant": "transformer",
+      "wall_seconds": 0.04522536799777299
+    },
+    {
+      "cpu_seconds": 0.04531036799999999,
+      "repetition": 2,
+      "variant": "transformer",
+      "wall_seconds": 0.04531306400895119
+    },
+    {
+      "cpu_seconds": 0.04705038400000028,
+      "repetition": 2,
+      "variant": "window_transformer",
+      "wall_seconds": 0.04705301905050874
+    },
+    {
+      "cpu_seconds": 0.056644399999999706,
+      "repetition": 2,
+      "variant": "hybrid",
+      "wall_seconds": 0.056647310964763165
+    },
+    {
+      "cpu_seconds": 0.05838215999999985,
+      "repetition": 2,
+      "variant": "hybrid_energy",
+      "wall_seconds": 0.05838513805065304
+    },
+    {
+      "cpu_seconds": 0.058005183999999765,
+      "repetition": 3,
+      "variant": "hybrid_energy",
+      "wall_seconds": 0.05800840095616877
+    },
+    {
+      "cpu_seconds": 0.05467968000000045,
+      "repetition": 3,
+      "variant": "hybrid",
+      "wall_seconds": 0.05468282604124397
+    },
+    {
+      "cpu_seconds": 0.04667752000000025,
+      "repetition": 3,
+      "variant": "window_transformer",
+      "wall_seconds": 0.04668007500004023
+    },
+    {
+      "cpu_seconds": 0.045217295999999685,
+      "repetition": 3,
+      "variant": "transformer",
+      "wall_seconds": 0.045232728007249534
+    },
+    {
+      "cpu_seconds": 0.04623356799999989,
+      "repetition": 4,
+      "variant": "transformer",
+      "wall_seconds": 0.04623663402162492
+    },
+    {
+      "cpu_seconds": 0.04715137599999952,
+      "repetition": 4,
+      "variant": "window_transformer",
+      "wall_seconds": 0.04715324402786791
+    },
+    {
+      "cpu_seconds": 0.05688932800000046,
+      "repetition": 4,
+      "variant": "hybrid",
+      "wall_seconds": 0.0568914549658075
+    },
+    {
+      "cpu_seconds": 0.060079487999999515,
+      "repetition": 4,
+      "variant": "hybrid_energy",
+      "wall_seconds": 0.060082454001531005
+    },
+    {
+      "cpu_seconds": 0.05790884800000029,
+      "repetition": 5,
+      "variant": "hybrid_energy",
+      "wall_seconds": 0.05791227298323065
+    },
+    {
+      "cpu_seconds": 0.054814559999998735,
+      "repetition": 5,
+      "variant": "hybrid",
+      "wall_seconds": 0.05481732205953449
+    },
+    {
+      "cpu_seconds": 0.0470755520000008,
+      "repetition": 5,
+      "variant": "window_transformer",
+      "wall_seconds": 0.04707794694695622
+    },
+    {
+      "cpu_seconds": 0.04549705599999854,
+      "repetition": 5,
+      "variant": "transformer",
+      "wall_seconds": 0.045499608968384564
+    },
+    {
+      "cpu_seconds": 0.04552192000000055,
+      "repetition": 6,
+      "variant": "transformer",
+      "wall_seconds": 0.045524552930146456
+    },
+    {
+      "cpu_seconds": 0.046522656000000495,
+      "repetition": 6,
+      "variant": "window_transformer",
+      "wall_seconds": 0.04652543400879949
+    },
+    {
+      "cpu_seconds": 0.05563687999999978,
+      "repetition": 6,
+      "variant": "hybrid",
+      "wall_seconds": 0.05563983600586653
+    },
+    {
+      "cpu_seconds": 0.05804867199999997,
+      "repetition": 6,
+      "variant": "hybrid_energy",
+      "wall_seconds": 0.05805185704957694
+    }
+  ],
+  "training_scope": "forward, cross entropy, backward; optimizer excluded",
+  "training_shape": [
+    24,
+    128
+  ]
+}

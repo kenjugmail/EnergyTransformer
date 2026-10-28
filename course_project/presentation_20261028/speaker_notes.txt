@@ -1,0 +1,182 @@
+REWT · TEN-MINUTE SPEAKING NOTES
+12 main slides + 3 appendix slides. Updated October 28, 2026.
+
+SLIDE 1 · 25 seconds
+
+CUE: One question: can refinement improve useful memory?
+
+My project is REWT, the Recurrent Energy Wave Transformer. I am studying whether learned energy refinement can improve answers retrieved from compact memory. I have implemented several versions, so I will separate the original energy-based proposal, a small streaming comparison, and the latest conversion of a pretrained model. The results include both useful progress and clear failures.
+
+TRANSITION: First, here is a memory problem we can check directly.
+
+KEEP PRECISE: Do not describe the entire 1.784B model as energy minimization.
+
+Evidence: README.md; course_project/PROPOSAL.md
+
+SLIDE 2 · 45 seconds
+
+CUE: K is the useful fact; X entries are irrelevant activity.
+
+Imagine an assistant reading a continuing stream. It sees K equals eight, then many unrelated X entries, and eventually gets asked for K. A compact memory should retain the useful fact without storing every earlier token. In the saved 64-distractor example, both hybrids answer eight; the full and window Transformers answer two and nine. That is only one recorded example. At 128 distractors the energy hybrid also fails. The aggregate comparison comes later. This is a diagnostic for learned memory, not a task that requires an LLM: a dictionary would solve this grammar exactly.
+
+TRANSITION: The research question is whether an energy score can improve the model’s internal candidate.
+
+KEEP PRECISE: The displayed stream is abbreviated. The recorded examples are previously tested cases, not fresh benchmark evidence.
+
+Evidence: course_project/presentation_20261028/streaming_showcase/demo/transcript.txt
+
+SLIDE 3 · 45 seconds
+
+CUE: A learned landscape, not physical energy or truth.
+
+Energy here is a scalar score. Picture the model’s candidate state as a point on this landscape. The gradient gives a direction that lowers the score, and a controlled step size keeps the update stable. The landscape itself is learned during training. That is why a lower valley can still correspond to a wrong answer. The drawing is illustrative and one-dimensional; the actual state has many coordinates. The cosine waves add learned nonlinear preferences around an anchored proposal. This is not sound, a quantum effect, or a claim that the system finds a global minimum.
+
+TRANSITION: There are two architectural versions to keep distinct.
+
+KEEP PRECISE: Lower internal energy does not establish correctness, reasoning, or a global optimum.
+
+Evidence: rewt/streaming.py: LatentEnergy; energy_landscape.png
+
+SLIDE 4 · 50 seconds
+
+CUE: Original: coupled workspace. Current scale-up: backbone plus head.
+
+The original proposal puts recurrent, attention, feedforward and output states into one joint workspace. A scalar energy couples those blocks, with a stabilizing quadratic and learned cosine terms. That implementation remains in the repository. The newer streaming models take a more practical route: conventional memory, attention and feedforward computation propose a hidden state, then a final energy head refines it. The large converted model follows that second design. I am not claiming that its full forward pass is joint energy minimization. It gives me a scalable backbone on which to test whether the refinement earns its cost.
+
+TRANSITION: In either version, training the weights and refining a state are different operations.
+
+KEEP PRECISE: Do not transfer the original joint-state descent claim to the whole streaming backbone.
+
+Evidence: rewt/model.py; rewt/streaming.py; rewt/lfm_conversion.py
+
+SLIDE 5 · 45 seconds
+
+CUE: Training changes weights. Inference changes the candidate state.
+
+During training, examples change the parameters that define the proposals and energy landscape. The small models use supervised next-token losses. The conversion also uses distillation: it matches the pretrained donor’s token distribution while adapting the new operators. Gradients can pass through the refinement steps during training. At inference, the learned weights stay fixed. Only the candidate hidden state is updated using the gradient of energy with respect to that state. The streaming models normally use two refinement rounds. The loop is therefore additional inference computation, not learning new model weights from the user’s prompt.
+
+TRANSITION: That distinction also tells us what to measure.
+
+KEEP PRECISE: Recovered model weights changed during offline training; fixed-weight inference is a separate claim.
+
+Evidence: rewt/lfm_distill.py; scripts/recover_lfm3_capabilities.py
+
+SLIDE 6 · 40 seconds
+
+CUE: Three columns: score, answer, cost.
+
+I separate three questions. First, is the numerical implementation correct? That includes gradients, causal behavior and cached decoding. Second, is the answer actually right, including recall and requested formatting? Third, what are the memory and runtime costs? The small streaming comparison has three training seeds and held-out task identities. The larger recovery attempt is one exploratory training trajectory, and I used its small capability suite to recommend the final version. Those are different levels of evidence. A passing numerical test or lower language loss does not certify general capabilities.
+
+TRANSITION: The strongest small-model result is compact recall.
+
+KEEP PRECISE: Do not say all studies use three seeds or that the recovery recommendation is an untouched test result.
+
+Evidence: reports/rewt_streaming_20261026/FINDINGS.md; reports/lfm3_capability_recovery_20261028/FINDINGS.md
+
+SLIDE 7 · 65 seconds
+
+CUE: 86.1% without energy; 77.3% with energy. Credit memory.
+
+These are small models, around 112 thousand parameters, trained from scratch with matched parameter counts. Across 72 long-recall prompts and three seeds, the full Transformer reaches 14.4 percent and the window Transformer 21.3 percent. The hybrid without refinement reaches 86.1 percent; the energy hybrid reaches 77.3 percent. The hybrid combines gated delta memory with local attention. This supports that compact memory recipe on this synthetic task, but it does not show a recall benefit from energy. Both Transformer controls have a weak third seed, and I used one common tuning recipe, so these are not best-tuned baseline comparisons. The longest recall input is 520 bytes. The later 8K figure is a separate runtime experiment.
+
+TRANSITION: I also reduced the cost of the existing decoder without changing its weights.
+
+KEEP PRECISE: These scores are not from the 1.784B converted model. Accuracy is not measured at 8K.
+
+Evidence: reports/rewt_streaming_20261026/FINDINGS.md
+
+SLIDE 8 · 45 seconds
+
+CUE: Warmed generation only; same outputs and refinement rounds.
+
+For the same small energy-model checkpoint, generating 32 tokens after an 8K prefix takes 8.18 milliseconds instead of 15.43 on CPU, and 1.97 instead of 24.51 on the shared GB10. The changes are fixed-shape decoding, ring caches, compilation and CUDA graph replay. They also remove per-token host transfers. All model controls receive the same execution options. The compact hybrid carries about 225 times less state than full attention in this setup. That excludes parameters and temporary workspace. These are warmed decode measurements, not startup, training or 1.7B-model speed claims. The window Transformer remains faster on CPU.
+
+TRANSITION: The next challenge was transferring pretrained capabilities into this architecture.
+
+KEEP PRECISE: The 12.44× GPU gain is not a 12× arithmetic-kernel speedup. Prefill and compilation are excluded.
+
+Evidence: reports/rewt_decode_speed_20261027/FINDINGS.md
+
+SLIDE 9 · 65 seconds
+
+CUE: Reuse useful weights; replace operators; recover behavior.
+
+I converted a pinned LFM3-1.7B checkpoint into a standalone 1.784-billion-parameter streaming REWT. I inherited its tokenizer, embeddings, feedforward blocks and compatible attention weights. I replaced the thirteen convolution operators with delta memory, bounded all eleven attention layers to 256-token windows, and added a final two-round energy head. These are substantial changes to information flow, so copying weights does not preserve the donor’s behavior. Recovery matches the donor’s full token distribution, includes next-token and hidden-state losses, and adapts selected feedforward blocks. The resulting model runs from its own PyTorch weights and code; it does not call the donor at inference.
+
+TRANSITION: The measured recovery is useful but still very incomplete.
+
+KEEP PRECISE: Bounded attention does not mean all older information is erased: delta memory can carry a compressed state, but retention is imperfect.
+
+Evidence: reports/lfm3_conversion_20261028/DESIGN.md; reports/lfm3_capability_recovery_20261028/FINDINGS.md
+
+SLIDE 10 · 75 seconds
+
+CUE: 43 → 59 versus donor 94; exact 9 → 13 versus 25.
+
+On the same 128 science questions, the converted starting model scores 43, the recommended recovered checkpoint scores 59, and the donor scores 94. This is a custom answer-label-ranking protocol, not a published ARC benchmark score. Exact-response probes improve from nine out of fifty to thirteen, versus twenty-five for the donor under the same 64-token greedy protocol. The recommended checkpoint includes 1.29 million additional real-token exposures. A third pass unfroze all feedforward blocks and lowered validation loss further, but its capability scores fell to 58 and nine. I therefore kept stage two. That recommendation is post hoc on this small suite; it needs a fresh confirmation set. Continuation loss improves too, but that alone is not capability recovery.
+
+TRANSITION: The remaining failures are the most important guide for the next experiment.
+
+KEEP PRECISE: Total work was 1.66M exposures across three passes; stage 2 contains only 1.29M. Token exposures are not unique tokens.
+
+Evidence: reports/lfm3_capability_recovery_20261028/FINDINGS.md; selection.json
+
+SLIDE 11 · 50 seconds
+
+CUE: Long recall and tool formatting still fail.
+
+The converted model still fails all eight longer code-recall probes at 561 and 1,265 prompt tokens, while the donor retrieves those codes. It also fails all four tool-call JSON probes. Most of the exact-response gain is short recall formatting: it now returns the bare requested code. Some separate examples still contain malformed JSON or extra arithmetic text. So the result is partial recovery, not an equivalent replacement for LFM3. The 279-test REWT suite and streaming checks establish implementation behavior; they do not establish intelligence. The compact synthetic-memory result and the large-model capability failures are both part of the evidence.
+
+TRANSITION: My proposed next step targets those failures and tests the energy hypothesis directly.
+
+KEEP PRECISE: Strict-output failures combine content and formatting. A mathematically correct answer with extra prose can fail an exact-output probe.
+
+Evidence: reports/lfm3_capability_recovery_20261028/recall_content_diagnostic.json; before.json; after.json
+
+SLIDE 12 · 50 seconds
+
+CUE: Correction training, realistic memory, fresh equal-cost controls.
+
+The next experiment is to teach refinement to repair deliberately corrupted candidates, rather than assuming lower energy will improve an answer. In parallel, the converted model needs varied long-context recall and structured-output recovery. I would compare zero, one, two and four rounds against both a no-energy model and an equally costly feedforward correction head. Settings should be chosen on validation, then frozen before fresh tests. The contribution so far is an implemented and audited research system with compact-memory gains, faster inference, and a documented partial conversion. The open question remains whether energy refinement improves useful retrieval enough to justify its extra computation.
+
+TRANSITION: Thank you. I have the equations, controls and full results available for questions.
+
+KEEP PRECISE: The correction experiment is proposed, not completed. Do not claim a demonstrated general energy advantage.
+
+Evidence: reports/rewt_streaming_20261026/FINDINGS.md; reports/lfm3_capability_recovery_20261028/FINDINGS.md
+
+SLIDE 13 · 0 seconds
+
+CUE: Quadratic anchor + bounded cosine terms; fixed coefficients within the loop.
+
+Let delta be the displacement from the proposed hidden state. The energy is one half delta-transpose P delta plus a sum of cosine terms. P is positive diagonal. The gradient is P delta minus the sum of amplitude times sine times the frequency vector. A bound on curvature is the largest diagonal precision plus the sum of absolute amplitude times squared frequency norm. The implementation uses step size 0.95 divided by this bound. This supports descent for the fixed smooth energy in exact arithmetic; numerical tests check implementation behavior. It does not guarantee a global optimum or correct answer. The converted energy head computes its updates in FP32.
+
+TRANSITION: The practical question is whether these state changes improve quality enough to pay for them.
+
+KEEP PRECISE: Earlier joint-energy solvers use other acceptance mechanisms. This equation and step rule describe the streaming/conversion head.
+
+Evidence: rewt/streaming.py: LatentEnergy; rewt/lfm_conversion.py: ConversionEnergy
+
+SLIDE 14 · 0 seconds
+
+CUE: Equal CPU story loss favors the Transformer; energy task ablation ties.
+
+The hybrid is not better on every metric. At equal training CPU time, story loss is 1.4641 bits per byte for the full Transformer, 1.4828 for the no-energy hybrid and 1.4926 for the energy hybrid. Lower is better. Disabling refinement in the frozen energy model leaves complete task accuracy at 36.63 percent. A separately trained no-energy model tests the effect on learning, while a frozen intervention tests the inference contribution; they answer different questions. In the large converted checkpoint, energy-off continuation NLL is 2.229599 versus 2.229755 with energy, which also fails to establish a meaningful energy benefit.
+
+TRANSITION: These controls motivate correction training and equal-cost comparisons.
+
+KEEP PRECISE: The small-model family scores are dominated by recall; do not label them general reasoning accuracy.
+
+Evidence: reports/rewt_streaming_20261026/FINDINGS.md; reports/lfm3_capability_recovery_20261028/continuation_and_cache.json
+
+SLIDE 15 · 0 seconds
+
+CUE: Credit the backbone and donor; own the implementation and controlled analysis.
+
+Energy Transformer motivates energy-based state refinement. Gated Delta Networks is prior work on combining delta memory with local attention. LFM3 supplies the pretrained weights used in conversion. The project does not claim to invent those ingredients. Its contribution is the energy extension, conversion and recovery implementation, optimized execution, and reproducible positive and negative experiments. The repository contains plans, source snapshots, result tables and raw responses. Donor weights retain their source license; large checkpoints and downloaded datasets are not included in the Git repository.
+
+TRANSITION: Point to the relevant report when answering a detailed numerical question.
+
+KEEP PRECISE: The current hybrid is not a reproduction of a published Energy Transformer or a proof of a new state of the art.
+
+Evidence: RIGHTS.md; reports/lfm3_conversion_20261028/DESIGN.md; reports/lfm3_capability_recovery_20261028/FINDINGS.md

@@ -1,0 +1,120 @@
+{"time": "2026-10-22T20:41:52.472863+00:00", "message": "language_architecture_started", "case": "control_22102"}
+{"time": "2026-10-22T20:41:52.498360+00:00", "message": "language_architecture_started", "case": "control_22101"}
+{"time": "2026-10-22T20:46:16.249523+00:00", "message": "language_architecture_validation", "case": "control_22101", "step": 128, "bpb": 2.609683521058805}
+{"time": "2026-10-22T20:46:16.476773+00:00", "message": "language_architecture_validation", "case": "control_22102", "step": 128, "bpb": 2.641709943504192}
+{"time": "2026-10-22T20:49:05.048687+00:00", "message": "language_architecture_validation", "case": "control_22102", "step": 256, "bpb": 2.277621618764567}
+{"time": "2026-10-22T20:49:15.561829+00:00", "message": "language_architecture_validation", "case": "control_22101", "step": 256, "bpb": 2.266616414799249}
+{"time": "2026-10-22T20:51:43.567605+00:00", "message": "language_architecture_validation", "case": "control_22102", "step": 384, "bpb": 2.1564128626760755}
+{"time": "2026-10-22T20:51:55.699002+00:00", "message": "language_architecture_validation", "case": "control_22101", "step": 384, "bpb": 2.141244847498121}
+{"time": "2026-10-22T20:54:19.954800+00:00", "message": "language_architecture_validation", "case": "control_22102", "step": 512, "bpb": 2.0948079278644913}
+{"time": "2026-10-22T20:54:20.159675+00:00", "message": "language_architecture_started", "case": "control_22103"}
+{"time": "2026-10-22T20:54:31.191407+00:00", "message": "language_architecture_validation", "case": "control_22101", "step": 512, "bpb": 2.0811651515258935}
+{"time": "2026-10-22T20:54:31.381032+00:00", "message": "language_architecture_started", "case": "precond4_22101"}
+{"time": "2026-10-22T20:57:20.343678+00:00", "message": "language_architecture_validation", "case": "precond4_22101", "step": 128, "bpb": 2.6083238347119146}
+{"time": "2026-10-22T20:57:26.406683+00:00", "message": "language_architecture_validation", "case": "control_22103", "step": 128, "bpb": 2.6418012812807166}
+{"time": "2026-10-22T21:00:06.002939+00:00", "message": "language_architecture_validation", "case": "control_22103", "step": 256, "bpb": 2.274053323764159}
+{"time": "2026-10-22T21:00:10.398563+00:00", "message": "language_architecture_validation", "case": "precond4_22101", "step": 256, "bpb": 2.264969318324092}
+{"time": "2026-10-22T21:03:02.424285+00:00", "message": "language_architecture_validation", "case": "control_22103", "step": 384, "bpb": 2.1490690437179825}
+{"time": "2026-10-22T21:03:03.479960+00:00", "message": "language_architecture_validation", "case": "precond4_22101", "step": 384, "bpb": 2.13965375585194}
+{"time": "2026-10-22T21:05:53.740799+00:00", "message": "language_architecture_validation", "case": "control_22103", "step": 512, "bpb": 2.0889198130373035}
+{"time": "2026-10-22T21:05:54.200477+00:00", "message": "language_architecture_started", "case": "precond4_22102"}
+{"time": "2026-10-22T21:05:57.368518+00:00", "message": "language_architecture_validation", "case": "precond4_22101", "step": 512, "bpb": 2.0795749692650545}
+{"time": "2026-10-22T21:05:57.569858+00:00", "message": "language_architecture_started", "case": "precond4_22103"}
+{"time": "2026-10-22T21:08:49.272614+00:00", "message": "language_architecture_validation", "case": "precond4_22103", "step": 128, "bpb": 2.640658893670254}
+{"time": "2026-10-22T21:08:52.372640+00:00", "message": "language_architecture_validation", "case": "precond4_22102", "step": 128, "bpb": 2.641103294760696}
+{"time": "2026-10-22T21:11:45.054188+00:00", "message": "language_architecture_validation", "case": "precond4_22103", "step": 256, "bpb": 2.2736749307414525}
+{"time": "2026-10-22T21:11:59.163661+00:00", "message": "language_architecture_validation", "case": "precond4_22102", "step": 256, "bpb": 2.277047863154287}
+{"time": "2026-10-22T21:14:43.507935+00:00", "message": "language_architecture_validation", "case": "precond4_22103", "step": 384, "bpb": 2.1486477765034304}
+{"time": "2026-10-22T21:14:59.969683+00:00", "message": "language_architecture_validation", "case": "precond4_22102", "step": 384, "bpb": 2.1556056168342583}
+{"time": "2026-10-22T21:17:23.547941+00:00", "message": "language_architecture_validation", "case": "precond4_22103", "step": 512, "bpb": 2.0883526449257195}
+{"time": "2026-10-22T21:17:23.758845+00:00", "message": "language_architecture_started", "case": "scan_22101"}
+{"time": "2026-10-22T21:17:48.841946+00:00", "message": "language_architecture_validation", "case": "scan_22101", "step": 128, "bpb": 2.6107089972025217}
+{"time": "2026-10-22T21:17:51.662223+00:00", "message": "language_architecture_validation", "case": "precond4_22102", "step": 512, "bpb": 2.0941323654561916}
+{"time": "2026-10-22T21:17:51.841368+00:00", "message": "language_architecture_started", "case": "scan_22102"}
+{"time": "2026-10-22T21:18:13.051385+00:00", "message": "language_architecture_validation", "case": "scan_22101", "step": 256, "bpb": 2.2746487050014688}
+{"time": "2026-10-22T21:18:15.613678+00:00", "message": "language_architecture_validation", "case": "scan_22102", "step": 128, "bpb": 2.6516601939326416}
+{"time": "2026-10-22T21:18:35.578508+00:00", "message": "language_architecture_validation", "case": "scan_22101", "step": 384, "bpb": 2.155417396248638}
+{"time": "2026-10-22T21:18:39.463070+00:00", "message": "language_architecture_validation", "case": "scan_22102", "step": 256, "bpb": 2.287941279262956}
+{"time": "2026-10-22T21:18:55.969026+00:00", "message": "language_architecture_validation", "case": "scan_22101", "step": 512, "bpb": 2.096724468562382}
+{"time": "2026-10-22T21:18:56.148821+00:00", "message": "language_architecture_started", "case": "scan_22103"}
+{"time": "2026-10-22T21:19:01.192912+00:00", "message": "language_architecture_validation", "case": "scan_22102", "step": 384, "bpb": 2.1703112650162377}
+{"time": "2026-10-22T21:19:20.155611+00:00", "message": "language_architecture_validation", "case": "scan_22103", "step": 128, "bpb": 2.647813161234909}
+{"time": "2026-10-22T21:19:25.623959+00:00", "message": "language_architecture_validation", "case": "scan_22102", "step": 512, "bpb": 2.1098521335551803}
+{"time": "2026-10-22T21:19:25.998978+00:00", "message": "language_architecture_started", "case": "feedback8_22101"}
+{"time": "2026-10-22T21:19:43.295429+00:00", "message": "language_architecture_validation", "case": "scan_22103", "step": 256, "bpb": 2.284072975820278}
+{"time": "2026-10-22T21:19:58.814278+00:00", "message": "language_architecture_validation", "case": "feedback8_22101", "step": 128, "bpb": 2.610732330699584}
+{"time": "2026-10-22T21:20:07.770886+00:00", "message": "language_architecture_validation", "case": "scan_22103", "step": 384, "bpb": 2.1585310872986714}
+{"time": "2026-10-22T21:20:30.459502+00:00", "message": "language_architecture_validation", "case": "scan_22103", "step": 512, "bpb": 2.097223920736198}
+{"time": "2026-10-22T21:20:30.632601+00:00", "message": "language_architecture_started", "case": "feedback8_22102"}
+{"time": "2026-10-22T21:20:32.182971+00:00", "message": "language_architecture_validation", "case": "feedback8_22101", "step": 256, "bpb": 2.2746519876607514}
+{"time": "2026-10-22T21:21:01.850908+00:00", "message": "language_architecture_validation", "case": "feedback8_22101", "step": 384, "bpb": 2.155403733288381}
+{"time": "2026-10-22T21:21:06.148530+00:00", "message": "language_architecture_validation", "case": "feedback8_22102", "step": 128, "bpb": 2.6516194490333027}
+{"time": "2026-10-22T21:21:30.452529+00:00", "message": "language_architecture_validation", "case": "feedback8_22101", "step": 512, "bpb": 2.0966942370447996}
+{"time": "2026-10-22T21:21:30.864044+00:00", "message": "language_architecture_started", "case": "feedback8_22103"}
+{"time": "2026-10-22T21:21:41.046685+00:00", "message": "language_architecture_validation", "case": "feedback8_22102", "step": 256, "bpb": 2.2878884461926106}
+{"time": "2026-10-22T21:22:02.999360+00:00", "message": "language_architecture_validation", "case": "feedback8_22103", "step": 128, "bpb": 2.647800984343381}
+{"time": "2026-10-22T21:22:12.925158+00:00", "message": "language_architecture_validation", "case": "feedback8_22102", "step": 384, "bpb": 2.1702673483582684}
+{"time": "2026-10-22T21:22:32.911820+00:00", "message": "language_architecture_validation", "case": "feedback8_22103", "step": 256, "bpb": 2.2840616195935706}
+{"time": "2026-10-22T21:22:44.094707+00:00", "message": "language_architecture_validation", "case": "feedback8_22102", "step": 512, "bpb": 2.1097963948877676}
+{"time": "2026-10-22T21:22:44.472271+00:00", "message": "language_architecture_started", "case": "delta_22101"}
+{"time": "2026-10-22T21:23:00.173363+00:00", "message": "language_architecture_validation", "case": "feedback8_22103", "step": 384, "bpb": 2.158548454340686}
+{"time": "2026-10-22T21:23:13.148173+00:00", "message": "language_architecture_validation", "case": "delta_22101", "step": 128, "bpb": 2.5777582178273986}
+{"time": "2026-10-22T21:23:30.943869+00:00", "message": "language_architecture_validation", "case": "feedback8_22103", "step": 512, "bpb": 2.0972286007436884}
+{"time": "2026-10-22T21:23:31.087055+00:00", "message": "language_architecture_started", "case": "delta_22102"}
+{"time": "2026-10-22T21:23:39.798658+00:00", "message": "language_architecture_validation", "case": "delta_22101", "step": 256, "bpb": 2.244905216826193}
+{"time": "2026-10-22T21:23:57.811241+00:00", "message": "language_architecture_validation", "case": "delta_22102", "step": 128, "bpb": 2.613988484726455}
+{"time": "2026-10-22T21:24:10.449301+00:00", "message": "language_architecture_validation", "case": "delta_22101", "step": 384, "bpb": 2.1246627159335505}
+{"time": "2026-10-22T21:24:25.509394+00:00", "message": "language_architecture_validation", "case": "delta_22102", "step": 256, "bpb": 2.2612485571080874}
+{"time": "2026-10-22T21:24:38.159993+00:00", "message": "language_architecture_validation", "case": "delta_22101", "step": 512, "bpb": 2.0653974078050923}
+{"time": "2026-10-22T21:24:38.301166+00:00", "message": "language_architecture_started", "case": "delta_22103"}
+{"time": "2026-10-22T21:24:50.977556+00:00", "message": "language_architecture_validation", "case": "delta_22102", "step": 384, "bpb": 2.1422441067278375}
+{"time": "2026-10-22T21:25:06.983492+00:00", "message": "language_architecture_validation", "case": "delta_22103", "step": 128, "bpb": 2.608000803294406}
+{"time": "2026-10-22T21:25:19.796127+00:00", "message": "language_architecture_validation", "case": "delta_22102", "step": 512, "bpb": 2.0793386843371007}
+{"time": "2026-10-22T21:25:20.225278+00:00", "message": "language_architecture_started", "case": "patch4_22101"}
+{"time": "2026-10-22T21:25:36.442483+00:00", "message": "language_architecture_validation", "case": "delta_22103", "step": 256, "bpb": 2.25416739525286}
+{"time": "2026-10-22T21:25:39.779517+00:00", "message": "language_architecture_validation", "case": "patch4_22101", "step": 128, "bpb": 2.611291536144395}
+{"time": "2026-10-22T21:26:00.256552+00:00", "message": "language_architecture_validation", "case": "patch4_22101", "step": 256, "bpb": 2.275089512910805}
+{"time": "2026-10-22T21:26:03.682345+00:00", "message": "language_architecture_validation", "case": "delta_22103", "step": 384, "bpb": 2.1345528582089197}
+{"time": "2026-10-22T21:26:25.299839+00:00", "message": "language_architecture_validation", "case": "patch4_22101", "step": 384, "bpb": 2.1558103616169433}
+{"time": "2026-10-22T21:26:34.670325+00:00", "message": "language_architecture_validation", "case": "delta_22103", "step": 512, "bpb": 2.074140415922118}
+{"time": "2026-10-22T21:26:35.076537+00:00", "message": "language_architecture_started", "case": "patch4_22102"}
+{"time": "2026-10-22T21:26:49.583162+00:00", "message": "language_architecture_validation", "case": "patch4_22101", "step": 512, "bpb": 2.097083964114083}
+{"time": "2026-10-22T21:26:49.786817+00:00", "message": "language_architecture_started", "case": "patch4_22103"}
+{"time": "2026-10-22T21:26:58.465043+00:00", "message": "language_architecture_validation", "case": "patch4_22102", "step": 128, "bpb": 2.6521492436253524}
+{"time": "2026-10-22T21:27:14.529760+00:00", "message": "language_architecture_validation", "case": "patch4_22103", "step": 128, "bpb": 2.6484563628331195}
+{"time": "2026-10-22T21:27:23.114005+00:00", "message": "language_architecture_validation", "case": "patch4_22102", "step": 256, "bpb": 2.288254019100011}
+{"time": "2026-10-22T21:27:40.495573+00:00", "message": "language_architecture_validation", "case": "patch4_22103", "step": 256, "bpb": 2.28450351432929}
+{"time": "2026-10-22T21:27:45.273150+00:00", "message": "language_architecture_validation", "case": "patch4_22102", "step": 384, "bpb": 2.17052971711944}
+{"time": "2026-10-22T21:28:04.347390+00:00", "message": "language_architecture_validation", "case": "patch4_22102", "step": 512, "bpb": 2.110021988992923}
+{"time": "2026-10-22T21:28:04.473018+00:00", "message": "language_architecture_started", "case": "lowrank16_22101"}
+{"time": "2026-10-22T21:28:04.702288+00:00", "message": "language_architecture_validation", "case": "patch4_22103", "step": 384, "bpb": 2.158906996146785}
+{"time": "2026-10-22T21:28:25.962901+00:00", "message": "language_architecture_validation", "case": "patch4_22103", "step": 512, "bpb": 2.0975714833778047}
+{"time": "2026-10-22T21:28:26.333275+00:00", "message": "language_architecture_started", "case": "lowrank16_22102"}
+{"time": "2026-10-22T21:28:29.575268+00:00", "message": "language_architecture_validation", "case": "lowrank16_22101", "step": 128, "bpb": 2.9122784770421926}
+{"time": "2026-10-22T21:28:49.041605+00:00", "message": "language_architecture_validation", "case": "lowrank16_22102", "step": 128, "bpb": 2.9842126985287103}
+{"time": "2026-10-22T21:28:54.479766+00:00", "message": "language_architecture_validation", "case": "lowrank16_22101", "step": 256, "bpb": 2.4848354935529855}
+{"time": "2026-10-22T21:29:13.181438+00:00", "message": "language_architecture_validation", "case": "lowrank16_22102", "step": 256, "bpb": 2.5347000196206086}
+{"time": "2026-10-22T21:29:23.329115+00:00", "message": "language_architecture_validation", "case": "lowrank16_22101", "step": 384, "bpb": 2.3473651975031}
+{"time": "2026-10-22T21:29:37.564103+00:00", "message": "language_architecture_validation", "case": "lowrank16_22102", "step": 384, "bpb": 2.37461947619659}
+{"time": "2026-10-22T21:29:48.814993+00:00", "message": "language_architecture_validation", "case": "lowrank16_22101", "step": 512, "bpb": 2.2822663820282227}
+{"time": "2026-10-22T21:29:48.942230+00:00", "message": "language_architecture_started", "case": "lowrank16_22103"}
+{"time": "2026-10-22T21:29:55.605870+00:00", "message": "language_architecture_validation", "case": "lowrank16_22102", "step": 512, "bpb": 2.3006948098180633}
+{"time": "2026-10-22T21:29:55.700268+00:00", "message": "language_architecture_started", "case": "combined_22101"}
+{"time": "2026-10-22T21:30:04.641465+00:00", "message": "language_architecture_validation", "case": "lowrank16_22103", "step": 128, "bpb": 2.961473562417476}
+{"time": "2026-10-22T21:30:30.012287+00:00", "message": "language_architecture_validation", "case": "lowrank16_22103", "step": 256, "bpb": 2.5071692656030837}
+{"time": "2026-10-22T21:30:33.373171+00:00", "message": "language_architecture_validation", "case": "combined_22101", "step": 128, "bpb": 2.5791306133889433}
+{"time": "2026-10-22T21:30:52.844510+00:00", "message": "language_architecture_validation", "case": "lowrank16_22103", "step": 384, "bpb": 2.355362088217381}
+{"time": "2026-10-22T21:31:13.494967+00:00", "message": "language_architecture_validation", "case": "combined_22101", "step": 256, "bpb": 2.2518431837602835}
+{"time": "2026-10-22T21:31:14.729601+00:00", "message": "language_architecture_validation", "case": "lowrank16_22103", "step": 512, "bpb": 2.2819073522592572}
+{"time": "2026-10-22T21:31:15.108028+00:00", "message": "language_architecture_started", "case": "combined_22102"}
+{"time": "2026-10-22T21:31:50.591648+00:00", "message": "language_architecture_validation", "case": "combined_22101", "step": 384, "bpb": 2.1338015728358184}
+{"time": "2026-10-22T21:31:57.112237+00:00", "message": "language_architecture_validation", "case": "combined_22102", "step": 128, "bpb": 2.622841617190358}
+{"time": "2026-10-22T21:32:33.137019+00:00", "message": "language_architecture_validation", "case": "combined_22101", "step": 512, "bpb": 2.075725053150385}
+{"time": "2026-10-22T21:32:33.535109+00:00", "message": "language_architecture_started", "case": "combined_22103"}
+{"time": "2026-10-22T21:32:43.808561+00:00", "message": "language_architecture_validation", "case": "combined_22102", "step": 256, "bpb": 2.2631628576128184}
+{"time": "2026-10-22T21:33:12.024085+00:00", "message": "language_architecture_validation", "case": "combined_22103", "step": 128, "bpb": 2.6185581017086963}
+{"time": "2026-10-22T21:33:28.817221+00:00", "message": "language_architecture_validation", "case": "combined_22102", "step": 384, "bpb": 2.142311467783521}
+{"time": "2026-10-22T21:33:50.146539+00:00", "message": "language_architecture_validation", "case": "combined_22103", "step": 256, "bpb": 2.2559328892634922}
+{"time": "2026-10-22T21:34:14.216304+00:00", "message": "language_architecture_validation", "case": "combined_22102", "step": 512, "bpb": 2.0777301369283836}
+{"time": "2026-10-22T21:34:31.515414+00:00", "message": "language_architecture_validation", "case": "combined_22103", "step": 384, "bpb": 2.1332274845235846}
+{"time": "2026-10-22T21:35:16.263736+00:00", "message": "language_architecture_validation", "case": "combined_22103", "step": 512, "bpb": 2.0712053414612903}

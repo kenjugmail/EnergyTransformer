@@ -1,0 +1,110 @@
+USDT:2026-10-22 15:58:18 2927073:2927073 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-22 15:58:18 2927073:2927073 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-10-22 15:58:19 2927073:2927073 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-22 15:58:19 2927073:2927073 SyncActivityProfilerHandler.cpp:46] profiler_stop
+USDT:2026-10-22 15:58:20 2927073:2927073 SyncActivityProfilerHandler.cpp:39] profiler_start
+USDT:2026-10-22 15:58:20 2927073:2927073 SyncActivityProfilerHandler.cpp:46] profiler_stop
+{
+  "prefill": [
+    {
+      "name": "rewt::forward",
+      "calls": 1,
+      "total_us": 22524.053,
+      "self_us": 1424.2699999999932
+    },
+    {
+      "name": "rewt::observed_bank",
+      "calls": 1,
+      "total_us": 1778.048,
+      "self_us": 295.4720000000018
+    },
+    {
+      "name": "rewt::retrieve",
+      "calls": 16,
+      "total_us": 874.8960000000097,
+      "self_us": 343.98399999999765
+    },
+    {
+      "name": "rewt::condition",
+      "calls": 16,
+      "total_us": 9413.869000000002,
+      "self_us": 1225.8389999999918
+    },
+    {
+      "name": "rewt::krylov2",
+      "calls": 16,
+      "total_us": 6113.146999999993,
+      "self_us": 1662.1740000000864
+    }
+  ],
+  "training": [
+    {
+      "name": "rewt::forward",
+      "calls": 1,
+      "total_us": 27182.977,
+      "self_us": 1863.2479999999778
+    },
+    {
+      "name": "rewt::observed_bank",
+      "calls": 1,
+      "total_us": 2453.119,
+      "self_us": 384.0479999999993
+    },
+    {
+      "name": "rewt::retrieve",
+      "calls": 16,
+      "total_us": 1081.4880000000003,
+      "self_us": 341.7439999999897
+    },
+    {
+      "name": "rewt::condition",
+      "calls": 16,
+      "total_us": 10603.641000000001,
+      "self_us": 1256.3190000000213
+    },
+    {
+      "name": "rewt::krylov2",
+      "calls": 16,
+      "total_us": 7814.330000000004,
+      "self_us": 2417.8529999999646
+    },
+    {
+      "name": "rewt::backward",
+      "calls": 1,
+      "total_us": 36122.013,
+      "self_us": 3910.2229999997326
+    }
+  ],
+  "decode": [
+    {
+      "name": "rewt::forward",
+      "calls": 1,
+      "total_us": 2960.2709999999997,
+      "self_us": 1037.151999999998
+    },
+    {
+      "name": "rewt::observed_bank",
+      "calls": 1,
+      "total_us": 337.904,
+      "self_us": 118.75199999999973
+    },
+    {
+      "name": "rewt::retrieve",
+      "calls": 1,
+      "total_us": 73.16800000000012,
+      "self_us": 33.26399999999967
+    },
+    {
+      "name": "rewt::condition",
+      "calls": 1,
+      "total_us": 571.279,
+      "self_us": 97.9840000000006
+    },
+    {
+      "name": "rewt::krylov2",
+      "calls": 1,
+      "total_us": 238.9119999999998,
+      "self_us": 96.11199999999963
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "best_stage": "initial",
+  "best_step": 0,
+  "best_validation_kl": 6.431692600250244,
+  "test": {
+    "kl": 5.826272964477539,
+    "nll": 7.714879989624023,
+    "teacher_nll": 1.875082015991211,
+    "agreement": 0.125,
+    "hidden_relative_mse": 1.564213752746582,
+    "tokens": 64
+  },
+  "training_tokens": 128,
+  "trainable_parameters": 389739360,
+  "parameters": 1784445792,
+  "elapsed_seconds": 63.91318878100719,
+  "best_sha256": "00bcdb7663166f82dc310393059aad380e00183153945c5deb0374da8c47cb8f",
+  "peak_cuda_allocated_gib": 13.1407151222229,
+  "limitations": "Short conversion pilot, not capability recovery certification. Evaluation uses cropped chat continuations; no long-context or broad benchmark claim.",
+  "checkpoint_retention": "Smoke-only checkpoint files removed after successful verification; metrics and initialized donor transfer remain."
+}

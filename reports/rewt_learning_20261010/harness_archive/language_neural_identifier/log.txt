@@ -1,0 +1,9 @@
+{"time": "2026-10-10T10:35:46.790346+00:00", "message": "story_fit_started", "case": "stable_fourier", "parameters": 249952, "updates": 2048, "target_bytes": 8388608}
+{"time": "2026-10-10T10:35:46.886699+00:00", "message": "story_fit_started", "case": "original_core", "parameters": 249989, "updates": 2048, "target_bytes": 8388608}
+{"time": "2026-10-10T10:36:20.661134+00:00", "message": "story_progress", "case": "original_core", "step": 64, "loss": 2.2687880992889404, "training_cpu": 32.411200511999986}
+{"time": "2026-10-10T10:36:29.190307+00:00", "message": "story_progress", "case": "stable_fourier", "step": 64, "loss": 2.2062764167785645, "training_cpu": 40.388803263999996}
+{"time": "2026-10-10T10:37:01.140448+00:00", "message": "story_progress", "case": "original_core", "step": 128, "loss": 1.9628798961639404, "training_cpu": 71.29276668799997}
+{"time": "2026-10-10T10:37:18.821525+00:00", "message": "story_progress", "case": "stable_fourier", "step": 128, "loss": 1.8524304628372192, "training_cpu": 88.58014158399996}
+{"time": "2026-10-10T10:37:41.592743+00:00", "message": "story_progress", "case": "original_core", "step": 192, "loss": 1.8082103729248047, "training_cpu": 110.71230529599997}
+/usr/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

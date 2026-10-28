@@ -1,0 +1,24 @@
+{
+  "clarification": "The fresh known-wording recall score 96/96 contains only four-distractor cases. Earlier prose referred to 1/4, the training/validation range, rather than the actual fresh test coverage. All measured counts, generations and checkpoint selection remain unchanged.",
+  "counts_by_actual_distractors": {
+    "test/known": {
+      "4": 96
+    },
+    "test/withheld_wording": {
+      "4": 96
+    },
+    "train/known": {
+      "1": 88,
+      "4": 914
+    },
+    "train/withheld_wording": {},
+    "valid/known": {
+      "1": 3,
+      "4": 93
+    },
+    "valid/withheld_wording": {
+      "4": 96
+    }
+  },
+  "scope": "Previous test identity exclusions leave no one-distractor test identities in this fresh evaluation. No fresh test accuracy at delay 1 is claimed."
+}

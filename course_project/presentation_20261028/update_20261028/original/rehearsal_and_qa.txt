@@ -1,0 +1,71 @@
+REWT — WEDNESDAY, OCTOBER 28, 2026
+Ten-minute technical class presentation
+
+PRESENTATION PLAN
+Use slides 1–12 for the talk. Slides 13–15 are backup material for questions.
+The speaker notes contain a complete script and per-slide timings totaling 10:00.
+A natural rehearsal target is 9:15–9:40, leaving room for transitions.
+
+Opening sentence:
+“My project asks whether a model can improve an answer by revising its internal state before emitting it.”
+
+Closing sentence:
+“Persistent memory and repeated reads work on bounded tasks, but lower energy alone is not evidence of better reasoning.”
+
+REHEARSAL CHECKPOINTS
+After slide 3: about 2:00.
+After slide 6: about 4:25.
+After slide 9: about 7:15.
+After slide 12: 10:00.
+If running late, shorten the slide 7 memory details and move the cost discussion to appendix B.
+
+DEMO BACKUP
+The illustration on slide 2 is also confirmed by the saved CLI demo:
+Input: B>C;A>B;C>D;X>Y;from A go 3=?
+Output: steps=B,C,D;ans=D
+Use the recorded example if a live terminal would distract from the explanation.
+This is a structured learned rule head, not free-form language generation.
+
+QUESTIONS TO PREPARE
+
+Is this better than a normal Transformer?
+Not established. The new experiment compares mechanisms within a specialized rule head, not a matched Transformer. Earlier project comparisons depend on task and compute budget, with major limitations. Do not claim general superiority.
+
+What does “energy” mean?
+A learned scalar compatibility score. It is not physical energy, electrical power or a probability by itself. Lower energy means the learned model prefers the candidate state.
+
+What are the “waves”?
+Learned cosine functions over state coordinates. Their amplitudes, directions and phases describe preferences and coupling. They are not sound waves, quantum computation or necessarily a Fourier transform over tokens.
+
+Why not simply use more refinement rounds?
+More rounds optimize the same fixed conditional landscape. Earlier experiments did not show a reliable complete-answer gain from doing that. A new read can bring different information into the next update.
+
+Did the energy term cause the new perfect score?
+No demonstrated accuracy benefit. Independently trained zero-energy controls also score 100%, and disabling energy in the trained energy checkpoints preserves their answers. The evidence supports learned extraction and repeated queries.
+
+Why is test accuracy 100% while validation is weaker?
+The withheld validation and test templates are different. The two test phrasings happen to transfer well; the two withheld validation phrasings do not. The latter average 43.15%, so arbitrary wording robustness is not solved. State this explicitly.
+
+Is a rule solver secretly running at inference?
+No. The model receives prompt bytes and lengths. Neural heads predict keys, values, the starting query and read count, then use soft attention and repeated state updates. Regex and symbolic solutions exist only in training annotation and post-prediction scoring. The architecture does intentionally encode a strong differentiable-lookup bias.
+
+Is the printed trace a free-form chain of thought?
+No. It serializes predicted intermediate node classes and a predicted length. Syntax is supplied by the interface. That is why its percentage cannot be directly compared with the earlier autoregressive model's complete-string accuracy.
+
+Does energy always decrease?
+Accepted updates decrease the fixed energy within one read, to numerical tolerance. A new read changes the conditional energy. There is no cross-read descent guarantee, global-minimum guarantee or correctness guarantee.
+
+What is original about the project?
+The implemented combination, experiments, numerical audits and analysis of these mechanisms. Energy-based models, Fourier features, attention and delta-rule memory have established prior work that is credited. Do not claim to have invented those components.
+
+Why is it named a Transformer?
+REWT is the project name for a recurrent energy-wave architecture with attention and memory components. It is not the standard stacked Transformer architecture. Explain the concrete operations rather than relying on the label.
+
+What is the next experiment?
+Integrate changed queries into the autoregressive model, train refinement to correct errors, and compare quality at matched compute against strong Transformer and zero-energy controls. Those are future steps, not delivered results.
+
+FILES
+REWT_class_presentation.pptx — editable slides with embedded speaker notes.
+REWT_class_presentation.pdf — offline presentation backup.
+speaker_notes.txt — complete timed script.
+slide_manifest.json — slide count and timing metadata.

@@ -1,0 +1,74 @@
+[
+  {
+    "case": {
+      "delta_size": 0,
+      "name": "local_response_22201",
+      "seed": 22201
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/memory_ablation/local_response_22201/best.pt",
+    "checkpoint_sha256": "ae18458f8d2ccd1e53458bd34a98dfbd066c9e67e04ab088b5ec5fec1cd9412a",
+    "parameters": 32752,
+    "training_cpu_seconds": 52.26746503999999,
+    "validation_accuracy": 0.546875
+  },
+  {
+    "case": {
+      "delta_size": 0,
+      "name": "local_response_22202",
+      "seed": 22202
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/memory_ablation/local_response_22202/best.pt",
+    "checkpoint_sha256": "00ef552e52c9e7fd70251a396373d8a2b2a259d20208561ccd71a7923a34c1bf",
+    "parameters": 32752,
+    "training_cpu_seconds": 48.62649716799979,
+    "validation_accuracy": 0.5494791666666666
+  },
+  {
+    "case": {
+      "delta_size": 0,
+      "name": "local_response_22203",
+      "seed": 22203
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/memory_ablation/local_response_22203/best.pt",
+    "checkpoint_sha256": "61121a846989fcb32f63cc4532b5994145a4ebce411e7fe68445a913e2338bcd",
+    "parameters": 32752,
+    "training_cpu_seconds": 45.463571007999604,
+    "validation_accuracy": 0.5494791666666666
+  },
+  {
+    "case": {
+      "delta_size": 16,
+      "name": "delta_response_22201",
+      "seed": 22201
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/memory_ablation/delta_response_22201/best.pt",
+    "checkpoint_sha256": "b2df863bb40f38145c9145a6f52f59a60ea800300c260c868c15f38dc32385dc",
+    "parameters": 34321,
+    "training_cpu_seconds": 63.31333715199949,
+    "validation_accuracy": 0.6901041666666666
+  },
+  {
+    "case": {
+      "delta_size": 16,
+      "name": "delta_response_22202",
+      "seed": 22202
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/memory_ablation/delta_response_22202/best.pt",
+    "checkpoint_sha256": "58b254378ca61a4a1e4c4164d5080c7b3d19fed3ca128ec0d2258da4acd6e43e",
+    "parameters": 34321,
+    "training_cpu_seconds": 59.539830735998294,
+    "validation_accuracy": 0.5520833333333334
+  },
+  {
+    "case": {
+      "delta_size": 16,
+      "name": "delta_response_22203",
+      "seed": 22203
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/memory_ablation/delta_response_22203/best.pt",
+    "checkpoint_sha256": "38900d0beb51b0e0468d09897084504780e06c44695e212657d8d101466a56cf",
+    "parameters": 34321,
+    "training_cpu_seconds": 68.03082323200016,
+    "validation_accuracy": 0.5520833333333334
+  }
+]

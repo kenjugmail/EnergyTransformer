@@ -1,0 +1,123 @@
+{
+  "best_id_macro_complete": 0.47365406643757163,
+  "best_step": 512,
+  "case": "relative",
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/stability/relative/best.pt",
+  "checkpoint_sha256": "3d6e63b8bce23593c410e6c95cd4f808ea75a3d9c42656f301871e78da357eb7",
+  "config": {
+    "activation": "fourier",
+    "attention_weight": 0.04,
+    "auxiliary_hidden": 32,
+    "backtracks": 4,
+    "cache_history": true,
+    "communication_weight": 0.04,
+    "compatibility_geometry": "anchor_relative",
+    "context_kernel": 3,
+    "coupled_modes": true,
+    "decoder_weight": 0.04,
+    "diffusion_levels": 3,
+    "diffusion_samples": 2,
+    "early_backtrack": true,
+    "frequency_bound": 2.0,
+    "halting_tolerance": 0.0,
+    "hidden": 736,
+    "history": 128,
+    "horizons": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "initial_carry_scale": 0.0,
+    "learned_frequencies": true,
+    "minimum_refinement_rounds": 1,
+    "modes": 32,
+    "normalize_frequency_blocks": true,
+    "output_geometry": "centered",
+    "recurrent_type": "gru",
+    "rounds": 2,
+    "schedule": "all",
+    "specialist_weight": 0.02,
+    "specialists": 3,
+    "step_size": 0.25,
+    "support": false,
+    "wave_geometry": "anchor_relative",
+    "width": 48
+  },
+  "cpu_seconds": 141.78109297600002,
+  "initial_validation": {
+    "id_family_complete": {
+      "arithmetic": 0.04639175257731959,
+      "recall": 1.0,
+      "rules": 0.23958333333333334
+    },
+    "id_macro_complete": 0.4286583619702176,
+    "summary": {
+      "all": {
+        "answer_correct": 0.338006230529595,
+        "both_correct": 0.3364485981308411,
+        "count": 642,
+        "steps_correct": 0.3395638629283489,
+        "valid_format": 1.0
+      },
+      "by_difficulty": {
+        "heldout_instance": {
+          "answer_correct": 0.3316062176165803,
+          "both_correct": 0.3316062176165803,
+          "count": 386,
+          "steps_correct": 0.33419689119170987,
+          "valid_format": 1.0
+        },
+        "heldout_template": {
+          "answer_correct": 0.34765625,
+          "both_correct": 0.34375,
+          "count": 256,
+          "steps_correct": 0.34765625,
+          "valid_format": 1.0
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": 0.048109965635738834,
+          "both_correct": 0.048109965635738834,
+          "count": 291,
+          "steps_correct": 0.048109965635738834,
+          "valid_format": 1.0
+        },
+        "recall": {
+          "answer_correct": 0.84375,
+          "both_correct": 0.84375,
+          "count": 192,
+          "steps_correct": 0.84375,
+          "valid_format": 1.0
+        },
+        "rules": {
+          "answer_correct": 0.2578616352201258,
+          "both_correct": 0.25157232704402516,
+          "count": 159,
+          "steps_correct": 0.2641509433962264,
+          "valid_format": 1.0
+        }
+      },
+      "by_steps": {
+        "1": {
+          "answer_correct": 0.1280353200883002,
+          "both_correct": 0.12582781456953643,
+          "count": 453,
+          "steps_correct": 0.13024282560706402,
+          "valid_format": 1.0
+        },
+        "4": {
+          "answer_correct": 0.8412698412698413,
+          "both_correct": 0.8412698412698413,
+          "count": 189,
+          "steps_correct": 0.8412698412698413,
+          "valid_format": 1.0
+        }
+      }
+    }
+  },
+  "maximum_raw_gradient_norm": 1.3799334263163903,
+  "state_gradient_interval": 0,
+  "test_not_evaluated": true
+}

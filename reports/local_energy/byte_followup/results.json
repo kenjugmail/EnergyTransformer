@@ -1,0 +1,476 @@
+{
+  "status": "completed",
+  "source_sha256": "ffb732299327d9eb9e6bad33118225d1c706621588968651138ff4a5fbd35baa",
+  "selection_sha256": "cace14896ca50fa8064e18a9b866a39ddbc2d6ed6baa3197931494d514de35b3",
+  "environment": {
+    "torch": "2.14.0+cu130",
+    "machine": "aarch64",
+    "device": "cpu",
+    "cuda": "13.0",
+    "threads": 2,
+    "gpu": null
+  },
+  "completed_fits": 12,
+  "gpu_seconds": 0,
+  "rows": [
+    {
+      "task": "bytes",
+      "method": "bp",
+      "depth": 3,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.1530000021060308,
+      "mean_initial_accuracy": 0.002333333327745398,
+      "mean_bits_per_target": 5.927958011627197,
+      "parameter_count": 12640,
+      "parameter_bytes": 50560,
+      "cpu_single_example_ms": 0.09137549204751849,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.0010000000474974513,
+          "accuracy": 0.13099999725818634,
+          "bits_per_target": 6.055328845977783,
+          "best_step": 2000,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 1.8007099309470505,
+          "learning_interval": {
+            "difference": 0.13,
+            "low": 0.11,
+            "high": 0.153,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.13099999725818634
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.004999999888241291,
+          "accuracy": 0.17000000178813934,
+          "bits_per_target": 5.760501861572266,
+          "best_step": 2000,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 1.6787129049771465,
+          "learning_interval": {
+            "difference": 0.165,
+            "low": 0.142,
+            "high": 0.19,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.17000000178813934
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.0010000000474974513,
+          "accuracy": 0.15800000727176666,
+          "bits_per_target": 5.968043327331543,
+          "best_step": 1500,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 1.7730783880106173,
+          "learning_interval": {
+            "difference": 0.157,
+            "low": 0.134,
+            "high": 0.18,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.15800000727176666
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "bytes",
+      "method": "bp_ce",
+      "depth": 3,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.18900000055631003,
+      "mean_initial_accuracy": 0.002333333327745398,
+      "mean_bits_per_target": 4.472437858581543,
+      "parameter_count": 12640,
+      "parameter_bytes": 50560,
+      "cpu_single_example_ms": 0.08832750609144568,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.0010000000474974513,
+          "accuracy": 0.17000000178813934,
+          "bits_per_target": 4.495810031890869,
+          "best_step": 2000,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 1.5288554260041565,
+          "learning_interval": {
+            "difference": 0.169,
+            "low": 0.146,
+            "high": 0.193,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.17000000178813934
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.004999999888241291,
+          "accuracy": 0.19599999487400055,
+          "bits_per_target": 4.458089828491211,
+          "best_step": 2000,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 1.4751506929751486,
+          "learning_interval": {
+            "difference": 0.191,
+            "low": 0.166,
+            "high": 0.215,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.19599999487400055
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.0010000000474974513,
+          "accuracy": 0.20100000500679016,
+          "bits_per_target": 4.463413715362549,
+          "best_step": 2000,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 1.8275675890035927,
+          "learning_interval": {
+            "difference": 0.2,
+            "low": 0.175,
+            "high": 0.225,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.20100000500679016
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "bytes",
+      "method": "pcalm",
+      "depth": 3,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.1393333375453949,
+      "mean_initial_accuracy": 0.002333333327745398,
+      "mean_bits_per_target": 6.623224417368571,
+      "parameter_count": 12640,
+      "parameter_bytes": 50560,
+      "cpu_single_example_ms": 0.07913602166809142,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.0010000000474974513,
+          "accuracy": 0.1469999998807907,
+          "bits_per_target": 6.717971324920654,
+          "best_step": 500,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 9.934486605983693,
+          "learning_interval": {
+            "difference": 0.146,
+            "low": 0.123,
+            "high": 0.169,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.1469999998807907
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.004999999888241291,
+          "accuracy": 0.13500000536441803,
+          "bits_per_target": 6.750277042388916,
+          "best_step": 500,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 11.048471637011971,
+          "learning_interval": {
+            "difference": 0.13,
+            "low": 0.108,
+            "high": 0.152,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.13500000536441803
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.0010000000474974513,
+          "accuracy": 0.13600000739097595,
+          "bits_per_target": 6.401424884796143,
+          "best_step": 500,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 9.348693807027303,
+          "learning_interval": {
+            "difference": 0.135,
+            "low": 0.114,
+            "high": 0.158,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.13600000739097595
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    },
+    {
+      "task": "bytes",
+      "method": "energy",
+      "depth": 3,
+      "width": 32,
+      "memory": false,
+      "mean_accuracy": 0.18599999944368997,
+      "mean_initial_accuracy": 0.0010000000474974513,
+      "mean_bits_per_target": 4.682060877482097,
+      "parameter_count": 12640,
+      "parameter_bytes": 50560,
+      "cpu_single_example_ms": 25.107835012022406,
+      "latency_seed": 11,
+      "per_seed": [
+        {
+          "seed": 11,
+          "initial_accuracy": 0.0020000000949949026,
+          "accuracy": 0.1899999976158142,
+          "bits_per_target": 4.684760093688965,
+          "best_step": 2000,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 114.68629795697052,
+          "learning_interval": {
+            "difference": 0.188,
+            "low": 0.164,
+            "high": 0.212,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.1899999976158142
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 22,
+          "initial_accuracy": 0.0010000000474974513,
+          "accuracy": 0.19200000166893005,
+          "bits_per_target": 4.673190593719482,
+          "best_step": 2000,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 117.38509850599803,
+          "learning_interval": {
+            "difference": 0.191,
+            "low": 0.167,
+            "high": 0.216,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.19200000166893005
+            }
+          },
+          "unsupported_answers": null
+        },
+        {
+          "seed": 33,
+          "initial_accuracy": 0.0,
+          "accuracy": 0.17599999904632568,
+          "bits_per_target": 4.688231945037842,
+          "best_step": 2000,
+          "updates": 2000,
+          "examples_seen": 16000,
+          "training_elapsed_s": 109.59985209500883,
+          "learning_interval": {
+            "difference": 0.176,
+            "low": 0.152975,
+            "high": 0.2,
+            "unit": "episode",
+            "draws": 2000
+          },
+          "groups": {
+            "bytes": {
+              "count": 1000,
+              "accuracy": 0.17599999904632568
+            }
+          },
+          "unsupported_answers": null
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "task": "bytes",
+      "a": "pcalm",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.013666666666666664,
+        "low": -0.026666666666666665,
+        "high": -0.0010000000000000013,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.015999999999999986,
+        -0.035,
+        -0.021999999999999992
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "bytes",
+      "a": "energy",
+      "b": "bp",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": 0.033,
+        "low": 0.019,
+        "high": 0.04766666666666666,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.059,
+        0.021999999999999992,
+        0.017999999999999988
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    },
+    {
+      "task": "bytes",
+      "a": "energy",
+      "b": "bp_ce",
+      "memory_a": false,
+      "memory_b": false,
+      "depth": null,
+      "paired_interval": {
+        "difference": -0.003000000000000001,
+        "low": -0.014333333333333333,
+        "high": 0.008666666666666665,
+        "unit": "episode",
+        "draws": 2000
+      },
+      "per_seed_differences": [
+        0.01999999999999999,
+        -0.0040000000000000036,
+        -0.025000000000000022
+      ],
+      "replicated_five_point_gain": false,
+      "uncertainty_scope": "Paired examples after averaging matched training seeds; three-seed differences reported separately. Byte windows may remain correlated."
+    }
+  ],
+  "energy_minus_bp_ce_bits": {
+    "paired_interval": {
+      "difference": 0.20962301942186837,
+      "low": 0.17231287062207187,
+      "high": 0.24682375356897276,
+      "unit": "episode",
+      "draws": 2000
+    },
+    "per_seed_differences": [
+      0.18894996478980808,
+      0.21510084932543982,
+      0.2248182441503559
+    ],
+    "scope": "1,000 nonoverlapping targets on fresh corpus segment; text correlation limits this interval."
+  },
+  "unigram_reference": {
+    "scope": "Post hoc fixed Laplace-1 unigram; exactly the same ordered training target exposures, no test tuning.",
+    "mean_bits_per_target": 4.9171308108438,
+    "per_seed": [
+      {
+        "seed": 11,
+        "bits_per_target": 4.91666652022051,
+        "accuracy": 0.1509999930858612,
+        "target_exposures": 16000
+      },
+      {
+        "seed": 22,
+        "bits_per_target": 4.91728295652789,
+        "accuracy": 0.1509999930858612,
+        "target_exposures": 16000
+      },
+      {
+        "seed": 33,
+        "bits_per_target": 4.917442955783001,
+        "accuracy": 0.1509999930858612,
+        "target_exposures": 16000
+      }
+    ]
+  }
+}

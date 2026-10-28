@@ -1,0 +1,554 @@
+{
+  "locked_at": "2026-10-10T03:30:51.388257+00:00",
+  "reviewer_type": "assistant",
+  "reviewer": "Codex; also the implementation author",
+  "rubric_version": 1,
+  "case_count": 90,
+  "rated_count": 90,
+  "case_sha256": "06113a6c450af01625d2c6f863307b2a6b1998f827d7949ee897beecb3e0314b",
+  "batches_sha256": "4ab5ef76d56c08dab76f504760edb70255d99d8d9cdc9e491cce0eb36e0b0c71",
+  "process": "All supplemental prompts and continuations read and scored before opening the seed identity key; baseline family known",
+  "scope": "Exploratory assistant assessment; not an independent human evaluation",
+  "ratings": [
+    {
+      "id": "C000",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C001",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C002",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C003",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C004",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C005",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C006",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C007",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C008",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C009",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C010",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C011",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C012",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C013",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C014",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C015",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 2
+    },
+    {
+      "id": "C016",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C017",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C018",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C019",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C020",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C021",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C022",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C023",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C024",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C025",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C026",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C027",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 2
+    },
+    {
+      "id": "C028",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C029",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C030",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C031",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C032",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C033",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C034",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C035",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C036",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C037",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C038",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C039",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C040",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C041",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 2
+    },
+    {
+      "id": "C042",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C043",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C044",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C045",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C046",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C047",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 2
+    },
+    {
+      "id": "C048",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C049",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C050",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C051",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C052",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C053",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 2
+    },
+    {
+      "id": "C054",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C055",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C056",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C057",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C058",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C059",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 2
+    },
+    {
+      "id": "C060",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C061",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C062",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 2
+    },
+    {
+      "id": "C063",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C064",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C065",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C066",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C067",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C068",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 2
+    },
+    {
+      "id": "C069",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C070",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C071",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C072",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C073",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C074",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C075",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C076",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C077",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C078",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C079",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C080",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C081",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C082",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C083",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C084",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C085",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C086",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C087",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C088",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    },
+    {
+      "id": "C089",
+      "fluency": 1,
+      "coherence": 1,
+      "relevance": 1
+    }
+  ]
+}

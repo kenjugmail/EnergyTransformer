@@ -1,0 +1,69 @@
+{
+  "arithmetic": {
+    "difference_95_percent_interval": [
+      0.18181818181818182,
+      0.36363636363636365
+    ],
+    "prompts_per_pair": 2,
+    "same_weight_refinement_difference": 0.2727272727272727,
+    "semantic_pairs": 66,
+    "two_round_95_percent_interval": [
+      0.8939393939393939,
+      0.9848484848484849
+    ],
+    "two_round_complete_accuracy": 0.946969696969697,
+    "zero_round_95_percent_interval": [
+      0.5757575757575758,
+      0.7651515151515151
+    ],
+    "zero_round_complete_accuracy": 0.6742424242424242
+  },
+  "bootstrap_replicates": 10000,
+  "created": "2026-10-10T14:01:12.158854+00:00",
+  "language": {
+    "documents": 64,
+    "evaluated_raw_bytes": 15616,
+    "models": {
+      "fourier80": {
+        "bpb": 1.447585060252986,
+        "interval_95_percent": [
+          1.3928735583418355,
+          1.5038930785635192
+        ]
+      },
+      "neural80": {
+        "bpb": 1.4490844064129018,
+        "interval_95_percent": [
+          1.3941234525691815,
+          1.5055076532388785
+        ]
+      },
+      "transformer": {
+        "bpb": 1.6910692331895618,
+        "interval_95_percent": [
+          1.6342789324697387,
+          1.7495972673534816
+        ]
+      }
+    },
+    "primary_minus_control": {
+      "neural80": {
+        "difference_bpb": -0.001499346159915829,
+        "interval_95_percent": [
+          -0.0028006806783171744,
+          -0.00020544913920556026
+        ]
+      },
+      "transformer": {
+        "difference_bpb": -0.24348417293657576,
+        "interval_95_percent": [
+          -0.26114784308858363,
+          -0.22609375056014455
+        ]
+      }
+    }
+  },
+  "limitations": "Conditional test-sample uncertainty only; this does not represent variability across training seeds, validation exploration, datasets, or model families. Zero rounds is an intervention on the same trained weights. Per-document reevaluation may have tiny floating-point differences from the batched evaluation.",
+  "method": "Paired percentile bootstrap over 66 semantic arithmetic pairs and 64 held-out story documents. Language bpb uses each resampled sum of loss bits divided by its resampled sum of raw bytes.",
+  "script_sha256": "c31cfc25a7fd8f81b518c3176145a7fe7725fdf51ec2da5a6e2f469f13bd775d"
+}

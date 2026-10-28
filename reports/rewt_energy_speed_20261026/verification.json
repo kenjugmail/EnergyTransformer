@@ -1,0 +1,89 @@
+{
+  "completed_utc": "2026-10-26T18:43:44.142634+00:00",
+  "tests_passed": 245,
+  "greedy_comparisons_passed": 126,
+  "original_checkpoints_preserved": 36,
+  "frozen_model_and_training_sources_preserved": true,
+  "cli_matches": true,
+  "source_audits": [
+    {
+      "report": "cpu.json",
+      "verified_source_locations": {
+        "rewt/streaming.py": "rewt/streaming.py",
+        "rewt/streaming_decode.py": "reports/rewt_energy_speed_20261026/baseline/streaming_decode_v1.py",
+        "rewt/fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/fast_energy_v1.py",
+        "scripts/benchmark_rewt_fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/benchmark_v1.py"
+      }
+    },
+    {
+      "report": "cuda.json",
+      "verified_source_locations": {
+        "rewt/streaming.py": "rewt/streaming.py",
+        "rewt/streaming_decode.py": "reports/rewt_energy_speed_20261026/baseline/streaming_decode_v1.py",
+        "rewt/fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/fast_energy_v1.py",
+        "scripts/benchmark_rewt_fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/benchmark_v1.py"
+      }
+    },
+    {
+      "report": "cuda_fused.json",
+      "verified_source_locations": {
+        "rewt/streaming.py": "rewt/streaming.py",
+        "rewt/streaming_decode.py": "reports/rewt_energy_speed_20261026/baseline/streaming_decode_v1.py",
+        "rewt/fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/fast_energy_fused.py",
+        "rewt/fast_energy_triton.py": "rewt/fast_energy_triton.py",
+        "scripts/benchmark_rewt_fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/benchmark_fused.py"
+      }
+    },
+    {
+      "report": "cpu_final.json",
+      "verified_source_locations": {
+        "rewt/streaming.py": "rewt/streaming.py",
+        "rewt/streaming_decode.py": "reports/rewt_energy_speed_20261026/baseline/streaming_decode_v1.py",
+        "rewt/fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/fast_energy_numpy.py",
+        "rewt/fast_energy_triton.py": "rewt/fast_energy_triton.py",
+        "scripts/benchmark_rewt_fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/benchmark_numpy.py"
+      }
+    },
+    {
+      "report": "cuda_final.json",
+      "verified_source_locations": {
+        "rewt/streaming.py": "rewt/streaming.py",
+        "rewt/streaming_decode.py": "reports/rewt_energy_speed_20261026/baseline/streaming_decode_v1.py",
+        "rewt/fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/fast_energy_numpy.py",
+        "rewt/fast_energy_triton.py": "rewt/fast_energy_triton.py",
+        "scripts/benchmark_rewt_fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/benchmark_numpy.py"
+      }
+    },
+    {
+      "report": "cpu_verified.json",
+      "verified_source_locations": {
+        "rewt/streaming.py": "rewt/streaming.py",
+        "rewt/streaming_decode.py": "rewt/streaming_decode.py",
+        "rewt/fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/fast_energy_measured.py",
+        "rewt/fast_energy_triton.py": "rewt/fast_energy_triton.py",
+        "scripts/benchmark_rewt_fast_energy.py": "scripts/benchmark_rewt_fast_energy.py"
+      }
+    },
+    {
+      "report": "cuda_verified.json",
+      "verified_source_locations": {
+        "rewt/streaming.py": "rewt/streaming.py",
+        "rewt/streaming_decode.py": "rewt/streaming_decode.py",
+        "rewt/fast_energy.py": "reports/rewt_energy_speed_20261026/baseline/fast_energy_measured.py",
+        "rewt/fast_energy_triton.py": "rewt/fast_energy_triton.py",
+        "scripts/benchmark_rewt_fast_energy.py": "scripts/benchmark_rewt_fast_energy.py"
+      }
+    }
+  ],
+  "source_sha256": {
+    "rewt/fast_energy.py": "325cd2e9b06b33dc44edb1e6836a0130efdda9f0bf1365ad051e20d2659c567c",
+    "rewt/fast_energy_triton.py": "8ba0a55a7320f866d6f98522068c860b1fcd6acfe213355a57fd75c448a6a374",
+    "rewt/streaming_decode.py": "8de28b04be2365fc2e984378bfd99f4b554e1b9a40f9d06e913735d16a56c9d3",
+    "scripts/sample_rewt_streaming.py": "fca08192aa5a4101b8a01a3cc7a242ef3c4f6f93d9a84141c5dfd11719837c95",
+    "scripts/benchmark_rewt_fast_energy.py": "c77cc477de3b32cedf78075bf806aa694ac9472f63e55b483c78b259be8f59d2",
+    "scripts/verify_rewt_fast_energy.py": "906c382a7a405b8a8d1281eb537bf4f2fd962fbe250820936ec17f7d87eed6a0",
+    "tests_rewt/test_fast_energy.py": "3f433cf6612bf5a1e9d62d412b5d2c9a77b92eaa69d7e9332438b421c366f904"
+  },
+  "post_timing_change": "FastLatentEnergy now preserves the original module training/eval flag. No arithmetic or timing path changed; the measured source snapshot is retained.",
+  "limitations": "GPU measurements on a heavily shared device. Head speedup is not a whole-model speedup. No robust training speedup or new quality claim."
+}

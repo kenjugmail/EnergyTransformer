@@ -1,0 +1,27 @@
+{
+  "active_parameters": 68502,
+  "case": {
+    "config": {
+      "backtracks": 4,
+      "energy_rounds": 2,
+      "max_hops": 3,
+      "modes": 16,
+      "reread": true,
+      "step_size": 0.5,
+      "width": 48
+    },
+    "name": "reread_energy_26102",
+    "seed": 26102,
+    "variant": "reread_energy"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/reread_energy_26102/best.pt",
+  "checkpoint_sha256": "eb6917ea80bcc3194711ec7cbefd770934d2a53fa29caa959671c5e56e553aee",
+  "maximum_gradient": 12.568002700805664,
+  "parameters": 68502,
+  "training_cpu_seconds": 34.07161305599996,
+  "training_examples_sha256": "36beb9e2b88584e892f8b8f0ced13350323acf78bf5b4320527b1ee90c6b7240",
+  "updates": 800,
+  "validation_ce": 0.5552094154887729,
+  "validation_complete": 0.5972222222222222,
+  "validation_cpu_seconds": 0.6285873119999996
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "variant": "transformer",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_transformer_26301/best.pt",
+    "prompt": "Once upon a time, a little girl found a",
+    "generation": " big bird. \nThe bird was very happy. She was so happy and said, \"I'm sorry, I'm sorry.\"\nThe bird felt very happy. She said, \"I'm sorry, I'm sorry.\"",
+    "checkpoint_unchanged": true
+  },
+  {
+    "variant": "window_transformer",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_window_transformer_26301/best.pt",
+    "prompt": "Once upon a time, a little girl found a",
+    "generation": " big bird. Then, he saw a big bird. Then, Mommy felt very happy. Then, \"I'm sorry, I can't know what was very careful.\"\nThey felt sad and said",
+    "checkpoint_unchanged": true
+  },
+  {
+    "variant": "hybrid",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_26301/best.pt",
+    "prompt": "Once upon a time, a little girl found a",
+    "generation": " big box. One day, the bird was very happy. \nThey smiled and said, \"I'm sorry, I can't go to the bird.\"\nThey smiled and said, \"I'm sorry, I'm s",
+    "checkpoint_unchanged": true
+  },
+  {
+    "variant": "hybrid_energy",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_energy_26301/best.pt",
+    "prompt": "Once upon a time, a little girl found a",
+    "generation": " big bird. \nThe little girl was so happy that she was very happy. She was so happy that she couldn't knew it was too scared. \"It's a knew that's mommy,\" said \"I'm sor",
+    "checkpoint_unchanged": true
+  }
+]

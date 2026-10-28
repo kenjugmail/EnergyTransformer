@@ -1,0 +1,72 @@
+{
+  "dataset": "HuggingFaceTB/smol-smoltalk",
+  "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+  "splits": {
+    "train": {
+      "documents": 8192,
+      "tokens": 7635132,
+      "tokens_path": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus/train_tokens.npy",
+      "tokens_sha256": "2b801266d7b3dcc220101529f621c797cd8331585bcd3a6793c6c70bfc7f41ac",
+      "offsets_path": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus/train_offsets.npy",
+      "offsets_sha256": "b00634d6a347ec58db7e3b64ec09259d23054e3444aabe7467078ad480beb4cf",
+      "index_path": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus/train_documents.json",
+      "index_sha256": "887bae5621f3c0f0a41f00101f61e452a7f640860011a38fef4c542fa21d93de"
+    },
+    "valid": {
+      "documents": 128,
+      "tokens": 117286,
+      "tokens_path": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus/valid_tokens.npy",
+      "tokens_sha256": "12b20726993dafebc32dd3711f00996fc92fdb824ee485f27c0e9d49754af767",
+      "offsets_path": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus/valid_offsets.npy",
+      "offsets_sha256": "03ecd9d1041afb2c3de9179b27c10db638be2745818aca558f6c709b14a6a443",
+      "index_path": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus/valid_documents.json",
+      "index_sha256": "2ec9d28959ce8b9a680cb0b9adea084631f1dd247524b2c74dc8e70bfc0aa67f"
+    },
+    "test": {
+      "documents": 128,
+      "tokens": 124983,
+      "tokens_path": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus/test_tokens.npy",
+      "tokens_sha256": "bb1ae32a54da577a3a47aa1c4ad2de5a2e7cdfd8e20bcc6f9a262c7598ec031b",
+      "offsets_path": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus/test_offsets.npy",
+      "offsets_sha256": "319e177206eca7d24c55bb28b66794e18c6d32f3095bf9c5e36fb20b9e566ac9",
+      "index_path": "/home/kt/Documents/EnergyTransformer/data/lfm3_conversion_corpus/test_documents.json",
+      "index_sha256": "7e83cf96b17af9dde94ae88f3a7b72e29247852a19ebb720edabe34250aa18ad"
+    }
+  },
+  "tokenizer_repo": "LiquidAI/LFM3-1.7B",
+  "tokenizer_revision": "40ebe0aa6662c9d40389c2f5d565b6a2c6aebacd",
+  "tokenizer_sha256": "7e226e34bface23ccf6e495d157bf77186c1c30a7659880e1a8994db528c3701",
+  "template_sha256": "f45005c50cd2a97329722bf3a2dee9f16c04cdf825a589b280fb7e99e6827818",
+  "sources": {
+    "train/smol-magpie-ultra-short": 5973,
+    "valid/self-oss-instruct": 17,
+    "train/smollm-rewrite-30k": 444,
+    "train/openhermes-50k": 612,
+    "train/self-oss-instruct": 600,
+    "train/smol-summarize-20k": 232,
+    "valid/smol-magpie-ultra-short": 90,
+    "train/smol-contraints": 173,
+    "train/longalign": 83,
+    "train/smol-summarize-5k": 71,
+    "valid/smol-summarize-20k": 7,
+    "valid/smol-summarize-5k": 2,
+    "train/everyday-conversations": 4,
+    "valid/smollm-rewrite-30k": 3,
+    "valid/openhermes-50k": 7,
+    "valid/longalign": 1,
+    "valid/smol-contraints": 1,
+    "test/smol-summarize-20k": 3,
+    "test/smol-magpie-ultra-short": 96,
+    "test/self-oss-instruct": 14,
+    "test/openhermes-50k": 9,
+    "test/smollm-rewrite-30k": 4,
+    "test/smol-contraints": 1,
+    "test/smol-summarize-5k": 1
+  },
+  "skipped": {
+    "short": 1883
+  },
+  "max_document_tokens": 2048,
+  "selection": "First eligible unique conversations in the first pinned official train shard; SHA256 bucket 0 mod 32 is validation. Test is a separate official test shard, exact conversation duplicates removed. Documents never span examples during training.",
+  "limits": "General English chat recovery pilot. Not a comprehensive knowledge/tool-use/code or long-context recovery corpus. No claim of semantic deduplication or exclusion from donor pretraining."
+}

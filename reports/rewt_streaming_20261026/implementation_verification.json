@@ -1,0 +1,13 @@
+{
+  "tests_passed": 226,
+  "source_sha256": {
+    "rewt/streaming.py": "083e973c92bc293e963d3984b134c9c71f2659f14132e10db9285e70a3da5bc0",
+    "rewt/streaming_decode.py": "f331f481ab8ed7936ed1dd03cc1a485909e7444dc5e02b709d601889570d6d23",
+    "tests_rewt/test_streaming.py": "a82691a3364655a118163748a8c456eb3fd71028c604056014e2a646eecfaaa5",
+    "tests_rewt/test_streaming_decode.py": "504f1f7e6a39f36f17e00fc9d10f66a2db6f22c33b57d6d06882cb335f1e94de",
+    "scripts/sample_rewt_streaming.py": "9f77283e66b1a75bc8b80a03eee6b98985bf0a00b965bbc1d3047ec40da8f95b"
+  },
+  "cli_completed": true,
+  "cli_sample_sha256": "c1b32ad571c1c0745807765e7cdf83e159fc7c612deb8891a464468c9583fed1",
+  "test_log_sha256": "ff3d4f249b1152d32cf2342d30c159eefee49e4354ad3d05b71b1e79a4899ac1"
+}

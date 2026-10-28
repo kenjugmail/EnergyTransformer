@@ -1,0 +1,122 @@
+{
+  "fourier_rewt_101": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 0.9531914893617021,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 0.9989583333333334,
+    "repeated_byte_trigram_fraction": 0.04680851063829787,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0010416666666666667
+  },
+  "fourier_rewt_202": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 0.9531914893617021,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 0.9989583333333334,
+    "repeated_byte_trigram_fraction": 0.04680851063829787,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0010416666666666667
+  },
+  "fourier_rewt_303": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 0.9361702127659577,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 0.9979166666666668,
+    "repeated_byte_trigram_fraction": 0.06382978723404255,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0020833333333333333
+  },
+  "full_rewt_101": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 1.0,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 0.4072916666666666,
+    "repeated_byte_trigram_fraction": 0.0,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.4708333333333333
+  },
+  "full_rewt_202": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 1.0,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 0.4270833333333333,
+    "repeated_byte_trigram_fraction": 0.0,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.4604166666666667
+  },
+  "full_rewt_303": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 1.0,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 0.4354166666666667,
+    "repeated_byte_trigram_fraction": 0.0,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.46875
+  },
+  "neural_energy_101": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 0.9191489361702129,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 0.9979166666666668,
+    "repeated_byte_trigram_fraction": 0.08085106382978724,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0020833333333333333
+  },
+  "neural_energy_202": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 0.9414893617021278,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 1.0,
+    "repeated_byte_trigram_fraction": 0.05851063829787233,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0
+  },
+  "neural_energy_303": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 0.9138297872340425,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 0.9979166666666668,
+    "repeated_byte_trigram_fraction": 0.08617021276595745,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0020833333333333333
+  },
+  "transformer_101": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 0.9361702127659575,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 1.0,
+    "repeated_byte_trigram_fraction": 0.06382978723404253,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0
+  },
+  "transformer_202": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 0.9478723404255319,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 1.0,
+    "repeated_byte_trigram_fraction": 0.05212765957446808,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0
+  },
+  "transformer_303": {
+    "bytes": 96.0,
+    "count": 10,
+    "distinct_byte_trigram_fraction": 0.8851063829787232,
+    "human_ratings": "pending; use the blinded review artifact",
+    "printable_fraction": 1.0,
+    "repeated_byte_trigram_fraction": 0.11489361702127658,
+    "repeated_word_trigram_fraction": 0.0,
+    "replacement_fraction": 0.0
+  }
+}

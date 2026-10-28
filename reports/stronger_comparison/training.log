@@ -1,0 +1,63 @@
+{"fit": "pilot_hybrid_17_0.004", "steps": 19, "cpu_s": 5.019841615999994, "wall_s": 1.341844172000492, "valid_bpb": 5.061340743354944, "last_train_nll": 3.7435836791992188}
+{"fit": "pilot_hybrid_17_0.001", "steps": 20, "cpu_s": 5.211035392000004, "wall_s": 1.391252912996606, "valid_bpb": 6.235533538845883, "last_train_nll": 4.392012596130371}
+{"fit": "pilot_hybrid_17_0.002", "steps": 20, "cpu_s": 5.105826400000013, "wall_s": 1.4141619169959085, "valid_bpb": 5.285486155015126, "last_train_nll": 3.7391650676727295}
+{"fit": "pilot_hybrid_17_0.001", "steps": 38, "cpu_s": 10.122730271999988, "wall_s": 2.9088964529973964, "valid_bpb": 5.386762581860839, "last_train_nll": 3.9240331649780273}
+{"fit": "pilot_hybrid_17_0.004", "steps": 38, "cpu_s": 10.131979423999965, "wall_s": 2.7756139570001324, "valid_bpb": 4.717159180611811, "last_train_nll": 3.5459699630737305}
+{"fit": "pilot_hybrid_17_0.002", "steps": 39, "cpu_s": 10.054667216000013, "wall_s": 2.8610781669949574, "valid_bpb": 4.858283643697134, "last_train_nll": 3.4990291595458984}
+{"fit": "pilot_softmax_17_0.001", "steps": 48, "cpu_s": 5.072710896000015, "wall_s": 2.268048647998512, "valid_bpb": 5.097938773279594, "last_train_nll": 3.4517791271209717}
+{"fit": "pilot_local_softmax_17_0.002", "steps": 51, "cpu_s": 5.006259904000012, "wall_s": 2.0688460270021096, "valid_bpb": 5.03602654531501, "last_train_nll": 3.3296072483062744}
+{"fit": "pilot_local_softmax_17_0.001", "steps": 51, "cpu_s": 5.00058822400001, "wall_s": 2.054910145001486, "valid_bpb": 5.093216745958068, "last_train_nll": 3.3809993267059326}
+{"fit": "pilot_local_softmax_17_0.004", "steps": 51, "cpu_s": 5.055360559999999, "wall_s": 2.1016290159968776, "valid_bpb": 4.968276846385121, "last_train_nll": 3.30535626411438}
+{"fit": "pilot_softmax_17_0.004", "steps": 52, "cpu_s": 5.072519487999994, "wall_s": 2.090267131005021, "valid_bpb": 4.954617561462913, "last_train_nll": 3.4816548824310303}
+{"fit": "pilot_softmax_17_0.002", "steps": 52, "cpu_s": 5.049944688000009, "wall_s": 2.043896153003516, "valid_bpb": 5.035772003825789, "last_train_nll": 3.4871408939361572}
+{"fit": "pilot_hybrid_17_0.001", "steps": 56, "cpu_s": 15.170984655999955, "wall_s": 4.4754658399961045, "valid_bpb": 5.161058276457573, "last_train_nll": 3.6287574768066406}
+{"fit": "pilot_hybrid_17_0.004", "steps": 56, "cpu_s": 15.271505871999977, "wall_s": 4.489526113000466, "valid_bpb": 4.57578287043213, "last_train_nll": 3.191582202911377}
+{"fit": "pilot_hybrid_17_0.002", "steps": 57, "cpu_s": 15.03218497600001, "wall_s": 4.493209657995976, "valid_bpb": 4.720885134581147, "last_train_nll": 3.1963722705841064}
+{"fit": "pilot_hybrid_17_0.004", "steps": 73, "cpu_s": 20.058474831999987, "wall_s": 6.0446637559998635, "valid_bpb": 4.534387907575559, "last_train_nll": 3.0577356815338135}
+{"fit": "pilot_hybrid_17_0.001", "steps": 74, "cpu_s": 20.211843007999942, "wall_s": 6.091354379996119, "valid_bpb": 5.096510299713415, "last_train_nll": 3.5377392768859863}
+{"fit": "pilot_hybrid_17_0.002", "steps": 76, "cpu_s": 20.199308816, "wall_s": 6.185633949994553, "valid_bpb": 4.664156678691881, "last_train_nll": 3.1975831985473633}
+{"fit": "pilot_softmax_17_0.001", "steps": 97, "cpu_s": 10.025307791999975, "wall_s": 4.363977050994436, "valid_bpb": 4.8646291370812, "last_train_nll": 3.3945415019989014}
+{"fit": "pilot_local_softmax_17_0.004", "steps": 101, "cpu_s": 10.07052611200004, "wall_s": 4.234152563000862, "valid_bpb": 4.678542661973422, "last_train_nll": 3.2439677715301514}
+{"fit": "pilot_local_softmax_17_0.002", "steps": 101, "cpu_s": 10.075401135999805, "wall_s": 4.241113450002558, "valid_bpb": 4.78925212940659, "last_train_nll": 3.298349142074585}
+{"fit": "pilot_local_softmax_17_0.001", "steps": 101, "cpu_s": 10.048946368000072, "wall_s": 4.191635260996918, "valid_bpb": 4.857599675860596, "last_train_nll": 3.3387672901153564}
+{"fit": "pilot_softmax_17_0.002", "steps": 101, "cpu_s": 10.008415695999942, "wall_s": 4.143011550007941, "valid_bpb": 4.807899620632253, "last_train_nll": 3.311875343322754}
+{"fit": "pilot_softmax_17_0.004", "steps": 102, "cpu_s": 10.053856927999913, "wall_s": 4.149945864010988, "valid_bpb": 4.714083471547555, "last_train_nll": 3.649132013320923}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/kt/Documents/EnergyTransformer/energy_real/compute_study.py", line 188, in <module>
+    run(parser.parse_args())
+  File "/home/kt/Documents/EnergyTransformer/energy_real/compute_study.py", line 130, in run
+    pilots = fit_group([(a, 17, lr) for a in ARMS for lr in plan['learning_rates']],
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/energy_real/compute_study.py", line 65, in fit_group
+    logits, _ = model(x)
+                ^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/energy_real/model.py", line 309, in forward
+    x, s = block(x, state[i], reset, memory)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/energy_real/model.py", line 235, in forward
+    y, s = self.mixer(self.norm1(x), state, reset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kt/Documents/EnergyTransformer/energy_real/model.py", line 182, in forward
+    y = F.scaled_dot_product_attention(q, k, v, is_causal=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

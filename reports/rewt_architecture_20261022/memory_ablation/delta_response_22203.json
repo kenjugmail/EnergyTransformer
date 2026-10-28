@@ -1,0 +1,12 @@
+{
+  "case": {
+    "delta_size": 16,
+    "name": "delta_response_22203",
+    "seed": 22203
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/memory_ablation/delta_response_22203/best.pt",
+  "checkpoint_sha256": "38900d0beb51b0e0468d09897084504780e06c44695e212657d8d101466a56cf",
+  "parameters": 34321,
+  "training_cpu_seconds": 68.03082323200016,
+  "validation_accuracy": 0.5520833333333334
+}

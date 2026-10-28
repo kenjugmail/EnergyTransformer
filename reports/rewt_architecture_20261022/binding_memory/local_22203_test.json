@@ -1,0 +1,23 @@
+{
+  "case": {
+    "delta_size": 0,
+    "name": "local_22203",
+    "seed": 22203
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/binding_memory/local_22203/best.pt",
+  "checkpoint_sha256": "9eb6f518429bcd8d4a423ad965343a67661b55048a9e765e49d8d00e6254628d",
+  "parameters": 32752,
+  "test": {
+    "accuracy": 0.5442708333333334,
+    "groups": {
+      "16/False": 0.109375,
+      "16/True": 1.0,
+      "32/False": 0.0625,
+      "32/True": 1.0,
+      "64/False": 0.09375,
+      "64/True": 1.0
+    }
+  },
+  "training_cpu_seconds": 54.54661456000009,
+  "validation_accuracy": 0.5494791666666666
+}

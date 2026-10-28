@@ -1,0 +1,14 @@
+{
+  "prompt": "B>C;A>B;C>D;X>Y;from A go 3=?\n",
+  "trace_bytes": [
+    66,
+    67,
+    68
+  ],
+  "answer_byte": 68,
+  "predicted_hops": 3,
+  "response": "steps=B,C,D;ans=D\n",
+  "inference_weights_unchanged": true,
+  "interface": "Structured rule head: learned byte extraction, read count, intermediate nodes and final node; not free-form language generation.",
+  "checkpoint_sha256": "7fc41b47cc92b7c9465475ce0b904e1647e76236cbc028b514187e67e6fa37a6"
+}

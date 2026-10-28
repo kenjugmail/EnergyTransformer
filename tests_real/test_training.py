@@ -37,6 +37,23 @@ def equal(a, b):
     return a == b
 
 
+@pytest.mark.parametrize('extra', [
+    ['--layers', '0'], ['--width', '0'], ['--heads', '0'],
+    ['--kind', 'hybrid', '--attention-window', '4', '--attention-every', '0'],
+    ['--kind', 'hybrid', '--attention-window', '4', '--layers', '2'],
+    ['--kind', 'hybrid', '--layers', '3', '--attention-window', '-1'],
+])
+def test_invalid_architecture_fails_before_gpu_or_filesystem(corpus, tmp_path, extra):
+    out = tmp_path / 'must_not_exist'
+    args = args_for(corpus, out, [*extra, '--device', 'cuda'])
+    with patch('energy_real.device.require_idle_gpu') as gpu, patch('energy_real.train.Enwik8') as data:
+        with pytest.raises(ValueError):
+            run(args, corpus_factory=data)
+        gpu.assert_not_called()
+        data.assert_not_called()
+    assert not out.exists()
+
+
 def test_exact_resume_and_crash_tail(corpus, tmp_path):
     whole, resumed = tmp_path/'whole', tmp_path/'resume'
     run(args_for(corpus, whole))
@@ -52,6 +69,32 @@ def test_exact_resume_and_crash_tail(corpus, tmp_path):
     with pytest.raises(FileExistsError): run(args_for(corpus, resumed))
     with pytest.raises(ValueError, match='identity'):
         run(args_for(corpus, resumed, ['--resume', '--lr', '.1']))
+
+
+def test_pcalm_native_training_exact_resume(corpus, tmp_path):
+    extra = ['--learning-rule', 'pcalm', '--amp', 'none', '--activity-steps', '3', '--layers', '2']
+    whole, split = tmp_path / 'pcalm_whole', tmp_path / 'pcalm_split'
+    run(args_for(corpus, whole, extra))
+    run(args_for(corpus, split, [*extra, '--stop-after', '3']))
+    run(args_for(corpus, split, [*extra, '--resume']))
+    a, b = [torch.load(path / 'last.pt', weights_only=True) for path in (whole, split)]
+    for key in ('weights', 'optimizer', 'torch_rng', 'numpy_rng', 'step', 'tokens', 'best_valid_bpb'):
+        assert equal(a[key], b[key]), key
+    with pytest.raises(ValueError, match='identity'):
+        run(args_for(corpus, split, [*extra, '--resume', '--state-lr', '.01']))
+
+
+def test_window_hybrid_training_exact_resume(corpus, tmp_path):
+    extra = ['--kind', 'hybrid', '--layers', '3', '--attention-window', '4']
+    whole, split = tmp_path / 'window_whole', tmp_path / 'window_split'
+    run(args_for(corpus, whole, extra))
+    run(args_for(corpus, split, [*extra, '--stop-after', '3']))
+    run(args_for(corpus, split, [*extra, '--resume']))
+    a, b = [torch.load(path / 'last.pt', weights_only=True) for path in (whole, split)]
+    for key in ('weights', 'optimizer', 'torch_rng', 'numpy_rng', 'step', 'tokens', 'best_valid_bpb'):
+        assert equal(a[key], b[key]), key
+    with pytest.raises(ValueError, match='identity'):
+        run(args_for(corpus, split, [*extra, '--resume', '--attention-window', '5']))
 
 
 def test_fresh_process_resume(corpus, tmp_path):

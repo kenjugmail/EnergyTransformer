@@ -1,0 +1,20 @@
+{
+  "checkpoint_step": 896,
+  "summary": {
+    "arithmetic": {
+      "first_byte_correct": 0.5309278350515464,
+      "sum_absolute_error": 5.01173082224487
+    },
+    "recall": {
+      "decoded_fact_correct": 0.4583333333333333,
+      "first_byte_correct": 1.0,
+      "pointer_hit": 1.0
+    },
+    "rules": {
+      "decoded_fact_correct": 0.3020833333333333,
+      "first_byte_correct": 0.53125,
+      "pointer_hit": 0.5625
+    }
+  },
+  "validation_only": true
+}

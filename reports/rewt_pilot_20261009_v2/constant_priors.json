@@ -1,0 +1,74 @@
+{
+  "unconditional_constant": {
+    "all": {
+      "count": 150,
+      "valid_format": 1.0,
+      "answer_correct": 0.03333333333333333,
+      "steps_correct": 0.03333333333333333,
+      "both_correct": 0.03333333333333333
+    },
+    "by_family": {
+      "arithmetic": {
+        "count": 50,
+        "valid_format": 1.0,
+        "answer_correct": 0.0,
+        "steps_correct": 0.0,
+        "both_correct": 0.0
+      },
+      "rules": {
+        "count": 50,
+        "valid_format": 1.0,
+        "answer_correct": 0.0,
+        "steps_correct": 0.0,
+        "both_correct": 0.0
+      },
+      "recall": {
+        "count": 50,
+        "valid_format": 1.0,
+        "answer_correct": 0.1,
+        "steps_correct": 0.1,
+        "both_correct": 0.1
+      }
+    }
+  },
+  "oracle_family_constant": {
+    "all": {
+      "count": 150,
+      "valid_format": 1.0,
+      "answer_correct": 0.06666666666666667,
+      "steps_correct": 0.04,
+      "both_correct": 0.04
+    },
+    "by_family": {
+      "arithmetic": {
+        "count": 50,
+        "valid_format": 1.0,
+        "answer_correct": 0.02,
+        "steps_correct": 0.0,
+        "both_correct": 0.0
+      },
+      "rules": {
+        "count": 50,
+        "valid_format": 1.0,
+        "answer_correct": 0.08,
+        "steps_correct": 0.02,
+        "both_correct": 0.02
+      },
+      "recall": {
+        "count": 50,
+        "valid_format": 1.0,
+        "answer_correct": 0.1,
+        "steps_correct": 0.1,
+        "both_correct": 0.1
+      }
+    }
+  },
+  "responses": {
+    "unconditional_constant": "steps=6;ans=6\n",
+    "oracle_family_constant": {
+      "arithmetic": "steps=9;ans=9\n",
+      "rules": "steps=N;ans=N\n",
+      "recall": "steps=6;ans=6\n"
+    }
+  }
+}

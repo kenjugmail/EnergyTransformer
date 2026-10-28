@@ -1,0 +1,187 @@
+{
+  "all_canonical": true,
+  "fixed_vocabulary": true,
+  "method": "Decode each saved prompt token prefix, re-encode only its displayed known ASCII text with the frozen training vocabulary, and compare token bytes exactly.",
+  "prompts": [
+    {
+      "canonical_prefix": true,
+      "id": "story_000",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_001",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_002",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_003",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_004",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_005",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_006",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_007",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_008",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_009",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_010",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_011",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_012",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_013",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_014",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_015",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_016",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_017",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_018",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_019",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_020",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_021",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_022",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_023",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_024",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_025",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_026",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_027",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_028",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    },
+    {
+      "canonical_prefix": true,
+      "id": "story_029",
+      "reencoded_tokens": 32,
+      "saved_tokens": 32
+    }
+  ]
+}

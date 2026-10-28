@@ -1,0 +1,23 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 768,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "certified_22102",
+    "overrides": {
+      "solver": "certified",
+      "step_size": 0.75
+    },
+    "seed": 22102,
+    "variant": "certified"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/certified_22102/best.pt",
+  "checkpoint_sha256": "e4407bb0ccd2b24186c791c4a088557ab0e27bce01549714bbec251b803921e5",
+  "maximum_gradient": 262.6888427734375,
+  "parameters": 256096,
+  "response_tokens": 396210,
+  "training_cpu_seconds": 697.6122485920009,
+  "validation_ce": 0.4810140511373926,
+  "validation_complete": 0.35185185185185186,
+  "validation_cpu_seconds": 17.326164128000073
+}

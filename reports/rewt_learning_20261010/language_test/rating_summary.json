@@ -1,0 +1,23 @@
+{
+  "fourier80": {
+    "coherence": 1.0333333333333334,
+    "count": 30,
+    "fluency": 1.9,
+    "relevance": 1.7666666666666666,
+    "useful_continuations": 0
+  },
+  "neural80": {
+    "coherence": 1.1333333333333333,
+    "count": 30,
+    "fluency": 1.9,
+    "relevance": 1.8333333333333333,
+    "useful_continuations": 0
+  },
+  "transformer": {
+    "coherence": 1.0,
+    "count": 30,
+    "fluency": 1.0333333333333334,
+    "relevance": 1.4333333333333333,
+    "useful_continuations": 0
+  }
+}

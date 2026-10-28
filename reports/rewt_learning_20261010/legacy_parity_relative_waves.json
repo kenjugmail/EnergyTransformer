@@ -1,0 +1,48 @@
+{
+  "archived_source_sha256": "c8665869e697ec2680f161c44e43a5c41bf931a2ed17b47ccea38db79f1376f1",
+  "current_source_sha256": "0f9bf06c86e9d0c481aa4dcd4933eacdb88e70fb34b7d2e9d0702413f7e65d9b",
+  "rows": [
+    {
+      "arm": "fourier_rewt",
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/fourier_rewt/language/best.pt",
+      "checkpoint_sha256": "48bde3cf9875f12e6aa20b0d74f6e85e028e1c7c76dcd48f791c7068534c30ab",
+      "maximum_difference": 0.0,
+      "stage": "training"
+    },
+    {
+      "arm": "fourier_rewt",
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/fourier_rewt/reasoning/best.pt",
+      "checkpoint_sha256": "074c67b27ea72f02c87d445eb75e75089b6873bc7563862ec749e345e81f23b4",
+      "maximum_difference": 0.0,
+      "stage": "reasoning_training"
+    },
+    {
+      "arm": "neural_energy",
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/neural_energy/language/best.pt",
+      "checkpoint_sha256": "3c9c2a47b1d4fbfdcdfb5c86eb54f577f3c894d90459061785bf12553489a421",
+      "maximum_difference": 0.0,
+      "stage": "training"
+    },
+    {
+      "arm": "neural_energy",
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/neural_energy/reasoning/best.pt",
+      "checkpoint_sha256": "1375bfc26ff365460b3717ba6f3566e2d506127a944987b9a46add9b51d2c9e2",
+      "maximum_difference": 0.0,
+      "stage": "reasoning_training"
+    },
+    {
+      "arm": "full_rewt",
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/full_rewt/language/best.pt",
+      "checkpoint_sha256": "86f9b61a7af3c2f2685f8da3a59e0103bca37e21519bd2378e037cbd31fd5440",
+      "maximum_difference": 0.0,
+      "stage": "training"
+    },
+    {
+      "arm": "full_rewt",
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_stabilized_20261009/seed_101/full_rewt/reasoning/best.pt",
+      "checkpoint_sha256": "e57d25638dfa5c5e113b3c924f5de76f2639fda2827426de297d1e34ad17db8a",
+      "maximum_difference": 0.0,
+      "stage": "reasoning_training"
+    }
+  ]
+}

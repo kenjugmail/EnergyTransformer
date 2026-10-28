@@ -1,0 +1,19 @@
+{
+  "count": 120,
+  "evidence_scope": "Exploratory inference from the preplanned equal-time checkpoints, no new training or selection.",
+  "human_ratings": "pending",
+  "prefix_ids": [
+    "text_000",
+    "text_001",
+    "text_002",
+    "text_003",
+    "text_004",
+    "text_005",
+    "text_006",
+    "text_007",
+    "text_008",
+    "text_009"
+  ],
+  "prompted_by": "Primary 61,440-byte fits produced unusable sampled text; inspect whether a preplanned common-time comparison changes this.",
+  "sampling": "Same primary seed+563, temperature 0.8, 96 bytes and paired uniforms."
+}

@@ -1,0 +1,13 @@
+{
+  "completed_utc": "2026-10-26T16:00:35.812785+00:00",
+  "main_fits": 9,
+  "test_prompts_per_model": 1440,
+  "audited_output_rows": 18720,
+  "tests_passed": 207,
+  "source_and_checkpoint_hashes_verified": true,
+  "documentation_links_verified": true,
+  "google_slides_url": "https://docs.google.com/presentation/d/11p2zXD7gTftP4EZXtRqXL948wSRPqkao5pTgoINKgVQ",
+  "native_slides_and_notes_verified": 15,
+  "native_equation_repairs_verified": true,
+  "offline_copies_verified": true
+}

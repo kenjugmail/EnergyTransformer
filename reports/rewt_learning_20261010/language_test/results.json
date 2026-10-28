@@ -1,0 +1,139 @@
+[
+  {
+    "case": "fourier80",
+    "checkpoint_sha256": "0d47ac452774d0355d134d9eba967388fe0ca5d2be624b94fcc2cd5c10a5629a",
+    "energy_audit": {
+      "all_accepted_states_nonincreasing": true,
+      "fraction_rounds_decreasing": 1.0,
+      "maximum_accepted_energy_increase": -0.04251880943775177,
+      "mean_energy_drop": 0.2952456772327423,
+      "positions": 64,
+      "rounds": 2
+    },
+    "generation_cpu_seconds": 0.8097136160000002,
+    "parameters": 250126,
+    "runtime_profile": {
+      "cpu_ms_per_token_median": 0.4672569999999987,
+      "cpu_seconds_median": 0.029904447999999917,
+      "cpu_seconds_repeats": [
+        0.029904447999999917,
+        0.02913124800000011,
+        0.029905775999999662
+      ],
+      "input_raw_bytes": 124,
+      "input_tokens": 64,
+      "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+      "parameter_bytes": 1000504,
+      "positive_operator_allocation_bytes": 17633318
+    },
+    "test": {
+      "bits_per_token": 2.7594589243670136,
+      "bpb": 1.4475850095040073,
+      "evaluated_raw_bytes": 15616,
+      "evaluated_tokens": 8192,
+      "next_token_accuracy": 0.497802734375
+    },
+    "test_cpu_seconds": 1.08029864,
+    "text_count": 30,
+    "text_metrics": {
+      "bytes": 193.36666666666667,
+      "distinct_byte_trigram_fraction": 0.7696008155871026,
+      "printable_fraction": 1.0,
+      "repeated_byte_trigram_fraction": 0.23039918441289736,
+      "repeated_word_trigram_fraction": 0.014460351724233406,
+      "replacement_fraction": 0.0
+    },
+    "weights_after": "c1fe0993c12b80ccabe57a4cb9c33ee162a8853021d00ca40af8e8e669cc9b5e",
+    "weights_before": "c1fe0993c12b80ccabe57a4cb9c33ee162a8853021d00ca40af8e8e669cc9b5e",
+    "weights_unchanged": true
+  },
+  {
+    "case": "neural80",
+    "checkpoint_sha256": "e43728144d05d73217dba5185b4bc38a6d20cf5481baadf5ccc6a801b2c74c5a",
+    "energy_audit": {
+      "all_accepted_states_nonincreasing": true,
+      "fraction_rounds_decreasing": 1.0,
+      "maximum_accepted_energy_increase": -0.013360098004341125,
+      "mean_energy_drop": 0.16813310980796814,
+      "positions": 64,
+      "rounds": 2
+    },
+    "generation_cpu_seconds": 1.0135759679999996,
+    "parameters": 250126,
+    "runtime_profile": {
+      "cpu_ms_per_token_median": 0.5573172499999945,
+      "cpu_seconds_median": 0.03566830399999965,
+      "cpu_seconds_repeats": [
+        0.034167408000000066,
+        0.03647380799999844,
+        0.03566830399999965
+      ],
+      "input_raw_bytes": 124,
+      "input_tokens": 64,
+      "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+      "parameter_bytes": 1000504,
+      "positive_operator_allocation_bytes": 17649702
+    },
+    "test": {
+      "bits_per_token": 2.762317125539534,
+      "bpb": 1.449084393725657,
+      "evaluated_raw_bytes": 15616,
+      "evaluated_tokens": 8192,
+      "next_token_accuracy": 0.494873046875
+    },
+    "test_cpu_seconds": 1.390154656,
+    "text_count": 30,
+    "text_metrics": {
+      "bytes": 197.4,
+      "distinct_byte_trigram_fraction": 0.7617892589662578,
+      "printable_fraction": 1.0,
+      "repeated_byte_trigram_fraction": 0.23821074103374223,
+      "repeated_word_trigram_fraction": 0.013256564880619076,
+      "replacement_fraction": 0.0
+    },
+    "weights_after": "31f4d18999d0e4e672c39fef86e09fcdd92a30db9e2d0d77d857f1c189245eee",
+    "weights_before": "31f4d18999d0e4e672c39fef86e09fcdd92a30db9e2d0d77d857f1c189245eee",
+    "weights_unchanged": true
+  },
+  {
+    "case": "transformer",
+    "checkpoint_sha256": "cd9cdf1449c2bfd4034c06fb96b96c29bc07a7aed2b0eeebca5296e7d7ec52b2",
+    "energy_audit": null,
+    "generation_cpu_seconds": 1.9911007520000013,
+    "parameters": 250122,
+    "runtime_profile": {
+      "cpu_ms_per_token_median": 0.012567500000004728,
+      "cpu_seconds_median": 0.0008043200000003026,
+      "cpu_seconds_repeats": [
+        0.0008750239999990583,
+        0.0007167360000011058,
+        0.0008043200000003026
+      ],
+      "input_raw_bytes": 124,
+      "input_tokens": 64,
+      "memory_note": "Positive allocation total is NOT peak resident memory; checkpoints contain parameters only.",
+      "parameter_bytes": 1000488,
+      "positive_operator_allocation_bytes": 1030018
+    },
+    "test": {
+      "bits_per_token": 3.2236006720230237,
+      "bpb": 1.6910692049956846,
+      "evaluated_raw_bytes": 15616,
+      "evaluated_tokens": 8192,
+      "next_token_accuracy": 0.414794921875
+    },
+    "test_cpu_seconds": 0.09272119999999973,
+    "text_count": 30,
+    "text_metrics": {
+      "bytes": 186.36666666666667,
+      "distinct_byte_trigram_fraction": 0.7770692357345758,
+      "printable_fraction": 1.0,
+      "repeated_byte_trigram_fraction": 0.2229307642654243,
+      "repeated_word_trigram_fraction": 0.007786107711138311,
+      "replacement_fraction": 0.0
+    },
+    "weights_after": "36ab589e5ce0a5a9a59f4f5e582e5a6d451f2ca541eb124e21a2f3ef5634d688",
+    "weights_before": "36ab589e5ce0a5a9a59f4f5e582e5a6d451f2ca541eb124e21a2f3ef5634d688",
+    "weights_unchanged": true
+  }
+]

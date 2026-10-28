@@ -1,0 +1,73 @@
+{
+  "dataset": "HuggingFaceTB/smol-smoltalk",
+  "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+  "source_sha256": "498cd4580014f42c40cfde066573564ed28e3e1548a5566715b615f5ea932856",
+  "tokenizer_revision": "40ebe0aa6662c9d40389c2f5d565b6a2c6aebacd",
+  "tokenizer_sha256": "7e226e34bface23ccf6e495d157bf77186c1c30a7659880e1a8994db528c3701",
+  "template_sha256": "f45005c50cd2a97329722bf3a2dee9f16c04cdf825a589b280fb7e99e6827818",
+  "splits": {
+    "train": {
+      "documents": 16100,
+      "tokens": 9797398,
+      "assistant_tokens": 7448253,
+      "files": {
+        "tokens": {
+          "sha256": "fc94bffcd7ea4571b5cb9f7e83542c344916a0aee14fe7013d465683fb26d7fb",
+          "path": "/home/kt/Documents/EnergyTransformer/data/lfm3_capability_recovery_v1/train_tokens.npy"
+        },
+        "assistant": {
+          "sha256": "526767cb3eeab40e59ff7eac9ac7fef2515dcb3f5fe38ff0568ab7fc12f76616",
+          "path": "/home/kt/Documents/EnergyTransformer/data/lfm3_capability_recovery_v1/train_assistant.npy"
+        },
+        "offsets": {
+          "sha256": "283321a2aa1ae969a53d02d157956b5c508d7a9dbc0ae51d57402d345bf904b7",
+          "path": "/home/kt/Documents/EnergyTransformer/data/lfm3_capability_recovery_v1/train_offsets.npy"
+        }
+      },
+      "short_under_513": 8931
+    },
+    "valid": {
+      "documents": 263,
+      "tokens": 164002,
+      "assistant_tokens": 123863,
+      "files": {
+        "tokens": {
+          "sha256": "5ad4bf17f29db171118779cd42b2368739f3be6216fcc749ff528b2539e278bb",
+          "path": "/home/kt/Documents/EnergyTransformer/data/lfm3_capability_recovery_v1/valid_tokens.npy"
+        },
+        "assistant": {
+          "sha256": "432531b6117d36e448bdc3735b1c5ffebd9f34b969120f3bf7de7fc346b58d24",
+          "path": "/home/kt/Documents/EnergyTransformer/data/lfm3_capability_recovery_v1/valid_assistant.npy"
+        },
+        "offsets": {
+          "sha256": "954f8c1baab8e99b3dfa183751990083079abbcd727b845fad5b1706801dd70b",
+          "path": "/home/kt/Documents/EnergyTransformer/data/lfm3_capability_recovery_v1/valid_offsets.npy"
+        }
+      },
+      "short_under_513": 143
+    }
+  },
+  "source_counts": {
+    "train/smol-magpie-ultra-short": 6000,
+    "train/self-oss-instruct": 2500,
+    "train/openhermes-50k": 2500,
+    "train/smol-contraints": 2500,
+    "train/smollm-rewrite-30k": 1000,
+    "train/smol-summarize-20k": 750,
+    "train/smol-summarize-5k": 250,
+    "train/everyday-conversations": 300,
+    "train/explore-instruct-rewrite": 300,
+    "valid/smol-magpie-ultra-short": 94,
+    "valid/self-oss-instruct": 39,
+    "valid/openhermes-50k": 39,
+    "valid/smol-contraints": 39,
+    "valid/smollm-rewrite-30k": 16,
+    "valid/smol-summarize-20k": 12,
+    "valid/smol-summarize-5k": 8,
+    "valid/everyday-conversations": 8,
+    "valid/explore-instruct-rewrite": 8
+  },
+  "selection": "Hash-sorted per-source quotas from pinned official training shard; original SHA256 validation bucket excluded from training. Old validation/test IDs excluded. New validation excludes all old training IDs.",
+  "evaluation": "No capability evaluation prompts or official test rows used in this recovery corpus.",
+  "limits": "Exact document deduplication only; no guarantee against semantic overlap or donor pretraining contamination."
+}

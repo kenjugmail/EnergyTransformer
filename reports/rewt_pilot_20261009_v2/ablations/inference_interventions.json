@@ -1,0 +1,402 @@
+{
+  "evidence_scope": "Single trained seed; same held-out windows; no retraining. Removal changes inference inputs/workspace constraints.",
+  "generation_settings": "Fixed diffusion RNG stream and rounds; all accepted updates checked against full energy.",
+  "metrics": {
+    "fourier_inference_coarse_to_fine": {
+      "bpb": 3.953215054529179,
+      "brier": 0.8319807648658752,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 1536,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.2553343749999992,
+      "cpu_seconds": 0.2614623999999992,
+      "energy_calls_per_position": 6.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.2861328125,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.26342508802190423
+    },
+    "fourier_rewt_output_only": {
+      "bpb": 3.9574700772941758,
+      "brier": 0.8320560157299042,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 1536,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.2746049687500085,
+      "cpu_seconds": 0.2811954880000087,
+      "energy_calls_per_position": 6.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.2841796875,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.2781693049473688
+    },
+    "fourier_rewt_rounds_0": {
+      "bpb": 3.957174955065295,
+      "brier": 0.8317500054836273,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 0,
+        "energy_calls": 0,
+        "gradient_calls": 0
+      },
+      "cpu_ms_per_byte": 0.08069639062499578,
+      "cpu_seconds": 0.08263310399999568,
+      "energy_calls_per_position": 0.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 0.0,
+      "next_byte_accuracy": 0.2841796875,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.08196887199301273
+    },
+    "fourier_rewt_rounds_1": {
+      "bpb": 3.9542144457133426,
+      "brier": 0.8318099975585938,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 2048,
+        "energy_calls": 768,
+        "gradient_calls": 256
+      },
+      "cpu_ms_per_byte": 0.17045090624999426,
+      "cpu_seconds": 0.17454172799999412,
+      "energy_calls_per_position": 3.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 1.0,
+      "next_byte_accuracy": 0.283203125,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.1723415070446208
+    },
+    "fourier_rewt_rounds_2": {
+      "bpb": 3.953142477850515,
+      "brier": 0.8319617211818695,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 1536,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.2893376718750007,
+      "cpu_seconds": 0.2962817760000007,
+      "energy_calls_per_position": 6.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.28515625,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.29898860200773925
+    },
+    "fourier_rewt_rounds_4": {
+      "bpb": 3.952674685040168,
+      "brier": 0.8322129845619202,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 8192,
+        "energy_calls": 3072,
+        "gradient_calls": 1024
+      },
+      "cpu_ms_per_byte": 0.4741341718749875,
+      "cpu_seconds": 0.4855133919999872,
+      "energy_calls_per_position": 12.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 4.0,
+      "next_byte_accuracy": 0.283203125,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.4836127159651369
+    },
+    "fourier_rewt_rounds_8": {
+      "bpb": 3.952758956539091,
+      "brier": 0.8324142396450043,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 16384,
+        "energy_calls": 6144,
+        "gradient_calls": 2048
+      },
+      "cpu_ms_per_byte": 0.8531827187499841,
+      "cpu_seconds": 0.8736591039999837,
+      "energy_calls_per_position": 24.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 8.0,
+      "next_byte_accuracy": 0.283203125,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.8761749409604818
+    },
+    "fourier_rewt_states_only": {
+      "bpb": 3.9531046416673252,
+      "brier": 0.8316898047924042,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 1536,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.29101571875000953,
+      "cpu_seconds": 0.29800009600000976,
+      "energy_calls_per_position": 6.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.2861328125,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.2956855200463906
+    },
+    "full_rewt_output_only": {
+      "bpb": 4.018994290900583,
+      "brier": 0.8383567631244659,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 2304,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 1.0772191562500033,
+      "cpu_seconds": 1.1030724160000034,
+      "energy_calls_per_position": 9.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.283203125,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 1.1011902639875188
+    },
+    "full_rewt_rounds_0": {
+      "bpb": 4.01698054604163,
+      "brier": 0.8378079235553741,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 0,
+        "energy_calls": 768,
+        "gradient_calls": 0
+      },
+      "cpu_ms_per_byte": 0.4856885625000029,
+      "cpu_seconds": 0.497345088000003,
+      "energy_calls_per_position": 3.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 0.0,
+      "next_byte_accuracy": 0.2841796875,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.5127789779799059
+    },
+    "full_rewt_rounds_1": {
+      "bpb": 4.0140843582011,
+      "brier": 0.8373755514621735,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 2048,
+        "energy_calls": 1536,
+        "gradient_calls": 256
+      },
+      "cpu_ms_per_byte": 0.7727372187499859,
+      "cpu_seconds": 0.7912829119999856,
+      "energy_calls_per_position": 6.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 1.0,
+      "next_byte_accuracy": 0.287109375,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.7791510840179399
+    },
+    "full_rewt_rounds_2": {
+      "bpb": 4.013519051227714,
+      "brier": 0.8373736441135406,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 2304,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 1.0418674218749813,
+      "cpu_seconds": 1.0668722399999808,
+      "energy_calls_per_position": 9.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.287109375,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 1.0580666600726545
+    },
+    "full_rewt_rounds_4": {
+      "bpb": 4.014049445722975,
+      "brier": 0.8376207947731018,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 8192,
+        "energy_calls": 3840,
+        "gradient_calls": 1024
+      },
+      "cpu_ms_per_byte": 1.5620045156250206,
+      "cpu_seconds": 1.5994926240000211,
+      "energy_calls_per_position": 15.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 4.0,
+      "next_byte_accuracy": 0.283203125,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 1.581476008053869
+    },
+    "full_rewt_rounds_8": {
+      "bpb": 4.015088736882139,
+      "brier": 0.8379428684711456,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 16384,
+        "energy_calls": 6912,
+        "gradient_calls": 2048
+      },
+      "cpu_ms_per_byte": 2.464954812500003,
+      "cpu_seconds": 2.524113728000003,
+      "energy_calls_per_position": 27.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 8.0,
+      "next_byte_accuracy": 0.2880859375,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 2.4980072940234095
+    },
+    "full_rewt_states_only": {
+      "bpb": 4.01157874296068,
+      "brier": 0.8368028998374939,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 2304,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 1.0634157187499882,
+      "cpu_seconds": 1.088937695999988,
+      "energy_calls_per_position": 9.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.287109375,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 1.0790584720671177
+    },
+    "full_without_communication": {
+      "bpb": 4.013001383448617,
+      "brier": 0.8373542726039886,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 2304,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.9504011406250013,
+      "cpu_seconds": 0.9732107680000013,
+      "energy_calls_per_position": 9.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.2890625,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.9636885949876159
+    },
+    "full_without_critic": {
+      "bpb": 4.01324112726392,
+      "brier": 0.8373319506645203,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 2304,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.8748416093749822,
+      "cpu_seconds": 0.8958378079999818,
+      "energy_calls_per_position": 9.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.28515625,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.8855698450934142
+    },
+    "full_without_diffusion": {
+      "bpb": 4.013081183398618,
+      "brier": 0.8373939692974091,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 1536,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.6486955937499983,
+      "cpu_seconds": 0.6642642879999983,
+      "energy_calls_per_position": 6.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.287109375,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.6592232619877905
+    },
+    "full_without_forecast": {
+      "bpb": 4.013655949417801,
+      "brier": 0.8374814987182617,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 2304,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 1.0036017499999994,
+      "cpu_seconds": 1.0276881919999994,
+      "energy_calls_per_position": 9.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.287109375,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 1.0775875800754875
+    },
+    "full_without_history": {
+      "bpb": 4.060974052097638,
+      "brier": 0.8457497954368591,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 2304,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.898095234375007,
+      "cpu_seconds": 0.9196495200000072,
+      "energy_calls_per_position": 9.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.28125,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.9072999740019441
+    },
+    "full_without_router": {
+      "bpb": 4.012739969819306,
+      "brier": 0.8372238278388977,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 2304,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.9382240937499953,
+      "cpu_seconds": 0.9607414719999952,
+      "energy_calls_per_position": 9.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.2841796875,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.9506385989952832
+    },
+    "full_without_specialists": {
+      "bpb": 4.01437122526274,
+      "brier": 0.8374538719654083,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 2304,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.872370859374999,
+      "cpu_seconds": 0.893307759999999,
+      "energy_calls_per_position": 9.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.2890625,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.8774059050483629
+    }
+  }
+}

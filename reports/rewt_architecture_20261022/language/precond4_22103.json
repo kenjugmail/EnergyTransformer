@@ -1,0 +1,20 @@
+{
+  "best_step": 512,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "precond4_22103",
+    "overrides": {
+      "rounds": 4,
+      "solver": "preconditioned",
+      "step_size": 0.75
+    },
+    "seed": 22103,
+    "variant": "precond4"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/precond4_22103/best.pt",
+  "checkpoint_sha256": "88f16cda0f266659b36f595facd3f75dbb8fc756813d73dca991b44038394397",
+  "parameters": 256096,
+  "training_cpu_seconds": 685.3226588000075,
+  "validation_bpb": 2.0883526449257195,
+  "validation_cpu_seconds": 5.199497104000102
+}

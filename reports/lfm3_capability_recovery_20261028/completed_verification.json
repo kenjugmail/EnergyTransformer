@@ -1,0 +1,35 @@
+{
+  "completed_utc": "2026-10-28T04:30:00.575412+00:00",
+  "recommended_checkpoint_sha256": "1d956a462cfaa0e7b91b37f7b09086f015b05a67971222d4e006af21b84fdf55",
+  "tests_passed": 279,
+  "selected_bundle_files_hash_verified": true,
+  "alternative_bundle_files_hash_verified": true,
+  "stage_source_snapshots_and_checkpoint_chain_verified": true,
+  "report_source_archive_verified": true,
+  "evaluation_suite_sha256": "abce8917e0fb2d43f8bf5ecace245ce2b741e8cf443e9fae9e1b44fcf893606b",
+  "evaluation_rows_per_model": 178,
+  "standalone_offline_smoke": "hello",
+  "cached_decode_audit": {
+    "prefix": 513,
+    "extended_prefix": 1024,
+    "chunk_relative_l2": 0.01522975042462349,
+    "chunk_max_absolute_error": 0.25,
+    "acceptance_relative_l2": 0.05,
+    "owned_state_bytes": 19695616,
+    "state_unchanged_after_branch": true,
+    "bounded_after_extension": true,
+    "dtype": "BF16 autocast with FP32 recurrent state; shape-dependent rounding is not exact parity"
+  },
+  "float32_chunk_audit": {
+    "tokens": 513,
+    "relative_l2": 1.4076938441576203e-06,
+    "max_absolute_error": 1.7702579498291016e-05,
+    "acceptance_relative_l2": 0.0001,
+    "matmul_precision": "highest",
+    "dtype": "float32"
+  },
+  "report_links_verified": true,
+  "recommended_additional_token_exposures": 1290243,
+  "total_attempt_token_exposures": 1663386,
+  "limitation": "Partial recovery on one exploratory trajectory. Stage recommendation used this small capability suite post hoc; no independent confirmation or donor-equivalence claim."
+}

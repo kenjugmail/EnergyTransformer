@@ -1,0 +1,26 @@
+{
+  "tests": {
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python -m pytest tests_rewt -q",
+    "passed": 50,
+    "duration_seconds": 6.65
+  },
+  "source_unchanged_during_run": {
+    "__init__.py": true,
+    "data.py": true,
+    "evaluate.py": true,
+    "experiment.py": true,
+    "improve.py": true,
+    "improve_report.py": true,
+    "model.py": true,
+    "optim.py": true,
+    "profile.py": true,
+    "report.py": true,
+    "stabilize.py": true,
+    "tasks.py": true
+  },
+  "checkpoint_reuse_parity_count": 27,
+  "checkpoint_reuse_parity_all_equal": true,
+  "new_full_reasoning_gradient_interval": 16,
+  "task_test_selection_seed": 1879,
+  "scope": "Implementation tests and frozen protocol checks; empirical quality is evaluated separately"
+}

@@ -1,0 +1,9 @@
+{
+  "tests_passed": 64,
+  "test_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python -m pytest tests_rewt -q",
+  "test_duration_seconds": 5.63,
+  "legacy_checkpoint_bitwise_parity_probes": 6,
+  "micro_cases_completed": 5,
+  "micro_training_tasks": 12,
+  "scope": "Training-only micro memorization is not held-out success. Foundation test outputs remain unopened; six matched cases fit from fresh random weights."
+}

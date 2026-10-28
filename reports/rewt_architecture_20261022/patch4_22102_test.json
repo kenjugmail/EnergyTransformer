@@ -1,0 +1,140 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 768,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "patch4_22102",
+    "overrides": {
+      "backbone": "scan",
+      "patch_stride": 4
+    },
+    "seed": 22102,
+    "variant": "patch4"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/patch4_22102/best.pt",
+  "checkpoint_sha256": "d806f0200b7d1b052f4bc3bcc3a8f6ce1a9e3fc0b26fbc5d4d90892df94db1da",
+  "inference_weights_unchanged": true,
+  "maximum_gradient": 224.45045471191406,
+  "parameters": 246688,
+  "response_tokens": 396210,
+  "test": {
+    "groups": {
+      "arithmetic/1/familiar_format": 0.0,
+      "arithmetic/1/withheld_wording": 0.0,
+      "arithmetic/2/familiar_format": 0.0,
+      "arithmetic/2/withheld_wording": 0.0,
+      "arithmetic/3/familiar_format": 0.0,
+      "arithmetic/3/withheld_wording": 0.0,
+      "recall/16/familiar_format": 1.0,
+      "recall/16/withheld_wording": 1.0,
+      "recall/4/familiar_format": 1.0,
+      "recall/4/withheld_wording": 1.0,
+      "recall/8/familiar_format": 1.0,
+      "recall/8/withheld_wording": 1.0,
+      "rules/1/familiar_format": 0.2222222222222222,
+      "rules/1/withheld_wording": 0.2222222222222222,
+      "rules/2/familiar_format": 0.0,
+      "rules/2/withheld_wording": 0.0,
+      "rules/3/familiar_format": 0.0,
+      "rules/3/withheld_wording": 0.0
+    },
+    "macro_complete": 0.3580246913580247,
+    "response_ce": 0.4845274074539005,
+    "summary": {
+      "all": {
+        "answer_correct": 0.4104938271604938,
+        "both_correct": 0.35802469135802467,
+        "count": 324,
+        "steps_correct": 0.36419753086419754,
+        "valid_format": 1.0
+      },
+      "by_difficulty": {
+        "familiar_format": {
+          "answer_correct": 0.41358024691358025,
+          "both_correct": 0.35802469135802467,
+          "count": 162,
+          "steps_correct": 0.35802469135802467,
+          "valid_format": 1.0
+        },
+        "withheld_wording": {
+          "answer_correct": 0.4074074074074074,
+          "both_correct": 0.35802469135802467,
+          "count": 162,
+          "steps_correct": 0.37037037037037035,
+          "valid_format": 1.0
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": 0.009259259259259259,
+          "both_correct": 0.0,
+          "count": 108,
+          "steps_correct": 0.0,
+          "valid_format": 1.0
+        },
+        "recall": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 108,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "rules": {
+          "answer_correct": 0.2222222222222222,
+          "both_correct": 0.07407407407407407,
+          "count": 108,
+          "steps_correct": 0.09259259259259259,
+          "valid_format": 1.0
+        }
+      },
+      "by_steps": {
+        "1": {
+          "answer_correct": 0.1111111111111111,
+          "both_correct": 0.1111111111111111,
+          "count": 72,
+          "steps_correct": 0.125,
+          "valid_format": 1.0
+        },
+        "16": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 36,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "2": {
+          "answer_correct": 0.1527777777777778,
+          "both_correct": 0.0,
+          "count": 72,
+          "steps_correct": 0.013888888888888888,
+          "valid_format": 1.0
+        },
+        "3": {
+          "answer_correct": 0.08333333333333333,
+          "both_correct": 0.0,
+          "count": 72,
+          "steps_correct": 0.0,
+          "valid_format": 1.0
+        },
+        "4": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 36,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "8": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 36,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      }
+    }
+  },
+  "training_cpu_seconds": 157.93080275200873,
+  "validation_ce": 0.48255343348245683,
+  "validation_complete": 0.345679012345679,
+  "validation_cpu_seconds": 9.034179679999397
+}

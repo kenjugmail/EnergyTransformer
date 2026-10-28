@@ -1,0 +1,23 @@
+{
+  "case": {
+    "delta_size": 16,
+    "name": "delta_22103",
+    "seed": 22103
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/long_memory/delta_22103/best.pt",
+  "checkpoint_sha256": "43db5f0a99e9e580917117fa93bdcd58280aca2b04bc04bdd868716fa209a442",
+  "parameters": 34321,
+  "test": {
+    "accuracy": 0.2760416666666667,
+    "groups": {
+      "16/False": 0.0625,
+      "16/True": 0.703125,
+      "32/False": 0.140625,
+      "32/True": 0.390625,
+      "64/False": 0.125,
+      "64/True": 0.234375
+    }
+  },
+  "training_cpu_seconds": 36.20515785600054,
+  "validation_accuracy": 0.3828125
+}

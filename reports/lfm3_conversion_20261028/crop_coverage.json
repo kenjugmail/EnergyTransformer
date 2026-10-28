@@ -1,0 +1,18 @@
+[
+  {
+    "run": "pilot",
+    "eligible_documents": 8192,
+    "sampled_crops": 768,
+    "conversation_start_crops": 8,
+    "within_first_32_tokens": 103,
+    "mean_start_offset": 337.6966145833333
+  },
+  {
+    "run": "recovery_512",
+    "eligible_documents": 6543,
+    "sampled_crops": 1024,
+    "conversation_start_crops": 4,
+    "within_first_32_tokens": 110,
+    "mean_start_offset": 280.0537109375
+  }
+]

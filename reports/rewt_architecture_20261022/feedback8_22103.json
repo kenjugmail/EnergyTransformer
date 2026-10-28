@@ -1,0 +1,23 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 1024,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "feedback8_22103",
+    "overrides": {
+      "backbone": "scan",
+      "feedback_stride": 8
+    },
+    "seed": 22103,
+    "variant": "feedback8"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/feedback8_22103/best.pt",
+  "checkpoint_sha256": "d4e62dc3ca963716e852b06a01a1e5fa981b9fbbaea52ac341c3f593d0891ad1",
+  "maximum_gradient": 244.62612915039062,
+  "parameters": 249040,
+  "response_tokens": 396391,
+  "training_cpu_seconds": 212.05284630399092,
+  "validation_ce": 0.479804380147581,
+  "validation_complete": 0.3395061728395061,
+  "validation_cpu_seconds": 9.958021856000414
+}

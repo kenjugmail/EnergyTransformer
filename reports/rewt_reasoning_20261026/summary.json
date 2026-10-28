@@ -1,0 +1,237 @@
+{
+  "arms": {
+    "fixed_query_energy": {
+      "active_parameters": 68502,
+      "max_energy_increase": -0.03066152334213257,
+      "parameters": 68502,
+      "seeds": [
+        26101,
+        26102,
+        26103
+      ],
+      "test": {
+        "count_accuracy": 1.0,
+        "groups": {
+          "1/familiar_format": 1.0,
+          "1/withheld_wording": 0.6437499999999999,
+          "2/familiar_format": 0.0,
+          "2/withheld_wording": 0.0,
+          "3/familiar_format": 0.0,
+          "3/withheld_wording": 0.0
+        },
+        "max": 0.31979166666666664,
+        "mean": 0.2739583333333333,
+        "min": 0.25104166666666666,
+        "values": [
+          0.31979166666666664,
+          0.25104166666666666,
+          0.25104166666666666
+        ]
+      },
+      "test_distractors": {
+        "count_accuracy": 1.0,
+        "groups": {
+          "1/familiar_format": 1.0,
+          "1/withheld_wording": 0.5666666666666668,
+          "2/familiar_format": 0.0,
+          "2/withheld_wording": 0.0,
+          "3/familiar_format": 0.0,
+          "3/withheld_wording": 0.0
+        },
+        "max": 0.275,
+        "mean": 0.2611111111111111,
+        "min": 0.25416666666666665,
+        "values": [
+          0.275,
+          0.25416666666666665,
+          0.25416666666666665
+        ]
+      },
+      "training_cpu_mean": 38.309013445333285,
+      "validation_mean": 0.16666666666666666
+    },
+    "reread_energy": {
+      "active_parameters": 68502,
+      "fixed_query": {
+        "count_accuracy": 1.0,
+        "groups": {
+          "1/familiar_format": 1.0,
+          "1/withheld_wording": 1.0,
+          "2/familiar_format": 0.0,
+          "2/withheld_wording": 0.0,
+          "3/familiar_format": 0.0,
+          "3/withheld_wording": 0.0
+        },
+        "max": 0.3333333333333333,
+        "mean": 0.3333333333333333,
+        "min": 0.3333333333333333,
+        "values": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      "max_energy_increase": -0.020053088665008545,
+      "parameters": 68502,
+      "seeds": [
+        26101,
+        26102,
+        26103
+      ],
+      "test": {
+        "count_accuracy": 1.0,
+        "groups": {
+          "1/familiar_format": 1.0,
+          "1/withheld_wording": 1.0,
+          "2/familiar_format": 1.0,
+          "2/withheld_wording": 1.0,
+          "3/familiar_format": 1.0,
+          "3/withheld_wording": 1.0
+        },
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "test_distractors": {
+        "count_accuracy": 1.0,
+        "groups": {
+          "1/familiar_format": 1.0,
+          "1/withheld_wording": 1.0,
+          "2/familiar_format": 1.0,
+          "2/withheld_wording": 1.0,
+          "3/familiar_format": 1.0,
+          "3/withheld_wording": 1.0
+        },
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "training_cpu_mean": 31.509850378666616,
+      "validation_mean": 0.7157407407407407,
+      "zero_energy": {
+        "count_accuracy": 1.0,
+        "groups": {
+          "1/familiar_format": 1.0,
+          "1/withheld_wording": 1.0,
+          "2/familiar_format": 1.0,
+          "2/withheld_wording": 1.0,
+          "3/familiar_format": 1.0,
+          "3/withheld_wording": 1.0
+        },
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "reread_no_energy": {
+      "active_parameters": 60950,
+      "max_energy_increase": 0.0,
+      "parameters": 68502,
+      "seeds": [
+        26101,
+        26102,
+        26103
+      ],
+      "test": {
+        "count_accuracy": 1.0,
+        "groups": {
+          "1/familiar_format": 1.0,
+          "1/withheld_wording": 1.0,
+          "2/familiar_format": 1.0,
+          "2/withheld_wording": 1.0,
+          "3/familiar_format": 1.0,
+          "3/withheld_wording": 1.0
+        },
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "test_distractors": {
+        "count_accuracy": 1.0,
+        "groups": {
+          "1/familiar_format": 1.0,
+          "1/withheld_wording": 1.0,
+          "2/familiar_format": 1.0,
+          "2/withheld_wording": 1.0,
+          "3/familiar_format": 1.0,
+          "3/withheld_wording": 1.0
+        },
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "training_cpu_mean": 22.49718554666677,
+      "validation_mean": 0.7259259259259259
+    }
+  },
+  "audited_response_rows": 18720,
+  "demo_selection": "Validation only; best complete then lower answer CE then lower seed.",
+  "limitations": "Narrow acyclic letter-rule grammar, at most three hops, 24 node symbols. Two training distractor edges; eight only in extra test. Same allocated parameters but zero-energy arm has unused energy-only parameters. Equal updates, not compute. No Transformer-superiority or general-language claim.",
+  "paired_differences": {
+    "fixed_query_energy": {
+      "ci95": [
+        0.7166666666666667,
+        0.7357638888888888
+      ],
+      "difference": 0.7260416666666667,
+      "scope": "Paired semantic-ID bootstrap, depth-stratified, both wordings and fixed three seeds kept together; not training-seed uncertainty."
+    },
+    "reread_no_energy": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "difference": 0.0,
+      "scope": "Paired semantic-ID bootstrap, depth-stratified, both wordings and fixed three seeds kept together; not training-seed uncertainty."
+    }
+  },
+  "protocol": "Same initialized tensors, per-seed batches, supervision, optimizer and updates. Structured head, not autoregressive output; predicted hop count selects decoded intermediate states and final answer. All annotation and symbolic solving restricted to training/scoring.",
+  "selected_demo_checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026/reread_energy_26103/best.pt",
+  "selected_demo_checkpoint_sha256": "7fc41b47cc92b7c9465475ce0b904e1647e76236cbc028b514187e67e6fa37a6",
+  "selected_demo_seed": 26103,
+  "test_sizes": {
+    "test": {
+      "identities": 480,
+      "prompts": 960
+    },
+    "test_distractors": {
+      "identities": 240,
+      "prompts": 480
+    },
+    "train": {
+      "identities": 6000,
+      "prompts": 6000
+    },
+    "valid": {
+      "identities": 180,
+      "prompts": 360
+    }
+  },
+  "training_cpu_total": 276.94814811200007,
+  "validation_cpu_total": 4.628503311999981
+}

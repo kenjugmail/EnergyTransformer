@@ -1,0 +1,572 @@
+[
+  {
+    "case": "control",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/micro/control/model.pt",
+    "checkpoint_sha256": "ebbcbc18b77be3c57665b104ad3f64c80b2b5d2ecab06f94c9f18f3e610061d2",
+    "config": {
+      "activation": "fourier",
+      "attention_weight": 0.04,
+      "auxiliary_hidden": 32,
+      "backtracks": 4,
+      "cache_history": true,
+      "communication_weight": 0.04,
+      "compatibility_geometry": "absolute",
+      "context_kernel": 1,
+      "coupled_modes": true,
+      "decoder_weight": 0.04,
+      "diffusion_levels": 3,
+      "diffusion_samples": 2,
+      "early_backtrack": true,
+      "frequency_bound": 2.0,
+      "halting_tolerance": 0.0,
+      "hidden": 677,
+      "history": 16,
+      "horizons": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "learned_frequencies": true,
+      "minimum_refinement_rounds": 1,
+      "modes": 32,
+      "normalize_frequency_blocks": true,
+      "output_geometry": "centered",
+      "recurrent_type": "mlp",
+      "rounds": 2,
+      "schedule": "all",
+      "specialist_weight": 0.02,
+      "specialists": 3,
+      "step_size": 0.25,
+      "support": false,
+      "width": 48
+    },
+    "energy_audit": {
+      "all_accepted_states_nonincreasing": true,
+      "fraction_rounds_decreasing": 1.0,
+      "maximum_accepted_energy_increase": -1.1474990844726562,
+      "mean_energy_drop": 9.077224731445312,
+      "positions": 32,
+      "rounds": 2
+    },
+    "maximum_raw_gradient_norm": 2.23904870406456,
+    "parameters": 249989,
+    "semantic_weight": 1.0,
+    "summary": {
+      "all": {
+        "answer_correct": 1.0,
+        "both_correct": 1.0,
+        "count": 12,
+        "steps_correct": 1.0,
+        "valid_format": 1.0
+      },
+      "by_difficulty": {
+        "heldout_instance": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 12,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "recall": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "rules": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      },
+      "by_steps": {
+        "1": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 10,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "4": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 2,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      }
+    },
+    "training_cpu_seconds": 47.872144384,
+    "training_only_fixture": true,
+    "updates": 200
+  },
+  {
+    "case": "relative",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/micro/relative/model.pt",
+    "checkpoint_sha256": "b26005ea8658aef490633b6fdcf4a6322eb5d671fceb39f9633d6f0620452f98",
+    "config": {
+      "activation": "fourier",
+      "attention_weight": 0.04,
+      "auxiliary_hidden": 32,
+      "backtracks": 4,
+      "cache_history": true,
+      "communication_weight": 0.04,
+      "compatibility_geometry": "anchor_relative",
+      "context_kernel": 1,
+      "coupled_modes": true,
+      "decoder_weight": 0.04,
+      "diffusion_levels": 3,
+      "diffusion_samples": 2,
+      "early_backtrack": true,
+      "frequency_bound": 2.0,
+      "halting_tolerance": 0.0,
+      "hidden": 677,
+      "history": 16,
+      "horizons": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "learned_frequencies": true,
+      "minimum_refinement_rounds": 1,
+      "modes": 32,
+      "normalize_frequency_blocks": true,
+      "output_geometry": "centered",
+      "recurrent_type": "mlp",
+      "rounds": 2,
+      "schedule": "all",
+      "specialist_weight": 0.02,
+      "specialists": 3,
+      "step_size": 0.25,
+      "support": false,
+      "width": 48
+    },
+    "energy_audit": {
+      "all_accepted_states_nonincreasing": true,
+      "fraction_rounds_decreasing": 1.0,
+      "maximum_accepted_energy_increase": -0.0182744562625885,
+      "mean_energy_drop": 0.3508519232273102,
+      "positions": 32,
+      "rounds": 2
+    },
+    "maximum_raw_gradient_norm": 2.2313367062132,
+    "parameters": 249989,
+    "semantic_weight": 1.0,
+    "summary": {
+      "all": {
+        "answer_correct": 0.9166666666666666,
+        "both_correct": 0.9166666666666666,
+        "count": 12,
+        "steps_correct": 0.9166666666666666,
+        "valid_format": 1.0
+      },
+      "by_difficulty": {
+        "heldout_instance": {
+          "answer_correct": 0.9166666666666666,
+          "both_correct": 0.9166666666666666,
+          "count": 12,
+          "steps_correct": 0.9166666666666666,
+          "valid_format": 1.0
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "recall": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "rules": {
+          "answer_correct": 0.75,
+          "both_correct": 0.75,
+          "count": 4,
+          "steps_correct": 0.75,
+          "valid_format": 1.0
+        }
+      },
+      "by_steps": {
+        "1": {
+          "answer_correct": 0.9,
+          "both_correct": 0.9,
+          "count": 10,
+          "steps_correct": 0.9,
+          "valid_format": 1.0
+        },
+        "4": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 2,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      }
+    },
+    "training_cpu_seconds": 49.700548112,
+    "training_only_fixture": true,
+    "updates": 200
+  },
+  {
+    "case": "semantic",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/micro/semantic/model.pt",
+    "checkpoint_sha256": "cd8365c404c3a775cf140af0a6fd801509cabcd2183b606f3d346357a2333f57",
+    "config": {
+      "activation": "fourier",
+      "attention_weight": 0.04,
+      "auxiliary_hidden": 32,
+      "backtracks": 4,
+      "cache_history": true,
+      "communication_weight": 0.04,
+      "compatibility_geometry": "absolute",
+      "context_kernel": 1,
+      "coupled_modes": true,
+      "decoder_weight": 0.04,
+      "diffusion_levels": 3,
+      "diffusion_samples": 2,
+      "early_backtrack": true,
+      "frequency_bound": 2.0,
+      "halting_tolerance": 0.0,
+      "hidden": 677,
+      "history": 16,
+      "horizons": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "learned_frequencies": true,
+      "minimum_refinement_rounds": 1,
+      "modes": 32,
+      "normalize_frequency_blocks": true,
+      "output_geometry": "centered",
+      "recurrent_type": "mlp",
+      "rounds": 2,
+      "schedule": "all",
+      "specialist_weight": 0.02,
+      "specialists": 3,
+      "step_size": 0.25,
+      "support": false,
+      "width": 48
+    },
+    "energy_audit": {
+      "all_accepted_states_nonincreasing": true,
+      "fraction_rounds_decreasing": 1.0,
+      "maximum_accepted_energy_increase": -1.514190673828125,
+      "mean_energy_drop": 10.73358154296875,
+      "positions": 32,
+      "rounds": 2
+    },
+    "maximum_raw_gradient_norm": 2.9686421173116075,
+    "parameters": 249989,
+    "semantic_weight": 4.0,
+    "summary": {
+      "all": {
+        "answer_correct": 0.8333333333333334,
+        "both_correct": 0.8333333333333334,
+        "count": 12,
+        "steps_correct": 0.8333333333333334,
+        "valid_format": 1.0
+      },
+      "by_difficulty": {
+        "heldout_instance": {
+          "answer_correct": 0.8333333333333334,
+          "both_correct": 0.8333333333333334,
+          "count": 12,
+          "steps_correct": 0.8333333333333334,
+          "valid_format": 1.0
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "recall": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "rules": {
+          "answer_correct": 0.5,
+          "both_correct": 0.5,
+          "count": 4,
+          "steps_correct": 0.5,
+          "valid_format": 1.0
+        }
+      },
+      "by_steps": {
+        "1": {
+          "answer_correct": 0.8,
+          "both_correct": 0.8,
+          "count": 10,
+          "steps_correct": 0.8,
+          "valid_format": 1.0
+        },
+        "4": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 2,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      }
+    },
+    "training_cpu_seconds": 53.191352095999996,
+    "training_only_fixture": true,
+    "updates": 200
+  },
+  {
+    "case": "combined",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/micro/combined/model.pt",
+    "checkpoint_sha256": "58e3be5ad419555fa77939ff2ea2bdb55d664d71238c542180957a92f43e6698",
+    "config": {
+      "activation": "fourier",
+      "attention_weight": 0.04,
+      "auxiliary_hidden": 32,
+      "backtracks": 4,
+      "cache_history": true,
+      "communication_weight": 0.04,
+      "compatibility_geometry": "anchor_relative",
+      "context_kernel": 3,
+      "coupled_modes": true,
+      "decoder_weight": 0.04,
+      "diffusion_levels": 3,
+      "diffusion_samples": 2,
+      "early_backtrack": true,
+      "frequency_bound": 2.0,
+      "halting_tolerance": 0.0,
+      "hidden": 736,
+      "history": 128,
+      "horizons": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "learned_frequencies": true,
+      "minimum_refinement_rounds": 1,
+      "modes": 32,
+      "normalize_frequency_blocks": true,
+      "output_geometry": "centered",
+      "recurrent_type": "gru",
+      "rounds": 2,
+      "schedule": "all",
+      "specialist_weight": 0.02,
+      "specialists": 3,
+      "step_size": 0.25,
+      "support": false,
+      "width": 48
+    },
+    "energy_audit": {
+      "all_accepted_states_nonincreasing": true,
+      "fraction_rounds_decreasing": 1.0,
+      "maximum_accepted_energy_increase": -0.010657191276550293,
+      "mean_energy_drop": 0.29745596647262573,
+      "positions": 32,
+      "rounds": 2
+    },
+    "maximum_raw_gradient_norm": 2.293586027405149,
+    "parameters": 249952,
+    "semantic_weight": 4.0,
+    "summary": {
+      "all": {
+        "answer_correct": 1.0,
+        "both_correct": 1.0,
+        "count": 12,
+        "steps_correct": 1.0,
+        "valid_format": 1.0
+      },
+      "by_difficulty": {
+        "heldout_instance": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 12,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "recall": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "rules": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      },
+      "by_steps": {
+        "1": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 10,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "4": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 2,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      }
+    },
+    "training_cpu_seconds": 53.691550992,
+    "training_only_fixture": true,
+    "updates": 200
+  },
+  {
+    "case": "memory",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/micro/memory/model.pt",
+    "checkpoint_sha256": "b56b40242ddab73b0686e0b4db5182c827a2aa3ec656356b7b829734c963924c",
+    "config": {
+      "activation": "fourier",
+      "attention_weight": 0.04,
+      "auxiliary_hidden": 32,
+      "backtracks": 4,
+      "cache_history": true,
+      "communication_weight": 0.04,
+      "compatibility_geometry": "absolute",
+      "context_kernel": 3,
+      "coupled_modes": true,
+      "decoder_weight": 0.04,
+      "diffusion_levels": 3,
+      "diffusion_samples": 2,
+      "early_backtrack": true,
+      "frequency_bound": 2.0,
+      "halting_tolerance": 0.0,
+      "hidden": 736,
+      "history": 128,
+      "horizons": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "learned_frequencies": true,
+      "minimum_refinement_rounds": 1,
+      "modes": 32,
+      "normalize_frequency_blocks": true,
+      "output_geometry": "centered",
+      "recurrent_type": "gru",
+      "rounds": 2,
+      "schedule": "all",
+      "specialist_weight": 0.02,
+      "specialists": 3,
+      "step_size": 0.25,
+      "support": false,
+      "width": 48
+    },
+    "energy_audit": {
+      "all_accepted_states_nonincreasing": true,
+      "fraction_rounds_decreasing": 1.0,
+      "maximum_accepted_energy_increase": -0.11826229095458984,
+      "mean_energy_drop": 1.255838394165039,
+      "positions": 32,
+      "rounds": 2
+    },
+    "maximum_raw_gradient_norm": 2.7260137798888473,
+    "parameters": 249952,
+    "semantic_weight": 1.0,
+    "summary": {
+      "all": {
+        "answer_correct": 1.0,
+        "both_correct": 1.0,
+        "count": 12,
+        "steps_correct": 1.0,
+        "valid_format": 1.0
+      },
+      "by_difficulty": {
+        "heldout_instance": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 12,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      },
+      "by_family": {
+        "arithmetic": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "recall": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "rules": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 4,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      },
+      "by_steps": {
+        "1": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 10,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        },
+        "4": {
+          "answer_correct": 1.0,
+          "both_correct": 1.0,
+          "count": 2,
+          "steps_correct": 1.0,
+          "valid_format": 1.0
+        }
+      }
+    },
+    "training_cpu_seconds": 55.448486016,
+    "training_only_fixture": true,
+    "updates": 200
+  }
+]

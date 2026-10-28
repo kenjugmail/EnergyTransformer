@@ -1,0 +1,39 @@
+{
+  "teacher": "LiquidAI/LFM3-1.7B",
+  "revision": "40ebe0aa6662c9d40389c2f5d565b6a2c6aebacd",
+  "rows": [
+    {
+      "prompt": "Reply with exactly the word hello.",
+      "token_ids": [
+        52071,
+        124900
+      ],
+      "response": "hello"
+    },
+    {
+      "prompt": "Extract the name and city as JSON with keys name and city. Text: Maya lives in Boston. Return only JSON.",
+      "token_ids": [
+        2718,
+        229,
+        496,
+        2554,
+        6380,
+        496,
+        53,
+        8450,
+        6107,
+        229,
+        496,
+        47749,
+        6380,
+        496,
+        42,
+        10312,
+        1110,
+        101,
+        124900
+      ],
+      "response": "{\n  \"name\": \"Maya\",\n  \"city\": \"Boston\"\n}"
+    }
+  ]
+}

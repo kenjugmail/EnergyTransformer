@@ -1,0 +1,9 @@
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: energy-transformer-research
+  Building wheel for energy-transformer-research (pyproject.toml): started
+  Building wheel for energy-transformer-research (pyproject.toml): finished with status 'done'
+  Created wheel for energy-transformer-research: filename=energy_transformer_research-0.16.0-py3-none-any.whl size=154372 sha256=768cb2773c1d847166a85b0e66a5ffc1cffe49102b246573574a011c5d25da4a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-qj3itwda/wheels/fe/37/ec/1bb00c38e7d0795101071f069abb486c169c407356dbdb36c0
+Successfully built energy-transformer-research

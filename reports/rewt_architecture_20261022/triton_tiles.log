@@ -1,0 +1,90 @@
+{
+  "checks": 52,
+  "max_abs": 3.5762786865234375e-07,
+  "resources": [
+    {
+      "modes": 5,
+      "tile": 64,
+      "registers": 36,
+      "spills": 8,
+      "shared_bytes": 1024
+    },
+    {
+      "modes": 5,
+      "tile": 128,
+      "registers": 31,
+      "spills": 8,
+      "shared_bytes": 2048
+    },
+    {
+      "modes": 5,
+      "tile": 256,
+      "registers": 38,
+      "spills": 8,
+      "shared_bytes": 2048
+    },
+    {
+      "modes": 16,
+      "tile": 64,
+      "registers": 37,
+      "spills": 8,
+      "shared_bytes": 1024
+    },
+    {
+      "modes": 16,
+      "tile": 128,
+      "registers": 40,
+      "spills": 8,
+      "shared_bytes": 2048
+    },
+    {
+      "modes": 16,
+      "tile": 256,
+      "registers": 56,
+      "spills": 8,
+      "shared_bytes": 2048
+    },
+    {
+      "modes": 32,
+      "tile": 64,
+      "registers": 40,
+      "spills": 8,
+      "shared_bytes": 1024
+    },
+    {
+      "modes": 32,
+      "tile": 128,
+      "registers": 56,
+      "spills": 8,
+      "shared_bytes": 2048
+    },
+    {
+      "modes": 32,
+      "tile": 256,
+      "registers": 85,
+      "spills": 8,
+      "shared_bytes": 2048
+    },
+    {
+      "modes": 64,
+      "tile": 64,
+      "registers": 72,
+      "spills": 8,
+      "shared_bytes": 1024
+    },
+    {
+      "modes": 64,
+      "tile": 128,
+      "registers": 94,
+      "spills": 8,
+      "shared_bytes": 2048
+    },
+    {
+      "modes": 64,
+      "tile": 256,
+      "registers": 159,
+      "spills": 8,
+      "shared_bytes": 2048
+    }
+  ]
+}

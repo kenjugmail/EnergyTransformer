@@ -1,0 +1,191 @@
+[
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 101,
+    "variant": "fourier_rewt"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 101,
+    "variant": "fourier_rewt"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 101,
+    "variant": "full_rewt"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 101,
+    "variant": "legacy_fourier"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 101,
+    "variant": "legacy_fourier"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 101,
+    "variant": "neural_energy"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 101,
+    "variant": "neural_energy"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 101,
+    "variant": "transformer"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 101,
+    "variant": "transformer"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 202,
+    "variant": "fourier_rewt"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 202,
+    "variant": "fourier_rewt"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 202,
+    "variant": "full_rewt"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 202,
+    "variant": "legacy_fourier"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 202,
+    "variant": "legacy_fourier"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 202,
+    "variant": "neural_energy"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 202,
+    "variant": "neural_energy"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 202,
+    "variant": "transformer"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 202,
+    "variant": "transformer"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 303,
+    "variant": "fourier_rewt"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 303,
+    "variant": "fourier_rewt"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 303,
+    "variant": "full_rewt"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 303,
+    "variant": "legacy_fourier"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 303,
+    "variant": "legacy_fourier"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 303,
+    "variant": "neural_energy"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 303,
+    "variant": "neural_energy"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "language",
+    "positions": 16,
+    "seed": 303,
+    "variant": "transformer"
+  },
+  {
+    "exact_logits_equal": true,
+    "phase": "reasoning",
+    "positions": 16,
+    "seed": 303,
+    "variant": "transformer"
+  }
+]

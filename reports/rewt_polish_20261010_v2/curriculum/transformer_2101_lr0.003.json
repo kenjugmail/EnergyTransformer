@@ -1,0 +1,22 @@
+{
+  "auxiliary_parameters": 21222,
+  "best_step": 2048,
+  "best_validation_macro": 0.16666666666666666,
+  "case": {
+    "family": "transformer",
+    "heads": 4,
+    "learning_rate": 0.003,
+    "name": "transformer_2101_lr0.003",
+    "seed": 2101,
+    "warm": false
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_polish_20261010_v2/curriculum/transformer_2101_lr0.003/best.pt",
+  "checkpoint_sha256": "07464c74b25964b56f75596684d3b4363668a2f301aabe3a7fbea757f5cff9d2",
+  "initial_validation": null,
+  "maximum_raw_gradient_norm": 349.95609110960356,
+  "parameters": 256240,
+  "processed_response_tokens": 788492,
+  "test_not_evaluated": true,
+  "training_cpu_seconds": 258.5608223040007,
+  "validation_cpu_seconds": 125.76295012800003
+}

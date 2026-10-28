@@ -1,0 +1,37 @@
+{
+  "coarse_to_fine": {
+    "allocated_trainable_parameters": 249929,
+    "inactive_direction_coordinates": 0,
+    "functional_parameter_count": 249929
+  },
+  "fixed_frequencies": {
+    "allocated_trainable_parameters": 243529,
+    "inactive_direction_coordinates": 0,
+    "functional_parameter_count": 243529
+  },
+  "gradient_clip": {
+    "allocated_trainable_parameters": 249929,
+    "inactive_direction_coordinates": 0,
+    "functional_parameter_count": 249929
+  },
+  "gradient_ema": {
+    "allocated_trainable_parameters": 249929,
+    "inactive_direction_coordinates": 0,
+    "functional_parameter_count": 249929
+  },
+  "gradient_fourier": {
+    "allocated_trainable_parameters": 249929,
+    "inactive_direction_coordinates": 0,
+    "functional_parameter_count": 249929
+  },
+  "gradient_none": {
+    "allocated_trainable_parameters": 249929,
+    "inactive_direction_coordinates": 0,
+    "functional_parameter_count": 249929
+  },
+  "separate_block_modes": {
+    "allocated_trainable_parameters": 249929,
+    "inactive_direction_coordinates": 4800,
+    "functional_parameter_count": 245129
+  }
+}

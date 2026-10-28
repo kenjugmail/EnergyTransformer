@@ -1,0 +1,24 @@
+{
+  "ablation_family": "delta_binding",
+  "case": {
+    "delta_size": 16,
+    "name": "delta_22201",
+    "seed": 22201
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/binding_memory/delta_22201/best.pt",
+  "checkpoint_sha256": "73cf5b61603b46c8e1aab66137e91ffc226f252e488e59f647dbfdcb172d8271",
+  "parameters": 34321,
+  "test": {
+    "accuracy": 0.9505208333333334,
+    "groups": {
+      "16/False": 0.953125,
+      "16/True": 1.0,
+      "32/False": 0.9375,
+      "32/True": 1.0,
+      "64/False": 0.8125,
+      "64/True": 1.0
+    }
+  },
+  "training_cpu_seconds": 73.05429028800032,
+  "validation_accuracy": 0.9921875
+}

@@ -1,0 +1,869 @@
+{
+  "task": {
+    "control": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.345679012345679,
+      "test_min": 0.3395061728395061,
+      "test_max": 0.3580246913580247,
+      "test_values": [
+        0.3395061728395061,
+        0.3580246913580247,
+        0.3395061728395061
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 804.7848982613331,
+      "validation_mean": 0.3415637860082304
+    },
+    "certified": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.33127572016460904,
+      "test_min": 0.3117283950617284,
+      "test_max": 0.3487654320987654,
+      "test_values": [
+        0.3117283950617284,
+        0.3487654320987654,
+        0.3333333333333333
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 724.7588166346687,
+      "validation_mean": 0.33539094650205764
+    },
+    "precond2": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.3497942386831276,
+      "test_min": 0.33024691358024694,
+      "test_max": 0.3734567901234568,
+      "test_values": [
+        0.33024691358024694,
+        0.345679012345679,
+        0.3734567901234568
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 681.7839522613334,
+      "validation_mean": 0.3436213991769548
+    },
+    "precond4": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.345679012345679,
+      "test_min": 0.3395061728395061,
+      "test_max": 0.3580246913580247,
+      "test_values": [
+        0.3395061728395061,
+        0.3580246913580247,
+        0.3395061728395061
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 719.216331669331,
+      "validation_mean": 0.3436213991769547
+    },
+    "precond8": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.3436213991769547,
+      "test_min": 0.3395061728395061,
+      "test_max": 0.345679012345679,
+      "test_values": [
+        0.345679012345679,
+        0.345679012345679,
+        0.3395061728395061
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 860.0758914346669,
+      "validation_mean": 0.3415637860082304
+    },
+    "scan": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.34465020576131683,
+      "test_min": 0.3333333333333333,
+      "test_max": 0.35185185185185186,
+      "test_values": [
+        0.3487654320987654,
+        0.35185185185185186,
+        0.3333333333333333
+      ],
+      "parameters": 246688,
+      "training_cpu_mean": 166.3313291039975,
+      "validation_mean": 0.345679012345679
+    },
+    "feedback8": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.35185185185185186,
+      "test_min": 0.345679012345679,
+      "test_max": 0.3611111111111111,
+      "test_values": [
+        0.3487654320987654,
+        0.345679012345679,
+        0.3611111111111111
+      ],
+      "parameters": 249040,
+      "training_cpu_mean": 213.27715669333097,
+      "validation_mean": 0.3374485596707819
+    },
+    "delta": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.35699588477366256,
+      "test_min": 0.3487654320987654,
+      "test_max": 0.36419753086419754,
+      "test_values": [
+        0.3487654320987654,
+        0.36419753086419754,
+        0.3580246913580247
+      ],
+      "parameters": 257537,
+      "training_cpu_mean": 183.05101921066912,
+      "validation_mean": 0.35390946502057613
+    },
+    "patch4": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.3580246913580247,
+      "test_min": 0.35185185185185186,
+      "test_max": 0.36419753086419754,
+      "test_values": [
+        0.35185185185185186,
+        0.3580246913580247,
+        0.36419753086419754
+      ],
+      "parameters": 246688,
+      "training_cpu_mean": 151.7165637493381,
+      "validation_mean": 0.3497942386831276
+    },
+    "diversity": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.35390946502057613,
+      "test_min": 0.3487654320987654,
+      "test_max": 0.3611111111111111,
+      "test_values": [
+        0.3487654320987654,
+        0.35185185185185186,
+        0.3611111111111111
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 657.6172373280002,
+      "validation_mean": 0.3415637860082304
+    },
+    "hybrid_modes": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.3395061728395061,
+      "test_min": 0.3333333333333333,
+      "test_max": 0.3487654320987654,
+      "test_values": [
+        0.33641975308641975,
+        0.3487654320987654,
+        0.3333333333333333
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 813.9533450613338,
+      "validation_mean": 0.3415637860082304
+    },
+    "lowrank16": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.3395061728395061,
+      "test_min": 0.33641975308641975,
+      "test_max": 0.3425925925925926,
+      "test_values": [
+        0.3425925925925926,
+        0.3395061728395061,
+        0.33641975308641975
+      ],
+      "parameters": 208800,
+      "training_cpu_mean": 201.54134076800983,
+      "validation_mean": 0.35185185185185186
+    },
+    "combined": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.352880658436214,
+      "test_min": 0.3487654320987654,
+      "test_max": 0.3580246913580247,
+      "test_values": [
+        0.3487654320987654,
+        0.35185185185185186,
+        0.3580246913580247
+      ],
+      "parameters": 259889,
+      "training_cpu_mean": 247.22506438399887,
+      "validation_mean": 0.36008230452674894
+    }
+  },
+  "paired_task_deltas": {
+    "control": {
+      "mean_delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "seed_deltas": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "certified": {
+      "mean_delta": -0.01440329218106996,
+      "ci95": [
+        -0.024691358024691357,
+        -0.00511831275720202
+      ],
+      "seed_deltas": [
+        -0.027777777777777776,
+        -0.009259259259259259,
+        -0.006172839506172839
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "precond2": {
+      "mean_delta": 0.004115226337448559,
+      "ci95": [
+        -0.008230452674897118,
+        0.016460905349794237
+      ],
+      "seed_deltas": [
+        -0.009259259259259259,
+        -0.012345679012345678,
+        0.033950617283950615
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "precond4": {
+      "mean_delta": 0.0,
+      "ci95": [
+        -0.010288065843621397,
+        0.010313786008230078
+      ],
+      "seed_deltas": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "precond8": {
+      "mean_delta": -0.0020576131687242796,
+      "ci95": [
+        -0.011316872427983538,
+        0.008230452674897118
+      ],
+      "seed_deltas": [
+        0.006172839506172839,
+        -0.012345679012345678,
+        0.0
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "scan": {
+      "mean_delta": -0.0010288065843621398,
+      "ci95": [
+        -0.011316872427983538,
+        0.009259259259259259
+      ],
+      "seed_deltas": [
+        0.009259259259259259,
+        -0.006172839506172839,
+        -0.006172839506172839
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "feedback8": {
+      "mean_delta": 0.006172839506172839,
+      "ci95": [
+        -0.0051440329218107,
+        0.01954732510288066
+      ],
+      "seed_deltas": [
+        0.009259259259259259,
+        -0.012345679012345678,
+        0.021604938271604937
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "delta": {
+      "mean_delta": 0.011316872427983538,
+      "ci95": [
+        -0.00205761316872428,
+        0.024691358024691357
+      ],
+      "seed_deltas": [
+        0.009259259259259259,
+        0.006172839506172839,
+        0.018518518518518517
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "patch4": {
+      "mean_delta": 0.012345679012345678,
+      "ci95": [
+        -0.0010288065843621398,
+        0.026748971193415638
+      ],
+      "seed_deltas": [
+        0.012345679012345678,
+        0.0,
+        0.024691358024691357
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "diversity": {
+      "mean_delta": 0.008230452674897118,
+      "ci95": [
+        -0.0030864197530864196,
+        0.019547325102880656
+      ],
+      "seed_deltas": [
+        0.009259259259259259,
+        -0.006172839506172839,
+        0.021604938271604937
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "hybrid_modes": {
+      "mean_delta": -0.006172839506172839,
+      "ci95": [
+        -0.014403292181069957,
+        0.0
+      ],
+      "seed_deltas": [
+        -0.0030864197530864196,
+        -0.009259259259259259,
+        -0.006172839506172839
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "lowrank16": {
+      "mean_delta": -0.006172839506172839,
+      "ci95": [
+        -0.015432098765432098,
+        0.00205761316872428
+      ],
+      "seed_deltas": [
+        0.0030864197530864196,
+        -0.018518518518518517,
+        -0.0030864197530864196
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    },
+    "combined": {
+      "mean_delta": 0.00720164609053498,
+      "ci95": [
+        -0.0030864197530864196,
+        0.017489711934156375
+      ],
+      "seed_deltas": [
+        0.009259259259259259,
+        -0.006172839506172839,
+        0.018518518518518517
+      ],
+      "method": "5000 paired semantic-ID bootstrap samples stratified by family/depth, conditional on the three trained seeds; both wording variants stay together. Does not estimate training-seed population uncertainty."
+    }
+  },
+  "language": {
+    "control": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 2.0824874245700897,
+      "test_min": 2.080087421375214,
+      "test_max": 2.0864360693749835,
+      "test_values": [
+        2.080087421375214,
+        2.0864360693749835,
+        2.080938782960072
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 695.2461463573331,
+      "validation_mean": 2.0882976308092296
+    },
+    "precond4": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 2.081723660384171,
+      "test_min": 2.078866840467303,
+      "test_max": 2.086147449118158,
+      "test_values": [
+        2.078866840467303,
+        2.086147449118158,
+        2.0801566915670526
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 695.8488751360018,
+      "validation_mean": 2.0873533265489885
+    },
+    "scan": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 2.093288220439834,
+      "test_min": 2.0835125214272616,
+      "test_max": 2.098418504532551,
+      "test_values": [
+        2.098418504532551,
+        2.0979336353596896,
+        2.0835125214272616
+      ],
+      "parameters": 246688,
+      "training_cpu_mean": 92.85685591999724,
+      "validation_mean": 2.1012668409512534
+    },
+    "feedback8": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 2.093281148207094,
+      "test_min": 2.083519471724954,
+      "test_max": 2.098382112463451,
+      "test_values": [
+        2.098382112463451,
+        2.0979418604328766,
+        2.083519471724954
+      ],
+      "parameters": 249040,
+      "training_cpu_mean": 125.31952778133275,
+      "validation_mean": 2.1012397442254187
+    },
+    "delta": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 2.064968765072525,
+      "test_min": 2.060004563904156,
+      "test_max": 2.0691027807092395,
+      "test_values": [
+        2.065798950604178,
+        2.0691027807092395,
+        2.060004563904156
+      ],
+      "parameters": 257537,
+      "training_cpu_mean": 112.26173075733504,
+      "validation_mean": 2.072958836021437
+    },
+    "patch4": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 2.093549168830938,
+      "test_min": 2.083873360487068,
+      "test_max": 2.0987242622060167,
+      "test_values": [
+        2.0987242622060167,
+        2.09804988379973,
+        2.083873360487068
+      ],
+      "parameters": 246688,
+      "training_cpu_mean": 91.22078364800473,
+      "validation_mean": 2.1015591454949365
+    },
+    "lowrank16": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 2.278168418886253,
+      "test_min": 2.264465417397056,
+      "test_max": 2.2877954827712377,
+      "test_values": [
+        2.2822443564904664,
+        2.2877954827712377,
+        2.264465417397056
+      ],
+      "parameters": 208800,
+      "training_cpu_mean": 92.75213405333125,
+      "validation_mean": 2.2882895147018476
+    },
+    "combined": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 2.0672238613962564,
+      "test_min": 2.0573489959352624,
+      "test_max": 2.0763334846707595,
+      "test_values": [
+        2.0763334846707595,
+        2.067989103582748,
+        2.0573489959352624
+      ],
+      "parameters": 259889,
+      "training_cpu_mean": 166.0235414186703,
+      "validation_mean": 2.074886843846686
+    }
+  },
+  "memory_initial": {
+    "local": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.5416666666666666,
+      "test_min": 0.5104166666666666,
+      "test_max": 0.5625,
+      "test_values": [
+        0.5520833333333334,
+        0.5625,
+        0.5104166666666666
+      ],
+      "parameters": 32752,
+      "training_cpu_mean": 29.427959829333293,
+      "validation_mean": 0.5260416666666666
+    },
+    "delta": {
+      "seeds": [
+        22101,
+        22102,
+        22103
+      ],
+      "test_mean": 0.3446180555555556,
+      "test_min": 0.2760416666666667,
+      "test_max": 0.4036458333333333,
+      "test_values": [
+        0.4036458333333333,
+        0.3541666666666667,
+        0.2760416666666667
+      ],
+      "parameters": 34321,
+      "training_cpu_mean": 38.22946818666689,
+      "validation_mean": 0.4348958333333333
+    }
+  },
+  "memory_binding": {
+    "local": {
+      "seeds": [
+        22201,
+        22202,
+        22203
+      ],
+      "test_mean": 0.5477430555555557,
+      "test_min": 0.5442708333333334,
+      "test_max": 0.5520833333333334,
+      "test_values": [
+        0.546875,
+        0.5520833333333334,
+        0.5442708333333334
+      ],
+      "parameters": 32752,
+      "training_cpu_mean": 54.62678251733346,
+      "validation_mean": 0.5512152777777777
+    },
+    "delta": {
+      "seeds": [
+        22201,
+        22202,
+        22203
+      ],
+      "test_mean": 0.9600694444444443,
+      "test_min": 0.9479166666666666,
+      "test_max": 0.9713541666666666,
+      "test_values": [
+        0.9609375,
+        0.9479166666666666,
+        0.9713541666666666
+      ],
+      "parameters": 34321,
+      "training_cpu_mean": 73.79619462933344,
+      "validation_mean": 0.9947916666666666
+    }
+  },
+  "memory_ablation": {
+    "local_response": {
+      "seeds": [
+        22201,
+        22202,
+        22203
+      ],
+      "test_mean": 0.546875,
+      "test_min": 0.5390625,
+      "test_max": 0.5520833333333334,
+      "test_values": [
+        0.5390625,
+        0.5520833333333334,
+        0.5494791666666666
+      ],
+      "parameters": 32752,
+      "training_cpu_mean": 48.78584440533313,
+      "validation_mean": 0.548611111111111
+    },
+    "delta_response": {
+      "seeds": [
+        22201,
+        22202,
+        22203
+      ],
+      "test_mean": 0.3767361111111111,
+      "test_min": 0.3411458333333333,
+      "test_max": 0.4479166666666667,
+      "test_values": [
+        0.4479166666666667,
+        0.3411458333333333,
+        0.3411458333333333
+      ],
+      "parameters": 34321,
+      "training_cpu_mean": 63.627997039999315,
+      "validation_mean": 0.5980902777777778
+    },
+    "local_binding": {
+      "seeds": [
+        22201,
+        22202,
+        22203
+      ],
+      "test_mean": 0.5494791666666666,
+      "test_min": 0.5390625,
+      "test_max": 0.5625,
+      "test_values": [
+        0.5625,
+        0.546875,
+        0.5390625
+      ],
+      "parameters": 32752,
+      "training_cpu_mean": 54.62678251733346,
+      "validation_mean": 0.5512152777777777
+    },
+    "delta_binding": {
+      "seeds": [
+        22201,
+        22202,
+        22203
+      ],
+      "test_mean": 0.9574652777777778,
+      "test_min": 0.9427083333333334,
+      "test_max": 0.9791666666666666,
+      "test_values": [
+        0.9505208333333334,
+        0.9427083333333334,
+        0.9791666666666666
+      ],
+      "parameters": 34321,
+      "training_cpu_mean": 73.79619462933344,
+      "validation_mean": 0.9947916666666666
+    }
+  },
+  "memory_ablation_groups": {
+    "local_response": {
+      "16/False": 0.125,
+      "16/True": 0.9791666666666666,
+      "32/False": 0.09375,
+      "32/True": 0.9895833333333334,
+      "64/False": 0.09375,
+      "64/True": 1.0
+    },
+    "delta_response": {
+      "16/False": 0.16145833333333334,
+      "16/True": 0.7604166666666666,
+      "32/False": 0.125,
+      "32/True": 0.59375,
+      "64/False": 0.125,
+      "64/True": 0.4947916666666667
+    },
+    "local_binding": {
+      "16/False": 0.07291666666666667,
+      "16/True": 1.0,
+      "32/False": 0.13020833333333334,
+      "32/True": 1.0,
+      "64/False": 0.09375,
+      "64/True": 1.0
+    },
+    "delta_binding": {
+      "16/False": 0.9739583333333334,
+      "16/True": 1.0,
+      "32/False": 0.9322916666666666,
+      "32/True": 1.0,
+      "64/False": 0.8385416666666666,
+      "64/True": 1.0
+    }
+  },
+  "equal_compute": {
+    "precond2": {
+      "seeds": [
+        22301,
+        22302,
+        22303
+      ],
+      "test_mean": 2.885569341487251,
+      "test_min": 2.856414342140172,
+      "test_max": 2.909589022723398,
+      "test_values": [
+        2.856414342140172,
+        2.8907046595981822,
+        2.909589022723398
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 150.56473562666676,
+      "validation_mean": 2.867397205206544,
+      "mean_updates": 117.0,
+      "training_cpu_max": 150.979451136
+    },
+    "control": {
+      "seeds": [
+        22301,
+        22302,
+        22303
+      ],
+      "test_mean": 2.906660166029198,
+      "test_min": 2.8885386159753166,
+      "test_max": 2.930648096826241,
+      "test_values": [
+        2.8885386159753166,
+        2.9007937852860355,
+        2.930648096826241
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 150.35536162666665,
+      "validation_mean": 2.8884441304576165,
+      "mean_updates": 112.66666666666667,
+      "training_cpu_max": 150.65327640000004
+    },
+    "precond4": {
+      "seeds": [
+        22301,
+        22302,
+        22303
+      ],
+      "test_mean": 2.9138208568191843,
+      "test_min": 2.9057594740818216,
+      "test_max": 2.9289447264548834,
+      "test_values": [
+        2.9057594740818216,
+        2.906758369920848,
+        2.9289447264548834
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 150.39113796799987,
+      "validation_mean": 2.89550056886095,
+      "mean_updates": 111.66666666666667,
+      "training_cpu_max": 150.66698590399977
+    },
+    "precond8": {
+      "seeds": [
+        22301,
+        22302,
+        22303
+      ],
+      "test_mean": 2.954480138417044,
+      "test_min": 2.9361500977946076,
+      "test_max": 2.973660617499712,
+      "test_values": [
+        2.9361500977946076,
+        2.953629699956813,
+        2.973660617499712
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 150.53377942933335,
+      "validation_mean": 2.9356101996943216,
+      "mean_updates": 104.66666666666667,
+      "training_cpu_max": 150.95851350399994
+    },
+    "precond4_structured": {
+      "seeds": [
+        22301,
+        22302,
+        22303
+      ],
+      "test_mean": 2.8738969304711155,
+      "test_min": 2.8611689461333127,
+      "test_max": 2.8935164099526234,
+      "test_values": [
+        2.8670054353274104,
+        2.8611689461333127,
+        2.8935164099526234
+      ],
+      "parameters": 256096,
+      "training_cpu_mean": 150.58892442133336,
+      "validation_mean": 2.8563554631732657,
+      "mean_updates": 118.33333333333333,
+      "training_cpu_max": 150.60718776000027
+    }
+  },
+  "total_new_fits": 96,
+  "memory_binding_groups": {
+    "local": {
+      "16/False": 0.10416666666666667,
+      "16/True": 1.0,
+      "32/False": 0.07291666666666667,
+      "32/True": 1.0,
+      "64/False": 0.109375,
+      "64/True": 1.0
+    },
+    "delta": {
+      "16/False": 0.984375,
+      "16/True": 1.0,
+      "32/False": 0.9479166666666666,
+      "32/True": 1.0,
+      "64/False": 0.828125,
+      "64/True": 1.0
+    }
+  },
+  "selected_task_variant_by_validation": "combined",
+  "selected_language_variant_by_validation": "delta",
+  "caveats": [
+    "Cold small-model screening, not broad language or reasoning capability.",
+    "Changed architectures differ in parameter count and compute. All preregistered seeds included.",
+    "CPU training times reflect concurrent single-thread runs on the shared machine; use pinned alternating execution benchmarks separately.",
+    "The first memory follow-up changes supervision and update budget. The subsequent 2x2 ablation holds seeds, batches and 1536 updates fixed and uses a third fresh test set.",
+    "GPU measurements used a busy shared device; correctness established, uncontended speedups undetermined."
+  ]
+}

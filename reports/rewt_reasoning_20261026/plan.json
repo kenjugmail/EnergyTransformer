@@ -1,0 +1,263 @@
+{
+  "batch_size": 64,
+  "cases": [
+    {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_energy_26101",
+      "seed": 26101,
+      "variant": "reread_energy"
+    },
+    {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_energy_26102",
+      "seed": 26102,
+      "variant": "reread_energy"
+    },
+    {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_energy_26103",
+      "seed": 26103,
+      "variant": "reread_energy"
+    },
+    {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": false,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "fixed_query_energy_26101",
+      "seed": 26101,
+      "variant": "fixed_query_energy"
+    },
+    {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": false,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "fixed_query_energy_26102",
+      "seed": 26102,
+      "variant": "fixed_query_energy"
+    },
+    {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 2,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": false,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "fixed_query_energy_26103",
+      "seed": 26103,
+      "variant": "fixed_query_energy"
+    },
+    {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 0,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_no_energy_26101",
+      "seed": 26101,
+      "variant": "reread_no_energy"
+    },
+    {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 0,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_no_energy_26102",
+      "seed": 26102,
+      "variant": "reread_no_energy"
+    },
+    {
+      "config": {
+        "backtracks": 4,
+        "energy_rounds": 0,
+        "max_hops": 3,
+        "modes": 16,
+        "reread": true,
+        "step_size": 0.5,
+        "width": 48
+      },
+      "name": "reread_no_energy_26103",
+      "seed": 26103,
+      "variant": "reread_no_energy"
+    }
+  ],
+  "data_sha256": {
+    "test": "ebfe9981b5b723c7e41b95c9409e0dd5fc8f4ea5d434bea3e24e3ef8be2e9fd9",
+    "test_distractors": "57a1c00045a28dedf7310f43aa86424f7a1ade58ada7f7fe3aeabb41e2cec75b",
+    "train": "6815c2afb33837a6b58fba046910afd27498eac41c1659c0d4aa2c89f9eb33b0",
+    "valid": "aedc18a373930390f7963ff649520fefb8b2138e1a356073e195008daeb485db"
+  },
+  "excluded_previous_test_identities": 2954,
+  "learning_rate": 0.003,
+  "limitations": "Narrow acyclic letter-rule grammar, at most three hops, 24 node symbols. Two training distractor edges; eight only in extra test. Same allocated parameters but zero-energy arm has unused energy-only parameters. Equal updates, not compute. No Transformer-superiority or general-language claim.",
+  "output": "/home/kt/Documents/EnergyTransformer/reports/rewt_reasoning_20261026",
+  "previous_tests": [
+    {
+      "identities": 162,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_architecture_20261022/tasks_test.jsonl",
+      "sha256": "73b9a6a903b3bf3cca63f66f93312dbe61996259e9370a443bcc306b065626c1"
+    },
+    {
+      "identities": 300,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_improvements_20261009/tasks_test.jsonl",
+      "sha256": "3116cdb277d0d8e04c9d1579f96c45ef8c93daea59b51979af281e63b1008b21"
+    },
+    {
+      "identities": 434,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_learning_20261010/foundation/tasks_test.jsonl",
+      "sha256": "ca5b556bb7b622022f5d4d7e20bbb745071bc5cebd3357e3fd4f20ff9e3020f9"
+    },
+    {
+      "identities": 1394,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_learning_20261010/multistep/tasks_test.jsonl",
+      "sha256": "1b21eaa8c4bff27054c5c98bf62ccd2feb2e6e38e3ca086f33e4c6fb14c6c4a8"
+    },
+    {
+      "identities": 1394,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_learning_20261010/multistep_balanced/tasks_test.jsonl",
+      "sha256": "1b21eaa8c4bff27054c5c98bf62ccd2feb2e6e38e3ca086f33e4c6fb14c6c4a8"
+    },
+    {
+      "identities": 1394,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_learning_20261010/multistep_huber/tasks_test.jsonl",
+      "sha256": "1b21eaa8c4bff27054c5c98bf62ccd2feb2e6e38e3ca086f33e4c6fb14c6c4a8"
+    },
+    {
+      "identities": 1394,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_learning_20261010/multistep_position/tasks_test.jsonl",
+      "sha256": "1b21eaa8c4bff27054c5c98bf62ccd2feb2e6e38e3ca086f33e4c6fb14c6c4a8"
+    },
+    {
+      "identities": 960,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_learning_20261010/multistep_test/tasks_test.jsonl",
+      "sha256": "1d7c094e55510af542541665dd53370c5c52129cfec3ea817cd800ab0ceb4c3a"
+    },
+    {
+      "identities": 150,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_pilot_20261009/tasks_test.jsonl",
+      "sha256": "db8a7550c9ed72e9fda10a79a30a4b614a1ec73b8cab4f320590bb164e0c1d05"
+    },
+    {
+      "identities": 150,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_pilot_20261009_v2/tasks_test.jsonl",
+      "sha256": "db8a7550c9ed72e9fda10a79a30a4b614a1ec73b8cab4f320590bb164e0c1d05"
+    },
+    {
+      "identities": 648,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_polish_20261010_v2/curriculum/tasks_test.jsonl",
+      "sha256": "f1e04e8107dfbd713b7f30dd27071fecde37fc13a7a57253cfe12d93656caf25"
+    },
+    {
+      "identities": 648,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_polish_20261010_v2/termination/tasks_test.jsonl",
+      "sha256": "f1e04e8107dfbd713b7f30dd27071fecde37fc13a7a57253cfe12d93656caf25"
+    },
+    {
+      "identities": 648,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_polish_20261010_v2/test/tasks_test.jsonl",
+      "sha256": "f1e04e8107dfbd713b7f30dd27071fecde37fc13a7a57253cfe12d93656caf25"
+    },
+    {
+      "identities": 300,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_stabilized_20261009/baseline_supplement/tasks_test.jsonl",
+      "sha256": "48d80da9fe2700a991b56e0dfeb9ccfc8cfb9040ebc9e2aeeb6301d565f40a55"
+    },
+    {
+      "identities": 300,
+      "path": "/home/kt/Documents/EnergyTransformer/reports/rewt_stabilized_20261009/tasks_test.jsonl",
+      "sha256": "48d80da9fe2700a991b56e0dfeb9ccfc8cfb9040ebc9e2aeeb6301d565f40a55"
+    }
+  ],
+  "protocol": "Same initialized tensors, per-seed batches, supervision, optimizer and updates. Structured head, not autoregressive output; predicted hop count selects decoded intermediate states and final answer. All annotation and symbolic solving restricted to training/scoring.",
+  "runs": "/home/kt/Documents/EnergyTransformer/runs/rewt_reasoning_20261026",
+  "seeds": [
+    26101,
+    26102,
+    26103
+  ],
+  "selection": "Per-seed highest validation complete trace+answer accuracy; lower final-answer CE breaks ties. All arms reported. Fresh test once all fits are finished.",
+  "sizes": {
+    "test": {
+      "identities": 480,
+      "prompts": 960
+    },
+    "test_distractors": {
+      "identities": 240,
+      "prompts": 480
+    },
+    "train": {
+      "identities": 6000,
+      "prompts": 6000
+    },
+    "valid": {
+      "identities": 180,
+      "prompts": 360
+    }
+  },
+  "source_sha256": {
+    "/home/kt/Documents/EnergyTransformer/rewt/curriculum.py": "e33541936ad1d401d2f7999513f2bdb00fba39cebe5530b3c6d9932da49064d1",
+    "/home/kt/Documents/EnergyTransformer/rewt/reasoning.py": "a0728becd72f387dccf83c50cdc5df0ba51e65d148abf1a15ee1c3a90bc676bc",
+    "/home/kt/Documents/EnergyTransformer/rewt/tasks.py": "88f5972e3e69f1ee21cd9cd0f7a86265a249e00556ceb4435df625a26b10b71a",
+    "/home/kt/Documents/EnergyTransformer/scripts/study_rewt_reasoning.py": "a9098b9c4bf1d81ee77c617171fb6d73bbe404c419b49acd773cc94826342e0e"
+  },
+  "supervision": {
+    "count": 1.0,
+    "final": 1.0,
+    "gate": 0.5,
+    "key": 1.0,
+    "pointer": 0.5,
+    "start": 1.0,
+    "trace": 1.0,
+    "value": 1.0
+  },
+  "test_not_evaluated": true,
+  "updates": 800,
+  "validation_every": 200
+}

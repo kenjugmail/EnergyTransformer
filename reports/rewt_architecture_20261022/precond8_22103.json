@@ -1,0 +1,24 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 512,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "precond8_22103",
+    "overrides": {
+      "rounds": 8,
+      "solver": "preconditioned",
+      "step_size": 0.75
+    },
+    "seed": 22103,
+    "variant": "precond8"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/precond8_22103/best.pt",
+  "checkpoint_sha256": "45364bdb4c343726c033fc4153c91178f5051d9bb49b9fe534bccb1b082c251d",
+  "maximum_gradient": 248.04373168945312,
+  "parameters": 256096,
+  "response_tokens": 396391,
+  "training_cpu_seconds": 878.673805519994,
+  "validation_ce": 0.5140552260880934,
+  "validation_complete": 0.3395061728395061,
+  "validation_cpu_seconds": 18.96051367999962
+}

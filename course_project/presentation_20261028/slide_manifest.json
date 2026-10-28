@@ -1,0 +1,88 @@
+{
+  "main_slides": 12,
+  "appendix_slides": 3,
+  "planned_seconds": 600,
+  "editable": true,
+  "slides": [
+    {
+      "slide": 1,
+      "title": "REWT: compact memory and state refinement",
+      "seconds": 25
+    },
+    {
+      "slide": 2,
+      "title": "Remember a fact through distractions",
+      "seconds": 45
+    },
+    {
+      "slide": 3,
+      "title": "Energy is a learned compatibility score",
+      "seconds": 45
+    },
+    {
+      "slide": 4,
+      "title": "The original joint-energy proposal",
+      "seconds": 50
+    },
+    {
+      "slide": 5,
+      "title": "Training and inference optimize different things",
+      "seconds": 45
+    },
+    {
+      "slide": 6,
+      "title": "Separate numerical behavior, quality and cost",
+      "seconds": 40
+    },
+    {
+      "slide": 7,
+      "title": "Small streaming recall results",
+      "seconds": 65
+    },
+    {
+      "slide": 8,
+      "title": "Same-weight decoding speed",
+      "seconds": 45
+    },
+    {
+      "slide": 9,
+      "title": "LFM3 architecture conversion",
+      "seconds": 65
+    },
+    {
+      "slide": 10,
+      "title": "Recovery results and checkpoint choice",
+      "seconds": 75
+    },
+    {
+      "slide": 11,
+      "title": "What has and has not recovered",
+      "seconds": 50
+    },
+    {
+      "slide": 12,
+      "title": "Make refinement earn its cost",
+      "seconds": 50
+    },
+    {
+      "slide": 13,
+      "title": "Appendix A: energy math",
+      "seconds": 0
+    },
+    {
+      "slide": 14,
+      "title": "Appendix B: controls and negative results",
+      "seconds": 0
+    },
+    {
+      "slide": 15,
+      "title": "Appendix C: sources and project contribution",
+      "seconds": 0
+    }
+  ],
+  "source_results": [
+    "reports/rewt_streaming_20261026/FINDINGS.md",
+    "reports/rewt_decode_speed_20261027/FINDINGS.md",
+    "reports/lfm3_capability_recovery_20261028/FINDINGS.md"
+  ]
+}

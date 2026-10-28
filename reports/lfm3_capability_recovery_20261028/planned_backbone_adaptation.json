@@ -1,0 +1,16 @@
+{
+  "initial": "runs/lfm3_capability_recovery_20261028/stage2/best.pt",
+  "output": "runs/lfm3_capability_recovery_20261028/stage3",
+  "steps": 512,
+  "length": 512,
+  "batch": 2,
+  "lr": 1e-05,
+  "ffn_layers": 24,
+  "inherited_lr_scale": 0.5,
+  "seed": 281713,
+  "validation_seed": 281810,
+  "reason": "First-pass generation and science evaluations showed only limited recovery. Let all inherited feedforward blocks adapt to the changed mixer distribution while freezing lexical embeddings.",
+  "selection": "Within-run checkpoint selection remains fixed validation KL. Stage 3 validation exactly repeats stage 1 crop settings, with a fresh training RNG.",
+  "optimizer": "Fresh AdamW with FP32 parameters/states and foreach=False. Expected greater memory use; check available RAM before launch.",
+  "limitation": "Motivated exploratory continuation, not an independent preregistered experiment."
+}

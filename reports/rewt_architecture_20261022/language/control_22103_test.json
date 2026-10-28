@@ -1,0 +1,23 @@
+{
+  "best_step": 512,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "control_22103",
+    "overrides": {},
+    "seed": 22103,
+    "variant": "control"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/language/control_22103/best.pt",
+  "checkpoint_sha256": "997f2b49eb5b56fc122deb4d4cec9f19f39ec863557bcae0dbc60f6adf5a3a53",
+  "parameters": 256096,
+  "test": {
+    "bpb": 2.080938782960072,
+    "original_bytes": 63549,
+    "token_accuracy": 0.323699951171875,
+    "token_nll": 2.7973290234804153,
+    "tokens": 32768
+  },
+  "training_cpu_seconds": 691.9920176320006,
+  "validation_bpb": 2.0889198130373035,
+  "validation_cpu_seconds": 6.53563513600011
+}

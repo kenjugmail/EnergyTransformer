@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "presentation": {
+    "id": "11p2zXD7gTftP4EZXtRqXL948wSRPqkao5pTgoINKgVQ",
+    "title": "REWT — Compact Memory, Energy Refinement and LFM3 Recovery | October 28, 2026",
+    "revisionId": "qPHs9ezgOxwI6Q",
+    "slideCount": 15
+  },
+  "snapshotSha256": "343078f79ccff04e587a85245e9792219c269b4b4c160c9382d2d579233b1ca2",
+  "summary": {
+    "totalIssues": 0,
+    "reportedIssues": 0,
+    "truncated": false,
+    "bySeverity": {},
+    "byCode": {}
+  },
+  "issues": []
+}

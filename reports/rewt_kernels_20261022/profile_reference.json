@@ -1,0 +1,408 @@
+{
+  "prefill": {
+    "batch": 24,
+    "length": 16,
+    "stages": [
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "total_us": 37857.965,
+        "self_us": 2539.3910000000615
+      },
+      {
+        "name": "rewt::observed_bank",
+        "calls": 1,
+        "total_us": 2567.8379999999997,
+        "self_us": 374.304000000001
+      },
+      {
+        "name": "rewt::retrieve",
+        "calls": 16,
+        "total_us": 789.0879999999988,
+        "self_us": 317.4879999999739
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 16,
+        "total_us": 8138.540999999999,
+        "self_us": 1060.335999999972
+      },
+      {
+        "name": "rewt::energy",
+        "calls": 64,
+        "total_us": 10639.879999999997,
+        "self_us": 2853.390999999914
+      },
+      {
+        "name": "rewt::gradient",
+        "calls": 32,
+        "total_us": 9150.571999999993,
+        "self_us": 2166.462999999935
+      }
+    ],
+    "operators": [
+      {
+        "name": "aten::addmm",
+        "calls": 208,
+        "self_us": 7532.010999999996
+      },
+      {
+        "name": "aten::mm",
+        "calls": 178,
+        "self_us": 5434.398000000043
+      },
+      {
+        "name": "rewt::energy",
+        "calls": 64,
+        "self_us": 2853.390999999914
+      },
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "self_us": 2539.3910000000615
+      },
+      {
+        "name": "rewt::gradient",
+        "calls": 32,
+        "self_us": 2166.462999999935
+      },
+      {
+        "name": "aten::cat",
+        "calls": 435,
+        "self_us": 1318.320000000005
+      },
+      {
+        "name": "aten::slice",
+        "calls": 2295,
+        "self_us": 1151.6800000000687
+      },
+      {
+        "name": "aten::sum",
+        "calls": 738,
+        "self_us": 1095.2799999999813
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 16,
+        "self_us": 1060.335999999972
+      },
+      {
+        "name": "aten::sub",
+        "calls": 1089,
+        "self_us": 1033.359000000096
+      },
+      {
+        "name": "aten::mkldnn_convolution",
+        "calls": 1,
+        "self_us": 990.7999999999988
+      },
+      {
+        "name": "aten::mul",
+        "calls": 806,
+        "self_us": 801.6959999999908
+      },
+      {
+        "name": "aten::_to_copy",
+        "calls": 997,
+        "self_us": 727.118999999966
+      },
+      {
+        "name": "aten::copy_",
+        "calls": 1240,
+        "self_us": 650.0149999999386
+      },
+      {
+        "name": "aten::tanh",
+        "calls": 33,
+        "self_us": 565.7279999999964
+      }
+    ],
+    "cost": {
+      "gradient_calls": 32,
+      "energy_calls": 64,
+      "accepted": 0,
+      "attempts": 768
+    }
+  },
+  "training": {
+    "batch": 24,
+    "length": 16,
+    "stages": [
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "total_us": 47532.837999999996,
+        "self_us": 2943.663000000124
+      },
+      {
+        "name": "rewt::observed_bank",
+        "calls": 1,
+        "total_us": 1403.487,
+        "self_us": 197.53499999999985
+      },
+      {
+        "name": "rewt::retrieve",
+        "calls": 16,
+        "total_us": 1299.7269999999871,
+        "self_us": 445.1359999999877
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 16,
+        "total_us": 10672.380000000012,
+        "self_us": 1282.5120000000043
+      },
+      {
+        "name": "rewt::energy",
+        "calls": 64,
+        "total_us": 14497.448999999997,
+        "self_us": 3347.4239999998726
+      },
+      {
+        "name": "rewt::gradient",
+        "calls": 32,
+        "total_us": 12550.011000000002,
+        "self_us": 2214.655000000049
+      },
+      {
+        "name": "rewt::backward",
+        "calls": 1,
+        "total_us": 53097.268,
+        "self_us": 9257.400999999976
+      }
+    ],
+    "operators": [
+      {
+        "name": "aten::mm",
+        "calls": 693,
+        "self_us": 20693.87499999997
+      },
+      {
+        "name": "aten::addmm",
+        "calls": 208,
+        "self_us": 9487.30899999989
+      },
+      {
+        "name": "rewt::backward",
+        "calls": 1,
+        "self_us": 9257.400999999976
+      },
+      {
+        "name": "aten::mul",
+        "calls": 1538,
+        "self_us": 3434.6709999999366
+      },
+      {
+        "name": "rewt::energy",
+        "calls": 64,
+        "self_us": 3347.4239999998726
+      },
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "self_us": 2943.663000000124
+      },
+      {
+        "name": "aten::add_",
+        "calls": 1628,
+        "self_us": 2748.158999999805
+      },
+      {
+        "name": "aten::slice",
+        "calls": 3645,
+        "self_us": 2725.4210000002026
+      },
+      {
+        "name": "rewt::gradient",
+        "calls": 32,
+        "self_us": 2214.655000000049
+      },
+      {
+        "name": "aten::cat",
+        "calls": 467,
+        "self_us": 1955.9499999999332
+      },
+      {
+        "name": "aten::sub",
+        "calls": 1089,
+        "self_us": 1907.7759999999666
+      },
+      {
+        "name": "aten::sum",
+        "calls": 1189,
+        "self_us": 1855.6949999999076
+      },
+      {
+        "name": "aten::convolution_backward",
+        "calls": 1,
+        "self_us": 1803.6469999999972
+      },
+      {
+        "name": "autograd::engine::evaluate_function: SubBackward0",
+        "calls": 577,
+        "self_us": 1700.208000000217
+      },
+      {
+        "name": "aten::copy_",
+        "calls": 2773,
+        "self_us": 1633.6640000000261
+      }
+    ],
+    "cost": {
+      "gradient_calls": 32,
+      "energy_calls": 64,
+      "accepted": 0,
+      "attempts": 768
+    }
+  },
+  "decode": {
+    "batch": 1,
+    "length": 1,
+    "stages": [
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "total_us": 4010.655,
+        "self_us": 2007.520000000001
+      },
+      {
+        "name": "rewt::observed_bank",
+        "calls": 1,
+        "total_us": 252.46399999999994,
+        "self_us": 81.26400000000012
+      },
+      {
+        "name": "rewt::retrieve",
+        "calls": 1,
+        "total_us": 45.903999999999996,
+        "self_us": 23.264000000000465
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 1,
+        "total_us": 408.144,
+        "self_us": 75.18399999999997
+      },
+      {
+        "name": "rewt::energy",
+        "calls": 4,
+        "total_us": 575.8390000000002,
+        "self_us": 167.34400000000278
+      },
+      {
+        "name": "rewt::gradient",
+        "calls": 2,
+        "total_us": 336.75199999999995,
+        "self_us": 134.95999999999935
+      }
+    ],
+    "operators": [
+      {
+        "name": "rewt::forward",
+        "calls": 1,
+        "self_us": 2007.520000000001
+      },
+      {
+        "name": "aten::addmm",
+        "calls": 13,
+        "self_us": 380.23999999999955
+      },
+      {
+        "name": "aten::mm",
+        "calls": 13,
+        "self_us": 254.32000000000153
+      },
+      {
+        "name": "rewt::energy",
+        "calls": 4,
+        "self_us": 167.34400000000278
+      },
+      {
+        "name": "rewt::gradient",
+        "calls": 2,
+        "self_us": 134.95999999999935
+      },
+      {
+        "name": "rewt::observed_bank",
+        "calls": 1,
+        "self_us": 81.26400000000012
+      },
+      {
+        "name": "rewt::condition",
+        "calls": 1,
+        "self_us": 75.18399999999997
+      },
+      {
+        "name": "aten::linear",
+        "calls": 22,
+        "self_us": 70.59100000000035
+      },
+      {
+        "name": "aten::slice",
+        "calls": 108,
+        "self_us": 61.42399999999793
+      },
+      {
+        "name": "aten::mul",
+        "calls": 56,
+        "self_us": 58.3839999999999
+      },
+      {
+        "name": "aten::_slow_conv2d_forward",
+        "calls": 1,
+        "self_us": 51.50400000000013
+      },
+      {
+        "name": "aten::sum",
+        "calls": 48,
+        "self_us": 50.095999999998526
+      },
+      {
+        "name": "aten::sub",
+        "calls": 69,
+        "self_us": 33.823999999998875
+      },
+      {
+        "name": "aten::div_",
+        "calls": 29,
+        "self_us": 32.70399999999995
+      },
+      {
+        "name": "aten::copy_",
+        "calls": 86,
+        "self_us": 27.67999999999961
+      }
+    ],
+    "cost": {
+      "gradient_calls": 2,
+      "energy_calls": 4,
+      "accepted": 0,
+      "attempts": 2
+    }
+  },
+  "scope": "CPU1 profiler attribution; timings include profiler overhead and are not benchmarks.",
+  "source_sha256": {
+    "optim.py": "82b9c97645921256f643cd797825b4705a07b749df14b0bca627b997a38d3279",
+    "decode.py": "c0a8abb8c9016e28c1573245b12529a489f7f32a97f580138ee058bd5b7ff838",
+    "experiment.py": "a37fb1dac93d215854be7231a3ed5ee947a29a8e28b5bb728e7255338b46127d",
+    "profile.py": "ccfe45180c62f4cebf73158aadd364d222e80083e5273b4aafa6f9668bcd19f5",
+    "position_memory.py": "94a08f38757ba5a69f0fed21919180d0eb3634ba0f11be885c89e1e7f41fdef2",
+    "memory.py": "092865ff6f64eea8ec9b9fa6f0866f41036c38de6d03a99e6f7814001217d920",
+    "improve_report.py": "8135a4be23a7cf6190d8e6ba44956cc17e61acfc62adde81dc33e349abc921b1",
+    "bpe.py": "33b305a464f1487c22037848bba542e6120fb790f6be67c8192828a8d3494b8e",
+    "story_data.py": "da4709e5fa11836b749b586afd39430749764ea52c706686e5c9c776c5de8f47",
+    "data.py": "ab4b434581188a681544cc679b2d9c589101f7bdaeb19461dd51771c64dab4b9",
+    "report.py": "9dd216247786dd9d12eaf0e227fb0b20a22aaa40aa9bc3e4c7f09b15feabbf71",
+    "curriculum.py": "e33541936ad1d401d2f7999513f2bdb00fba39cebe5530b3c6d9932da49064d1",
+    "tokenizer.py": "38b5b68d5913f577f55cb32b97fa2c2e81f4f26d9628fb09092c067ef51be2eb",
+    "kernels.py": "2504c7186acec630e9c6009ac3ef89b9c93485001aaa0d9cac9ac107ad58d074",
+    "model.py": "2cac4b05b3a64b2a6b4edf0e6845c18fe9ea37ad0cd334a2dd4eb391d18bd939",
+    "__init__.py": "cec12357813e592ad87c21229687e348a62d1c3deb7fae7c9275260b1ac0b2bc",
+    "evaluate.py": "398d5be602eaf598941b831e6cbcac499ee40c3e0df48879055307a0bc992e52",
+    "tasks.py": "88f5972e3e69f1ee21cd9cd0f7a86265a249e00556ceb4435df625a26b10b71a",
+    "improve.py": "6402abc8a9ada3cfa0fe784449edb5e6134bb472586c8a89d389783da9d3964f",
+    "stabilize.py": "253aafa0f6388a19fc65038ce3a0bcf0bbe7cb141b3e1a7987d87adcb4bf9eff"
+  },
+  "script_sha256": "51d52302770672d2f0e9525dac77eced0e01cc9409475c7cbf12318a81788537",
+  "checkpoint_sha256": "2b184d2c5213345ecde465b0cbb5a4da11b090d04eb8d6ba90f6309c0949b09d"
+}

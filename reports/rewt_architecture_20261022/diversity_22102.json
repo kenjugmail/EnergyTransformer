@@ -1,0 +1,20 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 768,
+  "case": {
+    "diversity_weight": 0.03,
+    "name": "diversity_22102",
+    "overrides": {},
+    "seed": 22102,
+    "variant": "diversity"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/diversity_22102/best.pt",
+  "checkpoint_sha256": "cdb2269653fcd27f397da52b8201e370a5391a7e92c310e83546b9122f524e54",
+  "maximum_gradient": 256.884521484375,
+  "parameters": 256096,
+  "response_tokens": 396210,
+  "training_cpu_seconds": 668.0202659519996,
+  "validation_ce": 0.4808490842297379,
+  "validation_complete": 0.35185185185185186,
+  "validation_cpu_seconds": 15.93836313600059
+}

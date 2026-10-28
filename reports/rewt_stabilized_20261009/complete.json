@@ -1,0 +1,11 @@
+{
+  "all_primary_fits_complete": true,
+  "completed": "2026-10-10T03:20:33.655677+00:00",
+  "restarted_fits": 3,
+  "reused_fits": 27,
+  "seeds": [
+    101,
+    202,
+    303
+  ]
+}

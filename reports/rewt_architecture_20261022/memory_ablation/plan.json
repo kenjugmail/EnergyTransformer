@@ -1,0 +1,139 @@
+{
+  "batch_size": 24,
+  "cases": [
+    {
+      "delta_size": 0,
+      "name": "local_response_22201",
+      "seed": 22201
+    },
+    {
+      "delta_size": 0,
+      "name": "local_response_22202",
+      "seed": 22202
+    },
+    {
+      "delta_size": 0,
+      "name": "local_response_22203",
+      "seed": 22203
+    },
+    {
+      "delta_size": 16,
+      "name": "delta_response_22201",
+      "seed": 22201
+    },
+    {
+      "delta_size": 16,
+      "name": "delta_response_22202",
+      "seed": 22202
+    },
+    {
+      "delta_size": 16,
+      "name": "delta_response_22203",
+      "seed": 22203
+    }
+  ],
+  "config": {
+    "activation": "fourier",
+    "attention_heads": 2,
+    "attention_weight": 0.04,
+    "auxiliary_hidden": 32,
+    "backbone": "scan",
+    "backtracks": 4,
+    "cache_history": false,
+    "communication_weight": 0.04,
+    "compatibility_geometry": "anchor_relative",
+    "context_kernel": 3,
+    "coupled_modes": true,
+    "decoder_weight": 0.04,
+    "delta_chunk_size": 32,
+    "delta_size": 0,
+    "diffusion_levels": 3,
+    "diffusion_samples": 2,
+    "early_backtrack": false,
+    "feedback_stride": 0,
+    "frequency_bound": 2.0,
+    "halting_tolerance": 0.0,
+    "hidden": 96,
+    "history": 16,
+    "horizons": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "initial_carry_scale": 0.0,
+    "learned_frequencies": true,
+    "minimum_refinement_rounds": 1,
+    "mode_layout": "shared",
+    "modes": 8,
+    "normalize_frequency_blocks": false,
+    "output_geometry": "centered",
+    "output_rank": 0,
+    "packed": true,
+    "packed_projections": false,
+    "patch_stride": 1,
+    "position_initial_scale": 0.02,
+    "position_period": 16,
+    "recurrent_type": "gru",
+    "refinement_backend": "reference",
+    "rounds": 2,
+    "schedule": "all",
+    "solver": "krylov2",
+    "specialist_weight": 0.02,
+    "specialists": 3,
+    "step_size": 0.25,
+    "support": false,
+    "wave_geometry": "anchor_relative",
+    "width": 16
+  },
+  "data_sha256": {
+    "test": "0b798e7d2d6de8c26ad6c9303a5893467ac3c4843db1b451e3846619d02a6b65",
+    "valid": "5801d7a6762b2acacce629df9a07bebd4b7c606a27e9f0f5a69ff26c46b00455"
+  },
+  "note": "Matched 1536 updates, seeds 22201/2/3, training batches, architecture, optimizer and validation selection. Response-only losses compared with the already-frozen binding/copy (and delta write-gate) supervision. A third test set is declared before any new fits or scores.",
+  "selection": "validation accuracy on balanced near/far overwrite queries",
+  "supervised_controls": [
+    {
+      "family": "local",
+      "seed": 22201,
+      "source": "/home/kt/Documents/EnergyTransformer/reports/rewt_architecture_20261022/binding_memory/local_22201.json"
+    },
+    {
+      "family": "local",
+      "seed": 22202,
+      "source": "/home/kt/Documents/EnergyTransformer/reports/rewt_architecture_20261022/binding_memory/local_22202.json"
+    },
+    {
+      "family": "local",
+      "seed": 22203,
+      "source": "/home/kt/Documents/EnergyTransformer/reports/rewt_architecture_20261022/binding_memory/local_22203.json"
+    },
+    {
+      "family": "delta",
+      "seed": 22201,
+      "source": "/home/kt/Documents/EnergyTransformer/reports/rewt_architecture_20261022/binding_memory/delta_22201.json"
+    },
+    {
+      "family": "delta",
+      "seed": 22202,
+      "source": "/home/kt/Documents/EnergyTransformer/reports/rewt_architecture_20261022/binding_memory/delta_22202.json"
+    },
+    {
+      "family": "delta",
+      "seed": 22203,
+      "source": "/home/kt/Documents/EnergyTransformer/reports/rewt_architecture_20261022/binding_memory/delta_22203.json"
+    }
+  ],
+  "test_records": [
+    16,
+    32,
+    64
+  ],
+  "train_records": [
+    8,
+    16,
+    24
+  ],
+  "updates": 1536,
+  "validation_every": 384
+}

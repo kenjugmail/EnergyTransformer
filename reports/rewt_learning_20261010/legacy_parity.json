@@ -1,0 +1,38 @@
+[
+  {
+    "arm": "fourier_rewt",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/fourier_rewt/language/best.pt",
+    "exact_logits_equal": true,
+    "phase": "training"
+  },
+  {
+    "arm": "fourier_rewt",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/fourier_rewt/reasoning/best.pt",
+    "exact_logits_equal": true,
+    "phase": "reasoning_training"
+  },
+  {
+    "arm": "neural_energy",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/neural_energy/language/best.pt",
+    "exact_logits_equal": true,
+    "phase": "training"
+  },
+  {
+    "arm": "neural_energy",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/neural_energy/reasoning/best.pt",
+    "exact_logits_equal": true,
+    "phase": "reasoning_training"
+  },
+  {
+    "arm": "full_rewt",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_improvements_20261009/seed_101/full_rewt/language/best.pt",
+    "exact_logits_equal": true,
+    "phase": "training"
+  },
+  {
+    "arm": "full_rewt",
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_stabilized_20261009/seed_101/full_rewt/reasoning/best.pt",
+    "exact_logits_equal": true,
+    "phase": "reasoning_training"
+  }
+]

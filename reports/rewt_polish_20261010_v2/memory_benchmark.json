@@ -1,0 +1,130 @@
+{
+  "batch": 24,
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_learning_20261010/multistep_balanced/progress/best.pt",
+  "checkpoint_sha256": "917f367430ca4dcf4f9b8c8a7ced5f9d0e38cd62d20fe953b430cbfeed446737",
+  "config": {
+    "activation": "fourier",
+    "attention_heads": 1,
+    "attention_weight": 0.04,
+    "auxiliary_hidden": 32,
+    "backtracks": 4,
+    "cache_history": false,
+    "communication_weight": 0.04,
+    "compatibility_geometry": "anchor_relative",
+    "context_kernel": 3,
+    "coupled_modes": true,
+    "decoder_weight": 0.04,
+    "diffusion_levels": 3,
+    "diffusion_samples": 2,
+    "early_backtrack": true,
+    "frequency_bound": 2.0,
+    "halting_tolerance": 0.0,
+    "hidden": 736,
+    "history": 128,
+    "horizons": [
+      1,
+      4,
+      16,
+      64
+    ],
+    "initial_carry_scale": 0.0,
+    "learned_frequencies": true,
+    "minimum_refinement_rounds": 1,
+    "modes": 32,
+    "normalize_frequency_blocks": true,
+    "output_geometry": "centered",
+    "position_initial_scale": 0.02,
+    "position_period": 128,
+    "recurrent_type": "gru",
+    "rounds": 2,
+    "schedule": "all",
+    "specialist_weight": 0.02,
+    "specialists": 3,
+    "step_size": 0.25,
+    "support": false,
+    "wave_geometry": "anchor_relative",
+    "width": 48
+  },
+  "context": 64,
+  "created": "2026-10-10T15:36:52.877637+00:00",
+  "identical_argmax": true,
+  "identical_energy_call_counts": true,
+  "maximum_logit_difference": 0.0,
+  "repeats": 5,
+  "scope": "CPU single-thread preserved-weight forward/backward; no optimizer updates, auxiliary losses or GPU speed claim.",
+  "script_sha256": "7f9d8bd8a071f45367762224519939db45c9564db98f166212211c4f3003322e",
+  "source_sha256": {
+    "__init__.py": "cec12357813e592ad87c21229687e348a62d1c3deb7fae7c9275260b1ac0b2bc",
+    "bpe.py": "33b305a464f1487c22037848bba542e6120fb790f6be67c8192828a8d3494b8e",
+    "data.py": "ab4b434581188a681544cc679b2d9c589101f7bdaeb19461dd51771c64dab4b9",
+    "evaluate.py": "398d5be602eaf598941b831e6cbcac499ee40c3e0df48879055307a0bc992e52",
+    "experiment.py": "a37fb1dac93d215854be7231a3ed5ee947a29a8e28b5bb728e7255338b46127d",
+    "improve.py": "6402abc8a9ada3cfa0fe784449edb5e6134bb472586c8a89d389783da9d3964f",
+    "improve_report.py": "8135a4be23a7cf6190d8e6ba44956cc17e61acfc62adde81dc33e349abc921b1",
+    "memory.py": "092865ff6f64eea8ec9b9fa6f0866f41036c38de6d03a99e6f7814001217d920",
+    "model.py": "18fb0d1cbb681a2bb72b560a1971d9f6bf289f5b98c4eb9a2c409f5be0716b98",
+    "optim.py": "82b9c97645921256f643cd797825b4705a07b749df14b0bca627b997a38d3279",
+    "position_memory.py": "fb58574cda6e5bffccf88da2edc9fd2693a89e92ff4b70a74d5c67b6a923b75a",
+    "profile.py": "ccfe45180c62f4cebf73158aadd364d222e80083e5273b4aafa6f9668bcd19f5",
+    "report.py": "9dd216247786dd9d12eaf0e227fb0b20a22aaa40aa9bc3e4c7f09b15feabbf71",
+    "stabilize.py": "253aafa0f6388a19fc65038ce3a0bcf0bbe7cb141b3e1a7987d87adcb4bf9eff",
+    "story_data.py": "da4709e5fa11836b749b586afd39430749764ea52c706686e5c9c776c5de8f47",
+    "tasks.py": "88f5972e3e69f1ee21cd9cd0f7a86265a249e00556ceb4435df625a26b10b71a",
+    "tokenizer.py": "38b5b68d5913f577f55cb32b97fa2c2e81f4f26d9628fb09092c067ef51be2eb"
+  },
+  "speedup": {
+    "forward": 2.0310387169348267,
+    "forward_backward": 1.7694710324844314
+  },
+  "timings": {
+    "forward": {
+      "cached": {
+        "cpu_seconds": [
+          0.10282177599999986,
+          0.10039816000000013,
+          0.11615391999999991,
+          0.12521950400000037,
+          0.09430560000000021
+        ],
+        "median_cpu_seconds": 0.10282177599999986
+      },
+      "uncached": {
+        "cpu_seconds": [
+          0.21498119999999998,
+          0.21632334399999964,
+          0.20487513600000007,
+          0.20883500799999988,
+          0.20408734399999995
+        ],
+        "median_cpu_seconds": 0.20883500799999988
+      }
+    },
+    "forward_backward": {
+      "cached": {
+        "cpu_seconds": [
+          0.4603711519999987,
+          0.4566634720000007,
+          0.4720005280000006,
+          0.4984512960000007,
+          0.4691315679999999
+        ],
+        "median_cpu_seconds": 0.4691315679999999
+      },
+      "uncached": {
+        "cpu_seconds": [
+          1.0471225760000005,
+          0.8301147200000001,
+          0.8344472000000005,
+          0.7729596320000001,
+          0.8125047040000002
+        ],
+        "median_cpu_seconds": 0.8301147200000001
+      }
+    }
+  },
+  "unchanged_weights": true,
+  "weight_hashes": {
+    "cached": "4ccd08d76d3a515ccfb065231af0a68238e66419d509afe18fc13176019ac445",
+    "uncached": "4ccd08d76d3a515ccfb065231af0a68238e66419d509afe18fc13176019ac445"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "locked_at": "2026-10-10T03:30:51.388257+00:00",
+  "reviewer_type": "assistant",
+  "reviewer": "Codex; also the implementation author",
+  "rubric_version": 1,
+  "case_count": 90,
+  "rated_count": 90,
+  "case_sha256": "06113a6c450af01625d2c6f863307b2a6b1998f827d7949ee897beecb3e0314b",
+  "batches_sha256": "4ab5ef76d56c08dab76f504760edb70255d99d8d9cdc9e491cce0eb36e0b0c71",
+  "process": "All supplemental prompts and continuations read and scored before opening the seed identity key; baseline family known",
+  "scope": "Exploratory assistant assessment; not an independent human evaluation"
+}

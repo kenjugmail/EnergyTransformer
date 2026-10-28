@@ -1,0 +1,10 @@
+{
+  "seed": 202,
+  "checkpoint_step": 340,
+  "requested_until_step": 400,
+  "temporary_directory": "/tmp/rewt_wide_norm_replay_202__kqoxw5f",
+  "repair": "Float64 gradient norm and spectral-power reductions; unchanged forward model and training recipe",
+  "outcome": "FloatingPointError: Non-finite gradient component",
+  "nonfinite_elements": 832,
+  "norm_fp64": "nonfinite"
+}

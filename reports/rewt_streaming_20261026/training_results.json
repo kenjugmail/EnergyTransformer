@@ -1,0 +1,1202 @@
+[
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "869ce1ce37c3823db6238d7cfb7127bbe855ec4054cb0581692e0f4590bec238",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 0
+      },
+      "name": "language_transformer_26301",
+      "objective": "language",
+      "seed": 26301,
+      "variant": "transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_transformer_26301/best.pt",
+    "checkpoint_sha256": "9adbb28d13ca6f71cc717cdf051cdac7b7695c889512bc0163ba299bec0af190",
+    "parameters": 111680,
+    "selection": [
+      -1.634805928306628
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 35.687673535999984,
+    "training_wall_seconds": 35.39292542566545,
+    "updates": 768,
+    "validation_cpu_seconds": 0.3120604800000013
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "869ce1ce37c3823db6238d7cfb7127bbe855ec4054cb0581692e0f4590bec238",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "language_window_transformer_26301",
+      "objective": "language",
+      "seed": 26301,
+      "variant": "window_transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_window_transformer_26301/best.pt",
+    "checkpoint_sha256": "7a14ec4e4bb3fd5957abf077c8e1667b6e2ee7026c3d250518430d84b1a24bc9",
+    "parameters": 111680,
+    "selection": [
+      -1.620272502833216
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 36.81035411199993,
+    "training_wall_seconds": 36.46928111836314,
+    "updates": 768,
+    "validation_cpu_seconds": 0.3352072000000046
+  },
+  {
+    "active_parameters": 109656,
+    "batch_sha256": "869ce1ce37c3823db6238d7cfb7127bbe855ec4054cb0581692e0f4590bec238",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "language_hybrid_26301",
+      "objective": "language",
+      "seed": 26301,
+      "variant": "hybrid"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_26301/best.pt",
+    "checkpoint_sha256": "d8164e0bf59b018da503b5eeeb3917e8c200a2ea6d62058b21088a175033e010",
+    "parameters": 111784,
+    "selection": [
+      -1.589960164066551
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 46.630192784000016,
+    "training_wall_seconds": 45.94102369202301,
+    "updates": 768,
+    "validation_cpu_seconds": 0.35972732799999996
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "7aa0dbd2d333d71710b489059faeb6771853fe5e9e45f529563d5a7b1a23f687",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 0
+      },
+      "name": "language_transformer_26302",
+      "objective": "language",
+      "seed": 26302,
+      "variant": "transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_transformer_26302/best.pt",
+    "checkpoint_sha256": "3411ebb0cf0e3bb943f186462a81c73c0fb9497ac3a7bc849c6446c1f9315fd1",
+    "parameters": 111680,
+    "selection": [
+      -1.6222712135305992
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 35.74816192000016,
+    "training_wall_seconds": 35.275178796378896,
+    "updates": 768,
+    "validation_cpu_seconds": 0.31392115200000603
+  },
+  {
+    "active_parameters": 111784,
+    "batch_sha256": "869ce1ce37c3823db6238d7cfb7127bbe855ec4054cb0581692e0f4590bec238",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 2,
+        "width": 64,
+        "window": 64
+      },
+      "name": "language_hybrid_energy_26301",
+      "objective": "language",
+      "seed": 26301,
+      "variant": "hybrid_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_energy_26301/best.pt",
+    "checkpoint_sha256": "690d9161c88be402c4ac62fd0b3bf96f88850897530af780e2124dbc60fb25c7",
+    "parameters": 111784,
+    "selection": [
+      -1.6018371668372418
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 45.339716703999926,
+    "training_wall_seconds": 44.742819280712865,
+    "updates": 768,
+    "validation_cpu_seconds": 0.36952731199999533
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "7aa0dbd2d333d71710b489059faeb6771853fe5e9e45f529563d5a7b1a23f687",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "language_window_transformer_26302",
+      "objective": "language",
+      "seed": 26302,
+      "variant": "window_transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_window_transformer_26302/best.pt",
+    "checkpoint_sha256": "8be3ef64034ae8d42d0203516fba165ed53164621c7f978e48fb4cf356e1f9ee",
+    "parameters": 111680,
+    "selection": [
+      -1.6274080110266462
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 38.547621696000085,
+    "training_wall_seconds": 37.846085338969715,
+    "updates": 768,
+    "validation_cpu_seconds": 0.34217860799999755
+  },
+  {
+    "active_parameters": 109656,
+    "batch_sha256": "7aa0dbd2d333d71710b489059faeb6771853fe5e9e45f529563d5a7b1a23f687",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "language_hybrid_26302",
+      "objective": "language",
+      "seed": 26302,
+      "variant": "hybrid"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_26302/best.pt",
+    "checkpoint_sha256": "5c964448167139ae4f0e877dd1a271c6e045d7e4151101c617435bf5d9cc004a",
+    "parameters": 111784,
+    "selection": [
+      -1.6046827722291537
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 45.070773599999825,
+    "training_wall_seconds": 44.45883145532571,
+    "updates": 768,
+    "validation_cpu_seconds": 0.3609777920000141
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "ae2d962c9f086b2432d62c3f6c4c40b422a5edd31e91622469ce7ca74af891db",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 0
+      },
+      "name": "language_transformer_26303",
+      "objective": "language",
+      "seed": 26303,
+      "variant": "transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_transformer_26303/best.pt",
+    "checkpoint_sha256": "1ac9f217ed498385dc15daab4a52687e67188c9cfca2789752ef7aec121863c6",
+    "parameters": 111680,
+    "selection": [
+      -1.6403774386421999
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 42.116597264000134,
+    "training_wall_seconds": 41.64334371406585,
+    "updates": 768,
+    "validation_cpu_seconds": 0.37309681600000033
+  },
+  {
+    "active_parameters": 111784,
+    "batch_sha256": "7aa0dbd2d333d71710b489059faeb6771853fe5e9e45f529563d5a7b1a23f687",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 2,
+        "width": 64,
+        "window": 64
+      },
+      "name": "language_hybrid_energy_26302",
+      "objective": "language",
+      "seed": 26302,
+      "variant": "hybrid_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_energy_26302/best.pt",
+    "checkpoint_sha256": "4dfe185dbc65655bf688e42dcee41215c9978dd085d59b5655f91ea05ef86ebb",
+    "parameters": 111784,
+    "selection": [
+      -1.5938058768942271
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 55.8116740320001,
+    "training_wall_seconds": 55.29231131810229,
+    "updates": 768,
+    "validation_cpu_seconds": 0.6397270559999839
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "ae2d962c9f086b2432d62c3f6c4c40b422a5edd31e91622469ce7ca74af891db",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "language_window_transformer_26303",
+      "objective": "language",
+      "seed": 26303,
+      "variant": "window_transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_window_transformer_26303/best.pt",
+    "checkpoint_sha256": "6f447e9c5a4a798523da3bc215704c98ef57e127ac0e81cc8211ceeb617cea60",
+    "parameters": 111680,
+    "selection": [
+      -1.6293874028071174
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 53.64400540800071,
+    "training_wall_seconds": 53.513408401980996,
+    "updates": 768,
+    "validation_cpu_seconds": 0.41694817600000533
+  },
+  {
+    "active_parameters": 109656,
+    "batch_sha256": "ae2d962c9f086b2432d62c3f6c4c40b422a5edd31e91622469ce7ca74af891db",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "language_hybrid_26303",
+      "objective": "language",
+      "seed": 26303,
+      "variant": "hybrid"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_26303/best.pt",
+    "checkpoint_sha256": "5357ef6e0dbd99f8656dbe0ce6aa4b0778451da3e8f73fe89380a9ee69cec820",
+    "parameters": 111784,
+    "selection": [
+      -1.5920818784418644
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 82.05555628799951,
+    "training_wall_seconds": 81.95455989462789,
+    "updates": 768,
+    "validation_cpu_seconds": 0.6076569760000154
+  },
+  {
+    "active_parameters": 111784,
+    "batch_sha256": "ae2d962c9f086b2432d62c3f6c4c40b422a5edd31e91622469ce7ca74af891db",
+    "best_step": 768,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 2,
+        "width": 64,
+        "window": 64
+      },
+      "name": "language_hybrid_energy_26303",
+      "objective": "language",
+      "seed": 26303,
+      "variant": "hybrid_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/language_hybrid_energy_26303/best.pt",
+    "checkpoint_sha256": "6690ff8398b7fd33bb7cb013000d36699b5f1efe99dbdfa41166bdc0adb84c38",
+    "parameters": 111784,
+    "selection": [
+      -1.5964002424135402
+    ],
+    "target_tokens": 2359296,
+    "training_cpu_seconds": 79.69644113599989,
+    "training_wall_seconds": 79.59483952040318,
+    "updates": 768,
+    "validation_cpu_seconds": 0.5275345119999884
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "f47bd9c9b72bfe07c8821cfb2576662c0d61023b91d5f6003abe96ab49be70c4",
+    "best_step": 1152,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 0
+      },
+      "name": "tasks_transformer_26301",
+      "objective": "tasks",
+      "seed": 26301,
+      "variant": "transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_transformer_26301/best.pt",
+    "checkpoint_sha256": "6df0f763e6d64ec939c17df064f6b9f1fef5bd8a993672222162ac257ca5f2b0",
+    "parameters": 111680,
+    "selection": [
+      0.3148148148148148,
+      -0.41180271983146666
+    ],
+    "target_tokens": 923161,
+    "training_cpu_seconds": 138.01310135999975,
+    "training_wall_seconds": 138.32361541688442,
+    "updates": 1536,
+    "validation_cpu_seconds": 2.6626705120000054
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "f47bd9c9b72bfe07c8821cfb2576662c0d61023b91d5f6003abe96ab49be70c4",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "tasks_window_transformer_26301",
+      "objective": "tasks",
+      "seed": 26301,
+      "variant": "window_transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_window_transformer_26301/best.pt",
+    "checkpoint_sha256": "79468db90d224a19bd1a7eeb12766e9b16a17fdbd7507600727f4cd976b0d177",
+    "parameters": 111680,
+    "selection": [
+      0.35648148148148145,
+      -0.3621875590748257
+    ],
+    "target_tokens": 923161,
+    "training_cpu_seconds": 139.37764923200078,
+    "training_wall_seconds": 141.741121674655,
+    "updates": 1536,
+    "validation_cpu_seconds": 2.6906888000000038
+  },
+  {
+    "active_parameters": 109656,
+    "batch_sha256": "f47bd9c9b72bfe07c8821cfb2576662c0d61023b91d5f6003abe96ab49be70c4",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "tasks_hybrid_26301",
+      "objective": "tasks",
+      "seed": 26301,
+      "variant": "hybrid"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_hybrid_26301/best.pt",
+    "checkpoint_sha256": "62e49844a7e5bb9e48677f6702776033959f801ea5debba587cf8e659439ce77",
+    "parameters": 111784,
+    "selection": [
+      0.39814814814814814,
+      -0.2640831220895052
+    ],
+    "target_tokens": 923161,
+    "training_cpu_seconds": 167.09044676800067,
+    "training_wall_seconds": 170.48069090151694,
+    "updates": 1536,
+    "validation_cpu_seconds": 3.809078528000043
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "ada7a37909b7e62a566829b2d3d61cfc196976d5e3c8ad37ae8019f070171e61",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 0
+      },
+      "name": "tasks_transformer_26302",
+      "objective": "tasks",
+      "seed": 26302,
+      "variant": "transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_transformer_26302/best.pt",
+    "checkpoint_sha256": "008405b39bd9b9c3b73b0639b571f50e932263c9c5e7e8174196d4f0918bc7be",
+    "parameters": 111680,
+    "selection": [
+      0.3055555555555556,
+      -0.4113550525241428
+    ],
+    "target_tokens": 923553,
+    "training_cpu_seconds": 109.9450126399999,
+    "training_wall_seconds": 114.40560613549314,
+    "updates": 1536,
+    "validation_cpu_seconds": 2.450139696000008
+  },
+  {
+    "active_parameters": 111784,
+    "batch_sha256": "f47bd9c9b72bfe07c8821cfb2576662c0d61023b91d5f6003abe96ab49be70c4",
+    "best_step": 1152,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 2,
+        "width": 64,
+        "window": 64
+      },
+      "name": "tasks_hybrid_energy_26301",
+      "objective": "tasks",
+      "seed": 26301,
+      "variant": "hybrid_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_hybrid_energy_26301/best.pt",
+    "checkpoint_sha256": "94674d315e3261c1c0941daa89fa36f75b21081b6e734611fb7c4dfff4a77c76",
+    "parameters": 111784,
+    "selection": [
+      0.37962962962962965,
+      -0.29569092341595227
+    ],
+    "target_tokens": 923161,
+    "training_cpu_seconds": 169.61563392000016,
+    "training_wall_seconds": 174.4467058578739,
+    "updates": 1536,
+    "validation_cpu_seconds": 4.396542255999975
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "ada7a37909b7e62a566829b2d3d61cfc196976d5e3c8ad37ae8019f070171e61",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "tasks_window_transformer_26302",
+      "objective": "tasks",
+      "seed": 26302,
+      "variant": "window_transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_window_transformer_26302/best.pt",
+    "checkpoint_sha256": "a759b7f47408d73ab2430da366c189e538660eebc20f4b45c9df6fe958d88cec",
+    "parameters": 111680,
+    "selection": [
+      0.26851851851851855,
+      -0.3683417214287652
+    ],
+    "target_tokens": 923553,
+    "training_cpu_seconds": 114.52688984000105,
+    "training_wall_seconds": 118.55901488522068,
+    "updates": 1536,
+    "validation_cpu_seconds": 2.6316863680000324
+  },
+  {
+    "active_parameters": 109656,
+    "batch_sha256": "ada7a37909b7e62a566829b2d3d61cfc196976d5e3c8ad37ae8019f070171e61",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "tasks_hybrid_26302",
+      "objective": "tasks",
+      "seed": 26302,
+      "variant": "hybrid"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_hybrid_26302/best.pt",
+    "checkpoint_sha256": "9f437716ffed0e4648d81897221ec58905cb5c5af3a0441ff11a9ff43fccc3ac",
+    "parameters": 111784,
+    "selection": [
+      0.36574074074074076,
+      -0.35876841610504523
+    ],
+    "target_tokens": 923553,
+    "training_cpu_seconds": 147.92237483200228,
+    "training_wall_seconds": 152.66575655597262,
+    "updates": 1536,
+    "validation_cpu_seconds": 3.6599556639999378
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "f1462000aa0ac02618b6b3642ea389bc3414ea2236a0a63dfad86f63a58ef5a5",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 0
+      },
+      "name": "tasks_transformer_26303",
+      "objective": "tasks",
+      "seed": 26303,
+      "variant": "transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_transformer_26303/best.pt",
+    "checkpoint_sha256": "8a8f0472fda9be9bda10ff19996345b3ea1a9fc27f0fec09707562e206ce9d29",
+    "parameters": 111680,
+    "selection": [
+      0.13425925925925927,
+      -0.4564145109388563
+    ],
+    "target_tokens": 923376,
+    "training_cpu_seconds": 110.59649665600051,
+    "training_wall_seconds": 113.02534461417235,
+    "updates": 1536,
+    "validation_cpu_seconds": 2.599098703999971
+  },
+  {
+    "active_parameters": 111784,
+    "batch_sha256": "ada7a37909b7e62a566829b2d3d61cfc196976d5e3c8ad37ae8019f070171e61",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 2,
+        "width": 64,
+        "window": 64
+      },
+      "name": "tasks_hybrid_energy_26302",
+      "objective": "tasks",
+      "seed": 26302,
+      "variant": "hybrid_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_hybrid_energy_26302/best.pt",
+    "checkpoint_sha256": "7f6e4352d2517fed73dacafe6957581d8be94f0b33ade383bd034d9171366c73",
+    "parameters": 111784,
+    "selection": [
+      0.35185185185185186,
+      -0.3279357123374939
+    ],
+    "target_tokens": 923553,
+    "training_cpu_seconds": 163.18448708800003,
+    "training_wall_seconds": 166.95762200502213,
+    "updates": 1536,
+    "validation_cpu_seconds": 4.382565087999865
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "f1462000aa0ac02618b6b3642ea389bc3414ea2236a0a63dfad86f63a58ef5a5",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "tasks_window_transformer_26303",
+      "objective": "tasks",
+      "seed": 26303,
+      "variant": "window_transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_window_transformer_26303/best.pt",
+    "checkpoint_sha256": "3dcd1cf55601d10cef8d106da3536d5df88a7365fc2048cc837dc1be4d8717a1",
+    "parameters": 111680,
+    "selection": [
+      0.08796296296296297,
+      -0.49227300643920896
+    ],
+    "target_tokens": 923376,
+    "training_cpu_seconds": 109.53668158400455,
+    "training_wall_seconds": 108.58180341520347,
+    "updates": 1536,
+    "validation_cpu_seconds": 2.4716845760001434
+  },
+  {
+    "active_parameters": 109656,
+    "batch_sha256": "f1462000aa0ac02618b6b3642ea389bc3414ea2236a0a63dfad86f63a58ef5a5",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "tasks_hybrid_26303",
+      "objective": "tasks",
+      "seed": 26303,
+      "variant": "hybrid"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_hybrid_26303/best.pt",
+    "checkpoint_sha256": "e40672c8c8590c9ed74a5edc30af2b4ccf79b39ec814c9cbb4d7afdef53666fc",
+    "parameters": 111784,
+    "selection": [
+      0.35648148148148145,
+      -0.3175009359170993
+    ],
+    "target_tokens": 923376,
+    "training_cpu_seconds": 143.58867724800257,
+    "training_wall_seconds": 142.4965042284457,
+    "updates": 1536,
+    "validation_cpu_seconds": 3.3609637119999434
+  },
+  {
+    "active_parameters": 111784,
+    "batch_sha256": "f1462000aa0ac02618b6b3642ea389bc3414ea2236a0a63dfad86f63a58ef5a5",
+    "best_step": 1536,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 2,
+        "width": 64,
+        "window": 64
+      },
+      "name": "tasks_hybrid_energy_26303",
+      "objective": "tasks",
+      "seed": 26303,
+      "variant": "hybrid_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/tasks_hybrid_energy_26303/best.pt",
+    "checkpoint_sha256": "d66f7baf38dc77a99d3750848a78624c8a39ccc605a9dfe19569f56f3b42a46a",
+    "parameters": 111784,
+    "selection": [
+      0.375,
+      -0.29174994362725154
+    ],
+    "target_tokens": 923376,
+    "training_cpu_seconds": 155.81838619199846,
+    "training_wall_seconds": 154.85329967190046,
+    "updates": 1536,
+    "validation_cpu_seconds": 4.342824607999773
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "77b3fa45d3a218e2f09b05371bd254cb06a443584e3c470f950962637cb42498",
+    "best_step": 1553,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 0
+      },
+      "name": "compute_transformer_26301",
+      "objective": "compute",
+      "seed": 26301,
+      "variant": "transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_transformer_26301/best.pt",
+    "checkpoint_sha256": "84e87e95fc7443e1f8aa8adcb9121c72b43f6463568f9e6be3660ee753f4b24c",
+    "parameters": 111680,
+    "selection": [
+      -1.4871978124940375
+    ],
+    "target_tokens": 4770816,
+    "training_cpu_seconds": 90.04170316799605,
+    "training_wall_seconds": 89.50915061985143,
+    "updates": 1553,
+    "validation_cpu_seconds": 0.374012303999848
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "4a4076261991c956a767cbb052bc162f869eecf6ac709660a9973341fb7468c1",
+    "best_step": 1495,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "compute_window_transformer_26301",
+      "objective": "compute",
+      "seed": 26301,
+      "variant": "window_transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_window_transformer_26301/best.pt",
+    "checkpoint_sha256": "1b76ea1d05187af3bf8c789e88e4edf25ce4d0a4ec1ced66f3a45cc771351a03",
+    "parameters": 111680,
+    "selection": [
+      -1.4913323453620864
+    ],
+    "target_tokens": 4592640,
+    "training_cpu_seconds": 90.0331310080021,
+    "training_wall_seconds": 89.45317996444646,
+    "updates": 1495,
+    "validation_cpu_seconds": 0.3980929119999246
+  },
+  {
+    "active_parameters": 109656,
+    "batch_sha256": "f87f6d16411e50460ded47ec5a8816098a4efb499feb7dde406a932b41e99b6b",
+    "best_step": 1176,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "compute_hybrid_26301",
+      "objective": "compute",
+      "seed": 26301,
+      "variant": "hybrid"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_hybrid_26301/best.pt",
+    "checkpoint_sha256": "6094472ccba5574829481e434be900eb7f22581de146b0f51f5cdcacab7e018a",
+    "parameters": 111784,
+    "selection": [
+      -1.515348533945296
+    ],
+    "target_tokens": 3612672,
+    "training_cpu_seconds": 90.0550276640023,
+    "training_wall_seconds": 89.50918782874942,
+    "updates": 1176,
+    "validation_cpu_seconds": 0.4425579359999574
+  },
+  {
+    "active_parameters": 111784,
+    "batch_sha256": "6a30cce408242b15cb45049d78f174c0b46be4e70d7c88850990baf1e1065e9a",
+    "best_step": 1102,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 2,
+        "width": 64,
+        "window": 64
+      },
+      "name": "compute_hybrid_energy_26301",
+      "objective": "compute",
+      "seed": 26301,
+      "variant": "hybrid_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_hybrid_energy_26301/best.pt",
+    "checkpoint_sha256": "771800669e2c83c3ff020fe0b4c29fe3a482c8300e6fb07b460565704568d3ea",
+    "parameters": 111784,
+    "selection": [
+      -1.5342136646801734
+    ],
+    "target_tokens": 3385344,
+    "training_cpu_seconds": 90.0763252319997,
+    "training_wall_seconds": 89.64388670562766,
+    "updates": 1102,
+    "validation_cpu_seconds": 0.4533227040000156
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "d71a76a46834a6725afa0954249d97af079e5274722e335e9f2e2ba49dbd075f",
+    "best_step": 1520,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 0
+      },
+      "name": "compute_transformer_26302",
+      "objective": "compute",
+      "seed": 26302,
+      "variant": "transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_transformer_26302/best.pt",
+    "checkpoint_sha256": "08d2ecd1775050cd6481b189de53f245cebe0fa926a7214fe7ae84f598cbab0e",
+    "parameters": 111680,
+    "selection": [
+      -1.4940702297458461
+    ],
+    "target_tokens": 4669440,
+    "training_cpu_seconds": 90.03624604799973,
+    "training_wall_seconds": 90.30417117872275,
+    "updates": 1520,
+    "validation_cpu_seconds": 0.3740868480000472
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "61d00ab8c295a7fa147d60484be3a4dc2bc0e60861574ad0205398f1f2364acb",
+    "best_step": 1412,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "compute_window_transformer_26302",
+      "objective": "compute",
+      "seed": 26302,
+      "variant": "window_transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_window_transformer_26302/best.pt",
+    "checkpoint_sha256": "73cf1fa4fc12a965e3102d420d15786cca19c7e50b153a3eabdcc0a507a64e6e",
+    "parameters": 111680,
+    "selection": [
+      -1.4963089208700315
+    ],
+    "target_tokens": 4337664,
+    "training_cpu_seconds": 90.00361705600005,
+    "training_wall_seconds": 90.60504473524634,
+    "updates": 1412,
+    "validation_cpu_seconds": 0.40613767999991524
+  },
+  {
+    "active_parameters": 109656,
+    "batch_sha256": "d8a96a87165d3811f553fbf16ac798abaefbbe556d9e3c5038bd9fd14f25b526",
+    "best_step": 1104,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "compute_hybrid_26302",
+      "objective": "compute",
+      "seed": 26302,
+      "variant": "hybrid"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_hybrid_26302/best.pt",
+    "checkpoint_sha256": "c4372572de806e8d4440026ab26289892589fd17ac702b3cf68f0665ea76e159",
+    "parameters": 111784,
+    "selection": [
+      -1.5197020483365284
+    ],
+    "target_tokens": 3391488,
+    "training_cpu_seconds": 90.03027211199833,
+    "training_wall_seconds": 90.4152602077229,
+    "updates": 1104,
+    "validation_cpu_seconds": 0.4379050880000932
+  },
+  {
+    "active_parameters": 111784,
+    "batch_sha256": "4e509ad8fb2312ca992cce317c5501ee85ba31b7689ae12b419fc050eaea9425",
+    "best_step": 1088,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 2,
+        "width": 64,
+        "window": 64
+      },
+      "name": "compute_hybrid_energy_26302",
+      "objective": "compute",
+      "seed": 26302,
+      "variant": "hybrid_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_hybrid_energy_26302/best.pt",
+    "checkpoint_sha256": "d7f422d7620ed73783479cf14eeca3e61fc75414ebddf55a5ba79084050cb20a",
+    "parameters": 111784,
+    "selection": [
+      -1.530520175764347
+    ],
+    "target_tokens": 3342336,
+    "training_cpu_seconds": 90.05178680000313,
+    "training_wall_seconds": 90.13205410493538,
+    "updates": 1088,
+    "validation_cpu_seconds": 0.45577244799994787
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "22a100d303e2627e68638fdf0f22eb713b3c49e50b4c349ebbfec3b35f08068d",
+    "best_step": 1593,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 0
+      },
+      "name": "compute_transformer_26303",
+      "objective": "compute",
+      "seed": 26303,
+      "variant": "transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_transformer_26303/best.pt",
+    "checkpoint_sha256": "e397bbb7f6debeac0637f587288da80a512d02eed0ea20018760c8055c6142dc",
+    "parameters": 111680,
+    "selection": [
+      -1.4897950179908797
+    ],
+    "target_tokens": 4893696,
+    "training_cpu_seconds": 90.00058353599968,
+    "training_wall_seconds": 89.28151275834534,
+    "updates": 1593,
+    "validation_cpu_seconds": 0.3603136160002123
+  },
+  {
+    "active_parameters": 111680,
+    "batch_sha256": "6997e8235853f7be9524972a30edafc4d752fb7ecc00aaa063ff681fc09785ed",
+    "best_step": 1560,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 162,
+        "hybrid": false,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "compute_window_transformer_26303",
+      "objective": "compute",
+      "seed": 26303,
+      "variant": "window_transformer"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_window_transformer_26303/best.pt",
+    "checkpoint_sha256": "2aa058a0e9001ed59c200609661a43ea32f0cb764531952fc2cb18cc6c3634fc",
+    "parameters": 111680,
+    "selection": [
+      -1.4870676693377127
+    ],
+    "target_tokens": 4792320,
+    "training_cpu_seconds": 90.03569040000014,
+    "training_wall_seconds": 89.26198998442851,
+    "updates": 1560,
+    "validation_cpu_seconds": 0.3771521759999814
+  },
+  {
+    "active_parameters": 109656,
+    "batch_sha256": "3baf6ce3adecaa7e5ed32d21e08cc6978cccb1d9f6c4db6848018d1dde7adc7f",
+    "best_step": 1300,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 0,
+        "width": 64,
+        "window": 64
+      },
+      "name": "compute_hybrid_26303",
+      "objective": "compute",
+      "seed": 26303,
+      "variant": "hybrid"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_hybrid_26303/best.pt",
+    "checkpoint_sha256": "b6e89115e4cbc6e21ebcef2ea2988cb592f9bb30504fc2b89b69f5c296597820",
+    "parameters": 111784,
+    "selection": [
+      -1.4998612574143153
+    ],
+    "target_tokens": 3993600,
+    "training_cpu_seconds": 90.04065377599863,
+    "training_wall_seconds": 89.47033171716612,
+    "updates": 1300,
+    "validation_cpu_seconds": 0.3965713280001637
+  },
+  {
+    "active_parameters": 111784,
+    "batch_sha256": "3c53204a08d737776f4a8c864e8fc14b362c32b06972f2da5bc1bb5110dfcffa",
+    "best_step": 1143,
+    "case": {
+      "config": {
+        "chunk": 32,
+        "heads": 4,
+        "hidden": 144,
+        "hybrid": true,
+        "layers": 2,
+        "modes": 16,
+        "rounds": 2,
+        "width": 64,
+        "window": 64
+      },
+      "name": "compute_hybrid_energy_26303",
+      "objective": "compute",
+      "seed": 26303,
+      "variant": "hybrid_energy"
+    },
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_streaming_20261026/compute_hybrid_energy_26303/best.pt",
+    "checkpoint_sha256": "f011a09fb2204d0fe5720d2f075e1905f9038d75d57477fa6aaa41d6b2d8151a",
+    "parameters": 111784,
+    "selection": [
+      -1.5184746552572386
+    ],
+    "target_tokens": 3511296,
+    "training_cpu_seconds": 90.05860423999957,
+    "training_wall_seconds": 89.51319325063378,
+    "updates": 1143,
+    "validation_cpu_seconds": 0.4695118879997153
+  }
+]

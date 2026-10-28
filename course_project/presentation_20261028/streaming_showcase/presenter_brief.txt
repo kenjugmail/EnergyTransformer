@@ -1,0 +1,105 @@
+REWT — PROPOSAL SHOWCASE FOR OCTOBER 28, 2026
+
+RECOMMENDATION
+Lead with compact memory for a continuing stream. Show one important fact,
+many irrelevant facts, then ask for the original fact. The audience can follow
+the problem immediately. Use the memory figure, one short demo, and the energy
+research question. Put the speed figure in backup unless time permits.
+
+Suggested proposal framing:
+“Can learned energy refinement improve retrieval from a compact recurrent
+memory enough to justify its extra computation?”
+
+This is narrower than the original fully joint energy proposal. The new
+streaming model uses ordinary delta-memory/local-attention blocks followed by
+optional latent energy refinement. Label it as an efficient experimental
+backbone/control; do not call all of its computation energy minimization.
+Keep the original joint-energy model distinct from this newer implementation.
+
+90-SECOND SHOWCASE SCRIPT
+0–15 seconds: “An agent reading a long stream needs to keep important facts
+without storing every earlier token. Here K is the important fact, and X is
+irrelevant activity.” Show the 64-distractor case with K=8 near the beginning.
+
+15–40 seconds: Run the demo or show its saved transcript. The full Transformer
+answers 2, window Transformer 9, and both hybrids 8 in this fixed example.
+Also show that the energy hybrid misses the 128-distractor example. These are
+the first saved example at each length, not a curated set of successes.
+
+40–65 seconds: Show memory_showcase.pdf. “Across all 72 recall prompts and
+three seeds, the no-refinement hybrid reaches 86.1%, the energy hybrid 77.3%,
+full attention 14.4%, and window attention 21.3%. This is a small-model
+synthetic study, with baseline seed instability and one common tuning recipe.”
+
+65–90 seconds: “The optimized hybrid carries about 36.5 KiB of state at an
+8K prefix, versus 8.03 MiB for full attention. Recall accuracy was tested only
+up to 520 input bytes; 8K is a separate runtime measurement. Compact memory
+works here. The open question is whether energy refinement can improve its
+answers enough to earn its cost.”
+
+APPLICATION IDEAS — PROPOSED, NOT DEMONSTRATED
+1. A compact memory component for a local assistant: remember a preference
+   amid unrelated conversation. Closest conceptual match to associative recall.
+   Needs realistic sentences, multiple facts, updates and conflict handling.
+2. A stream-monitoring component: retain an earlier event or configuration
+   while later status messages arrive. Needs real log data and event-query
+   benchmarks. The current model does not understand production logs.
+3. Memory for a game agent: retain a clue or objective across many observations.
+   Needs language grounding, multiple entities and environment evaluation.
+
+Choose the first as motivation, but demonstrate the actual K/X task tomorrow.
+Describe these as research directions, not deployable assistants or products.
+For this exact synthetic task a dictionary or tiny state machine is an easy
+solution; it is a diagnostic benchmark for learned memory, not a reason to
+replace a database. A future application needs to justify learned retrieval
+against ordinary lookup, search and retrieval-augmented baselines too.
+
+WHAT THE SPEED RESULT MEANS
+The same energy checkpoint now generates 32 tokens after an 8K prefix in:
+CPU: 15.43 → 8.18 ms (1.89×).
+GB10 GPU: 24.51 → 1.97 ms (12.44×, shared-device measurement).
+Both retain two refinement rounds. All models received the same execution
+optimizations. These are warmed decode times; prefill, compile and capture
+are separate. 263 tests pass; 126 CPU/GPU continuation checks match exactly.
+These changes improve inference execution, not learned quality or training.
+
+WHERE ENERGY FITS
+The streaming energy head computes a learned quadratic-plus-cosine score
+around a latent proposal, then performs two state updates with weights fixed.
+Lower internal energy does not certify a correct answer. Current evidence
+does not show a recall benefit from refinement; the independently trained
+no-energy hybrid is stronger on long recall. That is a useful hypothesis to
+test, rather than something to hide in a proposal.
+
+NEXT EXPERIMENT TO PROPOSE
+Train the energy head on controlled corrupted latent/answer candidates so it
+learns to correct mistakes. Compare against a no-energy model and an equally
+costly feedforward correction head. Choose settings on validation, lock them,
+then test fresh identities, multiple facts, overwritten facts and longer gaps.
+Report exact answers versus latency at 0/1/2/4 rounds and matched training
+compute. A result where lower energy fails to improve accuracy still answers
+the research question. This experiment is proposed, not completed.
+
+PRIOR WORK AND CONTRIBUTION
+Gated delta memory combined with sliding-window attention already appears in
+Yang, Kautz and Hatamizadeh, “Gated Delta Networks: Improving Mamba2 with Delta
+Rule,” ICLR 2025:
+https://proceedings.iclr.cc/paper_files/paper/2025/hash/4904fad153f6434a7bcf04465d4be2cc-Abstract-Conference.html
+Credit that backbone. The course contribution is the implemented energy
+extension, efficient execution and controlled analysis of whether it helps.
+
+LIVE DEMO — run from /home/kt/Documents/EnergyTransformer
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python scripts/demo_rewt_streaming.py --output /tmp/rewt_class_demo_20261028
+The eager default starts immediately and runs all four models on CPU. Use a
+fresh output directory on each run. A recorded backup is demo/transcript.txt;
+full inputs, generated token IDs and checkpoint hashes are in demo/results.json.
+
+FILES IN THIS FOLDER
+memory_showcase.pdf / .png — main presentation figure.
+decode_speed.pdf / .png — optional performance backup figure.
+demo/transcript.txt — all fixed example outputs, including failures.
+demo/results.json — machine-readable replay and provenance.
+presenter_brief.txt — this script and application recommendations.
+
+The existing slide deck remains a separate artifact. These are supplemental
+figures and an updated framing for the newer streaming results.

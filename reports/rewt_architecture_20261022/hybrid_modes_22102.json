@@ -1,0 +1,22 @@
+{
+  "auxiliary_parameters": 13318,
+  "best_step": 768,
+  "case": {
+    "diversity_weight": 0.0,
+    "name": "hybrid_modes_22102",
+    "overrides": {
+      "mode_layout": "hybrid"
+    },
+    "seed": 22102,
+    "variant": "hybrid_modes"
+  },
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_architecture_20261022/hybrid_modes_22102/best.pt",
+  "checkpoint_sha256": "08df98e5bd2badd8ec432f7de8908d03016dfcc4327332df6a7be8f399706f1a",
+  "maximum_gradient": 259.785400390625,
+  "parameters": 256096,
+  "response_tokens": 396210,
+  "training_cpu_seconds": 853.5322481119956,
+  "validation_ce": 0.4821826576881367,
+  "validation_complete": 0.35185185185185186,
+  "validation_cpu_seconds": 21.737869167999634
+}

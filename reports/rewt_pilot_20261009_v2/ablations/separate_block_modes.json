@@ -1,0 +1,68 @@
+{
+  "evidence_scope": "Single-seed short retraining; not the primary three-seed comparison",
+  "language": {
+    "bpb": 4.565184532729979,
+    "brier": 0.9050832465291023,
+    "cost_batched_calls": {
+      "accepted": 0,
+      "attempts": 16384,
+      "energy_calls": 6144,
+      "gradient_calls": 2048
+    },
+    "cpu_ms_per_byte": 0.2555042734374985,
+    "cpu_seconds": 1.0465455039999938,
+    "energy_calls_per_position": 6.0,
+    "evaluated_bytes": 4096,
+    "gradient_calls_per_position": 2.0,
+    "next_byte_accuracy": 0.205322265625,
+    "python_peak_tracemalloc_bytes": null,
+    "wall_seconds": 1.037428839947097
+  },
+  "training": {
+    "all_parameters": 249929,
+    "arm": "fourier_rewt",
+    "best_step": 40,
+    "best_validation_score": 4.3704373982857145,
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_pilot_20261009_v2/ablations/separate_block_modes/best.pt",
+    "clip_fraction": 0.65,
+    "filtered_spike_fraction": 0.0,
+    "forecast_targets": null,
+    "initialization": "random",
+    "maximum_raw_gradient_norm": 3.405083179473877,
+    "mean_high_frequency_gradient_fraction": 0.2140784945625525,
+    "mean_raw_gradient_norm": 1.4794121503829956,
+    "method": "clip",
+    "parameters": 249929,
+    "phase": "separate_block_modes",
+    "process_peak_rss_bytes": 733241344,
+    "processed_target_bytes": 20480,
+    "raw_spike_fraction": 0.0,
+    "remaining_phase_cpu_seconds": 17.10087233600001,
+    "remaining_phase_wall_seconds": 16.947790186968632,
+    "seed": 101,
+    "shared_teacher_training_cpu_seconds": 0.0,
+    "training_cpu_seconds": 16.66310937599998,
+    "training_plus_shared_teacher_cpu_seconds": 16.66310937599998,
+    "training_wall_seconds": 16.510705168009736,
+    "updates": 40,
+    "validation": {
+      "bpb": 4.3704373982857145,
+      "brier": 0.8867098987102509,
+      "cost_batched_calls": {
+        "accepted": 0,
+        "attempts": 4096,
+        "energy_calls": 1536,
+        "gradient_calls": 512
+      },
+      "cpu_ms_per_byte": 0.33904164062499575,
+      "cpu_seconds": 0.34717863999999565,
+      "energy_calls_per_position": 6.0,
+      "evaluated_bytes": 1024,
+      "gradient_calls_per_position": 2.0,
+      "next_byte_accuracy": 0.21484375,
+      "python_peak_tracemalloc_bytes": null,
+      "wall_seconds": 0.3444506130181253
+    },
+    "validation_cpu_seconds": 0.34831675200000234
+  }
+}

@@ -1,0 +1,13 @@
+{"time": "2026-10-22T20:34:31.131467+00:00", "message": "architecture_smoke", "case": "control_22101", "seconds": 0.917724384, "loss": 147.50601196289062}
+{"time": "2026-10-22T20:34:31.589679+00:00", "message": "architecture_smoke", "case": "certified_22101", "seconds": 0.33301145599999993, "loss": 147.1885986328125}
+{"time": "2026-10-22T20:34:32.090588+00:00", "message": "architecture_smoke", "case": "precond2_22101", "seconds": 0.32736675200000054, "loss": 147.21731567382812}
+{"time": "2026-10-22T20:34:32.883996+00:00", "message": "architecture_smoke", "case": "precond4_22101", "seconds": 0.5524087199999999, "loss": 147.17637634277344}
+{"time": "2026-10-22T20:34:33.567435+00:00", "message": "architecture_smoke", "case": "precond8_22101", "seconds": 0.5098884479999999, "loss": 147.17312622070312}
+{"time": "2026-10-22T20:34:33.683607+00:00", "message": "architecture_smoke", "case": "scan_22101", "seconds": 0.10054881600000076, "loss": 162.34576416015625}
+{"time": "2026-10-22T20:34:33.958676+00:00", "message": "architecture_smoke", "case": "feedback8_22101", "seconds": 0.1798502080000004, "loss": 162.29959106445312}
+{"time": "2026-10-22T20:34:34.200269+00:00", "message": "architecture_smoke", "case": "delta_22101", "seconds": 0.18818742399999966, "loss": 161.5406494140625}
+{"time": "2026-10-22T20:34:34.330208+00:00", "message": "architecture_smoke", "case": "patch4_22101", "seconds": 0.12467975999999936, "loss": 162.34576416015625}
+{"time": "2026-10-22T20:34:35.119035+00:00", "message": "architecture_smoke", "case": "diversity_22101", "seconds": 0.44722830400000024, "loss": 147.50601196289062}
+{"time": "2026-10-22T20:34:36.205303+00:00", "message": "architecture_smoke", "case": "hybrid_modes_22101", "seconds": 0.6800156959999999, "loss": 147.65077209472656}
+{"time": "2026-10-22T20:34:36.424628+00:00", "message": "architecture_smoke", "case": "lowrank16_22101", "seconds": 0.19915881599999974, "loss": 162.38720703125}
+{"time": "2026-10-22T20:34:36.575079+00:00", "message": "architecture_smoke", "case": "combined_22101", "seconds": 0.1393808639999996, "loss": 158.89442443847656}

@@ -1,0 +1,175 @@
+{
+  "scope": "Frozen validation prefixes; one-hot candidate ranking is a training-objective diagnostic, not a generative accuracy metric",
+  "records": [
+    {
+      "arm": "legacy_fourier",
+      "seed": 101,
+      "checkpoint_sha256": "4ee904ef8ee60e23e2204fae4c241e136ddeb1aa9f88e5c80c9e3e3310931e40",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.144333153963089,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.970703125,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.421875,
+      "when_prediction_wrong_count": 303,
+      "when_prediction_wrong_hard_ranking_fraction": 0.1782178282737732,
+      "predicted_byte_accuracy": 0.408203125
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 101,
+      "checkpoint_sha256": "3c9c2a47b1d4fbfdcdfb5c86eb54f577f3c894d90459061785bf12553489a421",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.0055864411406219006,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.939453125,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.474609375,
+      "when_prediction_wrong_count": 294,
+      "when_prediction_wrong_hard_ranking_fraction": 0.22448979318141937,
+      "predicted_byte_accuracy": 0.42578125
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 101,
+      "checkpoint_sha256": "48bde3cf9875f12e6aa20b0d74f6e85e028e1c7c76dcd48f791c7068534c30ab",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.11393672972917557,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.9375,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.474609375,
+      "when_prediction_wrong_count": 293,
+      "when_prediction_wrong_hard_ranking_fraction": 0.22525596618652344,
+      "predicted_byte_accuracy": 0.427734375
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 101,
+      "checkpoint_sha256": "86f9b61a7af3c2f2685f8da3a59e0103bca37e21519bd2378e037cbd31fd5440",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.09078213572502136,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.92578125,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.447265625,
+      "when_prediction_wrong_count": 318,
+      "when_prediction_wrong_hard_ranking_fraction": 0.2295597493648529,
+      "predicted_byte_accuracy": 0.37890625
+    },
+    {
+      "arm": "legacy_fourier",
+      "seed": 202,
+      "checkpoint_sha256": "ffc8d884b02fb281c700cb6a7e81778da0413e577b3bdceb68ba23c05f32e6bf",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.1372925043106079,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.974609375,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.435546875,
+      "when_prediction_wrong_count": 309,
+      "when_prediction_wrong_hard_ranking_fraction": 0.19417475163936615,
+      "predicted_byte_accuracy": 0.396484375
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 202,
+      "checkpoint_sha256": "ff6f2af08cc9318f36d368b36b7e515dbd8e4de5191f8d95c11b61e7ec3b4137",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.006427811458706856,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.943359375,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.486328125,
+      "when_prediction_wrong_count": 296,
+      "when_prediction_wrong_hard_ranking_fraction": 0.22297297418117523,
+      "predicted_byte_accuracy": 0.421875
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 202,
+      "checkpoint_sha256": "d2fa13ea2502efc637a1c134268d43d3f08cfa504caa8adc4a809274e97012a3",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.11755024641752243,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.94140625,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.466796875,
+      "when_prediction_wrong_count": 297,
+      "when_prediction_wrong_hard_ranking_fraction": 0.21212121844291687,
+      "predicted_byte_accuracy": 0.419921875
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 202,
+      "checkpoint_sha256": "333e1bfdb27d7b722bf9dc5f44ba5c2e44d20c89c1274c5c1fce026ec7cb4b23",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.09508104622364044,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.9375,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.4296875,
+      "when_prediction_wrong_count": 325,
+      "when_prediction_wrong_hard_ranking_fraction": 0.2461538463830948,
+      "predicted_byte_accuracy": 0.365234375
+    },
+    {
+      "arm": "legacy_fourier",
+      "seed": 303,
+      "checkpoint_sha256": "5346827f9e91116100c64f110695150b64cf9591505289c1dca0f1d457d99d7c",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.1364850401878357,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.97265625,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.453125,
+      "when_prediction_wrong_count": 304,
+      "when_prediction_wrong_hard_ranking_fraction": 0.20723684132099152,
+      "predicted_byte_accuracy": 0.40625
+    },
+    {
+      "arm": "neural_energy",
+      "seed": 303,
+      "checkpoint_sha256": "24e12f14bced6b13df4d9aece8d6b97deddfba2d1c17bc1e7be7af4830e4d5d9",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.01002074871212244,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.94140625,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.47265625,
+      "when_prediction_wrong_count": 301,
+      "when_prediction_wrong_hard_ranking_fraction": 0.2225913554430008,
+      "predicted_byte_accuracy": 0.412109375
+    },
+    {
+      "arm": "fourier_rewt",
+      "seed": 303,
+      "checkpoint_sha256": "1a4d009be4813fba0ef1ba56e20c697908ac273f5086370eaf75181f7904fbc3",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.11031387001276016,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.939453125,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.47265625,
+      "when_prediction_wrong_count": 299,
+      "when_prediction_wrong_hard_ranking_fraction": 0.2040133774280548,
+      "predicted_byte_accuracy": 0.416015625
+    },
+    {
+      "arm": "full_rewt",
+      "seed": 303,
+      "checkpoint_sha256": "1fbeb8362fad60b27ac820705be8c45012d70a669e8c03cbd9b6019a952a35c5",
+      "positions": 512,
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.09392808377742767,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.94140625,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.462890625,
+      "when_prediction_wrong_count": 316,
+      "when_prediction_wrong_hard_ranking_fraction": 0.25,
+      "predicted_byte_accuracy": 0.3828125
+    }
+  ],
+  "mean_across_seeds": {
+    "legacy_fourier": {
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.13937023282051086,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.97265625,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.4368489583333333,
+      "when_prediction_wrong_hard_ranking_fraction": 0.1932098070780436
+    },
+    "neural_energy": {
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.007345000437150399,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.94140625,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.4778645833333333,
+      "when_prediction_wrong_hard_ranking_fraction": 0.2233513742685318
+    },
+    "fourier_rewt": {
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.11393361538648605,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.939453125,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.4713541666666667,
+      "when_prediction_wrong_hard_ranking_fraction": 0.21379685401916504
+    },
+    "full_rewt": {
+      "mean_output_wave_to_quadratic_gradient_norm_ratio": 0.09326375524202983,
+      "energy_ranks_true_below_fixed_wrong_fraction": 0.9348958333333334,
+      "energy_ranks_true_below_strongest_wrong_fraction": 0.4466145833333333,
+      "when_prediction_wrong_hard_ranking_fraction": 0.24190453191598257
+    }
+  }
+}
