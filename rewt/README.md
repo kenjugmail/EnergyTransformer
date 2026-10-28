@@ -1,12 +1,44 @@
 # Recurrent Energy Wave Transformer experiment
 
+## Whole-word language models
+
+Use the new word-based path for custom language training and prediction:
+
+```bash
+.venv/bin/python scripts/predict_rewt_words.py --prompt 'Once upon a' --top 5
+.venv/bin/python scripts/predict_rewt_words.py --prompt 'The dog was very' --generate 24
+.venv/bin/python scripts/train_rewt_words.py \
+  --output runs/rewt_words_new --report reports/rewt_words_new
+```
+
+The trained default checkpoint has 1,399,096 parameters and an 8,192-entry
+whole-word vocabulary. It achieves 28.36% next-word accuracy on the recorded
+story test sample. Words and integers remain intact; punctuation is separate,
+spaces are reconstructed, and unseen words become one `<unk>`. There is no byte
+fallback. It predicts the next word after a complete prompt word, rather than
+finishing a partially typed word.
+
+`StreamingConfig`, `EnergyConfig` and `TransformerConfig` now expose
+`vocab_size`. Joint-energy memory/architecture variants inherit it, including
+their output-state and cached-decoding dimensions. Config defaults remain 256
+for old checkpoint compatibility; the word trainer sets the actual vocabulary
+size. Use `--architecture joint`, `transformer` or `window-transformer` to train
+other custom models with the same word data. The word tokenizer is fitted on
+training documents only and embedded in new checkpoints. LFM3 remains on its
+pretrained tokenizer.
+
+**305 REWT tests pass**, including whole-word, corpus isolation, checkpoint,
+gradient and cache tests. [Results, limitations and reproducibility](../reports/rewt_words_20261028/FINDINGS.md).
+
+## Previous conversion and byte/subword experiments
+
 The [LFM3 conversion](../reports/lfm3_conversion_20261028/FINDINGS.md) adds a
 standalone 1.784B-parameter model in `lfm_conversion.py`, initialized from the
 pinned LFM3-1.7B donor. It replaces 13 original convolution operators with delta
 memory, bounds all 11 attention layers, and adds final latent-energy refinement.
 The initial three recovery stages improve matched test continuation loss from 8.452 to
 2.347 versus the donor's 2.312. Instruction and factual errors remain; full
-capability recovery is not established. The expanded REWT suite passes **279 tests**.
+capability recovery is not established. That recovery version passed **279 tests**.
 
 The [subsequent capability recovery attempt](../reports/lfm3_capability_recovery_20261028/FINDINGS.md) improves the small science score from 43/128 to 59/128 and exact responses from 9/50 to 13/50. The recommended bundle is the second-pass checkpoint; the broader final pass regressed on these checks. This is partial recovery with post-hoc model selection, not donor parity.
 

@@ -1,0 +1,24 @@
+{
+  "device": "NVIDIA GB10",
+  "backend": "CUDA graph",
+  "vocabulary_size": 8192,
+  "prompt_tokens": 17,
+  "generated_tokens": 12,
+  "exact_token_match": true,
+  "tokens": [
+    [
+      58,
+      37,
+      4,
+      34,
+      74,
+      21,
+      20,
+      109,
+      33,
+      26,
+      51,
+      19
+    ]
+  ]
+}

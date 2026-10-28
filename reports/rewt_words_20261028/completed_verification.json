@@ -1,0 +1,68 @@
+{
+  "completed_utc": "2026-10-28T20:16:30.232466+00:00",
+  "rewt_tests_passed": 305,
+  "test_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python -m pytest -q tests_rewt",
+  "training_source_snapshot_hashes_verified": true,
+  "checkpoint_sha256": "0b48e5e2a316b91fc7967ab369c9b3f40adbc2dea1200ee2ac76bbaabf39c322",
+  "tokenizer_identity": "cfe678c654b93bb293ee3ce15e66ce39919ce80f222bac737431659e1bbc5e28",
+  "selected_step": 1200,
+  "vocabulary_size": 8192,
+  "word_and_number_entries": 8173,
+  "cli_checks": [
+    "trained streaming word prediction",
+    "streaming eager sampler matches reference text",
+    "joint-energy fixture train/save/predict/sample",
+    "Transformer fixture train/save/predict"
+  ],
+  "cuda_graph_audit": {
+    "device": "NVIDIA GB10",
+    "backend": "CUDA graph",
+    "vocabulary_size": 8192,
+    "prompt_tokens": 17,
+    "generated_tokens": 12,
+    "exact_token_match": true,
+    "tokens": [
+      [
+        58,
+        37,
+        4,
+        34,
+        74,
+        21,
+        20,
+        109,
+        33,
+        26,
+        51,
+        19
+      ]
+    ]
+  },
+  "source_sha256": {
+    "rewt/words.py": "8238610a7a1c93029577bdda42dc578b632477c588876d17a1801022d44ed81f",
+    "rewt/word_data.py": "dd1e6652e6dc4a65f4c2ba1968e63a4f0b5c78b61f7ac3018fe72db28a46cd09",
+    "rewt/word_lm.py": "3f2dcf263129eb36acefae1eb9d7b3d7aa8b75be7979abdf424fbd2d84312752",
+    "rewt/bpe.py": "68fcc1fa89da65f8180939111f96c183fba9ebf7ed043a78a9141f78d40cecca",
+    "rewt/story_data.py": "e7019059106988a38efd03a62784e0171396dd63b91fdfdfa424f0121b09781b",
+    "rewt/streaming.py": "b39b81e6ae6b909c8d40716c94849fe97f086bc802f012d077afc32e5a11cd6a",
+    "rewt/model.py": "4c11f295f5d4cbc258539e2bb207c77a37468649d05dc77358e80ecbc864f091",
+    "rewt/architecture.py": "2a626e2890ae9532a1b7f2452469444d7895373c892ac4d938e99204411737ae",
+    "rewt/advanced_kernels.py": "a8de64a10b2ae83e98c68ac2ce2d251144a0bcf58f57b12ce841d811c3f8d4bf",
+    "rewt/structured_solver.py": "d885f1275ad3e2a534d6e654e7d928d0a13357bf69d900ae38574955c0e1b9fb",
+    "rewt/decode.py": "a31df860c80e0dba66c6d842c948f2b774d631eeb14a997b5c163657fde6522f",
+    "rewt/ring_decode.py": "b86e6ecd737823c39d156e6011f419647a8ae5dbc8f8f08daa081252d22906fa",
+    "rewt/streaming_decode.py": "d9ad24fdd722e72049186601f84d9842b5b36b73be7bd199179f8f3d168a6b11",
+    "rewt/fast_decode.py": "8271f57ca32114ac3d658ad701bde2b775af46d08dd40f988d61b9b72ea6d2ce",
+    "scripts/train_rewt_words.py": "a3a45758b579057bd24387c5d6e58d01045c9c805b47212f103b1bec1ffbd74f",
+    "scripts/predict_rewt_words.py": "189ad56f492c4699b4aebd775379898cc26c27e1c761997c806fb323223e3cba",
+    "scripts/sample_rewt.py": "810c5214693c6e1ffcc0be1ed0b93ddc24958ab6230424c80767e17505e7fee4",
+    "scripts/sample_rewt_streaming.py": "be0d22e07ba0f0e3f9664e625db855e218446eea72d39b0aab576d19704fe55c",
+    "tests_rewt/test_words.py": "5be3ab847e65ab430ee71451c134795e96bfd45e3bc2782e8bc213398edd90e8"
+  },
+  "limitations": [
+    "One small exploratory story model, not an assistant.",
+    "Closed vocabulary with <unk>; punctuation is separate.",
+    "Historical byte/subword results remain separate.",
+    "No demonstrated next-word accuracy advantage from refinement."
+  ]
+}

@@ -3,6 +3,27 @@
 Experimental energy-function memory, native-text prototypes, and explicitly reviewed
 protected-memory edits. **Not a competitive general-purpose LLM or an instruction-following assistant.**
 
+## Whole-word prediction — October 28
+
+The current custom-model training path now predicts **whole words**, with
+separate punctuation tokens, instead of byte or subword fragments. A new
+**1.40M-parameter streaming REWT** is trained with an **8,192-entry vocabulary**.
+On the held-out story sample it predicts **28.36%** of next-word positions
+correctly; `Once upon a` gives `time` as the leading word at **95.28%**.
+
+```bash
+.venv/bin/python scripts/predict_rewt_words.py --prompt 'Once upon a' --top 5
+.venv/bin/python scripts/predict_rewt_words.py --prompt 'The dog was very' --generate 24
+```
+
+The local checkpoint is `runs/rewt_words_20261028/best.pt`; its vocabulary is
+embedded. Unknown words map to `<unk>`, with no byte fallback. The original
+joint-energy model and attention controls also support word vocabularies through
+`scripts/train_rewt_words.py`. Historical checkpoints retain their original
+tokenization, and LFM3 retains its pretrained tokenizer.
+
+[Word-model results, limitations and training commands](reports/rewt_words_20261028/FINDINGS.md).
+
 ## October 28 class presentation
 
 The updated ten-minute talk covers compact-memory results, decoding speed, the

@@ -148,7 +148,7 @@ def core_matrix(model, frequency, precision):
     h = (h + h.T) / 2
     if model.config.output_geometry == 'centered':
         gauge = identity.new_zeros(model.dimensions)
-        gauge[model.blocks['output']] = 1 / math.sqrt(256)
+        gauge[model.blocks['output']] = 1 / math.sqrt(model.config.vocab_size)
         h = h + gauge[:, None] * gauge[None]
     return h
 

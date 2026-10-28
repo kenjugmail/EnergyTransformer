@@ -179,7 +179,7 @@ class FastDecodeSession:
         self._check_model()
         if tokens.ndim != 2 or tokens.shape[0] != self.batch or not tokens.shape[1] or tokens.dtype != torch.long:
             raise ValueError('expected nonempty [session_batch,time] int64')
-        if tokens.device != self.model.embedding.weight.device or bool(((tokens < 0)|(tokens > 255)).any()):
+        if tokens.device != self.model.embedding.weight.device or bool(((tokens < 0)|(tokens >= self.model.config.vocab_size)).any()):
             raise ValueError('token device or vocabulary mismatch')
         if self.position+tokens.shape[1] > self.capacity:
             raise ValueError('session capacity exceeded')
@@ -193,7 +193,7 @@ class FastDecodeSession:
     @torch.inference_mode()
     def generate(self, steps, *, temperature=0., top_k=40, generator=None):
         self._check_model()
-        if type(steps) is not int or steps < 1 or temperature < 0 or not 1 <= top_k <= 256:
+        if type(steps) is not int or steps < 1 or temperature < 0 or not 1 <= top_k <= self.model.config.vocab_size:
             raise ValueError('invalid generation options')
         if self._last_logits is None:
             raise ValueError('consume a prompt before generation')

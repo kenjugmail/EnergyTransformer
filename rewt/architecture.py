@@ -53,7 +53,7 @@ class ArchitectureConfig(PositionMemoryConfig):
                 raise ValueError(f'{name} must be positive')
         if self.feedback_stride and self.backbone != 'scan':
             raise ValueError('chunk feedback requires a scan backbone')
-        if self.output_rank > min(self.width, 256):
+        if self.output_rank > min(self.width, self.vocab_size):
             raise ValueError('output rank exceeds latent width')
 
 
@@ -109,8 +109,8 @@ class ArchitectureEnergyLM(PositionMemoryEnergyLM):
                 for i in range(shared, config.modes):
                     self.mode_mask[i, blocks[(i - shared) % len(blocks)]] = 1
         if config.output_rank:
-            self.decoder = FactorizedLinear(d, 256, config.output_rank)
-            self.output_prior = FactorizedLinear(3 * d, 256, config.output_rank)
+            self.decoder = FactorizedLinear(d, config.vocab_size, config.output_rank)
+            self.output_prior = FactorizedLinear(3 * d, config.vocab_size, config.output_rank)
 
     def initial_state(self, batch, *, device=None, dtype=None):
         state = super().initial_state(batch, device=device, dtype=dtype)
@@ -145,7 +145,7 @@ class ArchitectureEnergyLM(PositionMemoryEnergyLM):
         features = torch.cat((current, carry, attention), -1)
         if packed is not None:
             hidden, output, amplitude = F.linear(features, *packed).split(
-                (self.config.hidden, 256, self.config.modes), -1)
+                (self.config.hidden, self.config.vocab_size, self.config.modes), -1)
             feedforward = self.prior[2](self.prior[1](hidden))
         else:
             feedforward, output, amplitude = self.prior(features), self.output_prior(features), self.amplitude(features)
@@ -183,8 +183,8 @@ class ArchitectureEnergyLM(PositionMemoryEnergyLM):
             raise ValueError('core architecture has no diffusion noise input')
         if tokens.ndim != 2 or tokens.dtype != torch.long or not tokens.shape[1] or not tokens.shape[0]:
             raise ValueError('tokens must be nonempty [batch,time] int64')
-        if bool(((tokens < 0) | (tokens > 255)).any()):
-            raise ValueError('bytes must be in 0..255')
+        if bool(((tokens < 0) | (tokens >= self.config.vocab_size)).any()):
+            raise ValueError('token IDs outside the configured vocabulary')
         if type(state_gradient_interval) is not int or state_gradient_interval < 0:
             raise ValueError('invalid gradient interval')
         rounds = c.rounds if rounds is None else rounds

@@ -57,8 +57,11 @@ class EnergyConfig:
     initial_carry_scale: float = 0.05
     refinement_backend: str = "reference"
     packed_projections: bool = False
+    vocab_size: int = 256
 
     def validate(self):
+        if type(self.vocab_size) is not int or self.vocab_size < 2:
+            raise ValueError('vocab_size must be an integer >= 2')
         for name in ("width", "hidden", "modes", "history", "auxiliary_hidden",
                      "diffusion_samples", "diffusion_levels", "specialists", "context_kernel"):
             if type(getattr(self, name)) is not int or getattr(self, name) < 1:
@@ -117,10 +120,13 @@ class TransformerConfig:
     heads: int = 4
     feedforward: int = 384
     context: int = 128
+    vocab_size: int = 256
 
     def validate(self):
         if any(type(v) is not int or v < 1 for v in asdict(self).values()):
             raise ValueError("Positive integer Transformer dimensions required")
+        if self.vocab_size < 2:
+            raise ValueError('vocab_size must be >= 2')
         if self.width % self.heads:
             raise ValueError("Transformer width must be divisible by heads")
 
@@ -186,12 +192,12 @@ class JointEnergyLM(nn.Module):
             names += [("forecast", d * len(config.horizons)), ("diffusion", d)]
             names += [(f"specialist_{i}", d) for i in range(config.specialists)]
             names += [("communication", d)]
-        names += [("output", 256)]
+        names += [("output", config.vocab_size)]
         for name, size in names:
             self.blocks[name] = slice(start, start + size)
             start += size
         self.dimensions = start
-        self.embedding = nn.Embedding(256, d)
+        self.embedding = nn.Embedding(config.vocab_size, d)
         self.query = nn.Linear(d, d, bias=False)
         self.key = nn.Linear(d, d, bias=False)
         self.value = nn.Linear(d, d, bias=False)
@@ -200,8 +206,8 @@ class JointEnergyLM(nn.Module):
         # feedforward outputs so the parameter match counts working parameters.
         self.prior = mlp(3 * d, config.hidden,
                          d if config.support or config.recurrent_type == "gru" else 2 * d)
-        self.decoder = nn.Linear(d, 256)
-        self.output_prior = nn.Linear(3 * d, 256)
+        self.decoder = nn.Linear(d, config.vocab_size)
+        self.output_prior = nn.Linear(3 * d, config.vocab_size)
         self.amplitude = nn.Linear(3 * d, config.modes)
         self.raw_frequency = nn.Parameter(torch.randn(config.modes, start) / math.sqrt(start),
                                           requires_grad=config.learned_frequencies)
@@ -358,7 +364,7 @@ class JointEnergyLM(nn.Module):
         if projections is not None:
             packed_weights, gru_input = projections
             hidden, projected_output, projected_amplitude = F.linear(features, *packed_weights).split(
-                (c.hidden, 256, c.modes), -1)
+                (c.hidden, c.vocab_size, c.modes), -1)
             projected_prior = self.prior[2](self.prior[1](hidden))
         if c.support or c.recurrent_type == "gru":
             feedforward = self.prior(features) if projected_prior is None else projected_prior
@@ -612,8 +618,8 @@ class JointEnergyLM(nn.Module):
             raise ValueError("rounds must be nonnegative")
         if tokens.ndim != 2 or tokens.dtype != torch.long or tokens.shape[1] < 1:
             raise ValueError("tokens must be nonempty [batch,time] int64")
-        if bool((tokens < 0).any()) or bool((tokens > 255).any()):
-            raise ValueError("Bytes must be in 0..255")
+        if bool((tokens < 0).any()) or bool((tokens >= self.config.vocab_size).any()):
+            raise ValueError("Token IDs outside the configured vocabulary")
         state = state or self.initial_state(len(tokens), device=tokens.device)
         if state.identity != self.identity or state.joint.shape != (len(tokens), self.dimensions):
             raise ValueError("Carried state belongs to a different configuration or batch")
@@ -806,12 +812,13 @@ class JointEnergyLM(nn.Module):
         cond = output.details["conditioning"]
         base = output.details["joint"].detach()
         true = targets.clamp_min(0)
-        negative = (true + 1 + torch.arange(len(tokens), device=tokens.device)[:, None]) % 256
+        vocabulary = self.config.vocab_size
+        negative = (true + 1 + torch.arange(len(tokens), device=tokens.device)[:, None] % (vocabulary - 1)) % vocabulary
         if hard_negatives:
-            draw = torch.randint(255, targets.shape, generator=generator, device=targets.device)
+            draw = torch.randint(vocabulary - 1, targets.shape, generator=generator, device=targets.device)
             negative = draw + (draw >= true).long()
-        positive_logits = F.one_hot(true, 256).to(base.dtype) * 2
-        negative_logits = F.one_hot(negative, 256).to(base.dtype) * 2
+        positive_logits = F.one_hot(true, vocabulary).to(base.dtype) * 2
+        negative_logits = F.one_hot(negative, vocabulary).to(base.dtype) * 2
         positive = torch.cat((base[..., :self.blocks["output"].start], positive_logits), -1)
         negative = torch.cat((base[..., :self.blocks["output"].start], negative_logits), -1)
         differences = self.energy(positive, cond) - self.energy(negative, cond)
@@ -820,7 +827,7 @@ class JointEnergyLM(nn.Module):
             scores = output.logits.detach().clone()
             scores.scatter_(-1, true[..., None], -torch.inf)
             hard = scores.argmax(-1)
-            hard_logits = F.one_hot(hard, 256).to(base.dtype) * 2
+            hard_logits = F.one_hot(hard, vocabulary).to(base.dtype) * 2
             candidate = torch.cat((base[..., :self.blocks["output"].start], hard_logits), -1)
             loss = 0.5 * (loss + F.softplus((self.energy(positive, cond) - self.energy(candidate, cond))[valid]).mean())
         return loss
@@ -844,8 +851,8 @@ class JointEnergyLM(nn.Module):
             return output.logits.sum() * 0
         base = output.details["joint"].detach()
         cut = self.blocks["output"].start
-        positive = torch.cat((base[..., :cut], F.one_hot(targets.clamp_min(0), 256).to(base.dtype) * 2), -1)
-        negative = torch.cat((base[..., :cut], F.one_hot(negative_targets.clamp_min(0), 256).to(base.dtype) * 2), -1)
+        positive = torch.cat((base[..., :cut], F.one_hot(targets.clamp_min(0), self.config.vocab_size).to(base.dtype) * 2), -1)
+        negative = torch.cat((base[..., :cut], F.one_hot(negative_targets.clamp_min(0), self.config.vocab_size).to(base.dtype) * 2), -1)
         cond = output.details["conditioning"]
         return F.softplus((self.energy(positive, cond) - self.energy(negative, cond))[valid]).mean()
 
@@ -881,11 +888,11 @@ class TransformerLM(nn.Module):
         super().__init__()
         config.validate()
         self.config = config
-        self.embedding = nn.Embedding(256, config.width)
+        self.embedding = nn.Embedding(config.vocab_size, config.width)
         self.position = nn.Embedding(config.context, config.width)
         self.layers = nn.ModuleList([TransformerBlock(config) for _ in range(config.layers)])
         self.norm = nn.LayerNorm(config.width)
-        self.decoder = nn.Linear(config.width, 256)
+        self.decoder = nn.Linear(config.width, config.vocab_size)
 
     def parameters_count(self):
         return sum(p.numel() for p in self.parameters() if p.requires_grad)
@@ -893,8 +900,8 @@ class TransformerLM(nn.Module):
     def forward(self, tokens: Tensor, state: TransformerState | None = None, *, details=False, **kwargs):
         if tokens.ndim != 2 or tokens.dtype != torch.long or tokens.shape[1] < 1:
             raise ValueError("tokens must be nonempty [batch,time] int64")
-        if bool((tokens < 0).any()) or bool((tokens > 255).any()):
-            raise ValueError("Bytes must be in 0..255")
+        if bool((tokens < 0).any()) or bool((tokens >= self.config.vocab_size).any()):
+            raise ValueError("Token IDs outside the configured vocabulary")
         offset = 0
         if state is not None:
             offset = state.tokens.shape[1]

@@ -15,7 +15,7 @@ def structured_lift(model, frequency, precision):
         raise ValueError('structured elimination supports the core quadratic only')
     cut = model.blocks['output'].start
     identity = torch.eye(cut, dtype=frequency.dtype, device=frequency.device)
-    directions = torch.cat((identity, identity.new_zeros(cut, 256)), -1)
+    directions = torch.cat((identity, identity.new_zeros(cut, model.config.vocab_size)), -1)
     rows = core_quadratic_action(model, directions, precision)
     hll, hlo = rows[:, :cut], rows[:, cut:]
     diagonal = precision[cut:] + model.config.decoder_weight

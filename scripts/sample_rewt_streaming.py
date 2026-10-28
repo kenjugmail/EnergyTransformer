@@ -4,7 +4,8 @@ from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 import torch
-from rewt.bpe import StoryBPE
+from rewt.bpe import checkpoint_tokenizer
+from rewt.words import WordTokenizer
 from rewt.streaming import load_streaming
 from rewt.streaming_decode import StreamingSession
 
@@ -20,16 +21,19 @@ def main():
     p.add_argument('--device',choices=['cpu','cuda'],default='cpu')
     p.add_argument('--decoder',choices=['reference','eager','compile','graph'],default='reference',help='fixed-shape decoder; graph requires CUDA and has a first-use capture cost')
     a=p.parse_args()
-    if not a.prompt or a.tokens<1 or a.temperature<0 or not 1<=a.top_k<=256:p.error('invalid sampling options')
+    if not a.prompt or a.tokens<1 or not 0<=a.temperature<float('inf') or a.top_k<1:p.error('invalid sampling options')
     if a.output and a.output.exists():p.error('output already exists')
     torch.set_num_threads(1);model,saved=load_streaming(a.checkpoint);model.eval()
+    if a.top_k > model.config.vocab_size:p.error('top-k exceeds model vocabulary')
     model.to(a.device)
     if a.fused_energy and (a.device!='cuda' or (a.rounds if a.rounds is not None else model.config.rounds)!=2):p.error('fused energy requires CUDA and two rounds')
     if a.fast_energy or a.compile_energy or a.fused_energy:
         from rewt.fast_energy import optimize_energy
         optimize_energy(model,compiled=a.compile_energy,fused=a.fused_energy)
-    tokenizer=StoryBPE.load(saved['tokenizer']) if saved.get('tokenizer') else None
-    prompt=tokenizer.encode(a.prompt) if tokenizer else a.prompt.encode('utf-8')
+    tokenizer=checkpoint_tokenizer(saved)
+    word_mode=isinstance(tokenizer,WordTokenizer)
+    if tokenizer and len(tokenizer.pieces)!=model.config.vocab_size:p.error('checkpoint tokenizer size mismatch')
+    prompt=tokenizer.encode(a.prompt,bos=True) if word_mode else tokenizer.encode(a.prompt) if tokenizer else a.prompt.encode('utf-8')
     if a.decoder=='reference':
         session=StreamingSession(model,capacity=len(prompt)+a.tokens,rounds=a.rounds)
     else:
@@ -38,17 +42,21 @@ def main():
     generator=torch.Generator(device=a.device).manual_seed(a.seed);generated=[]
     with torch.inference_mode():
         for start in range(0,len(prompt),128):logits=session.consume(torch.tensor([list(prompt[start:start+128])],device=a.device))
-        if a.decoder!='reference':
+        if a.decoder!='reference' and not word_mode:
             generated=session.generate(a.tokens,temperature=a.temperature,top_k=a.top_k,generator=generator)[0].cpu().tolist()
         else:
+            if a.decoder!='reference':session.prepare()
             for _ in range(a.tokens):
-                scores=logits[:,-1]
+                scores=logits[:,-1].clone()
+                if word_mode:scores[:,[tokenizer.bos_id,tokenizer.unk_id]]=-torch.inf
                 if a.temperature:
                     values,ids=(scores/a.temperature).topk(a.top_k,-1)
                     token=ids.gather(-1,torch.multinomial(values.softmax(-1),1,generator=generator)).squeeze(-1)
                 else:token=scores.argmax(-1)
-                generated.append(int(token));logits=session.consume(token[:,None])
-    raw=tokenizer.decode(generated) if tokenizer else bytes(generated)
+                generated.append(int(token))
+                if word_mode and int(token)==tokenizer.eos_id:break
+                logits=session.consume(token[:,None])
+    raw=tokenizer.decode_continuation(generated,prefix=a.prompt) if word_mode else tokenizer.decode(generated) if tokenizer else bytes(generated)
     if a.output:a.output.write_bytes(raw)
     sys.stdout.buffer.write(a.prompt.encode()+raw+b'\n')
 

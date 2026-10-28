@@ -70,8 +70,8 @@ class EnergyDecodeSession:
         if (tokens.dtype != torch.long or tokens.shape != (self.state.joint.shape[0], 1)
                 or tokens.device != self.state.joint.device):
             raise ValueError('step requires one int64 byte per row on the model device')
-        if bool((tokens < 0).any()) or bool((tokens > 255).any()):
-            raise ValueError('Bytes must be in 0..255')
+        if bool((tokens < 0).any()) or bool((tokens >= self.model.config.vocab_size).any()):
+            raise ValueError(f'Token IDs must be in 0..{self.model.config.vocab_size - 1} for this vocabulary')
         model, state = self.model, self.state
         c = model.config
         current = model.encode_current(tokens[:, 0], state)

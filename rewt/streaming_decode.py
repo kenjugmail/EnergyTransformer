@@ -49,7 +49,7 @@ class StreamingSession:
             raise ValueError('session weights or evaluation mode changed')
         if tokens.ndim!=2 or tokens.shape[0]!=self.batch or not tokens.shape[1] or tokens.dtype!=torch.long:
             raise ValueError('expected nonempty [session_batch,time] int64')
-        if tokens.device!=model.embedding.weight.device or bool(((tokens<0)|(tokens>255)).any()):
+        if tokens.device!=model.embedding.weight.device or bool(((tokens<0)|(tokens>=c.vocab_size)).any()):
             raise ValueError('token device or vocabulary mismatch')
         t=tokens.shape[1]
         if self.position+t>self.capacity:raise ValueError('session capacity exceeded')

@@ -1,0 +1,399 @@
+{
+  "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_words_20261028/best.pt",
+  "checkpoint_sha256": "0b48e5e2a316b91fc7967ab369c9b3f40adbc2dea1200ee2ac76bbaabf39c322",
+  "initial_validation": {
+    "evaluated_tokens": 6144,
+    "evaluated_word_positions": 5203,
+    "known_word_accuracy": 0.0001928268414963363,
+    "next_word_accuracy": 0.00019219680953296174,
+    "next_word_top5_accuracy": 0.0003843936190659235,
+    "scope": "Teacher-forced next-position prediction. Word accuracy excludes punctuation and counts every unseen word as incorrect. NLL/perplexity includes punctuation, EOS and <unk>.",
+    "token_accuracy_with_unk": 0.00048828125,
+    "token_nll": 9.052156925201416,
+    "token_perplexity": 8536.931603461493,
+    "unknown_target_tokens": 17,
+    "word_vocabulary_coverage": 0.9967326542379397
+  },
+  "parameters": 1399096,
+  "samples": [
+    {
+      "candidate_scope": "Whole words/numbers at the immediate next token; punctuation and special tokens omitted. Probabilities retain the full vocabulary denominator.",
+      "candidates": [
+        {
+          "probability": 0.9527759552001953,
+          "token_id": 48,
+          "word": "time"
+        },
+        {
+          "probability": 0.005892307963222265,
+          "token_id": 37,
+          "word": "day"
+        },
+        {
+          "probability": 0.003414881182834506,
+          "token_id": 55,
+          "word": "big"
+        },
+        {
+          "probability": 0.002314884215593338,
+          "token_id": 573,
+          "word": "morning"
+        },
+        {
+          "probability": 0.0020420397631824017,
+          "token_id": 254,
+          "word": "way"
+        }
+      ],
+      "continuation": " time, there was a little girl named Lily. She loved to play with her toys and make a lot of fun.",
+      "generated_token_ids": [
+        48,
+        4,
+        49,
+        23,
+        22,
+        47,
+        68,
+        81,
+        35,
+        3,
+        25,
+        82,
+        21,
+        59,
+        33,
+        26,
+        150,
+        19,
+        103,
+        22,
+        288,
+        39,
+        90,
+        3
+      ],
+      "prompt": "Once upon a",
+      "text": "Once upon a time, there was a little girl named Lily. She loved to play with her toys and make a lot of fun.",
+      "tokenization": "whole_words_v1",
+      "unknown_prompt_tokens": [],
+      "vocabulary_size": 8192
+    },
+    {
+      "candidate_scope": "Whole words/numbers at the immediate next token; punctuation and special tokens omitted. Probabilities retain the full vocabulary denominator.",
+      "candidates": [
+        {
+          "probability": 0.29404550790786743,
+          "token_id": 109,
+          "word": "park"
+        },
+        {
+          "probability": 0.08777789771556854,
+          "token_id": 357,
+          "word": "store"
+        },
+        {
+          "probability": 0.04765550047159195,
+          "token_id": 380,
+          "word": "kitchen"
+        },
+        {
+          "probability": 0.03960495442152023,
+          "token_id": 613,
+          "word": "beach"
+        },
+        {
+          "probability": 0.02614942006766796,
+          "token_id": 179,
+          "word": "house"
+        }
+      ],
+      "continuation": " park and saw a big, shiny box. She was so excited that she had never seen anything like it. She was",
+      "generated_token_ids": [
+        109,
+        19,
+        56,
+        22,
+        55,
+        4,
+        281,
+        210,
+        3,
+        25,
+        23,
+        43,
+        137,
+        38,
+        34,
+        40,
+        191,
+        458,
+        524,
+        93,
+        24,
+        3,
+        25,
+        23
+      ],
+      "prompt": "The little girl went to the",
+      "text": "The little girl went to the park and saw a big, shiny box. She was so excited that she had never seen anything like it. She was",
+      "tokenization": "whole_words_v1",
+      "unknown_prompt_tokens": [],
+      "vocabulary_size": 8192
+    },
+    {
+      "candidate_scope": "Whole words/numbers at the immediate next token; punctuation and special tokens omitted. Probabilities retain the full vocabulary denominator.",
+      "candidates": [
+        {
+          "probability": 0.20393508672714233,
+          "token_id": 114,
+          "word": "sad"
+        },
+        {
+          "probability": 0.12527334690093994,
+          "token_id": 50,
+          "word": "happy"
+        },
+        {
+          "probability": 0.06682225316762924,
+          "token_id": 137,
+          "word": "excited"
+        },
+        {
+          "probability": 0.06527706235647202,
+          "token_id": 271,
+          "word": "angry"
+        },
+        {
+          "probability": 0.0327778197824955,
+          "token_id": 586,
+          "word": "hungry"
+        }
+      ],
+      "continuation": " sad. He wanted to play with his friends. He was so happy that he had never seen anything like a little bit",
+      "generated_token_ids": [
+        114,
+        3,
+        27,
+        64,
+        21,
+        59,
+        33,
+        36,
+        78,
+        3,
+        27,
+        23,
+        43,
+        50,
+        38,
+        31,
+        40,
+        191,
+        458,
+        524,
+        93,
+        22,
+        47,
+        420
+      ],
+      "prompt": "The dog was very",
+      "text": "The dog was very sad. He wanted to play with his friends. He was so happy that he had never seen anything like a little bit",
+      "tokenization": "whole_words_v1",
+      "unknown_prompt_tokens": [],
+      "vocabulary_size": 8192
+    },
+    {
+      "candidate_scope": "Whole words/numbers at the immediate next token; punctuation and special tokens omitted. Probabilities retain the full vocabulary denominator.",
+      "candidates": [
+        {
+          "probability": 0.4518643021583557,
+          "token_id": 56,
+          "word": "saw"
+        },
+        {
+          "probability": 0.06530901789665222,
+          "token_id": 121,
+          "word": "found"
+        },
+        {
+          "probability": 0.023864908143877983,
+          "token_id": 94,
+          "word": "looked"
+        },
+        {
+          "probability": 0.019016724079847336,
+          "token_id": 30,
+          "word": "said"
+        },
+        {
+          "probability": 0.01611962541937828,
+          "token_id": 106,
+          "word": "started"
+        }
+      ],
+      "continuation": " saw a big, shiny box. She was so excited that she had a big, shiny toy. She was so happy",
+      "generated_token_ids": [
+        56,
+        22,
+        55,
+        4,
+        281,
+        210,
+        3,
+        25,
+        23,
+        43,
+        137,
+        38,
+        34,
+        40,
+        22,
+        55,
+        4,
+        281,
+        170,
+        3,
+        25,
+        23,
+        43,
+        50
+      ],
+      "prompt": "She opened the door and",
+      "text": "She opened the door and saw a big, shiny box. She was so excited that she had a big, shiny toy. She was so happy",
+      "tokenization": "whole_words_v1",
+      "unknown_prompt_tokens": [],
+      "vocabulary_size": 8192
+    },
+    {
+      "candidate_scope": "Whole words/numbers at the immediate next token; punctuation and special tokens omitted. Probabilities retain the full vocabulary denominator.",
+      "candidates": [
+        {
+          "probability": 0.04809747263789177,
+          "token_id": 104,
+          "word": "away"
+        },
+        {
+          "probability": 0.04279783368110657,
+          "token_id": 19,
+          "word": "and"
+        },
+        {
+          "probability": 0.03691112622618675,
+          "token_id": 93,
+          "word": "like"
+        },
+        {
+          "probability": 0.028816888108849525,
+          "token_id": 95,
+          "word": "around"
+        },
+        {
+          "probability": 0.023580150678753853,
+          "token_id": 343,
+          "word": "after"
+        }
+      ],
+      "continuation": ". They had a big, shiny dress and a big, shiny box. They had a big tree and a big,",
+      "generated_token_ids": [
+        3,
+        28,
+        40,
+        22,
+        55,
+        4,
+        281,
+        396,
+        19,
+        22,
+        55,
+        4,
+        281,
+        210,
+        3,
+        28,
+        40,
+        22,
+        55,
+        156,
+        19,
+        22,
+        55,
+        4
+      ],
+      "prompt": "They lived happily ever",
+      "text": "They lived happily ever. They had a big, shiny dress and a big, shiny box. They had a big tree and a big,",
+      "tokenization": "whole_words_v1",
+      "unknown_prompt_tokens": [],
+      "vocabulary_size": 8192
+    }
+  ],
+  "selected_step": 1200,
+  "test": {
+    "evaluated_tokens": 6144,
+    "evaluated_word_positions": 5218,
+    "known_word_accuracy": 0.28516377649325625,
+    "next_word_accuracy": 0.28363357608279033,
+    "next_word_top5_accuracy": 0.5396703717899578,
+    "scope": "Teacher-forced next-position prediction. Word accuracy excludes punctuation and counts every unseen word as incorrect. NLL/perplexity includes punctuation, EOS and <unk>.",
+    "token_accuracy_with_unk": 0.3382161458333333,
+    "token_nll": 3.382439454396566,
+    "token_perplexity": 29.44250723293375,
+    "unknown_target_tokens": 28,
+    "word_vocabulary_coverage": 0.9946339593714066
+  },
+  "training_seconds": 22.315145060420036,
+  "training_token_exposures": 1228800,
+  "unigram_test": {
+    "evaluated_tokens": 6144,
+    "evaluated_word_positions": 5218,
+    "known_word_accuracy": 0.0,
+    "next_word_accuracy": 0.0,
+    "next_word_top5_accuracy": 0.12476044461479494,
+    "scope": "Teacher-forced next-position prediction. Word accuracy excludes punctuation and counts every unseen word as incorrect. NLL/perplexity includes punctuation, EOS and <unk>.",
+    "token_accuracy_with_unk": 0.0751953125,
+    "token_nll": 5.951045195261638,
+    "token_perplexity": 384.15464591821546,
+    "unknown_target_tokens": 28,
+    "word_vocabulary_coverage": 0.9946339593714066
+  },
+  "unigram_validation": {
+    "evaluated_tokens": 6144,
+    "evaluated_word_positions": 5203,
+    "known_word_accuracy": 0.0,
+    "next_word_accuracy": 0.0,
+    "next_word_top5_accuracy": 0.13396117624447434,
+    "scope": "Teacher-forced next-position prediction. Word accuracy excludes punctuation and counts every unseen word as incorrect. NLL/perplexity includes punctuation, EOS and <unk>.",
+    "token_accuracy_with_unk": 0.07779947916666667,
+    "token_nll": 5.874875386555989,
+    "token_perplexity": 355.9802979758117,
+    "unknown_target_tokens": 17,
+    "word_vocabulary_coverage": 0.9967326542379397
+  },
+  "validation": {
+    "evaluated_tokens": 6144,
+    "evaluated_word_positions": 5203,
+    "known_word_accuracy": 0.28769764751253374,
+    "next_word_accuracy": 0.2867576398231789,
+    "next_word_top5_accuracy": 0.5454545454545454,
+    "scope": "Teacher-forced next-position prediction. Word accuracy excludes punctuation and counts every unseen word as incorrect. NLL/perplexity includes punctuation, EOS and <unk>.",
+    "token_accuracy_with_unk": 0.3484700520833333,
+    "token_nll": 3.276400566101074,
+    "token_perplexity": 26.48028691320878,
+    "unknown_target_tokens": 17,
+    "word_vocabulary_coverage": 0.9967326542379397
+  },
+  "vocabulary_size": 8192,
+  "zero_rounds_test": {
+    "evaluated_tokens": 6144,
+    "evaluated_word_positions": 5218,
+    "known_word_accuracy": 0.2863198458574181,
+    "next_word_accuracy": 0.28478344193177463,
+    "next_word_top5_accuracy": 0.5389037945573016,
+    "scope": "Teacher-forced next-position prediction. Word accuracy excludes punctuation and counts every unseen word as incorrect. NLL/perplexity includes punctuation, EOS and <unk>.",
+    "token_accuracy_with_unk": 0.337890625,
+    "token_nll": 3.4000935554504395,
+    "token_perplexity": 29.966903483410274,
+    "unknown_target_tokens": 28,
+    "word_vocabulary_coverage": 0.9946339593714066
+  }
+}

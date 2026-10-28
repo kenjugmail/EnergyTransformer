@@ -1,4 +1,4 @@
-"""Generate bytes with a saved REWT checkpoint and fixed learned weights."""
+"""Generate text with a saved REWT checkpoint and its original tokenizer."""
 from __future__ import annotations
 
 import argparse
@@ -14,7 +14,8 @@ from rewt.data import file_sha256
 from rewt.evaluate import model_output
 from rewt.position_memory import load_learning_checkpoint
 from rewt.model import JointEnergyLM, TransformerLM
-from rewt.bpe import load_story_tokenizer
+from rewt.bpe import checkpoint_tokenizer
+from rewt.words import WordTokenizer
 
 
 def main():
@@ -105,15 +106,13 @@ def main():
         from rewt.decode import EnergyDecodeSession
         try: session=EnergyDecodeSession(model,rounds=args.rounds)
         except ValueError as error: parser.error(str(error))
-    tokenizer=None
-    if saved.get('tokenizer'):
-        info=saved['tokenizer']
-        if file_sha256(Path(info['path']))!=info['sha256']:
-            parser.error('the checkpoint vocabulary has changed')
-        tokenizer=load_story_tokenizer(info['path'])
-        try:encoded=tokenizer.encode(raw)
-        except ValueError as error:parser.error(str(error))
-    else:encoded=raw
+    try:
+        tokenizer=checkpoint_tokenizer(saved)
+        word_mode=isinstance(tokenizer,WordTokenizer)
+        if tokenizer and len(tokenizer.pieces)!=model.config.vocab_size:
+            raise ValueError('checkpoint tokenizer size mismatch')
+        encoded=tokenizer.encode(raw,bos=True) if word_mode else tokenizer.encode(raw) if tokenizer else raw
+    except ValueError as error:parser.error(str(error))
     if isinstance(model,TransformerLM) and len(encoded)+args.max_new>model.config.context:
         parser.error(f'this Transformer checkpoint requires prompt + generation <= {model.config.context} tokens')
     generator=torch.Generator(device=args.device).manual_seed(args.seed)
@@ -127,14 +126,16 @@ def main():
                 model_output(model,prompt_tokens,generator,**kwargs))
         for step in range(args.max_new):
             for key in cost:cost[key]+=output.details['cost'].get(key,0)
-            logits=output.logits[0,-1]
+            logits=output.logits[0,-1].clone()
+            if word_mode:logits[[tokenizer.bos_id,tokenizer.unk_id]]=-torch.inf
             if args.greedy:
                 token=int(logits.argmax())
             else:
                 probability=(logits/args.temperature).softmax(-1)
                 uniform=torch.rand((),generator=sample_generator)
-                token=int((probability.cumsum(-1)<uniform).sum().clamp_max(255))
+                token=int((probability.cumsum(-1)<uniform).sum().clamp_max(model.config.vocab_size-1))
             generated.append(token)
+            if word_mode and token==tokenizer.eos_id:break
             piece=tokenizer.pieces[token] if tokenizer else bytes([token])
             if (args.stop_newline and b'\n' in piece) or step+1==args.max_new:
                 break
@@ -145,7 +146,7 @@ def main():
             else:
                 output=(session.step(next_tokens) if session else
                         model_output(model,next_tokens,generator,state=output.state,**kwargs))
-    result=tokenizer.decode(generated) if tokenizer else bytes(generated)
+    result=tokenizer.decode_continuation(generated,prefix=raw) if word_mode else tokenizer.decode(generated) if tokenizer else bytes(generated)
     if args.stop_newline and b'\n' in result:
         result=result.split(b'\n',1)[0]+b'\n'
     if args.json:

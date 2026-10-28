@@ -15,6 +15,10 @@ class StoryCorpus:
         self.directory = Path(directory).resolve()
         manifest_path = self.directory / 'manifest.json'
         self.manifest = json.loads(manifest_path.read_text())
+        dtype = self.manifest.get('dtype', 'uint8')
+        if dtype not in ('uint8', '<u4'):
+            raise ValueError('Unsupported story token dtype')
+        self.dtype = np.dtype(dtype)
         self.manifest_sha256 = file_sha256(manifest_path)
         self.data, self.documents = {}, {}
         identities = {}
@@ -27,15 +31,17 @@ class StoryCorpus:
             if len(records) != info['documents'] or not records:
                 raise ValueError('Invalid story document count')
             spans = np.array([[r['start'], r['end']] for r in records], dtype=np.int64)
+            if path.stat().st_size % self.dtype.itemsize:
+                raise ValueError('Incomplete story token storage')
             if ((spans[:, 0] < 0).any() or (spans[:, 1] <= spans[:, 0]).any()
-                    or spans[-1, 1] > path.stat().st_size
+                    or spans[-1, 1] > path.stat().st_size // self.dtype.itemsize
                     or (spans[1:, 0] < spans[:-1, 1]).any()):
                 raise ValueError('Invalid story boundaries')
             identities[split] = {r['id'] for r in records}
             if len(identities[split]) != len(records):
                 raise ValueError('Duplicate story IDs')
             self.documents[split] = spans
-            self.data[split] = np.memmap(path, dtype=np.uint8, mode='r')
+            self.data[split] = np.memmap(path, dtype=self.dtype, mode='r')
         if any(identities[a] & identities[b] for a, b in
                [('train', 'valid'), ('train', 'test'), ('valid', 'test')]):
             raise ValueError('Story splits overlap')
@@ -71,6 +77,8 @@ class StoryCorpus:
         return [int(rng.integers(spans[i, 0], spans[i, 1] - context)) for i in selected]
 
     def text_prompts(self, count=30, seed=985, prefix=32, continuation=96):
+        if self.dtype != np.dtype('uint8'):
+            raise ValueError('Use the word tokenizer to decode word-token prompts')
         rng = np.random.default_rng(seed)
         spans = self.documents['test']
         eligible = np.flatnonzero(spans[:, 1] - spans[:, 0] >= prefix + continuation)

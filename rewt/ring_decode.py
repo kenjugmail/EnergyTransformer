@@ -113,7 +113,7 @@ class RingDecodeSession:
         valid = self.slots < (self.count + 1).clamp_max(c.history)
         attention = (scores.masked_fill(~valid[None, :, None], -torch.inf).softmax(1)[..., None] * v).sum(1).flatten(1)
         features = torch.cat((current, carry, attention), -1)
-        hidden, output, amplitude = F.linear(features, *self.packed).split((c.hidden, 256, c.modes), -1)
+        hidden, output, amplitude = F.linear(features, *self.packed).split((c.hidden, c.vocab_size, c.modes), -1)
         feedforward = model.prior[2](model.prior[1](hidden))
         cell = model.recurrent_proposal
         recurrent = gru_from_input(F.linear(current, cell.weight_ih, cell.bias_ih), carry, cell)
@@ -148,9 +148,9 @@ class RingDecodeSession:
         if tokens.shape != self.input.shape or tokens.dtype != torch.long or tokens.device != self.input.device:
             raise ValueError('one int64 byte per row required on the session device')
         # Greedy argmax callers may bypass the host range check, since argmax
-        # over 256 logits already guarantees a byte. The default checks input.
-        if validate_values and bool(((tokens < 0) | (tokens > 255)).any()):
-            raise ValueError('bytes must be in 0..255')
+        # over the configured logits guarantees a valid token. Check user input.
+        if validate_values and bool(((tokens < 0) | (tokens >= self.model.config.vocab_size)).any()):
+            raise ValueError('token IDs outside the configured vocabulary')
         self.input.copy_(tokens)
         if self.cuda_graph:
             self.graph.replay()

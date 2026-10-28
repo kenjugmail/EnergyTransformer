@@ -25,8 +25,11 @@ class StreamingConfig:
     chunk: int = 32
     modes: int = 16
     rounds: int = 2
+    vocab_size: int = 256
 
     def validate(self):
+        if type(self.vocab_size) is not int or self.vocab_size < 2:
+            raise ValueError('vocab_size must be an integer >= 2')
         for name in ('width', 'heads', 'hidden', 'layers', 'chunk', 'modes'):
             if type(getattr(self, name)) is not int or getattr(self, name) < 1:
                 raise ValueError(f'{name} must be positive')
@@ -219,7 +222,7 @@ class StreamingLM(nn.Module):
         super().__init__()
         config.validate()
         self.config = config
-        self.embedding = nn.Embedding(256, config.width)
+        self.embedding = nn.Embedding(config.vocab_size, config.width)
         self.blocks = nn.ModuleList(Block(config, config.hybrid and i%2 == 0) for i in range(config.layers))
         self.norm = RMSNorm(config.width)
         self.energy_head = LatentEnergy(config) if config.modes and config.hybrid else None
@@ -245,8 +248,8 @@ class StreamingLM(nn.Module):
     def forward(self, tokens, state=None, *, return_state=False, rounds=None, details=False):
         if tokens.ndim != 2 or tokens.dtype != torch.long or not all(tokens.shape):
             raise ValueError('nonempty [batch,time] int64 tokens required')
-        if bool(((tokens<0)|(tokens>255)).any()):
-            raise ValueError('token IDs must be in 0..255')
+        if bool(((tokens<0)|(tokens>=self.config.vocab_size)).any()):
+            raise ValueError('token IDs outside the configured vocabulary')
         if state is not None and (state.signature != self.signature() or len(state.layers) != len(self.blocks)):
             raise ValueError('state belongs to different or changed weights')
         rounds = self.config.rounds if rounds is None else rounds

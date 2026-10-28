@@ -90,4 +90,28 @@ def load_story_tokenizer(path):
     if kind=='ascii_word_chunks_v1':
         from .tokenizer import StoryTokenizer
         return StoryTokenizer.load(path)
+    if kind=='whole_words_v1':
+        from .words import WordTokenizer
+        return WordTokenizer.load(path)
     raise ValueError('Unknown story vocabulary')
+
+
+def checkpoint_tokenizer(saved):
+    """New word checkpoints embed their vocabulary; retain legacy path formats."""
+    if saved.get('tokenizer_spec') is not None:
+        from .words import WordTokenizer
+        result = WordTokenizer.from_dict(saved['tokenizer_spec'])
+        if saved.get('tokenizer_identity') not in (None, result.identity()):
+            raise ValueError('The embedded checkpoint vocabulary has changed')
+        return result
+    info = saved.get('tokenizer')
+    if not info:
+        if saved.get('config', {}).get('vocab_size', 256) != 256:
+            raise ValueError('A non-byte checkpoint must include its tokenizer')
+        return None
+    if isinstance(info, str):
+        return load_story_tokenizer(info)
+    from .data import file_sha256
+    if file_sha256(info['path']) != info['sha256']:
+        raise ValueError('The checkpoint vocabulary has changed')
+    return load_story_tokenizer(info['path'])
