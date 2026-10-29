@@ -1,0 +1,33 @@
+{
+  "fixed_configs": [
+    [
+      "pilot_conditioned16",
+      [
+        "--profile",
+        "trajectory",
+        "--conditioned-phase",
+        "--supervise-steps",
+        "2",
+        "4",
+        "8"
+      ]
+    ],
+    [
+      "pilot_conditioned64",
+      [
+        "--profile",
+        "trajectory",
+        "--modes",
+        "64",
+        "--conditioned-phase",
+        "--supervise-steps",
+        "2",
+        "4",
+        "8"
+      ]
+    ]
+  ],
+  "steps": 2400,
+  "seed": 291101,
+  "test_evaluation": false
+}

@@ -1,0 +1,31 @@
+{
+  "completed_utc": "2026-10-29T05:17:01.163971+00:00",
+  "tests_passed": 326,
+  "cuda_cached_generation_steps_matched": 72,
+  "training_fits": 23,
+  "confirmation_fits": 9,
+  "fresh_evaluation_models": 10,
+  "fresh_test_documents": 1024,
+  "fresh_test_tokens": 65536,
+  "fresh_test_word_positions": 56046,
+  "primary_success_criterion_satisfied": true,
+  "checkpoint_hashes_verified": true,
+  "training_source_archive_hashes_verified": true,
+  "document_links_verified": true,
+  "recommended_checkpoint_sha256": "44017478544b74aa4ccb68273c31e350d939ed5beca938c9226c358a00cd5788",
+  "source_sha256": {
+    "rewt/streaming.py": "2ecdd21b7cf7b9011d08a6b0ae7d1505bfcdbfd9da835da6d8c1826efec6b4ee",
+    "rewt/streaming_decode.py": "5570cd4632be94b56b16fc6ceb22128cb65bbab331f8af5e7414479fb8a740ba",
+    "rewt/fast_energy.py": "c3f1b1276343f263af0fb9949a94376a8139dbd05abd44bf59a65401384e7025",
+    "rewt/fast_decode.py": "885cea1d876192d28cb038338e384ce6e8be01dd9e80eb19b4639fa4a6f4aa2f",
+    "rewt/refinement_training.py": "99f2ff43728e92c951f1b51f7f958f86803da559b541d1cb0a902df6069cb3cc",
+    "scripts/study_rewt_word_refinement.py": "5d490fcb883caad73b6d773c9be8a20cb0adfdda1e9f4fbab4a8aac9ae15c07a",
+    "scripts/prepare_rewt_word_holdout.py": "ca558b11a773e5c3cc19fcf340b7acc648c9b79b9776ea239069c7d8532ba8cb",
+    "scripts/analyze_rewt_word_refinement.py": "f0185463ca37d04f3b16b139d3ec481417385f499d4605786fb7599eb6b20ead",
+    "scripts/plot_rewt_word_refinement.py": "4c43ce9887a3684c8288582a3e93adf1af505a3b88ff8f4cafadf31a3604b4de",
+    "scripts/verify_rewt_word_refinement.py": "166ff7bb82036a23843076b2bf0bf5fcf0babdfe6257c188a8a11e7f6fd1a5a0",
+    "scripts/predict_rewt_words.py": "f046f1a6a62d0b5970584a03d4391d8d0e0abdac2e66a1295719a21d8dd6d7aa",
+    "tests_rewt/test_refinement_training.py": "a2f76f2a8f5f99c2d2148fac1bb7de1e33be6958c5122eb524e22587db4c4eae",
+    "tests_rewt/test_word_comparison.py": "cbff5fe942221b69560d21a18e0df0c3295956b12318b52ea65695f59a70b909"
+  }
+}

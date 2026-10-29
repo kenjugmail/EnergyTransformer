@@ -1,0 +1,33 @@
+{
+  "fixed_configs": [
+    [
+      "dev_transformer0015",
+      [
+        "--profile",
+        "transformer",
+        "--hidden",
+        "288",
+        "--lr",
+        ".0015"
+      ]
+    ],
+    [
+      "dev_refined0015",
+      [
+        "--profile",
+        "trajectory",
+        "--conditioned-phase",
+        "--supervise-steps",
+        "2",
+        "4",
+        "8",
+        "--lr",
+        ".0015"
+      ]
+    ]
+  ],
+  "steps": 6000,
+  "seed": 291101,
+  "test_evaluation": false,
+  "reason": "Check the lower learning rate after .006 underperformed .003 on both architectures."
+}

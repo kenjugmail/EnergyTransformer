@@ -1,0 +1,93 @@
+{
+  "frozen_utc": "2026-10-29T04:43:02.512053+00:00",
+  "seeds": [
+    291201,
+    291202,
+    291203
+  ],
+  "steps": 12000,
+  "batch": 16,
+  "context": 64,
+  "learning_rate": 0.003,
+  "eval_every": 2000,
+  "profiles": {
+    "transformer": [
+      "--profile",
+      "transformer",
+      "--hidden",
+      "288"
+    ],
+    "refined": [
+      "--profile",
+      "trajectory",
+      "--conditioned-phase",
+      "--supervise-steps",
+      "2",
+      "4",
+      "8"
+    ],
+    "hybrid": [
+      "--profile",
+      "hybrid"
+    ]
+  },
+  "order": [
+    [
+      291201,
+      "transformer"
+    ],
+    [
+      291201,
+      "refined"
+    ],
+    [
+      291201,
+      "hybrid"
+    ],
+    [
+      291202,
+      "hybrid"
+    ],
+    [
+      291202,
+      "refined"
+    ],
+    [
+      291202,
+      "transformer"
+    ],
+    [
+      291203,
+      "refined"
+    ],
+    [
+      291203,
+      "transformer"
+    ],
+    [
+      291203,
+      "hybrid"
+    ]
+  ],
+  "validation_documents": 512,
+  "validation_seed": 291901,
+  "fresh_test_corpus": "data/rewt_word_holdout_20261029",
+  "test_documents": 1024,
+  "test_seed": 291902,
+  "primary": "Fresh test token NLL, mean across all three training seeds; lower is better. Each checkpoint and depth chosen by validation only.",
+  "win_criterion": "All three paired seed differences favor refined REWT and the paired seed/document bootstrap 95% interval is below zero. This is a bounded TinyStories result, not general superiority.",
+  "secondary": [
+    "whole-word accuracy",
+    "known-word NLL",
+    "perplexity",
+    "inference refinement curve",
+    "separately trained no-energy hybrid"
+  ],
+  "test_access": "No test evaluation until all confirmation weights, selected depths and checkpoint hashes are frozen.",
+  "matching": "Same word vocabulary, training documents/crops per seed, context, token exposures, optimizer, LR schedule; Transformer has 328 more parameters. Not equal FLOPs: trajectory training computes three supervised heads.",
+  "source_sha256": {
+    "scripts/study_rewt_word_refinement.py": "5d490fcb883caad73b6d773c9be8a20cb0adfdda1e9f4fbab4a8aac9ae15c07a",
+    "rewt/streaming.py": "77474efa6fd1b76ab254bba845a0441b60a0837f1d8daf6159412bf145396abc",
+    "rewt/refinement_training.py": "99f2ff43728e92c951f1b51f7f958f86803da559b541d1cb0a902df6069cb3cc"
+  }
+}

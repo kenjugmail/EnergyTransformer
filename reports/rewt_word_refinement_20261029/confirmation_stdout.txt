@@ -1,0 +1,73 @@
+START confirm_transformer_291201
+{"profile": "transformer", "seed": 291201, "step": 2000, "selected_rounds": 0, "validation_nll": 3.1918397452682257, "word_accuracy": 0.3016271235036915, "training_seconds": 23.66}
+{"profile": "transformer", "seed": 291201, "step": 4000, "selected_rounds": 0, "validation_nll": 2.978321849834174, "word_accuracy": 0.3239552720235109, "training_seconds": 43.75}
+{"profile": "transformer", "seed": 291201, "step": 6000, "selected_rounds": 0, "validation_nll": 2.8563273657346144, "word_accuracy": 0.33739516880510356, "training_seconds": 64.41}
+{"profile": "transformer", "seed": 291201, "step": 8000, "selected_rounds": 0, "validation_nll": 2.7656894272658974, "word_accuracy": 0.3564977420973407, "training_seconds": 86.69}
+{"profile": "transformer", "seed": 291201, "step": 10000, "selected_rounds": 0, "validation_nll": 2.7088167131878436, "word_accuracy": 0.3647767185148018, "training_seconds": 107.41}
+{"profile": "transformer", "seed": 291201, "step": 12000, "selected_rounds": 0, "validation_nll": 2.677386061521247, "word_accuracy": 0.3680739731918859, "training_seconds": 127.56}
+COMPLETE confirm_transformer_291201
+START confirm_refined_291201
+{"profile": "trajectory", "seed": 291201, "step": 2000, "selected_rounds": 8, "validation_nll": 3.1586882101837546, "word_accuracy": 0.3066805246935704, "training_seconds": 47.28}
+{"profile": "trajectory", "seed": 291201, "step": 4000, "selected_rounds": 16, "validation_nll": 2.9375060936436057, "word_accuracy": 0.3313382553221991, "training_seconds": 94.33}
+{"profile": "trajectory", "seed": 291201, "step": 6000, "selected_rounds": 16, "validation_nll": 2.820051229093224, "word_accuracy": 0.3448856712780446, "training_seconds": 133.05}
+{"profile": "trajectory", "seed": 291201, "step": 8000, "selected_rounds": 16, "validation_nll": 2.7302366772200912, "word_accuracy": 0.3645975198910472, "training_seconds": 159.42}
+{"profile": "trajectory", "seed": 291201, "step": 10000, "selected_rounds": 32, "validation_nll": 2.6743263331009075, "word_accuracy": 0.370941151171959, "training_seconds": 193.04}
+{"profile": "trajectory", "seed": 291201, "step": 12000, "selected_rounds": 32, "validation_nll": 2.6432877141050994, "word_accuracy": 0.37800157694788905, "training_seconds": 228.4}
+COMPLETE confirm_refined_291201
+START confirm_hybrid_291201
+{"profile": "hybrid", "seed": 291201, "step": 2000, "selected_rounds": 0, "validation_nll": 3.1819047555327415, "word_accuracy": 0.3041717439610064, "training_seconds": 35.24}
+{"profile": "hybrid", "seed": 291201, "step": 4000, "selected_rounds": 0, "validation_nll": 2.953045300906524, "word_accuracy": 0.33015554440541894, "training_seconds": 64.87}
+{"profile": "hybrid", "seed": 291201, "step": 6000, "selected_rounds": 0, "validation_nll": 2.82696413283702, "word_accuracy": 0.34560246577306286, "training_seconds": 102.17}
+{"profile": "hybrid", "seed": 291201, "step": 8000, "selected_rounds": 0, "validation_nll": 2.736990617122501, "word_accuracy": 0.3644541609920436, "training_seconds": 133.29}
+{"profile": "hybrid", "seed": 291201, "step": 10000, "selected_rounds": 0, "validation_nll": 2.6793210450559855, "word_accuracy": 0.3703318758511935, "training_seconds": 169.28}
+{"profile": "hybrid", "seed": 291201, "step": 12000, "selected_rounds": 0, "validation_nll": 2.651487170951441, "word_accuracy": 0.37681886603110887, "training_seconds": 186.94}
+COMPLETE confirm_hybrid_291201
+START confirm_hybrid_291202
+{"profile": "hybrid", "seed": 291202, "step": 2000, "selected_rounds": 0, "validation_nll": 3.1931547755375504, "word_accuracy": 0.3009103290086732, "training_seconds": 15.9}
+{"profile": "hybrid", "seed": 291202, "step": 4000, "selected_rounds": 0, "validation_nll": 2.95407247915864, "word_accuracy": 0.33047810192817717, "training_seconds": 38.14}
+{"profile": "hybrid", "seed": 291202, "step": 6000, "selected_rounds": 0, "validation_nll": 2.828747841180302, "word_accuracy": 0.35011827109167803, "training_seconds": 66.93}
+{"profile": "hybrid", "seed": 291202, "step": 8000, "selected_rounds": 0, "validation_nll": 2.746877406258136, "word_accuracy": 0.3587914844813992, "training_seconds": 87.5}
+{"profile": "hybrid", "seed": 291202, "step": 10000, "selected_rounds": 0, "validation_nll": 2.686368727008812, "word_accuracy": 0.36868324851265144, "training_seconds": 114.92}
+{"profile": "hybrid", "seed": 291202, "step": 12000, "selected_rounds": 0, "validation_nll": 2.6613020084332675, "word_accuracy": 0.37137122786897, "training_seconds": 137.72}
+COMPLETE confirm_hybrid_291202
+START confirm_refined_291202
+{"profile": "trajectory", "seed": 291202, "step": 2000, "selected_rounds": 8, "validation_nll": 3.1777807441540062, "word_accuracy": 0.30496021790552647, "training_seconds": 66.41}
+{"profile": "trajectory", "seed": 291202, "step": 4000, "selected_rounds": 8, "validation_nll": 2.943954195594415, "word_accuracy": 0.3320550498172174, "training_seconds": 105.29}
+{"profile": "trajectory", "seed": 291202, "step": 6000, "selected_rounds": 16, "validation_nll": 2.818502924637869, "word_accuracy": 0.34968819439466703, "training_seconds": 141.64}
+{"profile": "trajectory", "seed": 291202, "step": 8000, "selected_rounds": 16, "validation_nll": 2.7367088372120634, "word_accuracy": 0.361371944663465, "training_seconds": 180.43}
+{"profile": "trajectory", "seed": 291202, "step": 10000, "selected_rounds": 16, "validation_nll": 2.677506692474708, "word_accuracy": 0.3740592072252885, "training_seconds": 207.21}
+{"profile": "trajectory", "seed": 291202, "step": 12000, "selected_rounds": 16, "validation_nll": 2.651099047390744, "word_accuracy": 0.3748476811698086, "training_seconds": 233.46}
+COMPLETE confirm_refined_291202
+START confirm_transformer_291202
+{"profile": "transformer", "seed": 291202, "step": 2000, "selected_rounds": 0, "validation_nll": 3.203658038750291, "word_accuracy": 0.30015769478890403, "training_seconds": 16.7}
+{"profile": "transformer", "seed": 291202, "step": 4000, "selected_rounds": 0, "validation_nll": 2.973595537710935, "word_accuracy": 0.32589061716006024, "training_seconds": 32.94}
+{"profile": "transformer", "seed": 291202, "step": 6000, "selected_rounds": 0, "validation_nll": 2.8504511965438724, "word_accuracy": 0.34434807540678086, "training_seconds": 51.6}
+{"profile": "transformer", "seed": 291202, "step": 8000, "selected_rounds": 0, "validation_nll": 2.7614698944380507, "word_accuracy": 0.3549924736578023, "training_seconds": 69.65}
+{"profile": "transformer", "seed": 291202, "step": 10000, "selected_rounds": 0, "validation_nll": 2.6979960610624403, "word_accuracy": 0.3683606909898932, "training_seconds": 86.55}
+{"profile": "transformer", "seed": 291202, "step": 12000, "selected_rounds": 0, "validation_nll": 2.674563633976504, "word_accuracy": 0.3691491649344133, "training_seconds": 101.69}
+COMPLETE confirm_transformer_291202
+START confirm_refined_291203
+{"profile": "trajectory", "seed": 291203, "step": 2000, "selected_rounds": 16, "validation_nll": 3.192595154279843, "word_accuracy": 0.3010536879076769, "training_seconds": 26.77}
+{"profile": "trajectory", "seed": 291203, "step": 4000, "selected_rounds": 16, "validation_nll": 2.96662042546086, "word_accuracy": 0.3296537882589062, "training_seconds": 53.21}
+{"profile": "trajectory", "seed": 291203, "step": 6000, "selected_rounds": 16, "validation_nll": 2.8253556452691555, "word_accuracy": 0.34893556017489785, "training_seconds": 80.2}
+{"profile": "trajectory", "seed": 291203, "step": 8000, "selected_rounds": 16, "validation_nll": 2.7370881251990795, "word_accuracy": 0.3609060282417031, "training_seconds": 106.37}
+{"profile": "trajectory", "seed": 291203, "step": 10000, "selected_rounds": 16, "validation_nll": 2.6788882110267878, "word_accuracy": 0.37076195254820443, "training_seconds": 132.13}
+{"profile": "trajectory", "seed": 291203, "step": 12000, "selected_rounds": 16, "validation_nll": 2.651159861823544, "word_accuracy": 0.3730556949322629, "training_seconds": 158.75}
+COMPLETE confirm_refined_291203
+START confirm_transformer_291203
+{"profile": "transformer", "seed": 291203, "step": 2000, "selected_rounds": 0, "validation_nll": 3.2105291103944182, "word_accuracy": 0.2983657085513583, "training_seconds": 14.05}
+{"profile": "transformer", "seed": 291203, "step": 4000, "selected_rounds": 0, "validation_nll": 2.9787155212834477, "word_accuracy": 0.3260698157838148, "training_seconds": 30.64}
+{"profile": "transformer", "seed": 291203, "step": 6000, "selected_rounds": 0, "validation_nll": 2.8469397727167234, "word_accuracy": 0.34420471650777723, "training_seconds": 48.17}
+{"profile": "transformer", "seed": 291203, "step": 8000, "selected_rounds": 0, "validation_nll": 2.7605919189518318, "word_accuracy": 0.3544907175112895, "training_seconds": 67.69}
+{"profile": "transformer", "seed": 291203, "step": 10000, "selected_rounds": 0, "validation_nll": 2.7040565671632066, "word_accuracy": 0.3637732062217762, "training_seconds": 83.03}
+{"profile": "transformer", "seed": 291203, "step": 12000, "selected_rounds": 0, "validation_nll": 2.6720541142858565, "word_accuracy": 0.36879076768690416, "training_seconds": 93.89}
+COMPLETE confirm_transformer_291203
+START confirm_hybrid_291203
+{"profile": "hybrid", "seed": 291203, "step": 2000, "selected_rounds": 0, "validation_nll": 3.1833691336214542, "word_accuracy": 0.3043867823095119, "training_seconds": 16.76}
+{"profile": "hybrid", "seed": 291203, "step": 4000, "selected_rounds": 0, "validation_nll": 2.957015214720741, "word_accuracy": 0.33291520321123935, "training_seconds": 33.18}
+{"profile": "hybrid", "seed": 291203, "step": 6000, "selected_rounds": 0, "validation_nll": 2.8193096790928394, "word_accuracy": 0.3516235395312164, "training_seconds": 51.79}
+{"profile": "hybrid", "seed": 291203, "step": 8000, "selected_rounds": 0, "validation_nll": 2.731040757149458, "word_accuracy": 0.35954411870116837, "training_seconds": 75.04}
+{"profile": "hybrid", "seed": 291203, "step": 10000, "selected_rounds": 0, "validation_nll": 2.673613876104355, "word_accuracy": 0.37108451007096266, "training_seconds": 92.98}
+{"profile": "hybrid", "seed": 291203, "step": 12000, "selected_rounds": 0, "validation_nll": 2.643312393454835, "word_accuracy": 0.3751343989678159, "training_seconds": 116.1}
+COMPLETE confirm_hybrid_291203
+ALL_CONFIRMATION_TRAINING_COMPLETE_NO_TEST_EVALUATED

@@ -1,0 +1,101 @@
+{
+  "base_corpus_manifest_sha256": "68e4bda5893d8d56de4119d82d054725de99d09d66b3e31646942879547b992b",
+  "dataset": "roneneldan/TinyStories",
+  "dtype": "<u4",
+  "holdout_source": {
+    "duplicates_skipped": 0,
+    "end": 19447281,
+    "excluded_unique_ids": 79662,
+    "sha256": "615ab46541e5e605b3f591e8b8c2f7bb5e070c0127e5e1f87ca865956438497b",
+    "start": 16777216,
+    "url": "https://huggingface.co/datasets/roneneldan/TinyStories/resolve/f54c09fd23315a6f9c86f9dc80f725de7d8f9c64/TinyStories-valid.txt"
+  },
+  "license": "cdla-sharing-1.0",
+  "min_count": 2,
+  "protocol": "Training and validation reused unchanged. Test consists of complete documents in the unused official validation byte range 16MiB..end; all previously indexed IDs excluded. Vocabulary reused exactly, without refitting. Test labels are for final evaluation only.",
+  "requested_vocab_size": 8192,
+  "revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+  "source": {
+    "dataset": "roneneldan/TinyStories",
+    "directory": "/home/kt/Documents/EnergyTransformer/data/tinystories_rewt_20261010",
+    "manifest_sha256": "205257ed0d46add57b77b5ddf489bf54ad9da88e290f0519a2c045c4e4761980",
+    "revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+    "splits": {
+      "test": {
+        "bytes": 4120955,
+        "documents": 4995,
+        "index_path": "/home/kt/Documents/EnergyTransformer/data/tinystories_rewt_20261010/test_documents.json",
+        "index_sha256": "0e77414d8ba0da1a91d07edd10b12f25af758c3e4f921425b24645ca46486649",
+        "path": "/home/kt/Documents/EnergyTransformer/data/tinystories_rewt_20261010/test.bin",
+        "sha256": "68ca904cc87bcd7a7e89e117c9a4ca0c2d65d238a20e7725800cf2ab1a593222"
+      },
+      "train": {
+        "bytes": 33025152,
+        "documents": 37100,
+        "index_path": "/home/kt/Documents/EnergyTransformer/data/tinystories_rewt_20261010/train_documents.json",
+        "index_sha256": "3c405ed6778e80ae16a6c53daa76f0c57bdaf59bc3d86ab3e40c5a337566595e",
+        "path": "/home/kt/Documents/EnergyTransformer/data/tinystories_rewt_20261010/train.bin",
+        "sha256": "91ab6b924f1ed080719a55b6c910dcad1df3df14bcdc782d7a4f6f9d6cecf550"
+      },
+      "valid": {
+        "bytes": 4124506,
+        "documents": 4979,
+        "index_path": "/home/kt/Documents/EnergyTransformer/data/tinystories_rewt_20261010/valid_documents.json",
+        "index_sha256": "f6058edfc5524fea16cd88596b64df6fb75dc056b35b01f499597a4018434864",
+        "path": "/home/kt/Documents/EnergyTransformer/data/tinystories_rewt_20261010/valid.bin",
+        "sha256": "913043014ae026443e02b69c778e78cde66ae4a4bed7bab5ba91666ee6adb6ff"
+      }
+    }
+  },
+  "splits": {
+    "test": {
+      "documents": 2967,
+      "index_path": "/home/kt/Documents/EnergyTransformer/data/rewt_word_holdout_20261029/test_documents.json",
+      "index_sha256": "b10438dacc66a84d1a7bbda19981abb6d6ca8eb5a62f8b886cee6329e4619840",
+      "path": "/home/kt/Documents/EnergyTransformer/data/rewt_word_holdout_20261029/test.bin",
+      "sha256": "93d576c938dbc3fe36d2c5e7a0654157d8758c0386586485493e5c43059c2dd6",
+      "tokens": 613311,
+      "unknown_tokens": 1835,
+      "unknown_word_rate": 0.003551844345986416,
+      "unknown_words": 1835,
+      "word_mask_path": "/home/kt/Documents/EnergyTransformer/data/rewt_word_holdout_20261029/test_words.bin",
+      "word_mask_sha256": "edb442ae1ae0a4390298725da6ef90c32b71687fb3b051eef5430fb6e1f33d99",
+      "words": 516633
+    },
+    "train": {
+      "documents": 37100,
+      "index_path": "/home/kt/Documents/EnergyTransformer/data/rewt_words_20261028/train_documents.json",
+      "index_sha256": "8c428f155e1265371c9fe6e5f104defef90aa2817fa2dd7c8a7455edc19a9d05",
+      "path": "/home/kt/Documents/EnergyTransformer/data/rewt_words_20261028/train.bin",
+      "sha256": "26890bcee9b689f7b1f9fe5eb587952a59908de44391fde8be41ee7e7adca8a6",
+      "tokens": 7762858,
+      "unknown_tokens": 17575,
+      "unknown_word_rate": 0.002710198859973933,
+      "unknown_words": 17575,
+      "word_mask_path": "/home/kt/Documents/EnergyTransformer/data/rewt_words_20261028/train_words.bin",
+      "word_mask_sha256": "7ff8ce95e49917dd615ab3a6571fe55251f112bcbd16702fe23e2d180991bf7f",
+      "words": 6484764
+    },
+    "valid": {
+      "documents": 4979,
+      "index_path": "/home/kt/Documents/EnergyTransformer/data/rewt_words_20261028/valid_documents.json",
+      "index_sha256": "a5444a5f1976471698d6079c1674cd897c867aa1ac6deaae682f52ba7dabc011",
+      "path": "/home/kt/Documents/EnergyTransformer/data/rewt_words_20261028/valid.bin",
+      "sha256": "417b2c07e8b14fc3f7d71990e20b34e5473fecb24dc5f40977d329cb3be874ab",
+      "tokens": 958446,
+      "unknown_tokens": 3259,
+      "unknown_word_rate": 0.004040556825677063,
+      "unknown_words": 3259,
+      "word_mask_path": "/home/kt/Documents/EnergyTransformer/data/rewt_words_20261028/valid_words.bin",
+      "word_mask_sha256": "f4ca198031c79c46ab2fee9f33141202b6d7252bbef20ee9397783ae32f30cc8",
+      "words": 806572
+    }
+  },
+  "tokenization": "whole_words_v1",
+  "tokenizer": {
+    "filename": "vocabulary.json",
+    "identity": "cfe678c654b93bb293ee3ce15e66ce39919ce80f222bac737431659e1bbc5e28",
+    "sha256": "47613f78be8f11ca5b1c472ba51eb3943be22fe6cbea2cdfd7f68eeb91733a7e",
+    "vocabulary_size": 8192
+  }
+}

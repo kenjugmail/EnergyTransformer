@@ -1,0 +1,26 @@
+[
+  {
+    "seed": 291201,
+    "rounds": 32,
+    "saved_validation_nll": 2.6432877141050994,
+    "corrected_code_validation_nll": 2.6432877141050994,
+    "absolute_difference": 0.0,
+    "checkpoint_unchanged": true
+  },
+  {
+    "seed": 291202,
+    "rounds": 16,
+    "saved_validation_nll": 2.651099047390744,
+    "corrected_code_validation_nll": 2.651099047390744,
+    "absolute_difference": 0.0,
+    "checkpoint_unchanged": true
+  },
+  {
+    "seed": 291203,
+    "rounds": 16,
+    "saved_validation_nll": 2.651159861823544,
+    "corrected_code_validation_nll": 2.651159861823544,
+    "absolute_difference": 0.0,
+    "checkpoint_unchanged": true
+  }
+]

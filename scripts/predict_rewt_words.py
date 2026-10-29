@@ -12,7 +12,7 @@ from rewt.word_lm import load_word_model, predict_words
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--checkpoint', type=Path, default=ROOT / 'runs/rewt_words_20261028/best.pt')
+    parser.add_argument('--checkpoint', type=Path, default=ROOT / 'runs/rewt_word_refinement_20261029/recommended.pt')
     parser.add_argument('--prompt', default='Once upon a')
     parser.add_argument('--top', type=int, default=10)
     parser.add_argument('--generate', type=int, default=0, help='optional number of word/punctuation tokens to generate')

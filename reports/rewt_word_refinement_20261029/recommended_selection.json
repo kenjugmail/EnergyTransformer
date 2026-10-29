@@ -1,0 +1,36 @@
+{
+  "selected_utc": "2026-10-29T05:05:41.491679+00:00",
+  "rule": "Minimum validation NLL among the three refined REWT confirmation checkpoints, before fresh test evaluation.",
+  "candidates": [
+    {
+      "seed": 291201,
+      "validation_nll": 2.6432877141050994,
+      "rounds": 32,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_word_refinement_20261029/confirm_refined_291201/best.pt",
+      "checkpoint_sha256": "44017478544b74aa4ccb68273c31e350d939ed5beca938c9226c358a00cd5788"
+    },
+    {
+      "seed": 291202,
+      "validation_nll": 2.651099047390744,
+      "rounds": 16,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_word_refinement_20261029/confirm_refined_291202/best.pt",
+      "checkpoint_sha256": "b1cf7885b9e7e6cee0f93055209113a89bee3535a30aa0e8f4167ec1e6627f1a"
+    },
+    {
+      "seed": 291203,
+      "validation_nll": 2.651159861823544,
+      "rounds": 16,
+      "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_word_refinement_20261029/confirm_refined_291203/best.pt",
+      "checkpoint_sha256": "94347507fcf64c3073b2a0e4372b202868b44954430a16cd41114ed846ffedf4"
+    }
+  ],
+  "recommended": {
+    "seed": 291201,
+    "validation_nll": 2.6432877141050994,
+    "rounds": 32,
+    "checkpoint": "/home/kt/Documents/EnergyTransformer/runs/rewt_word_refinement_20261029/confirm_refined_291201/best.pt",
+    "checkpoint_sha256": "44017478544b74aa4ccb68273c31e350d939ed5beca938c9226c358a00cd5788"
+  },
+  "path": "/home/kt/Documents/EnergyTransformer/runs/rewt_word_refinement_20261029/recommended.pt",
+  "test_evaluated": false
+}

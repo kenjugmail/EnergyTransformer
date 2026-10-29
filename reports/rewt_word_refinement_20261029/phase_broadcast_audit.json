@@ -1,0 +1,64 @@
+[
+  {
+    "device": "cpu",
+    "shape": [
+      16,
+      64,
+      128
+    ],
+    "old_supported": true,
+    "forward_and_backward_bitwise_equal": true
+  },
+  {
+    "device": "cpu",
+    "shape": [
+      2,
+      9,
+      128
+    ],
+    "old_supported": true,
+    "forward_and_backward_bitwise_equal": true
+  },
+  {
+    "device": "cpu",
+    "shape": [
+      1,
+      1,
+      128
+    ],
+    "old_supported": false,
+    "error": "expand(torch.FloatTensor{[1, 1, 16]}, size=[1, 16]): the number of sizes provided (2) must be greater or equal to the number of dimensions in the tensor (3)",
+    "new_supported": true
+  },
+  {
+    "device": "cuda",
+    "shape": [
+      16,
+      64,
+      128
+    ],
+    "old_supported": true,
+    "forward_and_backward_bitwise_equal": true
+  },
+  {
+    "device": "cuda",
+    "shape": [
+      2,
+      9,
+      128
+    ],
+    "old_supported": true,
+    "forward_and_backward_bitwise_equal": true
+  },
+  {
+    "device": "cuda",
+    "shape": [
+      1,
+      1,
+      128
+    ],
+    "old_supported": false,
+    "error": "expand(torch.cuda.FloatTensor{[1, 1, 16]}, size=[1, 16]): the number of sizes provided (2) must be greater or equal to the number of dimensions in the tensor (3)",
+    "new_supported": true
+  }
+]

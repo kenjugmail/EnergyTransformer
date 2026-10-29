@@ -1,0 +1,56 @@
+{
+  "fixed_configs": [
+    [
+      "pilot_final2",
+      [
+        "--profile",
+        "final",
+        "--rounds",
+        "2"
+      ]
+    ],
+    [
+      "pilot_final8",
+      [
+        "--profile",
+        "final",
+        "--rounds",
+        "8"
+      ]
+    ],
+    [
+      "pilot_trajectory8",
+      [
+        "--profile",
+        "trajectory"
+      ]
+    ],
+    [
+      "pilot_trajectory64",
+      [
+        "--profile",
+        "trajectory",
+        "--modes",
+        "64"
+      ]
+    ],
+    [
+      "pilot_transformer_lr15",
+      [
+        "--profile",
+        "transformer",
+        "--hidden",
+        "284",
+        "--lr",
+        ".0015",
+        "--rounds",
+        "0"
+      ]
+    ]
+  ],
+  "steps": 2400,
+  "seed": 291101,
+  "test_evaluation": false,
+  "primary": "validation token NLL",
+  "selection": "development only; choose finalists then lock multi-seed test protocol"
+}

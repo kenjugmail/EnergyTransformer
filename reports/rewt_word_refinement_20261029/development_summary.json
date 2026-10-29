@@ -1,0 +1,249 @@
+[
+  {
+    "run": "dev_refined0015",
+    "steps": 6000,
+    "profile": "trajectory",
+    "learning_rate": 0.0015,
+    "modes": 16,
+    "conditioned_phase": true,
+    "supervise_steps": [
+      2,
+      4,
+      8
+    ],
+    "parameters": 1401144,
+    "selected_rounds": 32,
+    "validation_nll": 2.7902893759310246,
+    "test_evaluated": false
+  },
+  {
+    "run": "dev_refined003",
+    "steps": 6000,
+    "profile": "trajectory",
+    "learning_rate": 0.003,
+    "modes": 16,
+    "conditioned_phase": true,
+    "supervise_steps": [
+      2,
+      4,
+      8
+    ],
+    "parameters": 1401144,
+    "selected_rounds": 32,
+    "validation_nll": 2.78333445743192,
+    "test_evaluated": false
+  },
+  {
+    "run": "dev_refined006",
+    "steps": 6000,
+    "profile": "trajectory",
+    "learning_rate": 0.006,
+    "modes": 16,
+    "conditioned_phase": true,
+    "supervise_steps": [
+      2,
+      4,
+      8
+    ],
+    "parameters": 1401144,
+    "selected_rounds": 16,
+    "validation_nll": 2.928204530617222,
+    "test_evaluated": false
+  },
+  {
+    "run": "dev_transformer0015",
+    "steps": 6000,
+    "profile": "transformer",
+    "learning_rate": 0.0015,
+    "modes": 16,
+    "conditioned_phase": false,
+    "supervise_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "parameters": 1401472,
+    "selected_rounds": 0,
+    "validation_nll": 2.8341756374575198,
+    "test_evaluated": false
+  },
+  {
+    "run": "dev_transformer003",
+    "steps": 6000,
+    "profile": "transformer",
+    "learning_rate": 0.003,
+    "modes": 16,
+    "conditioned_phase": false,
+    "supervise_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "parameters": 1401472,
+    "selected_rounds": 0,
+    "validation_nll": 2.8216655794531107,
+    "test_evaluated": false
+  },
+  {
+    "run": "dev_transformer006",
+    "steps": 6000,
+    "profile": "transformer",
+    "learning_rate": 0.006,
+    "modes": 16,
+    "conditioned_phase": false,
+    "supervise_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "parameters": 1401472,
+    "selected_rounds": 0,
+    "validation_nll": 3.173599912552163,
+    "test_evaluated": false
+  },
+  {
+    "run": "pilot_conditioned16",
+    "steps": 2400,
+    "profile": "trajectory",
+    "learning_rate": 0.003,
+    "modes": 16,
+    "conditioned_phase": true,
+    "supervise_steps": [
+      2,
+      4,
+      8
+    ],
+    "parameters": 1401144,
+    "selected_rounds": 32,
+    "validation_nll": 3.050224573351443,
+    "test_evaluated": false
+  },
+  {
+    "run": "pilot_conditioned64",
+    "steps": 2400,
+    "profile": "trajectory",
+    "learning_rate": 0.003,
+    "modes": 64,
+    "conditioned_phase": true,
+    "supervise_steps": [
+      2,
+      4,
+      8
+    ],
+    "parameters": 1419624,
+    "selected_rounds": 32,
+    "validation_nll": 3.05104005523026,
+    "test_evaluated": false
+  },
+  {
+    "run": "pilot_final2",
+    "steps": 2400,
+    "profile": "final",
+    "learning_rate": 0.003,
+    "modes": 16,
+    "conditioned_phase": false,
+    "supervise_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "parameters": 1399096,
+    "selected_rounds": 2,
+    "validation_nll": 3.067404458299279,
+    "test_evaluated": false
+  },
+  {
+    "run": "pilot_final8",
+    "steps": 2400,
+    "profile": "final",
+    "learning_rate": 0.003,
+    "modes": 16,
+    "conditioned_phase": false,
+    "supervise_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "parameters": 1399096,
+    "selected_rounds": 16,
+    "validation_nll": 3.074322603875771,
+    "test_evaluated": false
+  },
+  {
+    "run": "pilot_trajectory64",
+    "steps": 2400,
+    "profile": "trajectory",
+    "learning_rate": 0.003,
+    "modes": 64,
+    "conditioned_phase": false,
+    "supervise_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "parameters": 1411432,
+    "selected_rounds": 32,
+    "validation_nll": 3.0864113972056657,
+    "test_evaluated": false
+  },
+  {
+    "run": "pilot_trajectory8",
+    "steps": 2400,
+    "profile": "trajectory",
+    "learning_rate": 0.003,
+    "modes": 16,
+    "conditioned_phase": false,
+    "supervise_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "parameters": 1399096,
+    "selected_rounds": 8,
+    "validation_nll": 3.0770646394230425,
+    "test_evaluated": false
+  },
+  {
+    "run": "pilot_transformer",
+    "steps": 2400,
+    "profile": "transformer",
+    "learning_rate": 0.003,
+    "modes": 16,
+    "conditioned_phase": false,
+    "supervise_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "parameters": 1398400,
+    "selected_rounds": 0,
+    "validation_nll": 3.0787031976506114,
+    "test_evaluated": false
+  },
+  {
+    "run": "pilot_transformer_lr15",
+    "steps": 2400,
+    "profile": "transformer",
+    "learning_rate": 0.0015,
+    "modes": 16,
+    "conditioned_phase": false,
+    "supervise_steps": [
+      0,
+      2,
+      4,
+      8
+    ],
+    "parameters": 1398400,
+    "selected_rounds": 0,
+    "validation_nll": 3.110578006133437,
+    "test_evaluated": false
+  }
+]

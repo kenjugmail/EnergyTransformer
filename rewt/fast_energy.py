@@ -12,7 +12,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from .streaming import LatentEnergy
+from .streaming import LatentEnergy, phase_linear
 
 
 def _refine(anchor, weight, raw, phase, raw_precision, rounds):
@@ -24,7 +24,7 @@ def _refine(anchor, weight, raw, phase, raw_precision, rounds):
     # delta_0 = 0: avoid a zero allocation, zero projection and zero multiply.
     delta = eta * ((amplitude * phase.sin()) @ frequency)
     for _ in range(1, rounds):
-        gradient = precision * delta - (amplitude * F.linear(delta, frequency, phase).sin()) @ frequency
+        gradient = precision * delta - (amplitude * phase_linear(delta, frequency, phase).sin()) @ frequency
         delta = delta - eta * gradient
     return anchor + delta
 
@@ -44,7 +44,7 @@ def _prepared_general(anchor, weight, frequency, phase, phase_sin, precision, no
     eta = .95 / (maximum + amplitude.abs() @ norm2)[..., None]
     delta = eta * ((amplitude * phase_sin) @ frequency)
     for _ in range(1, rounds):
-        gradient = precision * delta - (amplitude * F.linear(delta, frequency, phase).sin()) @ frequency
+        gradient = precision * delta - (amplitude * phase_linear(delta, frequency, phase).sin()) @ frequency
         delta = delta - eta * gradient
     return anchor + delta
 
@@ -87,10 +87,11 @@ class PreparedEnergy:
         function = _prepared_two if rounds == 2 else _prepared_general
         self.run = torch.compile(function, fullgraph=True) if head.compiled else function
         self.cpu_small = (_SmallCPU(self) if rounds == 2 and not head.compiled and
-                          head.raw_frequency.device.type == 'cpu' and head.raw_frequency.dtype == torch.float32 else None)
+                          head.context_phase is None and head.raw_frequency.device.type == 'cpu'
+                          and head.raw_frequency.dtype == torch.float32 else None)
         if head.fused:
-            if rounds != 2 or head.raw_frequency.device.type != 'cuda' or head.raw_frequency.dtype != torch.float32:
-                raise ValueError('fused energy requires two rounds and CUDA float32')
+            if rounds != 2 or head.context_phase is not None or head.raw_frequency.device.type != 'cuda' or head.raw_frequency.dtype != torch.float32:
+                raise ValueError('fused energy requires two rounds, fixed phase and CUDA float32')
             from .fast_energy_triton import prepared_two_triton
             self.run = prepared_two_triton
 
@@ -112,11 +113,13 @@ class PreparedEnergy:
         if self.cpu_small is not None and anchor.dtype == torch.float32 and anchor.device.type == 'cpu' and anchor.numel() <= 16 * anchor.shape[-1]:
             return self.cpu_small(anchor)
         h = self.head
+        phase = h.phase if h.context_phase is None else h.phase + h.context_phase(anchor)
+        phase_sin = self.phase_sin if h.context_phase is None else phase.sin()
         if self.rounds == 2:
-            return self.run(anchor, h.amplitude.weight, h.phase, self.phase_sin,
+            return self.run(anchor, h.amplitude.weight, phase, phase_sin,
                             self.norm2, self.maximum, self.gram, self.basis)
-        return self.run(anchor, h.amplitude.weight, self.frequency, h.phase,
-                        self.phase_sin, self.precision, self.norm2, self.maximum, self.rounds)
+        return self.run(anchor, h.amplitude.weight, self.frequency, phase,
+                        phase_sin, self.precision, self.norm2, self.maximum, self.rounds)
 
 
 class FastLatentEnergy(LatentEnergy):
@@ -129,21 +132,23 @@ class FastLatentEnergy(LatentEnergy):
         self.amplitude = head.amplitude
         self.raw_frequency = head.raw_frequency
         self.phase = head.phase
+        self.context_phase = head.context_phase
         self.raw_precision = head.raw_precision
         self.compiled = compiled
         self.fused = fused
         self.run = torch.compile(_refine, fullgraph=True) if compiled else _refine
 
-    def forward(self, anchor, rounds, trace=False):
+    def forward(self, anchor, rounds, trace=False, return_path=False):
         if type(rounds) is not int or rounds < 0:
             raise ValueError('rounds must be nonnegative')
-        if trace:
+        if trace or return_path:
             # Diagnostics retain the original per-iteration energy trace.
-            return super().forward(anchor, rounds, trace=True)
+            return super().forward(anchor, rounds, trace=trace, return_path=return_path)
         if not rounds:
             return anchor, None
+        phase = self.phase if self.context_phase is None else self.phase + self.context_phase(anchor)
         return self.run(anchor, self.amplitude.weight, self.raw_frequency,
-                        self.phase, self.raw_precision, rounds), None
+                        phase, self.raw_precision, rounds), None
 
     def prepare_inference(self, rounds):
         return PreparedEnergy(self, rounds)

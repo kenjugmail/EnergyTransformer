@@ -1,0 +1,62 @@
+{
+  "prompt": "Once upon a",
+  "candidates": [
+    {
+      "word": "time",
+      "token_id": 48,
+      "probability": 0.996340274810791
+    },
+    {
+      "word": "little",
+      "token_id": 47,
+      "probability": 0.00027157043223269284
+    },
+    {
+      "word": "while",
+      "token_id": 296,
+      "probability": 0.00025416488642804325
+    },
+    {
+      "word": "sudden",
+      "token_id": 1810,
+      "probability": 0.00018374394858255982
+    },
+    {
+      "word": "big",
+      "token_id": 55,
+      "probability": 0.00015667338448110968
+    }
+  ],
+  "unknown_prompt_tokens": [],
+  "continuation": " time, there was a little girl named Lily. She loved to play outside in the garden. One day, she found",
+  "text": "Once upon a time, there was a little girl named Lily. She loved to play outside in the garden. One day, she found",
+  "generated_token_ids": [
+    48,
+    4,
+    49,
+    23,
+    22,
+    47,
+    68,
+    81,
+    35,
+    3,
+    25,
+    82,
+    21,
+    59,
+    161,
+    32,
+    20,
+    231,
+    3,
+    58,
+    37,
+    4,
+    34,
+    121
+  ],
+  "tokenization": "whole_words_v1",
+  "vocabulary_size": 8192,
+  "candidate_scope": "Whole words/numbers at the immediate next token; punctuation and special tokens omitted. Probabilities retain the full vocabulary denominator."
+}

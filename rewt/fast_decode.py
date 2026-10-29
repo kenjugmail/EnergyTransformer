@@ -82,11 +82,13 @@ class _TokenStep(nn.Module):
         x = model.norm(x)
         head = model.energy_head
         if head is not None and self.rounds:
+            phase = head.phase if head.context_phase is None else head.phase + head.context_phase(x)
+            phase_sin = self.phase_sin if head.context_phase is None else phase.sin()
             if self.rounds == 2:
-                x = _prepared_two(x, head.amplitude.weight, head.phase, self.phase_sin,
+                x = _prepared_two(x, head.amplitude.weight, phase, phase_sin,
                                   self.norm2, self.maximum, self.gram, self.basis)
             else:
-                x = _prepared_general(x, head.amplitude.weight, self.w, head.phase, self.phase_sin,
+                x = _prepared_general(x, head.amplitude.weight, self.w, phase, phase_sin,
                                       self.q, self.norm2, self.maximum, self.rounds)
         position.add_(1)
         return F.linear(x, model.embedding.weight)[:, None]

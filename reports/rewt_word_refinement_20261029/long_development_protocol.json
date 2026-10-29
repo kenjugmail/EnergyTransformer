@@ -1,0 +1,58 @@
+{
+  "fixed_configs": [
+    [
+      "dev_transformer003",
+      [
+        "--profile",
+        "transformer",
+        "--hidden",
+        "288",
+        "--lr",
+        ".003"
+      ]
+    ],
+    [
+      "dev_refined003",
+      [
+        "--profile",
+        "trajectory",
+        "--conditioned-phase",
+        "--supervise-steps",
+        "2",
+        "4",
+        "8",
+        "--lr",
+        ".003"
+      ]
+    ],
+    [
+      "dev_transformer006",
+      [
+        "--profile",
+        "transformer",
+        "--hidden",
+        "288",
+        "--lr",
+        ".006"
+      ]
+    ],
+    [
+      "dev_refined006",
+      [
+        "--profile",
+        "trajectory",
+        "--conditioned-phase",
+        "--supervise-steps",
+        "2",
+        "4",
+        "8",
+        "--lr",
+        ".006"
+      ]
+    ]
+  ],
+  "steps": 6000,
+  "seed": 291101,
+  "test_evaluation": false,
+  "selection": "Lowest validation token NLL; same two learning rates and step budgets for both finalists."
+}

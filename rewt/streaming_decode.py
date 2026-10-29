@@ -6,7 +6,7 @@ Sessions reject weight mutation and consume inputs only in causal order.
 """
 import torch
 from torch.nn import functional as F
-from .streaming import Attention, rotate
+from .streaming import Attention, rotate, phase_linear
 
 
 class StreamingSession:
@@ -91,10 +91,11 @@ class StreamingSession:
             frequency,precision,norm2,maximum=self.energy_constants
             head=model.energy_head
             amplitude=head.amplitude(x).tanh()/c.modes**.5
+            phase=head.phase if head.context_phase is None else head.phase+head.context_phase(x)
             eta=.95/(maximum+amplitude.abs()@norm2)[...,None]
             delta=torch.zeros_like(x)
             for _ in range(self.rounds):
-                gradient=precision*delta-(amplitude*F.linear(delta,frequency,head.phase).sin())@frequency
+                gradient=precision*delta-(amplitude*phase_linear(delta,frequency,phase).sin())@frequency
                 delta=delta-eta*gradient
             x=x+delta
         self.position+=t

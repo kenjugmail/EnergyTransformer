@@ -1,0 +1,30 @@
+{
+  "bytes": 2670066,
+  "content_range": "bytes 16777216-19447281/19447282",
+  "excluded_indexes": {
+    "data/lfm3_capability_recovery_v1/train_documents.json": "7a97d531334d84c01dfb1416e7ede051694c3ce186deae610721d5039d18062d",
+    "data/lfm3_capability_recovery_v1/valid_documents.json": "6edf473b356ad5e16648236f2b0a350a9fa78d6ecf91b518e27a6faf683d6648",
+    "data/lfm3_conversion_corpus/test_documents.json": "7e83cf96b17af9dde94ae88f3a7b72e29247852a19ebb720edabe34250aa18ad",
+    "data/lfm3_conversion_corpus/train_documents.json": "887bae5621f3c0f0a41f00101f61e452a7f640860011a38fef4c542fa21d93de",
+    "data/lfm3_conversion_corpus/valid_documents.json": "2ec9d28959ce8b9a680cb0b9adea084631f1dd247524b2c74dc8e70bfc0aa67f",
+    "data/rewt_architecture_20261022/test_bpe_documents.json": "0264369b1374ec627b5efd1edc11bcbc57c25db1046170bdadb107aa487b7477",
+    "data/rewt_architecture_20261022/valid_bpe_documents.json": "1b53c1381bc5568d3008bd3fb3adae548506f4ef640e5f1166ca4a5c951331c2",
+    "data/rewt_streaming_20261026/test_documents.json": "7fcb6518ba763d849e34b115c32455960142dc5d11484a1acde0f0ed6e5f0a52",
+    "data/rewt_streaming_20261026/valid_documents.json": "44302181640cf10899d70b1827a8f891781cd996e4ed3a1ad1317a7c9414eb8b",
+    "data/rewt_words_20261028/test_documents.json": "68e5fc30d4e4ef4b35db210d3238c52e689055a3867d6e92efb420d2b8055f86",
+    "data/rewt_words_20261028/train_documents.json": "8c428f155e1265371c9fe6e5f104defef90aa2817fa2dd7c8a7455edc19a9d05",
+    "data/rewt_words_20261028/valid_documents.json": "a5444a5f1976471698d6079c1674cd897c867aa1ac6deaae682f52ba7dabc011",
+    "data/tinystories_bpe_20261010/test_documents.json": "ec742548e1b6ff02ee1b98068d4c19407a40a4033c38934cf4e0c2c033b55f93",
+    "data/tinystories_bpe_20261010/train_documents.json": "f414d238a13bdedc6c444151be733ff8489e71d2f6b29bdb584a9555f230f91e",
+    "data/tinystories_bpe_20261010/valid_documents.json": "adf472acb5b44b1f9586194c083e4d81c36ac2ded62fb24c9a8af40930d70288",
+    "data/tinystories_rewt_20261010/test_documents.json": "0e77414d8ba0da1a91d07edd10b12f25af758c3e4f921425b24645ca46486649",
+    "data/tinystories_rewt_20261010/train_documents.json": "3c405ed6778e80ae16a6c53daa76f0c57bdaf59bc3d86ab3e40c5a337566595e",
+    "data/tinystories_rewt_20261010/valid_documents.json": "f6058edfc5524fea16cd88596b64df6fb75dc056b35b01f499597a4018434864",
+    "data/tinystories_tokens_20261010/test_documents.json": "2b8cb49ed71dbce20bf56f1471329a4841d1e3a3009a097253cd754b3778e008",
+    "data/tinystories_tokens_20261010/train_documents.json": "4827a602bae13c05ceb386efe5223d1697cad3d83ad7858cf0df0a561652e7e8",
+    "data/tinystories_tokens_20261010/valid_documents.json": "bca992ecf66253b1037347029785e7f6dd7fbd31773e804e3edb66cacba1b452"
+  },
+  "offset": 16777216,
+  "sha256": "615ab46541e5e605b3f591e8b8c2f7bb5e070c0127e5e1f87ca865956438497b",
+  "url": "https://huggingface.co/datasets/roneneldan/TinyStories/resolve/f54c09fd23315a6f9c86f9dc80f725de7d8f9c64/TinyStories-valid.txt"
+}

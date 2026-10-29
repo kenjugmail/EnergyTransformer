@@ -1,5 +1,9 @@
 # Whole-word REWT — October 28, 2026
 
+This is the historical October 28 checkpoint report. The prediction CLI now
+defaults to the October 29 refinement checkpoint. To reproduce this report's
+predictions, pass `--checkpoint runs/rewt_words_20261028/best.pt` explicitly.
+
 The custom language-model path now supports **whole-word prediction**. The first
 trained streaming model has **1,399,096 parameters** and an **8,192-entry**
 vocabulary: 8,173 word/number entries, 16 punctuation entries, and three special

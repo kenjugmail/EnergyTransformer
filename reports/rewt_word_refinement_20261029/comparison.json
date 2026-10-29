@@ -1,0 +1,456 @@
+{
+  "aggregates": {
+    "hybrid": {
+      "known_word_nll": 2.9600227551547484,
+      "next_word_accuracy": 0.3686019817055038,
+      "next_word_top5_accuracy": 0.6517741379105259,
+      "nll_seed_std": 0.007351227871394455,
+      "seeds": 3,
+      "token_nll": 2.693503452658964,
+      "token_perplexity": 14.783378164916432,
+      "word_label_nll": 2.969908919222844
+    },
+    "original": {
+      "known_word_nll": 3.6950020170337368,
+      "next_word_accuracy": 0.2856760518145809,
+      "next_word_top5_accuracy": 0.5397887449594976,
+      "nll_seed_std": null,
+      "seeds": 1,
+      "token_nll": 3.353629630059004,
+      "token_perplexity": 28.606376000487284,
+      "word_label_nll": 3.7033515136280966
+    },
+    "refined": {
+      "known_word_nll": 2.9585669881595305,
+      "next_word_accuracy": 0.36776933233415415,
+      "next_word_top5_accuracy": 0.6519287727937765,
+      "nll_seed_std": 0.010640560376351155,
+      "seeds": 3,
+      "token_nll": 2.691568182199262,
+      "token_perplexity": 14.754795995893625,
+      "word_label_nll": 2.9681311727844903
+    },
+    "transformer": {
+      "known_word_nll": 2.9873145370944925,
+      "next_word_accuracy": 0.362785331097075,
+      "next_word_top5_accuracy": 0.6454816876613257,
+      "nll_seed_std": 0.00517586142532947,
+      "seeds": 3,
+      "token_nll": 2.719975024306526,
+      "token_perplexity": 15.17994311061326,
+      "word_label_nll": 2.99748337008344
+    }
+  },
+  "comparisons": {
+    "hybrid_minus_transformer": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 291999,
+      "ci95": [
+        -0.035932867127121425,
+        -0.01733436993284462
+      ],
+      "documents": 1024,
+      "mean": -0.026471571647562087,
+      "method": "Paired resampling of training seeds and documents; few training seeds limit uncertainty estimates.",
+      "seed_means": [
+        -0.025698960293084383,
+        -0.019036044250242412,
+        -0.034679710399359465
+      ],
+      "training_seeds": 3
+    },
+    "refined_2_minus_0": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 291999,
+      "ci95": [
+        -0.008526089067648476,
+        -0.00565354108111933
+      ],
+      "documents": 1024,
+      "mean": -0.0071401620128502446,
+      "method": "Paired resampling of training seeds and documents; few training seeds limit uncertainty estimates.",
+      "seed_means": [
+        -0.008335115038789809,
+        -0.00756413082126528,
+        -0.0055212401784956455
+      ],
+      "training_seeds": 3
+    },
+    "refined_32_minus_0": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 291999,
+      "ci95": [
+        -0.010236482835413577,
+        -0.0071820689607799675
+      ],
+      "documents": 1024,
+      "mean": -0.008722508403783044,
+      "method": "Paired resampling of training seeds and documents; few training seeds limit uncertainty estimates.",
+      "seed_means": [
+        -0.009909296175464988,
+        -0.009123936528339982,
+        -0.00713429250754416
+      ],
+      "training_seeds": 3
+    },
+    "refined_32_minus_8": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 291999,
+      "ci95": [
+        -0.000321566370742706,
+        4.560379796506215e-05
+      ],
+      "documents": 1024,
+      "mean": -0.00015241936004410186,
+      "method": "Paired resampling of training seeds and documents; few training seeds limit uncertainty estimates.",
+      "seed_means": [
+        -0.0002652078401297331,
+        -0.00017246941570192575,
+        -1.9580824300646782e-05
+      ],
+      "training_seeds": 3
+    },
+    "refined_8_minus_2": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 291999,
+      "ci95": [
+        -0.0016987560025881975,
+        -0.0011840521357953549
+      ],
+      "documents": 1024,
+      "mean": -0.0014299270308886964,
+      "method": "Paired resampling of training seeds and documents; few training seeds limit uncertainty estimates.",
+      "seed_means": [
+        -0.001308973296545446,
+        -0.001387336291372776,
+        -0.0015934715047478676
+      ],
+      "training_seeds": 3
+    },
+    "refined_minus_hybrid": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 291999,
+      "ci95": [
+        -0.010582438843751636,
+        0.007233509002253412
+      ],
+      "documents": 1024,
+      "mean": -0.0019352704597016175,
+      "method": "Paired resampling of training seeds and documents; few training seeds limit uncertainty estimates.",
+      "seed_means": [
+        -0.009266897919587791,
+        -0.002848216565325856,
+        0.0063093031058087945
+      ],
+      "training_seeds": 3
+    },
+    "refined_minus_transformer": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 291999,
+      "ci95": [
+        -0.03671591840490388,
+        -0.019814820246150097
+      ],
+      "documents": 1024,
+      "mean": -0.028406842107263703,
+      "method": "Paired resampling of training seeds and documents; few training seeds limit uncertainty estimates.",
+      "seed_means": [
+        -0.034965858212672174,
+        -0.02188426081556827,
+        -0.02837040729355067
+      ],
+      "training_seeds": 3
+    },
+    "refined_selected_minus_0": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 291999,
+      "ci95": [
+        -0.010228535899659618,
+        -0.007259084991528653
+      ],
+      "documents": 1024,
+      "mean": -0.00875036173965782,
+      "method": "Paired resampling of training seeds and documents; few training seeds limit uncertainty estimates.",
+      "seed_means": [
+        -0.009909296175464988,
+        -0.009114447981119156,
+        -0.007227341062389314
+      ],
+      "training_seeds": 3
+    },
+    "refined_selected_minus_2": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 291999,
+      "ci95": [
+        -0.0019133323134155945,
+        -0.0013237332217007256
+      ],
+      "documents": 1024,
+      "mean": -0.0016101997268075745,
+      "method": "Paired resampling of training seeds and documents; few training seeds limit uncertainty estimates.",
+      "seed_means": [
+        -0.001574181136675179,
+        -0.0015503171598538756,
+        -0.0017061008838936687
+      ],
+      "training_seeds": 3
+    }
+  },
+  "inference_depth_selection": "Frozen validation choice; test curves are diagnostics only.",
+  "models": {
+    "hybrid_291201": {
+      "arm": "hybrid",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 2.9506509421720395,
+        "next_word_accuracy": 0.3727295435891946,
+        "next_word_top5_accuracy": 0.6517503479284873,
+        "token_accuracy_with_unk": 0.4207305908203125,
+        "token_nll": 2.68866482260637,
+        "token_perplexity": 14.712019645010711,
+        "unknown_targets": 227,
+        "word_label_nll": 2.9601707578288177,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 291201,
+      "selected_rounds": 0
+    },
+    "hybrid_291202": {
+      "arm": "hybrid",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 2.9699054199244994,
+        "next_word_accuracy": 0.36603861114084857,
+        "next_word_top5_accuracy": 0.6505013738714627,
+        "token_accuracy_with_unk": 0.4166259765625,
+        "token_nll": 2.7019627424888313,
+        "token_perplexity": 14.908965486339612,
+        "unknown_targets": 227,
+        "word_label_nll": 2.9798128408269946,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 291202,
+      "selected_rounds": 0
+    },
+    "hybrid_291203": {
+      "arm": "hybrid",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 2.959511903367707,
+        "next_word_accuracy": 0.3670377903864683,
+        "next_word_top5_accuracy": 0.6530706919316276,
+        "token_accuracy_with_unk": 0.4180755615234375,
+        "token_nll": 2.68988279288169,
+        "token_perplexity": 14.729949364344368,
+        "unknown_targets": 227,
+        "word_label_nll": 2.9697431590127192,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 291203,
+      "selected_rounds": 0
+    },
+    "original_281801": {
+      "arm": "original",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 3.6950020170337368,
+        "next_word_accuracy": 0.2856760518145809,
+        "next_word_top5_accuracy": 0.5397887449594976,
+        "token_accuracy_with_unk": 0.3432464599609375,
+        "token_nll": 3.353629630059004,
+        "token_perplexity": 28.606376000487284,
+        "unknown_targets": 227,
+        "word_label_nll": 3.7033515136280966,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 281801,
+      "selected_rounds": 2
+    },
+    "refined_291201": {
+      "arm": "refined",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 2.942453707410694,
+        "next_word_accuracy": 0.3690896763372944,
+        "next_word_top5_accuracy": 0.6545694608000571,
+        "token_accuracy_with_unk": 0.418304443359375,
+        "token_nll": 2.679397924686782,
+        "token_perplexity": 14.576314614245293,
+        "unknown_targets": 227,
+        "word_label_nll": 2.9519588678869986,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 291201,
+      "selected_rounds": 32
+    },
+    "refined_291202": {
+      "arm": "refined",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 2.9653206745656773,
+        "next_word_accuracy": 0.3663419334118403,
+        "next_word_top5_accuracy": 0.6500731541947686,
+        "token_accuracy_with_unk": 0.4173583984375,
+        "token_nll": 2.6991145259235054,
+        "token_perplexity": 14.866561939777409,
+        "unknown_targets": 227,
+        "word_label_nll": 2.974913423510506,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 291202,
+      "selected_rounds": 16
+    },
+    "refined_291203": {
+      "arm": "refined",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 2.9679265825022196,
+        "next_word_accuracy": 0.3678763872533276,
+        "next_word_top5_accuracy": 0.651143703386504,
+        "token_accuracy_with_unk": 0.41839599609375,
+        "token_nll": 2.6961920959874988,
+        "token_perplexity": 14.823178876976263,
+        "unknown_targets": 227,
+        "word_label_nll": 2.9775212269559668,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 291203,
+      "selected_rounds": 16
+    },
+    "transformer_291201": {
+      "arm": "transformer",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 2.976364254381261,
+        "next_word_accuracy": 0.36578881632944366,
+        "next_word_top5_accuracy": 0.6465938693216287,
+        "token_accuracy_with_unk": 0.41412353515625,
+        "token_nll": 2.7143637828994542,
+        "token_perplexity": 15.095003316985508,
+        "unknown_targets": 227,
+        "word_label_nll": 2.9862574667277704,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 291201,
+      "selected_rounds": 0
+    },
+    "transformer_291202": {
+      "arm": "transformer",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 2.9880147319681556,
+        "next_word_accuracy": 0.36280912107911356,
+        "next_word_top5_accuracy": 0.6461478071584056,
+        "token_accuracy_with_unk": 0.413604736328125,
+        "token_nll": 2.7209987867390737,
+        "token_perplexity": 15.19549172378311,
+        "unknown_targets": 227,
+        "word_label_nll": 2.998200172658728,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 291202,
+      "selected_rounds": 0
+    },
+    "transformer_291203": {
+      "arm": "transformer",
+      "score": {
+        "evaluated_tokens": 65536,
+        "evaluated_word_positions": 56046,
+        "known_word_nll": 2.9975646249340606,
+        "next_word_accuracy": 0.3597580558826678,
+        "next_word_top5_accuracy": 0.6437033865039432,
+        "token_accuracy_with_unk": 0.411376953125,
+        "token_nll": 2.7245625032810494,
+        "token_perplexity": 15.249740755674893,
+        "unknown_targets": 227,
+        "word_label_nll": 3.0079924708638206,
+        "word_vocabulary_coverage": 0.9959497555579345
+      },
+      "seed": 291203,
+      "selected_rounds": 0
+    }
+  },
+  "protocol_sha256": "10375b58104a0ee7dd44bf9fbcb9594dc81c84dc38997b91db789b71607d5fe0",
+  "refinement_curve": {
+    "0": {
+      "maximum": 2.7082289739046246,
+      "mean": 2.70031854393892,
+      "minimum": 2.689307220862247,
+      "values": [
+        2.689307220862247,
+        2.7082289739046246,
+        2.703419437049888
+      ]
+    },
+    "1": {
+      "maximum": 2.7025595066370443,
+      "mean": 2.695004368084483,
+      "minimum": 2.6829236386111006,
+      "values": [
+        2.6829236386111006,
+        2.7025595066370443,
+        2.6995299590053037
+      ]
+    },
+    "16": {
+      "maximum": 2.6991145259235054,
+      "mean": 2.6915854120549434,
+      "minimum": 2.6794496142538264,
+      "values": [
+        2.6794496142538264,
+        2.6991145259235054,
+        2.6961920959874988
+      ]
+    },
+    "2": {
+      "maximum": 2.7006648430833593,
+      "mean": 2.6931783819260695,
+      "minimum": 2.6809721058234572,
+      "values": [
+        2.6809721058234572,
+        2.7006648430833593,
+        2.6978981968713924
+      ]
+    },
+    "32": {
+      "maximum": 2.6991050373762846,
+      "mean": 2.6915960355351367,
+      "minimum": 2.679397924686782,
+      "values": [
+        2.679397924686782,
+        2.6991050373762846,
+        2.696285144542344
+      ]
+    },
+    "4": {
+      "maximum": 2.6996767526725307,
+      "mean": 2.692177319317125,
+      "minimum": 2.6800572933861986,
+      "values": [
+        2.6800572933861986,
+        2.6996767526725307,
+        2.696797911892645
+      ]
+    },
+    "8": {
+      "maximum": 2.6992775067919865,
+      "mean": 2.691748454895181,
+      "minimum": 2.679663132526912,
+      "values": [
+        2.679663132526912,
+        2.6992775067919865,
+        2.6963047253666446
+      ]
+    }
+  },
+  "scope": "Whole-word TinyStories crops, 64-token context, fixed vocabulary; not general LLM superiority."
+}

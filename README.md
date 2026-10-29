@@ -3,26 +3,37 @@
 Experimental energy-function memory, native-text prototypes, and explicitly reviewed
 protected-memory edits. **Not a competitive general-purpose LLM or an instruction-following assistant.**
 
-## Whole-word prediction — October 28
+## Whole-word prediction and refinement — October 29
 
-The current custom-model training path now predicts **whole words**, with
-separate punctuation tokens, instead of byte or subword fragments. A new
-**1.40M-parameter streaming REWT** is trained with an **8,192-entry vocabulary**.
-On the held-out story sample it predicts **28.36%** of next-word positions
-correctly; `Once upon a` gives `time` as the leading word at **95.28%**.
+The custom **1.40M-parameter REWT** predicts whole words using an **8,192-entry
+vocabulary**, with separate punctuation tokens. On a fresh 1,024-story
+TinyStories test, it beats a Transformer with matched parameter and training-token
+budgets in **all three seeds**: mean loss **2.6916 vs 2.7200**, perplexity
+**14.7548 vs 15.1799**, and next-word accuracy **36.78% vs 36.28%**.
+
+Context-dependent Fourier phases and supervision at several refinement depths
+make extra steps useful: loss falls from **2.6932 at two steps to 2.6916** at the
+validation-selected 16–32 steps. Gains beyond eight steps are very small. Most
+of the Transformer advantage comes from the backbone; a reliable advantage over
+the separately trained no-energy backbone is not established. Training FLOPs
+are not matched, and these small-story results do not imply general LLM superiority.
 
 ```bash
 .venv/bin/python scripts/predict_rewt_words.py --prompt 'Once upon a' --top 5
 .venv/bin/python scripts/predict_rewt_words.py --prompt 'The dog was very' --generate 24
 ```
 
-The local checkpoint is `runs/rewt_words_20261028/best.pt`; its vocabulary is
-embedded. Unknown words map to `<unk>`, with no byte fallback. The original
+The local default is `runs/rewt_word_refinement_20261029/recommended.pt`, selected
+on validation before test evaluation, with 32 refinement steps. Its vocabulary
+is embedded. Unknown words map to `<unk>`, with no byte fallback. The original
 joint-energy model and attention controls also support word vocabularies through
 `scripts/train_rewt_words.py`. Historical checkpoints retain their original
 tokenization, and LFM3 retains its pretrained tokenizer.
 
-[Word-model results, limitations and training commands](reports/rewt_words_20261028/FINDINGS.md).
+**326 tests pass**, and 72 actual word-generation steps match the optimized GPU
+decoder. [Fresh comparison, refinement curves and controls](reports/rewt_word_refinement_20261029/FINDINGS.md),
+[reproduction commands](reports/rewt_word_refinement_20261029/REPRODUCING.md), and
+[historical October 28 word-model results](reports/rewt_words_20261028/FINDINGS.md).
 
 ## October 28 class presentation
 

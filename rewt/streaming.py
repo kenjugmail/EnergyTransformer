@@ -26,6 +26,8 @@ class StreamingConfig:
     modes: int = 16
     rounds: int = 2
     vocab_size: int = 256
+    conditioned_phase: bool = False
+    energy_enabled: bool = True
 
     def validate(self):
         if type(self.vocab_size) is not int or self.vocab_size < 2:
@@ -40,6 +42,10 @@ class StreamingConfig:
             raise ValueError('even head dimensions required')
         if type(self.hybrid) is not bool:
             raise ValueError('hybrid must be boolean')
+        if type(self.conditioned_phase) is not bool:
+            raise ValueError('conditioned_phase must be boolean')
+        if type(self.energy_enabled) is not bool:
+            raise ValueError('energy_enabled must be boolean')
 
 
 class RMSNorm(nn.Module):
@@ -173,6 +179,17 @@ class Block(nn.Module):
         return x + self.down(F.silu(a) * b), state
 
 
+def phase_linear(delta, frequency, phase):
+    """Keep fixed-bias execution; broadcast context phases outside linear.
+
+    F.linear's singleton/addmm path cannot accept a [batch,time,modes] bias.
+    Explicit addition supports that shape, including one-token generation.
+    """
+    if phase.ndim == 1:
+        return F.linear(delta, frequency, phase)
+    return F.linear(delta, frequency) + phase
+
+
 class LatentEnergy(nn.Module):
     def __init__(self, config):
         super().__init__()
@@ -180,14 +197,18 @@ class LatentEnergy(nn.Module):
         self.amplitude = nn.Linear(config.width, config.modes, bias=False)
         self.raw_frequency = nn.Parameter(torch.randn(config.modes, config.width) / math.sqrt(config.width))
         self.phase = nn.Parameter(torch.rand(config.modes)*2*math.pi-math.pi)
+        self.context_phase = nn.Linear(config.width, config.modes, bias=False) if config.conditioned_phase else None
         self.raw_precision = nn.Parameter(torch.zeros(config.width))
 
     @staticmethod
     def energy(delta, amplitude, frequency, phase, precision):
-        return .5*(precision*delta.square()).sum(-1)+(amplitude*F.linear(delta,frequency,phase).cos()).sum(-1)
+        return .5*(precision*delta.square()).sum(-1)+(amplitude*phase_linear(delta,frequency,phase).cos()).sum(-1)
 
-    def forward(self, anchor, rounds, trace=False):
+    def forward(self, anchor, rounds, trace=False, return_path=False):
+        if type(rounds) is not int or rounds < 0:
+            raise ValueError('rounds must be nonnegative')
         amplitude = self.amplitude(anchor).tanh() / math.sqrt(self.config.modes)
+        phase = self.phase if self.context_phase is None else self.phase + self.context_phase(anchor)
         raw = self.raw_frequency
         norm = raw.norm(dim=-1, keepdim=True).clamp_min(1e-6)
         frequency = 2*raw*norm.tanh()/norm
@@ -197,14 +218,17 @@ class LatentEnergy(nn.Module):
         eta = .95/upper[..., None]
         delta = torch.zeros_like(anchor)
         energies = []
+        path = [anchor] if return_path else None
         for _ in range(rounds):
             if trace:
-                energies.append(self.energy(delta,amplitude,frequency,self.phase,precision).detach())
-            gradient = precision*delta - (amplitude*F.linear(delta,frequency,self.phase).sin()) @ frequency
+                energies.append(self.energy(delta,amplitude,frequency,phase,precision).detach())
+            gradient = precision*delta - (amplitude*phase_linear(delta,frequency,phase).sin()) @ frequency
             delta = delta - eta*gradient
+            if return_path:
+                path.append(anchor + delta)
         if trace:
-            energies.append(self.energy(delta,amplitude,frequency,self.phase,precision).detach())
-        return anchor+delta, torch.stack(energies,-1) if trace else None
+            energies.append(self.energy(delta,amplitude,frequency,phase,precision).detach())
+        return (path if return_path else anchor+delta), torch.stack(energies,-1) if trace else None
 
 
 @dataclass
@@ -225,7 +249,7 @@ class StreamingLM(nn.Module):
         self.embedding = nn.Embedding(config.vocab_size, config.width)
         self.blocks = nn.ModuleList(Block(config, config.hybrid and i%2 == 0) for i in range(config.layers))
         self.norm = RMSNorm(config.width)
-        self.energy_head = LatentEnergy(config) if config.modes and config.hybrid else None
+        self.energy_head = LatentEnergy(config) if config.energy_enabled and config.modes and config.hybrid else None
         self.apply(self._initialize)
         for block in self.blocks:
             nn.init.normal_(block.mixer.out.weight, std=.02/math.sqrt(2*config.layers))
@@ -245,16 +269,14 @@ class StreamingLM(nn.Module):
     def signature(self):
         return tuple((id(p), p._version, p.device, p.dtype) for p in self.parameters())
 
-    def forward(self, tokens, state=None, *, return_state=False, rounds=None, details=False):
+    def encode(self, tokens, state=None, *, return_state=False):
+        """Causal backbone state before the optional prediction refinement."""
         if tokens.ndim != 2 or tokens.dtype != torch.long or not all(tokens.shape):
             raise ValueError('nonempty [batch,time] int64 tokens required')
         if bool(((tokens<0)|(tokens>=self.config.vocab_size)).any()):
             raise ValueError('token IDs outside the configured vocabulary')
         if state is not None and (state.signature != self.signature() or len(state.layers) != len(self.blocks)):
             raise ValueError('state belongs to different or changed weights')
-        rounds = self.config.rounds if rounds is None else rounds
-        if type(rounds) is not int or rounds < 0:
-            raise ValueError('rounds must be nonnegative')
         position = state.position if state is not None else 0
         x = self.embedding(tokens)
         saved = []
@@ -262,11 +284,30 @@ class StreamingLM(nn.Module):
             x, layer = block(x, state.layers[i] if state is not None else None, position, return_state)
             saved.append(layer)
         x = self.norm(x)
+        next_state = StreamingState(saved, position+tokens.shape[1], self.signature()) if return_state else None
+        return x, next_state
+
+    def refinement_states(self, tokens, rounds):
+        """Differentiable states 0..rounds from one causal backbone pass.
+
+        Targets are deliberately absent: training may supervise these states,
+        while inference chooses its fixed depth without access to future words.
+        """
+        if self.energy_head is None:
+            raise ValueError('A latent energy head is required')
+        anchor, _ = self.encode(tokens)
+        states, _ = self.energy_head(anchor, rounds, return_path=True)
+        return states
+
+    def forward(self, tokens, state=None, *, return_state=False, rounds=None, details=False):
+        rounds = self.config.rounds if rounds is None else rounds
+        if type(rounds) is not int or rounds < 0:
+            raise ValueError('rounds must be nonnegative')
+        x, next_state = self.encode(tokens, state, return_state=return_state)
         energies = None
         if self.energy_head is not None and (rounds or details):
             x, energies = self.energy_head(x, rounds, trace=details)
         logits = F.linear(x, self.embedding.weight)
-        next_state = StreamingState(saved, position+tokens.shape[1], self.signature()) if return_state else None
         return logits, next_state, energies
 
 

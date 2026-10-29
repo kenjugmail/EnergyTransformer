@@ -11,9 +11,18 @@ Use the new word-based path for custom language training and prediction:
   --output runs/rewt_words_new --report reports/rewt_words_new
 ```
 
-The trained default checkpoint has 1,399,096 parameters and an 8,192-entry
-whole-word vocabulary. It achieves 28.36% next-word accuracy on the recorded
-story test sample. Words and integers remain intact; punctuation is separate,
+The trained default checkpoint has 1,401,144 parameters, an 8,192-entry
+whole-word vocabulary, and 32 validation-selected refinement steps. It is saved
+at `runs/rewt_word_refinement_20261029/recommended.pt` and achieves 36.91% next-word
+accuracy on the fresh story test. Across three seeds, refined REWT's mean loss
+is 2.6916 versus 2.7200 for the matched Transformer, with word accuracy 36.78%
+versus 36.28%. The comparison matches parameters and training-token budgets;
+training FLOPs are not matched.
+
+Extra refinement improves the trained REWT models, but most of the advantage
+over the Transformer comes from the backbone. The separately trained no-energy
+backbone is close; energy's advantage over that control is not established.
+Words and integers remain intact; punctuation is separate,
 spaces are reconstructed, and unseen words become one `<unk>`. There is no byte
 fallback. It predicts the next word after a complete prompt word, rather than
 finishing a partially typed word.
@@ -27,8 +36,14 @@ other custom models with the same word data. The word tokenizer is fitted on
 training documents only and embedded in new checkpoints. LFM3 remains on its
 pretrained tokenizer.
 
-**305 REWT tests pass**, including whole-word, corpus isolation, checkpoint,
-gradient and cache tests. [Results, limitations and reproducibility](../reports/rewt_words_20261028/FINDINGS.md).
+Use `scripts/study_rewt_word_refinement.py` for the supervised-refinement recipe
+and matched controls. New `StreamingConfig.conditioned_phase` and
+`energy_enabled` options preserve the defaults expected by old checkpoints.
+
+**326 REWT tests pass**, including whole-word, corpus isolation, checkpoint,
+gradient, singleton decoding and cache tests. [Fresh comparison and limitations](../reports/rewt_word_refinement_20261029/FINDINGS.md),
+[reproduction commands](../reports/rewt_word_refinement_20261029/REPRODUCING.md),
+and [original word-tokenization report](../reports/rewt_words_20261028/FINDINGS.md).
 
 ## Previous conversion and byte/subword experiments
 

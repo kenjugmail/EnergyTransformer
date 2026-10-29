@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-10-29T04:59:00.472850+00:00",
+  "test_evaluated": false,
+  "unchanged_training_and_validation": true,
+  "unchanged_vocabulary": true,
+  "tokenizer_identity": "cfe678c654b93bb293ee3ce15e66ce39919ce80f222bac737431659e1bbc5e28",
+  "fresh_corpus_manifest_sha256": "4b68167dae128c1e4f3a862ed802709be4862b99895374cd4df52f9caaaca364",
+  "source_sha256": "615ab46541e5e605b3f591e8b8c2f7bb5e070c0127e5e1f87ca865956438497b",
+  "previous_unique_document_ids": 79662,
+  "fresh_document_ids": 2967,
+  "overlap": 0,
+  "evaluated_document_count": 1024,
+  "evaluated_tokens": 65536,
+  "distinct_evaluation_documents": true,
+  "context": 64,
+  "source_range": "bytes 16777216-19447281/19447282"
+}
